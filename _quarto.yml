@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  google-analytics: "G-S164XFRMHY"
   title: "eide.ai"
   navbar:
     right:
@@ -15,6 +16,3 @@ format:
   html:
     theme: cosmo
     css: styles.css
-
-
-
