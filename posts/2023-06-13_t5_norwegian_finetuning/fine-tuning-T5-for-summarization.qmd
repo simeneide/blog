@@ -1,7 +1,8 @@
 ---
-title: Fine-tuning different T5 models for summarization 
+title: Benchmarking different Norwegian T5 models for a fine-tuning summarization task
 author: Simen Eide
 date: 12 June 2023
+image: "main_img.png"
 format:
   html:
     code-fold: true
@@ -55,8 +56,6 @@ results = results.round(3).sort_values("rougeLsum_test", ascending=False)
 
 ```
 
-## TL;DR 
-if you want to fine tune a T5 model on a language task with a moderate dataset, use the simplet5 library and the new [multilingual T5 long](https://huggingface.co/agemagician/mlong-t5-tglobal-large) base models from Google!
 
 ## Introduction
 There are many different text models to choose from when you want to perform some downstream task, but which should you choose for your fine-tuning task?
@@ -64,6 +63,10 @@ Although there are multiple tests for English, to my knowledge I could not find 
 Why t5? Well, they are easy to train with the simplet5 library, doesnt require huge amounts of data and generally performs well. Hopefully I can extend this evaluation also to autoregressive models at some later time.
 
 I hope this evaluation can guide practicioners to quickly find a base model when they want to do a downstream task on medium sized dataset in Norwegian.
+
+### TL;DR 
+if you want to fine tune a T5 model on a language task with a moderate dataset, use the simplet5 library and the new [multilingual T5 long](https://huggingface.co/agemagician/mlong-t5-tglobal-large) base models from Google!
+
 
 
 ## Methodology
