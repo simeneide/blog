@@ -1,0 +1,169 @@
+---
+title: Fine-tuning different T5 models for summarization 
+author: Simen Eide
+date: 12 June 2023
+format:
+  html:
+    code-fold: true
+execute:
+  echo: false
+---
+
+```{python}
+
+import json
+import pandas as pd
+import os
+from itables import init_notebook_mode, show
+import plotly.express as px
+
+# %% Load result files
+
+datadir = "results"
+stats_data = [ path for path in os.listdir(datadir,) if "vals" in path]
+
+results_list = []
+for file in stats_data:
+    with open(f"{datadir}/{file}", 'r', encoding='utf-8') as f:
+        s = json.load(f)
+        results_list.append(s)
+#%%
+
+results = pd.DataFrame(results_list)
+results['model_name'] = results['model_name'].map(lambda s: s.replace('/',' '))
+results['name'] = results['savename']#.map(lambda s: s.replace('_',' '))
+
+gpt_scores = pd.read_csv("results/gpt4-scores.csv").astype("float")
+df_gpt = pd.DataFrame(gpt_scores.aggregate("mean")).reset_index()
+df_gpt.columns = ['name','gpt-4']
+result2gptnames = {
+"mlong-t5-tglobal-large_512_lr:0.00005": "mlong-t5-tglobal-base_512k.csv",
+"mt5-large_512_lr:5e-05_prec32":"mt5-large_512_lr:5e-05_prec32.csv",
+"north_t5_large_NCC_512k_lr:0.00005": "t5_large_NCC_512k_lr:0.00005.csv",
+"mlong-t5-tglobal-large_1500_lr:0.0001_prec32": "mlong-t5-tglobal-large_1500_lr:0.0001_prec32.csv",
+"mlong-t5-tglobal-large_512_lr:0.00005_bf16": "mlong-t5-tglobal-large_512k_lr:0.00005_bf16.csv",
+"mlong-t5-tglobal-base_512": "mlong-t5-tglobal-large_512k_lr:0.00005.csv",
+"mlong-t5-tglobal-large_1500_lr:0.00005_bf16": "mlong-t5-tglobal-large_1500k_lr:0.00005_bf16.csv"
+}
+gpt2results = {val:key for key, val in result2gptnames.items()}
+df_gpt['name'] = df_gpt['name'].map(lambda x: gpt2results[x])
+results = results.merge(df_gpt, on="name")
+results = results[['name','rougeLsum_test', 'gpt-4','loss_test','rougeL_test','rouge1_test','rouge2_test']] # 'loss_train',
+
+from IPython.display import Markdown
+results = results.round(3).sort_values("rougeLsum_test", ascending=False)
+
+```
+
+## TL;DR 
+if you want to fine tune a T5 model on a language task with a moderate dataset, use the simplet5 library and the new [multilingual T5 long](https://huggingface.co/agemagician/mlong-t5-tglobal-large) base models from Google!
+
+## Introduction
+There are many different text models to choose from when you want to perform some downstream task, but which should you choose for your fine-tuning task?
+Although there are multiple tests for English, to my knowledge I could not find one for Norwegian. Therefore, here follows a small report where I fine-tuned 7 different T5-models on an (unfortunately private) summarization datatset that may give you some pointers and "go-to" models if you want to fine tune a language model. 
+Why t5? Well, they are easy to train with the simplet5 library, doesnt require huge amounts of data and generally performs well. Hopefully I can extend this evaluation also to autoregressive models at some later time.
+
+I hope this evaluation can guide practicioners to quickly find a base model when they want to do a downstream task on medium sized dataset in Norwegian.
+
+
+## Methodology
+I evaluate three main models: 
+
+- The [multilingual T5 model](https://huggingface.co/google/mt5-large) (abbrv. mt5-[size]),  
+- The Norwegian tuned [North-T5 models](https://huggingface.co/north/t5_large_NCC) which has continued trained the  mT5 on a Norwegian corpus (abbrv. nprth-t5-[size]-NCC),  
+- The [multilingual T5 long](https://huggingface.co/agemagician/mlong-t5-tglobal-large) (abbrv. mlong-t5-tglobal-[size]).
+
+All models are trained using a (small and insignificant) variation of the [simple T5 library](https://github.com/Shivanandroy/simpleT5).
+The source text was prepended with a summarization prompt.
+Each model was trained with learning rates $5e^-5$ and $1e-4$, and reported the best of each run.
+
+Each model was trained with 512 in input contextual token length, with the exception of the multilingual T5 long model which were trained both with 512 and 1500.
+The median token length of VG articles is about 1500 tokens, so a model using this longer input token length should be theoretically able to summarize the articles better.
+
+We report both the test loss as well as various Rouge scores, calculated using the [Huggingface evalulate library](https://github.com/huggingface/evaluate).
+
+### GPT-4 evaluation
+Summarization is an incredible difficult task, and there is many deficiencies of ROUGE types of metrics based on the co-occurrences of words. Therefore, we also perform a gpt-4 type of evaluation.
+For each summary we ask the languge model to assess the quality of the summary using the following prompt with `temperature=0`
+```
+# System message:
+You are an experienced news editor. Please evaluate the overall quality of the following summary as if a news reader would find it useful instead or before reading the whole article. The overall assessment should focus the following aspects in decreasing order of importance: (1) how well the summary covers the facts, (2) that it has not created new facts and (3) the general quality of the summary. Your only output should be a score from 1-10 where 1 describes the lowest possible quality of a summary and 10 is the best possible quality.
+
+# User message:
+Original news article: {original_article}
+
+Summary: {summary}
+```
+
+## Dataset
+The dataset we use consist of summarizations done by journalists for the Norwegian news site [VG.no](https://vg.no). 
+For each datapoint, we compare the original article text with a summary written by the journalist of the same article ^[Some of the summaries are drafted by AI, but proofread by journalists]. We have split the dataset into 2108 training examples and 527 test examples randomly. The dataset is unfortunately not publically available.
+
+#### Example data point
+
+Source text example:  
+```Det er registrert 1156 nye smittetilfeller siste døgn.\nDette er 489 tilfeller færre enn gjennomsnittet de foregående syv dagene (1645).\nDette er 158 tilfeller flere enn søndag forrige uke (998).\nTrenden i registrert smitte er ifølge\xa0VGs beregning\xa0stigende.\n130 kommuner har stigende trend.\nI Oslo er det registrert 312 nye smittetilfeller det siste døgnet. Det er elleve færre enn gjennomsnittet de foregående syv dagene, som er 323.```
+
+Target text example:
+```Det er registrert 1156 nye smittetilfeller siste døgn. Trenden i registrert smitte er ifølge VGs beregning stigende – 130 kommuner har stigende trend.```
+
+## Results
+The empirical results can be found in Table @tbl-results:
+
+```{python}
+#| label: tbl-results
+#| tbl-cap: "Empirical results of loss and Rouge scores on the test set"
+
+show(results)
+```
+
+
+- In terms of Rouge metrics, the multilingual T5 long model with input context of 512 tokens outperforms the others.
+Interestingly, it also outperforms the equivalent model with a input token length of 1500.
+Could this be due to the limited dataset, and that the model is not able to learn longer summarization tasks with only 2000 examples.
+
+- The story is more or less opposite if you consider the gpt-4 evaluations. I am not completely sure why this is, but there is a clear negative relationship between rouge scores and gpt-4 evaluations, as seen in @fig-rougevsgpt4.
+
+```{python}
+#| label: fig-rougevsgpt4
+#| fig-cap: "There is an inverse correlation between the gpt-4 evaluation score and the rouge metric."
+
+fig = px.scatter(results, x='rougeL_test',y="gpt-4", hover_name="name")
+fig
+```
+
+- The north T5 model performs worst (except the 16 bit variants) in terms of Rouge scores, but best in terms of loss.
+The loss should to our understanding, be comparable at least its base model mt5, so here the metrics are diverging in terms of best performance.
+
+```{python}
+#| label: fig-rougeL
+#| fig-cap: "Figure of the different trained models to the Rouge L on the test set"
+
+px.bar(results, x='name',y="rougeL_test")
+
+```
+
+```{python}
+#| label: fig-gpt4eval
+#| fig-cap: "Different trained models to the average GPT-4 evaluation score on the test set"
+
+px.bar(results, x='name',y="gpt-4")
+```
+
+## Qualitative results
+For the above example, these are example outputs from three of the models. Maybe anecdotically, the mlong-t5-tglobal with 1500k context doesnt complete the summary (probably due to the restricting 64 token max size of the summaries):
+
+```
+# mlong-t5-tglobal-large_1500_lr_0.0001_prec32
+Det er registrert 11.597 nye smittetilfeller det siste døgnet. Det er 4240 tilfeller flere enn gjennomsnittet de foregående syv dagene, som var 7357. 243 personer er innlagt på sykehus, det er færre enn i går da
+
+# mlong-t5-tglobal-large_512k_lr_0.00005_bf16
+Antall nye registrerte smittede i Norge det siste døgnet er 11. 597. Tallene på sykehusinnlagte er lavere enn i går. 243 personer er nå innlagt på sykehus, mens 79 får intensivbehandling.
+
+# t5_large_NCC_512k_lr_0.00005
+Det er registrert 11.597 nye smittetilfeller det siste døgnet. Det er 4240 tilfeller flere enn gjennomsnittet de foregående syv dagene, som var 7357. 243 personer er innlagt på sykehus, det er færre enn i går.
+```
+
+
+## Code and background data
+For Schibsted employees, you can find the validation set [here](https://docs.google.com/spreadsheets/d/19cU_MWYDNEvBLUj5G72fkBcVBNzQDg8ugnHGNz4U7vM/edit?usp=sharing), and full source code [here](https://github.schibsted.io/simen-eide/finetune-north-t5-summarization). For everyone else: I am sorry, but its out of scope to make this into format that fits public disclosure. However, there is nothing mysterious going on, and if you want to start training T5-models, you should start with the simplet5 library (also applicable for schibsted employees)!

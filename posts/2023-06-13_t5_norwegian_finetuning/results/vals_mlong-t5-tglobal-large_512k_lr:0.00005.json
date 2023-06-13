@@ -1,0 +1,21 @@
+{
+    "source_max_token_len": 512,
+    "target_max_token_len": 64,
+    "batch_size": 4,
+    "max_epochs": 100,
+    "early_stopping_patience_epochs": 5,
+    "precision": 32,
+    "use_gpu": true,
+    "num_workers": 4,
+    "learning_rate": 5e-05,
+    "checkpoint": "/home/t5/lightning_logs/mlong-t5-tglobal-large_512k_lr:0.00005/version_0/checkpoints/epoch=14-step=7904.ckpt",
+    "model_name": "agemagician/mlong-t5-tglobal-large",
+    "name": "mlong-t5-tglobal-large_512_lr:5e-05_prec32",
+    "savename": "mlong-t5-tglobal-large_512_lr:0.00005",
+    "rouge1_test": 0.6926405224961569,
+    "rouge2_test": 0.5869190455168962,
+    "rougeL_test": 0.6419147478945646,
+    "rougeLsum_test": 0.6408981673227945,
+    "loss_test" : 0.6869,
+    "loss_train" : 0.1288
+}

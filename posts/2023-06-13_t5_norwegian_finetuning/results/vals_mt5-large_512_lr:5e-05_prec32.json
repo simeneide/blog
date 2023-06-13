@@ -1,0 +1,21 @@
+{
+    "source_max_token_len": 512,
+    "target_max_token_len": 64,
+    "batch_size": 4,
+    "max_epochs": 100,
+    "early_stopping_patience_epochs": 5,
+    "precision": 32,
+    "use_gpu": true,
+    "num_workers": 4,
+    "learning_rate": 5e-05,
+    "checkpoint": "/home/t5/lightning_logs/mt5-large_512_lr:5e-05_prec32/version_2/checkpoints/epoch=32-step=17390.ckpt",
+    "model_name": "google/mt5-large",
+    "name": "mt5-large_512_lr:5e-05_prec32",
+    "savename": "mt5-large_512_lr:5e-05_prec32",
+    "rouge1_test": 0.6508290980673663,
+    "rouge2_test": 0.5464987548865679,
+    "rougeL_test": 0.6045369245498711,
+    "rougeLsum_test": 0.6045744462306278,
+    "loss_test" : 0.7781,
+    "loss_train" : 0.1736
+}

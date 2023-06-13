@@ -1,0 +1,21 @@
+{
+    "source_max_token_len": 512,
+    "target_max_token_len": 64,
+    "batch_size": 4,
+    "max_epochs": 100,
+    "early_stopping_patience_epochs": 5,
+    "precision": 32,
+    "use_gpu": true,
+    "num_workers": 4,
+    "learning_rate": 5e-05,
+    "checkpoint": "/home/t5/lightning_logs/t5_large_NCC_512k_lr:0.00005/version_0/checkpoints/epoch=8-step=4742.ckpt",
+    "model_name": "north/t5_large_NCC",
+    "name": "t5_large_NCC_512_lr:5e-05_prec32",
+    "savename": "north_t5_large_NCC_512k_lr:0.00005",
+    "rouge1_test": 0.5618192386557666,
+    "rouge2_test": 0.4166829396233666,
+    "rougeL_test": 0.4971118277452421,
+    "rougeLsum_test": 0.4967580796102661,
+    "loss_test" : 0.6706,
+    "loss_train" : 0.4984
+}
