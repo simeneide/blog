@@ -16,3 +16,6 @@ format:
   html:
     theme: cosmo
     css: styles.css
+comments:
+  giscus:
+    repo: simeneide/blog
