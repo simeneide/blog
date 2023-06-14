@@ -126,6 +126,7 @@ Interestingly, it also outperforms the equivalent model with a input token lengt
 Could this be due to the limited dataset, and that the model is not able to learn longer summarization tasks with only 2000 examples.
 
 - The story is more or less opposite if you consider the gpt-4 evaluations. I am not completely sure why this is, but there is a clear negative relationship between rouge scores and gpt-4 evaluations, as seen in @fig-rougevsgpt4.
+- When comparing with losses, it seems that rouge and loss values are consistent, making the gpt-4 evaluation the value that stands out. So maybe the gpt evaluation is less trustworthy? More investigation into this should be done.
 
 ```{python}
 #| label: fig-rougevsgpt4
@@ -135,8 +136,7 @@ fig = px.scatter(results, x='rougeL_test',y="gpt-4", hover_name="name")
 fig
 ```
 
-- The north T5 model performs worst (except the 16 bit variants) in terms of Rouge scores, but best in terms of loss.
-The loss should to our understanding, be comparable at least its base model mt5, so here the metrics are diverging in terms of best performance.
+- The north T5 model performs worst (except the 16 bit variants) in terms of Rouge scores, but best in terms of loss. The loss should to our understanding, be comparable at least its base model mt5, so here the metrics are diverging in terms of best performance.
 
 ```{python}
 #| label: fig-rougeL
