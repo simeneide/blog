@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2021-05-05">
+<meta name="author" content="Simen Eide">
+<meta name="dcterms.date" content="2023-09-14">
 
-<title>eide.ai - Dynamic Slate Recommendation with Gated Recurrent Units and Thompson Sampling</title>
+<title>eide.ai - Opinion - Bet on the open and global language models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +72,7 @@ gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -81,7 +82,7 @@ gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">eide.ai</span>
     </a>
   </div>
@@ -92,7 +93,7 @@ gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -116,21 +117,24 @@ gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Dynamic Slate Recommendation with Gated Recurrent Units and Thompson Sampling</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">recsys</div>
-              </div>
-                  </div>
+      <h1 class="title">Opinion - Bet on the open and global language models</h1>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Simen Eide </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 5, 2021</p>
+        <p class="date">September 14, 2023</p>
       </div>
     </div>
     
@@ -148,16 +152,16 @@ gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
 
 
 
-<p>Authors: Simen Eide, David S. Leslie, Arnoldo Frigessi Publication: Data Mining and Knowledge Discovery Preprint: 5 May 2021 Publication: 19 July 2022</p>
-<p>Paper link: <a href="https://link.springer.com/content/pdf/10.1007/s10618-022-00849-w.pdf">https://link.springer.com/content/pdf/10.1007/s10618-022-00849-w.pdf</a></p>
-<p>Code link: <a href="https://github.com/finn-no/recsys-slates-dataset">https://github.com/finn-no/recsys-slates-dataset</a></p>
-<p><img src="assets_old/interaction_illustration.png" class="img-fluid"></p>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>We consider the problem of recommending relevant content to users of an internet platform in the form of lists of items, called slates. We introduce a variational Bayesian Recurrent Neural Net recommender system that acts on time series of interactions between the internet platform and the user, and which scales to real world industrial situations. The recommender system is tested both online on real users, and on an offline dataset collected from a Norwegian web-based marketplace, this http URL, that is made public for research. This is one of the first publicly available datasets which includes all the slates that are presented to users as well as which items (if any) in the slates were clicked on. Such a data set allows us to move beyond the common assumption that implicitly assumes that users are considering all possible items at each interaction. Instead we build our likelihood using the items that are actually in the slate, and evaluate the strengths and weaknesses of both approaches theoretically and in experiments. We also introduce a hierarchical prior for the item parameters based on group memberships. Both item parameters and user preferences are learned probabilistically. Furthermore, we combine our model with bandit strategies to ensure learning, and introduce `in-slate Thompson Sampling’ which makes use of the slates to maximise explorative opportunities. We show experimentally that explorative recommender strategies perform on par or above their greedy counterparts. Even without making use of exploration to learn more effectively, click rates increase simply because of improved diversity in the recommended slates.</p>
+<p>Sven Thaulow (CTO Schibsted) and me have an <a href="https://www.digi.no/artikler/debatt-bruk-ki-milliarden-riktig-sats-pa-de-apne-globale-sprakmodellene/536777">opinion piece in the norwegian paper digi.no</a> on open sourced LLM, and the discussion on building from scratch vs using global checkpoints as starting points for Norwegian models. We argue that we need to bet on pretrained global and open sourced models.</p>
+<hr>
+<p>Torsdag 7. september annonserte regjeringen at de vil bevilge en milliard kroner over fem år på kunstig intelligens (AI). Språkmodeller har tatt verden med storm, og har mye av æren for dette fokuset. I disse modellene ligger det et stort potensial for innovasjon og verdiskapning i privat og offentlig sektor. I mange tilfeller vil det kreve at vi har gode, oppdaterte språkmodeller som behersker norsk, og at de er tilgjengelige for alle som vil bruke dem.</p>
+<p>Det finnes både proprietære og åpne språkmodeller, og store selskaper kappes om å ha den beste proprietære språkmodellen: OpenAI har GPT-4, Google har Bard og Anthropic har Claude. Felles for disse modellene er at de er svært enkle å ta i bruk. Gjennom proprietære apper og APIer, som chatGPT, kan brukere enkelt generere tekst. Brukervennlighet har bidratt mye til modellenes suksess, men betyr også et økt avhengighetsforhold til disse appene. Avhengighet til APIer er en solid forretningsmodell som det er vanskelig for bedriftene å komme seg ut av. I tillegg baserer en slik forretningsmodell seg på at selve modellen (modellvektene) forblir en godt bevart hemmelighet.</p>
+<p>Samtidig ser vi en økende trend i etablering og bruk av åpne modeller, der de som lager modellene deler modellvektene og gjør dem tilgjengelige for alle (open source). Åpne modellvekter er for AI det som åpen kildekode er for software - det gjør at alle i prinsippet kan kjøre og kontrollere egen AI-modell, uten å måtte be om lov eller betale for det. Åpne språkmodeller gir oss muligheten til å selv fintrene modellene på våre egne oppgaver og data, og muliggjør videre teknologiutvikling.</p>
+<p>OpenAI har hatt et forsprang med sine proprietære GPT-modeller, men de åpne modellene er i ferd med å lukke dette forspranget. De siste modellene ut er Llama2 og Falcon, to åpne modeller som skal kunne <a href="https://arxiv.org/pdf/2307.09288.pdf%C3%82%C2%A0">konkurrere med GPT-3.5</a> og <a href="https://huggingface.co/blog/falcon-180b">GPT-4</a> . Et <a href="https://www.semianalysis.com/p/google-we-have-no-moat-and-neither">lekket notat fra Google</a> argumenterer med at selv ikke de store tech-gigantene kan vinne mot open source-miljøet på sikt. Åpenhet bidrar også til økt transparens og forklarbarhet, fordi man kan undersøke hvorfor modellen gjør som den gjør. Dette kan igjen brukes til å redusere skjevfordelinger og andre uønskede effekter vi ser er tilstede i alle språkmodeller.</p>
+<p>Utfordringen med dagens språkmodeller er at de ikke er gode nok på norsk, med mindre de trenes med store mengder norsk tekst. Det er flere initiativer i Norden i dag hvor det bygges språkmodeller fra bunnen av og Schibsted er selv med i <a href="https://www.ntnu.edu/norwai">NTNU, UiO og UiS sitt NorGPT prosjekt i NorwAI</a>. Dette er viktig forskningsarbeid og en av to måter å få etablert fundamentale språkmodeller på norsk eller nordiske språk. Samtidig må vi anerkjenne at det med dagens teknologi er svært kostbart og energikrevende å trene store språkmodeller fra grunnen av, og at mindre aktører ikke vil ha ressurser til dette. Det er også et åpent spørsmål om alle språk er best tjent med å ha sin egen monospråklige modell. Det er flere indikasjoner på at det å trene modeller på mange språk gjør det bedre enn å trene kun på ett språk. For eksempel finnes tale-til-tekst-modellen Whisper (large) kun som flerspråklig, fordi den <a href="https://cdn.openai.com/papers/whisper.pdf">slo den monospråklige engelske versjonen</a>. Derfor må vi også teste ut den andre metoden - å satse på større, åpne fundamentalmodeller og gjøre de gode på norsk, slik at både små og store aktører kan bygge videre på det dyre og nyttige arbeidet open source-miljøet gjør globalt.</p>
+<p>Det vil komme en strøm av globale og åpne språkmodeller fremover, og de vil bli bedre og bedre. Vi trenger et miljø i Norge som kan trene de nye modellene videre på norsk tekst og tilgjengeliggjøre dem for alle som vil bruke dem. Dette vil være en viktig investering i fremtiden for norsk språk, teknologi og innovasjon og kan muligens være et fullverdig alternativ til språkmodeller som bygges fra bunnen av.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
