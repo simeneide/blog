@@ -1,0 +1,29 @@
+---
+title: "Schibsted Text Tasks"
+author: Simen Eide
+date: 6 Nov 2024
+image: "schibsted-text-tasks.png"
+format:
+  html:
+    code-fold: true
+execute:
+  echo: false
+---
+
+# Schibsted Text Tasks: Introducing New Datasets for Norwegian and Swedish Language Models
+
+Recently, big leaps in large language models (LLMs) have shaken up fields like media and journalism. But even with all this progress, there's still a bit of a gap when it comes to top-notch LLMs for Scandinavian languages like Norwegian and Swedish. To tackle this, Schibsted AI Lab has cooked up three new datasets aimed at boosting how well LLMs work and are tested in these languages. These datasets are the same as we use for our internal LLM training, and we hope they are useful as benchmarks for others too.
+
+These datasets provide rich, real-world examples from the media domain, aiding in the fine-tuning and benchmarking of LLMs for Scandinavian languages. We might do more, get in touch if you have specific ideas.
+
+You can find these datasets on [Datasets](https://huggingface.co/collections/Schibsted/schibsted-text-tasks-66655bce94d0f40432519347).
+
+## The Datasets
+
+1. **VG Frontpage Titles**: This dataset comprises frontpage titles from Verdens Gang (VG), a popular Norwegian news outlet. The titles are crafted to capture reader attention and encourage engagement.
+
+2. **Schibsted Article Summaries**: Gathered from various Norwegian and Swedish news outlets, this dataset offers published article summaries, making it an ideal tool for developing summarization capabilities in LLMs.
+
+3. **Svenska Dagbladet SEO Titles**: This Swedish dataset focuses on SEO-optimized titles from Svenska Dagbladet (SvD), designed to enhance search engine visibility through carefully chosen keywords.
+
+The datasets are freely accessible for research purposes under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
