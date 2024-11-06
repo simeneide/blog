@@ -1,5 +1,5 @@
 ---
-title: Opinion - Bet on the open and global language models
+title: "Opinion: Bet on the open and global language models"
 author: Simen Eide
 date: 14 September 2023
 image: "profile.png"
@@ -12,6 +12,13 @@ execute:
 
 Sven Thaulow (CTO Schibsted) and me have an [opinion piece in the norwegian paper digi.no](https://www.digi.no/artikler/debatt-bruk-ki-milliarden-riktig-sats-pa-de-apne-globale-sprakmodellene/536777) on open sourced LLM, and the discussion on building from scratch vs using global checkpoints as starting points for Norwegian models.
 We argue that we need to bet on pretrained global and open sourced models.
+
+<div style="text-align: center;">
+  <img alt="Faksimile digi.no" src="profile.png" width="50%" height="">
+</div>
+``` 
+
+This will ensure the image is centered on the page.
 
 ---
 
