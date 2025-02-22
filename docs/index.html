@@ -64,7 +64,35 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-short_posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-short_posts'] = new List('listing-short_posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog_posts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -77,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-blog_posts'] = new List('listing-blog_posts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -175,7 +203,52 @@ gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-table" id="listing-short_posts">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1738796400000" data-listing-file-modified-sort="1740211218052" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Presentation: The DeepSeek hype" data-listing-filename-sort="deepseek.md">
+<td>
+<span class="listing-date">Feb 6, 2025</span>
+</td>
+<td>
+<a href="./short_posts/2025-02-06 deepseek hype pres/deepseek.html" class="title listing-title">Presentation: The DeepSeek hype</a>
+</td>
+<td>
+<span class="listing-description">A non-technical presentation on the DeepSeek hype, llms and reinforcement learning.</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1736118000000" data-listing-file-modified-sort="1740211562529" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Paper: BoRA" data-listing-filename-sort="bora.md">
+<td>
+<span class="listing-date">Jan 6, 2025</span>
+</td>
+<td>
+<a href="./short_posts/2025-01-06 bora/bora.html" class="title listing-title">Paper: BoRA</a>
+</td>
+<td>
+<span class="listing-description">New published paper: Bayesian Hierarchical Low-Rank Adaption for Multi-task Large Language Models on the NLDL 2025 conference (link).</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><div class="quarto-listing quarto-listing-container-default" id="listing-blog_posts">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-listing-date-sort="1730847600000" data-listing-file-modified-sort="1730910622405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">

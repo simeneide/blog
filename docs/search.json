@@ -249,7 +249,7 @@
     "href": "index.html",
     "title": "eide.ai",
     "section": "",
-    "text": "Schibsted Text Tasks\n\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2024\n\n\nSimen Eide\n\n\n\n\n\n\n  \n\n\n\n\nOpinion: Bet on the open and global language models\n\n\n\n\n\n\n\n\n\n\n\n\nSep 14, 2023\n\n\nSimen Eide\n\n\n\n\n\n\n  \n\n\n\n\nBenchmarking different Norwegian T5 models for a fine-tuning summarization task\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nSimen Eide\n\n\n\n\n\n\n  \n\n\n\n\nDynamic Slate Recommendation with Gated Recurrent Units and Thompson Sampling\n\n\n\n\n\n\n\n\n\n\n\n\nMay 5, 2021\n\n\n\n\n\n\n  \n\n\n\n\nBayesian Neural Nets and how to effectively train them with Stochastic Gradient Markov Chain Monte Carlo\n\n\n\n\n\nAn intuitive review of training bayesian neural nets with markov chain methods\n\n\n\n\n\n\nNov 13, 2020\n\n\n\n\n\n\n  \n\n\n\n\nRunning Google Colab with VS code\n\n\n\n\n\n\n\n\n\n\n\n\nSep 14, 2020\n\n\n\n\n\n\n  \n\n\n\n\nInstalling Pytorch on a raspberry pi 4\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2020\n\n\n\n\n\n\n  \n\n\n\n\nPILCO and Deep PILCO\n\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2019\n\n\n\n\n\n\n  \n\n\n\n\nTakeaways Recsys 2018\n\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2018\n\n\n\n\n\n\n  \n\n\n\n\nBPMF presentation\n\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2018\n\n\n\n\n\n\n  \n\n\n\n\nKDD workshop Deep learning Day: Five lessons from building a deep neural network recommender for marketplaces\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2018\n\n\n\n\n\n\n  \n\n\n\n\nDeep Recommenders, Car Pricing, Self driving rc-car and other projects in 2017\n\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2018\n\n\n\n\n\n\n  \n\n\n\n\nDeep NLP-based Recommenders at Finn.no\n\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2017\n\n\n\n\n\n\n  \n\n\n\n\nJupyter lab - First impression\n\n\n\n\n\n\n\n\n\n\n\n\nJul 30, 2017\n\n\n\n\n\n\n  \n\n\n\n\nCollaborative Filtering Recommendations in Spreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\nMay 28, 2017\n\n\n\n\n\n\n  \n\n\n\n\nPresentation from Oslo Data Science Meetup\n\n\n\n\n\n\n\n\n\n\n\n\nMar 30, 2017\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nFeb 6, 2025\n\n\nPresentation: The DeepSeek hype\n\n\n\n\n\n\n\nJan 6, 2025\n\n\nPaper: BoRA\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n  \n\n\n\n\nSchibsted Text Tasks\n\n\n\n\n\n\n\n\n\n\n\n\nNov 6, 2024\n\n\nSimen Eide\n\n\n\n\n\n\n  \n\n\n\n\nOpinion: Bet on the open and global language models\n\n\n\n\n\n\n\n\n\n\n\n\nSep 14, 2023\n\n\nSimen Eide\n\n\n\n\n\n\n  \n\n\n\n\nBenchmarking different Norwegian T5 models for a fine-tuning summarization task\n\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\nSimen Eide\n\n\n\n\n\n\n  \n\n\n\n\nDynamic Slate Recommendation with Gated Recurrent Units and Thompson Sampling\n\n\n\n\n\n\n\n\n\n\n\n\nMay 5, 2021\n\n\n\n\n\n\n  \n\n\n\n\nBayesian Neural Nets and how to effectively train them with Stochastic Gradient Markov Chain Monte Carlo\n\n\n\n\n\nAn intuitive review of training bayesian neural nets with markov chain methods\n\n\n\n\n\n\nNov 13, 2020\n\n\n\n\n\n\n  \n\n\n\n\nRunning Google Colab with VS code\n\n\n\n\n\n\n\n\n\n\n\n\nSep 14, 2020\n\n\n\n\n\n\n  \n\n\n\n\nInstalling Pytorch on a raspberry pi 4\n\n\n\n\n\n\n\n\n\n\n\n\nJun 30, 2020\n\n\n\n\n\n\n  \n\n\n\n\nPILCO and Deep PILCO\n\n\n\n\n\n\n\n\n\n\n\n\nJan 17, 2019\n\n\n\n\n\n\n  \n\n\n\n\nTakeaways Recsys 2018\n\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2018\n\n\n\n\n\n\n  \n\n\n\n\nBPMF presentation\n\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2018\n\n\n\n\n\n\n  \n\n\n\n\nKDD workshop Deep learning Day: Five lessons from building a deep neural network recommender for marketplaces\n\n\n\n\n\n\n\n\n\n\n\n\nAug 19, 2018\n\n\n\n\n\n\n  \n\n\n\n\nDeep Recommenders, Car Pricing, Self driving rc-car and other projects in 2017\n\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2018\n\n\n\n\n\n\n  \n\n\n\n\nDeep NLP-based Recommenders at Finn.no\n\n\n\n\n\n\n\n\n\n\n\n\nSep 11, 2017\n\n\n\n\n\n\n  \n\n\n\n\nJupyter lab - First impression\n\n\n\n\n\n\n\n\n\n\n\n\nJul 30, 2017\n\n\n\n\n\n\n  \n\n\n\n\nCollaborative Filtering Recommendations in Spreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\nMay 28, 2017\n\n\n\n\n\n\n  \n\n\n\n\nPresentation from Oslo Data Science Meetup\n\n\n\n\n\n\n\n\n\n\n\n\nMar 30, 2017\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "readme.html",
@@ -263,6 +263,20 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Math guy with hacking skills at the Norwegian marketplace FINN.no and at the machine learning startup Arctic Datalab. I am also doing an industrial phd in statistics at University of Oslo where I focus on personalization, bayesian statistics and bandits. Working on personalization systems and other machine learning tasks using behaviour, image and text. Background from mathematics, statistics and financial modeling."
+    "text": "Math guy with hacking skills at the Norwegian media company Schibsted.\nI am also doing an industrial phd in statistics at University of Oslo where I focus on personalization, bayesian statistics and bandits. Working on personalization systems and other machine learning tasks using behaviour, image and text.\nBackground from mathematics, statistics and financial modeling."
+  },
+  {
+    "objectID": "short_posts/2025-01-06 bora/bora.html",
+    "href": "short_posts/2025-01-06 bora/bora.html",
+    "title": "Paper: BoRA",
+    "section": "",
+    "text": "New published paper: Bayesian Hierarchical Low-Rank Adaption for Multi-task Large Language Models on the NLDL 2025 conference (link)."
+  },
+  {
+    "objectID": "short_posts/2025-02-06 deepseek hype pres/deepseek.html",
+    "href": "short_posts/2025-02-06 deepseek hype pres/deepseek.html",
+    "title": "Presentation: The DeepSeek hype",
+    "section": "",
+    "text": "A non-technical presentation on the DeepSeek hype, llms and reinforcement learning."
   }
 ]
