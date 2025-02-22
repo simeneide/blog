@@ -1,12 +1,23 @@
 ---
 title: "eide.ai"
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
+  - id: short_posts
+    contents: short_posts
+    sort: "date desc"
+    type: "table"
+    max-items: 3
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    fields: [date, title, description]
+
+  - id: blog_posts
+    contents: posts
+    sort: "date desc"
+    type: default
+    categories: false
+    sort-ui: false
+    filter-ui: false
 page-layout: full
 title-block-banner: true
 ---
