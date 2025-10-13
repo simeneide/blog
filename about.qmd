@@ -15,7 +15,8 @@ about:
       href: https://github.com/simeneide
 
 ---
-Math guy with hacking skills at the Norwegian media company Schibsted.  
-I am also doing an industrial phd in statistics at University of Oslo where I focus on personalization, bayesian statistics and bandits. 
-Working on personalization systems and other machine learning tasks using behaviour, image and text.  
-Background from mathematics, statistics and financial modeling.
+AI specialist in LLMs, recommender systems, quantitative risk models and generative AI. Led large-scale AI transformation at Schibsted and created algorithms driving major user engagement in media and marketplaces.
+
+I am interested in the feedback loop of AI systems from fundamental level and how we can learn from it. During my career I have always worked in the intersection of academia and industry on large scale AI systems in media, finance and marketplaces.
+
+Contact: simen (at) eide.ai

@@ -1,5 +1,20 @@
 ---
-title: "eide.ai"
+#title: "eide.ai"
+about:
+  image: profile.jpg
+  template: jolla
+  image-shape: round
+  image-width: 10em
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/simeneide
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/simeneide/
+    - icon: github
+      text: Github
+      href: https://github.com/simeneide
 listing:
   - id: short_posts
     contents: short_posts
@@ -21,3 +36,14 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+:::{#about}
+
+AI specialist in LLMs, recommender systems, quantitative risk models and generative AI. Led large-scale AI transformation at Schibsted and created algorithms driving major user engagement in media and marketplaces. [Read more](about.qmd)
+
+## Short posts
+:::{#short_posts}
+:::
+
+## Blog posts
+:::{#blog_posts}
+:::
