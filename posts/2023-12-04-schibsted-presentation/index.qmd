@@ -1,0 +1,12 @@
+---
+title: "Talk: Training and deploying LLMs in products"
+date: 2023-12-04
+categories: [talks]
+description: ""
+---
+
+I was invited to Mediebedriftenes landsforening to talk about how we are training and deploying various LLMs in our products. Thanks for having me!
+
+{{< video https://www.youtube.com/embed/na4RTO_dn6M >}}
+
+[Watch the presentation on YouTube](https://www.youtube.com/watch?v=na4RTO_dn6M)
