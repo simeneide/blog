@@ -2,12 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/short_posts/2025-02-25 uiT presentation/uit_lora.html",
-      "/short_posts/2025-02-06 deepseek hype pres/deepseek.html",
-      "/short_posts/2025-01-06 bora/bora.html",
-      "/posts/2024-11-06-schibsted-text-tasks/2024-11-06-schibsted-text-tasks.html",
-      "/posts/2023-09-15_bet-on-open-source-llm/2023-09-16_bet-on-open-source-llms.html",
-      "/posts/2023-06-13_t5_norwegian_finetuning/fine-tuning-T5-for-summarization.html",
+      "/posts/2025-11-28-trial-lecture/main_notes.html",
+      "/posts/2023-12-04-schibsted-presentation/index.html",
       "/posts/2021-05-05-dynamic-slate-recsys.html",
       "/posts/2020-11-13-bayesian-deep-learning.html",
       "/posts/2020-09-14-colab-vscode-gpu.html",
