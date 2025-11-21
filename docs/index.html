@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -224,15 +224,54 @@ window.Quarto = {
 <section id="short-posts" class="level2">
 <h2 data-anchor-id="short-posts">Short posts</h2>
 <div id="listing-short_posts" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table caption-top">
+<table class="quarto-listing-table table">
 <thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Date</th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Description</th>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-listing-date-sort="1740438000000" data-listing-file-modified-sort="1763720442360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Presentation: Guest lecture machine learning course University of Tromsø" data-listing-filename-sort="uit_lora.md">
+<td>
+<span class="listing-date">Feb 25, 2025</span>
+</td>
+<td>
+<a href="./short_posts/2025-02-25 uiT presentation/uit_lora.html" class="title listing-title">Presentation: Guest lecture machine learning course University of Tromsø</a>
+</td>
+<td>
+<span class="listing-description">Had the pleasure of talking to phd and master students from University of Trømsø about schibsted how we train language models.</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1738796400000" data-listing-file-modified-sort="1763720442343" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14" data-listing-title-sort="Presentation: The DeepSeek hype" data-listing-filename-sort="deepseek.md">
+<td>
+<span class="listing-date">Feb 6, 2025</span>
+</td>
+<td>
+<a href="./short_posts/2025-02-06 deepseek hype pres/deepseek.html" class="title listing-title">Presentation: The DeepSeek hype</a>
+</td>
+<td>
+<span class="listing-description">A non-technical presentation on the DeepSeek hype, llms and reinforcement learning.</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1736118000000" data-listing-file-modified-sort="1763720442339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20" data-listing-title-sort="Paper: BoRA" data-listing-filename-sort="bora.md">
+<td>
+<span class="listing-date">Jan 6, 2025</span>
+</td>
+<td>
+<a href="./short_posts/2025-01-06 bora/bora.html" class="title listing-title">Paper: BoRA</a>
+</td>
+<td>
+<span class="listing-description">New published paper: Bayesian Hierarchical Low-Rank Adaption for Multi-task Large Language Models on the NLDL 2025 conference (paper link).</span>
+</td>
+</tr>
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
@@ -268,7 +307,33 @@ Simen Eide
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="dGFsa3M=" data-listing-date-sort="1701644400000" data-listing-file-modified-sort="1761839671240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1730847600000" data-listing-file-modified-sort="1763720417193" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
+<div class="thumbnail"><a href="./posts/2024-11-06-schibsted-text-tasks/2024-11-06-schibsted-text-tasks.html" class="no-external">
+<img loading="lazy" src="./posts/2024-11-06-schibsted-text-tasks/schibsted-text-tasks.png" class="thumbnail-image">
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-11-06-schibsted-text-tasks/2024-11-06-schibsted-text-tasks.html" class="no-external">Schibsted Text Tasks</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-11-06-schibsted-text-tasks/2024-11-06-schibsted-text-tasks.html" class="no-external"></a>
+</div>
+<div class="delink listing-description"><a href="./posts/2024-11-06-schibsted-text-tasks/2024-11-06-schibsted-text-tasks.html" class="no-external">
+Recently, big leaps in large language models (LLMs) have shaken up fields like media and journalism. But even with all this progress, there’s still a bit of a gap when it…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-11-06-schibsted-text-tasks/2024-11-06-schibsted-text-tasks.html" class="no-external">
+<div class="listing-date">
+Nov 6, 2024
+</div>
+<div class="listing-author">
+Simen Eide
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="dGFsa3M=" data-listing-date-sort="1701644400000" data-listing-file-modified-sort="1761839671240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
 <div class="thumbnail"><a href="./posts/2023-12-04-schibsted-presentation/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 </a></div>
@@ -291,7 +356,59 @@ Dec 4, 2023
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="cmVjc3lz" data-listing-date-sort="1620165600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1694642400000" data-listing-file-modified-sort="1763720417188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="698">
+<div class="thumbnail"><a href="./posts/2023-09-15_bet-on-open-source-llm/2023-09-16_bet-on-open-source-llms.html" class="no-external">
+<img loading="lazy" src="./posts/2023-09-15_bet-on-open-source-llm/profile.png" class="thumbnail-image">
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-09-15_bet-on-open-source-llm/2023-09-16_bet-on-open-source-llms.html" class="no-external">Opinion: Bet on the open and global language models</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-09-15_bet-on-open-source-llm/2023-09-16_bet-on-open-source-llms.html" class="no-external"></a>
+</div>
+<div class="delink listing-description"><a href="./posts/2023-09-15_bet-on-open-source-llm/2023-09-16_bet-on-open-source-llms.html" class="no-external">
+Sven Thaulow (CTO Schibsted) and me have an opinion piece in the norwegian paper digi.no on open sourced LLM, and the discussion on building from scratch vs using global…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-15_bet-on-open-source-llm/2023-09-16_bet-on-open-source-llms.html" class="no-external">
+<div class="listing-date">
+Sep 14, 2023
+</div>
+<div class="listing-author">
+Simen Eide
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1686520800000" data-listing-file-modified-sort="1763720417186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1204">
+<div class="thumbnail"><a href="./posts/2023-06-13_t5_norwegian_finetuning/fine-tuning-T5-for-summarization.html" class="no-external">
+<img loading="lazy" src="./posts/2023-06-13_t5_norwegian_finetuning/main_img.png" class="thumbnail-image">
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-13_t5_norwegian_finetuning/fine-tuning-T5-for-summarization.html" class="no-external">Benchmarking different Norwegian T5 models for a fine-tuning summarization task</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-06-13_t5_norwegian_finetuning/fine-tuning-T5-for-summarization.html" class="no-external"></a>
+</div>
+<div class="delink listing-description"><a href="./posts/2023-06-13_t5_norwegian_finetuning/fine-tuning-T5-for-summarization.html" class="no-external">
+There are many different text models to choose from when you want to perform some downstream task, but which should you choose for your fine-tuning task? Although there are…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-13_t5_norwegian_finetuning/fine-tuning-T5-for-summarization.html" class="no-external">
+<div class="listing-date">
+Jun 12, 2023
+</div>
+<div class="listing-author">
+Simen Eide
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="cmVjc3lz" data-listing-date-sort="1620165600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
 <div class="thumbnail"><a href="./posts/2021-05-05-dynamic-slate-recsys.html" class="no-external">
 <img loading="lazy" src="./posts/assets_old/interaction_illustration.png" class="thumbnail-image">
 </a></div>
@@ -314,7 +431,7 @@ May 5, 2021
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="YmF5ZXNpYW4lMkNuZXVyYWwlMjBuZXRzJTJDbWNtYw==" data-listing-date-sort="1605222000000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2752">
+<div class="quarto-post image-right" data-index="6" data-categories="YmF5ZXNpYW4lMkNuZXVyYWwlMjBuZXRzJTJDbWNtYw==" data-listing-date-sort="1605222000000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2752">
 <div class="thumbnail"><a href="./posts/2020-11-13-bayesian-deep-learning.html" class="no-external">
 <img loading="lazy" src="./posts/assets_old/mcmc-trace.png" class="thumbnail-image">
 </a></div>
@@ -337,7 +454,7 @@ Nov 13, 2020
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="dnNjb2Rl" data-listing-date-sort="1600034400000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274">
+<div class="quarto-post image-right" data-index="7" data-categories="dnNjb2Rl" data-listing-date-sort="1600034400000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274">
 <div class="thumbnail"><a href="./posts/2020-09-14-colab-vscode-gpu.html" class="no-external">
 <p class="card-img-top"><img src="posts/assets_old/assets/2020-09-14-12-29-52.png"  class="thumbnail-image card-img"/></p>
 </a></div>
@@ -360,7 +477,7 @@ Sep 14, 2020
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="cnBpNCUyQ3B5dG9yY2g=" data-listing-date-sort="1593468000000" data-listing-file-modified-sort="1686667441000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
+<div class="quarto-post image-right" data-index="8" data-categories="cnBpNCUyQ3B5dG9yY2g=" data-listing-date-sort="1593468000000" data-listing-file-modified-sort="1686667441000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
 <div class="thumbnail"><a href="./posts/2020-06-30-pytorch-raspberry.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 </a></div>
@@ -383,7 +500,7 @@ Jun 30, 2020
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Ukw=" data-listing-date-sort="1547679600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
+<div class="quarto-post image-right" data-index="9" data-categories="Ukw=" data-listing-date-sort="1547679600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
 <div class="thumbnail"><a href="./posts/2019-01-17-pilco+improve.html" class="no-external">
 <img loading="lazy" src="./posts/assets_old/pilco-preview.png" class="thumbnail-image">
 </a></div>
@@ -406,7 +523,7 @@ Jan 17, 2019
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="cmVjc3lzJTJDY29uZmVyZW5jZQ==" data-listing-date-sort="1538776800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
+<div class="quarto-post image-right" data-index="10" data-categories="cmVjc3lzJTJDY29uZmVyZW5jZQ==" data-listing-date-sort="1538776800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
 <div class="thumbnail"><a href="./posts/2018-10-06-recsys2018.html" class="no-external">
 <p class="card-img-top"><img src="posts/assets_old/assets/2018-10-06-recsys2018-0867f3e3.png" alt="2018-10-06-recsys2018-0867f3e3.png"  class="thumbnail-image card-img"/></p>
 </a></div>
@@ -429,7 +546,7 @@ Oct 6, 2018
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="YmF5ZXNpYW4lMkNNYXRyaXglMjBGYWN0b3JpemF0aW9uJTJDTUNNQw==" data-listing-date-sort="1538776800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
+<div class="quarto-post image-right" data-index="11" data-categories="YmF5ZXNpYW4lMkNNYXRyaXglMjBGYWN0b3JpemF0aW9uJTJDTUNNQw==" data-listing-date-sort="1538776800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
 <div class="thumbnail"><a href="./posts/2018-11-23-bpmf-paper.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 </a></div>
@@ -452,7 +569,7 @@ Oct 6, 2018
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Y29uZmVyZW5jZQ==" data-listing-date-sort="1534629600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
+<div class="quarto-post image-right" data-index="12" data-categories="Y29uZmVyZW5jZQ==" data-listing-date-sort="1534629600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
 <div class="thumbnail"><a href="./posts/2018-08-19-kdd-workshop.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 </a></div>
@@ -475,7 +592,7 @@ Aug 19, 2018
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="cmVjc3lzJTJDY2FycHJpY2UlMkNhdXRvbm9tb3VzJTIwY2Fycw==" data-listing-date-sort="1514934000000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="883">
+<div class="quarto-post image-right" data-index="13" data-categories="cmVjc3lzJTJDY2FycHJpY2UlMkNhdXRvbm9tb3VzJTIwY2Fycw==" data-listing-date-sort="1514934000000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="883">
 <div class="thumbnail"><a href="./posts/2018-01-03-talks-and-projects-2017.html" class="no-external">
 <p class="card-img-top"><img src="posts/assets_old/assets/2017-10-10-eide-finn-model-zoo.png" alt="How FINNs personalization algorithms work"  class="thumbnail-image card-img"/></p>
 </a></div>
@@ -498,7 +615,7 @@ Jan 3, 2018
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="bmxw" data-listing-date-sort="1505080800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="875">
+<div class="quarto-post image-right" data-index="14" data-categories="bmxw" data-listing-date-sort="1505080800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="875">
 <div class="thumbnail"><a href="./posts/2017-09-11-deep-nlp-rec.html" class="no-external">
 <p class="card-img-top"><img src="posts/assets_old/assets/2017-09-08-NLP-based-recommenders-at-finn/model architecture proposed by the paper.png" alt="alt" title="Model architecture proposed by the paper" class="thumbnail-image card-img"/></p>
 </a></div>
@@ -521,7 +638,7 @@ Sep 11, 2017
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="anVweXRlcg==" data-listing-date-sort="1501365600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
+<div class="quarto-post image-right" data-index="15" data-categories="anVweXRlcg==" data-listing-date-sort="1501365600000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
 <div class="thumbnail"><a href="./posts/2017-07-30-jupyter-lab.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 </a></div>
@@ -544,7 +661,7 @@ Jul 30, 2017
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="bWF0cml4JTIwZmFjdG9yaXphdGlvbiUyQ3JlY3N5cw==" data-listing-date-sort="1495922400000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="690">
+<div class="quarto-post image-right" data-index="16" data-categories="bWF0cml4JTIwZmFjdG9yaXphdGlvbiUyQ3JlY3N5cw==" data-listing-date-sort="1495922400000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="690">
 <div class="thumbnail"><a href="./posts/2017-05-28-CFexcel.html" class="no-external">
 <p class="card-img-top"><img src="posts/assets_old/assets/cfExcel/dataset.png"  class="thumbnail-image card-img"/></p>
 </a></div>
@@ -567,7 +684,7 @@ May 28, 2017
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="cmVjc3lz" data-listing-date-sort="1490824800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="quarto-post image-right" data-index="17" data-categories="cmVjc3lz" data-listing-date-sort="1490824800000" data-listing-file-modified-sort="1686665016000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
 <div class="thumbnail"><a href="./posts/2017-03-30-osloDataSciencePresentation.html" class="no-external">
 <p class="card-img-top"><img src="posts/assets_old/assets/draw-spark-tensorflow.jpg"  class="thumbnail-image card-img"/></p>
 </a></div>
