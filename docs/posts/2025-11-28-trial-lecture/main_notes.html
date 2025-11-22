@@ -174,6 +174,7 @@ Simen Eide
 <section id="agenda" class="slide level2">
 <h2>Agenda</h2>
 <ul>
+<li>Motivational LLM In Context Learning</li>
 <li>Traditional Bayesian approach</li>
 <li>Predictive Bayesian Motivation</li>
 <li>Predictive resampling algorithm</li>
@@ -186,26 +187,140 @@ Simen Eide
 </div>
 </section>
 <section>
+<section id="llm-in-context-learning" class="title-slide slide level1 center">
+<h1>LLM In-Context Learning</h1>
+
+</section>
+<section id="llm-in-context-learning-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">LLM In-Context Learning</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Assume we ask an LLM to solve the following problem</li>
+</ul>
+</div><div class="column">
+<pre><code>Where should this person go on holiday based on some information of that person?</code></pre>
+<pre><code>x: Simen just defended his PhD in Machine Learning and enjoys paragliding
+y:</code></pre>
+</div></div>
+</section>
+<section id="llm-in-context-learning-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">LLM In-Context Learning</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li><p>Assume we ask an LLM to solve the following problem</p></li>
+<li><p><span style="color: blue;">Collect some few shot examples</span></p></li>
+</ul>
+</div><div class="column">
+<pre><code>Where should this person go on holiday based on some information of that person?</code></pre>
+<div class="blue-code">
+<pre><code>x: Anders is a physicist and likes to discuss philosophy
+y: destination=Rome
+
+x: Kamilla enjoys skiing and works at the local university
+y: destination=Alps</code></pre>
+</div>
+<pre><code>x: Simen just defended his PhD in Machine Learning and enjoys paragliding
+y:</code></pre>
+</div></div>
+</section>
+<section id="llm-in-context-learning-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">LLM In-Context Learning</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Assume we ask an LLM to solve the following problem</li>
+<li><span style="color: blue;">Collect some few shot examples</span></li>
+<li><span style="color: red;">Let the LLM generate additional examples</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Repeat and record answer</li>
+</ul>
+</div>
+<div class="fragment">
+<p><img data-src="attachments/predictive_resampling_llm_B20_N3.png"></p>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Valid? Posterior predictive?</strong></li>
+</ul>
+</div>
+</div><div class="column">
+<pre><code>Where should this person go on holiday based on some information of that person?</code></pre>
+<div class="blue-code">
+<pre><code>x: Anders is a physicist and likes to discuss philosophy
+y: destination=Rome
+
+x: Kamilla enjoys skiing and works at the local university
+y: destination=Alps</code></pre>
+</div>
+<div class="red-code">
+<pre><code>x: Maria is retired and spends her time gardening and traveling
+y: destination=Madeira
+
+x: Sven just quit his job and is now playing in a band with his friends.
+y: destination=Nashville
+
+x: Elias is in military conscription and is considering studying engineering afterward
+y: destination=Berlin
+
+x: Ingrid is a medical resident finishing her fourth year of specialty training
+y: destination=The Well
+
+x: Thomas just became a partner at a consulting firm and enjoys sailing
+y: destination=Maldives</code></pre>
+</div>
+<pre><code>x: Simen just defended his PhD in Machine Learning and enjoys paragliding
+y:</code></pre>
+</div></div>
+</section></section>
+<section>
 <section id="traditional-bayesian-approach" class="title-slide slide level1 center">
 <h1>Traditional Bayesian approach</h1>
 
 </section>
 <section id="traditional-bayesian-approach-1" class="slide level2">
 <h2>Traditional Bayesian approach</h2>
+<aside class="notes">
+<ul>
+<li>Collect data points from an unknown distribution <span class="math inline">\(F_0\)</span></li>
+<li>Define a prior <span class="math inline">\(\pi(\theta)\)</span> and a likelihood <span class="math inline">\(f_\theta(y)\)</span></li>
+<li>Compute the posterior <span class="math inline">\(P(\theta | y_{1:n})\)</span></li>
+<li>Compute the posterior predictive <span class="math inline">\(P(y | y_{1:n})\)</span></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="fragment fade-in-then-semi-out">
 <ul>
-<li>We have collected <span class="math inline">\(y_{1:n}\)</span> data points from an unknown distribution <span class="math inline">\(F_0\)</span>.</li>
-<li>We want to learn something about <span class="math inline">\(F_0\)</span>.</li>
+<li>We have <strong>collected <span class="math inline">\(y_{1:n}\)</span> data points</strong> from an unknown distribution <span class="math inline">\(F_0\)</span>.</li>
 </ul>
 </div>
 <div class="fragment fade-in-then-semi-out">
-<p>If we want to compute the posterior predictive with traditional Bayesian methods, we would define a prior <span class="math inline">\(\pi(\theta)\)</span> and a sampling density <span class="math inline">\(f_{\theta}(y)\)</span> and a likelihood (i.i.d) <span class="math inline">\(p_{\theta}(y_{1:n}) = \prod_{i=1}^n f_\theta(y_i)\)</span>. We can then collect some data <span class="math inline">\(y_{1:n}\)</span> and define the posterior</p>
+<ul>
+<li>Prior <span class="math inline">\(\pi(\theta)\)</span></li>
+<li>Sampling density <span class="math inline">\(f_{\theta}(y)\)</span></li>
+<li>Likelihood <span class="math inline">\(f_\theta(y) = p(y_{1:n} | \theta) = \prod_{i=1}^n f_\theta(y_i)\)</span></li>
+</ul>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="posterior">Posterior</h4>
 <p><span id="eq-posterior"><span class="math display">\[
 P(\theta | y_{1:n}) =
     \frac
     {\pi(\theta) p(y_{1:n} | \theta )}
     {\int \pi(\theta) p(y_{1:n} | \theta ) d\theta}
 \tag{1}\]</span></span></p>
+</div>
 </div>
 <div class="fragment fade-in-then-semi-out">
 <h4 id="posterior-predictive">Posterior predictive</h4>
@@ -218,57 +333,117 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 <p><strong>Traditional Bayes</strong> | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion</p>
 </div>
 </section>
-<section id="what-is-a-prior-in-a-bayesian-neural-net-really" class="slide level2">
-<h2>What is a prior in a Bayesian Neural net really?</h2>
+<section id="prior-in-a-neural-network" class="slide level2">
+<h2>Prior in a Neural Network?!</h2>
+<aside class="notes">
 <ul>
 <li>Neural nets are black box models that are hard to interpret</li>
 <li>How can we have any intuition or prior knowledge about the parameters in hidden layers?</li>
 </ul>
-<h3 id="standard-answer">Standard answer:</h3>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="fragment fade-in-then-semi-out">
 <ul>
-<li>“We dont care, we just want to use it for variability”</li>
-<li>Mis-specified prior can “put probability mass in the wrong places”</li>
+<li>Complicated black box models</li>
+<li>How can we have any intuition?</li>
 </ul>
-<h3 id="maybe-we-should-define-our-models-in-a-different-way">Maybe we should define our models in a different way?</h3>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="standard-answer">Standard answer:</h4>
+<blockquote>
+<p>We dont care, we just want to use it for variability</p>
+</blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<h3 id="today-start-at-a-different-point">Today: Start at a different point?</h3>
+</div>
+<div class="fragment fade-in-then-semi-out">
 <ul>
-<li>Specify a predictive distribution <span class="math inline">\(p(y_{n+1} | y_{1:n})\)</span> instead of a prior <span class="math inline">\(\pi(\theta)\)</span> and a likelihood <span class="math inline">\(f_{\theta}(y)\)</span></li>
-<li>We can still get posteriors, but they are not the same as in traditional Bayesian inference</li>
+<li>These black box neural are closer to defining the predictive distribution</li>
 </ul>
-<p>Motivational example with LLM?</p>
+<p><span class="math display">\[p(y_{n+1} | y_{1:n})\]</span></p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Specify a predictive distribution instead of prior+likelihood</li>
+</ul>
+</div>
 </section></section>
 <section>
-<section id="predictive-bayesian-motivation" class="title-slide slide level1 center">
-<h1>Predictive Bayesian Motivation</h1>
+<section id="predictive-bayes-motivation" class="title-slide slide level1 center">
+<h1>Predictive Bayes Motivation</h1>
 
 </section>
 <section id="compute-statistics-from-an-infinite-population" class="slide level2">
 <h2>Compute statistics from an infinite population</h2>
+<div class="fragment fade-in-then-semi-out">
 <ul>
-<li>Instead of defining prior+likelihood, we can think of bayesian ucertainty to originate from <em>missing data</em>.</li>
-<li>Predictive inference takes a different approach:</li>
+<li>Think of bayesian ucertainty to originate from <em>missing data</em>:</li>
 </ul>
 <blockquote>
 <p>The assumption behind most, if not all, statistical problems is that there is an amount of data, <span class="math inline">\(x_{comp}\)</span>, which if observed, would yield the problem solved. (<span class="citation" data-cites="holmesStatisticalInferenceExchangeability2023">Holmes and Walker (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>)</p>
 </blockquote>
+</div>
+<div class="fragment fade-in">
 <p>For example:</p>
+</div>
+<div class="fade-in-then-semi-out">
 <ul>
-<li>Consider i.i.d. observations from an infinite population.</li>
-<li>We have collected <span class="math inline">\(x_\text{obs} := x_{1:n}\)</span></li>
-<li>The missing data are then <span class="math inline">\(x_\text{mis} := x_{n+1:\infty}\)</span></li>
-<li>If we had access to the full data <span class="math inline">\(x_{comp} := \{x_\text{obs}, x_\text{mis} \}\)</span>, we could compute any statistics of interest with near zero uncertainty.</li>
+<li class="fragment">Consider i.i.d. observations from an infinite population.</li>
+<li class="fragment">We have collected <span class="math inline">\(y_\text{obs} := y_{1:n}\)</span></li>
+<li class="fragment">The missing data are then <span class="math inline">\(y_\text{mis} := y_{n+1:{\infty}}\)</span></li>
+<li class="fragment">If we had access to the full data <span class="math inline">\(y_{comp} := \{y_\text{obs}, y_\text{mis} \}\)</span>, we could compute any statistics of interest with near zero uncertainty.</li>
 </ul>
-<p>But we do not have <span class="math inline">\(x_\text{mis}\)</span>! But if we could provide a conditional distribution of the missing data given the observed data, we could marginalize over the missing data:</p>
-<p>For example, consider the Bayesian posterior can be written as</p>
+</div>
+</section>
+<section id="simulate-the-missing-data" class="slide level2">
+<h2>Simulate the missing data</h2>
+<aside class="notes">
+<ul>
+<li>Therefore, we can find a posterior distribution, not by specifying priors and likelihoods, but by specifying the distribution of the missing data given the observed data!</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="fragment fade-in">
+<p>The Bayesian posterior can be written as</p>
 <p><span class="math display">\[
 \begin{aligned}
-\pi(\theta | x_\text{obs})
-=&amp; \int \pi(\theta, x_\text{mis} | x_\text{obs}) dx_\text{mis} \\
-=&amp; \int \pi(\theta | x_\text{comp}) P(x_\text{mis} | x_\text{obs}) dx_\text{mis}
+\pi(\theta | y_\text{obs})
+=&amp; \int \pi(\theta, y_\text{mis} | y_\text{obs}) dy_\text{mis} \\
+=&amp; \int \pi(\theta | y_\text{comp}) P(y_\text{mis} | y_\text{obs}) dy_\text{mis}
 \end{aligned}
 \]</span></p>
-<p>We can make <span class="math inline">\(x_\text{comp}\)</span> arbitrarily large, so that the conditional posterior can be replaced with a point estimate <span class="math inline">\(\pi(\theta | x_\text{comp}) = \delta_{\hat{\theta}(x_\text{comp})}(\theta)\)</span>.</p>
-<p>Therefore, we can find a posterior distribution, not by specifying priors and likelihoods, but by specifying the distribution of the missing data given the observed data!</p>
-<p>What remains is to compute <span class="math inline">\(P(x_\text{mis} | x_\text{obs})\)</span>.</p>
+</div>
+<div class="fragment">
+<ul>
+<li class="fragment">We can make <span class="math inline">\(y_\text{comp}\)</span> arbitrarily large</li>
+<li class="fragment">Replace the conditional posterior with a point estimate <span class="math display">\[\pi(\theta | y_\text{comp}) = \delta_{\hat{\theta}(y_\text{comp})}(\theta)\]</span></li>
+<li class="fragment">Integrate over the missing data</li>
+</ul>
+</div>
+<p><br>
+</p>
+<div class="fragment fade-in-then-semi-out">
+<p><strong>Just need to find <span class="math inline">\(P(y_\text{mis} | y_\text{obs})\)</span>…</strong></p>
+</div>
 </section>
 <section id="why-is-this-useful" class="slide level2">
 <h2>Why is this useful?</h2>
@@ -281,15 +456,37 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 <section>
 <section id="predctive-resampling" class="title-slide slide level1 center">
 <h1>Predctive resampling</h1>
-<p>Predictive resampling (Fong et al 2023) is a way to do exactly this.</p>
-<ul>
-<li>Simulates <span class="math inline">\(x_\text{mis}\)</span> by N one step ahead predictions from a valid predictive distribution <span class="math inline">\(P(x_{i} | x_{1:i-1})\)</span>:</li>
-</ul>
-<p><span class="math display">\[P(x_{n+1:\infty} | x_{1:n}) \approx P(x_{n+1:N} | x_{1:n}) = \prod_{i=n+1}^\infty P(x_i | x_{1:i-1})\]</span></p>
-<ul>
-<li>Then computes the quantity of interest <span class="math inline">\(\theta(x_{1:N})\)</span> on the full dataset</li>
-<li>Repeats this B times to get a posterior distribution of the quantity of interest</li>
-</ul>
+<p>Predictive resampling (<span class="citation" data-cites="fongMartingalePosteriorDistributions2022">Fong, Holmes, and Walker (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>) is a way to sample the missing data given <span class="math inline">\(p(y_{n+1} | y_{1:n})\)</span></p>
+<div class="columns">
+<div class="column">
+<div class="fragment fade-in-then-semi-out">
+<ol type="1">
+<li>Simulates <span class="math inline">\(y_{n+1:\infty}\)</span> by N one step ahead predictions from a valid predictive distribution <span class="math inline">\(P(y_{i} | y_{1:i-1})\)</span>:</li>
+</ol>
+<p><span class="math display">\[
+P(y_{n+1:\infty} | y_{1:n})
+= \prod_{i=n+1}^\infty P(y_i | y_{1:i-1})
+\approx \prod_{i=n+1}^N P(y_i | y_{1:i-1})
+\]</span></p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ol start="2" type="1">
+<li>Compute the quantity of interest <span class="math inline">\(\theta(y_{1:N})\)</span> on the full dataset</li>
+<li>Monte Carlo integration: Repeat this B times to get a posterior distribution of the quantity of interest</li>
+</ol>
+</div>
+</div><div class="column">
+<div class="fragment fade-in absolute" style="top: 350px; right: 0px; ">
+<pre><code>theta = np.zeros(B)
+for b in range(0,B):
+    y = np.zeros(N)
+    y[:n] = y_obs
+    for i in range(n+1,N):
+        y[i] = p_i(y[1:(i-1)])
+
+    theta[b] = theta(y)</code></pre>
+</div>
+</div></div>
 <!-- 
 - Given
     - A collected dataset $y_{1:n}$
@@ -305,37 +502,43 @@ Then
     
 - Then $\{\theta_b\}_{b=1}^N$ are posterior draws of our quantity of interest! 
 -->
-<pre><code>for b in range(1,B):    
-    for i in range(n+1,N):
-        y_i ~ p_i(y[1:(i-1)])
-
-    theta_b = theta(y_all)</code></pre>
-<p>NB: We still do not know what <span class="math inline">\(p(y_{n+1} | y_{1:n})\)</span> we can use!</p>
+<div class="fragment fade-in-then-semi-out">
+<p><strong>NB: We still have not defined any <span class="math inline">\(p(y_{n+1} | y_{1:n})\)</span> we can use!</strong></p>
+</div>
 </section>
 <section id="example-1-problem" class="slide level2">
 <h2>Example 1 (problem)</h2>
 <div class="footer">
-<p>Adapted example from <span class="citation" data-cites="fongMartingalePosteriorDistributions2022">Fong, Holmes, and Walker (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> Traditional Bayes | <strong>Predictive Bayesian</strong> | Predictive Resampling | Examples | Conclusion</p>
+<p>Adapted example from <span class="citation" data-cites="fongMartingalePosteriorDistributions2022">Fong, Holmes, and Walker (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span><br>
+Traditional Bayes | <strong>Predictive Bayesian</strong> | Predictive Resampling | Examples | Conclusion</p>
 </div>
+<div class="columns">
+<div class="column">
+<div class="fragment fade-in-then-semi-out">
 <p>Assume we have the model <span class="math display">\[ P(\theta):= \pi(\theta) = N(\theta | 0,1) \\
 P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 \]</span></p>
-<div class="columns">
-<div class="column">
-<p>Given an observed dataset <span class="math inline">\(y_{1:n}\)</span>, using conjugate priors we get that the updated posterior is</p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<p>Conjugate prior gives closed form posterior</p>
 <p><span class="math display">\[ P(\theta | y_{1:n}) = N(\theta | \bar{\theta_n}, \bar{\sigma_n^2} ) \]</span> where <span class="math display">\[
 \bar{\theta_n} := \frac{\sum_{i=1}^n y_i}{n+1},
 \bar{\sigma_n^2} := \frac{1}{n+1}
 \]</span></p>
-<p>and the posterior predictive can be computed in closed form as <span class="math display">\[ P(y | y_{1:n}) = N(y | \bar{\theta_n}, \bar{\sigma_n^2} + 1)\]</span></p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<p>and posterior predictive <span class="math display">\[ P(y | y_{1:n}) = N(y | \bar{\theta_n}, \bar{\sigma_n^2} + 1)\]</span></p>
+</div>
 </div><div class="column">
-<p>Assume the true parameter <span class="math inline">\(\theta =2.0\)</span>, and then observe <span class="math inline">\(n=50\)</span> values</p>
-<div id="0e00f416" class="cell" data-execution_count="1">
+<div class="fragment fade-in-then-semi-out">
+<p>Set the true parameter <span class="math inline">\(\theta =2.0\)</span>, and then collect <span class="math inline">\(n=50\)</span> values:</p>
+<div id="f9672218" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
-<p><img data-src="main_notes_files/figure-revealjs/cell-2-output-1.png" width="839" height="553"></p>
+<p><img data-src="main_notes_files/figure-revealjs/cell-2-output-1.png" width="541" height="527"></p>
 </figure>
+</div>
 </div>
 </div>
 </div>
@@ -343,21 +546,41 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 </section>
 <section id="example-run-predictive-resampling" class="slide level2">
 <h2>Example (run predictive resampling)</h2>
+<aside class="notes">
 <p>We are allowed to use the posterior predictive as our one step ahead predictive distribution. Not only are we allowed, but we will get the exact same posterior as traditional bayes!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="columns">
 <div class="column">
-<p><strong>Step 1:</strong> Sample <span class="math inline">\(y_{n+1:N}\)</span> from the posterior predictive <span class="math inline">\(P(y | y_{1:n})\)</span></p>
-<p><strong>Step 2:</strong> For each <span class="math inline">\(i= 1:N\)</span>, we can compute the point estimate of <span class="math inline">\(\theta\)</span> given the full data <span class="math inline">\(y_{1:N}\)</span>: <span class="math display">\[ \hat{\theta}(y_{1:N}) = \frac{\sum_{i=1}^N y_i}{N+1} \]</span></p>
-<p><strong>Step 3:</strong> Repeat B times to get posterior samples of <span class="math inline">\(\theta\)</span></p>
+<ul>
+<li>Let the predictive distribution be the true posterior predictive: <span class="math display">\[ P(y_{n+1} | y_{1:n}) = N(y | \bar{\theta_n}, \bar{\sigma_n^2} + 1)\]</span></li>
+</ul>
+<ul>
+<li class="fragment"><strong>Step 1:</strong> Sample <span class="math inline">\(y_{n+1:N}\)</span> from the posterior predictive <span class="math inline">\(P(y | y_{1:n})\)</span><br>
+</li>
+<li class="fragment"><strong>Step 2:</strong> Compute the point estimate of <span class="math inline">\(\theta\)</span> given the full data <span class="math inline">\(y_{1:N}\)</span>: <span class="math display">\[ \hat{\theta}(y_{1:N}) = \frac{\sum_{i=1}^N y_i}{N+1} \]</span></li>
+<li class="fragment"><strong>Step 3:</strong> Repeat B times to get posterior samples of <span class="math inline">\(\theta\)</span></li>
+</ul>
 </div><div class="column">
-<p><img data-src="attachments/posterior_paths.png"></p>
+<div class="r-stack">
+<div class="fragment fade-in">
+<p><img data-src="attachments/posterior_paths.png" class="absolute" style="top: 100px; right: -100px; height: 330px; "></p>
+</div>
+<div class="fragment fade-in">
+<p><img data-src="attachments/predictive_resampling_animation.gif" class="absolute" style="top: 450px; right: -100px; height: 330px; "></p>
+</div>
+</div>
 </div></div>
-</section>
-<section id="example-results" class="slide level2">
-<h2>Example (results)</h2>
-<p>If we take the histogram of the posterior samples we get, we see that they match the true posterior perfectly:</p>
-
-<img data-src="attachments/predictive_resampling_animation.gif" class="r-stretch"></section></section>
+</section></section>
 <section>
 <section id="theory-on-the-predictive-distributions" class="title-slide slide level1 center">
 <h1>Theory on the predictive distributions</h1>
@@ -365,7 +588,10 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 </section>
 <section id="what-predictive-distributions-does-this-work-for" class="slide level2">
 <h2>What predictive distributions does this work for?</h2>
-<p>We still dont know how to design a “proper” predictive distribution <span class="math inline">\(P(y_{n+1} | y_{1:n})\)</span></p>
+<p>We now have a sequence <span class="math inline">\((Y_n)_{n\ge1}\)</span> where we can generate new samples with the predictive distribution <span class="math inline">\(P_n := P(y_{n+1} | y_{1:n})\)</span>.</p>
+<p>However, when does this technique give us an actual data distribution <span class="math inline">\(F_0\)</span>? <span class="math display">\[
+(Y_n)_{n\ge1} | F_0
+\]</span></p>
 <p><br>
 </p>
 <p>In this section we will:</p>
@@ -404,11 +630,8 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
           display:block!important;
       }</style></aside>
 </section>
-<section id="de-finettis-theorem-incomplete" class="slide level2">
-<h2>de Finetti’s Theorem (<strong>INCOMPLETE</strong>)</h2>
-<p>TODO: Need to add something about empirical and predictive distributions converging to <span class="math inline">\(\widetilde{F}\)</span> Dont fully understand this. is <span class="math inline">\(\widetilde{F}\)</span> the prior? Why do they say <span class="math inline">\(F=\widetilde{F}\)</span> in the slides?</p>
-<p><br>
-</p>
+<section id="de-finettis-theorem" class="slide level2">
+<h2>de Finetti’s Theorem</h2>
 <div id="def-exchangeable" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 1</strong></span> <span class="math inline">\((Y_n)\)</span> is <strong>exchangeable</strong> if</p>
 <p><span class="math display">\[
@@ -416,25 +639,21 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 \]</span></p>
 <p>for every finite permutation <span class="math inline">\(\sigma\)</span> of <span class="math inline">\(\mathbb{N}\)</span> .</p>
 </div>
-<p><br>
-</p>
 <div id="thm-finetti" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 1</strong></span> There exist <span class="math inline">\(\widetilde{F}\)</span> such that <span class="math inline">\((Y_n) | \widetilde{F} \sim F^\infty\)</span> if and only if <span class="math inline">\((Y_n)\)</span> is exchangeable.</p>
+<p><span class="theorem-title"><strong>Theorem 1 (de Finetti’s Theorem)</strong></span> &nbsp;</p>
+<div style="text-align: center;">
+<p><br> There exist <span class="math inline">\(F_0\)</span> such that <span class="math inline">\((Y_n) | F_0 \sim F^\infty\)</span> <br> if and only if <br> <span class="math inline">\((Y_n)\)</span> is exchangeable.</p>
+</div>
 </div>
 <p><br>
 </p>
-<h3 id="interpretable-results">Interpretable results:</h3>
-<ul>
-<li>We can specify an exchangeable distribution <span class="math inline">\((Y_n)\)</span> and then implicitly define the prior.</li>
-</ul>
-<p>OR</p>
-<ul>
-<li>We can retrieve our familar bayesian model (prior+likelihood) by designing a sequence <span class="math inline">\((Y_n)\)</span> that is exchangeable, where <span class="math inline">\(Y_i \sim p(y_i | y_{1:i-1})\)</span>.</li>
-</ul>
+<blockquote>
+<p>If we can construct a <span class="math inline">\(P_n\)</span> so that the resulting sequence <span class="math inline">\((Y_n)\)</span> is exchangeable, then we have our familiar traditional Bayes framework</p>
+</blockquote>
 <p>In reality, hard to use exchangeability</p>
 </section>
-<section id="relaxing-exchangeability" class="slide level2">
-<h2>Relaxing exchangeability</h2>
+<section id="relaxing-exchangeability" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relaxing exchangeability</h2>
 <aside class="notes">
 <p>c.i.d. : “conditionally on the past, all future observations are identically distributed” Stationarity: A stationary sequence is a random sequence whose joint probability distribution is invariant over time</p>
 <style type="text/css">
@@ -448,36 +667,74 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div id="def-stationarity" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2</strong></span> A sequence <span class="math inline">\((X_n)_{n\ge 1}\)</span> is <strong>stationary</strong> if <span class="math display">\[
-p_{x_1,..., x_n}(x | x_1,..., x_n) = p_{x_{1+k},..., x_{n+1}}(x | x_1,..., x_n)
-\]</span> for any <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span>.</p>
-</div>
-<div id="def-cid" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 3</strong></span> A sequence <span class="math inline">\((X_n)_{n\ge 1}\)</span> is <strong>conditionally identically distributed (c.i.d.)</strong> if it satisfies</p>
-<p><span class="math display">\[
-p_{x_{n+k}}(x | x_1, ..., x_{n-1}) = p_{x_n}(x| x_1, .., x_{n-1})
-\]</span> for all <span class="math inline">\(k\ge1\)</span>.</p>
-</div>
 <div id="thm-exchangecid-stationary" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 2 (Kallenberg 1988)</strong></span> “Exchangeability = Stationarity + c.i.d.”</p>
 </div>
 <p><br>
 </p>
-<p>So let us remove stationarity…</p>
+<div id="def-stationarity" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is <strong>stationary</strong> if <span class="math display">\[
+p_{y_1,..., y_n}(y | y_1,..., y_n) = p_{y_{1+k},..., y_{n+1}}(y | y_1,..., y_n)
+\]</span> for any <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span>.</p>
+</div>
+<p><br>
+</p>
+<div id="def-cid" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3 (Conditionally identically distributed (c.i.d.))</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is c.i.d. if it satisfies</p>
+<p><span class="math display">\[
+p_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})
+\]</span> for all <span class="math inline">\(k\ge1\)</span>.</p>
+</div>
+<p><strong>So let us remove stationarity…</strong></p>
 </section>
-<section id="conditionally-identically-distributed-c.i.d." class="slide level2">
-<h2>Conditionally identically distributed (c.i.d.)</h2>
+<section id="martingale" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Martingale</h2>
+<div class="fragment fade-in-then-semi-out">
+<div id="def-cid-recap" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 4 (Conditionally identically distributed (c.i.d.))</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is c.i.d. if it satisfies</p>
+<p><span class="math display">\[
+p_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})
+\]</span> for all <span class="math inline">\(k\ge1\)</span>.</p>
+</div>
+</div>
+<div class="fragment fade-in-then-semi-out">
 <blockquote>
 <p>All future observations share the same conditional distribution given the past</p>
 </blockquote>
-<p><br>
-</p>
+</div>
+<div class="fragment fade-in-then-semi-out">
 <p>This is equivalent to saying that the predictive distributions are martingales:</p>
 <div id="def-martingale-predictive" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 4 (Martingale of the predictive distribution)</strong></span> <span class="math display">\[
+<p><span class="theorem-title"><strong>Definition 5 (Martingale of the predictive distribution)</strong></span> <span class="math display">\[
 E(p_{n+1}(A) | y_{1:n}) = p_n(A)
 \]</span> for all <span class="math inline">\(A\)</span> and all <span class="math inline">\(n\)</span>.</p>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li>Still have many desirable properties
+<ul>
+<li><span class="math inline">\((Y_n)\)</span> converge to a distribution <span class="math inline">\(F_0\)</span>,</li>
+<li><span class="math inline">\(Y_n\)</span> are identically distributed,</li>
+<li><span class="math inline">\(Y_n\)</span> are <strong>asymptotically</strong> exchangeable</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="martingale-posteriors" class="slide level2">
+<h2>Martingale posteriors</h2>
+<div id="def-martingale-posterior" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 6 (Martingale posterior)</strong></span> &nbsp;</p>
+<ul>
+<li>Observed <span class="math inline">\(y_{1:n}\)</span> from an unknown distribution <span class="math inline">\(F_0\)</span>.</li>
+<li>Interested in an estimate <span class="math inline">\(\theta_\infty = \theta(y_{1:\infty})\)</span> i.e.&nbsp;something that is a function of the full dataset.</li>
+<li>Have a sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> that is c.i.d. and converges to <span class="math inline">\(F_0\)</span>.</li>
+</ul>
+<p>Then the martingale posterior distribution is defined as</p>
+<p><span class="math display">\[
+\Pi(\theta_{\infty} \in A | y_{1:n}) := \int \delta \{\theta(y_{1:\infty}) \in A \} dP(Y_{1:\infty} | y_{1:n}) \\
+\approx \frac{1}{B} \sum_{b=1}^B \delta \{\theta(y_{1:N}) \in A \}
+\]</span></p>
 </div>
 </section></section>
 <section>
@@ -485,11 +742,111 @@ E(p_{n+1}(A) | y_{1:n}) = p_n(A)
 <h1>Applications</h1>
 
 </section>
-<section id="tabpfn" class="slide level2">
-<h2>TabPFN</h2>
+<section id="parametric-models" class="slide level2">
+<h2>Parametric models</h2>
 </section>
 <section id="are-llms-martingales" class="slide level2">
-<h2>Are LLMs martingales</h2>
+<h2>Are LLMs martingales?</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li><p>Check whether <span class="math inline">\(P(y_{n+1}|y_{1:n})\)</span> is a martingale</p></li>
+<li><p>Do we get the same distribution when generating more examples?</p></li>
+</ul>
+<p><img data-src="attachments/predictive_resampling_llm_B20_N3.png"></p>
+<p><img data-src="attachments/predictive_resampling_llm_B20_N10.png"></p>
+</div><div class="column">
+<pre><code>Where should this person go on holiday based on some information of that person?</code></pre>
+<div class="blue-code">
+<pre><code>x: Anders is a physicist and likes to discuss philosophy
+y: destination=Rome
+
+x: Kamilla enjoys skiing and works at the local university
+y: destination=Alps</code></pre>
+</div>
+<div class="red-code">
+<pre><code>x: Maria is retired and spends her time gardening and traveling
+y: destination=Madeira
+
+x: Sven just quit his job and is now playing in a band with his friends.
+y: destination=Nashville
+
+x: Elias is in military conscription and is considering studying engineering afterward
+y: destination=Berlin
+
+x: Ingrid is a medical resident finishing her fourth year of specialty training
+y: destination=The Well
+
+x: Thomas just became a partner at a consulting firm and enjoys sailing
+y: destination=Maldives</code></pre>
+</div>
+<pre><code>x: Simen just defended his PhD in Machine Learning and enjoys paragliding
+y:</code></pre>
+</div></div>
+</section>
+<section id="are-llms-martingales-falck-et-al-2024" class="slide level2">
+<h2>Are LLMs martingales? (Falck et al 2024)</h2>
+<ul>
+<li><span class="citation" data-cites="falckAreLargeLanguage2024">Falck, Wang, and Holmes (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> studies whether LLMs obey the martingale property for in context learning</li>
+<li>Tests three LLMs: <code>gpt-3.5</code>, <code>llama-2-7b</code> and <code>mistral-7b</code></li>
+<li>Tests three datasets: Bernoulli, Gaussian and a synthetic natural language dataset</li>
+</ul>
+
+<img data-src="attachments/20251121161334.png" class="r-stretch"><ul>
+<li>Suggests tools or fine tuning to make LLMs more like martingales</li>
+</ul>
+</section>
+<section id="tabpfn" class="slide level2">
+<h2>TabPFN</h2>
+<aside class="notes">
+<p>Why does the dirichlet mixture help?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column">
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><span class="citation" data-cites="naglerUncertaintyQuantificationPriorData2025">Nagler and Rügamer (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span> observe the same phenomenon in TabPFN</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>TabPFN: tabular <span class="math inline">\(z_i = (x_i,y_i)\)</span> trained on synthetic data</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li>Inference: <span class="math display">\[
+P(y_{n+1} | x_{n+1}, z_{1:n})
+\]</span></li>
+<li>Use a Dirichlet process mixture to construct posterior samples</li>
+<li>Quantile regression on tabular tasks</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="4">
+<ul>
+<li>Faster, smaller Credible intervals</li>
+</ul>
+</div>
+</div><div class="column">
+<div class="r-stack">
+<div class="fragment" data-fragment-index="1">
+<p><img data-src="attachments/20251122170556.png" class="absolute" style="top: 0px; right: 0px; height: 330px; "></p>
+</div>
+<div class="fragment">
+<p><img data-src="attachments/20251122171844.png" class="absolute" style="top: 350px; right: 0px; height: 400px; "></p>
+</div>
+</div>
+</div></div>
 </section></section>
 <section>
 <section id="conclusions" class="title-slide slide level1 center">
@@ -507,6 +864,9 @@ E(p_{n+1}(A) | y_{1:n}) = p_n(A)
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 
 
+<div id="ref-falckAreLargeLanguage2024" class="csl-entry" role="listitem">
+Falck, Fabian, Ziyu Wang, and Chris Holmes. 2024. <span>“Are <span>Large Language Models Bayesian</span>? <span>A</span> Martingale Perspective on in-Context Learning.”</span>
+</div>
 <div id="ref-fongMartingalePosteriorDistributions2022" class="csl-entry" role="listitem">
 Fong, Edwin, Chris Holmes, and Stephen G Walker. 2022. <span>“Martingale Posterior Distributions.”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em> 85 (5): 1357–91. <a href="https://doi.org/10.1093/jrsssb/qkad005">https://doi.org/10.1093/jrsssb/qkad005</a>.
 </div>
@@ -515,6 +875,9 @@ Fortini, Sandra. n.d. <span>“Theoretical <span>Foundations</span> of <span>Pre
 </div>
 <div id="ref-holmesStatisticalInferenceExchangeability2023" class="csl-entry" role="listitem">
 Holmes, Chris C., and Stephen G. Walker. 2023. <span>“Statistical Inference with Exchangeability and Martingales.”</span> <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 381 (2247): 20220143. <a href="https://doi.org/10.1098/rsta.2022.0143">https://doi.org/10.1098/rsta.2022.0143</a>.
+</div>
+<div id="ref-naglerUncertaintyQuantificationPriorData2025" class="csl-entry" role="listitem">
+Nagler, Thomas, and David Rügamer. 2025. <span>“Uncertainty <span>Quantification</span> for <span>Prior-Data Fitted Networks</span> Using <span>Martingale Posteriors</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2505.11325">https://doi.org/10.48550/arXiv.2505.11325</a>.
 </div>
 </div>
 </section></section>
@@ -699,7 +1062,7 @@ Holmes, Chris C., and Stephen G. Walker. 2023. <span>“Statistical Inference wi
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1500,
+        width: 1050,
 
         height: 800,
 

@@ -32,28 +32,56 @@
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#agenda",
     "title": "Martingale posteriors in modern AI",
     "section": "Agenda",
-    "text": "Agenda\n\nTraditional Bayesian approach\nPredictive Bayesian Motivation\nPredictive resampling algorithm\nTheory\nApplications\nConclusion\n\n\nTraditional Bayes | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion"
+    "text": "Agenda\n\nMotivational LLM In Context Learning\nTraditional Bayesian approach\nPredictive Bayesian Motivation\nPredictive resampling algorithm\nTheory\nApplications\nConclusion\n\n\nTraditional Bayes | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#llm-in-context-learning-1",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#llm-in-context-learning-1",
+    "title": "Martingale posteriors in modern AI",
+    "section": "LLM In-Context Learning",
+    "text": "LLM In-Context Learning\n\n\n\nAssume we ask an LLM to solve the following problem\n\n\nWhere should this person go on holiday based on some information of that person?\nx: Simen just defended his PhD in Machine Learning and enjoys paragliding\ny:"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#llm-in-context-learning-2",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#llm-in-context-learning-2",
+    "title": "Martingale posteriors in modern AI",
+    "section": "LLM In-Context Learning",
+    "text": "LLM In-Context Learning\n\n\n\nAssume we ask an LLM to solve the following problem\nCollect some few shot examples\n\n\nWhere should this person go on holiday based on some information of that person?\n\nx: Anders is a physicist and likes to discuss philosophy\ny: destination=Rome\n\nx: Kamilla enjoys skiing and works at the local university\ny: destination=Alps\n\nx: Simen just defended his PhD in Machine Learning and enjoys paragliding\ny:"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#llm-in-context-learning-3",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#llm-in-context-learning-3",
+    "title": "Martingale posteriors in modern AI",
+    "section": "LLM In-Context Learning",
+    "text": "LLM In-Context Learning\n\n\n\nAssume we ask an LLM to solve the following problem\nCollect some few shot examples\nLet the LLM generate additional examples\n\n\n\nRepeat and record answer\n\n\n\n\n\n\n\nValid? Posterior predictive?\n\n\n\nWhere should this person go on holiday based on some information of that person?\n\nx: Anders is a physicist and likes to discuss philosophy\ny: destination=Rome\n\nx: Kamilla enjoys skiing and works at the local university\ny: destination=Alps\n\n\nx: Maria is retired and spends her time gardening and traveling\ny: destination=Madeira\n\nx: Sven just quit his job and is now playing in a band with his friends.\ny: destination=Nashville\n\nx: Elias is in military conscription and is considering studying engineering afterward\ny: destination=Berlin\n\nx: Ingrid is a medical resident finishing her fourth year of specialty training\ny: destination=The Well\n\nx: Thomas just became a partner at a consulting firm and enjoys sailing\ny: destination=Maldives\n\nx: Simen just defended his PhD in Machine Learning and enjoys paragliding\ny:"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#traditional-bayesian-approach-1",
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#traditional-bayesian-approach-1",
     "title": "Martingale posteriors in modern AI",
     "section": "Traditional Bayesian approach",
-    "text": "Traditional Bayesian approach\n\n\nWe have collected \\(y_{1:n}\\) data points from an unknown distribution \\(F_0\\).\nWe want to learn something about \\(F_0\\).\n\n\n\nIf we want to compute the posterior predictive with traditional Bayesian methods, we would define a prior \\(\\pi(\\theta)\\) and a sampling density \\(f_{\\theta}(y)\\) and a likelihood (i.i.d) \\(p_{\\theta}(y_{1:n}) = \\prod_{i=1}^n f_\\theta(y_i)\\). We can then collect some data \\(y_{1:n}\\) and define the posterior\n\\[\nP(\\theta | y_{1:n}) =\n    \\frac\n    {\\pi(\\theta) p(y_{1:n} | \\theta )}\n    {\\int \\pi(\\theta) p(y_{1:n} | \\theta ) d\\theta}\n\\tag{1}\\]\n\n\nPosterior predictive\nWe can compute the distribution of a new data point \\(y\\) given the observed data \\(y_{1:n}\\) by using the posterior predictive\n\\[\nP(y | y_{1:n}) = \\int f_{\\theta}(y) \\pi(\\theta | y_{1:n}) d\\theta\n\\tag{2}\\]\n\n\nTraditional Bayes | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion"
+    "text": "Traditional Bayesian approach\n\n\nCollect data points from an unknown distribution \\(F_0\\)\nDefine a prior \\(\\pi(\\theta)\\) and a likelihood \\(f_\\theta(y)\\)\nCompute the posterior \\(P(\\theta | y_{1:n})\\)\nCompute the posterior predictive \\(P(y | y_{1:n})\\)\n\n\n\n\nWe have collected \\(y_{1:n}\\) data points from an unknown distribution \\(F_0\\).\n\n\n\n\nPrior \\(\\pi(\\theta)\\)\nSampling density \\(f_{\\theta}(y)\\)\nLikelihood \\(f_\\theta(y) = p(y_{1:n} | \\theta) = \\prod_{i=1}^n f_\\theta(y_i)\\)\n\n\nPosterior\n\\[\nP(\\theta | y_{1:n}) =\n    \\frac\n    {\\pi(\\theta) p(y_{1:n} | \\theta )}\n    {\\int \\pi(\\theta) p(y_{1:n} | \\theta ) d\\theta}\n\\tag{1}\\]\n\n\n\nPosterior predictive\nWe can compute the distribution of a new data point \\(y\\) given the observed data \\(y_{1:n}\\) by using the posterior predictive\n\\[\nP(y | y_{1:n}) = \\int f_{\\theta}(y) \\pi(\\theta | y_{1:n}) d\\theta\n\\tag{2}\\]\n\n\nTraditional Bayes | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion"
   },
   {
-    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#what-is-a-prior-in-a-bayesian-neural-net-really",
-    "href": "posts/2025-11-28-trial-lecture/main_notes.html#what-is-a-prior-in-a-bayesian-neural-net-really",
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#prior-in-a-neural-network",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#prior-in-a-neural-network",
     "title": "Martingale posteriors in modern AI",
-    "section": "What is a prior in a Bayesian Neural net really?",
-    "text": "What is a prior in a Bayesian Neural net really?\n\nNeural nets are black box models that are hard to interpret\nHow can we have any intuition or prior knowledge about the parameters in hidden layers?\n\nStandard answer:\n\n“We dont care, we just want to use it for variability”\nMis-specified prior can “put probability mass in the wrong places”\n\nMaybe we should define our models in a different way?\n\nSpecify a predictive distribution \\(p(y_{n+1} | y_{1:n})\\) instead of a prior \\(\\pi(\\theta)\\) and a likelihood \\(f_{\\theta}(y)\\)\nWe can still get posteriors, but they are not the same as in traditional Bayesian inference\n\nMotivational example with LLM?"
+    "section": "Prior in a Neural Network?!",
+    "text": "Prior in a Neural Network?!\n\n\nNeural nets are black box models that are hard to interpret\nHow can we have any intuition or prior knowledge about the parameters in hidden layers?\n\n\n\n\nComplicated black box models\nHow can we have any intuition?\n\n\n\nStandard answer:\n\nWe dont care, we just want to use it for variability\n\n\n\nToday: Start at a different point?\n\n\n\nThese black box neural are closer to defining the predictive distribution\n\n\\[p(y_{n+1} | y_{1:n})\\]\n\n\n\nSpecify a predictive distribution instead of prior+likelihood"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#compute-statistics-from-an-infinite-population",
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#compute-statistics-from-an-infinite-population",
     "title": "Martingale posteriors in modern AI",
     "section": "Compute statistics from an infinite population",
-    "text": "Compute statistics from an infinite population\n\nInstead of defining prior+likelihood, we can think of bayesian ucertainty to originate from missing data.\nPredictive inference takes a different approach:\n\n\nThe assumption behind most, if not all, statistical problems is that there is an amount of data, \\(x_{comp}\\), which if observed, would yield the problem solved. (Holmes and Walker (2023))\n\nFor example:\n\nConsider i.i.d. observations from an infinite population.\nWe have collected \\(x_\\text{obs} := x_{1:n}\\)\nThe missing data are then \\(x_\\text{mis} := x_{n+1:\\infty}\\)\nIf we had access to the full data \\(x_{comp} := \\{x_\\text{obs}, x_\\text{mis} \\}\\), we could compute any statistics of interest with near zero uncertainty.\n\nBut we do not have \\(x_\\text{mis}\\)! But if we could provide a conditional distribution of the missing data given the observed data, we could marginalize over the missing data:\nFor example, consider the Bayesian posterior can be written as\n\\[\n\\begin{aligned}\n\\pi(\\theta | x_\\text{obs})\n=& \\int \\pi(\\theta, x_\\text{mis} | x_\\text{obs}) dx_\\text{mis} \\\\\n=& \\int \\pi(\\theta | x_\\text{comp}) P(x_\\text{mis} | x_\\text{obs}) dx_\\text{mis}\n\\end{aligned}\n\\]\nWe can make \\(x_\\text{comp}\\) arbitrarily large, so that the conditional posterior can be replaced with a point estimate \\(\\pi(\\theta | x_\\text{comp}) = \\delta_{\\hat{\\theta}(x_\\text{comp})}(\\theta)\\).\nTherefore, we can find a posterior distribution, not by specifying priors and likelihoods, but by specifying the distribution of the missing data given the observed data!\nWhat remains is to compute \\(P(x_\\text{mis} | x_\\text{obs})\\)."
+    "text": "Compute statistics from an infinite population\n\n\nThink of bayesian ucertainty to originate from missing data:\n\n\nThe assumption behind most, if not all, statistical problems is that there is an amount of data, \\(x_{comp}\\), which if observed, would yield the problem solved. (Holmes and Walker (2023))\n\n\n\nFor example:\n\n\n\nConsider i.i.d. observations from an infinite population.\nWe have collected \\(y_\\text{obs} := y_{1:n}\\)\nThe missing data are then \\(y_\\text{mis} := y_{n+1:{\\infty}}\\)\nIf we had access to the full data \\(y_{comp} := \\{y_\\text{obs}, y_\\text{mis} \\}\\), we could compute any statistics of interest with near zero uncertainty."
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#simulate-the-missing-data",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#simulate-the-missing-data",
+    "title": "Martingale posteriors in modern AI",
+    "section": "Simulate the missing data",
+    "text": "Simulate the missing data\n\n\nTherefore, we can find a posterior distribution, not by specifying priors and likelihoods, but by specifying the distribution of the missing data given the observed data!\n\n\n\nThe Bayesian posterior can be written as\n\\[\n\\begin{aligned}\n\\pi(\\theta | y_\\text{obs})\n=& \\int \\pi(\\theta, y_\\text{mis} | y_\\text{obs}) dy_\\text{mis} \\\\\n=& \\int \\pi(\\theta | y_\\text{comp}) P(y_\\text{mis} | y_\\text{obs}) dy_\\text{mis}\n\\end{aligned}\n\\]\n\n\n\nWe can make \\(y_\\text{comp}\\) arbitrarily large\nReplace the conditional posterior with a point estimate \\[\\pi(\\theta | y_\\text{comp}) = \\delta_{\\hat{\\theta}(y_\\text{comp})}(\\theta)\\]\nIntegrate over the missing data\n\n\n\n\n\nJust need to find \\(P(y_\\text{mis} | y_\\text{obs})\\)…"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#why-is-this-useful",
@@ -67,63 +95,77 @@
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#example-1-problem",
     "title": "Martingale posteriors in modern AI",
     "section": "Example 1 (problem)",
-    "text": "Example 1 (problem)\n\nAdapted example from Fong, Holmes, and Walker (2022) Traditional Bayes | Predictive Bayesian | Predictive Resampling | Examples | Conclusion\n\nAssume we have the model \\[ P(\\theta):= \\pi(\\theta) = N(\\theta | 0,1) \\\\\nP(y|\\theta):=f_\\theta(y) = N(y | \\theta, 1)\n\\]\n\n\nGiven an observed dataset \\(y_{1:n}\\), using conjugate priors we get that the updated posterior is\n\\[ P(\\theta | y_{1:n}) = N(\\theta | \\bar{\\theta_n}, \\bar{\\sigma_n^2} ) \\] where \\[\n\\bar{\\theta_n} := \\frac{\\sum_{i=1}^n y_i}{n+1},\n\\bar{\\sigma_n^2} := \\frac{1}{n+1}\n\\]\nand the posterior predictive can be computed in closed form as \\[ P(y | y_{1:n}) = N(y | \\bar{\\theta_n}, \\bar{\\sigma_n^2} + 1)\\]\n\nAssume the true parameter \\(\\theta =2.0\\), and then observe \\(n=50\\) values"
+    "text": "Example 1 (problem)\n\nAdapted example from Fong, Holmes, and Walker (2022)\nTraditional Bayes | Predictive Bayesian | Predictive Resampling | Examples | Conclusion\n\n\n\n\nAssume we have the model \\[ P(\\theta):= \\pi(\\theta) = N(\\theta | 0,1) \\\\\nP(y|\\theta):=f_\\theta(y) = N(y | \\theta, 1)\n\\]\n\n\nConjugate prior gives closed form posterior\n\\[ P(\\theta | y_{1:n}) = N(\\theta | \\bar{\\theta_n}, \\bar{\\sigma_n^2} ) \\] where \\[\n\\bar{\\theta_n} := \\frac{\\sum_{i=1}^n y_i}{n+1},\n\\bar{\\sigma_n^2} := \\frac{1}{n+1}\n\\]\n\n\nand posterior predictive \\[ P(y | y_{1:n}) = N(y | \\bar{\\theta_n}, \\bar{\\sigma_n^2} + 1)\\]\n\n\n\nSet the true parameter \\(\\theta =2.0\\), and then collect \\(n=50\\) values:"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#example-run-predictive-resampling",
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#example-run-predictive-resampling",
     "title": "Martingale posteriors in modern AI",
     "section": "Example (run predictive resampling)",
-    "text": "Example (run predictive resampling)\nWe are allowed to use the posterior predictive as our one step ahead predictive distribution. Not only are we allowed, but we will get the exact same posterior as traditional bayes!\n\n\nStep 1: Sample \\(y_{n+1:N}\\) from the posterior predictive \\(P(y | y_{1:n})\\)\nStep 2: For each \\(i= 1:N\\), we can compute the point estimate of \\(\\theta\\) given the full data \\(y_{1:N}\\): \\[ \\hat{\\theta}(y_{1:N}) = \\frac{\\sum_{i=1}^N y_i}{N+1} \\]\nStep 3: Repeat B times to get posterior samples of \\(\\theta\\)"
-  },
-  {
-    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#example-results",
-    "href": "posts/2025-11-28-trial-lecture/main_notes.html#example-results",
-    "title": "Martingale posteriors in modern AI",
-    "section": "Example (results)",
-    "text": "Example (results)\nIf we take the histogram of the posterior samples we get, we see that they match the true posterior perfectly:"
+    "text": "Example (run predictive resampling)\n\nWe are allowed to use the posterior predictive as our one step ahead predictive distribution. Not only are we allowed, but we will get the exact same posterior as traditional bayes!\n\n\n\n\nLet the predictive distribution be the true posterior predictive: \\[ P(y_{n+1} | y_{1:n}) = N(y | \\bar{\\theta_n}, \\bar{\\sigma_n^2} + 1)\\]\n\n\nStep 1: Sample \\(y_{n+1:N}\\) from the posterior predictive \\(P(y | y_{1:n})\\)\n\nStep 2: Compute the point estimate of \\(\\theta\\) given the full data \\(y_{1:N}\\): \\[ \\hat{\\theta}(y_{1:N}) = \\frac{\\sum_{i=1}^N y_i}{N+1} \\]\nStep 3: Repeat B times to get posterior samples of \\(\\theta\\)"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#what-predictive-distributions-does-this-work-for",
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#what-predictive-distributions-does-this-work-for",
     "title": "Martingale posteriors in modern AI",
     "section": "What predictive distributions does this work for?",
-    "text": "What predictive distributions does this work for?\nWe still dont know how to design a “proper” predictive distribution \\(P(y_{n+1} | y_{1:n})\\)\n\n\nIn this section we will:\n\nIntroduce a requirement on the sequence \\((Y_n)\\) that makes it possible to define a prior\nThen relax this requirement\nEnd up with a requirement that \\(P(y_{n+1} | y_{1:n})\\) is a martingale.\n\n\nOutline next steps: - de Finetti explain prior exist iff sequence is exchangeable - example: Empirical distribution? - Exchangeability is a strong assumption, hard to construct in practice\n\nRelax exchangeability\n\nWe might not care about excplicitly defining a prior\nWant to use predictive resampling to be faster than mcmc\n“How can we relax exchangeability while preserving the idea that observations arise from the same unknown distribution”? (Fortini seminar 25)\n\nExchangeability = Stationarity + c.i.d.\n\nWhat happens if we drop stationarity?\nThis is equivalent to saying that \\(P_n\\) is a martingale. Fortini (n.d.)\n\nthrough"
+    "text": "What predictive distributions does this work for?\nWe now have a sequence \\((Y_n)_{n\\ge1}\\) where we can generate new samples with the predictive distribution \\(P_n := P(y_{n+1} | y_{1:n})\\).\nHowever, when does this technique give us an actual data distribution \\(F_0\\)? \\[\n(Y_n)_{n\\ge1} | F_0\n\\]\n\n\nIn this section we will:\n\nIntroduce a requirement on the sequence \\((Y_n)\\) that makes it possible to define a prior\nThen relax this requirement\nEnd up with a requirement that \\(P(y_{n+1} | y_{1:n})\\) is a martingale.\n\n\nOutline next steps: - de Finetti explain prior exist iff sequence is exchangeable - example: Empirical distribution? - Exchangeability is a strong assumption, hard to construct in practice\n\nRelax exchangeability\n\nWe might not care about excplicitly defining a prior\nWant to use predictive resampling to be faster than mcmc\n“How can we relax exchangeability while preserving the idea that observations arise from the same unknown distribution”? (Fortini seminar 25)\n\nExchangeability = Stationarity + c.i.d.\n\nWhat happens if we drop stationarity?\nThis is equivalent to saying that \\(P_n\\) is a martingale. Fortini (n.d.)\n\nthrough"
   },
   {
-    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#de-finettis-theorem-incomplete",
-    "href": "posts/2025-11-28-trial-lecture/main_notes.html#de-finettis-theorem-incomplete",
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#de-finettis-theorem",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#de-finettis-theorem",
     "title": "Martingale posteriors in modern AI",
-    "section": "de Finetti’s Theorem (INCOMPLETE)",
-    "text": "de Finetti’s Theorem (INCOMPLETE)\nTODO: Need to add something about empirical and predictive distributions converging to \\(\\widetilde{F}\\) Dont fully understand this. is \\(\\widetilde{F}\\) the prior? Why do they say \\(F=\\widetilde{F}\\) in the slides?\n\n\n\nDefinition 1 \\((Y_n)\\) is exchangeable if\n\\[\n(Y_{\\sigma(1)}, Y_{\\sigma(2)},...) \\sim (Y_1, Y_2, ..)\n\\]\nfor every finite permutation \\(\\sigma\\) of \\(\\mathbb{N}\\) .\n\n\n\n\nTheorem 1 There exist \\(\\widetilde{F}\\) such that \\((Y_n) | \\widetilde{F} \\sim F^\\infty\\) if and only if \\((Y_n)\\) is exchangeable.\n\n\n\nInterpretable results:\n\nWe can specify an exchangeable distribution \\((Y_n)\\) and then implicitly define the prior.\n\nOR\n\nWe can retrieve our familar bayesian model (prior+likelihood) by designing a sequence \\((Y_n)\\) that is exchangeable, where \\(Y_i \\sim p(y_i | y_{1:i-1})\\).\n\nIn reality, hard to use exchangeability"
+    "section": "de Finetti’s Theorem",
+    "text": "de Finetti’s Theorem\n\nDefinition 1 \\((Y_n)\\) is exchangeable if\n\\[\n(Y_{\\sigma(1)}, Y_{\\sigma(2)},...) \\sim (Y_1, Y_2, ..)\n\\]\nfor every finite permutation \\(\\sigma\\) of \\(\\mathbb{N}\\) .\n\n\nTheorem 1 (de Finetti’s Theorem)  \n\n There exist \\(F_0\\) such that \\((Y_n) | F_0 \\sim F^\\infty\\)  if and only if  \\((Y_n)\\) is exchangeable.\n\n\n\n\n\nIf we can construct a \\(P_n\\) so that the resulting sequence \\((Y_n)\\) is exchangeable, then we have our familiar traditional Bayes framework\n\nIn reality, hard to use exchangeability"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#relaxing-exchangeability",
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#relaxing-exchangeability",
     "title": "Martingale posteriors in modern AI",
     "section": "Relaxing exchangeability",
-    "text": "Relaxing exchangeability\n\nc.i.d. : “conditionally on the past, all future observations are identically distributed” Stationarity: A stationary sequence is a random sequence whose joint probability distribution is invariant over time\n\n\nDefinition 2 A sequence \\((X_n)_{n\\ge 1}\\) is stationary if \\[\np_{x_1,..., x_n}(x | x_1,..., x_n) = p_{x_{1+k},..., x_{n+1}}(x | x_1,..., x_n)\n\\] for any \\(n\\) and \\(k\\).\n\n\nDefinition 3 A sequence \\((X_n)_{n\\ge 1}\\) is conditionally identically distributed (c.i.d.) if it satisfies\n\\[\np_{x_{n+k}}(x | x_1, ..., x_{n-1}) = p_{x_n}(x| x_1, .., x_{n-1})\n\\] for all \\(k\\ge1\\).\n\n\nTheorem 2 (Kallenberg 1988) “Exchangeability = Stationarity + c.i.d.”\n\n\n\nSo let us remove stationarity…"
+    "text": "Relaxing exchangeability\n\nc.i.d. : “conditionally on the past, all future observations are identically distributed” Stationarity: A stationary sequence is a random sequence whose joint probability distribution is invariant over time\n\n\nTheorem 2 (Kallenberg 1988) “Exchangeability = Stationarity + c.i.d.”\n\n\n\n\nDefinition 2 A sequence \\((Y_n)_{n\\ge 1}\\) is stationary if \\[\np_{y_1,..., y_n}(y | y_1,..., y_n) = p_{y_{1+k},..., y_{n+1}}(y | y_1,..., y_n)\n\\] for any \\(n\\) and \\(k\\).\n\n\n\n\nDefinition 3 (Conditionally identically distributed (c.i.d.)) A sequence \\((Y_n)_{n\\ge 1}\\) is c.i.d. if it satisfies\n\\[\np_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})\n\\] for all \\(k\\ge1\\).\n\nSo let us remove stationarity…"
   },
   {
-    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#conditionally-identically-distributed-c.i.d.",
-    "href": "posts/2025-11-28-trial-lecture/main_notes.html#conditionally-identically-distributed-c.i.d.",
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#martingale",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#martingale",
     "title": "Martingale posteriors in modern AI",
-    "section": "Conditionally identically distributed (c.i.d.)",
-    "text": "Conditionally identically distributed (c.i.d.)\n\nAll future observations share the same conditional distribution given the past\n\n\n\nThis is equivalent to saying that the predictive distributions are martingales:\n\nDefinition 4 (Martingale of the predictive distribution) \\[\nE(p_{n+1}(A) | y_{1:n}) = p_n(A)\n\\] for all \\(A\\) and all \\(n\\)."
+    "section": "Martingale",
+    "text": "Martingale\n\n\nDefinition 4 (Conditionally identically distributed (c.i.d.)) A sequence \\((Y_n)_{n\\ge 1}\\) is c.i.d. if it satisfies\n\\[\np_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})\n\\] for all \\(k\\ge1\\).\n\n\n\n\nAll future observations share the same conditional distribution given the past\n\n\n\nThis is equivalent to saying that the predictive distributions are martingales:\n\nDefinition 5 (Martingale of the predictive distribution) \\[\nE(p_{n+1}(A) | y_{1:n}) = p_n(A)\n\\] for all \\(A\\) and all \\(n\\).\n\n\n\n\nStill have many desirable properties\n\n\\((Y_n)\\) converge to a distribution \\(F_0\\),\n\\(Y_n\\) are identically distributed,\n\\(Y_n\\) are asymptotically exchangeable"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#martingale-posteriors",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#martingale-posteriors",
+    "title": "Martingale posteriors in modern AI",
+    "section": "Martingale posteriors",
+    "text": "Martingale posteriors\n\nDefinition 6 (Martingale posterior)  \n\nObserved \\(y_{1:n}\\) from an unknown distribution \\(F_0\\).\nInterested in an estimate \\(\\theta_\\infty = \\theta(y_{1:\\infty})\\) i.e. something that is a function of the full dataset.\nHave a sequence \\((Y_n)_{n\\ge 1}\\) that is c.i.d. and converges to \\(F_0\\).\n\nThen the martingale posterior distribution is defined as\n\\[\n\\Pi(\\theta_{\\infty} \\in A | y_{1:n}) := \\int \\delta \\{\\theta(y_{1:\\infty}) \\in A \\} dP(Y_{1:\\infty} | y_{1:n}) \\\\\n\\approx \\frac{1}{B} \\sum_{b=1}^B \\delta \\{\\theta(y_{1:N}) \\in A \\}\n\\]"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#parametric-models",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#parametric-models",
+    "title": "Martingale posteriors in modern AI",
+    "section": "Parametric models",
+    "text": "Parametric models"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#are-llms-martingales",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#are-llms-martingales",
+    "title": "Martingale posteriors in modern AI",
+    "section": "Are LLMs martingales?",
+    "text": "Are LLMs martingales?\n\n\n\nCheck whether \\(P(y_{n+1}|y_{1:n})\\) is a martingale\nDo we get the same distribution when generating more examples?\n\n\n\n\nWhere should this person go on holiday based on some information of that person?\n\nx: Anders is a physicist and likes to discuss philosophy\ny: destination=Rome\n\nx: Kamilla enjoys skiing and works at the local university\ny: destination=Alps\n\n\nx: Maria is retired and spends her time gardening and traveling\ny: destination=Madeira\n\nx: Sven just quit his job and is now playing in a band with his friends.\ny: destination=Nashville\n\nx: Elias is in military conscription and is considering studying engineering afterward\ny: destination=Berlin\n\nx: Ingrid is a medical resident finishing her fourth year of specialty training\ny: destination=The Well\n\nx: Thomas just became a partner at a consulting firm and enjoys sailing\ny: destination=Maldives\n\nx: Simen just defended his PhD in Machine Learning and enjoys paragliding\ny:"
+  },
+  {
+    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#are-llms-martingales-falck-et-al-2024",
+    "href": "posts/2025-11-28-trial-lecture/main_notes.html#are-llms-martingales-falck-et-al-2024",
+    "title": "Martingale posteriors in modern AI",
+    "section": "Are LLMs martingales? (Falck et al 2024)",
+    "text": "Are LLMs martingales? (Falck et al 2024)\n\nFalck, Wang, and Holmes (2024) studies whether LLMs obey the martingale property for in context learning\nTests three LLMs: gpt-3.5, llama-2-7b and mistral-7b\nTests three datasets: Bernoulli, Gaussian and a synthetic natural language dataset\n\n\n\nSuggests tools or fine tuning to make LLMs more like martingales"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#tabpfn",
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#tabpfn",
     "title": "Martingale posteriors in modern AI",
     "section": "TabPFN",
-    "text": "TabPFN"
-  },
-  {
-    "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#are-llms-martingales",
-    "href": "posts/2025-11-28-trial-lecture/main_notes.html#are-llms-martingales",
-    "title": "Martingale posteriors in modern AI",
-    "section": "Are LLMs martingales",
-    "text": "Are LLMs martingales"
+    "text": "TabPFN\n\nWhy does the dirichlet mixture help?\n\n\n\n\n\nNagler and Rügamer (2025) observe the same phenomenon in TabPFN\n\n\n\n\nTabPFN: tabular \\(z_i = (x_i,y_i)\\) trained on synthetic data\n\n\n\n\nInference: \\[\nP(y_{n+1} | x_{n+1}, z_{1:n})\n\\]\nUse a Dirichlet process mixture to construct posterior samples\nQuantile regression on tabular tasks\n\n\n\n\nFaster, smaller Credible intervals"
   },
   {
     "objectID": "posts/2025-11-28-trial-lecture/main_notes.html#conclusion",
@@ -144,7 +186,7 @@
     "href": "posts/2025-11-28-trial-lecture/main_notes.html#references",
     "title": "Martingale posteriors in modern AI",
     "section": "References",
-    "text": "References\n\n\n\n\nFong, Edwin, Chris Holmes, and Stephen G Walker. 2022. “Martingale Posterior Distributions.” Journal of the Royal Statistical Society Series B: Statistical Methodology 85 (5): 1357–91. https://doi.org/10.1093/jrsssb/qkad005.\n\n\nFortini, Sandra. n.d. “Theoretical Foundations of Predictive Bayes.”\n\n\nHolmes, Chris C., and Stephen G. Walker. 2023. “Statistical Inference with Exchangeability and Martingales.” Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 381 (2247): 20220143. https://doi.org/10.1098/rsta.2022.0143."
+    "text": "References\n\n\n\n\nFalck, Fabian, Ziyu Wang, and Chris Holmes. 2024. “Are Large Language Models Bayesian? A Martingale Perspective on in-Context Learning.”\n\n\nFong, Edwin, Chris Holmes, and Stephen G Walker. 2022. “Martingale Posterior Distributions.” Journal of the Royal Statistical Society Series B: Statistical Methodology 85 (5): 1357–91. https://doi.org/10.1093/jrsssb/qkad005.\n\n\nFortini, Sandra. n.d. “Theoretical Foundations of Predictive Bayes.”\n\n\nHolmes, Chris C., and Stephen G. Walker. 2023. “Statistical Inference with Exchangeability and Martingales.” Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences 381 (2247): 20220143. https://doi.org/10.1098/rsta.2022.0143.\n\n\nNagler, Thomas, and David Rügamer. 2025. “Uncertainty Quantification for Prior-Data Fitted Networks Using Martingale Posteriors.” arXiv. https://doi.org/10.48550/arXiv.2505.11325."
   },
   {
     "objectID": "posts/2018-08-19-kdd-workshop.html",
