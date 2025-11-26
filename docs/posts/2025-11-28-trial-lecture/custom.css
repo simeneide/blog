@@ -1,0 +1,9 @@
+/* Custom styles for code blocks */
+
+.blue-code code, .blue-code pre {
+    color: blue !important;
+}
+
+.red-code code, .red-code pre {
+    color: red !important;
+}

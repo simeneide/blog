@@ -29,6 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -171,27 +237,21 @@ Simen Eide
 
   <p class="date">2025-11-28</p>
 </section>
-<section id="agenda" class="slide level2">
-<h2>Agenda</h2>
+<section>
+<section id="agenda" class="title-slide slide level1 center">
+<h1>Agenda</h1>
+<p>Target audience: master students with some knowledge about Bayesian statistics</p>
 <ul>
 <li>Motivational LLM In Context Learning</li>
-<li>Traditional Bayesian approach</li>
-<li>Predictive Bayesian Motivation</li>
+<li>Traditional Bayesian review</li>
+<li>Predictive Bayesian introduction</li>
 <li>Predictive resampling algorithm</li>
-<li>Theory</li>
+<li>Some theory</li>
 <li>Applications</li>
 <li>Conclusion</li>
 </ul>
-<div class="footer">
-<p>Traditional Bayes | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion</p>
-</div>
 </section>
-<section>
-<section id="llm-in-context-learning" class="title-slide slide level1 center">
-<h1>LLM In-Context Learning</h1>
-
-</section>
-<section id="llm-in-context-learning-1" class="slide level2" data-auto-animate="true">
+<section id="llm-in-context-learning" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">LLM In-Context Learning</h2>
 <div class="columns">
 <div class="column">
@@ -204,7 +264,7 @@ Simen Eide
 y:</code></pre>
 </div></div>
 </section>
-<section id="llm-in-context-learning-2" class="slide level2" data-auto-animate="true">
+<section id="llm-in-context-learning-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">LLM In-Context Learning</h2>
 <div class="columns">
 <div class="column">
@@ -225,7 +285,7 @@ y: destination=Alps</code></pre>
 y:</code></pre>
 </div></div>
 </section>
-<section id="llm-in-context-learning-3" class="slide level2" data-auto-animate="true">
+<section id="llm-in-context-learning-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">LLM In-Context Learning</h2>
 <div class="columns">
 <div class="column">
@@ -241,11 +301,6 @@ y:</code></pre>
 </div>
 <div class="fragment">
 <p><img data-src="attachments/predictive_resampling_llm_B20_N3.png"></p>
-</div>
-<div class="fragment">
-<ul>
-<li><strong>Valid? Posterior predictive?</strong></li>
-</ul>
 </div>
 </div><div class="column">
 <pre><code>Where should this person go on holiday based on some information of that person?</code></pre>
@@ -275,6 +330,9 @@ y: destination=Maldives</code></pre>
 <pre><code>x: Simen just defended his PhD in Machine Learning and enjoys paragliding
 y:</code></pre>
 </div></div>
+<div class="fragment">
+<p><strong>Valid? Posterior predictive?</strong></p>
+</div>
 </section></section>
 <section>
 <section id="traditional-bayesian-approach" class="title-slide slide level1 center">
@@ -301,11 +359,11 @@ y:</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div class="fragment fade-in-then-semi-out">
 <ul>
-<li>We have <strong>collected <span class="math inline">\(y_{1:n}\)</span> data points</strong> from an unknown distribution <span class="math inline">\(F_0\)</span>.</li>
+<li class="fragment">We have <strong>collected <span class="math inline">\(y_{1:n}\)</span> data points</strong> from an unknown distribution <span class="math inline">\(F_0\)</span>.</li>
+<li class="fragment">Assume <span class="math inline">\(F_0\)</span> has a true density <span class="math inline">\(y_i \sim f_{\theta_0}\)</span> given by a true parameter <span class="math inline">\(\theta_0\)</span>.</li>
+<li class="fragment">Goal: Find probable values of <span class="math inline">\(\theta_0\)</span> given the data <span class="math inline">\(y_{1:n}\)</span>.</li>
 </ul>
-</div>
 <div class="fragment fade-in-then-semi-out">
 <ul>
 <li>Prior <span class="math inline">\(\pi(\theta)\)</span></li>
@@ -329,16 +387,13 @@ P(\theta | y_{1:n}) =
 P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 \tag{2}\]</span></span></p>
 </div>
-<div class="footer">
-<p><strong>Traditional Bayes</strong> | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion</p>
-</div>
 </section>
-<section id="prior-in-a-neural-network" class="slide level2">
-<h2>Prior in a Neural Network?!</h2>
+<section id="prior-beliefs-on-neural-network-parameters" class="slide level2">
+<h2>Prior beliefs on Neural Network parameters?!</h2>
 <aside class="notes">
 <ul>
-<li>Neural nets are black box models that are hard to interpret</li>
-<li>How can we have any intuition or prior knowledge about the parameters in hidden layers?</li>
+<li>Neural networks are black box models</li>
+<li>How can we have any prior knowledge about the parameters in hidden layers?</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -353,8 +408,8 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
       }</style></aside>
 <div class="fragment fade-in-then-semi-out">
 <ul>
-<li>Complicated black box models</li>
-<li>How can we have any intuition?</li>
+<li>Neural networks are black box models</li>
+<li>We have no intuition here(!)</li>
 </ul>
 </div>
 <div class="fragment fade-in-then-semi-out">
@@ -364,17 +419,17 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 </blockquote>
 </div>
 <div class="fragment fade-in-then-semi-out">
-<h3 id="today-start-at-a-different-point">Today: Start at a different point?</h3>
+<h3 id="today-start-at-a-different-point">Today: Start at a different point</h3>
 </div>
 <div class="fragment fade-in-then-semi-out">
 <ul>
-<li>These black box neural are closer to defining the predictive distribution</li>
+<li>Instead, define the predictive distribution:</li>
 </ul>
-<p><span class="math display">\[p(y_{n+1} | y_{1:n})\]</span></p>
+<p><span class="math display">\[P(y_{n+1} | y_{1:n})\]</span></p>
 </div>
 <div class="fragment fade-in-then-semi-out">
 <ul>
-<li>Specify a predictive distribution instead of prior+likelihood</li>
+<li>More natural to define the predictive distribution instead of prior+likelihood?</li>
 </ul>
 </div>
 </section></section>
@@ -385,12 +440,15 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 </section>
 <section id="compute-statistics-from-an-infinite-population" class="slide level2">
 <h2>Compute statistics from an infinite population</h2>
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="holmesStatisticalInferenceExchangeability2023">Holmes and Walker (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
+</div>
 <div class="fragment fade-in-then-semi-out">
 <ul>
 <li>Think of bayesian ucertainty to originate from <em>missing data</em>:</li>
 </ul>
 <blockquote>
-<p>The assumption behind most, if not all, statistical problems is that there is an amount of data, <span class="math inline">\(x_{comp}\)</span>, which if observed, would yield the problem solved. (<span class="citation" data-cites="holmesStatisticalInferenceExchangeability2023">Holmes and Walker (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>)</p>
+<p>The assumption behind most, if not all, statistical problems is that there is an amount of data, <span class="math inline">\(x_{comp}\)</span>, which if observed, would yield the problem solved.</p>
 </blockquote>
 </div>
 <div class="fragment fade-in">
@@ -422,7 +480,10 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div class="fragment fade-in">
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="holmesStatisticalInferenceExchangeability2023">Holmes and Walker (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
+</div>
+<div class="fragment">
 <p>The Bayesian posterior can be written as</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -441,76 +502,57 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 </div>
 <p><br>
 </p>
-<div class="fragment fade-in-then-semi-out">
-<p><strong>Just need to find <span class="math inline">\(P(y_\text{mis} | y_\text{obs})\)</span>…</strong></p>
+<div class="fragment fade-in">
+<p>Just need to define <span class="math inline">\(P(y_\text{mis} | y_\text{obs})\)</span> …</p>
 </div>
-</section>
-<section id="why-is-this-useful" class="slide level2">
-<h2>Why is this useful?</h2>
-<ul>
-<li>Priors on BNN parameters lack a clear interpretation</li>
-<li><span class="math inline">\(P(y_{n+1} | y_{1:n})\)</span> are very similar to many black box models we have today</li>
-<li>Resulting method can be much faster than MCMC.</li>
-</ul>
 </section></section>
 <section>
-<section id="predctive-resampling" class="title-slide slide level1 center">
-<h1>Predctive resampling</h1>
-<p>Predictive resampling (<span class="citation" data-cites="fongMartingalePosteriorDistributions2022">Fong, Holmes, and Walker (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>) is a way to sample the missing data given <span class="math inline">\(p(y_{n+1} | y_{1:n})\)</span></p>
+<section id="predictive-resampling" class="title-slide slide level1 center">
+<h1>Predictive resampling</h1>
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="fongMartingalePosteriorDistributions2022">Fong, Holmes, and Walker (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></p>
+</div>
 <div class="columns">
 <div class="column">
+<p>Way to sample the missing data given a one step ahead predictive distribution <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span></p>
 <div class="fragment fade-in-then-semi-out">
-<ol type="1">
-<li>Simulates <span class="math inline">\(y_{n+1:\infty}\)</span> by N one step ahead predictions from a valid predictive distribution <span class="math inline">\(P(y_{i} | y_{1:i-1})\)</span>:</li>
-</ol>
+<p><span class="math inline">\(y_{comp} = y_{1:\infty} \approx y_{1:N}\)</span> for some large N.</p>
+</div>
+<div class="fragment fade-in-then-semi-out">
 <p><span class="math display">\[
-P(y_{n+1:\infty} | y_{1:n})
-= \prod_{i=n+1}^\infty P(y_i | y_{1:i-1})
-\approx \prod_{i=n+1}^N P(y_i | y_{1:i-1})
+P(y_{n+1:N} | y_{1:n}) = \prod_{i=n}^N P(y_{i+1} | y_{1:i})
 \]</span></p>
 </div>
-<div class="fragment fade-in-then-semi-out">
-<ol start="2" type="1">
-<li>Compute the quantity of interest <span class="math inline">\(\theta(y_{1:N})\)</span> on the full dataset</li>
-<li>Monte Carlo integration: Repeat this B times to get a posterior distribution of the quantity of interest</li>
-</ol>
-</div>
 </div><div class="column">
-<div class="fragment fade-in absolute" style="top: 350px; right: 0px; ">
-<pre><code>theta = np.zeros(B)
-for b in range(0,B):
-    y = np.zeros(N)
-    y[:n] = y_obs
-    for i in range(n+1,N):
-        y[i] = p_i(y[1:(i-1)])
-
-    theta[b] = theta(y)</code></pre>
-</div>
-</div></div>
-<!-- 
-- Given
-    - A collected dataset $y_{1:n}$
-    - a valid $p(y_{n+1} | y_1:n)$  
-    - A quantity of interest that can be computed if we have the full dataset $\theta(y_{1:\infty})$
-
-Then
-
-- for b in 1:B 
-    - for i in $n+1:N$  
-        - sample $y_i ~ p(y_{n+1} | y_1:n)$  
-    - compute $\theta_b = \theta(y_{1:\infty})$  
-    
-- Then $\{\theta_b\}_{b=1}^N$ are posterior draws of our quantity of interest! 
--->
 <div class="fragment fade-in-then-semi-out">
-<p><strong>NB: We still have not defined any <span class="math inline">\(p(y_{n+1} | y_{1:n})\)</span> we can use!</strong></p>
+<p><strong>Step 1:</strong> Simulate <span class="math inline">\(y_{n+1:\infty}\)</span> by N one step ahead predictions <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span></p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<p><strong>Step 2:</strong> Compute the quantity of interest <span class="math inline">\(\theta(y_{1:N})\)</span> on the full dataset</p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<p><strong>Repeat</strong> B times to get a posterior distribution of the quantity of interest</p>
+</div>
+<div class="fragment fade-in absolute" style="top: 450px; right: 0px; ">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>theta_samples <span class="op">=</span> np.zeros(B)</span>
+<span id="cb10-2"><a></a><span class="cf">for</span> b <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,B):</span>
+<span id="cb10-3"><a></a>    y <span class="op">=</span> np.zeros(N)</span>
+<span id="cb10-4"><a></a>    y[:n] <span class="op">=</span> y_obs</span>
+<span id="cb10-5"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n<span class="op">+</span><span class="dv">1</span>,N):</span>
+<span id="cb10-6"><a></a>        y[i] <span class="op">=</span> p_i(y[<span class="dv">1</span>:(i<span class="op">-</span><span class="dv">1</span>)])</span>
+<span id="cb10-7"><a></a></span>
+<span id="cb10-8"><a></a>    theta_samples[b] <span class="op">=</span> theta(y)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="fragment fade-in" data-top="600">
+<p><strong>NB: Need to define a valid <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span></strong></p>
+</div>
 </div>
 </section>
 <section id="example-1-problem" class="slide level2">
 <h2>Example 1 (problem)</h2>
-<div class="footer">
+<div style="font-size: 50%;">
 <p>Adapted example from <span class="citation" data-cites="fongMartingalePosteriorDistributions2022">Fong, Holmes, and Walker (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span><br>
-Traditional Bayes | <strong>Predictive Bayesian</strong> | Predictive Resampling | Examples | Conclusion</p>
+</p>
 </div>
 <div class="columns">
 <div class="column">
@@ -521,9 +563,9 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 </div>
 <div class="fragment fade-in-then-semi-out">
 <p>Conjugate prior gives closed form posterior</p>
-<p><span class="math display">\[ P(\theta | y_{1:n}) = N(\theta | \bar{\theta_n}, \bar{\sigma_n^2} ) \]</span> where <span class="math display">\[
+<p><span class="math display">\[ P(\theta | y_{1:n}) = N(\theta | \bar{\theta_n}, \bar{\sigma_n}^2 ) \]</span> where <span class="math display">\[
 \bar{\theta_n} := \frac{\sum_{i=1}^n y_i}{n+1},
-\bar{\sigma_n^2} := \frac{1}{n+1}
+\bar{\sigma}_n^2 := \frac{1}{n+1}
 \]</span></p>
 </div>
 <div class="fragment fade-in-then-semi-out">
@@ -532,7 +574,7 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 </div><div class="column">
 <div class="fragment fade-in-then-semi-out">
 <p>Set the true parameter <span class="math inline">\(\theta =2.0\)</span>, and then collect <span class="math inline">\(n=50\)</span> values:</p>
-<div id="f9672218" class="cell" data-execution_count="1">
+<div id="b1154a1a" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -547,7 +589,10 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 <section id="example-run-predictive-resampling" class="slide level2">
 <h2>Example (run predictive resampling)</h2>
 <aside class="notes">
-<p>We are allowed to use the posterior predictive as our one step ahead predictive distribution. Not only are we allowed, but we will get the exact same posterior as traditional bayes!</p>
+<ul>
+<li>Assume we made a good guess and think that the posterior predictive is a good function to sample from</li>
+<li></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -562,24 +607,81 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 <div class="columns">
 <div class="column">
 <ul>
-<li>Let the predictive distribution be the true posterior predictive: <span class="math display">\[ P(y_{n+1} | y_{1:n}) = N(y | \bar{\theta_n}, \bar{\sigma_n^2} + 1)\]</span></li>
+<li>Let the predictive distribution be the true posterior predictive: <span class="math display">\[ P(y_{i+1} | y_{1:i}) = N(y | \bar{\theta_i}, \bar{\sigma_i^2} + 1)\]</span></li>
 </ul>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
 <ul>
-<li class="fragment"><strong>Step 1:</strong> Sample <span class="math inline">\(y_{n+1:N}\)</span> from the posterior predictive <span class="math inline">\(P(y | y_{1:n})\)</span><br>
-</li>
-<li class="fragment"><strong>Step 2:</strong> Compute the point estimate of <span class="math inline">\(\theta\)</span> given the full data <span class="math inline">\(y_{1:N}\)</span>: <span class="math display">\[ \hat{\theta}(y_{1:N}) = \frac{\sum_{i=1}^N y_i}{N+1} \]</span></li>
-<li class="fragment"><strong>Step 3:</strong> Repeat B times to get posterior samples of <span class="math inline">\(\theta\)</span></li>
+<li><strong>Step 1:</strong> For <span class="math inline">\(i=n,...,N-1\)</span>: &nbsp;Sample <span class="math inline">\(y_{i+1} | y_{1:i}\)</span> from the posterior predictive</li>
 </ul>
-</div><div class="column">
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<ul>
+<li><strong>Step 2:</strong> Compute the point estimate of <span class="math inline">\(\theta\)</span> given the full data <span class="math inline">\(y_{1:N}\)</span>: <span class="math display">\[
+\hat{\theta}(y_{1:N}) = \frac{\sum_{i=1}^N y_i}{N+1}
+\]</span></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="3">
+<ul>
+<li><strong>Repeat B times</strong> to get posterior samples of <span class="math inline">\(\theta\)</span></li>
+</ul>
+</div>
+</div></div>
+<div class="column">
 <div class="r-stack">
-<div class="fragment fade-in">
+<div class="fragment fade-in" data-fragment-index="2">
+<p><img data-src="attachments/posterior_paths_one_path.png" class="absolute" style="top: 100px; right: -100px; height: 330px; "></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
 <p><img data-src="attachments/posterior_paths.png" class="absolute" style="top: 100px; right: -100px; height: 330px; "></p>
 </div>
 <div class="fragment fade-in">
-<p><img data-src="attachments/predictive_resampling_animation.gif" class="absolute" style="top: 450px; right: -100px; height: 330px; "></p>
+<p><img data-src="attachments/combined_n=1.png" class="absolute" style="top: 100px; right: -100px; height: 660px; "></p>
+</div>
+<div class="fragment fade-in">
+<p><img data-src="attachments/combined_n=100.png" class="absolute" style="top: 100px; right: -100px; height: 660px; "></p>
+</div>
+<div class="fragment fade-in">
+<p><img data-src="attachments/combined_n=200.png" class="absolute" style="top: 100px; right: -100px; height: 660px; "></p>
+</div>
+<div class="fragment fade-in">
+<p><img data-src="attachments/combined_n=500.png" class="absolute" style="top: 100px; right: -100px; height: 660px; "></p>
+</div>
+<div class="fragment fade-in">
+<p><img data-src="attachments/combined_n=999.png" class="absolute" style="top: 100px; right: -100px; height: 660px; "></p>
+</div>
+<div class="fragment fade-in">
+<p><img data-src="attachments/predictive_resampling_animation.gif" class="absolute" style="top: 430px; right: -100px; height: 360px; "></p>
 </div>
 </div>
-</div></div>
+</div></section>
+<section id="why-is-this-useful" class="slide level2">
+<h2>Why is this useful?</h2>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="recap">Recap</h4>
+<ul>
+<li>We can find a posterior statistics <span class="math inline">\(\theta(y_{1:N})\)</span> if we have a valid <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span>.</li>
+<li>Do not need to define prior or likelihood</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="specification">Specification</h4>
+<ul>
+<li>Priors on BNN parameters lack a clear interpretation</li>
+<li>Maybe its more intuitive to define a predictive distribution?</li>
+<li><span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span> feels similar to many black box models we have today</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="computation">Computation</h4>
+<ul>
+<li>Predictive resampling instead of MCMC</li>
+<li>Predictive resampling can be parallelized
+<ul>
+<li>10-100x speedups</li>
+</ul></li>
+</ul>
+</div>
 </section></section>
 <section>
 <section id="theory-on-the-predictive-distributions" class="title-slide slide level1 center">
@@ -588,36 +690,12 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
 </section>
 <section id="what-predictive-distributions-does-this-work-for" class="slide level2">
 <h2>What predictive distributions does this work for?</h2>
-<p>We now have a sequence <span class="math inline">\((Y_n)_{n\ge1}\)</span> where we can generate new samples with the predictive distribution <span class="math inline">\(P_n := P(y_{n+1} | y_{1:n})\)</span>.</p>
-<p>However, when does this technique give us an actual data distribution <span class="math inline">\(F_0\)</span>? <span class="math display">\[
-(Y_n)_{n\ge1} | F_0
-\]</span></p>
-<p><br>
-</p>
-<p>In this section we will:</p>
-<ul>
-<li>Introduce a requirement on the sequence <span class="math inline">\((Y_n)\)</span> that makes it possible to define a prior</li>
-<li>Then relax this requirement</li>
-<li>End up with a requirement that <span class="math inline">\(P(y_{n+1} | y_{1:n})\)</span> is a martingale.</li>
-</ul>
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="fortiniExchangeabilityPredictionPredictive2025">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p>
+</div>
 <aside class="notes">
-<p>Outline next steps: - de Finetti explain prior exist iff sequence is exchangeable - example: Empirical distribution? - Exchangeability is a strong assumption, hard to construct in practice</p>
-<ul>
-<li>Relax exchangeability
-<ul>
-<li>We might not care about excplicitly defining a prior</li>
-<li>Want to use predictive resampling to be faster than mcmc</li>
-<li>“How can we relax exchangeability while preserving the idea that observations arise from the same unknown distribution”? (Fortini seminar 25)</li>
-</ul></li>
-<li>Exchangeability = Stationarity + c.i.d.
-<ul>
-<li>What happens if we drop stationarity?</li>
-<li>This is equivalent to saying that <span class="math inline">\(P_n\)</span> is a martingale. <span class="citation" data-cites="fortiniTheoreticalFoundationsPredictive">Fortini (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span>
-<ul>
-<li>through</li>
-</ul></li>
-</ul></li>
-</ul>
+<p>We now have a sequence <span class="math inline">\((Y_n)_{n\ge1}\)</span> where we can generate new samples with the predictive distribution <span class="math inline">\(P_n := P(y_{n+1} | y_{1:n})\)</span>.</p>
+<p>However, when does this technique give us an actual data distribution <span class="math inline">\(F_0\)</span>?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -629,28 +707,59 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Have a <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span> that will generate a sequence <span class="math inline">\((Y_i)_{i\ge n}\)</span></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>When <span class="math inline">\((Y_i)_{i\ge n}\)</span> give us a data distribution <span class="math inline">\(F_0\)</span>? i.e.&nbsp;when does</li>
+</ul>
+<p><span class="math display">\[
+(Y_n)_{n\ge1} | F_0
+\]</span> exists.</p>
+</div>
+<p><br>
+</p>
+<div class="fragment fade-in-then-semi-out">
+<p>In this section we will:</p>
+<ul>
+<li>Introduce a requirement on the sequence <span class="math inline">\((Y_i)_{i\ge1}\)</span> that makes it possible to define a prior</li>
+<li>Then relax this requirement</li>
+<li>End up with a requirement that <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span> is a martingale.</li>
+</ul>
+</div>
 </section>
 <section id="de-finettis-theorem" class="slide level2">
 <h2>de Finetti’s Theorem</h2>
+<div class="fragment fade-in-then-semi-out">
 <div id="def-exchangeable" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 1</strong></span> <span class="math inline">\((Y_n)\)</span> is <strong>exchangeable</strong> if</p>
+<p><span class="theorem-title"><strong>Definition 1</strong></span> <span class="math inline">\((Y_i)_{i\ge1}\)</span> is <strong>exchangeable</strong> if</p>
 <p><span class="math display">\[
 (Y_{\sigma(1)}, Y_{\sigma(2)},...) \sim (Y_1, Y_2, ..)
 \]</span></p>
 <p>for every finite permutation <span class="math inline">\(\sigma\)</span> of <span class="math inline">\(\mathbb{N}\)</span> .</p>
 </div>
+</div>
+<div class="fragment fade-in-then-semi-out">
 <div id="thm-finetti" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 1 (de Finetti’s Theorem)</strong></span> &nbsp;</p>
 <div style="text-align: center;">
-<p><br> There exist <span class="math inline">\(F_0\)</span> such that <span class="math inline">\((Y_n) | F_0 \sim F^\infty\)</span> <br> if and only if <br> <span class="math inline">\((Y_n)\)</span> is exchangeable.</p>
+<p><br> There exist <span class="math inline">\(F_0\)</span> such that <span class="math inline">\((Y_i) | F_0\)</span> <br> if and only if <br> <span class="math inline">\((Y_i)\)</span> is exchangeable.</p>
+</div>
 </div>
 </div>
 <p><br>
 </p>
+<div class="fragment fade-in-then-semi-out">
 <blockquote>
-<p>If we can construct a <span class="math inline">\(P_n\)</span> so that the resulting sequence <span class="math inline">\((Y_n)\)</span> is exchangeable, then we have our familiar traditional Bayes framework</p>
+<p>If we can construct a <span class="math inline">\(P(y_{i+1} | y_{1:i})\)</span> so that the resulting sequence <span class="math inline">\((Y_i)_{i\ge n}\)</span> is exchangeable, then we have our familiar traditional Bayes framework</p>
 </blockquote>
+</div>
+<div class="fragment fade-in-then-semi-out">
 <p>In reality, hard to use exchangeability</p>
+</div>
 </section>
 <section id="relaxing-exchangeability" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Relaxing exchangeability</h2>
@@ -667,94 +776,146 @@ P(y|\theta):=f_\theta(y) = N(y | \theta, 1)
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<div class="fragment fade-in-then-semi-out">
 <div id="thm-exchangecid-stationary" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 2 (Kallenberg 1988)</strong></span> “Exchangeability = Stationarity + c.i.d.”</p>
+<p><span class="theorem-title"><strong>Theorem 2 (Kallenberg 1988)</strong></span> <br>
+“Exchangeability = Stationarity + conditionally identically distributed”</p>
+</div>
 </div>
 <p><br>
 </p>
-<div id="def-stationarity" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is <strong>stationary</strong> if <span class="math display">\[
-p_{y_1,..., y_n}(y | y_1,..., y_n) = p_{y_{1+k},..., y_{n+1}}(y | y_1,..., y_n)
-\]</span> for any <span class="math inline">\(n\)</span> and <span class="math inline">\(k\)</span>.</p>
-</div>
-<p><br>
-</p>
-<div id="def-cid" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 3 (Conditionally identically distributed (c.i.d.))</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is c.i.d. if it satisfies</p>
-<p><span class="math display">\[
-p_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})
-\]</span> for all <span class="math inline">\(k\ge1\)</span>.</p>
-</div>
+<div class="fragment fade-in-then-semi-out">
 <p><strong>So let us remove stationarity…</strong></p>
-</section>
-<section id="martingale" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Martingale</h2>
+</div>
+<p><br>
+<!-- \
+
+::: {#def-stationarity}
+
+A sequence $(Y_n)_{n\ge 1}$ is **stationary** if 
+$$
+p_{y_1,..., y_n}(y | y_1,..., y_n) = p_{y_{1+k},..., y_{n+1}}(y | y_1,..., y_n) 
+$$
+for any $n$ and $k$.
+::: --></p>
+<p><br>
+</p>
 <div class="fragment fade-in-then-semi-out">
-<div id="def-cid-recap" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 4 (Conditionally identically distributed (c.i.d.))</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is c.i.d. if it satisfies</p>
+<div id="def-cid" class="theorem definition" data-id="def-cid">
+<p><span class="theorem-title"><strong>Definition 2 (Conditionally identically distributed (c.i.d.))</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is c.i.d. if it satisfies</p>
 <p><span class="math display">\[
-p_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})
+P(Y_{n+k} | y_1, ..., y_{n}) = P(Y_{n+1} | y_1, .., y_{n})
 \]</span> for all <span class="math inline">\(k\ge1\)</span>.</p>
 </div>
-</div>
-<div class="fragment fade-in-then-semi-out">
+<div class="fragment fade-in-then-semi-out" data-id="def-cid-oneliner">
 <blockquote>
 <p>All future observations share the same conditional distribution given the past</p>
 </blockquote>
 </div>
-<div class="fragment fade-in-then-semi-out">
-<p>This is equivalent to saying that the predictive distributions are martingales:</p>
+</div>
+</section>
+<section id="martingale" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Martingale</h2>
+<div id="def-cid-recap" class="theorem definition" data-id="def-cid">
+<p><span class="theorem-title"><strong>Definition 3 (Conditionally identically distributed (c.i.d.))</strong></span> A sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> is c.i.d. if it satisfies</p>
+<p><span class="math display">\[
+P(Y_{n+k} | y_1, ..., y_{n}) = P(Y_{n+1} | y_1, .., y_{n})
+\]</span> for all <span class="math inline">\(k\ge1\)</span>.</p>
+</div>
+<div data-id="def-cid-oneliner">
+<blockquote>
+<p>All future observations share the same conditional distribution given the past</p>
+</blockquote>
+</div>
+<div class="fragment fade-in">
+<p>This is <strong>equivalent to</strong> saying:</p>
 <div id="def-martingale-predictive" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 5 (Martingale of the predictive distribution)</strong></span> <span class="math display">\[
-E(p_{n+1}(A) | y_{1:n}) = p_n(A)
-\]</span> for all <span class="math inline">\(A\)</span> and all <span class="math inline">\(n\)</span>.</p>
+<p><span class="theorem-title"><strong>Definition 4 (Martingale of the predictive distribution)</strong></span> <span class="math display">\[
+E[P(Y_{i+2} \in A | y_{1:{i+1}}) | y_{1:i}] = P(Y_{i+1} \in A | y_{1:i})
+\]</span> for all <span class="math inline">\(A\)</span> and all <span class="math inline">\(i\)</span>.</p>
 </div>
 </div>
 <div class="fragment">
+<h4 id="still-have-many-desirable-properties">Still have many desirable properties</h4>
+<div class="columns">
+<div class="column">
 <ul>
-<li>Still have many desirable properties
-<ul>
-<li><span class="math inline">\((Y_n)\)</span> converge to a distribution <span class="math inline">\(F_0\)</span>,</li>
-<li><span class="math inline">\(Y_n\)</span> are identically distributed,</li>
-<li><span class="math inline">\(Y_n\)</span> are <strong>asymptotically</strong> exchangeable</li>
-</ul></li>
+<li><span class="math inline">\((Y_i)_{i\ge n}\)</span> converge to a distribution <span class="math inline">\(F_0\)</span>,</li>
+<li><span class="math inline">\((Y_i)_{i\ge n}\)</span> are identically distributed,</li>
 </ul>
+</div><div class="column">
+<ul>
+<li><span class="math inline">\((Y_i)_{i\ge n}\)</span> are <strong>asymptotically</strong> exchangeable</li>
+<li>The empirical distribution of <span class="math inline">\((Y_i)_{i\ge n}\)</span> converges to <span class="math inline">\(F_0\)</span></li>
+</ul>
+</div></div>
 </div>
-</section>
-<section id="martingale-posteriors" class="slide level2">
-<h2>Martingale posteriors</h2>
-<div id="def-martingale-posterior" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 6 (Martingale posterior)</strong></span> &nbsp;</p>
-<ul>
-<li>Observed <span class="math inline">\(y_{1:n}\)</span> from an unknown distribution <span class="math inline">\(F_0\)</span>.</li>
-<li>Interested in an estimate <span class="math inline">\(\theta_\infty = \theta(y_{1:\infty})\)</span> i.e.&nbsp;something that is a function of the full dataset.</li>
-<li>Have a sequence <span class="math inline">\((Y_n)_{n\ge 1}\)</span> that is c.i.d. and converges to <span class="math inline">\(F_0\)</span>.</li>
-</ul>
-<p>Then the martingale posterior distribution is defined as</p>
-<p><span class="math display">\[
+<!-- 
+## Martingale posteriors
+
+::: {#def-martingale-posterior}
+# Martingale posterior
+- Observed $y_{1:n}$ from an unknown distribution $F_0$.
+- Interested in an estimate $\theta_\infty = \theta(y_{1:\infty})$ i.e. something that is a function of the full dataset.
+- Have a sequence $(Y_n)_{n\ge 1}$ that is c.i.d. and converges to $F_0$.
+
+Then the martingale posterior distribution is defined as
+
+$$
 \Pi(\theta_{\infty} \in A | y_{1:n}) := \int \delta \{\theta(y_{1:\infty}) \in A \} dP(Y_{1:\infty} | y_{1:n}) \\
 \approx \frac{1}{B} \sum_{b=1}^B \delta \{\theta(y_{1:N}) \in A \}
-\]</span></p>
-</div>
+$$
+
+::: -->
 </section></section>
 <section>
 <section id="applications" class="title-slide slide level1 center">
 <h1>Applications</h1>
 
 </section>
-<section id="parametric-models" class="slide level2">
-<h2>Parametric models</h2>
+<section id="example-1-empirical-predictive" class="slide level2">
+<h2>Example 1: Empirical predictive</h2>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Remember example:
+<ul>
+<li><span class="math inline">\(Y_i \sim N(\theta, 1)\)</span></li>
+<li><span class="math inline">\(\theta=2\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>If we instead of the <em>true</em> posterior predictive assume an empirical predictive on the collected data <span class="math inline">\(y_{1:n}\)</span>:</li>
+</ul>
+<div class="columns">
+<div class="column">
+<p><img data-src="attachments/posterior_distr_n=999.png"></p>
+</div><div class="column">
+<p><img data-src="attachments/posterior_distr_empirical.png"></p>
+</div></div>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Works but “worse model”</li>
+</ul>
+</div>
 </section>
 <section id="are-llms-martingales" class="slide level2">
 <h2>Are LLMs martingales?</h2>
 <div class="columns">
 <div class="column">
+<p><img data-src="attachments/predictive_resampling_llm_B20_N3.png" style="width:100.0%"></p>
+<div class="fragment fade-in-then-semi-out">
 <ul>
-<li><p>Check whether <span class="math inline">\(P(y_{n+1}|y_{1:n})\)</span> is a martingale</p></li>
-<li><p>Do we get the same distribution when generating more examples?</p></li>
+<li>Check whether <span class="math inline">\(P(y_{i+1}|y_{1:i})\)</span> is a martingale</li>
 </ul>
-<p><img data-src="attachments/predictive_resampling_llm_B20_N3.png"></p>
-<p><img data-src="attachments/predictive_resampling_llm_B20_N10.png"></p>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Note: <span class="math inline">\(y_{i+1}\)</span> is not the next token!</li>
+</ul>
+</div>
 </div><div class="column">
 <pre><code>Where should this person go on holiday based on some information of that person?</code></pre>
 <div class="blue-code">
@@ -784,20 +945,62 @@ y: destination=Maldives</code></pre>
 y:</code></pre>
 </div></div>
 </section>
-<section id="are-llms-martingales-falck-et-al-2024" class="slide level2">
-<h2>Are LLMs martingales? (Falck et al 2024)</h2>
+<section id="are-llms-martingales-1" class="slide level2">
+<h2>Are LLMs martingales?</h2>
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="falckAreLargeLanguage2024">Falck, Wang, and Holmes (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p>
+</div>
+<div class="columns">
+<div class="column">
 <ul>
-<li><span class="citation" data-cites="falckAreLargeLanguage2024">Falck, Wang, and Holmes (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> studies whether LLMs obey the martingale property for in context learning</li>
-<li>Tests three LLMs: <code>gpt-3.5</code>, <code>llama-2-7b</code> and <code>mistral-7b</code></li>
-<li>Tests three datasets: Bernoulli, Gaussian and a synthetic natural language dataset</li>
+<li><span class="citation" data-cites="falckAreLargeLanguage2024">Falck, Wang, and Holmes (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> studies martingale property of LLMs in-context learning empirically</li>
 </ul>
-
-<img data-src="attachments/20251121161334.png" class="r-stretch"><ul>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
+<ul>
+<li>Tests three LLMs:
+<ul>
+<li><code>gpt-3.5</code>,</li>
+<li><code>llama-2-7b</code></li>
+<li><code>mistral-7b</code></li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<ul>
+<li>Tests three datasets:
+<ul>
+<li>Bernoulli,</li>
+<li>Gaussian,</li>
+<li>Synthetic natural language dataset</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<ul>
+<li><strong>Result: No.</strong></li>
+</ul>
+</div>
+</div><div class="column">
+<div class="fragment" data-fragment-index="3">
+<p><img data-src="attachments/llm-statistics-drift.png" style="width:100.0%"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="5">
+<ul>
+<li>The expected probability drifts as <span class="math inline">\(i\)</span> increases</li>
+</ul>
+</div>
+<div class="fragment fade-in" data-fragment-index="6">
+<ul>
 <li>Suggests tools or fine tuning to make LLMs more like martingales</li>
 </ul>
+</div>
+</div></div>
 </section>
-<section id="tabpfn" class="slide level2">
-<h2>TabPFN</h2>
+<section id="tabular-prior-fitted-networks-tabpfn" class="slide level2">
+<h2>Tabular Prior Fitted Networks (TabPFN)</h2>
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="hollmannTabPFNTransformerThat2023">Hollmann et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>, <span class="citation" data-cites="naglerUncertaintyQuantificationPriorData2025">Nagler and Rügamer (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>, <span class="citation" data-cites="ngTabMGPMartingalePosterior2025">Ng et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p>
+</div>
 <aside class="notes">
 <p>Why does the dirichlet mixture help?</p>
 <style type="text/css">
@@ -811,67 +1014,101 @@ y:</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>TabPFN: pretrained transformer on tabular data (<span class="citation" data-cites="hollmannTabPFNTransformerThat2023">Hollmann et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>)</li>
+</ul>
+</div>
+<div class="fragment fade-in-then-semi-out">
+<ul>
+<li>Observe the same non-martingale property in TabPFN (<span class="citation" data-cites="naglerUncertaintyQuantificationPriorData2025">Nagler and Rügamer (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>)</li>
+</ul>
+</div>
+<p><br>
+</p>
+<div class="fragment fade-in-then-semi-out">
+<h3 id="two-different-approaches">Two different approaches:</h3>
+</div>
+<p><br>
+</p>
 <div class="columns">
 <div class="column">
-<div class="fragment" data-fragment-index="1">
-<ul>
-<li><span class="citation" data-cites="naglerUncertaintyQuantificationPriorData2025">Nagler and Rügamer (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span> observe the same phenomenon in TabPFN</li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="2">
-<ul>
-<li>TabPFN: tabular <span class="math inline">\(z_i = (x_i,y_i)\)</span> trained on synthetic data</li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="3">
-<ul>
-<li>Inference: <span class="math display">\[
-P(y_{n+1} | x_{n+1}, z_{1:n})
-\]</span></li>
-<li>Use a Dirichlet process mixture to construct posterior samples</li>
-<li>Quantile regression on tabular tasks</li>
-</ul>
-</div>
-<div class="fragment" data-fragment-index="4">
-<ul>
-<li>Faster, smaller Credible intervals</li>
-</ul>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="nagleruncertaintyquantificationpriordata2025"><span class="citation" data-cites="naglerUncertaintyQuantificationPriorData2025">Nagler and Rügamer (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h4>
+<p>Only use tabPFN on the first step <span class="math inline">\(P(y_{n+1} | x_{n+1}, z_{1:n})\)</span>, then a Dirichlet process mixture for the rest.</p>
 </div>
 </div><div class="column">
-<div class="r-stack">
-<div class="fragment" data-fragment-index="1">
-<p><img data-src="attachments/20251122170556.png" class="absolute" style="top: 0px; right: 0px; height: 330px; "></p>
-</div>
-<div class="fragment">
-<p><img data-src="attachments/20251122171844.png" class="absolute" style="top: 350px; right: 0px; height: 400px; "></p>
-</div>
+<div class="fragment fade-in-then-semi-out">
+<h4 id="ngtabmgpmartingaleposterior2025"><span class="citation" data-cites="ngTabMGPMartingalePosterior2025">Ng et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></h4>
+<p>“Ignores” theoretical requirements, checks convergence empirically and says its “good enough”.</p>
 </div>
 </div></div>
 </section></section>
 <section>
-<section id="conclusions" class="title-slide slide level1 center">
-<h1>Conclusions</h1>
+<section id="conclusion" class="title-slide slide level1 center">
+<h1>Conclusion</h1>
 
 </section>
-<section id="conclusion" class="slide level2">
+<section id="conclusion-1" class="slide level2">
 <h2>Conclusion</h2>
-</section>
-<section id="future" class="slide level2">
-<h2>Future</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li class="fragment">Introduced a new, alternative Bayesian framework</li>
+<li class="fragment">Specify predictive distributions instead of priors and likelihoods</li>
+<li class="fragment">Hints at being able to insert our favourite black-box auto-regressive model</li>
+<li class="fragment">Highly parallizeable</li>
+<li class="fragment"><strong>Limitation</strong>: Difficult/unsure how to specify valid predictive distributions</li>
+</ul>
+</div><div class="column">
+<div class="fragment fade-in">
+<h4 id="future-current-work">Future (/current) work</h4>
+</div>
+<ul>
+<li class="fragment">Show that different models (predictive distributions) are martingales</li>
+<li class="fragment">Relaxation of the martingale posterior (e.g. <span class="citation" data-cites="battistonBayesianPredictiveInference2025">Battiston and Cappello (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>)</li>
+<li class="fragment">Empirical robustness (e.g. <span class="citation" data-cites="ngTabMGPMartingalePosterior2025">Ng et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>)</li>
+</ul>
+<div class="fragment fade-in">
+<h5 id="half-baked-llm-ideas">Half baked (LLM)-ideas</h5>
+</div>
+<div class="fragment fade-in">
+<ul>
+<li>“LLMs are not row-invariant due to positional embeddings” <span class="citation" data-cites="ngTabMGPMartingalePosterior2025">Ng et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></li>
+</ul>
+</div>
+<div class="fragment fade-in">
+<ul>
+<li>Can we design new, “local” positional embeddings architectures are row-invariant?</li>
+</ul>
+</div>
+<div class="fragment fade-in">
+<ul>
+<li>Update parametric models inside predictive resampling. LLM posteriors?</li>
+</ul>
+</div>
+</div><!-- - Use LLMs as parametric models to update inside predictive resampling?
+  - Output: Posterior LLM parameters samples -->
+</div>
+<p>:::</p>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-
-
+<div id="ref-battistonBayesianPredictiveInference2025" class="csl-entry" role="listitem">
+Battiston, Marco, and Lorenzo Cappello. 2025. <span>“Bayesian <span>Predictive Inference Beyond Martingales</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2507.21874">https://doi.org/10.48550/arXiv.2507.21874</a>.
+</div>
 <div id="ref-falckAreLargeLanguage2024" class="csl-entry" role="listitem">
 Falck, Fabian, Ziyu Wang, and Chris Holmes. 2024. <span>“Are <span>Large Language Models Bayesian</span>? <span>A</span> Martingale Perspective on in-Context Learning.”</span>
 </div>
 <div id="ref-fongMartingalePosteriorDistributions2022" class="csl-entry" role="listitem">
 Fong, Edwin, Chris Holmes, and Stephen G Walker. 2022. <span>“Martingale Posterior Distributions.”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em> 85 (5): 1357–91. <a href="https://doi.org/10.1093/jrsssb/qkad005">https://doi.org/10.1093/jrsssb/qkad005</a>.
 </div>
-<div id="ref-fortiniTheoreticalFoundationsPredictive" class="csl-entry" role="listitem">
-Fortini, Sandra. n.d. <span>“Theoretical <span>Foundations</span> of <span>Predictive Bayes</span>.”</span>
+<div id="ref-fortiniExchangeabilityPredictionPredictive2025" class="csl-entry" role="listitem">
+Fortini, Sandra, and Sonia Petrone. 2025. <span>“Exchangeability, <span>Prediction</span> and <span>Predictive Modeling</span> in <span>Bayesian Statistics</span>.”</span> <em>Statistical Science</em> 40 (1): 40–67. <a href="https://doi.org/10.1214/24-STS965">https://doi.org/10.1214/24-STS965</a>.
+</div>
+<div id="ref-hollmannTabPFNTransformerThat2023" class="csl-entry" role="listitem">
+Hollmann, Noah, Samuel Müller, Katharina Eggensperger, and Frank Hutter. 2023. <span>“<span>TabPFN</span>: <span>A Transformer That Solves Small Tabular Classification Problems</span> in a <span>Second</span>.”</span> arXiv. <a href="https://arxiv.org/abs/2207.01848">https://arxiv.org/abs/2207.01848</a>.
 </div>
 <div id="ref-holmesStatisticalInferenceExchangeability2023" class="csl-entry" role="listitem">
 Holmes, Chris C., and Stephen G. Walker. 2023. <span>“Statistical Inference with Exchangeability and Martingales.”</span> <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 381 (2247): 20220143. <a href="https://doi.org/10.1098/rsta.2022.0143">https://doi.org/10.1098/rsta.2022.0143</a>.
@@ -879,7 +1116,44 @@ Holmes, Chris C., and Stephen G. Walker. 2023. <span>“Statistical Inference wi
 <div id="ref-naglerUncertaintyQuantificationPriorData2025" class="csl-entry" role="listitem">
 Nagler, Thomas, and David Rügamer. 2025. <span>“Uncertainty <span>Quantification</span> for <span>Prior-Data Fitted Networks</span> Using <span>Martingale Posteriors</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2505.11325">https://doi.org/10.48550/arXiv.2505.11325</a>.
 </div>
+<div id="ref-ngTabMGPMartingalePosterior2025" class="csl-entry" role="listitem">
+Ng, Kenyon, Edwin Fong, David T. Frazier, Jeremias Knoblauch, and Susan Wei. 2025. <span>“<span>TabMGP</span>: <span>Martingale Posterior</span> with <span>TabPFN</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2510.25154">https://doi.org/10.48550/arXiv.2510.25154</a>.
 </div>
+</div>
+</section></section>
+<section>
+<section id="bonus" class="title-slide slide level1 center">
+<h1>BONUS</h1>
+
+</section>
+<section id="parametric-models" class="slide level2">
+<h2>Parametric models</h2>
+<div style="font-size: 50%;">
+<p><span class="citation" data-cites="holmesStatisticalInferenceExchangeability2023">Holmes and Walker (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
+</div>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Consider a data model <span class="math inline">\(f(y | \theta_0)\)</span></li>
+<li>Let <span class="math inline">\(\hat{\theta}_n = \theta(y_{1:n})\)</span> be an <em>unbiased</em> MLE estimate of <span class="math inline">\(\theta_0\)</span> based on <span class="math inline">\(y_{1:n}\)</span></li>
+<li>Then we can sample a new point and estimate a new parameter</li>
+</ul>
+<p><span class="math display">\[
+y_{n+1} \sim f(y | \hat{\theta}_n) \\
+\hat{\theta}_{n+1} = \theta(y_{1:n+1})
+\]</span></p>
+</div><div class="column">
+<ul>
+<li><p>Idea: If uncertainty in mle estimate decreases with more data, then we can iteratively update</p></li>
+<li><p><span class="math display">\[
+\theta_{m+1} = \theta_m + \epsilon_m \frac{\partial log f(x_{m+1}|\theta_m)}{\partial \theta_m}
+\]</span> where <span class="math inline">\(\epsilon_m\)</span> functions as our learning rate scheduler.</p></li>
+<li><p>“Gradient descent style” updates</p></li>
+<li><p>Gives us the “frequentist posterior”</p></li>
+</ul>
+</div></div>
+
+
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -937,7 +1211,7 @@ Nagler, Thomas, and David Rügamer. 2025. <span>“Uncertainty <span>Quantificat
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1100,6 +1374,48 @@ Nagler, Thomas, and David Rügamer. 2025. <span>“Uncertainty <span>Quantificat
           RevealZoom
         ]
       });
+    </script>
+    <script>
+      Reveal.on('ready', (event) => {
+        updateFooter(event.indexh);
+      });
+
+      Reveal.on('slidechanged', (event) => {
+        updateFooter(event.indexh);
+      });
+
+      function updateFooter(indexh) {
+        const footer = document.querySelector('.reveal .footer');
+        if (!footer) return;
+
+        // Define the sections and their display names
+        // Index 0 is the Agenda/Title, usually we don't highlight anything or maybe the first one?
+        // Let's assume 0 is "Agenda" and we don't highlight the main content sections yet.
+        
+        const sections = [
+          { index: 1, id: 'motivation', text: 'Motivation' },
+          { index: 2, id: 'traditional', text: 'Traditional Bayes' },
+          { index: 3, id: 'predictive', text: 'Predictive Bayes' },
+          { index: 4, id: 'resampling', text: 'Predictive Resampling' },
+          { index: 5, id: 'theory', text: 'Theory' },
+          { index: 6, id: 'applications', text: 'Applications' },
+          { index: 7, id: 'conclusion', text: 'Conclusion' }
+        ];
+
+        let html = '';
+        sections.forEach((section, i) => {
+          const isActive = indexh === section.index;
+          const style = isActive ? 'font-weight: bold; color: black;' : 'color: #888;';
+          html += `<span style="${style}">${section.text}</span>`;
+          if (i < sections.length - 1) {
+            html += ' | ';
+          }
+        });
+
+        footer.innerHTML = html;
+        footer.style.fontSize = '0.6em';
+        footer.style.padding = '10px';
+      }
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {

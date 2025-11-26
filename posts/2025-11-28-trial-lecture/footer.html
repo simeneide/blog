@@ -1,0 +1,42 @@
+<script>
+  Reveal.on('ready', (event) => {
+    updateFooter(event.indexh);
+  });
+
+  Reveal.on('slidechanged', (event) => {
+    updateFooter(event.indexh);
+  });
+
+  function updateFooter(indexh) {
+    const footer = document.querySelector('.reveal .footer');
+    if (!footer) return;
+
+    // Define the sections and their display names
+    // Index 0 is the Agenda/Title, usually we don't highlight anything or maybe the first one?
+    // Let's assume 0 is "Agenda" and we don't highlight the main content sections yet.
+    
+    const sections = [
+      { index: 1, id: 'motivation', text: 'Motivation' },
+      { index: 2, id: 'traditional', text: 'Traditional Bayes' },
+      { index: 3, id: 'predictive', text: 'Predictive Bayes' },
+      { index: 4, id: 'resampling', text: 'Predictive Resampling' },
+      { index: 5, id: 'theory', text: 'Theory' },
+      { index: 6, id: 'applications', text: 'Applications' },
+      { index: 7, id: 'conclusion', text: 'Conclusion' }
+    ];
+
+    let html = '';
+    sections.forEach((section, i) => {
+      const isActive = indexh === section.index;
+      const style = isActive ? 'font-weight: bold; color: black;' : 'color: #888;';
+      html += `<span style="${style}">${section.text}</span>`;
+      if (i < sections.length - 1) {
+        html += ' | ';
+      }
+    });
+
+    footer.innerHTML = html;
+    footer.style.fontSize = '0.6em';
+    footer.style.padding = '10px';
+  }
+</script>
