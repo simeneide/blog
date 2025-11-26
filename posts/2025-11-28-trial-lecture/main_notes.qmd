@@ -14,27 +14,28 @@ format:
     max-scale: 1.0
     scrollable: false
     fragments: true
+    footer: " "
+    include-after-body: footer.html
+    slide-number: true
 created: 2025-11-17T12:32
 updated: 2025-11-19T21:29
 bibliography: references.bib
 #toc: true
 #toc-depth: 2
 ---
-## Agenda
+# Agenda
+
+Target audience: master students with some knowledge about Bayesian statistics
 
 - Motivational LLM In Context Learning
-- Traditional Bayesian approach
-- Predictive Bayesian Motivation
+- Traditional Bayesian review
+- Predictive Bayesian introduction
 - Predictive resampling algorithm
-- Theory
+- Some theory
 - Applications
 - Conclusion
 
-::: footer
-Traditional Bayes | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion
-:::
 
-# LLM In-Context Learning
 
 ## LLM In-Context Learning {auto-animate="true"}
 
@@ -106,9 +107,7 @@ y:
 ![](attachments/predictive_resampling_llm_B20_N3.png)
 :::
 
-::: {.fragment}
-- **Valid? Posterior predictive?**
-:::
+
 
 :::
 
@@ -151,6 +150,10 @@ y:
 :::
 ::::
 
+::: {.fragment}
+**Valid? Posterior predictive?**
+:::
+
 # Traditional Bayesian approach
 
 ## Traditional Bayesian	approach
@@ -163,8 +166,10 @@ y:
 :::
 
 
-::: {.fragment .fade-in-then-semi-out}
+::: {.incremental}
 - We have **collected $y_{1:n}$ data points** from an unknown distribution $F_0$.
+- Assume $F_0$ has a true density $y_i \sim f_{\theta_0}$ given by a true parameter $\theta_0$.
+- Goal: Find probable values of $\theta_0$ given the data $y_{1:n}$.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -193,19 +198,16 @@ P(y | y_{1:n}) = \int f_{\theta}(y) \pi(\theta | y_{1:n}) d\theta
 $$ {#eq-posterior_predictive}
 :::
 
-::: footer
-**Traditional Bayes** | Predictive Bayesian | Predictive Resampling | Theory | Applications | Conclusion
-:::
 
-## Prior in a Neural Network?!
+## Prior beliefs on Neural Network parameters?!
 ::: {.notes}
-- Neural nets are black box models that are hard to interpret
-- How can we have any intuition or prior knowledge about the parameters in hidden layers?
+- Neural networks are black box models
+- How can we have any prior knowledge about the parameters in hidden layers?
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-- Complicated black box models
-- How can we have any intuition?
+- Neural networks are black box models
+- We have no intuition here(!)
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -216,27 +218,30 @@ $$ {#eq-posterior_predictive}
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-### Today: Start at a different point?
+### Today: Start at a different point
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-- These black box neural are closer to defining the predictive distribution 
+- Instead, define the predictive distribution:
 
-$$p(y_{n+1} | y_{1:n})$$
+$$P(y_{n+1} | y_{1:n})$$
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-- Specify a predictive distribution instead of prior+likelihood
+- More natural to define the predictive distribution instead of prior+likelihood?
 :::
 
 # Predictive Bayes Motivation
 
 ## Compute statistics from an infinite population
+::: {style="font-size: 50%;"}
+@holmesStatisticalInferenceExchangeability2023
+:::
 
 ::: {.fragment .fade-in-then-semi-out}
 - Think of bayesian ucertainty to originate from _missing data_:
 
-> The assumption behind most, if not all, statistical problems is that there is an amount of data, $x_{comp}$, which if observed, would yield the problem solved.   (@holmesStatisticalInferenceExchangeability2023)
+> The assumption behind most, if not all, statistical problems is that there is an amount of data, $x_{comp}$, which if observed, would yield the problem solved.
 :::
 
 ::: {.fragment .fade-in}
@@ -255,8 +260,11 @@ For example:
 ::: {.notes}
 - Therefore, we can find a posterior distribution, not by specifying priors and likelihoods, but by specifying the distribution of the missing data given the observed data!
 :::
+::: {style="font-size: 50%;"}
+@holmesStatisticalInferenceExchangeability2023
+:::
 
-::: {.fragment .fade-in}
+::: {.fragment}
 The Bayesian posterior can be written as
 
 $$
@@ -277,78 +285,67 @@ $$\pi(\theta | y_\text{comp}) = \delta_{\hat{\theta}(y_\text{comp})}(\theta)$$
 
 \
 
-::: {.fragment .fade-in-then-semi-out}
-**Just need to find $P(y_\text{mis} | y_\text{obs})$...**
+::: {.fragment .fade-in}
+Just need to define $P(y_\text{mis} | y_\text{obs})$ ...
 :::
 
-## Why is this useful?
-
-- Priors on BNN parameters lack a clear interpretation
-- $P(y_{n+1} | y_{1:n})$ are very similar to many black box models we have today
-- Resulting method can be much faster than MCMC.
-
-# Predctive resampling
-Predictive resampling (@fongMartingalePosteriorDistributions2022) is a way to sample the missing data given $p(y_{n+1} | y_{1:n})$
-
+# Predictive resampling
+::: {style="font-size: 50%;"}
+@fongMartingalePosteriorDistributions2022
+:::
 :::: {.columns}
 ::: {.column}
-::: {.fragment .fade-in-then-semi-out}
-1. Simulates $y_{n+1:\infty}$ by N one step ahead predictions from a valid predictive distribution $P(y_{i} | y_{1:i-1})$:
 
-$$
-P(y_{n+1:\infty} | y_{1:n}) 
-= \prod_{i=n+1}^\infty P(y_i | y_{1:i-1})
-\approx \prod_{i=n+1}^N P(y_i | y_{1:i-1})
-$$ 
+Way to sample the missing data given a one step ahead predictive distribution $P(y_{i+1} | y_{1:i})$
+
+::: {.fragment .fade-in-then-semi-out}
+$y_{comp} = y_{1:\infty} \approx y_{1:N}$ for some large N.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-2. Compute the quantity of interest $\theta(y_{1:N})$ on the full dataset
-3. Monte Carlo integration: Repeat this B times to get a posterior distribution of the quantity of interest
+$$
+P(y_{n+1:N} | y_{1:n}) = \prod_{i=n}^N P(y_{i+1} | y_{1:i})
+$$
 :::
 :::
 
 ::: {.column}
-::: {.fragment .fade-in .absolute top=350 right=0}
-```
-theta = np.zeros(B)
+
+::: {.fragment .fade-in-then-semi-out}
+**Step 1:** Simulate $y_{n+1:\infty}$ by N one step ahead predictions $P(y_{i+1} | y_{1:i})$
+
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+**Step 2:** Compute the quantity of interest $\theta(y_{1:N})$ on the full dataset
+:::
+::: {.fragment .fade-in-then-semi-out}
+**Repeat** B times to get a posterior distribution of the quantity of interest
+:::
+
+::: {.fragment .fade-in .absolute top=450 right=0}
+```python
+theta_samples = np.zeros(B)
 for b in range(0,B):
 	y = np.zeros(N)
 	y[:n] = y_obs
 	for i in range(n+1,N):
 		y[i] = p_i(y[1:(i-1)])
 
-	theta[b] = theta(y)
+	theta_samples[b] = theta(y)
 ```
 :::
 :::
+::: {.fragment .fade-in top=600}
+**NB: Need to define a valid $P(y_{i+1} | y_{1:i})$**
 :::
-<!-- 
-- Given
-	- A collected dataset $y_{1:n}$
-	- a valid $p(y_{n+1} | y_1:n)$  
-	- A quantity of interest that can be computed if we have the full dataset $\theta(y_{1:\infty})$
-
-Then
-
-- for b in 1:B 
-	- for i in $n+1:N$  
-		- sample $y_i ~ p(y_{n+1} | y_1:n)$  
-	- compute $\theta_b = \theta(y_{1:\infty})$  
-	
-- Then $\{\theta_b\}_{b=1}^N$ are posterior draws of our quantity of interest! 
--->
-
-::: {.fragment .fade-in-then-semi-out}
-**NB: We still have not defined any $p(y_{n+1} | y_{1:n})$ we can use!**
 :::
+
 
 ## Example 1 (problem)
-::: footer
+::: {style="font-size: 50%;"}
 Adapted example from @fongMartingalePosteriorDistributions2022 \
-Traditional Bayes | **Predictive Bayesian** | Predictive Resampling | Examples | Conclusion
 :::
-
 :::: {.columns}
 ::: {.column}
 
@@ -362,11 +359,11 @@ $$
 ::: {.fragment .fade-in-then-semi-out}
 Conjugate prior gives closed form posterior
 
-$$ P(\theta | y_{1:n}) = N(\theta | \bar{\theta_n}, \bar{\sigma_n^2} ) $$
+$$ P(\theta | y_{1:n}) = N(\theta | \bar{\theta_n}, \bar{\sigma_n}^2 ) $$
 where
 $$ 
 \bar{\theta_n} := \frac{\sum_{i=1}^n y_i}{n+1},
- \bar{\sigma_n^2} := \frac{1}{n+1} 
+ \bar{\sigma}_n^2 := \frac{1}{n+1} 
 $$
 :::
 
@@ -423,79 +420,129 @@ plt.show()
 ## Example (run predictive resampling)
 
 ::: {.notes}
-We are allowed to use the posterior predictive as our one step ahead predictive distribution. Not only are we allowed, but we will get the exact same posterior as traditional bayes!
+- Assume we made a good guess and think that the posterior predictive is a good function to sample from
+- 
 :::
 
 :::: {.columns}
 ::: {.column}
 
 - Let the predictive distribution be the true posterior predictive:
-$$ P(y_{n+1} | y_{1:n}) = N(y | \bar{\theta_n}, \bar{\sigma_n^2} + 1)$$
+$$ P(y_{i+1} | y_{1:i}) = N(y | \bar{\theta_i}, \bar{\sigma_i^2} + 1)$$
 
-
-
-::: {.incremental}
-- **Step 1:** Sample $y_{n+1:N}$ from the posterior predictive $P(y | y_{1:n})$  
+::: {.fragment .fade-in-then-semi-out fragment-index=1}
+- **Step 1:**  For $i=n,...,N-1$: \ Sample $y_{i+1} | y_{1:i}$ from the posterior predictive
+:::
+::: {.fragment .fade-in-then-semi-out fragment-index=2}
 - **Step 2:** Compute the point estimate of $\theta$ given the full data $y_{1:N}$:
-$$ \hat{\theta}(y_{1:N}) = \frac{\sum_{i=1}^N y_i}{N+1} $$
-- **Step 3:** Repeat B times to get posterior samples of $\theta$
+$$
+\hat{\theta}(y_{1:N}) = \frac{\sum_{i=1}^N y_i}{N+1} 
+$$
+:::
+::: {.fragment .fade-in-then-semi-out fragment-index=3}
+- **Repeat B times** to get posterior samples of $\theta$
+:::
 :::
 :::
 ::: {.column}
 ::: {.r-stack}
 
-::: {.fragment .fade-in}
+::: {.fragment .fade-in  fragment-index=2}
+![](attachments/posterior_paths_one_path.png){.absolute top=100 right=-100 height="330"}
+:::
+
+::: {.fragment .fade-in fragment-index=3}
 ![](attachments/posterior_paths.png){.absolute top=100 right=-100 height="330"}
 :::
 
 ::: {.fragment .fade-in}
-![](attachments/predictive_resampling_animation.gif){.absolute top=450 right=-100 height="330"}
+![](attachments/combined_n=1.png){.absolute top=100 right=-100 height="660"} 
 :::
+
+::: {.fragment .fade-in}
+![](attachments/combined_n=100.png){.absolute top=100 right=-100 height="660"}
 :::
+
+::: {.fragment .fade-in}
+![](attachments/combined_n=200.png){.absolute top=100 right=-100 height="660"}
 :::
+
+::: {.fragment .fade-in}
+![](attachments/combined_n=500.png){.absolute top=100 right=-100 height="660"}
+:::
+
+::: {.fragment .fade-in}
+![](attachments/combined_n=999.png){.absolute top=100 right=-100 height="660"}
+:::
+
+::: {.fragment .fade-in}
+![](attachments/predictive_resampling_animation.gif){.absolute top=430 right=-100 height="360"}
+:::
+
+:::
+
 ::::
+
+## Why is this useful?
+
+::: {.fragment .fade-in-then-semi-out}
+#### Recap
+- We can find a posterior statistics $\theta(y_{1:N})$ if we have a valid $P(y_{i+1} | y_{1:i})$.
+- Do not need to define prior or likelihood
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+#### Specification
+- Priors on BNN parameters lack a clear interpretation
+- Maybe its more intuitive to define a predictive distribution?
+- $P(y_{i+1} | y_{1:i})$ feels similar to many black box models we have today
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+#### Computation
+- Predictive resampling instead of MCMC
+- Predictive resampling can be parallelized
+  - 10-100x speedups
+:::
 
 # Theory on the predictive distributions
 
 ## What predictive distributions does this work for?
+::: {style="font-size: 50%;"}
+@fortiniExchangeabilityPredictionPredictive2025
+:::
 
+::: {.notes}
 We now have a sequence $(Y_n)_{n\ge1}$ where we can generate new samples with the predictive distribution $P_n := P(y_{n+1} | y_{1:n})$.
 
 However, when does this technique give us an actual data distribution $F_0$?
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- Have a $P(y_{i+1} | y_{1:i})$ that will generate a sequence $(Y_i)_{i\ge n}$
+:::
+::: {.fragment .fade-in-then-semi-out}
+- When $(Y_i)_{i\ge n}$ give us a data distribution $F_0$? i.e. when does
+
 $$
 (Y_n)_{n\ge1} | F_0
-$$
+$$ exists.
+:::
 
 \
 
+::: {.fragment .fade-in-then-semi-out}
 In this section we will:
 
-- Introduce a requirement on the sequence $(Y_n)$ that makes it possible to define a prior
+- Introduce a requirement on the sequence $(Y_i)_{i\ge1}$ that makes it possible to define a prior
 - Then relax this requirement
-- End up with a requirement that $P(y_{n+1} | y_{1:n})$ is a martingale.
-
-
-::: {.notes}
-Outline next steps:
-- de Finetti explain prior exist iff sequence is exchangeable
-  - example: Empirical distribution?
-- Exchangeability is a strong assumption, hard to construct in practice
-
-- Relax exchangeability
-  - We might not care about excplicitly defining a prior
-  - Want to use predictive resampling to be faster than mcmc
-  - "How can we relax exchangeability while preserving the idea that observations arise from the same unknown distribution"? (Fortini seminar 25)
-
-- Exchangeability = Stationarity + c.i.d.
-	- What happens if we drop stationarity?
-	- This is equivalent to saying that $P_n$ is a martingale. @fortiniTheoreticalFoundationsPredictive
-		- through 
+- End up with a requirement that $P(y_{i+1} | y_{1:i})$ is a martingale.
 :::
 
 ## de Finetti's Theorem
-
+::: {.fragment .fade-in-then-semi-out}
 ::: {#def-exchangeable}
-$(Y_n)$ is **exchangeable** if 
+$(Y_i)_{i\ge1}$ is **exchangeable** if 
 
 $$
 (Y_{\sigma(1)}, Y_{\sigma(2)},...) \sim (Y_1, Y_2, ..)
@@ -503,23 +550,29 @@ $$
 
 for every finite permutation $\sigma$ of $\mathbb{N}$ .
 :::
+:::
 
+::: {.fragment .fade-in-then-semi-out}
 ::: {#thm-finetti}
 # de Finetti's Theorem
 <div style="text-align: center;">
 
-<br> There exist $F_0$ such that $(Y_n) | F_0 \sim F^\infty$ 
+<br> There exist $F_0$ such that $(Y_i) | F_0$ 
 <br> if and only if 
-<br> $(Y_n)$ is exchangeable.
+<br> $(Y_i)$ is exchangeable.
 </div>
-
+:::
 :::
 
 \
 
-> If we can construct a $P_n$ so that the resulting sequence $(Y_n)$ is exchangeable, then we have our familiar traditional Bayes framework
+::: {.fragment .fade-in-then-semi-out}
+> If we can construct a $P(y_{i+1} | y_{1:i})$ so that the resulting sequence $(Y_i)_{i\ge n}$ is exchangeable, then we have our familiar traditional Bayes framework
+:::
 
+::: {.fragment .fade-in-then-semi-out}
 In reality, hard to use exchangeability
+:::
 
 ## Relaxing exchangeability {auto-animate="true"}
 
@@ -528,13 +581,23 @@ c.i.d. : "conditionally on the past, all future observations are identically dis
 Stationarity: A stationary sequence is a random sequence whose joint probability distribution is invariant over time
 :::
 
+
+::: {.fragment .fade-in-then-semi-out}
 ::: {#thm-exchangecid-stationary}
 # Kallenberg 1988
-
-"Exchangeability = Stationarity + c.i.d."
+\
+"Exchangeability = Stationarity + conditionally identically distributed"
+:::
 :::
 
 \
+
+::: {.fragment .fade-in-then-semi-out}
+**So let us remove stationarity...**
+:::
+
+\
+<!-- \
 
 ::: {#def-stationarity}
 
@@ -543,61 +606,73 @@ $$
 p_{y_1,..., y_n}(y | y_1,..., y_n) = p_{y_{1+k},..., y_{n+1}}(y | y_1,..., y_n) 
 $$
 for any $n$ and $k$.
-:::
+::: -->
 
 \
 
-::: {#def-cid}
+::: {.fragment .fade-in-then-semi-out}
+::: {#def-cid data-id="def-cid"}
 # Conditionally identically distributed (c.i.d.)
 A sequence $(Y_n)_{n\ge 1}$ is c.i.d. if it satisfies
 
 $$
-p_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})
+P(Y_{n+k} | y_1, ..., y_{n}) = P(Y_{n+1} | y_1, .., y_{n})
 $$
 for all $k\ge1$.
 :::
 
-**So let us remove stationarity...**
-
-
-## Martingale {auto-animate="true"}
-
-::: {.fragment .fade-in-then-semi-out}
-::: {#def-cid-recap}
-# Conditionally identically distributed (c.i.d.)
-
-A sequence $(Y_n)_{n\ge 1}$ is c.i.d. if it satisfies
-
-$$
-p_{y_{n+k}}(y | y_1, ..., y_{n-1}) = p_{y_n}(y| y_1, .., y_{n-1})
-$$
-for all $k\ge1$.
-:::
-:::
-
-::: {.fragment .fade-in-then-semi-out}
+::: {.fragment .fade-in-then-semi-out data-id="def-cid-oneliner"}
 > All future observations share the same conditional distribution given the past
 :::
 
-::: {.fragment .fade-in-then-semi-out}
-This is equivalent to saying that the predictive distributions are martingales:
+:::
+
+## Martingale {auto-animate="true"}
+
+::: {#def-cid-recap data-id="def-cid"}
+# Conditionally identically distributed (c.i.d.)
+
+A sequence $(Y_n)_{n\ge 1}$ is c.i.d. if it satisfies
+
+$$
+P(Y_{n+k} | y_1, ..., y_{n}) = P(Y_{n+1} | y_1, .., y_{n})
+$$
+for all $k\ge1$.
+:::
+
+::: {data-id="def-cid-oneliner"}
+> All future observations share the same conditional distribution given the past
+:::
+
+::: {.fragment .fade-in}
+
+This is **equivalent to** saying:
 
 ::: {#def-martingale-predictive}
 # Martingale of the predictive distribution
 $$
-E(p_{n+1}(A) | y_{1:n}) = p_n(A)
+E[P(Y_{i+2} \in A | y_{1:{i+1}}) | y_{1:i}] = P(Y_{i+1} \in A | y_{1:i})
 $$
-for all $A$ and all $n$.
+for all $A$ and all $i$.
 :::
 :::
 
 ::: {.fragment}
-- Still have many desirable properties 
-  - $(Y_n)$ converge to a distribution $F_0$, 
-  - $Y_n$ are identically distributed, 
-  - $Y_n$ are **asymptotically** exchangeable
+#### Still have many desirable properties
+
+::: {.columns }
+::: {.column}
+  - $(Y_i)_{i\ge n}$ converge to a distribution $F_0$, 
+  - $(Y_i)_{i\ge n}$ are identically distributed, 
+:::
+::: {.column}
+  - $(Y_i)_{i\ge n}$ are **asymptotically** exchangeable
+  - The empirical distribution of $(Y_i)_{i\ge n}$ converges to $F_0$
+:::
+:::
 :::
 
+<!-- 
 ## Martingale posteriors
 
 ::: {#def-martingale-posterior}
@@ -613,23 +688,50 @@ $$
 \approx \frac{1}{B} \sum_{b=1}^B \delta \{\theta(y_{1:N}) \in A \}
 $$
 
-:::
+::: -->
 
 # Applications
-## Parametric models
+
+## Example 1: Empirical predictive
+
+::: {.fragment .fade-in-then-semi-out}
+- Remember example:
+  - $Y_i \sim N(\theta, 1)$
+  - $\theta=2$
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- If we instead of the _true_ posterior predictive assume an empirical predictive on the collected data $y_{1:n}$:
+
+
+::: {.columns}
+::: {.column}
+![](attachments/posterior_distr_n=999.png)
+:::
+::: {.column}
+![](attachments/posterior_distr_empirical.png)
+:::
+:::
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- Works but "worse model"
+:::
 
 ## Are LLMs martingales?
 
 ::: {.columns}
 ::: {.column}
 
-- Check whether $P(y_{n+1}|y_{1:n})$ is a martingale
+![](attachments/predictive_resampling_llm_B20_N3.png){width=100%}
 
-- Do we get the same distribution when generating more examples?
+::: {.fragment .fade-in-then-semi-out}
+- Check whether $P(y_{i+1}|y_{1:i})$ is a martingale
+:::
 
-![](attachments/predictive_resampling_llm_B20_N3.png)
-
-![](attachments/predictive_resampling_llm_B20_N10.png)
+::: {.fragment .fade-in-then-semi-out}
+- Note: $y_{i+1}$ is not the next token!
+:::
 
 :::
 
@@ -672,62 +774,180 @@ y:
 :::
 ::::
 
-## Are LLMs martingales? (Falck et al 2024)
-- @falckAreLargeLanguage2024 studies whether LLMs obey the martingale property for in context learning
-- Tests three LLMs: `gpt-3.5`, `llama-2-7b` and `mistral-7b`
-- Tests three datasets: Bernoulli, Gaussian and a synthetic natural language dataset
-
-![](attachments/20251121161334.png)
-
-- Suggests tools or fine tuning to make LLMs more like martingales
-
-## TabPFN
-
-::: {.notes}
-Why does the dirichlet mixture help?
+## Are LLMs martingales?
+::: {style="font-size: 50%;"}
+@falckAreLargeLanguage2024
 :::
 
 ::: {.columns}
 ::: {.column}
-::: {.fragment fragment-index=1}
-- @naglerUncertaintyQuantificationPriorData2025 observe the same phenomenon in TabPFN
-:::
-::: {.fragment fragment-index=2}
-- TabPFN: tabular $z_i = (x_i,y_i)$ trained on synthetic data
-:::
-::: {.fragment fragment-index=3}
-- Inference:
-$$
-P(y_{n+1} | x_{n+1}, z_{1:n})
-$$
-- Use a Dirichlet process mixture to construct posterior samples
-- Quantile regression on tabular tasks
+
+- @falckAreLargeLanguage2024 studies martingale property of LLMs in-context learning empirically
+
+::: {.fragment .fade-in-then-semi-out fragment-index=1}
+- Tests three LLMs: 
+  - `gpt-3.5`,
+  - `llama-2-7b`
+  - `mistral-7b`
 :::
 
-::: {.fragment fragment-index=4}
-- Faster, smaller Credible intervals
+::: {.fragment .fade-in-then-semi-out fragment-index=2}
+- Tests three datasets: 
+  - Bernoulli, 
+  - Gaussian,
+  - Synthetic natural language dataset
 :::
+
+
+::: {.fragment .fade-in fragment-index=3}
+- **Result: No.**
+:::
+
 
 :::
 
 ::: {.column}
-::: {.r-stack}
-::: {.fragment fragment-index=1}
-![](attachments/20251122170556.png){.absolute top=0 right=0 height="330"}
+::: {.fragment fragment-index=3}
+![](attachments/llm-statistics-drift.png){width=100%}
 :::
-::: {.fragment}
-![](attachments/20251122171844.png){.absolute top=350 right=0 height="400"}
+
+::: {.fragment .fade-in fragment-index=5}
+- The expected probability drifts as $i$ increases
 :::
-:::
+
+
+::: {.fragment .fade-in fragment-index=6}
+- Suggests tools or fine tuning to make LLMs more like martingales
 :::
 
 :::
-# Conclusions
+:::
+
+## Tabular Prior Fitted Networks (TabPFN)
+::: {style="font-size: 50%;"}
+@hollmannTabPFNTransformerThat2023, @naglerUncertaintyQuantificationPriorData2025, @ngTabMGPMartingalePosterior2025
+:::
+::: {.notes}
+Why does the dirichlet mixture help?
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- TabPFN: pretrained transformer on tabular data (@hollmannTabPFNTransformerThat2023)
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- Observe the same non-martingale property in TabPFN (@naglerUncertaintyQuantificationPriorData2025)
+:::
+
+\
+
+::: {.fragment .fade-in-then-semi-out}
+### Two different approaches:
+:::
+\
+
+::: {.columns}
+::: {.column}
+::: {.fragment .fade-in-then-semi-out}
+#### @naglerUncertaintyQuantificationPriorData2025
+Only use tabPFN on the first step $P(y_{n+1} | x_{n+1}, z_{1:n})$, then a Dirichlet process mixture for the rest.
+:::
+:::
+
+::: {.column}
+::: {.fragment .fade-in-then-semi-out}
+#### @ngTabMGPMartingalePosterior2025
+"Ignores" theoretical requirements, checks convergence empirically and says its "good enough".
+:::
+
+:::
+
+:::
+
+# Conclusion
 
 ## Conclusion
 
-## Future
+::: {.columns}
+::: {.column}
+::: {.incremental}
+- Introduced a new, alternative Bayesian framework
+- Specify predictive distributions instead of priors and likelihoods
+- Hints at being able to insert our favourite black-box auto-regressive model
+- Highly parallizeable
+- **Limitation**: Difficult/unsure how to specify valid predictive distributions
+:::
+:::
+
+::: {.column}
+::: {.fragment .fade-in}
+#### Future (/current) work
+:::
+
+::: {.incremental}
+- Show that different models (predictive distributions) are martingales
+- Relaxation of the martingale posterior (e.g. @battistonBayesianPredictiveInference2025)
+- Empirical robustness (e.g. @ngTabMGPMartingalePosterior2025)
+
+:::
+::: {.fragment .fade-in}
+##### Half baked (LLM)-ideas
+:::
+
+::: {.fragment .fade-in}
+- "LLMs are not row-invariant due to positional embeddings" 
+  @ngTabMGPMartingalePosterior2025
+:::
+::: {.fragment .fade-in}
+  - Can we design new, "local" positional embeddings architectures are row-invariant?
+:::
+::: {.fragment .fade-in}
+- Update parametric models inside predictive resampling. LLM posteriors?
+:::
+:::
+
+<!-- - Use LLMs as parametric models to update inside predictive resampling?
+  - Output: Posterior LLM parameters samples -->
+
+:::
+:::
 
 ## References
 
 ::: {#refs} 
+:::
+
+
+# BONUS
+
+## Parametric models
+::: {style="font-size: 50%;"}
+@holmesStatisticalInferenceExchangeability2023
+:::
+
+::: {.columns}
+::: {.column}
+- Consider a data model $f(y | \theta_0)$
+- Let $\hat{\theta}_n = \theta(y_{1:n})$ be an _unbiased_ MLE estimate of $\theta_0$ based on $y_{1:n}$
+- Then we can sample a new point and estimate a new parameter
+
+$$ 
+y_{n+1} \sim f(y | \hat{\theta}_n) \\
+\hat{\theta}_{n+1} = \theta(y_{1:n+1})
+$$
+
+
+
+:::
+::: {.column}
+- Idea: If uncertainty in mle estimate decreases with more data, then we can iteratively update 
+- 
+$$ 
+\theta_{m+1} = \theta_m + \epsilon_m \frac{\partial log f(x_{m+1}|\theta_m)}{\partial \theta_m}
+$$
+where $\epsilon_m$ functions as our learning rate scheduler.
+
+- "Gradient descent style" updates
+- Gives us the "frequentist posterior"
+:::
+:::
