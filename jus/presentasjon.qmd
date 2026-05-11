@@ -16,8 +16,19 @@ format:
     smaller: true
     width: 1280
     height: 800
-    scrollable: false
+    scrollable: True
+    fragments: true  # midlertidig: vis alt med en gang, behold .fragment-markup
 ---
+
+<!-- ```{=html}
+<style>
+/* DEV: vis canvas-ramme (1280x800) under iterasjon. Fjern før produksjon. */
+.reveal .slides {
+  outline: 2px dashed rgba(255, 0, 0, 0.6);
+  outline-offset: 0;
+}
+</style>
+``` -->
 
 
 # Velkommen
@@ -1633,17 +1644,13 @@ Simon Willison: "the lethal trifecta"
 :::
 
 ::: {.fragment style="margin-top: 18px; font-size: 0.9em;"}
-Vi "trener" modellen ved å legge til data i prompten - samme prinsipp som hele dagen
+Vi "trener" modellen ved å legge til data i prompten - samme prinsipp som når vi trener en AI-modell
 :::
 
-## Det er nå det skjer
 
-::: {.incremental}
-1. Utviklere går fra å skrive kode til å orkestrere agenter
-2. Utviklere først fordi de står tettest på modellen
-3. **Tool use er det som låser opp**
-4. Det er ikke eksperimenter lenger - det er nyttig
-:::
+## Diskusjon
+
+- 
 
 ::: {.fragment style="margin-top: 30px; text-align: center; font-size: 1.2em; font-weight: 600;"}
 Takk for meg!

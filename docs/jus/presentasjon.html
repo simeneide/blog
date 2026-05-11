@@ -55,6 +55,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -159,6 +160,18 @@ Siv Kristin Henriksen
     </div>
 </div>
 
+</section>
+<section class="slide level2">
+
+<!-- ```{=html}
+<style>
+/* DEV: vis canvas-ramme (1280x800) under iterasjon. Fjern før produksjon. */
+.reveal .slides {
+  outline: 2px dashed rgba(255, 0, 0, 0.6);
+  outline-offset: 0;
+}
+</style>
+``` -->
 </section>
 <section>
 <section id="velkommen" class="title-slide slide level1 center">
@@ -394,7 +407,7 @@ Siv Kristin Henriksen
 <h1>The Algorithm</h1>
 <p><img data-src="img/ai-hal9000.svg" style="height: 420px; width: 100%; object-fit: contain;"></p>
 </section>
-<section id="the-algorithm-1" class="slide level2">
+<section id="the-algorithm-1" class="slide level2 scrollable">
 <h2>The Algorithm</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
@@ -1475,7 +1488,7 @@ P(25 &lt; y &lt;26 | \textit{dato, nedbør, snømengde, temp})
 </ul>
 </div>
 </section>
-<section id="hvor-feiler-vi-i-de-fire-stegene" class="slide level2">
+<section id="hvor-feiler-vi-i-de-fire-stegene" class="slide level2 scrollable">
 <h2>Hvor feiler vi i de fire stegene?</h2>
 <ol type="1">
 <li class="fragment"><strong>Data</strong> - det vi lærer fra
@@ -1597,7 +1610,7 @@ P(25 &lt; y &lt;26 | \textit{dato, nedbør, snømengde, temp})
 <p><img data-src="resources/language-models/img/slide-19-obj133.jpg" style="border-radius: 8px; max-height: 450px; display: block; margin: 0 auto;"></p>
 </div>
 </section>
-<section id="hva-er-egentlig-en-språkmodell" class="slide level2">
+<section id="hva-er-egentlig-en-språkmodell" class="slide level2 scrollable">
 <h2>Hva er egentlig en språkmodell?</h2>
 <div style="font-size: 0.95em;">
 <ol type="1">
@@ -1803,7 +1816,7 @@ P(25 &lt; y &lt;26 | \textit{dato, nedbør, snømengde, temp})
 </ul>
 </div></div>
 </section>
-<section id="en-dødelig-treenighet" class="slide level2">
+<section id="en-dødelig-treenighet" class="slide level2 scrollable">
 <h2>En dødelig treenighet</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -1873,7 +1886,7 @@ Simon Willison: "the lethal trifecta"
 <h1>Workshop: Bygg en LLM-klassifiserer</h1>
 
 </section>
-<section id="lær-en-språkmodell-å-lese-terms-of-service" class="slide level2">
+<section id="lær-en-språkmodell-å-lese-terms-of-service" class="slide level2 scrollable">
 <h2>Lær en språkmodell å lese terms of service</h2>
 <ul>
 <li class="fragment">Datasett: LegalBench <code>unfair_tos</code> (Stanford)</li>
@@ -1887,17 +1900,14 @@ Simon Willison: "the lethal trifecta"
 </ol></li>
 </ul>
 <div class="fragment" style="margin-top: 18px; font-size: 0.9em;">
-<p>Vi “trener” modellen ved å legge til data i prompten - samme prinsipp som hele dagen</p>
+<p>Vi “trener” modellen ved å legge til data i prompten - samme prinsipp som når vi trener en AI-modell</p>
 </div>
 </section>
-<section id="det-er-nå-det-skjer" class="slide level2">
-<h2>Det er nå det skjer</h2>
-<ol type="1">
-<li class="fragment">Utviklere går fra å skrive kode til å orkestrere agenter</li>
-<li class="fragment">Utviklere først fordi de står tettest på modellen</li>
-<li class="fragment"><strong>Tool use er det som låser opp</strong></li>
-<li class="fragment">Det er ikke eksperimenter lenger - det er nyttig</li>
-</ol>
+<section id="diskusjon" class="slide level2">
+<h2>Diskusjon</h2>
+<ul>
+<li></li>
+</ul>
 <div class="fragment" style="margin-top: 30px; text-align: center; font-size: 1.2em; font-weight: 600;">
 <p>Takk for meg!</p>
 </div>
