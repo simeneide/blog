@@ -1647,11 +1647,9 @@ Simon Willison: "the lethal trifecta"
 Vi "trener" modellen ved å legge til data i prompten - samme prinsipp som når vi trener en AI-modell
 :::
 
-
-## Diskusjon
-
-- 
-
-::: {.fragment style="margin-top: 30px; text-align: center; font-size: 1.2em; font-weight: 600;"}
-Takk for meg!
+::: {.fragment style="margin-top: 30px; text-align: center; font-size: 1.3em; font-weight: 600;"}
+Case-instruksjoner: [eide.ai/jus](https://eide.ai/jus/)
 :::
+
+
+# Diskusjon
