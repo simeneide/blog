@@ -1,0 +1,263 @@
+---
+title: "Workshop: Bygg en LLM-klassifiserer for urimelige forbrukervilkår"
+subtitle: "JUS-kurs - bolk 3"
+author: "Simen Eide"
+lang: no
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+- **Varighet:** ~20 minutter
+- **Verktøy:** ChatGPT, Claude, Gemini, eller det llm-verktøyet du bruker til vanlig
+- **Format:** gå sammen i grupper. Hver gruppe velger ett språkmodellprodukt og kjører øvelsen på det. Da kan vi sammenligne på tvers av grupper etterpå.
+- **Datasett:** [LegalBench](https://hazyresearch.stanford.edu/legalbench/), oppgaven `unfair_tos`, basert på CLAUDETTE-korpuset (Lippi et al. 2019)
+
+---
+
+## Mål
+
+Lær å bygge og evaluere en LLM-klassifiserer ved å:
+
+1. Først kjøre en **zero-shot prompt** (kun instruksjon, ingen eksempler) og måle baseline
+2. Deretter legge til **few-shot eksempler** (ferdig-klassifiserte eksempler), se hvordan modellen "lærer" av treningsdata
+3. Sammenligne accuracy på samme **valideringssett**
+4. Iterere: forbedre prompten basert på feilene
+
+Det pedagogiske poenget: en LLM-klassifiserer er en *prompt + treningsdata*. Du ser direkte hvordan mer eller bedre treningsdata gir bedre prediksjoner. Det er samme grunnleggende mekanikk som i alle ML-systemer.
+
+NB: Ikke bruk så mye tid på å lese spørsmål og svar: Dere er data scientister, ikke jurister, nå.
+
+---
+
+## Oppgaven
+
+Klassifiser klausuler hentet fra forbruker-Terms of Service (Spotify, Netflix, Facebook, eBay etc.) som enten:
+
+- `fair`: klausulen er forbrukervennlig eller nøytral
+- `unfair`: klausulen er potensielt urimelig overfor forbrukeren
+
+Vi kan anta at datasettet er riktig klassifisert. Vi skal ikke overprøve vurderingene som er gjort i datasettet.
+
+---
+
+## Slik gjør du det
+
+> **Viktig:** start en *ny samtale* i ChatGPT for hvert steg under. Hvis du fortsetter i samme samtale husker modellen det den så sist, og du måler ikke det du tror du måler.
+
+### Steg 1: Zero-shot, kjør uten eksempler
+
+Start en ny samtale. Lim inn følgende prompt. Modellen får *kun* instruksjonen, ingen treningsdata.
+
+```
+You are classifying clauses from consumer Terms of Service. Each clause is
+either `fair` (consumer-friendly or neutral) or `unfair` (potentially
+disadvantageous to consumers - e.g. mandatory arbitration, class-action
+waivers, unilateral change of terms, unilateral termination, broad
+limitation of liability, forced choice of law/jurisdiction, content
+removal at company's sole discretion, or "by using/accessing the service
+you agree" deemed-acceptance).
+
+I will give you 20 clauses to classify.
+
+Output: a markdown table with columns `id` and `prediction` (exactly
+`fair` or `unfair`). No explanations.
+
+CLAUSES TO CLASSIFY:
+
+[lim inn de 20 valideringsklausulene fra "Treningssett" under]
+```
+
+Når modellen har svart, lim inn fasiten (fra "Fasit" nederst) i *samme samtale* og be den selv telle:
+
+```
+Here is the correct answer key. Compare with your previous answers and tell me how many of the 20 you got right.
+
+[lim inn fasit-tabellen]
+```
+
+Noter resultatet. Dette er baselinen vi sammenligner med i Steg 2.
+
+### Steg 2: Few-shot, gi modellen treningseksempler
+
+Start en ny samtale. Nå legger vi til 10 ferdig-klassifiserte eksempler i prompten. Dette er "treningsdataen" modellen lærer av i konteksten.
+
+```
+You are classifying clauses from consumer Terms of Service. Each clause is
+either `fair` (consumer-friendly or neutral) or `unfair` (potentially
+disadvantageous to consumers - e.g. mandatory arbitration, class-action
+waivers, unilateral change of terms, unilateral termination, broad
+limitation of liability, forced choice of law/jurisdiction, content
+removal at company's sole discretion, or "by using/accessing the service
+you agree" deemed-acceptance).
+
+I will give you 10 labeled examples, then 20 clauses to classify.
+
+Output: a markdown table with columns `id` and `prediction` (exactly
+`fair` or `unfair`). No explanations.
+
+LABELED EXAMPLES:
+
+[lim inn de 10 few-shot eksemplene fra "Few-shot eksempler" under]
+
+CLAUSES TO CLASSIFY:
+
+[lim inn de 20 valideringsklausulene fra "Valideringssett" under]
+```
+
+Etter at modellen har svart, lim inn fasiten i samme samtale og be den telle treffene (samme oppskrift som i Steg 1). Sammenlign med baselinen fra Steg 1. Poenget er å se om accuracy går *opp* når vi gir modellen treningseksempler.
+
+### Steg 3: Diskuter
+
+- Hvor mye gikk accuracy opp da dere la til 10 eksempler?
+- Hvilke klausuler bommet modellen fortsatt på?
+- Hvilken type feil var det (false positive eller false negative)?
+- Hvilket nytt few-shot eksempel kunne fikset den gjenstående feilen?
+- Har dere eller nabogruppa brukt en annen grunnmodell som språkmodell? Får dere samme resultat? Hvorfor, eller hvorfor ikke?
+- Hva ville skjedd om dere annoterte de samme 20 klausulene uavhengig? Hvor stor er enigheten mellom *jurister*?
+### Steg 4 (valgfritt): Iterer
+
+Bytt ut eller legg til few-shot eksempler. Kjør prompten igjen og se om accuracy går opp. Prøv også å fjerne eksempler for å se hvor sårbar prompten er.
+
+---
+
+## Few-shot eksempler (treningsdata)
+
+> Tips: kopier hele blokken under direkte inn i ChatGPT.
+
+```
+Example 1:
+Clause: "21.1 if you reside in the united states, these terms will be interpreted in accordance with the laws of the state of california and the united states of america, without regard to conflict-of-law provisions."
+Label: unfair
+
+Example 2:
+Clause: "by accessing or using any part of the service, you represent that you have read, understood, and agree to be bound by these terms and conditions including any future modifications."
+Label: unfair
+
+Example 3:
+Clause: "we may revise data in the ebay product catalog to supplement, remove, or correct information; if your listing uses catalog data that has been revised, those revisions may modify your listing accordingly."
+Label: unfair
+
+Example 4:
+Clause: "any dispute or claim relating in any way to your use of any amazon service, or to any products or services sold or distributed by amazon or through amazon.com will be resolved by binding arbitration, rather than in court, except that you may assert claims in small claims court if your claims qualify."
+Label: unfair
+
+Example 5:
+Clause: "likewise, you agree that in the event of data loss, we will not be liable for any purported damage or harm arising therefrom."
+Label: unfair
+
+Example 6:
+Clause: "if you breach any of these terms, academia.edu will have the right to suspend or disable your account or terminate these terms, at its sole discretion and without prior notice to you."
+Label: unfair
+
+Example 7:
+Clause: "we are not obligated to publish any information or content on our service and can remove it in our sole discretion, with or without notice."
+Label: unfair
+
+Example 8:
+Clause: "you may not assign or transfer these terms, by operation of law or otherwise, without academia.edu's prior written consent."
+Label: fair
+
+Example 9:
+Clause: "the service, including all images, audio files and other content therein, and any other information, property and rights granted or provided to you by duolingo are provided to you on an 'as is' basis."
+Label: fair
+
+Example 10:
+Clause: "if you do not agree to abide by these terms and conditions, you are not authorized to use, access or participate in the service."
+Label: fair
+```
+
+---
+
+## Valideringssett (20)
+
+> Lim inn denne blokken inn under "CLAUSES TO CLASSIFY" i prompten.
+
+```
+0. you will cooperate as fully as required by us in the defense or settlement of any claim.
+
+1. academia.edu may assign or transfer these terms, at its sole discretion, without restriction.
+
+2. when you update your payment method, you authorize us to continue charging the updated payment method, and you remain responsible for any uncollected amounts.
+
+3. you understand and agree that the services are provided to you on an "as is" and "as available" basis.
+
+4. if you do not accept all of these terms and conditions you are not authorized to use this website.
+
+5. "service" means all features, applications, content and downloads offered by linden lab, including its websites, servers, software, linden content, and user content as those terms are defined herein.
+
+6. this customary commercial licence is provided in accordance with far 12.211 (technical data) and far 12.212 (software) and, for us department of defense transactions, dfars 252.227-7015 (technical data -- commercial items) and dfars 227.7202-3 (rights in commercial computer software or computer software documentation).
+
+7. all intellectual property, other trademarks, logos, images, product and company names displayed or referred to on or in the products are the property of their respective owners.
+
+8. you are entering into this contract with linkedin (also referred to as "we" and "us").
+
+9. "user content" means any content that a user of the service has uploaded, published, or submitted to or through the servers, websites or other areas of the service.
+
+10. if you reside in brazil, these terms and the relationship between you and evernote (including any dispute) shall be governed in all respects by the laws of brazil and shall be considered to have been made and accepted in brazil, without regard to conflict of law provisions.
+
+11. these terms of use shall be governed by and construed in accordance with the laws of the netherlands.
+
+12. in order to access and use our services, you agree to these terms of service, which incorporate by reference the crowdtangle privacy policy.
+
+13. this section limits tripadvisor's liability to you for issues that may arise in connection with your use of this website.
+
+14. 6.2 your access to the products may be occasionally restricted to allow for repairs, maintenance or the introduction of new facilities or products.
+
+15. any dispute or claim relating in any way to your use of any amazon service, or to any products or services sold or distributed by amazon or through amazon.com will be resolved by binding arbitration, rather than in court, except that you may assert claims in small claims court if your claims qualify.
+
+16. you and we both consent to venue and personal jurisdiction in san francisco, california.
+
+17. uber may, but shall not be obligated to, review, monitor, or remove user content, at uber's sole discretion and at any time and for any reason, without notice to you.
+
+18. if linden lab elects to generally suspend or discontinue the service, in whole or in part, for any reason, linden lab may terminate your accounts.
+
+19. duolingo may amend, update or change these terms and conditions.
+```
+
+---
+
+## Fasit
+
+> Lim inn denne i samtalen etter at modellen har klassifisert.
+
+```
+Ground truth labels:
+
+| id | Fasit  | Originalkategori (fra LegalBench)  |
+|----|--------|------------------------------------|
+| 0  | fair   | Other - "cooperate in defense"     |
+| 1  | fair   | Other - selskapets overdragelse    |
+| 2  | fair   | Other - betalingskort              |
+| 3  | fair   | Other - "as is and as available"   |
+| 4  | fair   | Other - "if you do not accept"     |
+| 5  | fair   | Other - definisjon                 |
+| 6  | fair   | Other - lisensgrunnlag (FAR/DFARS) |
+| 7  | fair   | Other - IP-attribusjon             |
+| 8  | fair   | Other - kontraktspart              |
+| 9  | fair   | Other - definisjon                 |
+| 10 | unfair | Choice of law (Brasil)             |
+| 11 | unfair | Choice of law (Nederland)          |
+| 12 | unfair | Contract by using                  |
+| 13 | unfair | Limitation of liability            |
+| 14 | unfair | Unilateral change                  |
+| 15 | unfair | Arbitration                        |
+| 16 | unfair | Jurisdiction                       |
+| 17 | unfair | Content removal                    |
+| 18 | unfair | Unilateral termination             |
+| 19 | unfair | Unilateral change                  |
+```
+
+---
+
+## Steg 5: Tilbake til de fire stegene
+
+Workshopen er en mini-versjon av rammeverket fra bolk 1 (`data → modell → trening → handling`):
+
+| Steg | I denne workshopen |
+|---|---|
+| **Data** | De 10 few-shot eksemplene + de 20 valideringsklausulene. Merk: hva regnes som "fair" eller "unfair" er en *menneskelig vurdering* lagt på dataen. De tre juristene som annoterte CLAUDETTE-korpuset bestemte fasiten. Andre jurister kunne vært uenige (~5-10% inter-rater disagreement). Dataen *er* en fortolkning. |
+| **Modell** | Det er to modell-lag her. *Grunnmodellen* er den ferdig-trente LLM-en (GPT, Claude, Gemini), trent på enorme datamengder fra internett. Vi velger ikke arkitektur eller parametre i denne. Oppå legger vi vår egen *klassifiserer-modell*: instruksjonen + few-shot eksemplene. Det er denne kombinasjonen som faktisk klassifiserer klausulene. Bytter vi grunnmodell, eller bytter vi prompten, så bytter vi modell. |
+| **Trening** | I zero-shot: ingen trening på vår side. Vi stoler på det modellen lærte under pretrening. I few-shot: vi "optimerer" prompten ved å gi den mer informasjon som data. Vi endrer ikke parametere, men gir den allikevel mer treningsdata den kan bruke. |
+| **Handling** | Har vi gjort noen handling i denne prosessen? Klassifiseringen i seg selv er bare en prediksjon - handlingen er hva vi *gjør* med den. Samme palett som i bolk 1: auto-godkjenn alt over en gitt konfidens, flagg alle `unfair` for manuell juridisk gjennomgang, stikkprøvekontroll (exploration), eller bare bruk modellen som beslutningsstøtte til en jurist som tar siste valg. *Feedback loop:* hvis vi setter modellen i drift og bruker prediksjonene til å sile hvilke klausuler en jurist faktisk leser, så bestemmer modellen hva juristen ser - og dermed hva som blir labelet neste gang. Modellen former dataen den selv blir trent på. |

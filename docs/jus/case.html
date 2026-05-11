@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Simen Eide">
+
+<title>Workshop: Bygg en LLM-klassifiserer for urimelige forbrukervilkår – eide.ai</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S164XFRMHY"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">eide.ai</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/simeneide"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/simeneide"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#mål" id="toc-mål" class="nav-link active" data-scroll-target="#mål">Mål</a></li>
+  <li><a href="#oppgaven" id="toc-oppgaven" class="nav-link" data-scroll-target="#oppgaven">Oppgaven</a></li>
+  <li><a href="#slik-gjør-du-det" id="toc-slik-gjør-du-det" class="nav-link" data-scroll-target="#slik-gjør-du-det">Slik gjør du det</a></li>
+  <li><a href="#few-shot-eksempler-treningsdata" id="toc-few-shot-eksempler-treningsdata" class="nav-link" data-scroll-target="#few-shot-eksempler-treningsdata">Few-shot eksempler (treningsdata)</a></li>
+  <li><a href="#valideringssett-20" id="toc-valideringssett-20" class="nav-link" data-scroll-target="#valideringssett-20">Valideringssett (20)</a></li>
+  <li><a href="#fasit" id="toc-fasit" class="nav-link" data-scroll-target="#fasit">Fasit</a></li>
+  <li><a href="#steg-5-tilbake-til-de-fire-stegene" id="toc-steg-5-tilbake-til-de-fire-stegene" class="nav-link" data-scroll-target="#steg-5-tilbake-til-de-fire-stegene">Steg 5: Tilbake til de fire stegene</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Workshop: Bygg en LLM-klassifiserer for urimelige forbrukervilkår</h1>
+<p class="subtitle lead">JUS-kurs - bolk 3</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Simen Eide </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<ul>
+<li><strong>Varighet:</strong> ~20 minutter</li>
+<li><strong>Verktøy:</strong> ChatGPT, Claude, Gemini, eller det llm-verktøyet du bruker til vanlig</li>
+<li><strong>Format:</strong> gå sammen i grupper. Hver gruppe velger ett språkmodellprodukt og kjører øvelsen på det. Da kan vi sammenligne på tvers av grupper etterpå.</li>
+<li><strong>Datasett:</strong> <a href="https://hazyresearch.stanford.edu/legalbench/">LegalBench</a>, oppgaven <code>unfair_tos</code>, basert på CLAUDETTE-korpuset (Lippi et al.&nbsp;2019)</li>
+</ul>
+<hr>
+<section id="mål" class="level2">
+<h2 class="anchored" data-anchor-id="mål">Mål</h2>
+<p>Lær å bygge og evaluere en LLM-klassifiserer ved å:</p>
+<ol type="1">
+<li>Først kjøre en <strong>zero-shot prompt</strong> (kun instruksjon, ingen eksempler) og måle baseline</li>
+<li>Deretter legge til <strong>few-shot eksempler</strong> (ferdig-klassifiserte eksempler), se hvordan modellen “lærer” av treningsdata</li>
+<li>Sammenligne accuracy på samme <strong>valideringssett</strong></li>
+<li>Iterere: forbedre prompten basert på feilene</li>
+</ol>
+<p>Det pedagogiske poenget: en LLM-klassifiserer er en <em>prompt + treningsdata</em>. Du ser direkte hvordan mer eller bedre treningsdata gir bedre prediksjoner. Det er samme grunnleggende mekanikk som i alle ML-systemer.</p>
+<p>NB: Ikke bruk så mye tid på å lese spørsmål og svar: Dere er data scientister, ikke jurister, nå.</p>
+<hr>
+</section>
+<section id="oppgaven" class="level2">
+<h2 class="anchored" data-anchor-id="oppgaven">Oppgaven</h2>
+<p>Klassifiser klausuler hentet fra forbruker-Terms of Service (Spotify, Netflix, Facebook, eBay etc.) som enten:</p>
+<ul>
+<li><code>fair</code>: klausulen er forbrukervennlig eller nøytral</li>
+<li><code>unfair</code>: klausulen er potensielt urimelig overfor forbrukeren</li>
+</ul>
+<p>Vi kan anta at datasettet er riktig klassifisert. Vi skal ikke overprøve vurderingene som er gjort i datasettet.</p>
+<hr>
+</section>
+<section id="slik-gjør-du-det" class="level2">
+<h2 class="anchored" data-anchor-id="slik-gjør-du-det">Slik gjør du det</h2>
+<blockquote class="blockquote">
+<p><strong>Viktig:</strong> start en <em>ny samtale</em> i ChatGPT for hvert steg under. Hvis du fortsetter i samme samtale husker modellen det den så sist, og du måler ikke det du tror du måler.</p>
+</blockquote>
+<section id="steg-1-zero-shot-kjør-uten-eksempler" class="level3">
+<h3 class="anchored" data-anchor-id="steg-1-zero-shot-kjør-uten-eksempler">Steg 1: Zero-shot, kjør uten eksempler</h3>
+<p>Start en ny samtale. Lim inn følgende prompt. Modellen får <em>kun</em> instruksjonen, ingen treningsdata.</p>
+<pre><code>You are classifying clauses from consumer Terms of Service. Each clause is
+either `fair` (consumer-friendly or neutral) or `unfair` (potentially
+disadvantageous to consumers - e.g. mandatory arbitration, class-action
+waivers, unilateral change of terms, unilateral termination, broad
+limitation of liability, forced choice of law/jurisdiction, content
+removal at company's sole discretion, or "by using/accessing the service
+you agree" deemed-acceptance).
+
+I will give you 20 clauses to classify.
+
+Output: a markdown table with columns `id` and `prediction` (exactly
+`fair` or `unfair`). No explanations.
+
+CLAUSES TO CLASSIFY:
+
+[lim inn de 20 valideringsklausulene fra "Treningssett" under]</code></pre>
+<p>Når modellen har svart, lim inn fasiten (fra “Fasit” nederst) i <em>samme samtale</em> og be den selv telle:</p>
+<pre><code>Here is the correct answer key. Compare with your previous answers and tell me how many of the 20 you got right.
+
+[lim inn fasit-tabellen]</code></pre>
+<p>Noter resultatet. Dette er baselinen vi sammenligner med i Steg 2.</p>
+</section>
+<section id="steg-2-few-shot-gi-modellen-treningseksempler" class="level3">
+<h3 class="anchored" data-anchor-id="steg-2-few-shot-gi-modellen-treningseksempler">Steg 2: Few-shot, gi modellen treningseksempler</h3>
+<p>Start en ny samtale. Nå legger vi til 10 ferdig-klassifiserte eksempler i prompten. Dette er “treningsdataen” modellen lærer av i konteksten.</p>
+<pre><code>You are classifying clauses from consumer Terms of Service. Each clause is
+either `fair` (consumer-friendly or neutral) or `unfair` (potentially
+disadvantageous to consumers - e.g. mandatory arbitration, class-action
+waivers, unilateral change of terms, unilateral termination, broad
+limitation of liability, forced choice of law/jurisdiction, content
+removal at company's sole discretion, or "by using/accessing the service
+you agree" deemed-acceptance).
+
+I will give you 10 labeled examples, then 20 clauses to classify.
+
+Output: a markdown table with columns `id` and `prediction` (exactly
+`fair` or `unfair`). No explanations.
+
+LABELED EXAMPLES:
+
+[lim inn de 10 few-shot eksemplene fra "Few-shot eksempler" under]
+
+CLAUSES TO CLASSIFY:
+
+[lim inn de 20 valideringsklausulene fra "Valideringssett" under]</code></pre>
+<p>Etter at modellen har svart, lim inn fasiten i samme samtale og be den telle treffene (samme oppskrift som i Steg 1). Sammenlign med baselinen fra Steg 1. Poenget er å se om accuracy går <em>opp</em> når vi gir modellen treningseksempler.</p>
+</section>
+<section id="steg-3-diskuter" class="level3">
+<h3 class="anchored" data-anchor-id="steg-3-diskuter">Steg 3: Diskuter</h3>
+<ul>
+<li>Hvor mye gikk accuracy opp da dere la til 10 eksempler?</li>
+<li>Hvilke klausuler bommet modellen fortsatt på?</li>
+<li>Hvilken type feil var det (false positive eller false negative)?</li>
+<li>Hvilket nytt few-shot eksempel kunne fikset den gjenstående feilen?</li>
+<li>Har dere eller nabogruppa brukt en annen grunnmodell som språkmodell? Får dere samme resultat? Hvorfor, eller hvorfor ikke?</li>
+<li>Hva ville skjedd om dere annoterte de samme 20 klausulene uavhengig? Hvor stor er enigheten mellom <em>jurister</em>? ### Steg 4 (valgfritt): Iterer</li>
+</ul>
+<p>Bytt ut eller legg til few-shot eksempler. Kjør prompten igjen og se om accuracy går opp. Prøv også å fjerne eksempler for å se hvor sårbar prompten er.</p>
+<hr>
+</section>
+</section>
+<section id="few-shot-eksempler-treningsdata" class="level2">
+<h2 class="anchored" data-anchor-id="few-shot-eksempler-treningsdata">Few-shot eksempler (treningsdata)</h2>
+<blockquote class="blockquote">
+<p>Tips: kopier hele blokken under direkte inn i ChatGPT.</p>
+</blockquote>
+<pre><code>Example 1:
+Clause: "21.1 if you reside in the united states, these terms will be interpreted in accordance with the laws of the state of california and the united states of america, without regard to conflict-of-law provisions."
+Label: unfair
+
+Example 2:
+Clause: "by accessing or using any part of the service, you represent that you have read, understood, and agree to be bound by these terms and conditions including any future modifications."
+Label: unfair
+
+Example 3:
+Clause: "we may revise data in the ebay product catalog to supplement, remove, or correct information; if your listing uses catalog data that has been revised, those revisions may modify your listing accordingly."
+Label: unfair
+
+Example 4:
+Clause: "any dispute or claim relating in any way to your use of any amazon service, or to any products or services sold or distributed by amazon or through amazon.com will be resolved by binding arbitration, rather than in court, except that you may assert claims in small claims court if your claims qualify."
+Label: unfair
+
+Example 5:
+Clause: "likewise, you agree that in the event of data loss, we will not be liable for any purported damage or harm arising therefrom."
+Label: unfair
+
+Example 6:
+Clause: "if you breach any of these terms, academia.edu will have the right to suspend or disable your account or terminate these terms, at its sole discretion and without prior notice to you."
+Label: unfair
+
+Example 7:
+Clause: "we are not obligated to publish any information or content on our service and can remove it in our sole discretion, with or without notice."
+Label: unfair
+
+Example 8:
+Clause: "you may not assign or transfer these terms, by operation of law or otherwise, without academia.edu's prior written consent."
+Label: fair
+
+Example 9:
+Clause: "the service, including all images, audio files and other content therein, and any other information, property and rights granted or provided to you by duolingo are provided to you on an 'as is' basis."
+Label: fair
+
+Example 10:
+Clause: "if you do not agree to abide by these terms and conditions, you are not authorized to use, access or participate in the service."
+Label: fair</code></pre>
+<hr>
+</section>
+<section id="valideringssett-20" class="level2">
+<h2 class="anchored" data-anchor-id="valideringssett-20">Valideringssett (20)</h2>
+<blockquote class="blockquote">
+<p>Lim inn denne blokken inn under “CLAUSES TO CLASSIFY” i prompten.</p>
+</blockquote>
+<pre><code>0. you will cooperate as fully as required by us in the defense or settlement of any claim.
+
+1. academia.edu may assign or transfer these terms, at its sole discretion, without restriction.
+
+2. when you update your payment method, you authorize us to continue charging the updated payment method, and you remain responsible for any uncollected amounts.
+
+3. you understand and agree that the services are provided to you on an "as is" and "as available" basis.
+
+4. if you do not accept all of these terms and conditions you are not authorized to use this website.
+
+5. "service" means all features, applications, content and downloads offered by linden lab, including its websites, servers, software, linden content, and user content as those terms are defined herein.
+
+6. this customary commercial licence is provided in accordance with far 12.211 (technical data) and far 12.212 (software) and, for us department of defense transactions, dfars 252.227-7015 (technical data -- commercial items) and dfars 227.7202-3 (rights in commercial computer software or computer software documentation).
+
+7. all intellectual property, other trademarks, logos, images, product and company names displayed or referred to on or in the products are the property of their respective owners.
+
+8. you are entering into this contract with linkedin (also referred to as "we" and "us").
+
+9. "user content" means any content that a user of the service has uploaded, published, or submitted to or through the servers, websites or other areas of the service.
+
+10. if you reside in brazil, these terms and the relationship between you and evernote (including any dispute) shall be governed in all respects by the laws of brazil and shall be considered to have been made and accepted in brazil, without regard to conflict of law provisions.
+
+11. these terms of use shall be governed by and construed in accordance with the laws of the netherlands.
+
+12. in order to access and use our services, you agree to these terms of service, which incorporate by reference the crowdtangle privacy policy.
+
+13. this section limits tripadvisor's liability to you for issues that may arise in connection with your use of this website.
+
+14. 6.2 your access to the products may be occasionally restricted to allow for repairs, maintenance or the introduction of new facilities or products.
+
+15. any dispute or claim relating in any way to your use of any amazon service, or to any products or services sold or distributed by amazon or through amazon.com will be resolved by binding arbitration, rather than in court, except that you may assert claims in small claims court if your claims qualify.
+
+16. you and we both consent to venue and personal jurisdiction in san francisco, california.
+
+17. uber may, but shall not be obligated to, review, monitor, or remove user content, at uber's sole discretion and at any time and for any reason, without notice to you.
+
+18. if linden lab elects to generally suspend or discontinue the service, in whole or in part, for any reason, linden lab may terminate your accounts.
+
+19. duolingo may amend, update or change these terms and conditions.</code></pre>
+<hr>
+</section>
+<section id="fasit" class="level2">
+<h2 class="anchored" data-anchor-id="fasit">Fasit</h2>
+<blockquote class="blockquote">
+<p>Lim inn denne i samtalen etter at modellen har klassifisert.</p>
+</blockquote>
+<pre><code>Ground truth labels:
+
+| id | Fasit  | Originalkategori (fra LegalBench)  |
+|----|--------|------------------------------------|
+| 0  | fair   | Other - "cooperate in defense"     |
+| 1  | fair   | Other - selskapets overdragelse    |
+| 2  | fair   | Other - betalingskort              |
+| 3  | fair   | Other - "as is and as available"   |
+| 4  | fair   | Other - "if you do not accept"     |
+| 5  | fair   | Other - definisjon                 |
+| 6  | fair   | Other - lisensgrunnlag (FAR/DFARS) |
+| 7  | fair   | Other - IP-attribusjon             |
+| 8  | fair   | Other - kontraktspart              |
+| 9  | fair   | Other - definisjon                 |
+| 10 | unfair | Choice of law (Brasil)             |
+| 11 | unfair | Choice of law (Nederland)          |
+| 12 | unfair | Contract by using                  |
+| 13 | unfair | Limitation of liability            |
+| 14 | unfair | Unilateral change                  |
+| 15 | unfair | Arbitration                        |
+| 16 | unfair | Jurisdiction                       |
+| 17 | unfair | Content removal                    |
+| 18 | unfair | Unilateral termination             |
+| 19 | unfair | Unilateral change                  |</code></pre>
+<hr>
+</section>
+<section id="steg-5-tilbake-til-de-fire-stegene" class="level2">
+<h2 class="anchored" data-anchor-id="steg-5-tilbake-til-de-fire-stegene">Steg 5: Tilbake til de fire stegene</h2>
+<p>Workshopen er en mini-versjon av rammeverket fra bolk 1 (<code>data → modell → trening → handling</code>):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Steg</th>
+<th>I denne workshopen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Data</strong></td>
+<td>De 10 few-shot eksemplene + de 20 valideringsklausulene. Merk: hva regnes som “fair” eller “unfair” er en <em>menneskelig vurdering</em> lagt på dataen. De tre juristene som annoterte CLAUDETTE-korpuset bestemte fasiten. Andre jurister kunne vært uenige (~5-10% inter-rater disagreement). Dataen <em>er</em> en fortolkning.</td>
+</tr>
+<tr class="even">
+<td><strong>Modell</strong></td>
+<td>Det er to modell-lag her. <em>Grunnmodellen</em> er den ferdig-trente LLM-en (GPT, Claude, Gemini), trent på enorme datamengder fra internett. Vi velger ikke arkitektur eller parametre i denne. Oppå legger vi vår egen <em>klassifiserer-modell</em>: instruksjonen + few-shot eksemplene. Det er denne kombinasjonen som faktisk klassifiserer klausulene. Bytter vi grunnmodell, eller bytter vi prompten, så bytter vi modell.</td>
+</tr>
+<tr class="odd">
+<td><strong>Trening</strong></td>
+<td>I zero-shot: ingen trening på vår side. Vi stoler på det modellen lærte under pretrening. I few-shot: vi “optimerer” prompten ved å gi den mer informasjon som data. Vi endrer ikke parametere, men gir den allikevel mer treningsdata den kan bruke.</td>
+</tr>
+<tr class="even">
+<td><strong>Handling</strong></td>
+<td>Har vi gjort noen handling i denne prosessen? Klassifiseringen i seg selv er bare en prediksjon - handlingen er hva vi <em>gjør</em> med den. Samme palett som i bolk 1: auto-godkjenn alt over en gitt konfidens, flagg alle <code>unfair</code> for manuell juridisk gjennomgang, stikkprøvekontroll (exploration), eller bare bruk modellen som beslutningsstøtte til en jurist som tar siste valg. <em>Feedback loop:</em> hvis vi setter modellen i drift og bruker prediksjonene til å sile hvilke klausuler en jurist faktisk leser, så bestemmer modellen hva juristen ser - og dermed hva som blir labelet neste gang. Modellen former dataen den selv blir trent på.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "simeneide/blog";
+    script.dataset.repoId = "R_kgDOJtOhYA";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOJtOhYM4CXLfK";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

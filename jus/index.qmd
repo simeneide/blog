@@ -1,0 +1,25 @@
+---
+title: "KI og maskinlæring for jurister"
+subtitle: "Materiale fra kurs holdt sammen med Siv Kristin Henriksen (NHO)"
+author: "Simen Eide"
+lang: no
+format:
+  html:
+    toc: false
+listing: false
+---
+
+Dette er materialet fra et kurs i maskinlæring og generativ AI for jurister. Tre bolker à ~45 minutter:
+
+1. **Hva er maskinlæring?** - data, modell, trening, handling
+2. **Hvordan utvikler vi ML-systemer** - samspill jurist/utvikler, AI Act
+3. **Use case: språkmodeller og generativ AI** - hands-on workshop
+
+## Materiale
+
+- [Presentasjon (reveal.js)](presentasjon.html) - slidedeck for bolk 1 og 3
+- [Workshop-case](case.html) - LLM-klassifiserer for urimelige forbrukervilkår (bolk 3)
+
+## Kontakt
+
+[simen@eide.ai](mailto:simen@eide.ai)
