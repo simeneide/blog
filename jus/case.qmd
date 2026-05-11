@@ -110,15 +110,15 @@ Etter at modellen har svart, lim inn fasiten i samme samtale og be den telle tre
 
 ### Steg 3: Diskuter
 
+- Hva skjedde nå? Hva gjorde dere?
 - Hvor mye gikk accuracy opp da dere la til 10 eksempler?
-- Hvilke klausuler bommet modellen fortsatt på?
-- Hvilken type feil var det (false positive eller false negative)?
-- Hvilket nytt few-shot eksempel kunne fikset den gjenstående feilen?
+- Hvilket nytt few-shot eksempel kunne fikset den/de gjenstående feilen(e)?
 - Har dere eller nabogruppa brukt en annen grunnmodell som språkmodell? Får dere samme resultat? Hvorfor, eller hvorfor ikke?
 - Hva ville skjedd om dere annoterte de samme 20 klausulene uavhengig? Hvor stor er enigheten mellom *jurister*?
+
 ### Steg 4 (valgfritt): Iterer
 
-Bytt ut eller legg til few-shot eksempler. Kjør prompten igjen og se om accuracy går opp. Prøv også å fjerne eksempler for å se hvor sårbar prompten er.
+Bytt ut eller legg til few-shot eksempler, eller lag bedre instruksjon på hva som er fair/unfair. Kjør prompten igjen og se om accuracy går opp. Prøv også å fjerne eksempler for å se hvor sårbar prompten er.
 
 ---
 
