@@ -1287,6 +1287,7 @@ Vi modellerer en annen prosess: Får bare feedback fra topplista men modellen tr
 - Vi må iterere mange ganger for å få noe perfekt
 - Risikoaversjon ødelegger stopper innovasjon
 - Da blir produktet dårligere *og* biasen vokser i det skjulte over tid
+- Konklusjon: Vi må ha riktig og effektiv regulering
 :::
 
 :::
