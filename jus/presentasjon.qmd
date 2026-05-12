@@ -237,10 +237,10 @@ anbefale denne annonsen/filmen?
 
 ::: {.columns}
 ::: {.column width="55%"}
-1. **Data** - hva har vi lært av?
-2. **Modell** - hva slags funksjon beskriver dataen?
-3. **Trening** - hvordan finner vi parametrene?
-4. **Handling** - hva GJØR vi med prediksjonen?
+1. **Data** - hva vi lærer av
+2. **Modell** - hva slags struktur har verden?
+3. **Trening** = Data + Modell = hvordan finner vi den strukturen i dataen?
+4. **Handling** - hva gjør vi med det vi har lært?
 :::
 ::: {.column width="45%"}
 ![](img/ai-hal9000.svg){style="height: 420px; width: 100%; object-fit: contain;"}
@@ -1652,4 +1652,4 @@ Case-instruksjoner: [eide.ai/jus](https://eide.ai/jus/)
 :::
 
 
-# Diskusjon
+## Diskusjon
