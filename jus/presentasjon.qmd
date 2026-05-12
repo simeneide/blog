@@ -1233,14 +1233,14 @@ Vi modellerer en annen prosess: Får bare feedback fra topplista men modellen tr
 ## Hvor feiler vi i de fire stegene?
 
 ::: {.incremental}
-1. **Data** - det vi lærer fra
+1. **Data** - hva vi lærer av
     - Data er ikke representativt for det vi *tror det representerer i modellen*
-2. **Modell** - strukturen til verden
+2. **Modell** - hva slags struktur har verden?
     - Feil beskrivelse av verden
     - Modellen kommuniserer ikke usikkerhet
-3. **Trening** - hvordan finner vi parametrene?
+3. **Trening** - hvordan finner vi den strukturen i dataen?
     - Feil/dårlig optimering, overfitting
-4. **Handling** - hva GJØR vi med beskrivelsen av verden?
+4. **Handling** - hva gjør vi med det vi har lært?
     - Feil bruk
     - Uetisk/ulovlig bruk
 :::
