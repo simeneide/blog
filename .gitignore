@@ -9,3 +9,5 @@ himalaya/video/
 docs/himalaya/video/
 himalaya/_source/thumbs/
 himalaya/_source/video-raw/
+# Kjørelogg fra opplastingsscriptet
+himalaya/_source/upload.log
