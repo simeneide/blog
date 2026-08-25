@@ -192,3 +192,25 @@
 .reveal .speaker-notes {
   font-size: 16px;
 }
+
+/* Videoklippene ligger utenfor git, sa de svarer 404 pa den publiserte
+   versjonen. video-fallback.html merker dem og vi viser poster-bildet med en
+   diskre merkelapp i stedet for en dod spiller. */
+video.vid-missing {
+  pointer-events: none;
+}
+.vid-missing-label {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 0.35em 0.9em;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-family: Questrial, system-ui, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}

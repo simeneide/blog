@@ -10,6 +10,9 @@ comments: false
 html-math-method: plain
 resources:
   - video/
+  # poster= spores ikke av Quarto sin ressursjakt slik src= gjoer, saa
+  # plakatbildene maa listes eksplisitt for aa havne i docs/.
+  - img/poster-*.jpg
 # Slide 1 er selve tittelsliden, sa Quarto sin auto-genererte skjules.
 title-slide-attributes:
   data-visibility: hidden
@@ -28,6 +31,7 @@ format:
     controls: true
     progress: true
     hash: true
+    include-after-body: video-fallback.html
 ---
 
 ##
@@ -166,6 +170,7 @@ format:
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%" src="video/slide09.mp4"
+       poster="img/poster-slide09.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -295,6 +300,7 @@ format:
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%" src="video/slide17.mp4"
+       poster="img/poster-slide17.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -396,6 +402,7 @@ Skysug (det pleier å gå fint)\
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:-0.0000%;width:100.0000%;height:100.0000%" src="video/slide22.mp4"
+       poster="img/poster-slide22.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -596,6 +603,7 @@ Land i tide: Simon hadde ikke høyde og måtte skru seg opp og landet rett før 
 <img src="img/f1f72405.jpg" style="left:0.085%;top:-0.025%;width:99.899%;height:100.032%">
 </div>
 <video class="vid" style="left:64.7843%;top:0.0000%;width:35.2157%;height:100.0000%" src="video/slide32.mp4"
+       poster="img/poster-slide32.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -607,6 +615,7 @@ Land i tide: Simon hadde ikke høyde og måtte skru seg opp og landet rett før 
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%" src="video/slide33.mp4"
+       poster="img/poster-slide33.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -695,6 +704,7 @@ Dagfinn regi, simen sidekick
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:-0.0000%;top:0.0000%;width:100.0000%;height:100.0000%" src="video/slide39.mp4"
+       poster="img/poster-slide39.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -721,6 +731,7 @@ Dagfinn regi, simen sidekick
   <ellipse cx="5159400" cy="1393000" rx="682650" ry="504000" fill="none" stroke="#ff0000" stroke-width="76200"/>
 </svg>
 <video class="vid" style="left:25.0000%;top:0.0000%;width:75.0000%;height:100.0000%" src="video/slide40.mp4"
+       poster="img/poster-slide40.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -736,6 +747,7 @@ Start mot shikah beh
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:36.9970%;top:0.0000%;width:26.0060%;height:100.0000%" src="video/slide41.mp4"
+       poster="img/poster-slide41.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -747,6 +759,7 @@ Start mot shikah beh
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:0.0000%;width:99.9998%;height:100.0000%" src="video/slide42.mp4"
+       poster="img/poster-slide42.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -773,6 +786,7 @@ Start mot shikah beh
   <ellipse cx="5159400" cy="1393000" rx="682650" ry="504000" fill="none" stroke="#ff0000" stroke-width="76200"/>
 </svg>
 <video class="vid" style="left:64.9305%;top:0.0000%;width:31.6406%;height:100.0000%" src="video/slide43.mp4"
+       poster="img/poster-slide43.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -784,6 +798,7 @@ Start mot shikah beh
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%" src="video/slide44.mp4"
+       poster="img/poster-slide44.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -795,6 +810,7 @@ Start mot shikah beh
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%" src="video/slide45.mp4"
+       poster="img/poster-slide45.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -845,6 +861,7 @@ Start mot shikah beh
 ```{=html}
 <div class="gslide">
 <video class="vid" style="left:0.1710%;top:-0.0000%;width:100.0002%;height:100.0000%" src="video/slide48.mp4"
+       poster="img/poster-slide48.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```
@@ -901,6 +918,7 @@ Start mot shikah beh
 <img src="img/cbb1a7ce.jpg" style="left:-0.000%;top:-0.000%;width:99.980%;height:100.030%">
 </div>
 <video class="vid" style="left:50.0000%;top:0.0000%;width:50.0000%;height:100.0000%" src="video/slide50.mp4"
+       poster="img/poster-slide50.jpg"
        controls preload="metadata" playsinline></video>
 </div>
 ```

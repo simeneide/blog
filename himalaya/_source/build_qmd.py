@@ -173,8 +173,13 @@ def render_image(n: int, e: dict) -> list[str]:
 
 
 def render_video(n: int, e: dict) -> list[str]:
+    # poster: staa-bilde fra klippet. Klippene ligger utenfor git, saa paa den
+    # publiserte versjonen svarer .mp4 med 404. Uten poster ble det en svart,
+    # doed spiller. Med poster ser man bildet, og fallback-scriptet nederst i
+    # decket fjerner kontrollene naar kilden mangler.
     return [
         f'<video class="vid" style="{box(e)}" src="video/slide{n:02d}.mp4"',
+        f'       poster="img/poster-slide{n:02d}.jpg"',
         '       controls preload="metadata" playsinline></video>',
     ]
 
@@ -243,6 +248,9 @@ comments: false
 html-math-method: plain
 resources:
   - video/
+  # poster= spores ikke av Quarto sin ressursjakt slik src= gjoer, saa
+  # plakatbildene maa listes eksplisitt for aa havne i docs/.
+  - img/poster-*.jpg
 # Slide 1 er selve tittelsliden, sa Quarto sin auto-genererte skjules.
 title-slide-attributes:
   data-visibility: hidden
@@ -261,6 +269,7 @@ format:
     controls: true
     progress: true
     hash: true
+    include-after-body: video-fallback.html
 ---
 """
 

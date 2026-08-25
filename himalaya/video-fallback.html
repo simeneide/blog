@@ -1,0 +1,61 @@
+<script>
+// Videoklippene ligger utenfor git (~120 MB), så på den publiserte versjonen
+// svarer video/slideNN.mp4 med 404. Uten dette ble slidene en svart, død
+// spiller med en play-knapp som ikke gjorde noe.
+//
+// Her beholder vi poster-bildet, fjerner kontrollene og setter på en diskré
+// merkelapp. Kjøres decket lokalt, med video/ på plass, skjer ingenting.
+//
+// Skal klippene en gang ligge på YouTube eller Vimeo: sett data-embed="<url>"
+// på <video>-elementet, så bytter denne koden inn en iframe i stedet.
+(function () {
+  function degrade(video) {
+    if (video.dataset.fallbackApplied) return;
+    video.dataset.fallbackApplied = "1";
+
+    var embed = video.dataset.embed;
+    if (embed) {
+      var frame = document.createElement("iframe");
+      frame.src = embed;
+      frame.className = video.className;
+      frame.setAttribute("style", video.getAttribute("style"));
+      frame.setAttribute("frameborder", "0");
+      frame.setAttribute("allow", "autoplay; fullscreen; picture-in-picture");
+      frame.setAttribute("allowfullscreen", "");
+      video.replaceWith(frame);
+      return;
+    }
+
+    video.removeAttribute("controls");
+    video.classList.add("vid-missing");
+
+    var tag = document.createElement("div");
+    tag.className = "vid-missing-label";
+    tag.textContent = "Klippet vises kun i den lokale versjonen";
+    video.parentNode.insertBefore(tag, video.nextSibling);
+  }
+
+  function check(video) {
+    // error er satt hvis kilden alt har feilet; ellers venter vi på hendelsen.
+    if (video.error) return degrade(video);
+    video.addEventListener("error", function () {
+      degrade(video);
+    });
+    // Safari melder ikke alltid error på 404, så vi sjekker også nettverksstatus
+    // når metadata skulle vært lastet.
+    setTimeout(function () {
+      if (video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) degrade(video);
+    }, 4000);
+  }
+
+  function init() {
+    document.querySelectorAll("video.vid").forEach(check);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
