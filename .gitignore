@@ -3,3 +3,9 @@
 **/*.quarto_ipynb
 _freeze/
 CNAME
+
+# Himalaya-foredraget: ~120 MB video som hentes med himalaya/_source/fetch_video.py
+himalaya/video/
+docs/himalaya/video/
+himalaya/_source/thumbs/
+himalaya/_source/video-raw/

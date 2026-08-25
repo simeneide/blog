@@ -1,0 +1,194 @@
+/* Paragliding i himalaya - full-bleed 16:9 slides converted from Google Slides.
+   Everything is positioned in % of the .gslide box, which is exactly the
+   9144000 x 5143500 EMU canvas of the original deck. */
+
+/* Self-hosted so the deck works with no network (same for the videos). */
+@font-face {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/bevan-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/bevan-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/questrial-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/questrial-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---- reveal chrome: get out of the way, the slide is the whole viewport ---- */
+.reveal .slides {
+  text-align: left;
+}
+.reveal .slides section,
+.reveal .slides section > section {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 720px;
+  width: 1280px;
+  overflow: visible;
+}
+.reveal .slides section > h2:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+.reveal .slide-number {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 14px;
+}
+.reveal .progress {
+  color: #ff5722;
+}
+
+/* ---- the slide canvas ---- */
+.gslide {
+  position: relative;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* image frame + the cropped image inside it */
+.gslide .fr {
+  position: absolute;
+  overflow: hidden;
+}
+.gslide .fr > img {
+  position: absolute;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+}
+
+/* `contain`, not `cover`: on slides 32, 40 and 50 the frame aspect differs from
+   the clip's, and letterboxing keeps the whole frame rather than slicing a band
+   out of a portrait clip. Transparent (not black) letterbox bars so slide 40's
+   red circle still reads next to the video. Switch to `cover` if you would
+   rather have the video fill those three frames. */
+.gslide .vid {
+  position: absolute;
+  object-fit: contain;
+  background: transparent;
+  margin: 0;
+}
+
+/* scrim behind bullet text (ROUND_RECTANGLE, ~89% opaque in the original) */
+.gslide .scrim {
+  position: absolute;
+  border: 1px solid #666;
+  border-radius: 9.375% / 16.667%;
+  box-sizing: border-box;
+}
+
+/* annotation layer: EMU coordinates straight from the Slides API */
+.gslide .ann {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* ---- text boxes ---- */
+.gslide .tb {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 13px;
+  box-sizing: border-box;
+  line-height: 1.38;
+}
+/* !important: reveal's own list/paragraph margins would otherwise add a gap on
+   top of the blank line that Slides' soft break already provides. */
+.reveal .gslide .tb p,
+.reveal .gslide .tb li {
+  margin: 0 !important;
+}
+.gslide .tb.slab {
+  font-family: "Bevan", "Rockwell", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+.gslide .tb.sans {
+  font-family: "Questrial", "Helvetica Neue", Arial, sans-serif;
+}
+.gslide .tb.title {
+  justify-content: center; /* Slides anchors TITLE placeholders middle */
+}
+.gslide .tb.body {
+  justify-content: flex-start;
+  padding-top: 12px;
+}
+.gslide .tb.anchor-bottom {
+  justify-content: flex-end;
+}
+.gslide .tb.centered {
+  text-align: center;
+}
+/* Slides' default list indents are absolute, not em-based: level 1 puts the
+   bullet at 0.25in and the text at 0.5in, level 2 at 0.75in / 1in. At
+   width=1280 (10in wide) that is 32/64 and 96/128 px. The negative margin
+   cancels the box's own 13px left inset so the indent is measured from the
+   text box edge, the way Slides measures it. */
+.reveal .gslide .tb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 -13px !important;
+}
+.gslide .tb li {
+  position: relative;
+  padding-left: 64px;
+}
+.gslide .tb li::before {
+  content: "-";
+  position: absolute;
+  left: 32px;
+}
+.gslide .tb li.l2 {
+  padding-left: 128px;
+}
+.gslide .tb li.l2::before {
+  left: 96px;
+}
+
+/* speaker notes look better with some room */
+.reveal .speaker-notes {
+  font-size: 16px;
+}

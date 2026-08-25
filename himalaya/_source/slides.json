@@ -1,0 +1,3497 @@
+{
+ "pageW": 9144000,
+ "pageH": 5143500,
+ "slides": [
+  {
+   "n": 1,
+   "objectId": "g28ec5a5561a_0_69",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a5561a_0_76",
+     "file": "slide01-g28ec5a5561a_0_76.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcEblvNs394-fNS_rFIA5_DAk3oX8vLqFAMSQynzBVx67u66F4ST8a9C3aXavT9UEZvG9-SMJ1X3M1LG03wIQynqvoNdT9HXc5zUvwTAqgi09Ox0nOqKBwEaru1K26HkQhF5AIa8BlRb4xdzKGQuwCmVKAaWtBhATvB96BvdiX9bYRlsQ8nMA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 4572000,
+     "y": 0.0,
+     "w": 4572000.895,
+     "h": 5143499.800000001,
+     "sx": 181.7893,
+     "sy": 153.997,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a5561a_0_75",
+     "file": "slide01-g28ec5a5561a_0_75.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUePl2DKKXTxdSF9wZICBmn-CtwX_jEk6UoHbAO4cXQaAoYN3WdblXRUFoTN-iSAY16Wun2ZlBadC-fc4SB67KIAi4-IPl-s2z_gq0kcx224DYbO_Bd6JMAVbmcBpXdIjYTGpXL7-zzbxvljd8hlZUEaovcLFTpBdxNxdxDGikz-XxlJ_nk=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 4572000.895,
+     "h": 5143499.800000001,
+     "sx": 181.7893,
+     "sy": 153.997,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_71",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "CENTERED_TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Paragliding i himalaya\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 40,
+         "unit": "PT"
+        }
+       }
+      }
+     ],
+     "x": 0.0,
+     "y": 1059800,
+     "w": 8803500.0,
+     "h": 1957799.9999999998,
+     "sx": 2.9345,
+     "sy": 0.6526,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 2,
+   "objectId": "g28ec5a5561a_0_53",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a5561a_0_58",
+     "file": "slide02-g28ec5a5561a_0_58.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcktFBHq-4xcq1Wx_wdJV-xKyZ6bgscPkFGrUuX0IuFlyrVvxEAfOpTwLDWP_O6qZK2iK-mbYuue9DT2DBHBs_55KAkBBusvhF1YR0SKP1ugfrxMYLXmR1WRs54PZXKtKzOz5qmdhPhLO-MsiedVyRV1fgcnWmY7CVAM8dgcg3W70mSAxdylA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1575581.5375,
+     "y": 0.0,
+     "w": 5992837.36,
+     "h": 5143500.375,
+     "sx": 211.0154,
+     "sy": 211.0154,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 3,
+   "objectId": "g28ec5a5561a_0_60",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a5561a_0_63",
+     "file": "slide03-g28ec5a5561a_0_63.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcktFBHq-4xcq1Wx_wdJV-xKyZ6bgscPkFGrUuX0IuFlyrVvxEAfOpTwLDWP_O6qZK2iK-mbYuue9DT2DBHBs_55KAkBBusvhF1YR0SKP1ugfrxMYLXmR1WRs54PZXKtKzOz5qmdhPhLO-MsiedVyRV1fgcnWmY7CVAM8dgcg3W70mSAxdylA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1575581.5375,
+     "y": 0.0,
+     "w": 5992837.36,
+     "h": 5143500.375,
+     "sx": 211.0154,
+     "sy": 211.0154,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_66",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 3855375,
+     "y": 1390275,
+     "w": 602100.0,
+     "h": 530400.0,
+     "sx": 0.2007,
+     "sy": 0.1768,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 4,
+   "objectId": "g355aa8fee1b_0_0",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_1",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_4",
+     "file": "slide04-g355aa8fee1b_0_4.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdyYJl1n3uGjNjx5tqHtm9ZmXu5A5oT-LOfZ4s7nMV8sOOiWBVwO4IEI_d5WQOUzusa01xABPjnY6ii7MrQm5TTmGW21z8SpR5V6ezBsIX5aAGdgggGXOFPtKJLmyXUBvj6YnWl6YGC5EOsjpvM-fyYlm7vLcioDmYIUb_naoTsKoKbAWWiFw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": -0.005,
+     "w": 9144001.6,
+     "h": 5162025.399999999,
+     "sx": 212.6512,
+     "sy": 159.4448,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 5,
+   "objectId": "g36cd557a9c4_1_11",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_12",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g36cd557a9c4_1_15",
+     "file": "slide05-g36cd557a9c4_1_15.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdzmobZmwglNckjXtX9nirbycRUNGdgyd1pZa26D2Nnb3AsoUdCYW9UTc8K-K7y0QmZmUjfG4TfQPLDcThiCsKYbpMbtSXcYhC-ZkDcJoDUW64XFDjK39N8B4mntDY29Ji0f9WHunJdBMlmpnn2Dby6--4_f0OwD8VjT-9DcCP6SjXePSc=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0125,
+     "y": -130274.99,
+     "w": 9455851.52,
+     "h": 6302348.325,
+     "sx": 184.6846,
+     "sy": 184.6842,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 6,
+   "objectId": "g28ec5a5561a_0_92",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a5561a_0_97",
+     "file": "slide06-g28ec5a5561a_0_97.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfT6E5qRuxO1-jm-M_lCsWqp9QdjxcSxBVe2Jd8N669kB9EPP0p9LqNB0IJquy98bPrUZciRKzNED9ck1vRoSGEIX-BSnt5z5Ca0PHJ7OPmF1n2do1eeGfuNOMie1FnLSqBMCMwvjGdjzEfY2QWpqsW60SG16lbIt40ZzzXTV8fTO-FyCFx8w=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.105,
+     "w": 10290998.97,
+     "h": 5143500.78,
+     "sx": 362.9982,
+     "sy": 276.5323,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_482",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Flying on the front ridge",
+       "style": {
+        "fontSize": {
+         "magnitude": 30,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "\n",
+       "style": {}
+      }
+     ],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 7,
+   "objectId": "g28ec5a56b4e_0_508",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_509",
+     "file": "slide07-g28ec5a56b4e_0_509.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfT6E5qRuxO1-jm-M_lCsWqp9QdjxcSxBVe2Jd8N669kB9EPP0p9LqNB0IJquy98bPrUZciRKzNED9ck1vRoSGEIX-BSnt5z5Ca0PHJ7OPmF1n2do1eeGfuNOMie1FnLSqBMCMwvjGdjzEfY2QWpqsW60SG16lbIt40ZzzXTV8fTO-FyCFx8w=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.105,
+     "w": 10290998.97,
+     "h": 5143500.78,
+     "sx": 362.9982,
+     "sy": 276.5323,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_510",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Flying on the front ridge",
+       "style": {
+        "fontSize": {
+         "magnitude": 30,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "\n",
+       "style": {}
+      }
+     ],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_513",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 6512825,
+     "y": 2147500,
+     "w": 602100.0,
+     "h": 530400.0,
+     "sx": 0.2007,
+     "sy": 0.1768,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 8,
+   "objectId": "g35998315bef_0_0",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g35998315bef_0_5",
+     "file": "slide08-g35998315bef_0_5.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUecnST5q_7rXGO1Nq_7rpg8cmCG2LJCf5SfIhlVtaqiPZOFX8LsnjjBYuFp_ebXlf0vjfWaDxY4pTjiiUM14Rua5qBFNXWNQpRYr2Ib6xpCBxTL730gxpbkNCH7eemkWoLpqOzcNwXOVmUM2rIWLMCLUqCa26rZwkalW6BwTd0hQ2-dmYpTvQ=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 4572000,
+     "y": 0.0775,
+     "w": 4571999.25,
+     "h": 5143498.75,
+     "sx": 187.5692,
+     "sy": 158.2615,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g35998315bef_0_6",
+     "file": "slide08-g35998315bef_0_6.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcGpgUFz7hlb15swl9zylTazF2rQ5V9Ib2WMr2gUHNQdvs4zDdYN6ukQBWALP1m9XmEPWbRREHlfZORwluuzOAIF8C3O9qj35s1sSjeJjD2y0bWWAVTb28TdhE22-wUs2ofXjrN4Xd3zFa39DbyaMP8mwGzKaOpUKXYWE2rw9Lwm0UNDwtcWg=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 1.69,
+     "w": 4571999.25,
+     "h": 5143498.75,
+     "sx": 187.5692,
+     "sy": 158.2615,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 9,
+   "objectId": "g36cd557a9c4_1_5",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_6",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_7",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g36cd557a9c4_1_10",
+     "source": "DRIVE",
+     "vid": "1Mob_rsC_bSZw3IPI4xguLcqeTDTWB6j8",
+     "url": "https://docs.google.com/file/d/1Mob_rsC_bSZw3IPI4xguLcqeTDTWB6j8/preview",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000.0,
+     "h": 5143500.0,
+     "sx": 190.5,
+     "sy": 190.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 10,
+   "objectId": "g28ec5a56b4e_0_539",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_543",
+     "file": "slide10-g28ec5a56b4e_0_543.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcEblvNs394-fNS_rFIA5_DAk3oX8vLqFAMSQynzBVx67u66F4ST8a9C3aXavT9UEZvG9-SMJ1X3M1LG03wIQynqvoNdT9HXc5zUvwTAqgi09Ox0nOqKBwEaru1K26HkQhF5AIa8BlRb4xdzKGQuwCmVKAaWtBhATvB96BvdiX9bYRlsQ8nMA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 4572000,
+     "y": 0.0,
+     "w": 4572000.895,
+     "h": 5143499.800000001,
+     "sx": 181.7893,
+     "sy": 153.997,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_557",
+     "file": "slide10-g28ec5a56b4e_0_557.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUchLWGqGBIs8NXZwlWLQ50yM6frb0kJbPB1JCCdzbxFqn9oQtLl-yu4js9UQLv9X4Vw2TkQ7irLmFKG4gWqV_oBB6NLj97Lyhplt5EhrWoeG6zIx5x3xeEG966eieeJrU1hRblTA8qXSg8_w5Hxh8o0mQfSxb3Xi9d99H831_d9Nbzw3dJOgg=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 4572000.895,
+     "h": 5143499.800000001,
+     "sx": 181.7893,
+     "sy": 153.997,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 11,
+   "objectId": "g28ec5a5561a_0_98",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_50",
+     "file": "slide11-g28ec5a56b4e_0_50.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeC_8iRejWOZS4C9TqXDOnY9uWx0-sPlxe5D-5zlxUwfDedTQLnvpAOUJUG1ryBMM47e4NUdlLWqv3YHOoIuKlxvMPEgw3Kr0i9lCxsHxVCjyDN4KDuC6kZyGlzXHclNBtGZ9Oxxg4-ymdnSdFxzUbsG-uCdsRHNQ3qyg8z4UkbzPoNT8zUZw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_99",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "F\u00f8rste flycamping\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 12,
+   "objectId": "g28ec5a56b4e_0_551",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_552",
+     "file": "slide12-g28ec5a56b4e_0_552.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfT6E5qRuxO1-jm-M_lCsWqp9QdjxcSxBVe2Jd8N669kB9EPP0p9LqNB0IJquy98bPrUZciRKzNED9ck1vRoSGEIX-BSnt5z5Ca0PHJ7OPmF1n2do1eeGfuNOMie1FnLSqBMCMwvjGdjzEfY2QWpqsW60SG16lbIt40ZzzXTV8fTO-FyCFx8w=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.105,
+     "w": 10290998.97,
+     "h": 5143500.78,
+     "sx": 362.9982,
+     "sy": 276.5323,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_553",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 6479700,
+     "y": 2130925,
+     "w": 602100.0,
+     "h": 530400.0,
+     "sx": 0.2007,
+     "sy": 0.1768,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "line",
+     "id": "g28ec5a56b4e_0_554",
+     "startArrow": "NONE",
+     "endArrow": "FILL_ARROW",
+     "dash": "DASH",
+     "color": "#ff0000",
+     "weight": 38100,
+     "x": 6780750,
+     "y": 2140611.44,
+     "w": 1800000.0,
+     "h": -375000.0,
+     "sx": 0.6,
+     "sy": -0.125,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 13,
+   "objectId": "g28ec5a5561a_0_118",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_119",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 435338.55999999994,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_120",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a5561a_0_123",
+     "file": "slide13-g28ec5a5561a_0_123.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfMgi50qxeKTc_wv7sLgrFL2vHr51Ze6l-2zo_DzCdGohkHNAr7QMDP1rITPzJ0eD5nBNBHSCSIPmVhmaLXE2ZEa5upwW8SeOfvbv5pJ2NiH3WjulfVil46o5g9TnNVDC88g3e1kS5mgrhLB-JET4C4T25fE8l2fVMeY9uB1rZrMTf9CnOxGA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1513500,
+     "y": 0.0,
+     "w": 6117000.435,
+     "h": 5143499.46,
+     "sx": 448.1319,
+     "sy": 346.3636,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 14,
+   "objectId": "g28ec5a56b4e_0_1",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_2",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_3",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_4",
+     "file": "slide14-g28ec5a56b4e_0_4.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfMgi50qxeKTc_wv7sLgrFL2vHr51Ze6l-2zo_DzCdGohkHNAr7QMDP1rITPzJ0eD5nBNBHSCSIPmVhmaLXE2ZEa5upwW8SeOfvbv5pJ2NiH3WjulfVil46o5g9TnNVDC88g3e1kS5mgrhLB-JET4C4T25fE8l2fVMeY9uB1rZrMTf9CnOxGA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1513500,
+     "y": 0.0,
+     "w": 6117000.435,
+     "h": 5143499.46,
+     "sx": 448.1319,
+     "sy": 346.3636,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_9",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 2321825,
+     "y": 2909500,
+     "w": 602100.0,
+     "h": 530400.0,
+     "sx": 0.2007,
+     "sy": 0.1768,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 15,
+   "objectId": "g28ec5a56b4e_0_614",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_615",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_616",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_619",
+     "file": "slide15-g28ec5a56b4e_0_619.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUedMwjEQ3b7uTUUtnRIFeE7JBNoEOzAjjmFZlVkxE_c-5oZr5y-Aief9f1RH96GwGk-7TJv68kUK9aJVhguRHfPAS1r_RXKS9YytOnV0XOvSMv4B7Xacrs1HTjep_nxqbymH_ORbdE4XUm4Gwgvr92tpAqUwRkuggHp0HJ0EIjgJcyMjPs=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": -0.095,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 16,
+   "objectId": "g28ec5a56b4e_0_10",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_11",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_12",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_13",
+     "file": "slide16-g28ec5a56b4e_0_13.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfMgi50qxeKTc_wv7sLgrFL2vHr51Ze6l-2zo_DzCdGohkHNAr7QMDP1rITPzJ0eD5nBNBHSCSIPmVhmaLXE2ZEa5upwW8SeOfvbv5pJ2NiH3WjulfVil46o5g9TnNVDC88g3e1kS5mgrhLB-JET4C4T25fE8l2fVMeY9uB1rZrMTf9CnOxGA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1513500,
+     "y": 0.0,
+     "w": 6117000.435,
+     "h": 5143499.46,
+     "sx": 448.1319,
+     "sy": 346.3636,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_14",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 2622800,
+     "y": 2306550,
+     "w": 602100.0,
+     "h": 530400.0,
+     "sx": 0.2007,
+     "sy": 0.1768,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 17,
+   "objectId": "g28ec5a5561a_0_124",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_125",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_126",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g28ec5a56b4e_0_0",
+     "source": "DRIVE",
+     "vid": "15YfOJN5Z92dRlcmzFi1VSghkh7cTz7R3",
+     "url": "https://docs.google.com/file/d/15YfOJN5Z92dRlcmzFi1VSghkh7cTz7R3/preview",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000.0,
+     "h": 5143500.0,
+     "sx": 190.5,
+     "sy": 190.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 18,
+   "objectId": "g28ec5a56b4e_0_620",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_621",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_622",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_625",
+     "file": "slide18-g28ec5a56b4e_0_625.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeXzxFi0EDEDWbN_MUN2PUGsyqFmy8WJaaCdaA0QB5ucWMwZaUPQcstFpv3PkW5-m-9bC6DGBJ_7HWo8Vi5LHb3qMjbT2Tz0ZFijyVfPgkPqJvCqNJAM7qa9uCUbh5JW-IXpsI3BdKpxVTXX1prf3i7jVSsFp3SIuStSSOq58iUK7xT52fi4g=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.135,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 19,
+   "objectId": "g28ec5a56b4e_0_17",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_18",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_19",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_20",
+     "file": "slide19-g28ec5a56b4e_0_20.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfMgi50qxeKTc_wv7sLgrFL2vHr51Ze6l-2zo_DzCdGohkHNAr7QMDP1rITPzJ0eD5nBNBHSCSIPmVhmaLXE2ZEa5upwW8SeOfvbv5pJ2NiH3WjulfVil46o5g9TnNVDC88g3e1kS5mgrhLB-JET4C4T25fE8l2fVMeY9uB1rZrMTf9CnOxGA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1513500,
+     "y": 0.0,
+     "w": 6117000.435,
+     "h": 5143499.46,
+     "sx": 448.1319,
+     "sy": 346.3636,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_21",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 4270950,
+     "y": 1691200,
+     "w": 1490700.0,
+     "h": 773100.0,
+     "sx": 0.4969,
+     "sy": 0.2577,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 20,
+   "objectId": "g28ec5a56b4e_0_626",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_627",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_628",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_632",
+     "file": "slide20-g28ec5a56b4e_0_632.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUe24tBCQBdlaH4LVHx8CfRiOW2hC67r3ir41AwKKzY4-us7bSm0gWPahlkEEJYOeiYcFyWZvus0R7I4sFI5LQxAgkaSj5w7XXWz88TeUvFmM_O6mDvzNI_0-ii-1V3i1SMV4kVy5mU_uObdZth-A4KHA95OgJAQOKrFgjt3hNSSApNS0DboCw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.21,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 21,
+   "objectId": "g39d0860f356_2_0",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_1",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_2",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 3999900.0,
+     "h": 3416400.0,
+     "sx": 1.3333,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g39d0860f356_2_3",
+     "file": "slide21-g39d0860f356_2_3.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUe24tBCQBdlaH4LVHx8CfRiOW2hC67r3ir41AwKKzY4-us7bSm0gWPahlkEEJYOeiYcFyWZvus0R7I4sFI5LQxAgkaSj5w7XXWz88TeUvFmM_O6mDvzNI_0-ii-1V3i1SMV4kVy5mU_uObdZth-A4KHA95OgJAQOKrFgjt3hNSSApNS0DboCw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.21,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_4",
+     "shapeType": "ROUND_RECTANGLE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "DARK2",
+     "outlineWeight": 9525,
+     "fillState": null,
+     "fillColor": "#bebebe",
+     "runs": [],
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000.0,
+     "h": 5143500.0,
+     "sx": 3.048,
+     "sy": 1.7145,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_5",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "V\u00e6r forberedt\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Ha med riktig utstyr\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Buddysystem\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Satelittkommunikasjon\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "St\u00f8rre marginer\n",
+       "style": {
+        "bold": true
+       }
+      }
+     ],
+     "x": 4832400,
+     "y": 1152475,
+     "w": 3999900.0,
+     "h": 3416400.0,
+     "sx": 1.3333,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_6",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Flyging uten infrastruktur\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_7",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "H\u00f8ydesyke\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 14,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "F\u00e5 landingsalternativer\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 14,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Topplanding\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 14,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Ingen pub p\u00e5 landing\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 14,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "N\u00f8dskjerm/ankelbrudd\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 14,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "M\u00e5 sette deg i situasjoner du ikke vil gjort hjemme\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 14,
+         "unit": "PT"
+        }
+       }
+      }
+     ],
+     "x": 311700,
+     "y": 1152475,
+     "w": 3999900.0,
+     "h": 3416400.0,
+     "sx": 1.3333,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "Flyteknisk  ganske likt, meeen:\nFloor is lava\nRisiko snus p\u00e5 hodet, du gj\u00f8r ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben\nEksempler: Skru 500m i sky, skru i (skikkelig) turbulent leside, fly i regn\nAlltid mer \u201cbasismargin\u201d fordi konsekvens er st\u00f8rre\nSkysug (det pleier \u00e5 g\u00e5 fint)\u000b\n\u201cDerfor b\u00f8r du ha gode distanseskills og mulighet til \u00e5 endre plan underveis\u201d"
+  },
+  {
+   "n": 22,
+   "objectId": "g28ec5a56b4e_0_37",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_38",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_39",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g28ec5a56b4e_0_42",
+     "source": "DRIVE",
+     "vid": "1ALRODJFMDamklU0xOgXmVzsif2AybErn",
+     "url": "https://docs.google.com/file/d/1ALRODJFMDamklU0xOgXmVzsif2AybErn/preview",
+     "x": 0.0,
+     "y": -0.0275,
+     "w": 9144000,
+     "h": 5143500.0,
+     "sx": 762,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 23,
+   "objectId": "g28ec5a56b4e_0_485",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_486",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_487",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_488",
+     "file": "slide23-g28ec5a56b4e_0_488.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfMgi50qxeKTc_wv7sLgrFL2vHr51Ze6l-2zo_DzCdGohkHNAr7QMDP1rITPzJ0eD5nBNBHSCSIPmVhmaLXE2ZEa5upwW8SeOfvbv5pJ2NiH3WjulfVil46o5g9TnNVDC88g3e1kS5mgrhLB-JET4C4T25fE8l2fVMeY9uB1rZrMTf9CnOxGA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1513500,
+     "y": 0.0,
+     "w": 6117000.435,
+     "h": 5143499.46,
+     "sx": 448.1319,
+     "sy": 346.3636,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_489",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 6675775,
+     "y": 1219075,
+     "w": 706200.0,
+     "h": 773100.0,
+     "sx": 0.2354,
+     "sy": 0.2577,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "DAGFINN TAR LANDING: tissehistorie og reidar"
+  },
+  {
+   "n": 24,
+   "objectId": "g28ec5a56b4e_0_633",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_634",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_635",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_638",
+     "file": "slide24-g28ec5a56b4e_0_638.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfNgttVHQcJjmHVUj6h3XtveS5jfoYZ8hQHmnMIRE1T5NNuEFQVBoRYOjJ8TrVOspcriJROi-4NTQn4EYlMnAL2uG3EFcvNJaAbpDPZOMywF2WPSxYHUL8j9ks4YomcaxzKEyV__FJCjzo-AmeQxCo4DPN6fLGFPpPr54QJ6Zt0Ixl7c70n2w=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": -0.6375,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 25,
+   "objectId": "g36cd557a9c4_1_16",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_17",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_18",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g36cd557a9c4_1_21",
+     "file": "slide25-g36cd557a9c4_1_21.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcRMjxxvsg5PdbaKcF8WjIfDH5FsuDWSu0nECx1txEoKDwPimawM8tVsIeU8gohXzlu1_s3d2uLAjWV2ElIrwaOE2NkaH9jjk-_ivv96Ev2S2Zt1HAqexBfvxjiDXm4iMg9dkGoPVf_zAX162rs8awTprIP20CYbjw8IG8-teQiA_XflPq9DA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": -0.06,
+     "y": -475498.8125,
+     "w": 9144002.559999999,
+     "h": 6094499.775,
+     "sx": 178.5938,
+     "sy": 178.5934,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 26,
+   "objectId": "g36cd557a9c4_1_22",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_23",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_1_24",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g36cd557a9c4_1_27",
+     "file": "slide26-g36cd557a9c4_1_27.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcF5yJf3x5G9SqhLN9OkV867YQGPDWqovWb1Yfbd8BiapDMW4YwISNz21iQW3SbcyMoknYizU1StvasnZPHKQFcG60p5DAzLMlYSFK-vlOxqDjLyTShiCGLIrP98paI3hAz-TlubL-nWNpgtI0M_g8y4A-qfzx8tqMsuicofeOb06w_WoM=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": -0.06999999999999999,
+     "y": -475498.80999999994,
+     "w": 9144002.559999999,
+     "h": 6094499.775,
+     "sx": 178.5938,
+     "sy": 178.5934,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 27,
+   "objectId": "g28ec5a56b4e_0_30",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_57",
+     "file": "slide27-g355aa8fee1b_0_57.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUca_HjSCTHPGxQn1y7bvz4nTVpO6ntbDHyjd91HrPNcribSSs0J1Xc8J9oL9S-kkFzTttNjk0pG4t2oUkPQxKa7vR0DdZhsGw73o9_xu4wA7IBb9GVQuuBGrJQd3KOQpLLSfyiem3n6Q9xFyP223jPQvGJ8rBXryVk_xNHKIR0xFjjmxzLzrg=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144001.6,
+     "h": 5143500.9375,
+     "sx": 212.6512,
+     "sy": 258.7925,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 28,
+   "objectId": "g36cd557a9c4_0_5",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g36cd557a9c4_0_20",
+     "file": "slide28-g36cd557a9c4_0_20.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUca_HjSCTHPGxQn1y7bvz4nTVpO6ntbDHyjd91HrPNcribSSs0J1Xc8J9oL9S-kkFzTttNjk0pG4t2oUkPQxKa7vR0DdZhsGw73o9_xu4wA7IBb9GVQuuBGrJQd3KOQpLLSfyiem3n6Q9xFyP223jPQvGJ8rBXryVk_xNHKIR0xFjjmxzLzrg=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144001.6,
+     "h": 5143500.9375,
+     "sx": 212.6512,
+     "sy": 258.7925,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_9",
+     "shapeType": "ROUND_RECTANGLE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "DARK2",
+     "outlineWeight": 9525,
+     "fillState": null,
+     "fillColor": "#bebebe",
+     "runs": [],
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000.0,
+     "h": 5143500.0,
+     "sx": 3.048,
+     "sy": 1.7145,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_11",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Camping uten infrastruktur\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_17",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Langt fra bilvei (og pub)\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "H\u00f8ydesyke\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Skader\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Ville dyr\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      }
+     ],
+     "x": 311700,
+     "y": 1152475,
+     "w": 3999900.0,
+     "h": 3416400.0,
+     "sx": 1.3333,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_10",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Mat og vann for en uke\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "F\u00f8rstehjelp\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Det er n\u00e5r du ikke er der du har planlagt som er problemet\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Det er bare camping(?)\u000b\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      },
+      {
+       "text": "Neste takeoff\n",
+       "style": {
+        "fontSize": {
+         "magnitude": 20,
+         "unit": "PT"
+        }
+       }
+      }
+     ],
+     "x": 4832400,
+     "y": 1152475,
+     "w": 3999900.0,
+     "h": 3416400.0,
+     "sx": 1.3333,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "God pilot med marginer:\nTopplanding\nSkru i lesider\n\n\nFloor is lava:\nFlipsiden p\u00e5 hva som skjer n\u00e5r du ikke kan/vil lande.\n\nN\u00e5r du f\u00f8rst er p\u00e5 bakken kan du v\u00e6re skikkelig i villmarka.\nCamping pro mode\nSkadet?\nSimon landet in the back p\u00e5 4500m ikke akklimatisert.\n\nPakk for\nMat og vann for en uke\n\n\nSatelittkommunikasjon\n\n\nMarginer"
+  },
+  {
+   "n": 29,
+   "objectId": "g355aa8fee1b_0_65",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_66",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_67",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_70",
+     "file": "slide29-g355aa8fee1b_0_70.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfF-fnd9pXtE6hidn3V9esZg6j2qZong_sHcDouQf3pFVdykUhG5EOuwm1QXq8uGM3Uv0hxduz3J3ujoSgPwaRudUpoyUEPrIkLdMNtVxU7moSSw9KklSG1WEtXSLddbpVM23DpL6WLceJ4qtcJ-Q7E2L8kCQqPxEnTrPH2SSD37QF1Fhs=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.335,
+     "y": 0.0,
+     "w": 9144002.559999999,
+     "h": 5143500.085,
+     "sx": 178.5938,
+     "sy": 305.7058,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "Land i tide: Simon hadde ikke h\u00f8yde og m\u00e5tte skru seg opp og landet rett f\u00f8r haglebygen"
+  },
+  {
+   "n": 30,
+   "objectId": "g355aa8fee1b_0_76",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_77",
+     "file": "slide30-g355aa8fee1b_0_77.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdtZmBx4t4kXSsKxre61EkEg56V7ifHbeKt0jU_3Zj7YkRmiAIzNnmSjBFYs7KxHFfvdfTKXcR2FEKRZ69oSSoQQm33MCH7usOddS_JxL_xF7uv9LD-v7f5eggpYgG5me3aXN9prKyOcH2yb-4dtmYMhgB3LeaJT_yLuEKg4KMWGFJcEqo=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 125,
+     "y": 0.03,
+     "w": 9143751.68,
+     "h": 5143500.100000001,
+     "sx": 178.5889,
+     "sy": 227.5885,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_78",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Dag 2: Shikah Beh\n",
+       "style": {}
+      }
+     ],
+     "x": 220575,
+     "y": 4362700,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 31,
+   "objectId": "g28ec5a56b4e_0_580",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_594",
+     "file": "slide31-g28ec5a56b4e_0_594.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdtZmBx4t4kXSsKxre61EkEg56V7ifHbeKt0jU_3Zj7YkRmiAIzNnmSjBFYs7KxHFfvdfTKXcR2FEKRZ69oSSoQQm33MCH7usOddS_JxL_xF7uv9LD-v7f5eggpYgG5me3aXN9prKyOcH2yb-4dtmYMhgB3LeaJT_yLuEKg4KMWGFJcEqo=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 125,
+     "y": 0.03,
+     "w": 9143751.68,
+     "h": 5143500.100000001,
+     "sx": 178.5889,
+     "sy": 227.5885,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_581",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Dag 2: Shikah Beh\n",
+       "style": {}
+      }
+     ],
+     "x": 220575,
+     "y": 4362700,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_81",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 4476750,
+     "y": 889000,
+     "w": 1365300.0,
+     "h": 1008000.0000000001,
+     "sx": 0.4551,
+     "sy": 0.336,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "line",
+     "id": "g36cd557a9c4_0_37",
+     "startArrow": "NONE",
+     "endArrow": "STEALTH_ARROW",
+     "dash": "DOT",
+     "color": "#ff0000",
+     "weight": 38100,
+     "x": 5823625,
+     "y": 1554075,
+     "w": 1687750,
+     "h": 1604225,
+     "sx": 1,
+     "sy": 1,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 32,
+   "objectId": "g36ce434c44a_0_0",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g36ce434c44a_0_5",
+     "file": "slide32-g36ce434c44a_0_5.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcz6gplFfoHchaKjLFTKge3ZcbY2BvVbOb2G3DJIUHh16gXeiargcMBrZwgVFmgIebSZ3LfrWeSDMnunDvnDfRoVHL0-SH3pEXT5HFRC0egbcwe4ajFx8Dv0mM-WqOttE_rIrZvSBqaxT60UbNjbgExvVUDXbvNAiAIlo1Gy9iiA0Mpc0d4ew=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 6098206.905,
+     "h": 5143500.58,
+     "sx": 206.3691,
+     "sy": 130.5457,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g36ce434c44a_0_6",
+     "source": "DRIVE",
+     "vid": "14wAwzZYzFMIepjzGNUWg7ZWi_HuYDq4g",
+     "url": "https://docs.google.com/file/d/14wAwzZYzFMIepjzGNUWg7ZWi_HuYDq4g/preview",
+     "x": 5923875.0025,
+     "y": 0.0,
+     "w": 3220124.4000000004,
+     "h": 5143500.0,
+     "sx": 268.3437,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 33,
+   "objectId": "g28ec5a56b4e_0_639",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_640",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_641",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g28ec5a56b4e_0_644",
+     "source": "DRIVE",
+     "vid": "1DwnksKfLHLXiNi_6vBn19BPmWsI0oKrK",
+     "url": "https://docs.google.com/file/d/1DwnksKfLHLXiNi_6vBn19BPmWsI0oKrK/preview",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000,
+     "h": 5143500.0,
+     "sx": 762,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 34,
+   "objectId": "g28ec5a56b4e_0_492",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_497",
+     "file": "slide34-g28ec5a56b4e_0_497.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfcrEUyT-vz9YXx8vkywFLVY6wSaN_UF0h2hwwVy1ZijSgwoJDt9kLKIx_97anKz0r-swf4iHCjMtEDc4ROBTHnUhtcSkqbHdStgZvMGFS98P0hQkC4dV-WvTa875mxNJQuPbGA4lAazq_amZsihpnbdnxXIWogU84aDhG50ZBoPQISRpSHUA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 1.2375,
+     "w": 9144002.559999999,
+     "h": 5143500.8625,
+     "sx": 178.5938,
+     "sy": 150.7253,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 35,
+   "objectId": "g355aa8fee1b_0_111",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_113",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_116",
+     "file": "slide35-g355aa8fee1b_0_116.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfMhTtkoUswfitT41RZaiT0N9U8U0-53CbZ0J1WBbgAJxRDvUI3n8BZ7SSQlamr1M4SS7UpC6ZE3EcbY2ssfNPh3X2CoQ-IXQaA8DhedtfR6cLXSnIz_TcWG-TO5WtsFOAZ_86e4G_aO_uUj5PEA6Rr9lRQqx3VATuGnonOeHkxcTj-TOw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 0.0,
+     "y": 0.02,
+     "w": 9144002.559999999,
+     "h": 5143498.965,
+     "sx": 178.5938,
+     "sy": 217.4841,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 36,
+   "objectId": "g36cd557a9c4_0_32",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_33",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Hva skal til for \u00e5 fly i Himalaya?\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_34",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Hvem kan gj\u00f8re dette?\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Hvem kan gj\u00f8re dette ",
+       "style": {}
+      },
+      {
+       "text": "trygt",
+       "style": {
+        "bold": true
+       }
+      },
+      {
+       "text": "?\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 1152475,
+     "w": 4260300.0,
+     "h": 3416400.0,
+     "sx": 1.4201,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "Dagfinn regi, simen sidekick"
+  },
+  {
+   "n": 37,
+   "objectId": "g39d0860f356_2_17",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_18",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g39d0860f356_2_19",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g39d0860f356_2_23",
+     "file": "slide37-g39d0860f356_2_23.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeJ3cDeD9Zt-YySv9fuod4JIr8kD2IVyr2pEZgZ4EeqZga5abDDUDv_KwlTHvYWUZDflp1b1AhUHzmbe-Nv1iWshiZxd-b1YxKc6zTGI0eZCD_kbeaHn_OBHdxsRZmHVt3VNMmns29RKojxIT__g8agslSM4xHnCVHhXCuCenPMEiUco9aDaQ=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1156342.4125,
+     "y": 0.0,
+     "w": 6831313.920000001,
+     "h": 5143499.055000001,
+     "sx": 133.4241,
+     "sy": 133.4241,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 38,
+   "objectId": "g36cd557a9c4_0_38",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_40",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "BONUS\n",
+       "style": {}
+      }
+     ],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g36cd557a9c4_0_43",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "BONUS\n",
+       "style": {}
+      }
+     ],
+     "x": 490250,
+     "y": 526350,
+     "w": 5683800.0,
+     "h": 4090800.0,
+     "sx": 1.8946,
+     "sy": 1.3636,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "Dagfinn regi, simen sidekick"
+  },
+  {
+   "n": 39,
+   "objectId": "g28ec5a5561a_0_111",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_112",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a5561a_0_113",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g28ec5a5561a_0_116",
+     "source": "DRIVE",
+     "vid": "14eBrBYQVM_VpqV8DGBc4ZfM0yBnjm03r",
+     "url": "https://docs.google.com/file/d/14eBrBYQVM_VpqV8DGBc4ZfM0yBnjm03r/preview",
+     "x": -0.034999999999999996,
+     "y": 0.0,
+     "w": 9144000,
+     "h": 5143500.0,
+     "sx": 762,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 40,
+   "objectId": "g355aa8fee1b_0_96",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_97",
+     "file": "slide40-g355aa8fee1b_0_97.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdtZmBx4t4kXSsKxre61EkEg56V7ifHbeKt0jU_3Zj7YkRmiAIzNnmSjBFYs7KxHFfvdfTKXcR2FEKRZ69oSSoQQm33MCH7usOddS_JxL_xF7uv9LD-v7f5eggpYgG5me3aXN9prKyOcH2yb-4dtmYMhgB3LeaJT_yLuEKg4KMWGFJcEqo=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 125,
+     "y": 0.03,
+     "w": 9143751.68,
+     "h": 5143500.100000001,
+     "sx": 178.5889,
+     "sy": 227.5885,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_98",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Dag 2: Shikah Beh\n",
+       "style": {}
+      }
+     ],
+     "x": 220575,
+     "y": 4362700,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_99",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 4476750,
+     "y": 889000,
+     "w": 1365300.0,
+     "h": 1008000.0000000001,
+     "sx": 0.4551,
+     "sy": 0.336,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g355aa8fee1b_0_102",
+     "source": "DRIVE",
+     "vid": "1j-YjHVOqCgs9shsx0jdkdJDHMCQt3IQS",
+     "url": "https://docs.google.com/file/d/1j-YjHVOqCgs9shsx0jdkdJDHMCQt3IQS/preview",
+     "x": 2286000,
+     "y": 0.0,
+     "w": 6858000.0,
+     "h": 5143500.0,
+     "sx": 571.5,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": "Start mot shikah beh"
+  },
+  {
+   "n": 41,
+   "objectId": "g355aa8fee1b_0_117",
+   "elements": [
+    {
+     "kind": "video",
+     "id": "g355aa8fee1b_0_122",
+     "source": "DRIVE",
+     "vid": "15ibHE45MuAiGILqeVJOn-BtcX9a8CplR",
+     "url": "https://docs.google.com/file/d/15ibHE45MuAiGILqeVJOn-BtcX9a8CplR/preview",
+     "x": 3383005.9925,
+     "y": 0.0,
+     "w": 2377987.2,
+     "h": 5143498.24,
+     "sx": 88.0736,
+     "sy": 88.0736,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 42,
+   "objectId": "g355aa8fee1b_0_43",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_44",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g355aa8fee1b_0_47",
+     "source": "DRIVE",
+     "vid": "1DHZ1cbJrSHEQ23amz3nPOaezwSuCAZ4t",
+     "url": "https://docs.google.com/file/d/1DHZ1cbJrSHEQ23amz3nPOaezwSuCAZ4t/preview",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9143980.799999999,
+     "h": 5143500.0,
+     "sx": 190.4996,
+     "sy": 190.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 43,
+   "objectId": "g355aa8fee1b_0_82",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_83",
+     "file": "slide43-g355aa8fee1b_0_83.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdtZmBx4t4kXSsKxre61EkEg56V7ifHbeKt0jU_3Zj7YkRmiAIzNnmSjBFYs7KxHFfvdfTKXcR2FEKRZ69oSSoQQm33MCH7usOddS_JxL_xF7uv9LD-v7f5eggpYgG5me3aXN9prKyOcH2yb-4dtmYMhgB3LeaJT_yLuEKg4KMWGFJcEqo=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 125,
+     "y": 0.03,
+     "w": 9143751.68,
+     "h": 5143500.100000001,
+     "sx": 178.5889,
+     "sy": 227.5885,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_84",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Dag 2: Shikah Beh\n",
+       "style": {}
+      }
+     ],
+     "x": 220575,
+     "y": 4362700,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_85",
+     "shapeType": "ELLIPSE",
+     "placeholder": null,
+     "outlineState": null,
+     "outlineColor": "#ff0000",
+     "outlineWeight": 76200,
+     "fillState": "NOT_RENDERED",
+     "fillColor": "#ff0000",
+     "runs": [],
+     "x": 4476750,
+     "y": 889000,
+     "w": 1365300.0,
+     "h": 1008000.0000000001,
+     "sx": 0.4551,
+     "sy": 0.336,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g355aa8fee1b_0_88",
+     "source": "DRIVE",
+     "vid": "1L8J9BTcC-oypPhdczsi2-q2H8-2B4D41",
+     "url": "https://docs.google.com/file/d/1L8J9BTcC-oypPhdczsi2-q2H8-2B4D41/preview",
+     "x": 5937240.625,
+     "y": 0.0,
+     "w": 2893220.1,
+     "h": 5143502.4,
+     "sx": 107.1563,
+     "sy": 107.1563,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 44,
+   "objectId": "g28ec5a56b4e_0_587",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_588",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 445025,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_589",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 311700,
+     "y": 1152475,
+     "w": 8520600.0,
+     "h": 3416400.0,
+     "sx": 2.8402,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g28ec5a56b4e_0_592",
+     "source": "DRIVE",
+     "vid": "1DbKLvM2ijNv0iUb2U5iI4un22Np8E9IJ",
+     "url": "https://docs.google.com/file/d/1DbKLvM2ijNv0iUb2U5iI4un22Np8E9IJ/preview",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000,
+     "h": 5143500.0,
+     "sx": 762,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 45,
+   "objectId": "g28ec5a56b4e_0_519",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_520",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g28ec5a56b4e_0_523",
+     "source": "DRIVE",
+     "vid": "1Bx3rhX8U8OFgnWel3clz0lZo4cXlFMJ_",
+     "url": "https://docs.google.com/file/d/1Bx3rhX8U8OFgnWel3clz0lZo4cXlFMJ_/preview",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 9144000,
+     "h": 5143500.0,
+     "sx": 762,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 46,
+   "objectId": "g28ec5a56b4e_0_576",
+   "elements": [
+    {
+     "kind": "image",
+     "id": "g28ec5a56b4e_0_586",
+     "file": "slide46-g28ec5a56b4e_0_586.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeAIC1pGJhlXxapDCCo769MjpKSnE1Kxc_asg1tHc61rpQygCvtknCjbtQLK84Cm_llfU47_TPjNDIb7THLiPU8V8VH-aT9j9zjeMifd1KtPs9Q5NBDJC_l4leB3azOZQR1VTPDCqslwFMvxn4pDqgCZrVdPBbrf06SBQnyV5pZvYcSEhrZdA=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 1.2574999999999998,
+     "y": -950999.2974999999,
+     "w": 9144002.559999999,
+     "h": 6094499.775,
+     "sx": 178.5938,
+     "sy": 178.5934,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g28ec5a56b4e_0_577",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Oktober 2024?\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 122000,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 47,
+   "objectId": "g355aa8fee1b_0_5",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_6",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Why Bir?\n",
+       "style": {}
+      }
+     ],
+     "x": 220600,
+     "y": 353925,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_7",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Sykeste terrenget du noen gang kommer til \u00e5 fly i\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Sesongen er i oktober/nov - hva annet skal du finne p\u00e5?\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Eventyr\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Flybilletten er dyr, resten er billig\n",
+       "style": {}
+      },
+      {
+       "text": "Middag: 20-60kr\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 1152475,
+     "w": 4260300.0,
+     "h": 3416400.0,
+     "sx": 1.4201,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_8",
+     "file": "slide47-g355aa8fee1b_0_8.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdLgIBL97F-UHznjVxHNOhVwP-DSQnF228sxD_ifhnx6OSoHXX464WnvFOHNcVOnbrqRRBbaaIV50OOF83z61p7fqy6TY2A6ac6M40cXAV4ue3UuP-xJjrjE2PbKB2AvASSXomOgCqAI62n-QKxuk2rqGcs6IbmLVJGVBpCa-yjJvATppsiYw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 4876800,
+     "y": 1043625,
+     "w": 4267202.5600000005,
+     "h": 2844107.1750000003,
+     "sx": 83.3438,
+     "sy": 83.3438,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 48,
+   "objectId": "g355aa8fee1b_0_33",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_34",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [],
+     "x": 319500,
+     "y": 4233725,
+     "w": 5998800.0,
+     "h": 598800.0,
+     "sx": 1.9996,
+     "sy": 0.1996,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g355aa8fee1b_0_37",
+     "source": "DRIVE",
+     "vid": "1B_WmEOcKeXik6LKdpQZJ9Z3V3T6R_UF6",
+     "url": "https://docs.google.com/file/d/1B_WmEOcKeXik6LKdpQZJ9Z3V3T6R_UF6/preview",
+     "x": 15633.7375,
+     "y": -0.0075,
+     "w": 9144014.4,
+     "h": 5143500.0,
+     "sx": 190.5003,
+     "sy": 190.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 49,
+   "objectId": "g355aa8fee1b_0_11",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_12",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Why Bir?\n",
+       "style": {}
+      }
+     ],
+     "x": 220600,
+     "y": 353925,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_13",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Sykeste terrenget du noen gang kommer til \u00e5 fly i\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Sesongen er i oktober/nov - hva annet skal du finne p\u00e5?\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Eventyr\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Flybilletten er dyr, resten er billig\n",
+       "style": {}
+      },
+      {
+       "text": "Middag: 20-60kr\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 1152475,
+     "w": 4260300.0,
+     "h": 3416400.0,
+     "sx": 1.4201,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_14",
+     "file": "slide49-g355aa8fee1b_0_14.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdLgIBL97F-UHznjVxHNOhVwP-DSQnF228sxD_ifhnx6OSoHXX464WnvFOHNcVOnbrqRRBbaaIV50OOF83z61p7fqy6TY2A6ac6M40cXAV4ue3UuP-xJjrjE2PbKB2AvASSXomOgCqAI62n-QKxuk2rqGcs6IbmLVJGVBpCa-yjJvATppsiYw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 4876800,
+     "y": 0.0,
+     "w": 4267202.5600000005,
+     "h": 2844107.1750000003,
+     "sx": 83.3438,
+     "sy": 83.3438,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_15",
+     "file": "slide49-g355aa8fee1b_0_15.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd_g7JX0CG7Tmqj8-WqYdADmCleTbK9EfBOur0gD1NTrm1I1_E-X4ZT51k45Wv-ilo_Cy4vpm44zqctHHmqlCGJbx6ii3XlfEc-DwqHWtW3HF7SNTeSrgSluL2tNQaT-7J_4OeH8oSa0akf-DDQkRKiA3qG4G7EojyhFr6-nGa4osfX8hAh0w=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 5270987.649999999,
+     "y": 0.0,
+     "w": 3873024.5500000003,
+     "h": 5143499.800000001,
+     "sx": 153.997,
+     "sy": 153.997,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "n": 50,
+   "objectId": "g355aa8fee1b_0_18",
+   "elements": [
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_19",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "TITLE",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Why Bir?\n",
+       "style": {}
+      }
+     ],
+     "x": 220600,
+     "y": 353925,
+     "w": 8520600.0,
+     "h": 572700.0,
+     "sx": 2.8402,
+     "sy": 0.1909,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "shape",
+     "id": "g355aa8fee1b_0_20",
+     "shapeType": "TEXT_BOX",
+     "placeholder": "BODY",
+     "outlineState": "INHERIT",
+     "outlineColor": null,
+     "outlineWeight": null,
+     "fillState": "INHERIT",
+     "fillColor": null,
+     "runs": [
+      {
+       "text": "Sykeste terrenget du noen gang kommer til \u00e5 fly i\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Sesongen er i oktober/nov - hva annet skal du finne p\u00e5?\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Eventyr\u000b\n",
+       "style": {}
+      },
+      {
+       "text": "Flybilletten er dyr, resten er billig\n",
+       "style": {}
+      },
+      {
+       "text": "Middag: 20-60kr\n",
+       "style": {}
+      }
+     ],
+     "x": 311700,
+     "y": 1152475,
+     "w": 4260300.0,
+     "h": 3416400.0,
+     "sx": 1.4201,
+     "sy": 1.1388,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_21",
+     "file": "slide50-g355aa8fee1b_0_21.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdLgIBL97F-UHznjVxHNOhVwP-DSQnF228sxD_ifhnx6OSoHXX464WnvFOHNcVOnbrqRRBbaaIV50OOF83z61p7fqy6TY2A6ac6M40cXAV4ue3UuP-xJjrjE2PbKB2AvASSXomOgCqAI62n-QKxuk2rqGcs6IbmLVJGVBpCa-yjJvATppsiYw=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 4876800,
+     "y": 0.0,
+     "w": 4267202.5600000005,
+     "h": 2844107.1750000003,
+     "sx": 83.3438,
+     "sy": 83.3438,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "image",
+     "id": "g355aa8fee1b_0_22",
+     "file": "slide50-g355aa8fee1b_0_22.png",
+     "url": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd_g7JX0CG7Tmqj8-WqYdADmCleTbK9EfBOur0gD1NTrm1I1_E-X4ZT51k45Wv-ilo_Cy4vpm44zqctHHmqlCGJbx6ii3XlfEc-DwqHWtW3HF7SNTeSrgSluL2tNQaT-7J_4OeH8oSa0akf-DDQkRKiA3qG4G7EojyhFr6-nGa4osfX8hAh0w=s2048?key=ToLLi2_mh_qrc-QOBkm1-Q",
+     "x": 5270987.649999999,
+     "y": 0.0,
+     "w": 3873024.5500000003,
+     "h": 5143499.800000001,
+     "sx": 153.997,
+     "sy": 153.997,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "kind": "video",
+     "id": "g355aa8fee1b_0_23",
+     "source": "DRIVE",
+     "vid": "1Dx5N8M3i0B9rRd7nZj_jPiiX925DuoDP",
+     "url": "https://docs.google.com/file/d/1Dx5N8M3i0B9rRd7nZj_jPiiX925DuoDP/preview",
+     "x": 4572000,
+     "y": 0.0,
+     "w": 4572000,
+     "h": 5143500.0,
+     "sx": 381,
+     "sy": 571.5,
+     "shear": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "notes": ""
+  }
+ ]
+}
