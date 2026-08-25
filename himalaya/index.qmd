@@ -1,0 +1,45 @@
+---
+title: "Paragliding i Himalaya"
+subtitle: "Foredrag holdt i Loen, oktober 2025"
+author: "Simen Eide"
+lang: no
+format:
+  html:
+    toc: false
+listing: false
+---
+
+![](img/b725c8fc.jpg)
+
+Bir og Billing i Himachal Pradesh er utgangspunktet: en startplass på 2400
+meter, en fjellkjede som bare fortsetter bakover, og en sesong i oktober og
+november når resten av Europa er pakket ned.
+
+Foredraget handler om å fly innover i den fjellkjeden med teltet i selen.
+Volbiv over ryggen til Manali-siden, overnatting på 3000 meter, og ut igjen
+dagen etter. Og om det som gjør slik flyging annerledes enn en dag på Voss:
+at du ikke kan bestemme deg for å lande og ta en taxi til pub. Konsekvensen av
+et valg i lufta er en helt annen når nærmeste bilvei er to dagsmarsjer unna.
+
+## Materiale
+
+- [Presentasjon (reveal.js)](presentasjon.html)
+
+Bruk piltastene, eller `s` for foredragsholdernotater. Trykk `o` for
+oversikt over alle slidene.
+
+## Turene
+
+Volbiv-en i foredraget er 17. og 18. oktober 2024. Sporene ligger åpent i
+[pgpilot](https://pgpilot.app), så du kan spille dem av selv:
+
+| | Rute | Tid i lufta | Langs sporet | Høyeste punkt | |
+|---|---|---|---|---|---|
+| **Dag 1** | Bir → Saurkundi | 3t 00m | 123 km | 4677 moh | [spor](https://pgpilot.app/flight/08609297-a5f3-4e03-8b0e-d24af4d5be74) |
+| **Dag 2** | Saurkundi → Bir | 5t 43m | 219 km | 5509 moh | [spor](https://pgpilot.app/flight/0307393d-69aa-4e16-9613-cc1502f13252) |
+
+Dag 1 lander 200 meter fra der dag 2 starter. Det er teltplassen.
+
+## Kontakt
+
+[simen@eide.ai](mailto:simen@eide.ai)
