@@ -172,6 +172,9 @@ def render_image(n: int, e: dict) -> list[str]:
     ]
 
 
+DRIVE_VIDEOS = json.loads((SRC / "drive-videos.json").read_text())
+
+
 def render_video(n: int, e: dict) -> list[str]:
     # poster: staa-bilde fra klippet. Klippene ligger utenfor git, saa paa den
     # publiserte versjonen svarer .mp4 med 404. Uten poster ble det en svart,
@@ -180,6 +183,9 @@ def render_video(n: int, e: dict) -> list[str]:
     return [
         f'<video class="vid" style="{box(e)}" src="video/slide{n:02d}.mp4"',
         f'       poster="img/poster-slide{n:02d}.jpg"',
+        # data-embed leses av video-fallback.html: naar den lokale mp4-en
+        # mangler (som paa eide.ai) byttes <video> mot denne iframen.
+        f'       data-embed="https://drive.google.com/file/d/{DRIVE_VIDEOS[str(n)]}/preview"',
         '       controls preload="metadata" playsinline></video>',
     ]
 
