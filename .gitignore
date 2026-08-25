@@ -4,10 +4,12 @@
 _freeze/
 CNAME
 
-# Himalaya-foredraget: ~120 MB video som hentes med himalaya/_source/fetch_video.py
+# Himalaya-foredraget: ~900 MB video i full oppløsning. Bygges på nytt fra
+# originalene i Drive med himalaya/_source/rebuild_hq.py. Den publiserte
+# versjonen spiller dem fra Drive i stedet, se _source/drive-videos.json.
 himalaya/video/
 docs/himalaya/video/
 himalaya/_source/thumbs/
 himalaya/_source/video-raw/
 # Kjørelogg fra opplastingsscriptet
-himalaya/_source/upload.log
+himalaya/_source/*.log
