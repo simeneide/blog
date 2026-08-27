@@ -620,7 +620,7 @@
     "href": "himalaya/voss.html#section",
     "title": "pgpilot og Himalaya",
     "section": "",
-    "text": "Hent slide 46, 49, 50 fra India-decket. Slide 46 sier fortsatt “Oktober 2024?” og MÅ oppdateres."
+    "text": "Og saa: sånn ser det faktisk ut derfra. Sliden foer er appens kart over Bir, denne er det samme stedet med oynene. Kart, saa virkelighet. Si det omtrent saann: “og det kartet, det ser slik ut naar du staar der.”\nTo skjermer i lufta, bygda og terrassene rett under, og Dhauladhar-ryggen som ligger der hele veien i bakgrunnen. Poenget er skalaen: det ser rolig ut, men fjellene bak er over fire tusen meter. Det er DEN veggen vi flyr langs.\nIkke dvel. Ett pust, saa videre til maskinvaren."
   },
   {
     "objectID": "himalaya/voss.html#hvor-er-india",
@@ -760,14 +760,14 @@
     "href": "himalaya/voss.html#floor-is-lava",
     "title": "pgpilot og Himalaya",
     "section": "Floor is lava",
-    "text": "Floor is lava\n\n\nRisiko snus pa hodet. Du gjor ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben.\n\nMarginer, hoydesyke, buddysystem, mat og vann for en uke."
+    "text": "Floor is lava\n\n\nRisiko snus pa hodet. Du gjor ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben.\n\nMarginer, hoydesyke, buddysystem, mat og vann for en uke.\nDette er bolken klubben faar mest ut av. Ta deg tid her."
   },
   {
     "objectID": "himalaya/voss.html#hjemme-har-du-alt.-her-har-du-ingenting.",
     "href": "himalaya/voss.html#hjemme-har-du-alt.-her-har-du-ingenting.",
     "title": "pgpilot og Himalaya",
     "section": "Hjemme har du alt. Her har du ingenting.",
-    "text": "Hjemme har du alt. Her har du ingenting.\n\nTabellen fra STRUKTUR.md: Voss vs Bir. Luftrom, varsel, vindstasjoner, NOTAM = nei. Startplasser, kart, vario, gruppe = ja.\n\n\nSjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR. Varsel (MEPS/ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19 europeiske kilder.\nPoenget er ikke at appen er mangelfull. Poenget er at India stripper den ned til kjernen, og det som staar igjen er det som baerer."
+    "text": "Hjemme har du alt. Her har du ingenting.\n\n\n\n\nVoss\nBir\n\n\n\n\nStartplasser\nja\nja\n\n\nKart og terreng\nja\nja\n\n\nVario og flightcomputer\nja\nja\n\n\nGruppe, PTT, sporing\nja\nja\n\n\nLuftrom\nja\nnei\n\n\nVærvarsel\nja\nnei\n\n\nVindstasjoner\nja\nnei\n\n\nNOTAM\nja\nnei\n\n\n\n\nSjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR. Varsel (MEPS og ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19 europeiske nasjonale kilder.\nPoenget er ikke at appen er mangelfull. Poenget er at India stripper den ned til kjernen, og det som staar igjen er det som baerer."
   },
   {
     "objectID": "himalaya/voss.html#det-som-står-igjen",
@@ -802,7 +802,7 @@
     "href": "himalaya/voss.html#areacontest",
     "title": "pgpilot og Himalaya",
     "section": "AreaContest",
-    "text": "AreaContest\n\nKartet over Voss-området. Hvem eier hvilke ruter?\n\n\nBeste retensjonsmekanikken du har, og et Voss-publikum er nøyaktig folk som vil krangle om dette."
+    "text": "AreaContest\n\nKartet over Voss-området. Hvem eier hvilke ruter?\n\n\nBeste retensjonsmekanikken du har, og et Voss-publikum er noyaktig folk som vil krangle om dette."
   },
   {
     "objectID": "himalaya/voss.html#bli-med-i-2026",
@@ -816,14 +816,14 @@
     "href": "himalaya/voss.html#section-1",
     "title": "pgpilot og Himalaya",
     "section": "",
-    "text": "Tandoori-videoen. Avslutt her, ikke på en punktliste.\n\n\nSiste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss."
+    "text": "Og saa begynner vi aa komme opp. Her er skjermen liten og skya stor, og det er akkurat den foelelsen: du er ikke stor i dette landskapet.\nDette er det siste ekte bildet foer vi gaar tilbake i appen. Bruk det til aa si hvorfor tallene betyr noe: naar du staar her, med sky rundt og en rygg under, er det ikke tid til aa gjette hoyde eller glidetall."
   },
   {
     "objectID": "himalaya/voss.html#section-2",
     "href": "himalaya/voss.html#section-2",
     "title": "pgpilot og Himalaya",
     "section": "",
-    "text": "Tandoori-videoen. Avslutt her, ikke på en punktliste.\n\n\nSiste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss."
+    "text": "Hent slide 46, 49, 50 fra India-decket. Slide 46 sier fortsatt “Oktober 2024?” og MÅ oppdateres."
   },
   {
     "objectID": "himalaya/voss.html#hvor-er-india-hvor-er-bir",
@@ -880,5 +880,68 @@
     "title": "pgpilot og Himalaya",
     "section": "4. Glide range på kartet KLIPP",
     "text": "4. Glide range på kartet KLIPP\n\n\nGlide range-konturene er de stiplede linjene rundt piloten: gronn L/D 6, gul L/D 8, oransje L/D 10. De viser hvor langt du rekker fra der du er.\nAt de manglet foer var ikke en innstilling, men timing: useGlideRange returnerer tidlig naar terrengflisene for hele rekkevidden ikke er cachet ennaa. Opptaket venter naa til laget faktisk har data.\nGLIDE 10S staar rundt 12, og glidestraalene L/D 6, 8 og 10 treffer bakken ved 2,5 km med stoppunktet markert. Glide range staar paa hoy kvalitet.\nKartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar plass i ramma. AA sette zoomen gjennom kartobjektet ble overstyrt av foelg-logikken; minus-knappen mens replayet staar paa pause er det som sitter.\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
+  },
+  {
+    "objectID": "himalaya/voss.html#section-3",
+    "href": "himalaya/voss.html#section-3",
+    "title": "pgpilot og Himalaya",
+    "section": "",
+    "text": "Tandoori-videoen. Avslutt her, ikke på en punktliste.\n\n\nSiste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss."
+  },
+  {
+    "objectID": "himalaya/voss.html#første-flycamping",
+    "href": "himalaya/voss.html#første-flycamping",
+    "title": "pgpilot og Himalaya",
+    "section": "Første flycamping",
+    "text": "Første flycamping\n\n\nIntrobildet til akten. Vi lander ikke og tar en taxi, vi slaar leir.\nSolcellepanelet paa teltduken er verdt aa peke paa: alt som skal vare en uke maa lades av sola."
+  },
+  {
+    "objectID": "himalaya/voss.html#dit-skal-vi",
+    "href": "himalaya/voss.html#dit-skal-vi",
+    "title": "pgpilot og Himalaya",
+    "section": "Dit skal vi",
+    "text": "Dit skal vi\n\n\nBildet som viser hvilken vei vi gaar. Ikke si mer enn det."
+  },
+  {
+    "objectID": "himalaya/voss.html#vi-flyr-innover-app",
+    "href": "himalaya/voss.html#vi-flyr-innover-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Vi flyr innover APP",
+    "text": "Vi flyr innover APP\n\n\nDette erstatter XContest-bildene fra Loen-decket. Ekte spor i appen, ikke en strek paa et fremmed kart.\n123 km langs sporet, fra Bir opp mot Manali. Dharamshala og Palampur ligger nede paa sletta til venstre, og resten er sekstusenmeterstopper.\nSammen med kartet fra startplassen i akt 2 er dette de to kartbildene som forklarer hele turen. Trenger ikke flere."
+  },
+  {
+    "objectID": "himalaya/voss.html#her-er-det-ingenting",
+    "href": "himalaya/voss.html#her-er-det-ingenting",
+    "title": "pgpilot og Himalaya",
+    "section": "Her er det ingenting",
+    "text": "Her er det ingenting\n\n\nNaa er vi i storfjellene. Ingen vei, ingen bygd, ingen dekning.\nOvergangen til neste slide: og da endrer flygingen seg."
+  },
+  {
+    "objectID": "himalaya/voss.html#det-du-har-med-deg",
+    "href": "himalaya/voss.html#det-du-har-med-deg",
+    "title": "pgpilot og Himalaya",
+    "section": "Det du har med deg",
+    "text": "Det du har med deg\n\n\nSamme skjerm som i akt 2, med vilje. Da handlet den om aa koble paa varioen. Her handler den om hva som holder deg i kontakt naar det ikke finnes noe.\nSnakk over den, ikke les opp en liste: - InReach naar det ikke er dekning i det hele tatt. Satellitt, og noen hjemme som ser prikken bevege seg. - VHF: batteriet varer, og radioen sender selv om alt annet er dodt. - VHF-broen mikser radioprat inn i gruppa, saa de med og uten radio hoerer hverandre. - Ground contact. Du sier selv den er mindre nyttig, saa nevn den kort.\nOGN og FLARM-bakkestasjoner finnes knapt i Himalaya. Derfor er direkte pilot-til-pilot det som baerer der nede."
+  },
+  {
+    "objectID": "himalaya/voss.html#landing",
+    "href": "himalaya/voss.html#landing",
+    "title": "pgpilot og Himalaya",
+    "section": "Landing",
+    "text": "Landing"
+  },
+  {
+    "objectID": "himalaya/voss.html#framme",
+    "href": "himalaya/voss.html#framme",
+    "title": "pgpilot og Himalaya",
+    "section": "Framme",
+    "text": "Framme\n\n\nLa de to bildene staa uten mye prat. Det er slutten paa flygingen."
+  },
+  {
+    "objectID": "himalaya/voss.html#og-så-etterpå-app",
+    "href": "himalaya/voss.html#og-så-etterpå-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Og så, etterpå APP",
+    "text": "Og så, etterpå APP\n\n\nTogga - Sota sæter. Ett slide som gjoer fire jobber samtidig, saa du slipper en slide per ting:\n\nSe paa turen: kartet, sporet, hvor du fauk\nTeksten og bildene du la inn selv\nSegmentene: Ground og Fly skilt fra hverandre automatisk\nTallene: 75,7 km XC, 8010 m klatret, 124,7 km langs sporet\n\nSnakk over den om det som skjer videre uten aa bytte slide: IGC ut, automatisk opplasting til flightlog og XContest, og dedup mot det som alt ligger der.\nDette er grunnen til at de aapner appen igjen paa tirsdag."
   }
 ]

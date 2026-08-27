@@ -182,6 +182,29 @@ globalt kart, saa dataene finnes, men Bir er ikke Alpene.
 Ikke snakk om startplassdatabasen. Bare la kartet staa og fortell hvor vi er.
 :::
 
+##
+
+```{=html}
+<img class="fullbleed" src="img/eacdd44c.jpg"
+     style="object-position: 50% 60%" alt="">
+```
+
+::: {.notes}
+Og saa: sånn ser det faktisk ut derfra. Sliden foer er appens kart over Bir,
+denne er det samme stedet med oynene. Kart, saa virkelighet. Si det omtrent
+saann: "og det kartet, det ser slik ut naar du staar der."
+
+To skjermer i lufta, bygda og terrassene rett under, og Dhauladhar-ryggen som
+ligger der hele veien i bakgrunnen. Poenget er skalaen: det ser rolig ut, men
+fjellene bak er over fire tusen meter. Det er DEN veggen vi flyr langs.
+
+Ikke dvel. Ett pust, saa videre til maskinvaren.
+:::
+
+<!-- 1720x1295 i et 16:9-slide: cover skjuler ca 328 px hoyde. 60 % holder
+     begge skjermene (y=378 og y=720) og bebyggelsen (y=1080) i ramma, og
+     kutter det tomme jordet i forgrunnen i stedet. -->
+
 ## Koble på varioen [APP]{.where .where-app}
 
 ```{=html}
@@ -330,6 +353,26 @@ La den staa noen sekunder foer du gaar videre til tallene.
      standard 50% ble skjermen klippet helt bort og sliden viste bare sky og
      skogside. 78% holder skjermen, skyene paa ryggen og terrassene i ramma. -->
 
+##
+
+```{=html}
+<img class="fullbleed" src="img/1f24390a.jpg"
+     style="object-position: 50% 45%" alt="">
+```
+
+::: {.notes}
+Og saa begynner vi aa komme opp. Her er skjermen liten og skya stor, og det er
+akkurat den foelelsen: du er ikke stor i dette landskapet.
+
+Dette er det siste ekte bildet foer vi gaar tilbake i appen. Bruk det til aa si
+hvorfor tallene betyr noe: naar du staar her, med sky rundt og en rygg under,
+er det ikke tid til aa gjette hoyde eller glidetall.
+:::
+
+<!-- 2048x1365: cover skjuler ca 213 px hoyde. 45 % holder toppen av skya inne
+     og lar den moerke ryggen bli staaende nederst. Skjermen (y=886) er godt
+     innenfor uansett. -->
+
 ## 2. Termikkboblen [KLIPP]{.where .where-clip}
 
 ```{=html}
@@ -400,6 +443,58 @@ ga til akt 4 uten a svare. Det er der historien snur.
 VENDEPUNKTET. Vi passerer siste rygg. Nettet dor.
 :::
 
+## Første flycamping
+
+```{=html}
+<img class="fullbleed" src="img/2912d2b9.jpg" style="object-position: 50% 60%" alt="">
+```
+
+::: {.notes}
+Introbildet til akten. Vi lander ikke og tar en taxi, vi slaar leir.
+
+Solcellepanelet paa teltduken er verdt aa peke paa: alt som skal vare en uke
+maa lades av sola.
+:::
+
+## Dit skal vi
+
+```{=html}
+<img class="fullbleed" src="img/19475ac6.jpg" alt="">
+```
+
+::: {.notes}
+Bildet som viser hvilken vei vi gaar. Ikke si mer enn det.
+:::
+
+## Vi flyr innover [APP]{.where .where-app}
+
+```{=html}
+<img class="fullbleed" src="img/app-innover.jpg" alt="">
+```
+
+::: {.notes}
+Dette erstatter XContest-bildene fra Loen-decket. Ekte spor i appen, ikke en
+strek paa et fremmed kart.
+
+123 km langs sporet, fra Bir opp mot Manali. Dharamshala og Palampur ligger
+nede paa sletta til venstre, og resten er sekstusenmeterstopper.
+
+Sammen med kartet fra startplassen i akt 2 er dette de to kartbildene som
+forklarer hele turen. Trenger ikke flere.
+:::
+
+## Her er det ingenting
+
+```{=html}
+<img class="fullbleed" src="img/171722e4.jpg" alt="">
+```
+
+::: {.notes}
+Naa er vi i storfjellene. Ingen vei, ingen bygd, ingen dekning.
+
+Overgangen til neste slide: og da endrer flygingen seg.
+:::
+
 ## Floor is lava {.center}
 
 ::: {.notes}
@@ -407,32 +502,50 @@ VENDEPUNKTET. Vi passerer siste rygg. Nettet dor.
 > landet og tatt en taxi til pubben.
 
 Marginer, hoydesyke, buddysystem, mat og vann for en uke.
+
+Dette er bolken klubben faar mest ut av. Ta deg tid her.
 :::
 
 ## Hjemme har du alt. Her har du ingenting.
 
-::: {.todo}
-Tabellen fra STRUKTUR.md: Voss vs Bir. Luftrom, varsel, vindstasjoner,
-NOTAM = nei. Startplasser, kart, vario, gruppe = ja.
-:::
+| | Voss | Bir |
+|---|:---:|:---:|
+| Startplasser | ja | **ja** |
+| Kart og terreng | ja | **ja** |
+| Vario og flightcomputer | ja | **ja** |
+| Gruppe, PTT, sporing | ja | **ja** |
+| Luftrom | ja | nei |
+| Værvarsel | ja | nei |
+| Vindstasjoner | ja | nei |
+| NOTAM | ja | nei |
 
 ::: {.notes}
 Sjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR.
-Varsel (MEPS/ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19
-europeiske kilder.
+Varsel (MEPS og ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19
+europeiske nasjonale kilder.
 
-Poenget er ikke at appen er mangelfull. Poenget er at India stripper den ned til
-kjernen, og det som staar igjen er det som baerer.
+Poenget er ikke at appen er mangelfull. Poenget er at India stripper den ned
+til kjernen, og det som staar igjen er det som baerer.
 :::
 
-## Det som står igjen
+## Det du har med deg
 
-::: {.todo}
-Offline-kart, VHF over KV4P, FLARM, Meshtastic, InReach, buddies.
-Ett slide hver, eller ett samleslide. Bestem når innholdet skrives.
-:::
+```{=html}
+<img class="clip" src="img/app-hardware.png" alt="Hardware: vario, PTT, radio">
+```
 
 ::: {.notes}
+Samme skjerm som i akt 2, med vilje. Da handlet den om aa koble paa varioen.
+Her handler den om hva som holder deg i kontakt naar det ikke finnes noe.
+
+Snakk over den, ikke les opp en liste:
+  - InReach naar det ikke er dekning i det hele tatt. Satellitt, og noen hjemme
+    som ser prikken bevege seg.
+  - VHF: batteriet varer, og radioen sender selv om alt annet er dodt.
+  - VHF-broen mikser radioprat inn i gruppa, saa de med og uten radio hoerer
+    hverandre.
+  - Ground contact. Du sier selv den er mindre nyttig, saa nevn den kort.
+
 OGN og FLARM-bakkestasjoner finnes knapt i Himalaya. Derfor er direkte
 pilot-til-pilot det som baerer der nede.
 :::
@@ -460,10 +573,41 @@ Vi lander ved teltplassen. Dag 1 lander 200 meter fra der dag 2 starter, og det
 er ikke tilfeldig, det er teltet.
 :::
 
-## Etter landing
+## Landing
 
-::: {.todo}
-IGC ut, automatisk XContest-opplasting, feeden, profiler, kudos.
+```{=html}
+<img class="fullbleed" src="img/edb8802a.jpg" alt="">
+```
+
+## Framme
+
+```{=html}
+<img class="fullbleed" src="img/beb89185.jpg" alt="">
+```
+
+::: {.notes}
+La de to bildene staa uten mye prat. Det er slutten paa flygingen.
+:::
+
+## Og så, etterpå [APP]{.where .where-app}
+
+```{=html}
+<img class="clip" src="img/app-flightdetails.jpg" alt="Flight Details">
+```
+
+::: {.notes}
+Togga - Sota sæter. Ett slide som gjoer fire jobber samtidig, saa du slipper
+en slide per ting:
+
+  - Se paa turen: kartet, sporet, hvor du fauk
+  - Teksten og bildene du la inn selv
+  - Segmentene: Ground og Fly skilt fra hverandre automatisk
+  - Tallene: 75,7 km XC, 8010 m klatret, 124,7 km langs sporet
+
+Snakk over den om det som skjer videre uten aa bytte slide: IGC ut, automatisk
+opplasting til flightlog og XContest, og dedup mot det som alt ligger der.
+
+Dette er grunnen til at de aapner appen igjen paa tirsdag.
 :::
 
 ## AreaContest
@@ -473,7 +617,7 @@ Kartet over Voss-området. Hvem eier hvilke ruter?
 :::
 
 ::: {.notes}
-Beste retensjonsmekanikken du har, og et Voss-publikum er nøyaktig folk som vil
+Beste retensjonsmekanikken du har, og et Voss-publikum er noyaktig folk som vil
 krangle om dette.
 :::
 
