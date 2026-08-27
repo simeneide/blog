@@ -48,21 +48,57 @@ Poenget er ikke at appen er mangelfull i India. Poenget er at **India stripper
 den ned til kjernen**, og det som står igjen er nøyaktig det som bærer:
 sensorene i telefonen, kartet i minnet, sporet, og sambandet med de du flyr med.
 
-## Kjøreplan (53 min + spørsmål)
+## Kjøreplan (bygget, 40 slides)
 
-| Akt | Hva skjer | Min | **Hvor** | Features |
-|---|---|-----|---|----------|
-| 0 | Krok + "hvor er India?" | 3 | deck | - |
-| 1 | **Bli med på turen** | 5 | deck → **app** | gjestepålogging, `/join`, presence |
-| 2 | **På startplassen** | 10 | **app, live** | startplassbase, BLE-vario, PTT, task-push |
-| 3 | **Vi tar av** | 14 | deck, **korte klipp** | replay, vario, termikk, sirkling, vind, barogram |
-| 4 | **Innover i fjellene** | 12 | deck, med ett app-innhopp | offline, VHF, FLARM, Meshtastic, InReach |
-| 5 | **Landing og hjem** | 6 | deck | IGC, XContest, feed, AreaContest |
-| 6 | Bli med i 2026 | 3 | deck | - |
+Decket er `voss.qmd`. Alt under er bygget og verifisert.
 
-**Bare to steder forlater du decket:** akt 2 er ren live-app, og akt 4 har ett
-kort innhopp for å vise prikkene i rommet. Alt annet, inkludert hele replayen,
-kjører fra decket. Det er med vilje. Se "Riggen" under.
+| Akt | Slides | Hvor |
+|---|---|---|
+| 0 | Åpningsbilde, "hvor er India" (klipp med Delhi og Bir) | deck |
+| 1 | Installer appen: ta opp telefonen, last ned med tre QR-koder | deck → app |
+| 2 | Hvor er vi, bilde fra dalen, koble på varioen, bli med i gruppa, prat sammen, lag tasken, hvorfor Bir | app, live |
+| 3 | Start med lyd, vi flyr (2 bilder), termikkboblen, du ser de andre, sideview, glide range | deck, klipp |
+| 4 | Flycamping, dit skal vi, vi flyr innover, hele turen i 3D, her er det ingenting, floor is lava, tabellen, det du har med | deck |
+| 5 | Landing, framme, Flight Details, AreaContest | deck |
+| 6 | Oktober 2026, hvorfor Bir (geit og te), maten | deck |
+
+### De åtte klippene
+
+| Klipp | Innhold |
+|---|---|
+| `hvor-er-bir.mp4` | Voss → verden → Bir og Delhi, 15 s |
+| `klipp-start.mp4` | takeoff fra Billing, **med takeoff-lyden** |
+| `klipp-termikk.mp4` | vario, termikkboble og vindpil i ett |
+| `klipp-tracking.mp4` | Jørgens spor vokser sekund for sekund |
+| `klipp-sideview.mp4` | høydeprofilen bygger seg |
+| `klipp-glide.mp4` | glide range i høy kvalitet, L/D 6, 8, 10 |
+| `bir-3d.mp4` | hele turen i 3D, begge dager, 23 s |
+| `klipp-mat.mp4` | avslutningen |
+
+### To plassholdere igjen
+
+- **Lag tasken** i akt 2: trenger et skjermbilde fra telefonen.
+- **Dere er fortsatt i gruppa** i akt 4: live app-innhopp, trenger ikke bilde.
+
+## Ting som bet oss, og som gjelder neste gang
+
+- **KK7 er nede.** `thermal.kk7.ch` svarer ikke, verifisert fra to maskiner.
+  Derfor er termikk-overlegget ikke med noe sted. Sjekk om de er oppe igjen.
+- **Glide range i høy kvalitet** ber om rundt 120 terrengfliser, og cachen tar
+  128. Laget tegnes ikke før hele settet er inne, og prefetchen prøver bare på
+  nytt når posisjonen endrer seg. Pauset replay prøver aldri igjen; full fart
+  sklir raskere enn cachen fylles. Løsningen var å hoppe ni sekunder fram og
+  tilbake fjorten ganger.
+- **Søk i replay tømmer sporhistorikken.** Vil du vise spor som vokser, må du
+  spille fram på høy hastighet først og filme i 1x.
+- **Replay-slideren er indeksbasert, ikke tidsbasert.** På en flight med 18 000
+  punkter er ett hakk 18 sekunder. Les flighttiden fra teksten i stedet.
+- **Estimatorene er kalde etter søk.** Uten innspilling først viser WIND og
+  GLIDE bare `--`.
+- **Kartzoom må settes med minus-knappen mens replay står på pause.** Gjennom
+  kartobjektet blir den overstyrt av følg-logikken.
+- **MapLibre bruker 512 px fliser**, så piksler per grad er dobbelt av det du
+  regner fra 256. Mål posisjonen i nettleseren i stedet for å regne.
 
 ---
 
