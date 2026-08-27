@@ -142,23 +142,31 @@
 }
 .reveal .fullbleed {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 1280px;
-  height: 720px;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   margin: 0;
+  /* Liten overscan. Reveal skalerer slide-boksen litt under den synlige
+     flaten, sa uten dette blir det en tynn svart kant til hoyre og under. */
+  transform: scale(1.06);
+  transform-origin: top left;
 }
-/* Tittelen skal ligge OVER klippet, ikke dytte det ned. */
+/* Tittelen skal ligge OVER klippet, ikke dytte det ned. Nederst til venstre,
+   fordi appens egne tall ligger oppe til venstre og ville kollidert. */
 .reveal section:has(> .fullbleed) > h2,
 .reveal section:has(.fullbleed) > h2 {
   position: absolute;
   z-index: 2;
   left: 40px;
-  top: 24px;
+  bottom: 34px;
+  top: auto;
   margin: 0;
+  padding: 0.15em 0.5em;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.55);
   color: #fff;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
 
 /* ---- installer: skjermbilde til venstre, QR-koder til hoyre ---- */

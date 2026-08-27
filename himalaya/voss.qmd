@@ -167,21 +167,18 @@ Hele denne akten er live app. Decket er bare hvilepute mellom punktene.
 ## Hvor er vi [APP]{.where .where-app}
 
 ```{=html}
-<div class="two-up">
-  <img src="img/app-flight-bir.jpg" alt="Flighten fra Billing i pgpilot">
-  <div class="two-up-note">
-    <p><strong>Billing - Bir</strong><br>2428 moh</p>
-    <p>Startplassen ligger i basen. pgpilot vet hvor du kan starte i
-    Himachal Pradesh, ikke bare i Norge.</p>
-  </div>
-</div>
+<img class="fullbleed" src="img/app-bir-replay.jpg" alt="pgpilot over Bir">
 ```
 
 ::: {.notes}
-Bildet er den ekte flighten fra 17. oktober 2024, hentet fra pgpilot.app.
+Dette er appen som staar paa startplassen i Billing, 2424 moh, hentet fra
+pgpilot.app.
 
-Live-versjonen: sok opp Billing i appen og vis at den er der, med hoyden.
-Liten ting, men den viser at dette ikke er en Norge-app.
+Alt er ekte: terrenget, hoydekotene, stedsnavnene nedover mot Bir og Gunehar,
+og luftrommet i oransje og gult. Panelene rundt er instrumentet slik det ser ut
+i lufta.
+
+Ikke snakk om startplassdatabasen. Bare la kartet staa og fortell hvor vi er.
 :::
 
 ## Koble på varioen [APP]{.where .where-app}
