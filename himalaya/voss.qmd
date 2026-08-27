@@ -594,7 +594,7 @@ La de to bildene staa uten mye prat. Det er slutten paa flygingen.
 ## Og så, etterpå [APP]{.where .where-app}
 
 ```{=html}
-<img class="clip" src="img/app-flightdetails.jpg" alt="Flight Details">
+<img class="fullbleed" src="img/app-flightdetails.jpg" alt="Flight Details">
 ```
 
 ::: {.notes}
@@ -614,9 +614,9 @@ Dette er grunnen til at de aapner appen igjen paa tirsdag.
 
 ## AreaContest
 
-::: {.todo}
-Kartet over Voss-området. Hvem eier hvilke ruter?
-:::
+```{=html}
+<img class="fullbleed" src="img/app-areacontest.jpg" alt="AreaContest over Voss">
+```
 
 ::: {.notes}
 Beste retensjonsmekanikken du har, og et Voss-publikum er noyaktig folk som vil
