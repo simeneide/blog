@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="no"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
+
+  <meta name="author" content="Simen Eide">
+  <title>eide.ai – pgpilot og Himalaya</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
+  <link rel="stylesheet" href="voss.css">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S164XFRMHY"></script>
+
+  <script type="text/javascript">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S164XFRMHY', { 'anonymize_ip': true});
+  </script>
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">pgpilot og Himalaya</h1>
+  <p class="subtitle">Klubbkveld Voss</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Simen Eide 
+</div>
+</div>
+</div>
+
+</section>
+<section id="krok-og-hvor-er-india" class="slide level2 act-divider">
+<h2>Krok, og “hvor er India?”</h2>
+<p><span class="act-num">Akt 0</span></p>
+<p><span class="act-meta">3 min · DECK</span></p>
+<aside class="notes">
+<p>Video i fullskjerm, uten tekst, uten deg. Ikke si noe. Sa tittel.</p>
+<p>Hensikten er a kjope deg retten til a be om noe i akt 1. En installasjonsoppfordring som det forste du sier er et krav. Den samme oppfordringen etter nitti sekunder Himalaya er en invitasjon.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="clip-slot">
+<p>Åpningsvideo — klipp fra slide 48 eller 09 i India-decket</p>
+</div>
+<aside class="notes">
+<p>La den ga. Ikke snakk over den.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hvor-er-india" class="slide level2">
+<h2>Hvor er India?</h2>
+<div class="clip-slot">
+<p>Zoom: Voss → Europa → Bir. Bygges som klipp, ikke live kart.</p>
+</div>
+<div class="todo">
+<p>Zoom-klippet må lages. Ikke live: du vil ikke vente på tiles i minutt tre.</p>
+</div>
+<aside class="notes">
+<p>Billig effekt, funker hver gang, fordi den gjor avstanden fysisk i stedet for et tall. Landingspunktet for zoomen er startplassen, og det er der akt 2 begynner.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bli-med-på-turen" class="slide level2 act-divider">
+<h2>Bli med på turen</h2>
+<p><span class="act-num">Akt 1</span></p>
+<p><span class="act-meta">5 min · DECK → APP</span></p>
+<aside class="notes">
+<p>Meld i klubbkanalen kvelden for: “last ned pgpilot for du kommer”. App Store-nedlastingen er det eneste i hele opplegget du ikke kontrollerer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="vi-skal-fly-en-tur-i-india-sammen" class="slide level2 center">
+<h2>Vi skal fly en tur i India sammen</h2>
+<p><span class="say">Ta opp telefonen.</span></p>
+<aside class="notes">
+<p>Her bytter du til telefonen. Alt-tab. Trykk <code>b</code> forst, sa svartlegges decket og skiftet ser tilsiktet ut.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="installer-app" class="slide level2">
+<h2>Installer <span class="where where-app">APP</span></h2>
+<div class="todo">
+<p>Live. Ingen slides her. Telefonen speilet, du installerer mens du snakker.</p>
+</div>
+<aside class="notes">
+<p>To veier, begge nevnes: - butikken, hvis de vil ha den i lomma til helgen - pgpilot.app i nettleseren, ferdig pa under et halvt minutt</p>
+<p>Nettleserveien: visningsnavn og ingenting mer. Ingen e-post, ingen konto.</p>
+<p>Si tallet hoyt nar du er ferdig. Det beviser lav terskel i stedet for a pasta den.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bli-med-i-gruppa" class="slide level2">
+<h2>Bli med i gruppa</h2>
+<div class="todo">
+<p>QR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå.</p>
+</div>
+<aside class="notes">
+<p>Gruppa lages NAR DU RIGGER, ikke for. Reaperen arkiverer grupper som har vaert stille i fire timer, og join filtrerer pa archived=false. Se STRUKTUR.md.</p>
+<p>Si tydelig at de skal la appen ligge pa. Akt 2 og akt 4 avhenger av det.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="på-startplassen-i-billing" class="slide level2 act-divider">
+<h2>På startplassen i Billing</h2>
+<p><span class="act-num">Akt 2</span></p>
+<p><span class="act-meta">10 min · APP, LIVE</span></p>
+<aside class="notes">
+<p>Vi star pa 2428 meter. Sivilisasjonen rett nedenfor, og NETTET VIRKER. Sa her gjor vi alt det vanlige, det de ville gjort pa Voss en tirsdag.</p>
+<p>Hele denne akten er live app. Decket er bare hvilepute mellom punktene.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hvor-er-vi-app" class="slide level2">
+<h2>Hvor er vi <span class="where where-app">APP</span></h2>
+<div class="todo">
+<p>Live: kart, terreng, søk opp startplassen. “Billing - Bir”, 2428 moh.</p>
+</div>
+<aside class="notes">
+<p>Liten ting, men den viser at dette ikke er en Norge-app: den vet hvor du kan starte i Himachal Pradesh.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="koble-på-varioen-app" class="slide level2">
+<h2>Koble på varioen <span class="where where-app">APP</span></h2>
+<div class="todo">
+<p>Live: BLE-vario, eller barometeret i telefonen. Må være ekte telefon, BLE er låst bak isNative().</p>
+</div>
+</section>
+<section id="prat-sammen-app" class="slide level2">
+<h2>Prat sammen <span class="where where-app">APP</span></h2>
+<div class="todo">
+<p>Live: PTT i gruppa. Én frivillig trykker og snakker.</p>
+</div>
+<aside class="notes">
+<p>Si eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lag-tasken-app" class="slide level2">
+<h2>Lag tasken <span class="where where-app">APP</span></h2>
+<div class="todo">
+<p>Live: du setter ruta, den lander på deres telefon med “Load task”.</p>
+</div>
+<aside class="notes">
+<p>Det fineste oyeblikket i akten: de ser at DU gjorde noe og DERES telefon endret seg.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hvorfor-bir" class="slide level2">
+<h2>Hvorfor Bir?</h2>
+<div class="todo">
+<p>Hent fra slide 47 i India-decket.</p>
+</div>
+<aside class="notes">
+<p>Sesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400. Snakkes over mens kartet star.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="vi-tar-av" class="slide level2 act-divider">
+<h2>Vi tar av</h2>
+<p><span class="act-num">Akt 3</span></p>
+<p><span class="act-meta">14 min · DECK, KLIPP</span></p>
+<aside class="notes">
+<ol start="17" type="1">
+<li>oktober 2024, Bir mot Saurkundi.</li>
+</ol>
+<p>Formuleringen som gjor poenget uten a motsi videoen du staar og viser:</p>
+<p>“Dette er ikke en video av flyturen. Det er et opptak av APPEN som flyr den pa nytt. Alt dere ser av tall og piler regnes ut mens sporet spilles av.”</p>
+<p>Samme kode i replay som live. Si det rett ut, ingen gjetter det selv.</p>
+<p>Tre minutter video i en akt pa fjorten. Klippene er illustrasjoner til det du sier, ikke omvendt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="start-fra-billing-klipp" class="slide level2">
+<h2>1. Start fra Billing <span class="where where-clip">KLIPP</span></h2>
+<div class="clip-slot">
+<p>30 sek — soaring på frontryggen</p>
+</div>
+<aside class="notes">
+<p>Her staar vi. Terrassene under, fjellet som fortsetter bakover.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="varioen-klipp" class="slide level2">
+<h2>2. Varioen <span class="where where-clip">KLIPP</span></h2>
+<div class="clip-slot">
+<p>25 sek — varioen som piper i en boble. LYD PÅ.</p>
+</div>
+<aside class="notes">
+<p>Dette er hele instrumentet. Det du horer er regnet ut fra trykk, ikke fra GPS.</p>
+<p>Dette ene klippet skal IKKE vaere muted.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="termikkboblen-klipp" class="slide level2">
+<h2>3. Termikkboblen <span class="where where-clip">KLIPP</span></h2>
+<div class="clip-slot">
+<p>35 sek — boblen tegnes opp mens vi flyr</p>
+</div>
+<aside class="notes">
+<p>Den mest overbevisende enkeltbiten. Appen finner hvor det stiger mens du flyr, og husker det.</p>
+<p>Dette klippet og det neste er de to som selger appen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="vindpila-klipp" class="slide level2">
+<h2>4. Vindpila <span class="where where-clip">KLIPP</span></h2>
+<div class="clip-slot">
+<p>30 sek — sirkling, og vindestimatet som strammer seg</p>
+</div>
+<aside class="notes">
+<p>Den vet ikke vinden nar du tar av. Den laerer den av sirklene dine.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="barogrammet-klipp" class="slide level2">
+<h2>5. Barogrammet <span class="where where-clip">KLIPP</span></h2>
+<div class="clip-slot">
+<p>25 sek — høydeprofilen som bygger seg</p>
+</div>
+<aside class="notes">
+<p>4677 meter pa det hoyeste. Der oppe er det kaldt og tynt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hvor-langt-ned-er-det-til-noe-flatt-klipp" class="slide level2">
+<h2>6. Hvor langt ned er det til noe flatt? <span class="where where-clip">KLIPP</span></h2>
+<div class="clip-slot">
+<p>35 sek — glidetall og rekkevidde over terrenget</p>
+</div>
+<aside class="notes">
+<p>Dette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="innover-i-fjellene" class="slide level2 act-divider">
+<h2>Innover i fjellene</h2>
+<p><span class="act-num">Akt 4</span></p>
+<p><span class="act-meta">12 min · DECK + ett app-innhopp</span></p>
+<aside class="notes">
+<p>VENDEPUNKTET. Vi passerer siste rygg. Nettet dor.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="floor-is-lava" class="slide level2 center">
+<h2>Floor is lava</h2>
+<aside class="notes">
+<blockquote>
+<p>Risiko snus pa hodet. Du gjor ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben.</p>
+</blockquote>
+<p>Marginer, hoydesyke, buddysystem, mat og vann for en uke.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hjemme-har-du-alt.-her-har-du-ingenting." class="slide level2">
+<h2>Hjemme har du alt. Her har du ingenting.</h2>
+<div class="todo">
+<p>Tabellen fra STRUKTUR.md: Voss vs Bir. Luftrom, varsel, vindstasjoner, NOTAM = nei. Startplasser, kart, vario, gruppe = ja.</p>
+</div>
+<aside class="notes">
+<p>Sjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR. Varsel (MEPS/ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19 europeiske kilder.</p>
+<p>Poenget er ikke at appen er mangelfull. Poenget er at India stripper den ned til kjernen, og det som staar igjen er det som baerer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="det-som-står-igjen" class="slide level2">
+<h2>Det som står igjen</h2>
+<div class="todo">
+<p>Offline-kart, VHF over KV4P, FLARM, Meshtastic, InReach, buddies. Ett slide hver, eller ett samleslide. Bestem når innholdet skrives.</p>
+</div>
+<aside class="notes">
+<p>OGN og FLARM-bakkestasjoner finnes knapt i Himalaya. Derfor er direkte pilot-til-pilot det som baerer der nede.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="dere-er-fortsatt-i-gruppa-app" class="slide level2">
+<h2>Dere er fortsatt i gruppa <span class="where where-app">APP</span></h2>
+<div class="todo">
+<p>Kort innhopp til appen: kartet med alle prikkene i rommet.</p>
+</div>
+<aside class="notes">
+<p>Samme mekanisme som holdt oss sammen over ryggen, bare med bedre dekning.</p>
+<p>Dette er det eneste app-innhoppet i akt 4. Alt-tab, vis, alt-tab tilbake.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="landing-og-hjem" class="slide level2 act-divider">
+<h2>Landing og hjem</h2>
+<p><span class="act-num">Akt 5</span></p>
+<p><span class="act-meta">6 min · DECK</span></p>
+<aside class="notes">
+<p>Vi lander ved teltplassen. Dag 1 lander 200 meter fra der dag 2 starter, og det er ikke tilfeldig, det er teltet.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="etter-landing" class="slide level2">
+<h2>Etter landing</h2>
+<div class="todo">
+<p>IGC ut, automatisk XContest-opplasting, feeden, profiler, kudos.</p>
+</div>
+</section>
+<section id="areacontest" class="slide level2">
+<h2>AreaContest</h2>
+<div class="todo">
+<p>Kartet over Voss-området. Hvem eier hvilke ruter?</p>
+</div>
+<aside class="notes">
+<p>Beste retensjonsmekanikken du har, og et Voss-publikum er nøyaktig folk som vil krangle om dette.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bli-med-i-2026" class="slide level2 act-divider">
+<h2>Bli med i 2026</h2>
+<p><span class="act-num">Akt 6</span></p>
+<p><span class="act-meta">3 min · DECK</span></p>
+</section>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+<div class="todo">
+<p>Hent slide 46, 49, 50 fra India-decket. Slide 46 sier fortsatt “Oktober 2024?” og MÅ oppdateres.</p>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="clip-slot">
+<p>Tandoori-videoen. Avslutt her, ikke på en punktliste.</p>
+</div>
+<aside class="notes">
+<p>Siste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

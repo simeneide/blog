@@ -1,0 +1,377 @@
+---
+# Klubbkveld Voss. Skjelett: aktene og de faste holdepunktene, ikke innholdet.
+# Planen som styrer dette ligger i STRUKTUR.md ved siden av.
+#
+# Fargekodingen i toppen av hvert slide sier HVOR du er:
+#   DECK    du staar i presentasjonen
+#   APP     du har alt-tabbet til telefonen (scrcpy over USB)
+#   KLIPP   forhaandsinnspilt skjermopptak spiller
+title: "pgpilot og Himalaya"
+subtitle: "Klubbkveld Voss"
+author: "Simen Eide"
+lang: no
+comments: false
+html-math-method: plain
+resources:
+  - video/
+format:
+  revealjs:
+    theme: default
+    css: voss.css
+    slide-number: true
+    width: 1280
+    height: 720
+    transition: fade
+    auto-stretch: false
+    controls: true
+    progress: true
+    hash: true
+---
+
+## Krok, og "hvor er India?" {.act-divider}
+
+[Akt 0]{.act-num}
+
+[3 min · DECK]{.act-meta}
+
+::: {.notes}
+Video i fullskjerm, uten tekst, uten deg. Ikke si noe. Sa tittel.
+
+Hensikten er a kjope deg retten til a be om noe i akt 1. En
+installasjonsoppfordring som det forste du sier er et krav. Den samme
+oppfordringen etter nitti sekunder Himalaya er en invitasjon.
+:::
+
+##
+
+::: {.clip-slot}
+Åpningsvideo — klipp fra slide 48 eller 09 i India-decket
+:::
+
+::: {.notes}
+La den ga. Ikke snakk over den.
+:::
+
+## Hvor er India?
+
+::: {.clip-slot}
+Zoom: Voss → Europa → Bir. Bygges som klipp, ikke live kart.
+:::
+
+::: {.todo}
+Zoom-klippet må lages. Ikke live: du vil ikke vente på tiles i minutt tre.
+:::
+
+::: {.notes}
+Billig effekt, funker hver gang, fordi den gjor avstanden fysisk i stedet for et
+tall. Landingspunktet for zoomen er startplassen, og det er der akt 2 begynner.
+:::
+
+## Bli med på turen {.act-divider}
+
+[Akt 1]{.act-num}
+
+[5 min · DECK → APP]{.act-meta}
+
+::: {.notes}
+Meld i klubbkanalen kvelden for: "last ned pgpilot for du kommer". App
+Store-nedlastingen er det eneste i hele opplegget du ikke kontrollerer.
+:::
+
+## Vi skal fly en tur i India sammen {.center}
+
+[Ta opp telefonen.]{.say}
+
+::: {.notes}
+Her bytter du til telefonen. Alt-tab. Trykk `b` forst, sa svartlegges decket og
+skiftet ser tilsiktet ut.
+:::
+
+## Installer [APP]{.where .where-app}
+
+::: {.todo}
+Live. Ingen slides her. Telefonen speilet, du installerer mens du snakker.
+:::
+
+::: {.notes}
+To veier, begge nevnes:
+  - butikken, hvis de vil ha den i lomma til helgen
+  - pgpilot.app i nettleseren, ferdig pa under et halvt minutt
+
+Nettleserveien: visningsnavn og ingenting mer. Ingen e-post, ingen konto.
+
+Si tallet hoyt nar du er ferdig. Det beviser lav terskel i stedet for a pasta den.
+:::
+
+## Bli med i gruppa
+
+::: {.todo}
+QR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå.
+:::
+
+::: {.notes}
+Gruppa lages NAR DU RIGGER, ikke for. Reaperen arkiverer grupper som har vaert
+stille i fire timer, og join filtrerer pa archived=false. Se STRUKTUR.md.
+
+Si tydelig at de skal la appen ligge pa. Akt 2 og akt 4 avhenger av det.
+:::
+
+## På startplassen i Billing {.act-divider}
+
+[Akt 2]{.act-num}
+
+[10 min · APP, LIVE]{.act-meta}
+
+::: {.notes}
+Vi star pa 2428 meter. Sivilisasjonen rett nedenfor, og NETTET VIRKER. Sa her
+gjor vi alt det vanlige, det de ville gjort pa Voss en tirsdag.
+
+Hele denne akten er live app. Decket er bare hvilepute mellom punktene.
+:::
+
+## Hvor er vi [APP]{.where .where-app}
+
+::: {.todo}
+Live: kart, terreng, søk opp startplassen. "Billing - Bir", 2428 moh.
+:::
+
+::: {.notes}
+Liten ting, men den viser at dette ikke er en Norge-app: den vet hvor du kan
+starte i Himachal Pradesh.
+:::
+
+## Koble på varioen [APP]{.where .where-app}
+
+::: {.todo}
+Live: BLE-vario, eller barometeret i telefonen. Må være ekte telefon,
+BLE er låst bak isNative().
+:::
+
+## Prat sammen [APP]{.where .where-app}
+
+::: {.todo}
+Live: PTT i gruppa. Én frivillig trykker og snakker.
+:::
+
+::: {.notes}
+Si eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.
+:::
+
+## Lag tasken [APP]{.where .where-app}
+
+::: {.todo}
+Live: du setter ruta, den lander på deres telefon med "Load task".
+:::
+
+::: {.notes}
+Det fineste oyeblikket i akten: de ser at DU gjorde noe og DERES telefon endret
+seg.
+:::
+
+## Hvorfor Bir?
+
+::: {.todo}
+Hent fra slide 47 i India-decket.
+:::
+
+::: {.notes}
+Sesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400.
+Snakkes over mens kartet star.
+:::
+
+## Vi tar av {.act-divider}
+
+[Akt 3]{.act-num}
+
+[14 min · DECK, KLIPP]{.act-meta}
+
+::: {.notes}
+17. oktober 2024, Bir mot Saurkundi.
+
+Formuleringen som gjor poenget uten a motsi videoen du staar og viser:
+
+  "Dette er ikke en video av flyturen. Det er et opptak av APPEN som flyr den pa
+   nytt. Alt dere ser av tall og piler regnes ut mens sporet spilles av."
+
+Samme kode i replay som live. Si det rett ut, ingen gjetter det selv.
+
+Tre minutter video i en akt pa fjorten. Klippene er illustrasjoner til det du
+sier, ikke omvendt.
+:::
+
+## 1. Start fra Billing [KLIPP]{.where .where-clip}
+
+::: {.clip-slot}
+30 sek — soaring på frontryggen
+:::
+
+::: {.notes}
+Her staar vi. Terrassene under, fjellet som fortsetter bakover.
+:::
+
+## 2. Varioen [KLIPP]{.where .where-clip}
+
+::: {.clip-slot}
+25 sek — varioen som piper i en boble. LYD PÅ.
+:::
+
+::: {.notes}
+Dette er hele instrumentet. Det du horer er regnet ut fra trykk, ikke fra GPS.
+
+Dette ene klippet skal IKKE vaere muted.
+:::
+
+## 3. Termikkboblen [KLIPP]{.where .where-clip}
+
+::: {.clip-slot}
+35 sek — boblen tegnes opp mens vi flyr
+:::
+
+::: {.notes}
+Den mest overbevisende enkeltbiten. Appen finner hvor det stiger mens du flyr,
+og husker det.
+
+Dette klippet og det neste er de to som selger appen.
+:::
+
+## 4. Vindpila [KLIPP]{.where .where-clip}
+
+::: {.clip-slot}
+30 sek — sirkling, og vindestimatet som strammer seg
+:::
+
+::: {.notes}
+Den vet ikke vinden nar du tar av. Den laerer den av sirklene dine.
+:::
+
+## 5. Barogrammet [KLIPP]{.where .where-clip}
+
+::: {.clip-slot}
+25 sek — høydeprofilen som bygger seg
+:::
+
+::: {.notes}
+4677 meter pa det hoyeste. Der oppe er det kaldt og tynt.
+:::
+
+## 6. Hvor langt ned er det til noe flatt? [KLIPP]{.where .where-clip}
+
+::: {.clip-slot}
+35 sek — glidetall og rekkevidde over terrenget
+:::
+
+::: {.notes}
+Dette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og
+ga til akt 4 uten a svare. Det er der historien snur.
+:::
+
+## Innover i fjellene {.act-divider}
+
+[Akt 4]{.act-num}
+
+[12 min · DECK + ett app-innhopp]{.act-meta}
+
+::: {.notes}
+VENDEPUNKTET. Vi passerer siste rygg. Nettet dor.
+:::
+
+## Floor is lava {.center}
+
+::: {.notes}
+> Risiko snus pa hodet. Du gjor ting i lufta du ikke ville gjort om du kunne
+> landet og tatt en taxi til pubben.
+
+Marginer, hoydesyke, buddysystem, mat og vann for en uke.
+:::
+
+## Hjemme har du alt. Her har du ingenting.
+
+::: {.todo}
+Tabellen fra STRUKTUR.md: Voss vs Bir. Luftrom, varsel, vindstasjoner,
+NOTAM = nei. Startplasser, kart, vario, gruppe = ja.
+:::
+
+::: {.notes}
+Sjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR.
+Varsel (MEPS/ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19
+europeiske kilder.
+
+Poenget er ikke at appen er mangelfull. Poenget er at India stripper den ned til
+kjernen, og det som staar igjen er det som baerer.
+:::
+
+## Det som står igjen
+
+::: {.todo}
+Offline-kart, VHF over KV4P, FLARM, Meshtastic, InReach, buddies.
+Ett slide hver, eller ett samleslide. Bestem når innholdet skrives.
+:::
+
+::: {.notes}
+OGN og FLARM-bakkestasjoner finnes knapt i Himalaya. Derfor er direkte
+pilot-til-pilot det som baerer der nede.
+:::
+
+## Dere er fortsatt i gruppa [APP]{.where .where-app}
+
+::: {.todo}
+Kort innhopp til appen: kartet med alle prikkene i rommet.
+:::
+
+::: {.notes}
+Samme mekanisme som holdt oss sammen over ryggen, bare med bedre dekning.
+
+Dette er det eneste app-innhoppet i akt 4. Alt-tab, vis, alt-tab tilbake.
+:::
+
+## Landing og hjem {.act-divider}
+
+[Akt 5]{.act-num}
+
+[6 min · DECK]{.act-meta}
+
+::: {.notes}
+Vi lander ved teltplassen. Dag 1 lander 200 meter fra der dag 2 starter, og det
+er ikke tilfeldig, det er teltet.
+:::
+
+## Etter landing
+
+::: {.todo}
+IGC ut, automatisk XContest-opplasting, feeden, profiler, kudos.
+:::
+
+## AreaContest
+
+::: {.todo}
+Kartet over Voss-området. Hvem eier hvilke ruter?
+:::
+
+::: {.notes}
+Beste retensjonsmekanikken du har, og et Voss-publikum er nøyaktig folk som vil
+krangle om dette.
+:::
+
+## Bli med i 2026 {.act-divider}
+
+[Akt 6]{.act-num}
+
+[3 min · DECK]{.act-meta}
+
+## {.center}
+
+::: {.todo}
+Hent slide 46, 49, 50 fra India-decket.
+Slide 46 sier fortsatt "Oktober 2024?" og MÅ oppdateres.
+:::
+
+##
+
+::: {.clip-slot}
+Tandoori-videoen. Avslutt her, ikke på en punktliste.
+:::
+
+::: {.notes}
+Siste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa
+telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss.
+:::

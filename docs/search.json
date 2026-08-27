@@ -607,5 +607,222 @@
     "title": "Paragliding i Himalaya",
     "section": "Kontakt",
     "text": "Kontakt\nsimen@eide.ai"
+  },
+  {
+    "objectID": "himalaya/voss.html#krok-og-hvor-er-india",
+    "href": "himalaya/voss.html#krok-og-hvor-er-india",
+    "title": "pgpilot og Himalaya",
+    "section": "Krok, og “hvor er India?”",
+    "text": "Krok, og “hvor er India?”\nAkt 0\n3 min · DECK\n\nVideo i fullskjerm, uten tekst, uten deg. Ikke si noe. Sa tittel.\nHensikten er a kjope deg retten til a be om noe i akt 1. En installasjonsoppfordring som det forste du sier er et krav. Den samme oppfordringen etter nitti sekunder Himalaya er en invitasjon."
+  },
+  {
+    "objectID": "himalaya/voss.html#section",
+    "href": "himalaya/voss.html#section",
+    "title": "pgpilot og Himalaya",
+    "section": "",
+    "text": "Åpningsvideo — klipp fra slide 48 eller 09 i India-decket\n\n\nLa den ga. Ikke snakk over den."
+  },
+  {
+    "objectID": "himalaya/voss.html#hvor-er-india",
+    "href": "himalaya/voss.html#hvor-er-india",
+    "title": "pgpilot og Himalaya",
+    "section": "Hvor er India?",
+    "text": "Hvor er India?\n\nZoom: Voss → Europa → Bir. Bygges som klipp, ikke live kart.\n\n\nZoom-klippet må lages. Ikke live: du vil ikke vente på tiles i minutt tre.\n\n\nBillig effekt, funker hver gang, fordi den gjor avstanden fysisk i stedet for et tall. Landingspunktet for zoomen er startplassen, og det er der akt 2 begynner."
+  },
+  {
+    "objectID": "himalaya/voss.html#bli-med-på-turen",
+    "href": "himalaya/voss.html#bli-med-på-turen",
+    "title": "pgpilot og Himalaya",
+    "section": "Bli med på turen",
+    "text": "Bli med på turen\nAkt 1\n5 min · DECK → APP\n\nMeld i klubbkanalen kvelden for: “last ned pgpilot for du kommer”. App Store-nedlastingen er det eneste i hele opplegget du ikke kontrollerer."
+  },
+  {
+    "objectID": "himalaya/voss.html#vi-skal-fly-en-tur-i-india-sammen",
+    "href": "himalaya/voss.html#vi-skal-fly-en-tur-i-india-sammen",
+    "title": "pgpilot og Himalaya",
+    "section": "Vi skal fly en tur i India sammen",
+    "text": "Vi skal fly en tur i India sammen\nTa opp telefonen.\n\nHer bytter du til telefonen. Alt-tab. Trykk b forst, sa svartlegges decket og skiftet ser tilsiktet ut."
+  },
+  {
+    "objectID": "himalaya/voss.html#installer-app",
+    "href": "himalaya/voss.html#installer-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Installer APP",
+    "text": "Installer APP\n\nLive. Ingen slides her. Telefonen speilet, du installerer mens du snakker.\n\n\nTo veier, begge nevnes: - butikken, hvis de vil ha den i lomma til helgen - pgpilot.app i nettleseren, ferdig pa under et halvt minutt\nNettleserveien: visningsnavn og ingenting mer. Ingen e-post, ingen konto.\nSi tallet hoyt nar du er ferdig. Det beviser lav terskel i stedet for a pasta den."
+  },
+  {
+    "objectID": "himalaya/voss.html#bli-med-i-gruppa",
+    "href": "himalaya/voss.html#bli-med-i-gruppa",
+    "title": "pgpilot og Himalaya",
+    "section": "Bli med i gruppa",
+    "text": "Bli med i gruppa\n\nQR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå.\n\n\nGruppa lages NAR DU RIGGER, ikke for. Reaperen arkiverer grupper som har vaert stille i fire timer, og join filtrerer pa archived=false. Se STRUKTUR.md.\nSi tydelig at de skal la appen ligge pa. Akt 2 og akt 4 avhenger av det."
+  },
+  {
+    "objectID": "himalaya/voss.html#på-startplassen-i-billing",
+    "href": "himalaya/voss.html#på-startplassen-i-billing",
+    "title": "pgpilot og Himalaya",
+    "section": "På startplassen i Billing",
+    "text": "På startplassen i Billing\nAkt 2\n10 min · APP, LIVE\n\nVi star pa 2428 meter. Sivilisasjonen rett nedenfor, og NETTET VIRKER. Sa her gjor vi alt det vanlige, det de ville gjort pa Voss en tirsdag.\nHele denne akten er live app. Decket er bare hvilepute mellom punktene."
+  },
+  {
+    "objectID": "himalaya/voss.html#hvor-er-vi-app",
+    "href": "himalaya/voss.html#hvor-er-vi-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Hvor er vi APP",
+    "text": "Hvor er vi APP\n\nLive: kart, terreng, søk opp startplassen. “Billing - Bir”, 2428 moh.\n\n\nLiten ting, men den viser at dette ikke er en Norge-app: den vet hvor du kan starte i Himachal Pradesh."
+  },
+  {
+    "objectID": "himalaya/voss.html#koble-på-varioen-app",
+    "href": "himalaya/voss.html#koble-på-varioen-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Koble på varioen APP",
+    "text": "Koble på varioen APP\n\nLive: BLE-vario, eller barometeret i telefonen. Må være ekte telefon, BLE er låst bak isNative()."
+  },
+  {
+    "objectID": "himalaya/voss.html#prat-sammen-app",
+    "href": "himalaya/voss.html#prat-sammen-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Prat sammen APP",
+    "text": "Prat sammen APP\n\nLive: PTT i gruppa. Én frivillig trykker og snakker.\n\n\nSi eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los."
+  },
+  {
+    "objectID": "himalaya/voss.html#lag-tasken-app",
+    "href": "himalaya/voss.html#lag-tasken-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Lag tasken APP",
+    "text": "Lag tasken APP\n\nLive: du setter ruta, den lander på deres telefon med “Load task”.\n\n\nDet fineste oyeblikket i akten: de ser at DU gjorde noe og DERES telefon endret seg."
+  },
+  {
+    "objectID": "himalaya/voss.html#hvorfor-bir",
+    "href": "himalaya/voss.html#hvorfor-bir",
+    "title": "pgpilot og Himalaya",
+    "section": "Hvorfor Bir?",
+    "text": "Hvorfor Bir?\n\nHent fra slide 47 i India-decket.\n\n\nSesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400. Snakkes over mens kartet star."
+  },
+  {
+    "objectID": "himalaya/voss.html#vi-tar-av",
+    "href": "himalaya/voss.html#vi-tar-av",
+    "title": "pgpilot og Himalaya",
+    "section": "Vi tar av",
+    "text": "Vi tar av\nAkt 3\n14 min · DECK, KLIPP\n\n\noktober 2024, Bir mot Saurkundi.\n\nFormuleringen som gjor poenget uten a motsi videoen du staar og viser:\n“Dette er ikke en video av flyturen. Det er et opptak av APPEN som flyr den pa nytt. Alt dere ser av tall og piler regnes ut mens sporet spilles av.”\nSamme kode i replay som live. Si det rett ut, ingen gjetter det selv.\nTre minutter video i en akt pa fjorten. Klippene er illustrasjoner til det du sier, ikke omvendt."
+  },
+  {
+    "objectID": "himalaya/voss.html#start-fra-billing-klipp",
+    "href": "himalaya/voss.html#start-fra-billing-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "1. Start fra Billing KLIPP",
+    "text": "1. Start fra Billing KLIPP\n\n30 sek — soaring på frontryggen\n\n\nHer staar vi. Terrassene under, fjellet som fortsetter bakover."
+  },
+  {
+    "objectID": "himalaya/voss.html#varioen-klipp",
+    "href": "himalaya/voss.html#varioen-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "2. Varioen KLIPP",
+    "text": "2. Varioen KLIPP\n\n25 sek — varioen som piper i en boble. LYD PÅ.\n\n\nDette er hele instrumentet. Det du horer er regnet ut fra trykk, ikke fra GPS.\nDette ene klippet skal IKKE vaere muted."
+  },
+  {
+    "objectID": "himalaya/voss.html#termikkboblen-klipp",
+    "href": "himalaya/voss.html#termikkboblen-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "3. Termikkboblen KLIPP",
+    "text": "3. Termikkboblen KLIPP\n\n35 sek — boblen tegnes opp mens vi flyr\n\n\nDen mest overbevisende enkeltbiten. Appen finner hvor det stiger mens du flyr, og husker det.\nDette klippet og det neste er de to som selger appen."
+  },
+  {
+    "objectID": "himalaya/voss.html#vindpila-klipp",
+    "href": "himalaya/voss.html#vindpila-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "4. Vindpila KLIPP",
+    "text": "4. Vindpila KLIPP\n\n30 sek — sirkling, og vindestimatet som strammer seg\n\n\nDen vet ikke vinden nar du tar av. Den laerer den av sirklene dine."
+  },
+  {
+    "objectID": "himalaya/voss.html#barogrammet-klipp",
+    "href": "himalaya/voss.html#barogrammet-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "5. Barogrammet KLIPP",
+    "text": "5. Barogrammet KLIPP\n\n25 sek — høydeprofilen som bygger seg\n\n\n4677 meter pa det hoyeste. Der oppe er det kaldt og tynt."
+  },
+  {
+    "objectID": "himalaya/voss.html#hvor-langt-ned-er-det-til-noe-flatt-klipp",
+    "href": "himalaya/voss.html#hvor-langt-ned-er-det-til-noe-flatt-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "6. Hvor langt ned er det til noe flatt? KLIPP",
+    "text": "6. Hvor langt ned er det til noe flatt? KLIPP\n\n35 sek — glidetall og rekkevidde over terrenget\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
+  },
+  {
+    "objectID": "himalaya/voss.html#innover-i-fjellene",
+    "href": "himalaya/voss.html#innover-i-fjellene",
+    "title": "pgpilot og Himalaya",
+    "section": "Innover i fjellene",
+    "text": "Innover i fjellene\nAkt 4\n12 min · DECK + ett app-innhopp\n\nVENDEPUNKTET. Vi passerer siste rygg. Nettet dor."
+  },
+  {
+    "objectID": "himalaya/voss.html#floor-is-lava",
+    "href": "himalaya/voss.html#floor-is-lava",
+    "title": "pgpilot og Himalaya",
+    "section": "Floor is lava",
+    "text": "Floor is lava\n\n\nRisiko snus pa hodet. Du gjor ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben.\n\nMarginer, hoydesyke, buddysystem, mat og vann for en uke."
+  },
+  {
+    "objectID": "himalaya/voss.html#hjemme-har-du-alt.-her-har-du-ingenting.",
+    "href": "himalaya/voss.html#hjemme-har-du-alt.-her-har-du-ingenting.",
+    "title": "pgpilot og Himalaya",
+    "section": "Hjemme har du alt. Her har du ingenting.",
+    "text": "Hjemme har du alt. Her har du ingenting.\n\nTabellen fra STRUKTUR.md: Voss vs Bir. Luftrom, varsel, vindstasjoner, NOTAM = nei. Startplasser, kart, vario, gruppe = ja.\n\n\nSjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR. Varsel (MEPS/ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19 europeiske kilder.\nPoenget er ikke at appen er mangelfull. Poenget er at India stripper den ned til kjernen, og det som staar igjen er det som baerer."
+  },
+  {
+    "objectID": "himalaya/voss.html#det-som-står-igjen",
+    "href": "himalaya/voss.html#det-som-står-igjen",
+    "title": "pgpilot og Himalaya",
+    "section": "Det som står igjen",
+    "text": "Det som står igjen\n\nOffline-kart, VHF over KV4P, FLARM, Meshtastic, InReach, buddies. Ett slide hver, eller ett samleslide. Bestem når innholdet skrives.\n\n\nOGN og FLARM-bakkestasjoner finnes knapt i Himalaya. Derfor er direkte pilot-til-pilot det som baerer der nede."
+  },
+  {
+    "objectID": "himalaya/voss.html#dere-er-fortsatt-i-gruppa-app",
+    "href": "himalaya/voss.html#dere-er-fortsatt-i-gruppa-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Dere er fortsatt i gruppa APP",
+    "text": "Dere er fortsatt i gruppa APP\n\nKort innhopp til appen: kartet med alle prikkene i rommet.\n\n\nSamme mekanisme som holdt oss sammen over ryggen, bare med bedre dekning.\nDette er det eneste app-innhoppet i akt 4. Alt-tab, vis, alt-tab tilbake."
+  },
+  {
+    "objectID": "himalaya/voss.html#landing-og-hjem",
+    "href": "himalaya/voss.html#landing-og-hjem",
+    "title": "pgpilot og Himalaya",
+    "section": "Landing og hjem",
+    "text": "Landing og hjem\nAkt 5\n6 min · DECK\n\nVi lander ved teltplassen. Dag 1 lander 200 meter fra der dag 2 starter, og det er ikke tilfeldig, det er teltet."
+  },
+  {
+    "objectID": "himalaya/voss.html#etter-landing",
+    "href": "himalaya/voss.html#etter-landing",
+    "title": "pgpilot og Himalaya",
+    "section": "Etter landing",
+    "text": "Etter landing\n\nIGC ut, automatisk XContest-opplasting, feeden, profiler, kudos."
+  },
+  {
+    "objectID": "himalaya/voss.html#areacontest",
+    "href": "himalaya/voss.html#areacontest",
+    "title": "pgpilot og Himalaya",
+    "section": "AreaContest",
+    "text": "AreaContest\n\nKartet over Voss-området. Hvem eier hvilke ruter?\n\n\nBeste retensjonsmekanikken du har, og et Voss-publikum er nøyaktig folk som vil krangle om dette."
+  },
+  {
+    "objectID": "himalaya/voss.html#bli-med-i-2026",
+    "href": "himalaya/voss.html#bli-med-i-2026",
+    "title": "pgpilot og Himalaya",
+    "section": "Bli med i 2026",
+    "text": "Bli med i 2026\nAkt 6\n3 min · DECK"
+  },
+  {
+    "objectID": "himalaya/voss.html#section-1",
+    "href": "himalaya/voss.html#section-1",
+    "title": "pgpilot og Himalaya",
+    "section": "",
+    "text": "Hent slide 46, 49, 50 fra India-decket. Slide 46 sier fortsatt “Oktober 2024?” og MÅ oppdateres."
+  },
+  {
+    "objectID": "himalaya/voss.html#section-2",
+    "href": "himalaya/voss.html#section-2",
+    "title": "pgpilot og Himalaya",
+    "section": "",
+    "text": "Tandoori-videoen. Avslutt her, ikke på en punktliste.\n\n\nSiste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss."
   }
 ]

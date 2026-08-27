@@ -1,0 +1,140 @@
+/* Voss-decket. Egen CSS, ikke custom.css: den er bygget for de konverterte
+   Google Slides-sidene, der alt ligger absolutt plassert i en .gslide-boks.
+   Dette decket skrives for hånd, så det trenger vanlig flyt i stedet.
+   Fontene er de samme, så de to deckene ser i slekt ut. */
+
+@font-face {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/bevan-latin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/questrial-latin.woff2) format("woff2");
+}
+
+.reveal {
+  font-family: "Questrial", system-ui, sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Bevan", Georgia, serif;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* ---- akt-skille: helsvart side, stor tittel, akt-merke og varighet under.
+   Flat struktur med vilje: aktene er vanlige slides, ikke vertikale stabler.
+   Med stabler hopper hoyrepil over en hel akt, og det er en felle a sta i
+   midt i et foredrag. ---- */
+
+.reveal .act-divider {
+  background: #111;
+  color: #fff;
+}
+/* Reveal toppstiller innhold. Pa et akt-skille med fire linjer gir det en
+   halvtom side, sa disse sentreres vertikalt. */
+.reveal section.act-divider {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.reveal section.act-divider h2 {
+  color: #fff;
+  font-size: 2.6em;
+  margin: 0 0 0.4em 0;
+  border: none;
+}
+.reveal section.act-divider .act-num {
+  font-family: "Bevan", Georgia, serif;
+  font-size: 1.1em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #e8622c;
+  display: block;
+}
+.reveal section.act-divider .act-meta {
+  font-size: 0.62em;
+  opacity: 0.55;
+  margin-top: 1.6em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* ---- hvor er vi: deck, live app, eller klipp ---- */
+
+.where {
+  display: inline-block;
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25em 0.8em;
+  border-radius: 2em;
+  vertical-align: middle;
+  margin-left: 0.6em;
+}
+.where-deck {
+  background: #dfe6ee;
+  color: #33475b;
+}
+.where-app {
+  background: #e8622c;
+  color: #fff;
+}
+.where-clip {
+  background: #2f6f4e;
+  color: #fff;
+}
+
+/* ---- plassholdere. Skal være umulige å overse, og skal vekk før fredag ---- */
+
+.todo {
+  border: 2px dashed #c44;
+  background: #fff6f6;
+  color: #a33;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  font-size: 0.7em;
+}
+.todo::before {
+  content: "MANGLER: ";
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* Et klipp som ennå ikke er tatt opp: riktig størrelse, så layouten stemmer
+   allerede før videoen finnes. */
+.clip-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 460px;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    #f4f4f4,
+    #f4f4f4 12px,
+    #ececec 12px,
+    #ececec 24px
+  );
+  color: #666;
+  font-size: 0.8em;
+}
+
+.reveal .say {
+  font-size: 0.8em;
+  opacity: 0.8;
+  font-style: italic;
+}
