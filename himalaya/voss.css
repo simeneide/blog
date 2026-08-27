@@ -80,6 +80,12 @@
   padding: 40px 64px;
   box-sizing: border-box;
 }
+/* Stabelen som holder en akt er ogsaa en <section>, saa regelen over ga den
+   ogsaa padding. Det dyttet fullskjermsbildene inn 64 px fra venstre og la
+   igjen en hvit stripe. Lufta hoerer hjemme paa selve slidet, ikke wrapperen. */
+.reveal .slides section.stack {
+  padding: 0 !important;
+}
 
 /* ---- apningsslide: samme todelte bilde som Loen-decket ---- */
 
