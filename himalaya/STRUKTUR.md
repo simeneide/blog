@@ -50,19 +50,66 @@ sensorene i telefonen, kartet i minnet, sporet, og sambandet med de du flyr med.
 
 ## Kjøreplan (53 min + spørsmål)
 
-| Akt | Hva skjer | Min | Features | India |
-|---|---|-----|----------|-------|
-| 0 | Krok | 2 | - | video 48 eller 09 |
-| 1 | **Bli med på turen** | 6 | gjestepålogging, `/join`, presence | - |
-| 2 | **På startplassen** | 10 | startplassbase, BLE-vario, PTT, task-push | slide 2, 3, 4, 5, 47 |
-| 3 | **Vi tar av** | 14 | replay, vario, termikk, sirkling, vind, barogram, glidetall | slide 8, 10, 11, 17 |
-| 4 | **Innover i fjellene** | 12 | offline, VHF, FLARM, Meshtastic, InReach, buddies | slide 21, 28, 29 |
-| 5 | **Landing og hjem** | 6 | IGC, XContest, feed, AreaContest | slide 22, 24, 27 |
-| 6 | Bli med i 2026 | 3 | - | slide 46, 49, 50 |
+| Akt | Hva skjer | Min | **Hvor** | Features |
+|---|---|-----|---|----------|
+| 0 | Krok + "hvor er India?" | 3 | deck | - |
+| 1 | **Bli med på turen** | 5 | deck → **app** | gjestepålogging, `/join`, presence |
+| 2 | **På startplassen** | 10 | **app, live** | startplassbase, BLE-vario, PTT, task-push |
+| 3 | **Vi tar av** | 14 | deck, **video** | replay, vario, termikk, sirkling, vind, barogram |
+| 4 | **Innover i fjellene** | 12 | deck, med ett app-innhopp | offline, VHF, FLARM, Meshtastic, InReach |
+| 5 | **Landing og hjem** | 6 | deck | IGC, XContest, feed, AreaContest |
+| 6 | Bli med i 2026 | 3 | deck | - |
+
+**Bare to steder forlater du decket:** akt 2 er ren live-app, og akt 4 har ett
+kort innhopp for å vise prikkene i rommet. Alt annet, inkludert hele replayen,
+kjører fra decket. Det er med vilje. Se "Riggen" under.
 
 ---
 
-### Akt 0: Krok (2 min)
+## Riggen: ikke plugg ut, speil telefonen inn i maskina
+
+**Svaret på "skal jeg plugge ut presentasjonen?" er nei.** Å bytte HDMI-kilde
+midt i et foredrag er den vanligste måten å miste tre minutter og all flyt på,
+og projektoren bruker gjerne ti sekunder på å synke om igjen hver gang.
+
+Gjør dette i stedet: **én kabel fra maskina til projektoren, telefonen speilet
+inn i et vindu på maskina, og alt-tab mellom deck og telefon.**
+
+| Oppsett | Verktøy | Merknad |
+|---|---|---|
+| Android | **`scrcpy`** | USB eller `scrcpy --tcpip`. Lav latens, gratis, vindu du kan gjøre fullskjerm. Det klart beste alternativet. |
+| iPhone + Mac | **QuickTime Player** | File → New Movie Recording → velg iPhone som kilde. Kablet, ingen installasjon. |
+| iPhone + Linux | `uxplay` (AirPlay-mottaker) | Over wifi, så mer skjørt i et ukjent lokale. Test på stedet. |
+
+Reveal beholder slide-posisjonen når du alt-tabber, så du mister ingenting. Og
+**`b` svartlegger decket** - fint å trykke rett før du bytter, så ser skiftet
+tilsiktet ut i stedet for rotete.
+
+### Kan telefonen legges *inni* Quarto-presentasjonen?
+
+Teknisk ja, men jeg fraråder det. `ws-scrcpy` serverer telefonskjermen som en
+nettside, som du kan `<iframe>`-e inn i et slide. Men det er en server til som
+må kjøre, og du alt-tabber uansett bare to ganger hele kvelden. Feilmodusen er
+verre enn gevinsten: hvis iframen ryker står du med et dødt slide i stedet for
+et vindu du bare kan klikke på.
+
+### Hvor mye trenger du egentlig telefonen?
+
+Mindre enn du tror, men ikke null:
+
+- **Appen kjører i nettleseren.** Kart, startplassøk, gruppe, `/join`, PTT og
+  task funker alt sammen i en vanlig fane ved siden av decket. Ingen speiling
+  nødvendig.
+- **Men installasjonen (akt 1) og BLE-varioen (akt 2) må være ekte telefon.**
+  BLE-varioen er låst bak `isNative()` i `useBleVario.ts` og vil ikke funke i en
+  nettleser på maskina, uansett hvor mye Web Bluetooth Chrome har.
+
+Så: speil telefonen for akt 1 og 2, og bruk nettleserfanen hvis noe ryker.
+Det er reserveplanen din, og den er gratis.
+
+---
+
+### Akt 0: Krok, og "hvor er India?" (3 min)
 
 Video i fullskjerm, uten tekst, uten deg. La den gå. Ikke si noe. Så tittel.
 
@@ -70,7 +117,26 @@ Hensikten er å kjøpe deg retten til å be om noe i neste akt. Ikke bytt om: en
 installasjonsoppfordring som det *første* du sier er et krav. Den samme
 oppfordringen etter nitti sekunder Himalaya er en invitasjon.
 
-### Akt 1: Bli med på turen (6 min)
+**Så: "vi skal på tur til India og fly. Hvor er India?"**
+
+Zoom ut fra Voss, over Europa, og inn igjen på Bir. Det er en billig effekt og
+den funker hver gang, fordi den gjør avstanden fysisk i stedet for et tall.
+Bygg den som et kartklipp i decket, ikke live - du vil ikke være avhengig av
+nett og tile-lasting i minutt tre.
+
+Landingspunktet for zoomen er startplassen, og det er der akt 2 begynner. Da har
+du allerede plassert oss geografisk før du ber om noe som helst.
+
+### Akt 1: Bli med på turen (5 min)
+
+**Send en melding til klubben kvelden før:** "last ned pgpilot før du kommer, vi
+skal bruke den." Det er verdt å gjøre, fordi App Store-nedlastingen er det
+eneste i hele opplegget du ikke kontrollerer, og tretti samtidige nedlastinger
+på et klubblokale-wifi er en reell måte å brenne fem minutter på.
+
+De som har gjort det er klare med én gang. De som ikke har det, tar
+nettleserveien på tredve sekunder. **Begge deler skal fram, ingen skal føle at
+de kom for sent.**
 
 > "Vi skal fly en tur i India sammen nå. Ta opp telefonen."
 
@@ -88,11 +154,12 @@ visningsnavn og ingenting mer. Ingen e-post, ingen konto. Verifisert i koden:
 (`/join/{kode}` funker fra en vanlig nettleser-URL),
 `lib/voice/web-aac-transport.ts` (PTT over web, ikke bare native).
 
-Så **`pgpilot.app/join/voss`**, og kartet på veggen mens prikkene deres dukker
-opp. La det stå og gå resten av kvelden.
+Så **QR-koden til `pgpilot.app/join/voss`**, stor på lerretet, og la den stå. Ikke
+få noen til å taste en URL. Kartet ved siden av, med prikkene deres som dukker
+opp mens du snakker videre.
 
-**Si tydelig at de skal la appen ligge på.** Akt 4 avhenger av at de fortsatt er
-i gruppa førti minutter senere.
+**Si tydelig at de skal la appen ligge på.** Akt 2 og akt 4 avhenger begge av at
+de fortsatt er i gruppa senere på kvelden.
 
 ### Akt 2: På startplassen i Billing (10 min)
 
@@ -122,18 +189,28 @@ fortsatt holder på å bli med.*
 ### Akt 3: Vi tar av (14 min)
 
 Den lengste akten, og den skal være det. **17. oktober 2024, Bir mot
-Saurkundi**, spilt av i appen på storskjerm.
+Saurkundi.**
 
-Det viktigste å si høyt, og det ingen skjønner av seg selv:
+**Dette er et skjermopptak, ikke live app.** Det er et bevisst valg og det er
+riktig valg: dette er den lengste sammenhengende bolken, den som er lettest å
+snuble i live, og den eneste der du både skal styre appen og fortelle en
+historie samtidig. Et opptak lar deg snakke fritt, pause der du vil, og aldri
+vente på at et kart laster.
 
-> Dette er ikke en video av en flytur. Det er flightcomputeren som blir matet
-> sporet på nytt, akkurat som om jeg fløy nå.
+Formuleringen som gjør poenget uten å motsi videoen du står og viser:
 
-Vario, sirklingsdeteksjon, vindestimat og termikkmodell regnes ut mens de ser
-på. Samme kode i replay som live, det er hele poenget med at motoren er
-React-fri.
+> Dette er ikke en video av flyturen. Det er et opptak av **appen** som flyr den
+> på nytt. Alt dere ser av tall og piler regnes ut mens sporet spilles av,
+> akkurat som når jeg flyr.
 
-Stopp der historien er:
+Samme kode i replay som live. Det er hele poenget med at motoren er React-fri,
+og det er verdt å si rett ut, for ingen gjetter det selv.
+
+**Ta opp lyden.** Den akustiske varioen er halve opplevelsen, og en pipende
+vario over høyttaleranlegget er det som får en sal med paragliderpiloter til å
+kjenne det i magen. Et stumt skjermopptak er halve demoen.
+
+Stopp der historien er, og bruk pauseknappen:
 
 - Soaring på frontryggen rett etter start. Terrassene under.
 - **Termikkboblene som dukker opp** mens vi flyr. Det er det du selv trakk fram,
@@ -149,6 +226,22 @@ XContest, IGC med 10 843 punkter på 1 Hz. 2026-flighten er tatt opp med appen
 og har 79 107 punkter, altså 5 Hz. Men blobben har posisjon, trykkhøyde og fart,
 **ikke vario- eller vindfelt**. Appen utleder stigning fra trykksporet. De to
 replayer altså omtrent like godt, forskjellen er oppløsning.
+
+#### Opptaket du må lage
+
+Dette er den eneste virkelige produksjonsjobben som gjenstår før fredag.
+
+- **Kilde:** telefonen, skjermopptak med lyd, i stående eller liggende alt etter
+  hvordan du vil ha det i decket. Liggende fyller lerretet best.
+- **Innhold:** demo 1 spilt av i replay, i et tempo som gir deg tid til å
+  snakke. Vurder å ta opp lengre enn du trenger og heller klippe.
+- **Klipp det ned til fire-fem minutter.** Fjorten minutter akt betyr ikke
+  fjorten minutter video: du skal pause og snakke mellom høydepunktene. Video
+  som ren bakgrunnsstrøm gjør at salen slutter å høre på deg.
+- **Legg det i decket som `<video>`**, samme mønster som Himalaya-klippene i
+  `presentasjon.qmd`. Da er det én ting som spiller av, ikke en app som kan
+  henge.
+- **Ha klippet lokalt**, ikke fra Drive. Se sjekklisten.
 
 ### Akt 4: Innover i fjellene (12 min)
 
@@ -225,8 +318,17 @@ Ikke kutt i akt 1 eller akt 4. Det er de to som gjør salen til deltakere.
 
 ## Sjekkliste
 
+**Denne uka**
+
+- [ ] **Lag replay-opptaket til akt 3.** Skjermopptak av demo 1, *med lyd*,
+      klippet til fire-fem minutter. Den eneste reelle produksjonsjobben igjen.
+- [ ] **Bygg zoom-klippet til akt 0**: Voss → Europa → Bir, som video, ikke live.
+- [ ] **Sett opp og test speilingen** (`scrcpy` eller QuickTime), se "Riggen".
+      Gjør dette nå, ikke i lokalet.
+
 **Dagen før**
 
+- [ ] **Meld i klubbkanalen:** "last ned pgpilot før du kommer."
 - [ ] **Ikke lag gruppa ennå**, se under. Bestem bare koden, kort og uttalbar,
       så du får laget QR-koden: `pgpilot.app/join/voss`.
 - [ ] Last ned offline-pakke for Voss på demotelefonen.
@@ -271,8 +373,9 @@ Ikke kutt i akt 1 eller akt 4. Det er de to som gjør salen til deltakere.
 |---|---|
 | Nettet i lokalet | Hotspot for egen maskin. Replay funker offline. |
 | Ingen blir med i gruppa | Ha en andre telefon i lomma som alt er med |
-| Speiling til projektor | Skjermopptak av installasjonen som reservevideo |
-| Replay henger | Slide 8, 10, 17 viser samme flight statisk |
+| Speiling til projektor | Nettleserfanen på maskina. Alt i akt 2 unntatt BLE-varioen funker der. |
+| Replay-videoen spiller ikke | Slide 8, 10, 17 viser samme flight statisk |
+| Live-appen henger i akt 2 | Hopp videre. Akt 3 er video og rammes ikke. |
 | PTT-demoen gir bare støy | Kutt til fortelling, vis kartet med prikkene i stedet |
 
 ## Demoflightene
