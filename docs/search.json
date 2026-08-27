@@ -676,14 +676,14 @@
     "href": "himalaya/voss.html#koble-på-varioen-app",
     "title": "pgpilot og Himalaya",
     "section": "Koble på varioen APP",
-    "text": "Koble på varioen APP\n\nSkjermdump må tas på TELEFONEN. Webversjonen har ingen hardware-seksjon i det hele tatt: BLE er låst bak isNative(), så menyen viser den ikke.\n\n\nJeg forsokte aa hente denne fra webversjonen, men den finnes ikke der. Menyen i nettleseren har Navigation, Voice, Sounds, Map, Battery, Pages, Units, Pilot profile, Buddies, Ground contacts, Connected services og Preflight checks - og ingen hardware-seksjon, fordi BLE-koden er native-only.\nTa den paa telefonen, med varioen tilkoblet."
+    "text": "Koble på varioen APP\n\n\nSkjermdump fra telefonen. Den finnes ikke i webversjonen i det hele tatt, fordi BLE-koden er laast bak isNative().\nTre ting er tilkoblet samtidig her, og det er verdt aa peke paa: BLE-varioen, PTT-knappen, og KV4P VHF-radioen. Det er hele maskinvarehistorien paa ett bilde."
   },
   {
     "objectID": "himalaya/voss.html#prat-sammen-app",
     "href": "himalaya/voss.html#prat-sammen-app",
     "title": "pgpilot og Himalaya",
     "section": "Prat sammen APP",
-    "text": "Prat sammen APP\n\nLive: PTT i gruppa. Én frivillig trykker og snakker.\n\n\nSi eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.\nDette er oyeblikket der salen skjonner hva appen er: du sier noe, og det kommer ut av tretti telefoner samtidig."
+    "text": "Prat sammen APP\n\n\nSi eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.\nDette er oyeblikket der salen skjonner hva appen er: du sier noe, og det kommer ut av tretti telefoner samtidig."
   },
   {
     "objectID": "himalaya/voss.html#lag-tasken-app",
@@ -711,7 +711,7 @@
     "href": "himalaya/voss.html#start-fra-billing-klipp",
     "title": "pgpilot og Himalaya",
     "section": "1. Start fra Billing KLIPP",
-    "text": "1. Start fra Billing KLIPP\n\n\nHer staar vi. Terrassene under, fjellet som fortsetter bakover."
+    "text": "1. Start fra Billing KLIPP\n\n\nHer staar vi. Terrassene under, fjellet som fortsetter bakover. Kartet er zoomet ut, saa dere ser hele dalen vi skal ut i.\nLYD PAA DENNE. Det er appens egen takeoff-lyd, den samme som gaar av i lomma naar den skjonner at du har lettet. Ikke snakk over de forste sekundene, la den komme.\nKlippet looper ikke med vilje: lyden skal spille EN gang, saa blir bildet staaende mens du snakker."
   },
   {
     "objectID": "himalaya/voss.html#varioen-klipp",
@@ -866,5 +866,19 @@
     "title": "pgpilot og Himalaya",
     "section": "3. Sideview KLIPP",
     "text": "3. Sideview KLIPP\n\n\n4677 meter paa det hoyeste. Der oppe er det kaldt og tynt."
+  },
+  {
+    "objectID": "himalaya/voss.html#vi-flyr-klipp",
+    "href": "himalaya/voss.html#vi-flyr-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "Vi flyr KLIPP",
+    "text": "Vi flyr KLIPP\n\n\nHer er det ekte. Ikke et kart, ikke et skjermopptak: dette er hva du faktisk ser naar du er i lufta over Bir.\nRyggen rett under, og fjellkjeden som bare fortsetter bakover i bildet. Det er hele argumentet for aa reise dit, og det trenger ingen forklaring.\nLa den staa noen sekunder for du gaar videre til tallene."
+  },
+  {
+    "objectID": "himalaya/voss.html#glide-range-på-kartet-klipp",
+    "href": "himalaya/voss.html#glide-range-på-kartet-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "4. Glide range på kartet KLIPP",
+    "text": "4. Glide range på kartet KLIPP\n\n\nGlide range-konturene er de stiplede linjene rundt piloten: gronn L/D 6, gul L/D 8, oransje L/D 10. De viser hvor langt du rekker fra der du er.\nAt de manglet foer var ikke en innstilling, men timing: useGlideRange returnerer tidlig naar terrengflisene for hele rekkevidden ikke er cachet ennaa. Opptaket venter naa til laget faktisk har data.\nGLIDE 10S staar rundt 12, og glidestraalene L/D 6, 8 og 10 treffer bakken ved 2,5 km med stoppunktet markert. Glide range staar paa hoy kvalitet.\nKartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar plass i ramma. AA sette zoomen gjennom kartobjektet ble overstyrt av foelg-logikken; minus-knappen mens replayet staar paa pause er det som sitter.\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
   }
 ]

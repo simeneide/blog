@@ -136,7 +136,7 @@
 
 /* ---- video som dekker hele sliden ---- */
 
-.reveal .slides section:has(.fullbleed) {
+.reveal .slides section:has(> .fullbleed) {
   padding: 0 !important;
   background: #000;
 }
@@ -154,8 +154,7 @@
 }
 /* Tittelen skal ligge OVER klippet, ikke dytte det ned. Nederst til venstre,
    fordi appens egne tall ligger oppe til venstre og ville kollidert. */
-.reveal section:has(> .fullbleed) > h2,
-.reveal section:has(.fullbleed) > h2 {
+.reveal section:has(> .fullbleed) > h2 {
   position: absolute;
   z-index: 2;
   left: 40px;

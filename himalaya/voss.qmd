@@ -184,18 +184,16 @@ Ikke snakk om startplassdatabasen. Bare la kartet staa og fortell hvor vi er.
 
 ## Koble på varioen [APP]{.where .where-app}
 
-::: {.todo}
-Skjermdump må tas på TELEFONEN. Webversjonen har ingen hardware-seksjon
-i det hele tatt: BLE er låst bak isNative(), så menyen viser den ikke.
-:::
+```{=html}
+<img class="clip" src="img/app-hardware.png" alt="Hardware: vario, PTT, radio">
+```
 
 ::: {.notes}
-Jeg forsokte aa hente denne fra webversjonen, men den finnes ikke der. Menyen i
-nettleseren har Navigation, Voice, Sounds, Map, Battery, Pages, Units, Pilot
-profile, Buddies, Ground contacts, Connected services og Preflight checks - og
-ingen hardware-seksjon, fordi BLE-koden er native-only.
+Skjermdump fra telefonen. Den finnes ikke i webversjonen i det hele tatt, fordi
+BLE-koden er laast bak isNative().
 
-Ta den paa telefonen, med varioen tilkoblet.
+Tre ting er tilkoblet samtidig her, og det er verdt aa peke paa: BLE-varioen,
+PTT-knappen, og KV4P VHF-radioen. Det er hele maskinvarehistorien paa ett bilde.
 :::
 
 ## Bli med i gruppa
@@ -224,9 +222,9 @@ Si tydelig at de skal la appen ligge paa. Akt 4 avhenger av det.
 
 ## Prat sammen [APP]{.where .where-app}
 
-::: {.todo}
-Live: PTT i gruppa. Én frivillig trykker og snakker.
-:::
+```{=html}
+<img class="clip" src="img/app-comms.png" alt="Communication: Local, 12 online">
+```
 
 ::: {.notes}
 Si eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.
@@ -290,11 +288,37 @@ sier, ikke omvendt.
 ## 1. Start fra Billing [KLIPP]{.where .where-clip}
 
 ```{=html}
-<img class="clip" src="img/app-start.jpg" alt="Start fra Billing">
+<video class="clip" src="voss-video/klipp-start.mp4"
+       poster="img/poster-start.jpg"
+       data-autoplay playsinline></video>
 ```
 
 ::: {.notes}
-Her staar vi. Terrassene under, fjellet som fortsetter bakover.
+Her staar vi. Terrassene under, fjellet som fortsetter bakover. Kartet er zoomet
+ut, saa dere ser hele dalen vi skal ut i.
+
+LYD PAA DENNE. Det er appens egen takeoff-lyd, den samme som gaar av i lomma
+naar den skjonner at du har lettet. Ikke snakk over de forste sekundene, la den
+komme.
+
+Klippet looper ikke med vilje: lyden skal spille EN gang, saa blir bildet
+staaende mens du snakker.
+:::
+
+## Vi flyr [KLIPP]{.where .where-clip}
+
+```{=html}
+<img class="fullbleed" src="img/171722e4.jpg" alt="">
+```
+
+::: {.notes}
+Her er det ekte. Ikke et kart, ikke et skjermopptak: dette er hva du faktisk ser
+naar du er i lufta over Bir.
+
+Ryggen rett under, og fjellkjeden som bare fortsetter bakover i bildet. Det er
+hele argumentet for aa reise dit, og det trenger ingen forklaring.
+
+La den staa noen sekunder for du gaar videre til tallene.
 :::
 
 ## 2. Termikkboblen [KLIPP]{.where .where-clip}
@@ -328,18 +352,23 @@ Lyd paa dette klippet.
 4677 meter paa det hoyeste. Der oppe er det kaldt og tynt.
 :::
 
-## 4. Hvor langt ned er det til noe flatt? [KLIPP]{.where .where-clip}
+## 4. Glide range på kartet [KLIPP]{.where .where-clip}
 
 ```{=html}
-<img class="clip" src="img/app-glide.jpg" alt="Glidetall og rekkevidde">
+<video class="clip" src="voss-video/klipp-glide.mp4"
+       poster="img/poster-glide.jpg"
+       data-autoplay loop muted playsinline></video>
 ```
 
 ::: {.notes}
-Stillbilde, ikke klipp, og det er et bevisst valg: aa steppe replayet frame for
-frame gir jevn video, men soek nullstiller estimatorene, saa GLIDE 10S faller
-til "--". I et bilde om glidetall er nettopp det tallet poenget.
+Glide range-konturene er de stiplede linjene rundt piloten: gronn L/D 6, gul
+L/D 8, oransje L/D 10. De viser hvor langt du rekker fra der du er.
 
-Her staar GLIDE 10S paa 10.9, og glidestraalene L/D 6, 8 og 10 treffer bakken
+At de manglet foer var ikke en innstilling, men timing: useGlideRange returnerer
+tidlig naar terrengflisene for hele rekkevidden ikke er cachet ennaa. Opptaket
+venter naa til laget faktisk har data.
+
+GLIDE 10S staar rundt 12, og glidestraalene L/D 6, 8 og 10 treffer bakken
 ved 2,5 km med stoppunktet markert. Glide range staar paa hoy kvalitet.
 
 Kartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar

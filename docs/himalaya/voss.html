@@ -319,12 +319,10 @@ Simen Eide
 </section>
 <section id="koble-på-varioen-app" class="slide level2">
 <h2>Koble på varioen <span class="where where-app">APP</span></h2>
-<div class="todo">
-<p>Skjermdump må tas på TELEFONEN. Webversjonen har ingen hardware-seksjon i det hele tatt: BLE er låst bak isNative(), så menyen viser den ikke.</p>
-</div>
+<img class="clip" src="img/app-hardware.png" alt="Hardware: vario, PTT, radio">
 <aside class="notes">
-<p>Jeg forsokte aa hente denne fra webversjonen, men den finnes ikke der. Menyen i nettleseren har Navigation, Voice, Sounds, Map, Battery, Pages, Units, Pilot profile, Buddies, Ground contacts, Connected services og Preflight checks - og ingen hardware-seksjon, fordi BLE-koden er native-only.</p>
-<p>Ta den paa telefonen, med varioen tilkoblet.</p>
+<p>Skjermdump fra telefonen. Den finnes ikke i webversjonen i det hele tatt, fordi BLE-koden er laast bak isNative().</p>
+<p>Tre ting er tilkoblet samtidig her, og det er verdt aa peke paa: BLE-varioen, PTT-knappen, og KV4P VHF-radioen. Det er hele maskinvarehistorien paa ett bilde.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -364,9 +362,7 @@ Simen Eide
 </section>
 <section id="prat-sammen-app" class="slide level2">
 <h2>Prat sammen <span class="where where-app">APP</span></h2>
-<div class="todo">
-<p>Live: PTT i gruppa. Én frivillig trykker og snakker.</p>
-</div>
+<img class="clip" src="img/app-comms.png" alt="Communication: Local, 12 online">
 <aside class="notes">
 <p>Si eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.</p>
 <p>Dette er oyeblikket der salen skjonner hva appen er: du sier noe, og det kommer ut av tretti telefoner samtidig.</p>
@@ -460,9 +456,30 @@ Simen Eide
 </section>
 <section id="start-fra-billing-klipp" class="slide level2">
 <h2>1. Start fra Billing <span class="where where-clip">KLIPP</span></h2>
-<img class="clip" src="img/app-start.jpg" alt="Start fra Billing">
+<video class="clip" src="voss-video/klipp-start.mp4" poster="img/poster-start.jpg" data-autoplay="" playsinline=""></video>
 <aside class="notes">
-<p>Her staar vi. Terrassene under, fjellet som fortsetter bakover.</p>
+<p>Her staar vi. Terrassene under, fjellet som fortsetter bakover. Kartet er zoomet ut, saa dere ser hele dalen vi skal ut i.</p>
+<p>LYD PAA DENNE. Det er appens egen takeoff-lyd, den samme som gaar av i lomma naar den skjonner at du har lettet. Ikke snakk over de forste sekundene, la den komme.</p>
+<p>Klippet looper ikke med vilje: lyden skal spille EN gang, saa blir bildet staaende mens du snakker.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="vi-flyr-klipp" class="slide level2">
+<h2>Vi flyr <span class="where where-clip">KLIPP</span></h2>
+<img class="fullbleed" src="img/171722e4.jpg" alt="">
+<aside class="notes">
+<p>Her er det ekte. Ikke et kart, ikke et skjermopptak: dette er hva du faktisk ser naar du er i lufta over Bir.</p>
+<p>Ryggen rett under, og fjellkjeden som bare fortsetter bakover i bildet. Det er hele argumentet for aa reise dit, og det trenger ingen forklaring.</p>
+<p>La den staa noen sekunder for du gaar videre til tallene.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -511,12 +528,13 @@ Simen Eide
           display:block!important;
       }</style></aside>
 </section>
-<section id="hvor-langt-ned-er-det-til-noe-flatt-klipp" class="slide level2">
-<h2>4. Hvor langt ned er det til noe flatt? <span class="where where-clip">KLIPP</span></h2>
-<img class="clip" src="img/app-glide.jpg" alt="Glidetall og rekkevidde">
+<section id="glide-range-på-kartet-klipp" class="slide level2">
+<h2>4. Glide range på kartet <span class="where where-clip">KLIPP</span></h2>
+<video class="clip" src="voss-video/klipp-glide.mp4" poster="img/poster-glide.jpg" data-autoplay="" loop="" muted="" playsinline=""></video>
 <aside class="notes">
-<p>Stillbilde, ikke klipp, og det er et bevisst valg: aa steppe replayet frame for frame gir jevn video, men soek nullstiller estimatorene, saa GLIDE 10S faller til “–”. I et bilde om glidetall er nettopp det tallet poenget.</p>
-<p>Her staar GLIDE 10S paa 10.9, og glidestraalene L/D 6, 8 og 10 treffer bakken ved 2,5 km med stoppunktet markert. Glide range staar paa hoy kvalitet.</p>
+<p>Glide range-konturene er de stiplede linjene rundt piloten: gronn L/D 6, gul L/D 8, oransje L/D 10. De viser hvor langt du rekker fra der du er.</p>
+<p>At de manglet foer var ikke en innstilling, men timing: useGlideRange returnerer tidlig naar terrengflisene for hele rekkevidden ikke er cachet ennaa. Opptaket venter naa til laget faktisk har data.</p>
+<p>GLIDE 10S staar rundt 12, og glidestraalene L/D 6, 8 og 10 treffer bakken ved 2,5 km med stoppunktet markert. Glide range staar paa hoy kvalitet.</p>
 <p>Kartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar plass i ramma. AA sette zoomen gjennom kartobjektet ble overstyrt av foelg-logikken; minus-knappen mens replayet staar paa pause er det som sitter.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
