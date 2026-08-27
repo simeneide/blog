@@ -655,7 +655,7 @@
     "href": "himalaya/voss.html#bli-med-i-gruppa",
     "title": "pgpilot og Himalaya",
     "section": "Bli med i gruppa",
-    "text": "Bli med i gruppa\n\nQR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå. Lages først når du rigger, se notatene.\n\n\nFlyttet hit fra akt 1 med vilje: gruppa gir ingen mening for de har appen, og den hoerer sammen med PTT-demoen som kommer rett etterpaa.\nGRUPPA LAGES NAAR DU RIGGER, IKKE FOR. Reaperen arkiverer grupper som har vaert stille i fire timer, og join filtrerer paa archived=false, saa en gammel gruppe gir en QR-kode som leder til ingenting. Join tupper aktiviteten, saa naar de forste er inne holder den seg selv i live. Se STRUKTUR.md.\nSi tydelig at de skal la appen ligge paa. Akt 4 avhenger av det."
+    "text": "Bli med i gruppa\n\n  \n  \n    pgpilot.app/join/voss\n    Skann, skriv navnet ditt, ferdig.\n  \n\n\nBytt QR-en hvis du velger en annen kode enn “voss”.\n\n\nFlyttet hit fra akt 1 med vilje: gruppa gir ingen mening for de har appen, og den hoerer sammen med PTT-demoen som kommer rett etterpaa.\nGRUPPA LAGES NAAR DU RIGGER, IKKE FOR. Reaperen arkiverer grupper som har vaert stille i fire timer, og join filtrerer paa archived=false, saa en gammel gruppe gir en QR-kode som leder til ingenting. Join tupper aktiviteten, saa naar de forste er inne holder den seg selv i live. Se STRUKTUR.md.\nSi tydelig at de skal la appen ligge paa. Akt 4 avhenger av det."
   },
   {
     "objectID": "himalaya/voss.html#på-startplassen-i-billing",
@@ -669,14 +669,14 @@
     "href": "himalaya/voss.html#hvor-er-vi-app",
     "title": "pgpilot og Himalaya",
     "section": "Hvor er vi APP",
-    "text": "Hvor er vi APP\n\nLive: kart, terreng, søk opp startplassen. “Billing - Bir”, 2428 moh.\n\n\nLiten ting, men den viser at dette ikke er en Norge-app: den vet hvor du kan starte i Himachal Pradesh."
+    "text": "Hvor er vi APP\n\n  \n  \n    Billing - Bir2428 moh\n    Startplassen ligger i basen. pgpilot vet hvor du kan starte i\n    Himachal Pradesh, ikke bare i Norge.\n  \n\n\nBildet er den ekte flighten fra 17. oktober 2024, hentet fra pgpilot.app.\nLive-versjonen: sok opp Billing i appen og vis at den er der, med hoyden. Liten ting, men den viser at dette ikke er en Norge-app."
   },
   {
     "objectID": "himalaya/voss.html#koble-på-varioen-app",
     "href": "himalaya/voss.html#koble-på-varioen-app",
     "title": "pgpilot og Himalaya",
     "section": "Koble på varioen APP",
-    "text": "Koble på varioen APP\n\nLive: BLE-vario, eller barometeret i telefonen. Må være ekte telefon, BLE er låst bak isNative()."
+    "text": "Koble på varioen APP\n\nSkjermdump må tas på TELEFONEN. Webversjonen har ingen hardware-seksjon i det hele tatt: BLE er låst bak isNative(), så menyen viser den ikke.\n\n\nJeg forsokte aa hente denne fra webversjonen, men den finnes ikke der. Menyen i nettleseren har Navigation, Voice, Sounds, Map, Battery, Pages, Units, Pilot profile, Buddies, Ground contacts, Connected services og Preflight checks - og ingen hardware-seksjon, fordi BLE-koden er native-only.\nTa den paa telefonen, med varioen tilkoblet."
   },
   {
     "objectID": "himalaya/voss.html#prat-sammen-app",
@@ -697,7 +697,7 @@
     "href": "himalaya/voss.html#hvorfor-bir",
     "title": "pgpilot og Himalaya",
     "section": "Hvorfor Bir?",
-    "text": "Hvorfor Bir?\n\nHent fra slide 47 i India-decket.\n\n\nSesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400. Snakkes over mens kartet star."
+    "text": "Hvorfor Bir?\n\n\nGeita er med vilje. I Loen-decket er “Why Bir?” en oppbygging over slide 47, 49 og 50 med akkurat dette bildet, saa dette ER svaret ditt paa sporsmaalet.\nVil du ha hele oppbyggingen: slide 49 legger til img/cbb1a7ce.jpg ved siden av.\nSnakk over den: sesong i oktober og november, fjellkjede som ikke tar slutt, startplass paa 2400.\n\n\nSesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400. Snakkes over mens kartet star."
   },
   {
     "objectID": "himalaya/voss.html#vi-tar-av",
@@ -852,5 +852,12 @@
     "title": "pgpilot og Himalaya",
     "section": "APP Og sånn ser det ut",
     "text": "APP Og sånn ser det ut\n\nLive på speilet telefon: du installerer selv mens du snakker. Si tallet høyt.\n\n\nDette er beviset, ikke pastanden. Du installerer live mens de ser paa, og sier hvor lang tid det tok.\nHvis speilingen ryker: hopp over dette og la QR-sliden staa. Salen installerer uansett."
+  },
+  {
+    "objectID": "himalaya/voss.html#og-sånn-ser-det-ut-app",
+    "href": "himalaya/voss.html#og-sånn-ser-det-ut-app",
+    "title": "pgpilot og Himalaya",
+    "section": "Og sånn ser det ut APP",
+    "text": "Og sånn ser det ut APP\n\n\nBildet ligger her som sikkerhetsnett. Planen er at du hopper INN i appen paa den speilede telefonen og viser det ekte, men hvis speilingen ryker har du dette."
   }
 ]

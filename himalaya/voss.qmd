@@ -40,7 +40,7 @@ format:
   <img class="hero-l" src="img/2912d2b9.jpg" alt="">
   <img class="hero-r" src="img/16435d6d.jpg" alt="">
   <div class="hero-text">
-    <p class="hero-kicker">Sekken er pakka igjen</p>
+    <p class="hero-kicker">pgpilot og India</p>
     <p class="hero-title">Bli med på turen</p>
   </div>
 </div>
@@ -140,18 +140,15 @@ Nettleserveien er redningen for alle som ikke gidder aa installere noe, og for
 de som har fullt lager paa telefonen.
 :::
 
-## [APP]{.where .where-app} Og sånn ser det ut
+## Og sånn ser det ut [APP]{.where .where-app}
 
-::: {.todo}
-Live på speilet telefon: du installerer selv mens du snakker. Si tallet høyt.
-:::
+```{=html}
+<img class="shot-big" src="img/app-instrument.jpg" alt="pgpilot i lufta">
+```
 
 ::: {.notes}
-Dette er beviset, ikke pastanden. Du installerer live mens de ser paa, og sier
-hvor lang tid det tok.
-
-Hvis speilingen ryker: hopp over dette og la QR-sliden staa. Salen installerer
-uansett.
+Bildet ligger her som sikkerhetsnett. Planen er at du hopper INN i appen paa den
+speilede telefonen og viser det ekte, men hvis speilingen ryker har du dette.
 :::
 
 # På startplassen i Billing {.act-divider}
@@ -169,27 +166,54 @@ Hele denne akten er live app. Decket er bare hvilepute mellom punktene.
 
 ## Hvor er vi [APP]{.where .where-app}
 
-::: {.todo}
-Live: kart, terreng, søk opp startplassen. "Billing - Bir", 2428 moh.
-:::
+```{=html}
+<div class="two-up">
+  <img src="img/app-flight-bir.jpg" alt="Flighten fra Billing i pgpilot">
+  <div class="two-up-note">
+    <p><strong>Billing - Bir</strong><br>2428 moh</p>
+    <p>Startplassen ligger i basen. pgpilot vet hvor du kan starte i
+    Himachal Pradesh, ikke bare i Norge.</p>
+  </div>
+</div>
+```
 
 ::: {.notes}
-Liten ting, men den viser at dette ikke er en Norge-app: den vet hvor du kan
-starte i Himachal Pradesh.
+Bildet er den ekte flighten fra 17. oktober 2024, hentet fra pgpilot.app.
+
+Live-versjonen: sok opp Billing i appen og vis at den er der, med hoyden.
+Liten ting, men den viser at dette ikke er en Norge-app.
 :::
 
 ## Koble på varioen [APP]{.where .where-app}
 
 ::: {.todo}
-Live: BLE-vario, eller barometeret i telefonen. Må være ekte telefon,
-BLE er låst bak isNative().
+Skjermdump må tas på TELEFONEN. Webversjonen har ingen hardware-seksjon
+i det hele tatt: BLE er låst bak isNative(), så menyen viser den ikke.
+:::
+
+::: {.notes}
+Jeg forsokte aa hente denne fra webversjonen, men den finnes ikke der. Menyen i
+nettleseren har Navigation, Voice, Sounds, Map, Battery, Pages, Units, Pilot
+profile, Buddies, Ground contacts, Connected services og Preflight checks - og
+ingen hardware-seksjon, fordi BLE-koden er native-only.
+
+Ta den paa telefonen, med varioen tilkoblet.
 :::
 
 ## Bli med i gruppa
 
+```{=html}
+<div class="joinbox">
+  <img src="img/qr-join-voss.png" alt="">
+  <div>
+    <p class="join-url">pgpilot.app/join/<strong>voss</strong></p>
+    <p class="join-sub">Skann, skriv navnet ditt, ferdig.</p>
+  </div>
+</div>
+```
+
 ::: {.todo}
-QR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå.
-Lages først når du rigger, se notatene.
+Bytt QR-en hvis du velger en annen kode enn "voss".
 :::
 
 ::: {.notes}
@@ -230,8 +254,18 @@ seg.
 
 ## Hvorfor Bir?
 
-::: {.todo}
-Hent fra slide 47 i India-decket.
+```{=html}
+<img class="shot-big" src="img/6dfe3650.jpg" alt="">
+```
+
+::: {.notes}
+Geita er med vilje. I Loen-decket er "Why Bir?" en oppbygging over slide 47, 49
+og 50 med akkurat dette bildet, saa dette ER svaret ditt paa sporsmaalet.
+
+Vil du ha hele oppbyggingen: slide 49 legger til img/cbb1a7ce.jpg ved siden av.
+
+Snakk over den: sesong i oktober og november, fjellkjede som ikke tar slutt,
+startplass paa 2400.
 :::
 
 ::: {.notes}
