@@ -655,7 +655,7 @@
     "href": "himalaya/voss.html#bli-med-i-gruppa",
     "title": "pgpilot og Himalaya",
     "section": "Bli med i gruppa",
-    "text": "Bli med i gruppa\n\n  \n  \n    pgpilot.app/join/voss\n    Skann, skriv navnet ditt, ferdig.\n  \n\n\nBytt QR-en hvis du velger en annen kode enn “voss”.\n\n\nFlyttet hit fra akt 1 med vilje: gruppa gir ingen mening for de har appen, og den hoerer sammen med PTT-demoen som kommer rett etterpaa.\nGRUPPA LAGES NAAR DU RIGGER, IKKE FOR. Reaperen arkiverer grupper som har vaert stille i fire timer, og join filtrerer paa archived=false, saa en gammel gruppe gir en QR-kode som leder til ingenting. Join tupper aktiviteten, saa naar de forste er inne holder den seg selv i live. Se STRUKTUR.md.\nSi tydelig at de skal la appen ligge paa. Akt 4 avhenger av det."
+    "text": "Bli med i gruppa\n\n  \n  \n    pgpilot.app/join/voss\n    Skann, skriv navnet ditt, ferdig.\n  \n\n\nFlyttet hit fra akt 1 med vilje: gruppa gir ingen mening for de har appen, og den hoerer sammen med PTT-demoen som kommer rett etterpaa.\nGRUPPA LAGES NAAR DU RIGGER, IKKE FOR. Reaperen arkiverer grupper som har vaert stille i fire timer, og join filtrerer paa archived=false, saa en gammel gruppe gir en QR-kode som leder til ingenting. Join tupper aktiviteten, saa naar de forste er inne holder den seg selv i live. Se STRUKTUR.md.\nSi tydelig at de skal la appen ligge paa. Akt 4 avhenger av det."
   },
   {
     "objectID": "himalaya/voss.html#på-startplassen-i-billing",
@@ -669,7 +669,7 @@
     "href": "himalaya/voss.html#hvor-er-vi-app",
     "title": "pgpilot og Himalaya",
     "section": "Hvor er vi APP",
-    "text": "Hvor er vi APP\n\n\nDette er appen som staar paa startplassen i Billing, 2424 moh, hentet fra pgpilot.app.\nAlt er ekte: terrenget, hoydekotene, stedsnavnene nedover mot Bir og Gunehar, og luftrommet i oransje og gult. Panelene rundt er instrumentet slik det ser ut i lufta.\nIkke snakk om startplassdatabasen. Bare la kartet staa og fortell hvor vi er."
+    "text": "Hvor er vi APP\n\n\nDette er appen som staar paa startplassen i Billing, 2424 moh, hentet fra pgpilot.app.\nAlt er ekte: terrenget, hoydekotene, stedsnavnene nedover mot Bir og Gunehar, og luftrommet i oransje og gult. Panelene rundt er instrumentet slik det ser ut i lufta.\nZoomet to hakk ut, saa du ser dalen og fjellkjeden bak, ikke bare et utsnitt.\nGlidekjeglene er synlige: L/D 6, 8 og 10 som stiplede linjer. De sier hvor langt du rekker, og de er en gratis forsmak paa akt 3 klipp 4.\nTermikk-overlegget (KK7) er paa, men det tegner tynt akkurat her. Det er et globalt kart, saa dataene finnes, men Bir er ikke Alpene.\nIkke snakk om startplassdatabasen. Bare la kartet staa og fortell hvor vi er."
   },
   {
     "objectID": "himalaya/voss.html#koble-på-varioen-app",
@@ -711,7 +711,7 @@
     "href": "himalaya/voss.html#start-fra-billing-klipp",
     "title": "pgpilot og Himalaya",
     "section": "1. Start fra Billing KLIPP",
-    "text": "1. Start fra Billing KLIPP\n\n30 sek — soaring på frontryggen\n\n\nHer staar vi. Terrassene under, fjellet som fortsetter bakover."
+    "text": "1. Start fra Billing KLIPP\n\nKlipp: selve starten, en som tar av\n\n\nHer staar vi. Terrassene under, fjellet som fortsetter bakover."
   },
   {
     "objectID": "himalaya/voss.html#varioen-klipp",
@@ -724,8 +724,8 @@
     "objectID": "himalaya/voss.html#termikkboblen-klipp",
     "href": "himalaya/voss.html#termikkboblen-klipp",
     "title": "pgpilot og Himalaya",
-    "section": "3. Termikkboblen KLIPP",
-    "text": "3. Termikkboblen KLIPP\n\n35 sek — boblen tegnes opp mens vi flyr\n\n\nDen mest overbevisende enkeltbiten. Appen finner hvor det stiger mens du flyr, og husker det.\nDette klippet og det neste er de to som selger appen."
+    "section": "2. Termikkboblen KLIPP",
+    "text": "2. Termikkboblen KLIPP\n\nKlipp: en boble der Thermal Overlay treffer. Vario, boble og vindpil i ett.\n\n\nDen mest overbevisende enkeltbiten, og de tre tingene hoerer sammen i samme oyeblikk: varioen piper, appen tegner opp bobla, og vindpila strammer seg mens du sirkler.\nSi det som ett poeng: den vet ikke vinden naar du tar av. Den laerer den av sirklene dine, og den husker hvor det steg.\nLyd paa dette klippet."
   },
   {
     "objectID": "himalaya/voss.html#vindpila-klipp",
@@ -745,8 +745,8 @@
     "objectID": "himalaya/voss.html#hvor-langt-ned-er-det-til-noe-flatt-klipp",
     "href": "himalaya/voss.html#hvor-langt-ned-er-det-til-noe-flatt-klipp",
     "title": "pgpilot og Himalaya",
-    "section": "6. Hvor langt ned er det til noe flatt? KLIPP",
-    "text": "6. Hvor langt ned er det til noe flatt? KLIPP\n\n35 sek — glidetall og rekkevidde over terrenget\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
+    "section": "4. Hvor langt ned er det til noe flatt? KLIPP",
+    "text": "4. Hvor langt ned er det til noe flatt? KLIPP\n\nKlipp: glidetall og rekkevidde over terrenget\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
   },
   {
     "objectID": "himalaya/voss.html#innover-i-fjellene",
@@ -859,5 +859,12 @@
     "title": "pgpilot og Himalaya",
     "section": "Og sånn ser det ut APP",
     "text": "Og sånn ser det ut APP\n\n\nBildet ligger her som sikkerhetsnett. Planen er at du hopper INN i appen paa den speilede telefonen og viser det ekte, men hvis speilingen ryker har du dette."
+  },
+  {
+    "objectID": "himalaya/voss.html#sideview-klipp",
+    "href": "himalaya/voss.html#sideview-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "3. Sideview KLIPP",
+    "text": "3. Sideview KLIPP\n\nKlipp: sideview mens hoyden bygger seg\n\n\n4677 meter paa det hoyeste. Der oppe er det kaldt og tynt."
   }
 ]

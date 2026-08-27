@@ -140,17 +140,6 @@ Nettleserveien er redningen for alle som ikke gidder aa installere noe, og for
 de som har fullt lager paa telefonen.
 :::
 
-## Og sånn ser det ut [APP]{.where .where-app}
-
-```{=html}
-<img class="shot-big" src="img/app-instrument.jpg" alt="pgpilot i lufta">
-```
-
-::: {.notes}
-Bildet ligger her som sikkerhetsnett. Planen er at du hopper INN i appen paa den
-speilede telefonen og viser det ekte, men hvis speilingen ryker har du dette.
-:::
-
 # På startplassen i Billing {.act-divider}
 
 [Akt 2]{.act-num}
@@ -177,6 +166,14 @@ pgpilot.app.
 Alt er ekte: terrenget, hoydekotene, stedsnavnene nedover mot Bir og Gunehar,
 og luftrommet i oransje og gult. Panelene rundt er instrumentet slik det ser ut
 i lufta.
+
+Zoomet to hakk ut, saa du ser dalen og fjellkjeden bak, ikke bare et utsnitt.
+
+Glidekjeglene er synlige: L/D 6, 8 og 10 som stiplede linjer. De sier hvor langt
+du rekker, og de er en gratis forsmak paa akt 3 klipp 4.
+
+Termikk-overlegget (KK7) er paa, men det tegner tynt akkurat her. Det er et
+globalt kart, saa dataene finnes, men Bir er ikke Alpene.
 
 Ikke snakk om startplassdatabasen. Bare la kartet staa og fortell hvor vi er.
 :::
@@ -208,10 +205,6 @@ Ta den paa telefonen, med varioen tilkoblet.
   </div>
 </div>
 ```
-
-::: {.todo}
-Bytt QR-en hvis du velger en annen kode enn "voss".
-:::
 
 ::: {.notes}
 Flyttet hit fra akt 1 med vilje: gruppa gir ingen mening for de har appen, og
@@ -293,62 +286,44 @@ sier, ikke omvendt.
 ## 1. Start fra Billing [KLIPP]{.where .where-clip}
 
 ::: {.clip-slot}
-30 sek — soaring på frontryggen
+Klipp: selve starten, en som tar av
 :::
 
 ::: {.notes}
 Her staar vi. Terrassene under, fjellet som fortsetter bakover.
 :::
 
-## 2. Varioen [KLIPP]{.where .where-clip}
+## 2. Termikkboblen [KLIPP]{.where .where-clip}
 
 ::: {.clip-slot}
-25 sek — varioen som piper i en boble. LYD PÅ.
+Klipp: en boble der Thermal Overlay treffer. Vario, boble og vindpil i ett.
 :::
 
 ::: {.notes}
-Dette er hele instrumentet. Det du horer er regnet ut fra trykk, ikke fra GPS.
+Den mest overbevisende enkeltbiten, og de tre tingene hoerer sammen i samme
+oyeblikk: varioen piper, appen tegner opp bobla, og vindpila strammer seg mens
+du sirkler.
 
-Dette ene klippet skal IKKE vaere muted.
+Si det som ett poeng: den vet ikke vinden naar du tar av. Den laerer den av
+sirklene dine, og den husker hvor det steg.
+
+Lyd paa dette klippet.
 :::
 
-## 3. Termikkboblen [KLIPP]{.where .where-clip}
+## 3. Sideview [KLIPP]{.where .where-clip}
 
 ::: {.clip-slot}
-35 sek — boblen tegnes opp mens vi flyr
+Klipp: sideview mens hoyden bygger seg
 :::
 
 ::: {.notes}
-Den mest overbevisende enkeltbiten. Appen finner hvor det stiger mens du flyr,
-og husker det.
-
-Dette klippet og det neste er de to som selger appen.
+4677 meter paa det hoyeste. Der oppe er det kaldt og tynt.
 :::
 
-## 4. Vindpila [KLIPP]{.where .where-clip}
+## 4. Hvor langt ned er det til noe flatt? [KLIPP]{.where .where-clip}
 
 ::: {.clip-slot}
-30 sek — sirkling, og vindestimatet som strammer seg
-:::
-
-::: {.notes}
-Den vet ikke vinden nar du tar av. Den laerer den av sirklene dine.
-:::
-
-## 5. Barogrammet [KLIPP]{.where .where-clip}
-
-::: {.clip-slot}
-25 sek — høydeprofilen som bygger seg
-:::
-
-::: {.notes}
-4677 meter pa det hoyeste. Der oppe er det kaldt og tynt.
-:::
-
-## 6. Hvor langt ned er det til noe flatt? [KLIPP]{.where .where-clip}
-
-::: {.clip-slot}
-35 sek — glidetall og rekkevidde over terrenget
+Klipp: glidetall og rekkevidde over terrenget
 :::
 
 ::: {.notes}
