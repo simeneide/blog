@@ -26,9 +26,10 @@ format:
     controls: true
     progress: true
     hash: true
+    navigation-mode: linear
 ---
 
-## Krok, og "hvor er India?" {.act-divider}
+# Krok, og "hvor er India?" {.act-divider}
 
 [Akt 0]{.act-num}
 
@@ -67,7 +68,7 @@ Billig effekt, funker hver gang, fordi den gjor avstanden fysisk i stedet for et
 tall. Landingspunktet for zoomen er startplassen, og det er der akt 2 begynner.
 :::
 
-## Bli med på turen {.act-divider}
+# Bli med på turen {.act-divider}
 
 [Akt 1]{.act-num}
 
@@ -116,7 +117,7 @@ stille i fire timer, og join filtrerer pa archived=false. Se STRUKTUR.md.
 Si tydelig at de skal la appen ligge pa. Akt 2 og akt 4 avhenger av det.
 :::
 
-## På startplassen i Billing {.act-divider}
+# På startplassen i Billing {.act-divider}
 
 [Akt 2]{.act-num}
 
@@ -179,7 +180,7 @@ Sesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400.
 Snakkes over mens kartet star.
 :::
 
-## Vi tar av {.act-divider}
+# Vi tar av {.act-divider}
 
 [Akt 3]{.act-num}
 
@@ -265,7 +266,7 @@ Dette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og
 ga til akt 4 uten a svare. Det er der historien snur.
 :::
 
-## Innover i fjellene {.act-divider}
+# Innover i fjellene {.act-divider}
 
 [Akt 4]{.act-num}
 
@@ -324,7 +325,7 @@ Samme mekanisme som holdt oss sammen over ryggen, bare med bedre dekning.
 Dette er det eneste app-innhoppet i akt 4. Alt-tab, vis, alt-tab tilbake.
 :::
 
-## Landing og hjem {.act-divider}
+# Landing og hjem {.act-divider}
 
 [Akt 5]{.act-num}
 
@@ -352,7 +353,7 @@ Beste retensjonsmekanikken du har, og et Voss-publikum er nøyaktig folk som vil
 krangle om dette.
 :::
 
-## Bli med i 2026 {.act-divider}
+# Bli med i 2026 {.act-divider}
 
 [Akt 6]{.act-num}
 
