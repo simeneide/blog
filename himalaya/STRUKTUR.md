@@ -55,7 +55,7 @@ sensorene i telefonen, kartet i minnet, sporet, og sambandet med de du flyr med.
 | 0 | Krok + "hvor er India?" | 3 | deck | - |
 | 1 | **Bli med på turen** | 5 | deck → **app** | gjestepålogging, `/join`, presence |
 | 2 | **På startplassen** | 10 | **app, live** | startplassbase, BLE-vario, PTT, task-push |
-| 3 | **Vi tar av** | 14 | deck, **video** | replay, vario, termikk, sirkling, vind, barogram |
+| 3 | **Vi tar av** | 14 | deck, **korte klipp** | replay, vario, termikk, sirkling, vind, barogram |
 | 4 | **Innover i fjellene** | 12 | deck, med ett app-innhopp | offline, VHF, FLARM, Meshtastic, InReach |
 | 5 | **Landing og hjem** | 6 | deck | IGC, XContest, feed, AreaContest |
 | 6 | Bli med i 2026 | 3 | deck | - |
@@ -75,11 +75,35 @@ og projektoren bruker gjerne ti sekunder på å synke om igjen hver gang.
 Gjør dette i stedet: **én kabel fra maskina til projektoren, telefonen speilet
 inn i et vindu på maskina, og alt-tab mellom deck og telefon.**
 
-| Oppsett | Verktøy | Merknad |
-|---|---|---|
-| Android | **`scrcpy`** | USB eller `scrcpy --tcpip`. Lav latens, gratis, vindu du kan gjøre fullskjerm. Det klart beste alternativet. |
-| iPhone + Mac | **QuickTime Player** | File → New Movie Recording → velg iPhone som kilde. Kablet, ingen installasjon. |
-| iPhone + Linux | `uxplay` (AirPlay-mottaker) | Over wifi, så mer skjørt i et ukjent lokale. Test på stedet. |
+Du har Android, så det er **`scrcpy`**. Gratis, lav latens, vanlig vindu du kan
+gjøre fullskjerm.
+
+### Kabel eller trådløst?
+
+**Ta kabelen.** Tre grunner, og den tredje er den folk glemmer:
+
+1. **Ingen nettavhengighet.** Trådløs `scrcpy` krever at telefonen og maskina er
+   på *samme* nett. Gjestewifi i et klubblokale har ofte klientisolering, som
+   blokkerer nettopp det, og du oppdager det først når du står der.
+2. **Lavere latens.** Merkbart når du drar i et kart foran folk.
+3. **Telefonen lader mens du holder foredrag.** En time med skjermen på, appen
+   i gang og speiling i tillegg spiser batteri fort. Med USB er det et ikke-tema.
+
+**Hvis du likevel vil trådløst:** ikke bruk lokalets wifi. Slå på hotspot på
+telefonen og koble maskina til den. Da er begge garantert på samme nett, du er
+uavhengig av lokalet, og maskina får internett på kjøpet.
+
+```sh
+# Trådløst, engangsoppsett med kabel i:
+adb tcpip 5555
+adb connect <telefonens-ip>:5555
+scrcpy            # kabelen kan nå tas ut
+```
+
+**Gjør dette hjemme, ikke i lokalet:** slå på USB-debugging under
+utvikleralternativer, koble til, og **huk av "tillat alltid fra denne
+maskinen"** når telefonen spør. Ellers dukker den dialogen opp på telefonen
+midt i akt 1, og du står og trykker på en telefon som er speilet på lerretet.
 
 Reveal beholder slide-posisjonen når du alt-tabber, så du mister ingenting. Og
 **`b` svartlegger decket** - fint å trykke rett før du bytter, så ser skiftet
@@ -191,11 +215,17 @@ fortsatt holder på å bli med.*
 Den lengste akten, og den skal være det. **17. oktober 2024, Bir mot
 Saurkundi.**
 
-**Dette er et skjermopptak, ikke live app.** Det er et bevisst valg og det er
-riktig valg: dette er den lengste sammenhengende bolken, den som er lettest å
-snuble i live, og den eneste der du både skal styre appen og fortelle en
-historie samtidig. Et opptak lar deg snakke fritt, pause der du vil, og aldri
-vente på at et kart laster.
+**Ikke én sammenhengende replay, men en serie korte klipp - ett per feature.**
+
+Det er den viktigste formvalget i hele akten, og grunnen er tempo. En
+sammenhengende video har sin egen klokke, og den klokka blir sjefen din: du må
+snakke i takt med den, og hvis salen stiller et spørsmål ruller den videre.
+**Med ett klipp per slide er det piltasten som bestemmer.** Du står i et
+høydepunkt så lenge det er interessant, svarer på spørsmål, og går videre når
+*du* er ferdig.
+
+Det gjør også opptaksjobben robust: blir ett klipp dårlig, tar du opp det ene på
+nytt i stedet for hele flyturen.
 
 Formuleringen som gjør poenget uten å motsi videoen du står og viser:
 
@@ -210,16 +240,25 @@ og det er verdt å si rett ut, for ingen gjetter det selv.
 vario over høyttaleranlegget er det som får en sal med paragliderpiloter til å
 kjenne det i magen. Et stumt skjermopptak er halve demoen.
 
-Stopp der historien er, og bruk pauseknappen:
+#### Klippene, i rekkefølge
 
-- Soaring på frontryggen rett etter start. Terrassene under.
-- **Termikkboblene som dukker opp** mens vi flyr. Det er det du selv trakk fram,
-  og det er den mest overbevisende enkeltbiten: appen tegner opp hvor det
-  stiger, mens du ser på.
-- Sirklingen, og hvordan **vindpila strammer seg opp** når den har nok sirkler.
-- Barogrammet som bygger seg. 4677 meter på det høyeste.
-- Glidetall og rekkevidde. *Hvor langt ned er det til noe flatt?* Det spørsmålet
-  er broen til neste akt.
+Ett klipp per slide. Regn tjue til førti sekunder hver, så er du på rundt fire
+minutter video og ti minutter prat, som er riktig fordeling.
+
+| # | Klipp | Sek | Poenget du sier over det |
+|---|---|-----|--------------------------|
+| 1 | Start fra Billing, soaring på frontryggen | 30 | Her står vi. Terrassene under, fjellet som fortsetter bakover. |
+| 2 | **Varioen som piper i en boble** | 25 | Lyd på. Dette er hele instrumentet, og det du hører er regnet ut fra trykk, ikke fra GPS. |
+| 3 | **Termikkboblen tegnes opp** | 35 | Den mest overbevisende enkeltbiten. Appen finner hvor det stiger mens du flyr, og husker det. |
+| 4 | **Sirkling, og vindpila som strammer seg** | 30 | Den vet ikke vinden når du tar av. Den lærer den av sirklene dine. |
+| 5 | Barogrammet som bygger seg | 25 | 4677 meter på det høyeste. Der oppe er det kaldt og tynt. |
+| 6 | Glidetall og rekkevidde over terrenget | 35 | *Hvor langt ned er det til noe flatt?* Broen rett inn i akt 4. |
+
+Klipp 3 og 4 er de to som selger appen. Hvis du må korte ned, ta av klipp 1 og
+5 først - de er kontekst, ikke argument.
+
+**Klipp 6 er ikke bare en feature, det er et spørsmål.** Still det, la det henge,
+og gå til neste akt uten å svare. Det er der historien snur.
 
 **Nøkternt om dataene, så du ikke lover for mye:** dag 1 er importert fra
 XContest, IGC med 10 843 punkter på 1 Hz. 2026-flighten er tatt opp med appen
@@ -227,21 +266,37 @@ og har 79 107 punkter, altså 5 Hz. Men blobben har posisjon, trykkhøyde og far
 **ikke vario- eller vindfelt**. Appen utleder stigning fra trykksporet. De to
 replayer altså omtrent like godt, forskjellen er oppløsning.
 
-#### Opptaket du må lage
+#### Opptaksjobben
 
-Dette er den eneste virkelige produksjonsjobben som gjenstår før fredag.
+Den eneste virkelige produksjonsjobben som gjenstår før fredag.
 
-- **Kilde:** telefonen, skjermopptak med lyd, i stående eller liggende alt etter
-  hvordan du vil ha det i decket. Liggende fyller lerretet best.
-- **Innhold:** demo 1 spilt av i replay, i et tempo som gir deg tid til å
-  snakke. Vurder å ta opp lengre enn du trenger og heller klippe.
-- **Klipp det ned til fire-fem minutter.** Fjorten minutter akt betyr ikke
-  fjorten minutter video: du skal pause og snakke mellom høydepunktene. Video
-  som ren bakgrunnsstrøm gjør at salen slutter å høre på deg.
-- **Legg det i decket som `<video>`**, samme mønster som Himalaya-klippene i
-  `presentasjon.qmd`. Da er det én ting som spiller av, ikke en app som kan
-  henge.
-- **Ha klippet lokalt**, ikke fra Drive. Se sjekklisten.
+**Ta ett langt opptak, klipp seks korte ut av det.** Ikke sett opp replay seks
+ganger. Kjør demo 1 én gang i ro og mak, ti-femten minutter, og gå bevisst
+innom hvert av de seks punktene over mens du tar opp. Så klipper du.
+
+- **Kilde:** telefonen, skjermopptak **med lyd**. Liggende fyller lerretet best.
+- **Vent litt på hvert punkt.** Når du treffer et høydepunkt, la det stå i ti
+  sekunder ekstra. Du vil ha luft rundt klippet når du klipper.
+- **Legg hvert klipp på sitt eget slide** som `<video>`, samme mønster som
+  Himalaya-klippene i `presentasjon.qmd`.
+
+To reveal-triks som er verdt å bruke her:
+
+- **`data-autoplay`** gjør at klippet starter av seg selv når sliden kommer opp.
+  Du slipper å sikte på en play-knapp foran salen.
+- **`loop`** gjør at det går rundt. Det er viktigere enn det høres ut: et
+  25-sekunders klipp du står på i halvannet minutt ender ellers på et frosset
+  sluttbilde. Med loop ruller det pent til du går videre.
+
+```html
+<video data-autoplay loop muted playsinline src="video/klipp-termikk.mp4"></video>
+```
+
+`muted` bare på de klippene der du skal snakke over. **Vario-klippet skal ha
+lyd**, så det ene lar du være umutet, og da må du klikke eller trykke for å
+starte det i noen nettlesere. Sjekk det i lokalet.
+
+**Ha klippene lokalt**, ikke fra Drive. Se sjekklisten.
 
 ### Akt 4: Innover i fjellene (12 min)
 
@@ -320,11 +375,12 @@ Ikke kutt i akt 1 eller akt 4. Det er de to som gjør salen til deltakere.
 
 **Denne uka**
 
-- [ ] **Lag replay-opptaket til akt 3.** Skjermopptak av demo 1, *med lyd*,
-      klippet til fire-fem minutter. Den eneste reelle produksjonsjobben igjen.
+- [ ] **Lag de seks klippene til akt 3.** Ett langt skjermopptak av demo 1 *med
+      lyd*, klippet i seks biter. Den eneste reelle produksjonsjobben igjen.
 - [ ] **Bygg zoom-klippet til akt 0**: Voss → Europa → Bir, som video, ikke live.
-- [ ] **Sett opp og test speilingen** (`scrcpy` eller QuickTime), se "Riggen".
-      Gjør dette nå, ikke i lokalet.
+- [ ] **Sett opp `scrcpy` og test speilingen over USB.** Slå på USB-debugging og
+      huk av "tillat alltid fra denne maskinen". Gjør det nå, ikke i lokalet.
+- [ ] Finn USB-kabelen som faktisk overfører data, ikke bare lader.
 
 **Dagen før**
 
