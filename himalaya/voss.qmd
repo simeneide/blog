@@ -340,7 +340,11 @@ frame gir jevn video, men soek nullstiller estimatorene, saa GLIDE 10S faller
 til "--". I et bilde om glidetall er nettopp det tallet poenget.
 
 Her staar GLIDE 10S paa 10.9, og glidestraalene L/D 6, 8 og 10 treffer bakken
-ved 2,5 km med stoppunktet markert. Glide range er satt til hoy kvalitet.
+ved 2,5 km med stoppunktet markert. Glide range staar paa hoy kvalitet.
+
+Kartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar
+plass i ramma. AA sette zoomen gjennom kartobjektet ble overstyrt av
+foelg-logikken; minus-knappen mens replayet staar paa pause er det som sitter.
 :::
 
 ::: {.notes}
