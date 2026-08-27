@@ -285,9 +285,9 @@ sier, ikke omvendt.
 
 ## 1. Start fra Billing [KLIPP]{.where .where-clip}
 
-::: {.clip-slot}
-Klipp: selve starten, en som tar av
-:::
+```{=html}
+<img class="clip" src="img/app-start.jpg" alt="Start fra Billing">
+```
 
 ::: {.notes}
 Her staar vi. Terrassene under, fjellet som fortsetter bakover.
@@ -295,9 +295,11 @@ Her staar vi. Terrassene under, fjellet som fortsetter bakover.
 
 ## 2. Termikkboblen [KLIPP]{.where .where-clip}
 
-::: {.clip-slot}
-Klipp: en boble der Thermal Overlay treffer. Vario, boble og vindpil i ett.
-:::
+```{=html}
+<video class="clip" src="voss-video/klipp-termikk.mp4"
+       poster="img/poster-termikk.jpg"
+       data-autoplay loop muted playsinline></video>
+```
 
 ::: {.notes}
 Den mest overbevisende enkeltbiten, og de tre tingene hoerer sammen i samme
@@ -312,9 +314,11 @@ Lyd paa dette klippet.
 
 ## 3. Sideview [KLIPP]{.where .where-clip}
 
-::: {.clip-slot}
-Klipp: sideview mens hoyden bygger seg
-:::
+```{=html}
+<video class="clip" src="voss-video/klipp-sideview.mp4"
+       poster="img/poster-sideview.jpg"
+       data-autoplay loop muted playsinline></video>
+```
 
 ::: {.notes}
 4677 meter paa det hoyeste. Der oppe er det kaldt og tynt.
@@ -322,9 +326,11 @@ Klipp: sideview mens hoyden bygger seg
 
 ## 4. Hvor langt ned er det til noe flatt? [KLIPP]{.where .where-clip}
 
-::: {.clip-slot}
-Klipp: glidetall og rekkevidde over terrenget
-:::
+```{=html}
+<video class="clip" src="voss-video/klipp-glide.mp4"
+       poster="img/poster-glide.jpg"
+       data-autoplay loop muted playsinline></video>
+```
 
 ::: {.notes}
 Dette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og

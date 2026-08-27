@@ -347,3 +347,15 @@
   opacity: 0.8;
   font-style: italic;
 }
+
+/* ---- klipp fra appen: portrett, staar midt paa sliden ---- */
+
+.reveal .clip {
+  display: block;
+  margin: 0 auto;
+  height: 600px;
+  width: auto;
+  border-radius: 18px;
+  border: 2px solid #222;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
