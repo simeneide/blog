@@ -308,7 +308,7 @@ staaende mens du snakker.
 ## Vi flyr [KLIPP]{.where .where-clip}
 
 ```{=html}
-<img class="fullbleed" src="img/171722e4.jpg" alt="">
+<img class="fullbleed" src="img/9318f2ed.jpg" alt="">
 ```
 
 ::: {.notes}
