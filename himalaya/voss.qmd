@@ -12,8 +12,11 @@ author: "Simen Eide"
 lang: no
 comments: false
 html-math-method: plain
+title-slide-attributes:
+  data-visibility: hidden
 resources:
-  - video/
+  - voss-video/
+  - img/poster-*.jpg
 format:
   revealjs:
     theme: default
@@ -21,6 +24,7 @@ format:
     slide-number: true
     width: 1280
     height: 720
+    margin: 0
     transition: fade
     auto-stretch: false
     controls: true
@@ -29,92 +33,125 @@ format:
     navigation-mode: linear
 ---
 
-# Krok, og "hvor er India?" {.act-divider}
+# Bli med på turen {.act-divider .hero-slide}
 
-[Akt 0]{.act-num}
-
-[3 min · DECK]{.act-meta}
-
-::: {.notes}
-Video i fullskjerm, uten tekst, uten deg. Ikke si noe. Sa tittel.
-
-Hensikten er a kjope deg retten til a be om noe i akt 1. En
-installasjonsoppfordring som det forste du sier er et krav. Den samme
-oppfordringen etter nitti sekunder Himalaya er en invitasjon.
-:::
-
-##
-
-::: {.clip-slot}
-Åpningsvideo — klipp fra slide 48 eller 09 i India-decket
-:::
+```{=html}
+<div class="hero">
+  <img class="hero-l" src="img/2912d2b9.jpg" alt="">
+  <img class="hero-r" src="img/16435d6d.jpg" alt="">
+  <div class="hero-text">
+    <p class="hero-kicker">Sekken er pakka igjen</p>
+    <p class="hero-title">Bli med på turen</p>
+  </div>
+</div>
+```
 
 ::: {.notes}
-La den ga. Ikke snakk over den.
+Samme apningsbilde som Loen-decket, sa de to henger sammen.
+
+Ikke snakk lenge her. Bildet og setningen gjor jobben, sa gar du rett paa
+"hvor er India?".
 :::
 
-## Hvor er India?
+## Hvor er India? Hvor er Bir?
 
-::: {.clip-slot}
-Zoom: Voss → Europa → Bir. Bygges som klipp, ikke live kart.
-:::
-
-::: {.todo}
-Zoom-klippet må lages. Ikke live: du vil ikke vente på tiles i minutt tre.
-:::
+```{=html}
+<video class="fullbleed" src="voss-video/hvor-er-bir.mp4"
+       poster="img/poster-hvor-er-bir.jpg"
+       data-autoplay muted playsinline></video>
+```
 
 ::: {.notes}
-Billig effekt, funker hver gang, fordi den gjor avstanden fysisk i stedet for et
-tall. Landingspunktet for zoomen er startplassen, og det er der akt 2 begynner.
+Klippet gjor hele bevegelsen: starter paa Voss med ring rundt, zoomer ut til
+halve kloden, flytter seg ostover og zoomer inn paa Bir. Tolv sekunder.
+
+IKKE loop paa denne. Den skal bli staaende paa sluttbildet: Bir i ringen, med
+Himalaya rett bak og slettene under. Det bildet ER argumentet for Bir, saa la
+det staa mens du snakker.
+
+Si avstanden hoyt mens den zoomer. Effekten er at avstanden blir fysisk i
+stedet for et tall.
 :::
 
-# Bli med på turen {.act-divider}
+# Installer appen {.act-divider}
 
 [Akt 1]{.act-num}
 
 [5 min · DECK → APP]{.act-meta}
 
 ::: {.notes}
+Akten har EN jobb: at alle far appen pa telefonen. Ikke gruppa, ikke featurene.
+Bare installasjonen. Gruppa kommer i akt 2, der den hoerer hjemme sammen med
+PTT.
+
 Meld i klubbkanalen kvelden for: "last ned pgpilot for du kommer". App
 Store-nedlastingen er det eneste i hele opplegget du ikke kontrollerer.
 :::
 
-## Vi skal fly en tur i India sammen {.center}
+## Ta opp telefonen {.center}
 
-[Ta opp telefonen.]{.say}
+::: {.say}
+Vi skal fly denne turen sammen. Da trenger dere appen.
+:::
 
 ::: {.notes}
 Her bytter du til telefonen. Alt-tab. Trykk `b` forst, sa svartlegges decket og
 skiftet ser tilsiktet ut.
 :::
 
-## Installer [APP]{.where .where-app}
+## Last ned
+
+```{=html}
+<div class="install">
+  <div class="install-shot">
+    <img src="img/app-instrument.jpg" alt="pgpilot i lufta">
+  </div>
+  <div class="install-links">
+    <div class="store">
+      <img src="img/qr-play.png" alt="">
+      <div class="store-name">Android</div>
+      <div class="store-sub">Google Play</div>
+    </div>
+    <div class="store">
+      <img src="img/qr-ios.png" alt="">
+      <div class="store-name">iPhone</div>
+      <div class="store-sub">App Store</div>
+    </div>
+    <div class="store store-web">
+      <img src="img/qr-web.png" alt="">
+      <div class="store-name">Eller bare</div>
+      <div class="store-sub">pgpilot.app</div>
+    </div>
+  </div>
+</div>
+```
+
+::: {.notes}
+La denne staa lenge. Den er ikke en illustrasjon, den er en oppgave salen skal
+gjore mens du snakker.
+
+Tre veier, og den tredje er den viktigste for de som nler:
+  - Google Play
+  - App Store
+  - pgpilot.app i nettleseren: visningsnavn og ingenting mer. Ingen e-post,
+    ingen konto, ferdig paa under et halvt minutt.
+
+Nettleserveien er redningen for alle som ikke gidder aa installere noe, og for
+de som har fullt lager paa telefonen.
+:::
+
+## [APP]{.where .where-app} Og sånn ser det ut
 
 ::: {.todo}
-Live. Ingen slides her. Telefonen speilet, du installerer mens du snakker.
+Live på speilet telefon: du installerer selv mens du snakker. Si tallet høyt.
 :::
 
 ::: {.notes}
-To veier, begge nevnes:
-  - butikken, hvis de vil ha den i lomma til helgen
-  - pgpilot.app i nettleseren, ferdig pa under et halvt minutt
+Dette er beviset, ikke pastanden. Du installerer live mens de ser paa, og sier
+hvor lang tid det tok.
 
-Nettleserveien: visningsnavn og ingenting mer. Ingen e-post, ingen konto.
-
-Si tallet hoyt nar du er ferdig. Det beviser lav terskel i stedet for a pasta den.
-:::
-
-## Bli med i gruppa
-
-::: {.todo}
-QR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå.
-:::
-
-::: {.notes}
-Gruppa lages NAR DU RIGGER, ikke for. Reaperen arkiverer grupper som har vaert
-stille i fire timer, og join filtrerer pa archived=false. Se STRUKTUR.md.
-
-Si tydelig at de skal la appen ligge pa. Akt 2 og akt 4 avhenger av det.
+Hvis speilingen ryker: hopp over dette og la QR-sliden staa. Salen installerer
+uansett.
 :::
 
 # På startplassen i Billing {.act-divider}
@@ -148,6 +185,25 @@ Live: BLE-vario, eller barometeret i telefonen. Må være ekte telefon,
 BLE er låst bak isNative().
 :::
 
+## Bli med i gruppa
+
+::: {.todo}
+QR-kode til pgpilot.app/join/&lt;kode&gt;. Stor. La sliden stå.
+Lages først når du rigger, se notatene.
+:::
+
+::: {.notes}
+Flyttet hit fra akt 1 med vilje: gruppa gir ingen mening for de har appen, og
+den hoerer sammen med PTT-demoen som kommer rett etterpaa.
+
+GRUPPA LAGES NAAR DU RIGGER, IKKE FOR. Reaperen arkiverer grupper som har vaert
+stille i fire timer, og join filtrerer paa archived=false, saa en gammel gruppe
+gir en QR-kode som leder til ingenting. Join tupper aktiviteten, saa naar de
+forste er inne holder den seg selv i live. Se STRUKTUR.md.
+
+Si tydelig at de skal la appen ligge paa. Akt 4 avhenger av det.
+:::
+
 ## Prat sammen [APP]{.where .where-app}
 
 ::: {.todo}
@@ -156,6 +212,9 @@ Live: PTT i gruppa. Én frivillig trykker og snakker.
 
 ::: {.notes}
 Si eksplisitt: ALLE LYTTER, EN SNAKKER. Ikke slipp tretti mikrofoner los.
+
+Dette er oyeblikket der salen skjonner hva appen er: du sier noe, og det kommer
+ut av tretti telefoner samtidig.
 :::
 
 ## Lag tasken [APP]{.where .where-app}
