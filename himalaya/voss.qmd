@@ -670,20 +670,49 @@ krangle om dette.
 
 [3 min · DECK]{.act-meta}
 
-## {.center}
+## Oktober 2026?
 
-::: {.todo}
-Hent slide 46, 49, 50 fra India-decket.
-Slide 46 sier fortsatt "Oktober 2024?" og MÅ oppdateres.
+```{=html}
+<img class="fullbleed" src="img/b3f4fc34.jpg" style="object-position: 50% 40%" alt="">
+```
+
+::: {.notes}
+Rekrutteringssliden. I Loen-decket sto det "Oktober 2024?" - det er rettet.
+
+Her sier du hva turen krever og hva den ikke krever. Hold det kort: dette er
+ikke ekspedisjonsflyging, det er en uke med telt i selen og en fjellkjede som
+ikke tar slutt.
+:::
+
+## Hvorfor Bir?
+
+```{=html}
+<div class="two-img">
+  <img src="img/6dfe3650.jpg" alt="">
+  <img src="img/cbb1a7ce.jpg" alt="">
+</div>
+```
+
+::: {.notes}
+Tilbakekallingen. Geita sto alene i akt 2; her kommer teen ved siden av, og
+vitsen lander ferdig.
+
+Dette er samme oppbygging som slide 47, 49 og 50 i Loen-decket.
 :::
 
 ##
 
-::: {.clip-slot}
-Tandoori-videoen. Avslutt her, ikke på en punktliste.
-:::
+```{=html}
+<video class="fullbleed" src="voss-video/klipp-mat.mp4"
+       poster="img/poster-mat.jpg"
+       data-autoplay loop muted playsinline></video>
+```
 
 ::: {.notes}
-Siste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa
-telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss.
+Siste bilde. Ikke en punktliste, ikke en takk.
+
+Siste ord bor vaere en oppfordring: appen er gratis, den ligger paa telefonen
+deres naa, og du vil ha tilbakemelding fra folk som flyr paa Voss.
+
+Sa lar du maten ga mens folk reiser seg.
 :::

@@ -391,3 +391,24 @@
 .reveal table td strong {
   color: #2f6f4e;
 }
+
+/* ---- to bilder side om side, til "Hvorfor Bir?" ---- */
+
+.two-img {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.two-img img {
+  /* Bredden maa begrenses ogsaa. Med bare max-height rant landskapsbilder
+     ut over kanten paa begge sider. */
+  max-height: 520px;
+  max-width: 47%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.25);
+}
