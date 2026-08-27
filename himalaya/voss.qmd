@@ -504,6 +504,28 @@ Sammen med kartet fra startplassen i akt 2 er dette de to kartbildene som
 forklarer hele turen. Trenger ikke flere.
 :::
 
+## Hele turen
+
+```{=html}
+<video class="fullbleed" src="voss-video/bir-3d.mp4"
+       poster="img/poster-3d.jpg"
+       data-autoplay muted playsinline></video>
+```
+
+::: {.notes}
+Begge dagene i ett: ut fra Billing, ostover langs ryggen til 5516 meter, og hjem
+igjen. Dag 2 starter i noyaktig samme punkt som dag 1 slutter, saa det er én
+sammenhengende bivuakktur.
+
+Sporet er farget etter hoyde: blaatt lavt, gjennom gronn og gul, roedt paa det
+hoyeste.
+
+IKKE loop. Den skal bli staaende paa sluttbildet der hele ut-og-hjem-loekka er i
+ramma. Det bildet er turen.
+
+Rendret mot ekte hoydemodell, ikke tegnet. Si det hvis noen spor.
+:::
+
 ## Her er det ingenting
 
 ```{=html}
