@@ -4,7 +4,7 @@ Rammer: **ca. én time**, **Simen alene** (Dagfinn er ikke med). Loen-decket
 gjenbrukes ikke rett fram, det er kildebiblioteket vi plukker fra.
 
 - Loen-decket, konvertert og komplett: `presentasjon.qmd` (50 slides)
-- Voss-decket: `voss.qmd` (ikke laget ennå)
+- Voss-decket: `voss.qmd` (40 slides, bygget)
 
 ## Målet
 
