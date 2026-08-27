@@ -242,8 +242,9 @@ kjenne det i magen. Et stumt skjermopptak er halve demoen.
 
 #### Klippene, i rekkefølge
 
-Ett klipp per slide. Regn tjue til førti sekunder hver, så er du på rundt fire
-minutter video og ti minutter prat, som er riktig fordeling.
+Ett klipp per slide. Tabellen under summerer til **tre minutter video i en akt
+på fjorten**, altså elleve minutter prat. Det er riktig fordeling: klippene er
+illustrasjoner til det du sier, ikke omvendt.
 
 | # | Klipp | Sek | Poenget du sier over det |
 |---|---|-----|--------------------------|
