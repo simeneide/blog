@@ -100,22 +100,6 @@ sporsmaalet melder seg.
 ##
 
 ```{=html}
-<video class="fullbleed" src="voss-video/klipp-mat.mp4"
-       poster="img/poster-mat.jpg"
-       data-autoplay loop muted playsinline></video>
-```
-
-::: {.notes}
-Maten. Dette er livet i Bir mellom flygingene, og det hoerer sammen med
-slidet foer.
-
-La den ga mens du forteller kort om hvordan en dag der ser ut. Sa gaar du
-videre til at de skal installere appen.
-:::
-
-##
-
-```{=html}
 <video class="fullbleed" src="voss-video/klipp-backcountry.mp4"
        poster="img/poster-backcountry.jpg"
        data-autoplay loop muted playsinline></video>
@@ -126,7 +110,22 @@ Og saann ser flygingen ut. Backcountry over de snodekte ryggene, hentet fra
 Loen-decket.
 
 Ingen tekst. La det ga mens du sier én setning om hvorfor du drar tilbake.
-Sa gaar du over til at de skal ha appen.
+:::
+
+##
+
+```{=html}
+<video class="fullbleed" src="voss-video/klipp-mat.mp4"
+       poster="img/poster-mat.jpg"
+       data-autoplay loop muted playsinline></video>
+```
+
+::: {.notes}
+Maten, rett etter flygingen. Det er rekkefolgen en dag i Bir faktisk har:
+du flyr, og saa sitter du og spiser.
+
+La den ga mens du forteller kort om hvordan en dag der ser ut. Sa gaar du
+videre til at de skal installere appen.
 :::
 
 # Installer appen {.act-divider}
@@ -463,7 +462,12 @@ baerer over ryggen i India, der det ikke finnes bakkestasjoner i det hele tatt.
 ## 4. Knappen på styrelinen [KLIPP]{.where .where-clip}
 
 ```{=html}
-<img class="clip" src="img/app-hardware.png" alt="PTT-Z01 tilkoblet sammen med vario og VHF-radio">
+<div class="two-up">
+  <img src="img/app-hardware.png" alt="PTT-Z01 tilkoblet sammen med vario og VHF-radio">
+  <video class="clip-sm" src="voss-video/klipp-knapp.mp4"
+         poster="img/poster-knapp.jpg"
+         data-autoplay loop muted playsinline></video>
+</div>
 ```
 
 ::: {.notes}
@@ -782,7 +786,7 @@ krangle om dette.
 
 ```{=html}
 <img class="fullbleed" src="img/b3f4fc34.jpg" style="object-position: 50% 40%" alt="">
-<div class="sesong">Oktober og april 2026</div>
+<div class="sesong">Oktober og april</div>
 ```
 
 ::: {.notes}
