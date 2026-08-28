@@ -864,8 +864,8 @@
     "objectID": "himalaya/voss.html#sideview-klipp",
     "href": "himalaya/voss.html#sideview-klipp",
     "title": "pgpilot og Himalaya",
-    "section": "4. Sideview KLIPP",
-    "text": "4. Sideview KLIPP\n\n\nZoomet langt nok ut til at profilen gaar til 6 km. Da ser man hva appen faktisk sier: glidestraalene L/D 6, 8 og 10 treffer den stigende veggen rundt 4,5 km. Det er DEN veggen du ikke kommer over.\nStillbilde, ikke klipp. Utzoomet kart med hoydekoter rendrer for tregt til aa gi jevn video, og informasjonen her staar uansett stille.\nEllers i bildet: THM GAIN 365 m, WIND 2,9 m/s, termikkbobla, og glide range-konturene paa kartet."
+    "section": "5. Sideview KLIPP",
+    "text": "5. Sideview KLIPP\n\n\nZoomet langt nok ut til at profilen gaar til 6 km. Da ser man hva appen faktisk sier: glidestraalene L/D 6, 8 og 10 treffer den stigende veggen rundt 4,5 km. Det er DEN veggen du ikke kommer over.\nStillbilde, ikke klipp. Utzoomet kart med hoydekoter rendrer for tregt til aa gi jevn video, og informasjonen her staar uansett stille.\nEllers i bildet: THM GAIN 365 m, WIND 2,9 m/s, termikkbobla, og glide range-konturene paa kartet."
   },
   {
     "objectID": "himalaya/voss.html#vi-flyr-klipp",
@@ -878,8 +878,8 @@
     "objectID": "himalaya/voss.html#glide-range-på-kartet-klipp",
     "href": "himalaya/voss.html#glide-range-på-kartet-klipp",
     "title": "pgpilot og Himalaya",
-    "section": "5. Glide range på kartet KLIPP",
-    "text": "5. Glide range på kartet KLIPP\n\n\nGlide range-konturene er de stiplede linjene rundt piloten: gronn L/D 6, gul L/D 8, oransje L/D 10. De viser hvor langt du rekker fra der du er.\nAt de manglet foer var ikke en innstilling, men timing: useGlideRange returnerer tidlig naar terrengflisene for hele rekkevidden ikke er cachet ennaa. Opptaket venter naa til laget faktisk har data.\nGlide range staar paa HOY kvalitet her, mot lav foer. Det er derfor konturene folger rygger og renner i stedet for aa gaa i firkanter: cellene er 100 m i stedet for 1000. Glidestraalene L/D 6, 8 og 10 treffer bakken ved 2,5 km med stoppunktet markert.\nKartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar plass i ramma. AA sette zoomen gjennom kartobjektet ble overstyrt av foelg-logikken; minus-knappen mens replayet staar paa pause er det som sitter.\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
+    "section": "6. Glide range på kartet KLIPP",
+    "text": "6. Glide range på kartet KLIPP\n\n\nGlide range-konturene er de stiplede linjene rundt piloten: gronn L/D 6, gul L/D 8, oransje L/D 10. De viser hvor langt du rekker fra der du er.\nAt de manglet foer var ikke en innstilling, men timing: useGlideRange returnerer tidlig naar terrengflisene for hele rekkevidden ikke er cachet ennaa. Opptaket venter naa til laget faktisk har data.\nGlide range staar paa HOY kvalitet her, mot lav foer. Det er derfor konturene folger rygger og renner i stedet for aa gaa i firkanter: cellene er 100 m i stedet for 1000. Glidestraalene L/D 6, 8 og 10 treffer bakken ved 2,5 km med stoppunktet markert.\nKartet er zoomet to hakk ut fra der replay foelger piloten, saa rekkevidden faar plass i ramma. AA sette zoomen gjennom kartobjektet ble overstyrt av foelg-logikken; minus-knappen mens replayet staar paa pause er det som sitter.\n\n\nDette er ikke bare en feature, det er et SPORSMAL. Still det, la det henge, og ga til akt 4 uten a svare. Det er der historien snur."
   },
   {
     "objectID": "himalaya/voss.html#section-3",
@@ -992,5 +992,12 @@
     "title": "pgpilot og Himalaya",
     "section": "Så da flyr du annerledes",
     "text": "Så da flyr du annerledes\n\nKonservativt\nMed samband som virker\n\n\nLoesningen paa de tre.\nKonservativt: du gjor ikke ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben. Marginene er storre, avgjorelsene tidligere.\nSamband som virker uten nett: InReach naar det ikke er dekning i det hele tatt, satellitt, og noen hjemme som ser prikken bevege seg. Og radio i stedet for internett: VHF baerer mellom piloter naar ingenting annet gjor det.\nSa gaar du videre til neste slide og viser at det er bygget inn."
+  },
+  {
+    "objectID": "himalaya/voss.html#knappen-på-styrelinen-klipp",
+    "href": "himalaya/voss.html#knappen-på-styrelinen-klipp",
+    "title": "pgpilot og Himalaya",
+    "section": "4. Knappen på styrelinen KLIPP",
+    "text": "4. Knappen på styrelinen KLIPP\n\n\nDen lille svarte knappen i lista, PTT-Z01, sitter festet paa styrelinen, innen rekkevidde av tommelen. Det er hele poenget: hendene blir i bremsene, hanskene blir paa, og telefonen blir der den er.\nFire trykk, og det er verdt aa vise dem med haanda mens du snakker:\n\nHold inne: snakk. Slipp, og du er ferdig. Samme PTT som de nettopp provde i akt 2, bare uten aa se paa skjermen.\nDobbeltklikk: zoom inn.\nTrippelklikk: zoom ut.\nTapp, sa hold: stemmeassistenten. “Naviger til Jorgen”, “hva er vinden”.\n\nZoom er den de undervurderer i salen. I lufta er det ikke tallene du bytter, det er utsnittet: inn naar du skrur i en boble, ut naar du skal velge hvor du gaar videre. Det er den bevegelsen du gjor femti ganger paa en flytur, og det er den som ellers koster deg en hanske.\nAlle fire kan byttes om. Menyen har ogsaa: ta bilde, ta opp video, lyd av og paa, neste og forrige vendepunkt, neste og forrige side, tilbake til flyvisningen, og termikkassistent av og paa.\nTo ting som overrasker folk, si dem hvis du har tid: - Skjermen kan vaere dimmet. Holder du knappen litt lenger enn et halvt sekund vaakner skjermen OG sendingen starter, saa du trenger ikke vekke telefonen forst. - Knappen virker selv om pgpilot ikke ligger foran. Bluetooth gaar sin egen vei, saa du kan ha kart eller kamera oppe og fortsatt snakke.\nIngenting av dette finnes i nettleserversjonen. BLE-koden er laast bak isNative(), saa dette er en av de faa tingene som krever appen."
   }
 ]

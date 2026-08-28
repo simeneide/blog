@@ -435,7 +435,46 @@ Det er dette som gjor at man holder sammen i lufta. Og det er det samme som
 baerer over ryggen i India, der det ikke finnes bakkestasjoner i det hele tatt.
 :::
 
-## 4. Sideview [KLIPP]{.where .where-clip}
+## 4. Knappen på styrelinen [KLIPP]{.where .where-clip}
+
+```{=html}
+<img class="clip" src="img/app-hardware.png" alt="PTT-Z01 tilkoblet sammen med vario og VHF-radio">
+```
+
+::: {.notes}
+Den lille svarte knappen i lista, PTT-Z01, sitter festet paa styrelinen, innen
+rekkevidde av tommelen. Det er hele poenget: hendene blir i bremsene, hanskene
+blir paa, og telefonen blir der den er.
+
+Fire trykk, og det er verdt aa vise dem med haanda mens du snakker:
+
+  - **Hold inne: snakk.** Slipp, og du er ferdig. Samme PTT som de nettopp
+    provde i akt 2, bare uten aa se paa skjermen.
+  - **Dobbeltklikk: zoom inn.**
+  - **Trippelklikk: zoom ut.**
+  - **Tapp, sa hold: stemmeassistenten.** "Naviger til Jorgen", "hva er vinden".
+
+Zoom er den de undervurderer i salen. I lufta er det ikke tallene du bytter, det
+er utsnittet: inn naar du skrur i en boble, ut naar du skal velge hvor du gaar
+videre. Det er den bevegelsen du gjor femti ganger paa en flytur, og det er den
+som ellers koster deg en hanske.
+
+Alle fire kan byttes om. Menyen har ogsaa: ta bilde, ta opp video, lyd av og
+paa, neste og forrige vendepunkt, neste og forrige side, tilbake til
+flyvisningen, og termikkassistent av og paa.
+
+To ting som overrasker folk, si dem hvis du har tid:
+  - Skjermen kan vaere dimmet. Holder du knappen litt lenger enn et halvt
+    sekund vaakner skjermen OG sendingen starter, saa du trenger ikke vekke
+    telefonen forst.
+  - Knappen virker selv om pgpilot ikke ligger foran. Bluetooth gaar sin egen
+    vei, saa du kan ha kart eller kamera oppe og fortsatt snakke.
+
+Ingenting av dette finnes i nettleserversjonen. BLE-koden er laast bak
+isNative(), saa dette er en av de faa tingene som krever appen.
+:::
+
+## 5. Sideview [KLIPP]{.where .where-clip}
 
 ```{=html}
 <img class="clip" src="img/app-sideview.jpg" alt="Sideview med glidestraaler mot fjellveggen">
@@ -453,7 +492,7 @@ Ellers i bildet: THM GAIN 365 m, WIND 2,9 m/s, termikkbobla, og glide
 range-konturene paa kartet.
 :::
 
-## 5. Glide range på kartet [KLIPP]{.where .where-clip}
+## 6. Glide range på kartet [KLIPP]{.where .where-clip}
 
 ```{=html}
 <video class="clip" src="voss-video/klipp-glide.mp4"
