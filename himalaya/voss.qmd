@@ -77,6 +77,42 @@ Si avstanden hoyt mens den zoomer. Effekten er at avstanden blir fysisk i
 stedet for et tall.
 :::
 
+## Hvorfor Bir?
+
+```{=html}
+<div class="two-img">
+  <img src="img/6dfe3650.jpg" alt="">
+  <img src="img/cbb1a7ce.jpg" alt="">
+</div>
+```
+
+::: {.notes}
+Svaret paa "hvorfor akkurat Bir". Geita og teen, i den rekkefolgen, er hele
+poenget: det er ikke bare flyging, det er et sted aa vaere.
+
+Dette er samme oppbygging som slide 47, 49 og 50 i Loen-decket, bare samlet
+paa ett slide.
+
+Ligger her, rett etter at folk har sett hvor Bir er, fordi det er da
+sporsmaalet melder seg.
+:::
+
+##
+
+```{=html}
+<video class="fullbleed" src="voss-video/klipp-mat.mp4"
+       poster="img/poster-mat.jpg"
+       data-autoplay loop muted playsinline></video>
+```
+
+::: {.notes}
+Maten. Dette er livet i Bir mellom flygingene, og det hoerer sammen med
+slidet foer.
+
+La den ga mens du forteller kort om hvordan en dag der ser ut. Sa gaar du
+videre til at de skal installere appen.
+:::
+
 # Installer appen {.act-divider}
 
 [Akt 1]{.act-num}
@@ -289,27 +325,6 @@ Live: du setter ruta, den lander på deres telefon med "Load task".
 ::: {.notes}
 Det fineste oyeblikket i akten: de ser at DU gjorde noe og DERES telefon endret
 seg.
-:::
-
-## Hvorfor Bir?
-
-```{=html}
-<img class="shot-big" src="img/6dfe3650.jpg" alt="">
-```
-
-::: {.notes}
-Geita er med vilje. I Loen-decket er "Why Bir?" en oppbygging over slide 47, 49
-og 50 med akkurat dette bildet, saa dette ER svaret ditt paa sporsmaalet.
-
-Vil du ha hele oppbyggingen: slide 49 legger til img/cbb1a7ce.jpg ved siden av.
-
-Snakk over den: sesong i oktober og november, fjellkjede som ikke tar slutt,
-startplass paa 2400.
-:::
-
-::: {.notes}
-Sesong i oktober og november, fjellkjede som ikke tar slutt, startplass pa 2400.
-Snakkes over mens kartet star.
 :::
 
 # Vi tar av {.act-divider}
@@ -762,35 +777,3 @@ ikke ekspedisjonsflyging, det er en uke med telt i selen og en fjellkjede som
 ikke tar slutt.
 :::
 
-## Hvorfor Bir?
-
-```{=html}
-<div class="two-img">
-  <img src="img/6dfe3650.jpg" alt="">
-  <img src="img/cbb1a7ce.jpg" alt="">
-</div>
-```
-
-::: {.notes}
-Tilbakekallingen. Geita sto alene i akt 2; her kommer teen ved siden av, og
-vitsen lander ferdig.
-
-Dette er samme oppbygging som slide 47, 49 og 50 i Loen-decket.
-:::
-
-##
-
-```{=html}
-<video class="fullbleed" src="voss-video/klipp-mat.mp4"
-       poster="img/poster-mat.jpg"
-       data-autoplay loop muted playsinline></video>
-```
-
-::: {.notes}
-Siste bilde. Ikke en punktliste, ikke en takk.
-
-Siste ord bor vaere en oppfordring: appen er gratis, den ligger paa telefonen
-deres naa, og du vil ha tilbakemelding fra folk som flyr paa Voss.
-
-Sa lar du maten ga mens folk reiser seg.
-:::
