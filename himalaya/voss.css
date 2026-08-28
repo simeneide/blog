@@ -412,3 +412,15 @@
   border-radius: 14px;
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.25);
 }
+
+/* ---- faa ord, stort, midt paa sliden ---- */
+
+.mangler {
+  font-family: "Bevan", Georgia, serif;
+  font-size: 1.9em;
+  line-height: 2.1;
+  text-align: center;
+}
+.mangler p {
+  margin: 0;
+}

@@ -438,13 +438,19 @@ baerer over ryggen i India, der det ikke finnes bakkestasjoner i det hele tatt.
 ## 4. Sideview [KLIPP]{.where .where-clip}
 
 ```{=html}
-<video class="clip" src="voss-video/klipp-sideview.mp4"
-       poster="img/poster-sideview.jpg"
-       data-autoplay loop muted playsinline></video>
+<img class="clip" src="img/app-sideview.jpg" alt="Sideview med glidestraaler mot fjellveggen">
 ```
 
 ::: {.notes}
-4677 meter paa det hoyeste. Der oppe er det kaldt og tynt.
+Zoomet langt nok ut til at profilen gaar til 6 km. Da ser man hva appen faktisk
+sier: glidestraalene L/D 6, 8 og 10 treffer den stigende veggen rundt 4,5 km.
+Det er DEN veggen du ikke kommer over.
+
+Stillbilde, ikke klipp. Utzoomet kart med hoydekoter rendrer for tregt til aa
+gi jevn video, og informasjonen her staar uansett stille.
+
+Ellers i bildet: THM GAIN 365 m, WIND 2,9 m/s, termikkbobla, og glide
+range-konturene paa kartet.
 :::
 
 ## 5. Glide range på kartet [KLIPP]{.where .where-clip}
@@ -562,37 +568,46 @@ Naa er vi i storfjellene. Ingen vei, ingen bygd, ingen dekning.
 Overgangen til neste slide: og da endrer flygingen seg.
 :::
 
-## Floor is lava {.center}
+## Her mangler du tre ting {.center}
 
-::: {.notes}
-> Risiko snus pa hodet. Du gjor ting i lufta du ikke ville gjort om du kunne
-> landet og tatt en taxi til pubben.
+::: {.mangler}
+Internett
 
-Marginer, hoydesyke, buddysystem, mat og vann for en uke.
+Landinger
 
-Dette er bolken klubben faar mest ut av. Ta deg tid her.
+Redning
 :::
 
-## Hjemme har du alt. Her har du ingenting.
+::: {.notes}
+Den lange tabellen er ute. Tre ord er nok, og de er de tre som betyr noe.
 
-| | Voss | Bir |
-|---|:---:|:---:|
-| Startplasser | ja | **ja** |
-| Kart og terreng | ja | **ja** |
-| Vario og flightcomputer | ja | **ja** |
-| Gruppe, PTT, sporing | ja | **ja** |
-| Luftrom | ja | nei |
-| Værvarsel | ja | nei |
-| Vindstasjoner | ja | nei |
-| NOTAM | ja | nei |
+  - **Internett:** ingen varsel, ingen vindstasjoner, ingen luftromsdata, og
+    ingen som ser hvor du er.
+  - **Landinger:** ingen vei, ingen bygd, ingen flat mark. Floor is lava.
+  - **Redning:** ingen som kommer og henter deg.
+
+Si det langsomt. Dette er hele akten i tre ord.
+:::
+
+## Så da flyr du annerledes
+
+::: {.mangler}
+Konservativt
+
+Med samband som virker
+:::
 
 ::: {.notes}
-Sjekket mot prod, ikke antatt. Luftrom over Bir gir EN polygon: Delhi FIR.
-Varsel (MEPS og ICON-EU) og vindstasjoner stopper i Europa. NOTAM har 19
-europeiske nasjonale kilder.
+Loesningen paa de tre.
 
-Poenget er ikke at appen er mangelfull. Poenget er at India stripper den ned
-til kjernen, og det som staar igjen er det som baerer.
+**Konservativt:** du gjor ikke ting i lufta du ikke ville gjort om du kunne
+landet og tatt en taxi til pubben. Marginene er storre, avgjorelsene tidligere.
+
+**Samband som virker uten nett:** InReach naar det ikke er dekning i det hele
+tatt, satellitt, og noen hjemme som ser prikken bevege seg. Og radio i stedet
+for internett: VHF baerer mellom piloter naar ingenting annet gjor det.
+
+Sa gaar du videre til neste slide og viser at det er bygget inn.
 :::
 
 ## Det du har med deg

@@ -865,7 +865,7 @@
     "href": "himalaya/voss.html#sideview-klipp",
     "title": "pgpilot og Himalaya",
     "section": "4. Sideview KLIPP",
-    "text": "4. Sideview KLIPP\n\n\n4677 meter paa det hoyeste. Der oppe er det kaldt og tynt."
+    "text": "4. Sideview KLIPP\n\n\nZoomet langt nok ut til at profilen gaar til 6 km. Da ser man hva appen faktisk sier: glidestraalene L/D 6, 8 og 10 treffer den stigende veggen rundt 4,5 km. Det er DEN veggen du ikke kommer over.\nStillbilde, ikke klipp. Utzoomet kart med hoydekoter rendrer for tregt til aa gi jevn video, og informasjonen her staar uansett stille.\nEllers i bildet: THM GAIN 365 m, WIND 2,9 m/s, termikkbobla, og glide range-konturene paa kartet."
   },
   {
     "objectID": "himalaya/voss.html#vi-flyr-klipp",
@@ -978,5 +978,19 @@
     "title": "pgpilot og Himalaya",
     "section": "Planlegge flyturen APP",
     "text": "Planlegge flyturen APP\n\n\nVestlandet i appen. Alt dette er planlegging, og alt sammen funker hjemme:\n\nStartplassene er de fargede merkene med tall. Fargen sier om stedet passer i dagens vind, tallet hvor mange som har flydd der.\nLuftrommet ligger som gule linjer: Flesland TMA og Polaris CTA.\nTerreng og hoydekoter under det hele.\nVaervarsel og nedbor kan legges paa som eget lag. Zoomer du ut ser du bygene komme.\nVindstasjoner viser hva det faktisk blaaser akkurat naa, ikke hva modellen tror.\nRuter og oppgaver tegnes rett i kartet og deles til gruppa.\n\nDette er sliden der du sier at appen er en planleggingsapp foer den er et instrument. Og det er verdt aa merke seg til senere: ingenting av dette finnes over Bir. Det kommer tilbake i akt 4."
+  },
+  {
+    "objectID": "himalaya/voss.html#her-mangler-du-tre-ting",
+    "href": "himalaya/voss.html#her-mangler-du-tre-ting",
+    "title": "pgpilot og Himalaya",
+    "section": "Her mangler du tre ting",
+    "text": "Her mangler du tre ting\n\nInternett\nLandinger\nRedning\n\n\nDen lange tabellen er ute. Tre ord er nok, og de er de tre som betyr noe.\n\nInternett: ingen varsel, ingen vindstasjoner, ingen luftromsdata, og ingen som ser hvor du er.\nLandinger: ingen vei, ingen bygd, ingen flat mark. Floor is lava.\nRedning: ingen som kommer og henter deg.\n\nSi det langsomt. Dette er hele akten i tre ord."
+  },
+  {
+    "objectID": "himalaya/voss.html#så-da-flyr-du-annerledes",
+    "href": "himalaya/voss.html#så-da-flyr-du-annerledes",
+    "title": "pgpilot og Himalaya",
+    "section": "Så da flyr du annerledes",
+    "text": "Så da flyr du annerledes\n\nKonservativt\nMed samband som virker\n\n\nLoesningen paa de tre.\nKonservativt: du gjor ikke ting i lufta du ikke ville gjort om du kunne landet og tatt en taxi til pubben. Marginene er storre, avgjorelsene tidligere.\nSamband som virker uten nett: InReach naar det ikke er dekning i det hele tatt, satellitt, og noen hjemme som ser prikken bevege seg. Og radio i stedet for internett: VHF baerer mellom piloter naar ingenting annet gjor det.\nSa gaar du videre til neste slide og viser at det er bygget inn."
   }
 ]
