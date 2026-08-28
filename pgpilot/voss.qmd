@@ -139,6 +139,51 @@ Meld i klubbkanalen kvelden for: "last ned pgpilot for du kommer". App
 Store-nedlastingen er det eneste i hele opplegget du ikke kontrollerer.
 :::
 
+## Hva er pgpilot?
+
+```{=html}
+<div class="two-up" style="align-items:flex-start; gap:44px; margin-top:112px">
+  <div class="two-up-note">
+    <p><strong>Instrumentet</strong></p>
+    <p>Kart, vario, vind, luftrom og XC-poeng mens du flyr. Virker uten
+    dekning.</p>
+  </div>
+  <div class="two-up-note">
+    <p><strong>Sambandet</strong></p>
+    <p>Snakk med hele gruppa over nettet, uten rekkevidde. VHF inn i samme
+    kanal.</p>
+  </div>
+  <div class="two-up-note">
+    <p><strong>Været</strong></p>
+    <p>Vindmålere og varsel for startplassen, før du drar hjemmefra.</p>
+  </div>
+</div>
+```
+
+::: {.notes}
+Sliden vi manglet. Salen har faatt hore hvor Bir er og hvorfor Bir, men ingen
+har sagt hva appen ER for noe. Ikke last den ned uten aa svare paa det forst.
+
+Den korteste maaten aa si det paa, og den de skjonner umiddelbart:
+
+  "Det er flyinstrumentet og Zello i én app, og saa har den vaermeldingen for
+   startplassen paa kjopet."
+
+Hold det til under ett minutt. De tre kolonnene er ikke en liste du skal lese
+opp, de er tre knagger du henger én setning paa hver.
+
+  - **Instrumentet.** Det de allerede kjenner fra XCTrack og lignende. Poenget
+    du legger til er at det virker offline, for det er neste akt.
+  - **Sambandet.** Dette er det nye. Push-to-talk til hele gruppa over nettet,
+    uten rekkeviddebegrensning, rett i oret. Og har noen bare VHF, kan appen
+    bru mellom de to, saa alle er i samme samtale.
+  - **Vaeret.** Grunnen til at appen aapnes hjemme paa kjokkenet, ikke bare paa
+    startplassen. Det er den som gir daglig bruk.
+
+Ikke naevn hardware, agent eller termikkassistent her. De kommer senere, og
+lista blir doed hvis den blir lang.
+:::
+
 ## Last ned
 
 ```{=html}
