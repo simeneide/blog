@@ -543,6 +543,14 @@ baerer over ryggen i India, der det ikke finnes bakkestasjoner i det hele tatt.
   <video class="clip-sm" src="voss-video/klipp-knapp.mp4"
          poster="img/poster-knapp.jpg"
          data-autoplay loop muted playsinline></video>
+  <div class="two-up-note">
+    <ul>
+      <li>Hold for å prate</li>
+      <li>Dobbeltklikk for å zoome inn</li>
+      <li>Trippelklikk for å zoome ut</li>
+      <li>Tapp og hold for agenten</li>
+    </ul>
+  </div>
 </div>
 ```
 
@@ -850,9 +858,17 @@ Dette er grunnen til at de aapner appen igjen paa tirsdag.
 Beste retensjonsmekanikken du har, og et Voss-publikum er noyaktig folk som vil
 krangle om dette.
 
-Kartet er hentet rett fra pgpilot.app/areacontest, sentrert paa Vossevangen.
-Scoringen kjores om natta, saa dette er stillingen slik den staar naa, ikke
-sanntid. Si det hvis noen spor hvorfor kveldens tur ikke er med.
+GAA LIVE HER. Ha denne fanen aapen fra du rigger:
+
+  pgpilot.app/areacontest#map=9/60.629/6.415
+
+Den aapner seg noyaktig som bildet paa sliden, saa overgangen er usynlig.
+Trykk `b` for aa svartlegge decket, alt-tab, panorer og zoom, alt-tab tilbake.
+Er nettet daarlig blir du bare staaende paa bildet, og ingen merker noe.
+
+Bildet er den samme sida, hentet i dobbel opplosning. Scoringen kjores om
+natta, saa dette er stillingen fra i natt, ikke sanntid. Si det hvis noen spor
+hvorfor kveldens tur ikke er med.
 
 Pek paa fargene for du forklarer noe: det lilla er én pilot som eier det meste
 rundt Voss, og rundt ligger gult, gront, cyan og morkeblatt. Da har du sagt hva
