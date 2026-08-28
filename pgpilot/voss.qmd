@@ -180,6 +180,41 @@ Nettleserveien er redningen for alle som ikke gidder aa installere noe, og for
 de som har fullt lager paa telefonen.
 :::
 
+## Første gang du åpner den
+
+```{=html}
+<div class="two-up" style="justify-content:center">
+  <img src="img/app-preflight.jpg" alt="Preflight check med tillatelsene godkjent">
+  <img src="img/app-allset.png" alt="You're all set, med tilbud om omvisning i en ekte flytur">
+</div>
+```
+
+::: {.notes}
+Denne sliden staar her fordi folk stopper opp akkurat her, og en sal som
+stopper opp faar du ikke i gang igjen. Ha den oppe mens de fikler.
+
+**Steg 1, til venstre: preflight.** Appen spor om fire ting, og den forteller
+hvorfor for hver enkelt. Si det hoyt, saa slipper de aa lure:
+  - **Posisjon** for kart, spor og vindberegning.
+  - **Mikrofon** for PTT, og bare mens knappen holdes inne.
+  - **Enheter i naerheten** for aa finne varioen og knappen over Bluetooth.
+  - **Varsler** for at bakgrunnstjenesten skal overleve at skjermen slaas av.
+    Uten den doer sporingen naar telefonen sovner.
+
+Si ogsaa at data ikke selges. Det staar paa skjermen, men de tror det mer naar
+du sier det.
+
+**Steg 2, til hoyre: "See it in action".** Be dem trykke der, ikke paa Skip.
+Appen spiller av en ekte flytur og gaar gjennom instrumentene mens den ruller.
+
+Det er hele grunnen til at akten funker i et klubblokale: omvisningen trenger
+verken GPS, hoyde eller utsikt. Den kjorer paa en innspilt tur, saa tretti
+mennesker i en kjeller kan se hva appen gjor samtidig.
+
+Har noen trykket Skip, finnes den igjen i menyen. Ikke bruk tid paa det fra
+scenen, ta det med de som spor etterpaa.
+:::
+
 ## Planlegge flyturen
 
 ```{=html}
