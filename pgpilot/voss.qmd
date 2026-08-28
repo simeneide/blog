@@ -5,6 +5,9 @@ title: "pgpilot og Himalaya"
 subtitle: "Klubbkveld Voss"
 author: "Simen Eide"
 lang: no
+# Decket laa forst paa /himalaya/voss.html og URL-en rakk aa bli delt.
+aliases:
+  - /himalaya/voss.html
 comments: false
 html-math-method: plain
 title-slide-attributes:

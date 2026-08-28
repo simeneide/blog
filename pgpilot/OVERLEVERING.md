@@ -10,18 +10,18 @@ komma eller punktum.
 
 | | |
 |---|---|
-| Decket | `himalaya/voss.qmd` i dette repoet, Quarto revealjs, 41 slides |
-| Publisert | https://eide.ai/himalaya/voss.html |
-| Planen | `himalaya/STRUKTUR.md` |
+| Decket | `pgpilot/voss.qmd` i dette repoet, Quarto revealjs, 42 slides |
+| Publisert | https://eide.ai/pgpilot/voss.html |
+| Planen | `pgpilot/STRUKTUR.md` |
 | Kildebibliotek | `himalaya/presentasjon.qmd`, det gamle India-decket fra Loen, 50 slides |
 
-Bygg med `quarto render himalaya/voss.qmd`. Output havner i `docs/`, som er det
+Bygg med `quarto render pgpilot/voss.qmd`. Output havner i `docs/`, som er det
 GitHub Pages serverer. Commit og push til `main` publiserer.
 
 Forhåndsvisning lokalt:
 
     cd docs && python3 -m http.server 8791 --bind 127.0.0.1
-    # http://127.0.0.1:8791/himalaya/voss.html
+    # http://127.0.0.1:8791/pgpilot/voss.html
 
 ## Formen på foredraget
 
@@ -114,7 +114,7 @@ bare i `origin/main`**, ikke i arbeidskopien:
 
 ## CSS-regler som ikke må ryddes bort
 
-I `himalaya/voss.css`. Alle tre er der fordi noe gikk galt uten dem:
+I `pgpilot/voss.css`. Alle tre er der fordi noe gikk galt uten dem:
 
 - `:has(> .fullbleed)` med `>`. Uten pilen traff regelen hele akt-stabelen og
   gjorde alle slidene i akten svarte.

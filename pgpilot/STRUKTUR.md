@@ -458,7 +458,7 @@ Ikke kutt i akt 1 eller akt 4. Det er de to som gjør salen til deltakere.
       reserve for **din egen** maskin uansett.
 - [ ] QR-koden oppe på et slide du kan la stå. Ikke få folk til å taste URL-er.
 - [ ] Kjør decket **lokalt**, ikke fra eide.ai. Videoene ligger i full
-      oppløsning i `himalaya/video/`, så slipper du Drive-iframene.
+      oppløsning i `pgpilot/voss-video/`, så slipper du Drive-iframene.
 
 **Reserveplan**
 
