@@ -113,6 +113,22 @@ La den ga mens du forteller kort om hvordan en dag der ser ut. Sa gaar du
 videre til at de skal installere appen.
 :::
 
+##
+
+```{=html}
+<video class="fullbleed" src="voss-video/klipp-backcountry.mp4"
+       poster="img/poster-backcountry.jpg"
+       data-autoplay loop muted playsinline></video>
+```
+
+::: {.notes}
+Og saann ser flygingen ut. Backcountry over de snodekte ryggene, hentet fra
+Loen-decket.
+
+Ingen tekst. La det ga mens du sier én setning om hvorfor du drar tilbake.
+Sa gaar du over til at de skal ha appen.
+:::
+
 # Installer appen {.act-divider}
 
 [Akt 1]{.act-num}
@@ -126,17 +142,6 @@ PTT.
 
 Meld i klubbkanalen kvelden for: "last ned pgpilot for du kommer". App
 Store-nedlastingen er det eneste i hele opplegget du ikke kontrollerer.
-:::
-
-## Ta opp telefonen {.center}
-
-::: {.say}
-Vi skal fly denne turen sammen. Da trenger dere appen.
-:::
-
-::: {.notes}
-Her bytter du til telefonen. Alt-tab. Trykk `b` forst, sa svartlegges decket og
-skiftet ser tilsiktet ut.
 :::
 
 ## Last ned
@@ -627,18 +632,16 @@ Naa er vi i storfjellene. Ingen vei, ingen bygd, ingen dekning.
 Overgangen til neste slide: og da endrer flygingen seg.
 :::
 
-## Her mangler du tre ting {.center}
+## Her mangler du tre ting
 
-::: {.mangler}
-Internett
-
-Landinger
-
-Redning
+::: {.mangler .incremental}
+- Internett
+- Landinger
+- Redning
 :::
 
 ::: {.notes}
-Den lange tabellen er ute. Tre ord er nok, og de er de tre som betyr noe.
+Tre ord er nok, og de er de tre som betyr noe. La dem komme én og én.
 
   - **Internett:** ingen varsel, ingen vindstasjoner, ingen luftromsdata, og
     ingen som ser hvor du er.
@@ -775,14 +778,16 @@ krangle om dette.
 
 [3 min · DECK]{.act-meta}
 
-## Oktober 2026?
+## Sees vi?
 
 ```{=html}
 <img class="fullbleed" src="img/b3f4fc34.jpg" style="object-position: 50% 40%" alt="">
+<div class="sesong">Oktober og april 2026</div>
 ```
 
 ::: {.notes}
-Rekrutteringssliden. I Loen-decket sto det "Oktober 2024?" - det er rettet.
+Rekrutteringssliden. I Loen-decket sto det "Oktober 2024?". Sesongen er
+oktober OG april, saa begge staar naa.
 
 Her sier du hva turen krever og hva den ikke krever. Hold det kort: dette er
 ikke ekspedisjonsflyging, det er en uke med telt i selen og en fjellkjede som

@@ -816,14 +816,14 @@
     "href": "himalaya/voss.html#section-1",
     "title": "pgpilot og Himalaya",
     "section": "",
-    "text": "Og saa: sånn ser det faktisk ut derfra. Sliden foer er appens kart over Bir, denne er det samme stedet med oynene. Kart, saa virkelighet. Si det omtrent saann: “og det kartet, det ser slik ut naar du staar der.”\nTo skjermer i lufta, bygda og terrassene rett under, og Dhauladhar-ryggen som ligger der hele veien i bakgrunnen. Poenget er skalaen: det ser rolig ut, men fjellene bak er over fire tusen meter. Det er DEN veggen vi flyr langs.\nIkke dvel. Ett pust, saa videre til maskinvaren."
+    "text": "Og saann ser flygingen ut. Backcountry over de snodekte ryggene, hentet fra Loen-decket.\nIngen tekst. La det ga mens du sier én setning om hvorfor du drar tilbake. Sa gaar du over til at de skal ha appen."
   },
   {
     "objectID": "himalaya/voss.html#section-2",
     "href": "himalaya/voss.html#section-2",
     "title": "pgpilot og Himalaya",
     "section": "",
-    "text": "Og saa begynner vi aa komme opp. Her er skjermen liten og skya stor, og det er akkurat den foelelsen: du er ikke stor i dette landskapet.\nDette er det siste ekte bildet foer vi gaar tilbake i appen. Bruk det til aa si hvorfor tallene betyr noe: naar du staar her, med sky rundt og en rygg under, er det ikke tid til aa gjette hoyde eller glidetall."
+    "text": "Og saa: sånn ser det faktisk ut derfra. Sliden foer er appens kart over Bir, denne er det samme stedet med oynene. Kart, saa virkelighet. Si det omtrent saann: “og det kartet, det ser slik ut naar du staar der.”\nTo skjermer i lufta, bygda og terrassene rett under, og Dhauladhar-ryggen som ligger der hele veien i bakgrunnen. Poenget er skalaen: det ser rolig ut, men fjellene bak er over fire tusen meter. Det er DEN veggen vi flyr langs.\nIkke dvel. Ett pust, saa videre til maskinvaren."
   },
   {
     "objectID": "himalaya/voss.html#hvor-er-india-hvor-er-bir",
@@ -886,7 +886,7 @@
     "href": "himalaya/voss.html#section-3",
     "title": "pgpilot og Himalaya",
     "section": "",
-    "text": "Tandoori-videoen. Avslutt her, ikke på en punktliste.\n\n\nSiste ord bor vaere en oppfordring, ikke en takk: appen er gratis, den ligger pa telefonen deres na, og du vil ha tilbakemelding fra folk som flyr pa Voss."
+    "text": "Og saa begynner vi aa komme opp. Her er skjermen liten og skya stor, og det er akkurat den foelelsen: du er ikke stor i dette landskapet.\nDette er det siste ekte bildet foer vi gaar tilbake i appen. Bruk det til aa si hvorfor tallene betyr noe: naar du staar her, med sky rundt og en rygg under, er det ikke tid til aa gjette hoyde eller glidetall."
   },
   {
     "objectID": "himalaya/voss.html#første-flycamping",
@@ -984,7 +984,7 @@
     "href": "himalaya/voss.html#her-mangler-du-tre-ting",
     "title": "pgpilot og Himalaya",
     "section": "Her mangler du tre ting",
-    "text": "Her mangler du tre ting\n\nInternett\nLandinger\nRedning\n\n\nDen lange tabellen er ute. Tre ord er nok, og de er de tre som betyr noe.\n\nInternett: ingen varsel, ingen vindstasjoner, ingen luftromsdata, og ingen som ser hvor du er.\nLandinger: ingen vei, ingen bygd, ingen flat mark. Floor is lava.\nRedning: ingen som kommer og henter deg.\n\nSi det langsomt. Dette er hele akten i tre ord."
+    "text": "Her mangler du tre ting\n\n\nInternett\nLandinger\nRedning\n\n\n\nTre ord er nok, og de er de tre som betyr noe. La dem komme én og én.\n\nInternett: ingen varsel, ingen vindstasjoner, ingen luftromsdata, og ingen som ser hvor du er.\nLandinger: ingen vei, ingen bygd, ingen flat mark. Floor is lava.\nRedning: ingen som kommer og henter deg.\n\nSi det langsomt. Dette er hele akten i tre ord."
   },
   {
     "objectID": "himalaya/voss.html#så-da-flyr-du-annerledes",
@@ -999,5 +999,12 @@
     "title": "pgpilot og Himalaya",
     "section": "4. Knappen på styrelinen KLIPP",
     "text": "4. Knappen på styrelinen KLIPP\n\n\nDen lille svarte knappen i lista, PTT-Z01, sitter festet paa styrelinen, innen rekkevidde av tommelen. Det er hele poenget: hendene blir i bremsene, hanskene blir paa, og telefonen blir der den er.\nFire trykk, og det er verdt aa vise dem med haanda mens du snakker:\n\nHold inne: snakk. Slipp, og du er ferdig. Samme PTT som de nettopp provde i akt 2, bare uten aa se paa skjermen.\nDobbeltklikk: zoom inn.\nTrippelklikk: zoom ut.\nTapp, sa hold: stemmeassistenten. “Naviger til Jorgen”, “hva er vinden”.\n\nZoom er den de undervurderer i salen. I lufta er det ikke tallene du bytter, det er utsnittet: inn naar du skrur i en boble, ut naar du skal velge hvor du gaar videre. Det er den bevegelsen du gjor femti ganger paa en flytur, og det er den som ellers koster deg en hanske.\nAlle fire kan byttes om. Menyen har ogsaa: ta bilde, ta opp video, lyd av og paa, neste og forrige vendepunkt, neste og forrige side, tilbake til flyvisningen, og termikkassistent av og paa.\nTo ting som overrasker folk, si dem hvis du har tid: - Skjermen kan vaere dimmet. Holder du knappen litt lenger enn et halvt sekund vaakner skjermen OG sendingen starter, saa du trenger ikke vekke telefonen forst. - Knappen virker selv om pgpilot ikke ligger foran. Bluetooth gaar sin egen vei, saa du kan ha kart eller kamera oppe og fortsatt snakke.\nIngenting av dette finnes i nettleserversjonen. BLE-koden er laast bak isNative(), saa dette er en av de faa tingene som krever appen."
+  },
+  {
+    "objectID": "himalaya/voss.html#sees-vi",
+    "href": "himalaya/voss.html#sees-vi",
+    "title": "pgpilot og Himalaya",
+    "section": "Sees vi?",
+    "text": "Sees vi?\n\nOktober og april 2026\n\nRekrutteringssliden. I Loen-decket sto det “Oktober 2024?”. Sesongen er oktober OG april, saa begge staar naa.\nHer sier du hva turen krever og hva den ikke krever. Hold det kort: dette er ikke ekspedisjonsflyging, det er en uke med telt i selen og en fjellkjede som ikke tar slutt."
   }
 ]
