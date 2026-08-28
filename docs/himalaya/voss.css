@@ -424,3 +424,19 @@
 .mangler p {
   margin: 0;
 }
+
+/* Mindre klipp ved siden av et skjermbilde */
+.reveal .clip-sm {
+  height: 420px;
+  width: auto;
+  border-radius: 14px;
+  border: 2px solid #e2e2e2;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
+  display: block;
+}
+/* Punktlista skal ikke ha kuler naar den er satt i Bevan og sentrert */
+.mangler ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

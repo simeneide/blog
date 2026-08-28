@@ -306,7 +306,12 @@ Si tydelig at de skal la appen ligge paa. Akt 4 avhenger av det.
 ## Prat sammen [APP]{.where .where-app}
 
 ```{=html}
-<img class="clip" src="img/app-comms.png" alt="Communication: Local, 12 online">
+<div class="two-up">
+  <img src="img/app-comms.png" alt="Communication: Local, 12 online">
+  <video class="clip-sm" src="voss-video/klipp-talking.mp4"
+         poster="img/poster-talking.jpg"
+         data-autoplay loop muted playsinline></video>
+</div>
 ```
 
 ::: {.notes}
@@ -643,25 +648,32 @@ Den lange tabellen er ute. Tre ord er nok, og de er de tre som betyr noe.
 Si det langsomt. Dette er hele akten i tre ord.
 :::
 
-## Så da flyr du annerledes
+## Så da flyr du annerledes {.center}
 
-::: {.mangler}
-Konservativt
-
-Med samband som virker
+::: {.mangler .incremental}
+- Konservativt
+- Samband som virker
+- Satellittkommunikasjon
+- Overlevelsesutstyr for en uke
 :::
 
 ::: {.notes}
-Loesningen paa de tre.
+Loesningen paa de tre tingene som mangler. La dem komme én og én, saa henger
+salen med i stedet for aa lese framover.
 
 **Konservativt:** du gjor ikke ting i lufta du ikke ville gjort om du kunne
-landet og tatt en taxi til pubben. Marginene er storre, avgjorelsene tidligere.
+landet og tatt en taxi til pubben. Storre marginer, tidligere avgjorelser.
 
-**Samband som virker uten nett:** InReach naar det ikke er dekning i det hele
-tatt, satellitt, og noen hjemme som ser prikken bevege seg. Og radio i stedet
-for internett: VHF baerer mellom piloter naar ingenting annet gjor det.
+**Samband som virker:** radio i stedet for internett. VHF baerer mellom
+piloter naar ingenting annet gjor det.
 
-Sa gaar du videre til neste slide og viser at det er bygget inn.
+**Satellitt:** InReach naar det ikke er dekning i det hele tatt, og noen
+hjemme som ser prikken bevege seg.
+
+**Overlevelsesutstyr for en uke:** telt, sovepose, mat og vann. Du lander ikke
+og gaar hjem, du lander og blir vaerende.
+
+Sa gaar du videre og viser at det forste og andre er bygget inn i appen.
 :::
 
 ## Det du har med deg
