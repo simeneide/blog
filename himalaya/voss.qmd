@@ -212,8 +212,8 @@ finnes over Bir.** Det kommer tilbake i akt 4.
 
 ```{=html}
 <div class="two-up" style="justify-content:center">
-  <img src="img/app-bavallen-vind.jpg" alt="Vindmåleren på Bavallen med historikk og varsel">
-  <img src="img/app-bavallen-airgram.jpg" alt="Airgram for Bavallen, i morgen lørdag">
+  <img src="img/app-bavallen-vind.jpg" alt="Vindmåleren VossHPK Hangur Øst med historikk og varsel">
+  <img src="img/app-bavallen-airgram.jpg" alt="Airgram for Hangur Øst, i morgen lørdag">
 </div>
 ```
 
@@ -223,22 +223,31 @@ Ta det hjem til salen: dette er Bavallen, ikke et sted i India.
 Du trykker på startplassmerket i kartet, og du får hele stedet: 805 moh, og
 vindmåleren VossHPK Hangur Øst som står rett ved siden av.
 
-**Venstre: det som faktisk har skjedd.** Hver rute er et 15-minutters snitt,
-med kastet i parentes og pila som viser retningen. Poenget er ikke tallet nå,
-det er kurven bakover: du ser at det har dreid på og tatt seg opp utover
-formiddagen. Den blå NOW-streken skiller målingene fra varselet, og
-met.no-raden under ligger dempet ved siden av, så du ser med det samme om
-modellen traff dagen eller bommet.
+Begge bildene er tatt i dag, fredag, rett for foredraget. Tallene er ekte og
+ferske, og det er halve poenget: si det høyt.
 
-**Høyre: airgrammet for i morgen, lørdag.** De gule søylene er termikken,
-mørkere er sterkere, og toppen av søyla er så høyt du kommer. Vindpiler
-oppover i høyden, skyer og sol i radene øverst, regn som blå streker.
+**Venstre: det som faktisk har skjedd.** Hver rute er et 15-minutters snitt,
+med kastet i parentes og pila som viser retningen. Akkurat nå står det SE 124
+grader og 8.3 med kast 12.2, altså for mye for de fleste, og det er en fin ting
+å innrømme foran salen: appen forteller deg like gjerne at du skal bli hjemme.
+Den blå NOW-streken skiller målingene fra varselet, og met.no-raden under ligger
+dempet ved siden av, så du ser med det samme om modellen traff dagen eller
+bommet. Her ligger den på 7.2 mot målte 8.3, altså ganske nære.
+
+**Høyre: airgrammet for i morgen, lørdag.** Merk at overskriften sier Hangur
+Øst: du trykket deg hit fra vindmåleren, så varselet står der stasjonen står,
+et steinkast fra Bavallen. De gule søylene er termikken, mørkere er sterkere,
+og toppen av søyla er så høyt du kommer. Vindpiler oppover i høyden, skyer og
+sol i radene øverst, regn som blå streker.
 
 Les det høyt for dem, det er i morgen og de bryr seg:
-  - byge tidlig, så klarner det
-  - termikken jobber fra rundt elleve til fem
-  - opp mot 1200 meter midt på dagen
-  - svak vind, noen kast utover ettermiddagen
+  - en dråpe tidlig, så står sola på fra åtte
+  - termikken jobber fra rundt ni til ett
+  - opp mot 1300 meter når den er på sitt beste, ved ett-tida
+  - svak vind på bakken, 1 til 2 sekundmeter midt på dagen
+  - så tar den seg opp til 4 med kast 9, og det kommer en byge fra to-tida
+
+Konklusjonen du kan si rett ut: i morgen tidlig er dagen, og den er kort.
 
 Si at det er den samme knappen uansett hvor i verden du står. Det er det som
 kommer tilbake i akt 4.
@@ -390,13 +399,28 @@ ut av tretti telefoner samtidig.
 
 ## Lag tasken [APP]{.where .where-app}
 
-::: {.todo}
-Live: du setter ruta, den lander på deres telefon med "Load task".
-:::
+```{=html}
+<img class="clip" style="height:555px" src="img/app-task-voss.jpg"
+     alt="Task over Voss: Bavallen takeoff, start Storebrekkuna, mål Bjørnestigen, 95.9 km">
+```
 
 ::: {.notes}
 Det fineste oyeblikket i akten: de ser at DU gjorde noe og DERES telefon endret
-seg.
+seg. Sliden er ryggdekning, gjor det live pa telefonen.
+
+Tasken pa bildet er ekte Voss-terreng, og det er hele poenget. Pek pa navnene,
+de kjenner hvert eneste ett:
+  - TAKEOFF Bavallen
+  - START Storebrekkuna, 986 moh, sylinderen er den stiplede sirkelen
+  - GOAL Bjornestigen
+  - LANDING Rokne
+  - TASK DIST 95.9 km, og L/D 8.0 pa ruta
+
+Sylindrene og de stiplede beina tegnes rett i kartet. Sideview nederst viser
+terrengprofilen under ruta, sa de ser hva de faktisk maa over.
+
+Sa: send den til gruppa, og be dem se pa telefonen. Varselet heter "Load task".
+Vent pa lyden i salen for du gar videre, det er den du er ute etter.
 :::
 
 # Vi tar av {.act-divider}
