@@ -456,3 +456,22 @@
   color: #fff;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
 }
+
+/* ---- pgpilot-logo over sluttbildet ---- */
+
+/* Slagskygge i stedet for en boks bak, saa wordmarken ligger paa fotoet uten
+   aa dekke det. Oeverst til hoyre fordi bunnen allerede har tittelen til
+   venstre og sesongteksten sentrert. */
+.reveal .logo-mark {
+  position: absolute;
+  z-index: 2;
+  top: 38px;
+  right: 44px;
+  width: 300px;
+  height: auto;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.85));
+}

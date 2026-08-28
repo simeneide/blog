@@ -1,11 +1,6 @@
 ---
 # Klubbkveld Voss. Skjelett: aktene og de faste holdepunktene, ikke innholdet.
 # Planen som styrer dette ligger i STRUKTUR.md ved siden av.
-#
-# Fargekodingen i toppen av hvert slide sier HVOR du er:
-#   DECK    du staar i presentasjonen
-#   APP     du har alt-tabbet til telefonen (scrcpy over USB)
-#   KLIPP   forhaandsinnspilt skjermopptak spiller
 title: "pgpilot og Himalaya"
 subtitle: "Klubbkveld Voss"
 author: "Simen Eide"
@@ -132,8 +127,6 @@ videre til at de skal installere appen.
 
 [Akt 1]{.act-num}
 
-[5 min · DECK → APP]{.act-meta}
-
 ::: {.notes}
 Akten har EN jobb: at alle far appen pa telefonen. Ikke gruppa, ikke featurene.
 Bare installasjonen. Gruppa kommer i akt 2, der den hoerer hjemme sammen med
@@ -184,7 +177,7 @@ Nettleserveien er redningen for alle som ikke gidder aa installere noe, og for
 de som har fullt lager paa telefonen.
 :::
 
-## Planlegge flyturen [APP]{.where .where-app}
+## Planlegge flyturen
 
 ```{=html}
 <img class="fullbleed" src="img/app-planlegging.jpg" alt="Planlegging: startplasser, luftrom, terreng">
@@ -208,7 +201,7 @@ instrument. Og det er verdt aa merke seg til senere: **ingenting av dette
 finnes over Bir.** Det kommer tilbake i akt 4.
 :::
 
-## Vind og varsel på Bavallen [APP]{.where .where-app}
+## Vind og varsel på Bavallen
 
 ```{=html}
 <div class="two-up" style="justify-content:center">
@@ -253,7 +246,7 @@ Si at det er den samme knappen uansett hvor i verden du står. Det er det som
 kommer tilbake i akt 4.
 :::
 
-## Koble på tjenestene [APP]{.where .where-app}
+## Koble på tjenestene
 
 ```{=html}
 <img class="clip" style="height:540px" src="img/app-connected-services.jpg" alt="Connected services: Flightlog og XContest">
@@ -284,8 +277,6 @@ og gå videre.
 
 [Akt 2]{.act-num}
 
-[10 min · APP, LIVE]{.act-meta}
-
 ::: {.notes}
 Vi star pa 2428 meter. Sivilisasjonen rett nedenfor, og NETTET VIRKER. Sa her
 gjor vi alt det vanlige, det de ville gjort pa Voss en tirsdag.
@@ -293,7 +284,7 @@ gjor vi alt det vanlige, det de ville gjort pa Voss en tirsdag.
 Hele denne akten er live app. Decket er bare hvilepute mellom punktene.
 :::
 
-## Hvor er vi [APP]{.where .where-app}
+## Hvor er vi
 
 ```{=html}
 <img class="fullbleed" src="img/app-bir-replay.jpg" alt="pgpilot over Bir">
@@ -341,7 +332,7 @@ Ikke dvel. Ett pust, saa videre til maskinvaren.
      begge skjermene (y=378 og y=720) og bebyggelsen (y=1080) i ramma, og
      kutter det tomme jordet i forgrunnen i stedet. -->
 
-## Koble på varioen [APP]{.where .where-app}
+## Koble på varioen
 
 ```{=html}
 <img class="clip" src="img/app-hardware.png" alt="Hardware: vario, PTT, radio">
@@ -379,7 +370,7 @@ forste er inne holder den seg selv i live. Se STRUKTUR.md.
 Si tydelig at de skal la appen ligge paa. Akt 4 avhenger av det.
 :::
 
-## Prat sammen [APP]{.where .where-app}
+## Prat sammen
 
 ```{=html}
 <div class="two-up">
@@ -397,7 +388,7 @@ Dette er oyeblikket der salen skjonner hva appen er: du sier noe, og det kommer
 ut av tretti telefoner samtidig.
 :::
 
-## Lag tasken [APP]{.where .where-app}
+## Lag tasken
 
 ```{=html}
 <img class="clip" style="height:555px" src="img/app-task-voss.jpg"
@@ -427,8 +418,6 @@ Vent pa lyden i salen for du gar videre, det er den du er ute etter.
 
 [Akt 3]{.act-num}
 
-[14 min · DECK, KLIPP]{.act-meta}
-
 ::: {.notes}
 17. oktober 2024, Bir mot Saurkundi.
 
@@ -443,7 +432,7 @@ Tre minutter video i en akt pa fjorten. Klippene er illustrasjoner til det du
 sier, ikke omvendt.
 :::
 
-## 1. Start fra Billing [KLIPP]{.where .where-clip}
+## 1. Start fra Billing
 
 ```{=html}
 <video class="clip" src="voss-video/klipp-start.mp4"
@@ -463,7 +452,7 @@ Klippet looper ikke med vilje: lyden skal spille EN gang, saa blir bildet
 staaende mens du snakker.
 :::
 
-## Vi flyr [KLIPP]{.where .where-clip}
+## Vi flyr
 
 ```{=html}
 <img class="fullbleed" src="img/9318f2ed.jpg"
@@ -508,7 +497,7 @@ er det ikke tid til aa gjette hoyde eller glidetall.
      og lar den moerke ryggen bli staaende nederst. Skjermen (y=886) er godt
      innenfor uansett. -->
 
-## 2. Termikkboblen [KLIPP]{.where .where-clip}
+## 2. Termikkboblen
 
 ```{=html}
 <video class="clip" src="voss-video/klipp-termikk.mp4"
@@ -527,7 +516,7 @@ sirklene dine, og den husker hvor det steg.
 Lyd paa dette klippet.
 :::
 
-## 3. Du ser de andre [KLIPP]{.where .where-clip}
+## 3. Du ser de andre
 
 ```{=html}
 <video class="clip" src="voss-video/klipp-tracking.mp4"
@@ -546,7 +535,7 @@ Det er dette som gjor at man holder sammen i lufta. Og det er det samme som
 baerer over ryggen i India, der det ikke finnes bakkestasjoner i det hele tatt.
 :::
 
-## 4. Knappen på styrelinen [KLIPP]{.where .where-clip}
+## 4. Knappen på styrelinen
 
 ```{=html}
 <div class="two-up">
@@ -590,7 +579,7 @@ Ingenting av dette finnes i nettleserversjonen. BLE-koden er laast bak
 isNative(), saa dette er en av de faa tingene som krever appen.
 :::
 
-## 5. Sideview [KLIPP]{.where .where-clip}
+## 5. Sideview
 
 ```{=html}
 <img class="clip" src="img/app-sideview.jpg" alt="Sideview med glidestraaler mot fjellveggen">
@@ -608,7 +597,7 @@ Ellers i bildet: THM GAIN 365 m, WIND 2,9 m/s, termikkbobla, og glide
 range-konturene paa kartet.
 :::
 
-## 6. Glide range på kartet [KLIPP]{.where .where-clip}
+## 6. Glide range på kartet
 
 ```{=html}
 <video class="clip" src="voss-video/klipp-glide.mp4"
@@ -643,8 +632,6 @@ ga til akt 4 uten a svare. Det er der historien snur.
 
 [Akt 4]{.act-num}
 
-[12 min · DECK + ett app-innhopp]{.act-meta}
-
 ::: {.notes}
 VENDEPUNKTET. Vi passerer siste rygg. Nettet dor.
 :::
@@ -672,7 +659,7 @@ maa lades av sola.
 Bildet som viser hvilken vei vi gaar. Ikke si mer enn det.
 :::
 
-## Vi flyr innover [APP]{.where .where-app}
+## Vi flyr innover
 
 ```{=html}
 <img class="fullbleed" src="img/app-innover.jpg" alt="">
@@ -770,45 +757,46 @@ og gaar hjem, du lander og blir vaerende.
 Sa gaar du videre og viser at det forste og andre er bygget inn i appen.
 :::
 
-## Det du har med deg
+## Hva pgpilot kan hjelpe deg med
 
 ```{=html}
-<img class="clip" src="img/app-hardware.png" alt="Hardware: vario, PTT, radio">
+<div class="two-up">
+  <div class="two-up-note">
+    <ul>
+      <li>Se FLARM-buddies på kartet</li>
+      <li>Koble InReach til kartet, så andre ser deg på pgpilot</li>
+      <li>VHF direkte på mobilen</li>
+    </ul>
+  </div>
+  <img src="img/app-hardware.png" alt="Hardware: vario, PTT, radio">
+</div>
 ```
 
 ::: {.notes}
 Samme skjerm som i akt 2, med vilje. Da handlet den om aa koble paa varioen.
 Her handler den om hva som holder deg i kontakt naar det ikke finnes noe.
 
-Snakk over den, ikke les opp en liste:
-  - InReach naar det ikke er dekning i det hele tatt. Satellitt, og noen hjemme
-    som ser prikken bevege seg.
-  - VHF: batteriet varer, og radioen sender selv om alt annet er dodt.
-  - VHF-broen mikser radioprat inn i gruppa, saa de med og uten radio hoerer
-    hverandre.
-  - Ground contact. Du sier selv den er mindre nyttig, saa nevn den kort.
+De tre punktene staar paa lerretet, i denne rekkefolgen. Snakk over dem, ikke
+les dem opp:
+  - **FLARM-buddies.** Andre som ligger paa FLARM eller OGN dukker opp som
+    prikker i kartet ditt. Her hjemme er dekningen god.
+  - **InReach.** Kobler du den til, gaar posisjonen din inn i pgpilot, saa de
+    andre ser deg selv der det ikke finnes mobildekning i det hele tatt.
+  - **VHF rett i mobilen.** Batteriet varer, og radioen sender selv om alt
+    annet er dodt. VHF-broen mikser radioprat inn i gruppa, saa de med og uten
+    radio hoerer hverandre.
 
-OGN og FLARM-bakkestasjoner finnes knapt i Himalaya. Derfor er direkte
-pilot-til-pilot det som baerer der nede.
-:::
+Ground contact finnes ogsaa, men du sier selv den er mindre nyttig, saa nevn
+den bare hvis noen spor.
 
-## Dere er fortsatt i gruppa [APP]{.where .where-app}
-
-::: {.todo}
-Kort innhopp til appen: kartet med alle prikkene i rommet.
-:::
-
-::: {.notes}
-Samme mekanisme som holdt oss sammen over ryggen, bare med bedre dekning.
-
-Dette er det eneste app-innhoppet i akt 4. Alt-tab, vis, alt-tab tilbake.
+Kontrasten til Bir er poenget i akten: OGN og FLARM-bakkestasjoner finnes knapt
+i Himalaya, saa der nede baerer direkte pilot-til-pilot alt. Her hjemme kan du
+lene deg paa nettet.
 :::
 
 # Landing og hjem {.act-divider}
 
 [Akt 5]{.act-num}
-
-[6 min · DECK]{.act-meta}
 
 ::: {.notes}
 Vi lander ved teltplassen. Dag 1 lander 200 meter fra der dag 2 starter, og det
@@ -831,7 +819,7 @@ er ikke tilfeldig, det er teltet.
 La de to bildene staa uten mye prat. Det er slutten paa flygingen.
 :::
 
-## Og så, etterpå [APP]{.where .where-app}
+## Og så, etterpå
 
 ```{=html}
 <img class="fullbleed" src="img/app-flightdetails.jpg" alt="Flight Details">
@@ -861,18 +849,37 @@ Dette er grunnen til at de aapner appen igjen paa tirsdag.
 ::: {.notes}
 Beste retensjonsmekanikken du har, og et Voss-publikum er noyaktig folk som vil
 krangle om dette.
+
+Kartet er hentet rett fra pgpilot.app/areacontest, sentrert paa Vossevangen.
+Scoringen kjores om natta, saa dette er stillingen slik den staar naa, ikke
+sanntid. Si det hvis noen spor hvorfor kveldens tur ikke er med.
+
+Pek paa fargene for du forklarer noe: det lilla er én pilot som eier det meste
+rundt Voss, og rundt ligger gult, gront, cyan og morkeblatt. Da har du sagt hva
+spillet er uten aa forklare regler. Navnene er deres egne: Storebrekkuna,
+Lonahorgi, Skreieggi, Mjolfjell.
+
+Reglene, kort:
+  - Flyr du en lokke rundt et terreng, eier du det som ligger inni.
+  - Flyr du rett fram, tar du et belte paa hver side av sporet, og beltet blir
+    bredere jo lenger du toer aa dra fra startplassen.
+  - Hver gang du dekker samme bakke igjen blir kravet ditt ett hakk sterkere.
+    Den som eier en dal er altsaa den som blir ved aa fly den. Han heter Boss.
+  - De stripete feltene er to piloter helt likt, da eier ingen bakken.
+
+Det er derfor de kommer tilbake: eierskapet forvitrer ikke av seg selv, men
+noen andre kan alltid fly det fra deg.
 :::
 
 # Bli med i 2026 {.act-divider}
 
 [Akt 6]{.act-num}
 
-[3 min · DECK]{.act-meta}
-
 ## Sees vi?
 
 ```{=html}
 <img class="fullbleed" src="img/b3f4fc34.jpg" style="object-position: 50% 40%" alt="">
+<img class="logo-mark" src="img/pgpilot-wordmark.png" alt="pgpilot.app">
 <div class="sesong">Oktober og april</div>
 ```
 
