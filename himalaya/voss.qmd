@@ -144,6 +144,30 @@ Nettleserveien er redningen for alle som ikke gidder aa installere noe, og for
 de som har fullt lager paa telefonen.
 :::
 
+## Planlegge flyturen [APP]{.where .where-app}
+
+```{=html}
+<img class="fullbleed" src="img/app-planlegging.jpg" alt="Planlegging: startplasser, luftrom, terreng">
+```
+
+::: {.notes}
+Vestlandet i appen. Alt dette er planlegging, og alt sammen funker hjemme:
+
+  - **Startplassene** er de fargede merkene med tall. Fargen sier om stedet
+    passer i dagens vind, tallet hvor mange som har flydd der.
+  - **Luftrommet** ligger som gule linjer: Flesland TMA og Polaris CTA.
+  - **Terreng og hoydekoter** under det hele.
+  - **Vaervarsel og nedbor** kan legges paa som eget lag. Zoomer du ut ser du
+    bygene komme.
+  - **Vindstasjoner** viser hva det faktisk blaaser akkurat naa, ikke hva
+    modellen tror.
+  - **Ruter og oppgaver** tegnes rett i kartet og deles til gruppa.
+
+Dette er sliden der du sier at appen er en planleggingsapp foer den er et
+instrument. Og det er verdt aa merke seg til senere: **ingenting av dette
+finnes over Bir.** Det kommer tilbake i akt 4.
+:::
+
 # På startplassen i Billing {.act-divider}
 
 [Akt 2]{.act-num}
