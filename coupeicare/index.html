@@ -21,42 +21,45 @@
     line-height: 1.55;
   }
   .wrap { max-width: 880px; margin: 0 auto; padding: 40px 20px 80px; }
-  header { text-align: center; margin-bottom: 40px; }
+  header { text-align: center; margin-bottom: 36px; }
   header img { width: 220px; height: auto; }
-  h1 { font-size: 1.6rem; margin: 18px 0 8px; letter-spacing: -0.01em; }
-  .intro { color: var(--slate); max-width: 620px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 16px 0 6px; letter-spacing: -0.01em; }
+  .intro { color: var(--slate); }
   .intro a { color: var(--sky); }
   .card {
     background: #fff;
     border: 1px solid var(--border);
     border-radius: 14px;
-    padding: 28px;
-    margin-top: 28px;
+    padding: 24px 28px 28px;
+    margin-top: 24px;
   }
-  .card h2 { font-size: 1.2rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .card h2 { font-size: 1.15rem; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .card h2 .spec { font-size: 0.85rem; font-weight: 400; color: var(--slate); }
   .tag {
-    font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+    font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
     background: #fee2e2; color: #b91c1c; border-radius: 999px; padding: 3px 10px;
   }
-  .card p { margin-top: 12px; color: #334155; }
-  .card p .q { color: var(--navy); font-weight: 600; }
   .preview {
-    margin-top: 16px; border: 1px solid var(--border); border-radius: 10px;
+    margin-top: 14px; border: 1px solid var(--border); border-radius: 10px;
     background: #fff; overflow: hidden;
   }
   .preview img { display: block; width: 100%; height: auto; }
-  .downloads { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .pair figure { margin: 0; }
+  .pair figcaption { font-size: 0.8rem; color: var(--slate); margin-top: 6px; text-align: center; }
+  @media (max-width: 640px) { .pair { grid-template-columns: 1fr; } }
+  .downloads { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   .dl {
     display: inline-flex; align-items: center; gap: 8px;
-    text-decoration: none; font-weight: 600; font-size: 0.92rem;
-    border-radius: 9px; padding: 10px 16px;
+    text-decoration: none; font-weight: 600; font-size: 0.9rem;
+    border-radius: 9px; padding: 9px 15px;
   }
   .dl.primary { background: var(--sky); color: #fff; }
   .dl.secondary { border: 1.5px solid var(--border); color: var(--navy); background: #fff; }
   .dl small { font-weight: 400; opacity: 0.75; }
-  footer {
-    margin-top: 48px; text-align: center; color: var(--slate); font-size: 0.9rem;
-  }
+  .pngs { font-size: 0.82rem; color: var(--slate); width: 100%; margin-top: 2px; }
+  .pngs a { color: var(--sky); text-decoration: none; }
+  footer { margin-top: 44px; text-align: center; color: var(--slate); font-size: 0.9rem; }
   footer a { color: var(--sky); text-decoration: none; }
 </style>
 </head>
@@ -66,59 +69,47 @@
 <header>
   <img src="files/pgpilot-horizontal-sky-navy.svg" alt="pgpilot">
   <h1>Coupe Icare 2026 — trykkmateriale</h1>
-  <p class="intro">
-    Alt materiale til bestillingen hos Printfarm, samlet på én side. Hver post har
-    forhåndsvisning og trykkferdig fil (all tekst som kurver, ingen font nødvendig).
-    Spørsmål? <a href="mailto:simen@eide.ai">simen@eide.ai</a>
-  </p>
+  <p class="intro">Forhåndsvisninger og trykkferdige filer (tekst som kurver). Spørsmål: <a href="mailto:simen@eide.ai">simen@eide.ai</a></p>
 </header>
 
 <div class="card">
-  <h2>Banner, 300 × 100 cm <span class="tag">haster</span></h2>
-  <p>
-    Tekstil (Decor 205 g) og maljer i alle fire hjørner, som i tilbud Id 1948.
-    PDF-en er i full skala 1:1. Vi har ikke lagt inn utfall — si ifra om dere
-    trenger det til søm, så fikser vi det samme dag.
-    <span class="q">Kan dere bekrefte at banneret er ferdig til tirsdag 15. september?</span>
-  </p>
+  <h2>Banner <span class="spec">300 × 100 cm, tekstil</span> <span class="tag">haster</span></h2>
   <div class="preview">
     <img src="files/pgpilot-banner-B-300x100cm-horizontal-navy.png" alt="Banner 300x100 cm, liggende komposisjon på marine bakgrunn">
   </div>
   <div class="downloads">
     <a class="dl primary" href="files/pgpilot-banner-300x100cm.pdf" download>Last ned PDF <small>trykkfil, 1:1</small></a>
-    <a class="dl secondary" href="files/pgpilot-banner-B-300x100cm-horizontal-navy.png" download>PNG <small>forhåndsvisning</small></a>
+    <a class="dl secondary" href="files/pgpilot-banner-B-300x100cm-horizontal-navy.png" download>PNG</a>
   </div>
 </div>
 
 <div class="card">
-  <h2>T-skjorte</h2>
-  <p>
-    Hvit unisex som i tilbudet — <span class="q">men har dere en himmelblå farge
-    (ca #0ea5e9), tar vi gjerne den</span>, da med hvitt trykk.
-    Lite trykk på venstre bryst (ca 14 cm bredt), stort motiv sentrert på ryggen
-    (ca 30 cm bredt). Tilbudet hadde bare trykk foran —
-    <span class="q">hva koster ryggtrykket i tillegg, og er det mulig å få dem før
-    onsdag 16. september?</span>
-  </p>
-  <div class="preview">
-    <img src="files/pgpilot-tskjorte-mockup.png" alt="T-skjorte mockup: lite logo+navn på venstre bryst, stort motiv på ryggen">
+  <h2>T-skjorte <span class="spec">lite trykk på venstre bryst, stort på ryggen</span></h2>
+  <div class="pair">
+    <figure>
+      <div class="preview">
+        <img src="files/pgpilot-tskjorte-mockup.png" alt="Hvit t-skjorte: lite logo+navn på venstre bryst, stort motiv på ryggen">
+      </div>
+      <figcaption>hvit</figcaption>
+    </figure>
+    <figure>
+      <div class="preview">
+        <img src="files/pgpilot-tskjorte-mockup-blaa.png" alt="Lyseblå t-skjorte med hvitt trykk">
+      </div>
+      <figcaption>lyseblå (#0ea5e9), hvitt trykk</figcaption>
+    </figure>
   </div>
   <div class="downloads">
-    <a class="dl primary" href="files/pgpilot-horizontal-sky-navy.svg" download>Brysttrykk <small>SVG</small></a>
-    <a class="dl primary" href="files/stacked-sky-navy.svg" download>Ryggtrykk <small>SVG</small></a>
-    <a class="dl secondary" href="files/pgpilot-horizontal-sky-navy.png" download>Bryst <small>PNG 4000px</small></a>
-    <a class="dl secondary" href="files/stacked-sky-navy.png" download>Rygg <small>PNG 4000px</small></a>
+    <a class="dl primary" href="files/pgpilot-horizontal-sky-navy.svg" download>Bryst, hvit skjorte <small>SVG</small></a>
+    <a class="dl primary" href="files/stacked-sky-navy.svg" download>Rygg, hvit skjorte <small>SVG</small></a>
+    <a class="dl primary" href="files/pgpilot-horizontal-white.svg" download>Bryst, blå skjorte <small>SVG</small></a>
+    <a class="dl primary" href="files/stacked-white.svg" download>Rygg, blå skjorte <small>SVG</small></a>
+    <span class="pngs">PNG 4000px: <a href="files/pgpilot-horizontal-sky-navy.png" download>bryst hvit</a> · <a href="files/stacked-sky-navy.png" download>rygg hvit</a> · <a href="files/pgpilot-horizontal-white.png" download>bryst blå</a> · <a href="files/stacked-white.png" download>rygg blå</a></span>
   </div>
 </div>
 
 <div class="card">
-  <h2>Stickers, 50 og 100 mm</h2>
-  <p>
-    Samme motiv som ryggtrykket, på gjennomsiktig bakgrunn, konturskjært etter
-    motivet. To størrelser: 50 og 100 mm bredde.
-    <span class="q">Kan dere gi pris på 300 og 500 stk, og finnes de i vinyl som
-    tåler å sitte på en hjelm ute i all slags vær?</span>
-  </p>
+  <h2>Stickers <span class="spec">50 og 100 mm, gjennomsiktig, konturskjært</span></h2>
   <div class="preview">
     <img src="files/pgpilot-stickers-mockup.png" alt="Sticker-motiv i 100 og 50 mm bredde">
   </div>
