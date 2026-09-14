@@ -27,7 +27,7 @@ window.KIOSK_SLIDES = [
     "id": "thermal",
     "label": "Thermal",
     "key": "T",
-    "layout": "phone",
+    "layout": "wide",
     "title": "Thermal assist",
     "lines": [
       "The bubble is drawn where the lift was.",
@@ -40,18 +40,18 @@ window.KIOSK_SLIDES = [
     "dim": false,
     "media": {
       "type": "video",
-      "src": "video/klipp-termikk.mp4",
-      "poster": "img/poster-klipp-termikk.jpg",
-      "dur": 13.96,
-      "w": 780,
-      "h": 1688
+      "src": "video/thermal-assist.mp4",
+      "poster": "img/poster-thermal-assist.jpg",
+      "dur": 22.03,
+      "w": 1920,
+      "h": 1080
     }
   },
   {
     "id": "wind",
     "label": "Wind",
     "key": "W",
-    "layout": "phone",
+    "layout": "wide",
     "title": "Wind estimation",
     "lines": [
       "Learned from your own circles, no sensor needed.",
@@ -64,11 +64,11 @@ window.KIOSK_SLIDES = [
     "dim": false,
     "media": {
       "type": "video",
-      "src": "video/hook_S_gaggle_wind.mp4",
-      "poster": "img/poster-hook_S_gaggle_wind.jpg",
-      "dur": 12.0,
-      "w": 1080,
-      "h": 1920
+      "src": "video/wind-estimation.mp4",
+      "poster": "img/poster-wind-estimation.jpg",
+      "dur": 22.03,
+      "w": 1920,
+      "h": 1080
     }
   },
   {
@@ -88,18 +88,18 @@ window.KIOSK_SLIDES = [
     "dim": false,
     "media": {
       "type": "video",
-      "src": "video/hvor-er-bir.mp4",
-      "poster": "img/poster-hvor-er-bir.jpg",
-      "dur": 14.7,
-      "w": 1280,
-      "h": 720
+      "src": "video/navigation.mp4",
+      "poster": "img/poster-navigation.jpg",
+      "dur": 20.03,
+      "w": 1920,
+      "h": 1080
     }
   },
   {
     "id": "sideview",
     "label": "Side view",
     "key": "S",
-    "layout": "phone",
+    "layout": "wide",
     "title": "Side view and glide range",
     "lines": [
       "Will you clear that ridge?",
@@ -112,11 +112,11 @@ window.KIOSK_SLIDES = [
     "dim": false,
     "media": {
       "type": "video",
-      "src": "video/klipp-sideview.mp4",
-      "poster": "img/poster-klipp-sideview.jpg",
-      "dur": 10.4,
-      "w": 780,
-      "h": 1688
+      "src": "video/sideview-glide.mp4",
+      "poster": "img/poster-sideview-glide.jpg",
+      "dur": 22.03,
+      "w": 1920,
+      "h": 1080
     }
   },
   {
@@ -136,9 +136,9 @@ window.KIOSK_SLIDES = [
     "dim": false,
     "media": {
       "type": "video",
-      "src": "video/bir-3d.mp4",
-      "poster": "img/poster-bir-3d.jpg",
-      "dur": 38.1,
+      "src": "video/replay-3d.mp4",
+      "poster": "img/poster-replay-3d.jpg",
+      "dur": 21.0,
       "w": 1920,
       "h": 1080
     }
@@ -219,7 +219,7 @@ window.KIOSK_SLIDES = [
     "id": "forecast",
     "label": "Forecast",
     "key": "F",
-    "layout": "duo",
+    "layout": "wide",
     "title": "Wind and forecast at the takeoff",
     "lines": [
       "Wind stations with history, airgram forecast for the launch.",
@@ -230,22 +230,14 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
-    "images": [
-      {
-        "type": "image",
-        "src": "img/app-bavallen-vind.jpg",
-        "poster": "img/app-bavallen-vind.jpg",
-        "w": 1080,
-        "h": 1169
-      },
-      {
-        "type": "image",
-        "src": "img/app-bavallen-airgram.jpg",
-        "poster": "img/app-bavallen-airgram.jpg",
-        "w": 1080,
-        "h": 1435
-      }
-    ]
+    "media": {
+      "type": "video",
+      "src": "video/forecast-airgram.mp4",
+      "poster": "img/poster-forecast-airgram.jpg",
+      "dur": 20.73,
+      "w": 1920,
+      "h": 1080
+    }
   },
   {
     "id": "contacts",
@@ -316,6 +308,37 @@ window.KIOSK_SLIDES = [
       "dur": 23.4,
       "w": 1080,
       "h": 1920
+    },
+    "bg": {
+      "type": "video",
+      "src": "video/areacontest-whale.mp4",
+      "poster": "img/poster-areacontest-whale.jpg",
+      "dur": 20.73,
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
+    "id": "board",
+    "label": "Board",
+    "key": null,
+    "layout": "wide",
+    "title": "The whale, right now",
+    "lines": [
+      "The real board, scored every hour this week. Everyone on pgpilot is already in."
+    ],
+    "dur": 21,
+    "qr": "coupe",
+    "footnote": null,
+    "cornerQr": true,
+    "dim": false,
+    "media": {
+      "type": "video",
+      "src": "video/areacontest-whale.mp4",
+      "poster": "img/poster-areacontest-whale.jpg",
+      "dur": 20.73,
+      "w": 1920,
+      "h": 1080
     }
   },
   {

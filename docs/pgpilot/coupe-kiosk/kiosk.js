@@ -110,6 +110,14 @@
     var card = el("div", "title-card", sec);
     el("h2", null, card).textContent = s.title;
     el("p", null, card).textContent = s.lines.join(" ");
+    if (s.qr) {
+      qrBlock(
+        sec,
+        s.qr,
+        s.qr === "coupe" ? "pgpilot.app/coupe" : "pgpilot.app",
+        s.qr === "coupe" ? "Join this week's contest" : "Free, iOS and Android",
+      );
+    }
   }
 
   function buildPhone(sec, s) {

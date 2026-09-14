@@ -267,6 +267,18 @@ SLIDES: list[Slide] = [
         ),
     ),
     Slide(
+        id="board",
+        label="Board",
+        title="The whale, right now",
+        lines=[
+            "The real board, scored every hour this week. Everyone on pgpilot is already in."
+        ],
+        dur=21,
+        wide="areacontest-whale.mp4",
+        fallback={"layout": "phone", "media": str(SOCIAL / "coupe_whale_v8.mp4")},
+        qr="coupe",
+    ),
+    Slide(
         id="offline",
         label="Offline",
         key="O",

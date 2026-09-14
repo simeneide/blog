@@ -524,3 +524,11 @@ body.no-corner-qr .corner-qr {
 .reveal.overview ~ .corner-qr {
   opacity: 0.25;
 }
+
+/* A QR on a wide slide sits bottom right, clear of the title card. */
+.wide-slide > .slide-qr {
+  position: absolute;
+  right: 72px;
+  bottom: 150px;
+  z-index: 3;
+}
