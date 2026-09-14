@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920, initial-scale=1" />
+    <title>pgpilot at Coupe Icare</title>
+
+    <!-- Everything below is local. This page must work with the network cable
+         pulled out, because the stand has no wifi worth trusting. -->
+    <link rel="stylesheet" href="reveal/reset.css" />
+    <link rel="stylesheet" href="reveal/reveal.css" />
+    <link rel="stylesheet" href="kiosk.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Filled in by kiosk.js from slides.js, which build.py writes. -->
+      <div class="slides"></div>
+    </div>
+
+    <!-- Fixed to the viewport, not to a slide, so it survives every layout. -->
+    <a class="corner-qr" href="https://pgpilot.app">
+      <img src="img/qr-pgpilot.svg" alt="QR code for pgpilot.app" />
+      <span>pgpilot.app</span>
+    </a>
+
+    <nav class="hotkeys" aria-label="Jump to a feature"></nav>
+
+    <script src="reveal/reveal.js"></script>
+    <script src="slides.js"></script>
+    <script src="kiosk.js"></script>
+  </body>
+</html>
