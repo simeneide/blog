@@ -107,7 +107,7 @@
     sec.classList.add("wide-slide");
     sec.appendChild(mediaEl(s.media, "media-bleed kb" + (s.dim ? " media-dim" : "")));
     el("div", "scrim", sec);
-    var card = el("div", "title-card", sec);
+    var card = el("div", "title-card" + (s.card === "top" ? " card-top" : ""), sec);
     el("h2", null, card).textContent = s.title;
     el("p", null, card).textContent = s.lines.join(" ");
     if (s.qr) {
@@ -115,7 +115,7 @@
         sec,
         s.qr,
         s.qr === "coupe" ? "pgpilot.app/coupe" : "pgpilot.app",
-        s.qr === "coupe" ? "Join this week's contest" : "Free, iOS and Android",
+        s.qr === "coupe" ? "Join this week's contest" : "iOS and Android",
       );
     }
   }
@@ -157,7 +157,7 @@
         copy,
         s.qr,
         s.qr === "coupe" ? "pgpilot.app/coupe" : "pgpilot.app",
-        s.qr === "coupe" ? "Join this week's contest" : "Free, iOS and Android",
+        s.qr === "coupe" ? "Join this week's contest" : "iOS and Android",
       );
     }
   }
@@ -246,7 +246,7 @@
     slideNumber: false,
     hash: false,
     transition: "fade",
-    transitionSpeed: "slow",
+    transitionSpeed: "fast",
     backgroundTransition: "fade",
     loop: true,
     autoSlide: 20000, // per-slide data-autoslide overrides this

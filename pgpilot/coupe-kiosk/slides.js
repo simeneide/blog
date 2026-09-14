@@ -7,13 +7,14 @@ window.KIOSK_SLIDES = [
     "layout": "title",
     "title": "All you need in one flight app",
     "lines": [
-      "pgpilot.app, free, iOS and Android"
+      "iOS and Android"
     ],
     "dur": 15,
     "qr": null,
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/bir-3d.mp4",
@@ -38,6 +39,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/thermal-assist.mp4",
@@ -62,6 +64,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/wind-estimation.mp4",
@@ -86,6 +89,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/navigation.mp4",
@@ -110,6 +114,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "top",
     "media": {
       "type": "video",
       "src": "video/sideview-glide.mp4",
@@ -123,7 +128,7 @@ window.KIOSK_SLIDES = [
     "id": "replay",
     "label": "3D",
     "key": "3",
-    "layout": "wide",
+    "layout": "phone",
     "title": "3D replay",
     "lines": [
       "Fly it again in 3D.",
@@ -134,7 +139,16 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
+      "type": "video",
+      "src": "video/replay-3d-phone.mp4",
+      "poster": "img/poster-replay-3d-phone.jpg",
+      "dur": 6.8,
+      "w": 1080,
+      "h": 1920
+    },
+    "bg": {
       "type": "video",
       "src": "video/replay-3d.mp4",
       "poster": "img/poster-replay-3d.jpg",
@@ -150,14 +164,15 @@ window.KIOSK_SLIDES = [
     "layout": "phone",
     "title": "Live tracking",
     "lines": [
-      "See your friends in the air. One position per second.",
-      "OGN, FLARM and inReach on the same map."
+      "See your friends in the air, one position per second.",
+      "Internet, FANET, OGN, FLARM, inReach and Meshtastic on one map."
     ],
     "dur": 18,
     "qr": null,
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/klipp-tracking.mp4",
@@ -172,20 +187,45 @@ window.KIOSK_SLIDES = [
     "label": "Comms",
     "key": "C",
     "layout": "phone",
-    "title": "Group voice and chat",
+    "title": "Group voice",
     "lines": [
-      "Push to talk to the whole group over the internet.",
-      "VHF bridged into the same channel."
+      "Push to talk to everyone in your group. No range limit.",
+      "Hold the button on the brake line, hands stay on the brakes."
     ],
-    "dur": 18,
+    "dur": 20,
     "qr": null,
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "image",
       "src": "img/app-comms.png",
       "poster": "img/app-comms.png",
+      "w": 855,
+      "h": 1920
+    }
+  },
+  {
+    "id": "vhf",
+    "label": "VHF",
+    "key": "R",
+    "layout": "phone",
+    "title": "VHF bridge",
+    "lines": [
+      "Radio pilots and app pilots in one conversation.",
+      "No coverage? The radio still talks."
+    ],
+    "dur": 20,
+    "qr": null,
+    "footnote": null,
+    "cornerQr": true,
+    "dim": false,
+    "card": "bottom",
+    "media": {
+      "type": "image",
+      "src": "img/app-hardware.png",
+      "poster": "img/app-hardware.png",
       "w": 855,
       "h": 1920
     }
@@ -206,6 +246,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/klipp-knapp.mp4",
@@ -230,6 +271,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/forecast-airgram.mp4",
@@ -249,11 +291,12 @@ window.KIOSK_SLIDES = [
       "Your people get a message when you take off and when you land.",
       "SMS, email or push."
     ],
-    "dur": 18,
+    "dur": 22,
     "qr": null,
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/klipp-start.mp4",
@@ -278,6 +321,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": true,
+    "card": "bottom",
     "media": {
       "type": "image",
       "src": "img/app-flightdetails.jpg",
@@ -301,6 +345,7 @@ window.KIOSK_SLIDES = [
     "footnote": "This week: the whale over Saint-Hilaire. Biggest claim on Sunday 13:00 wins.",
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/coupe_whale_v8.mp4",
@@ -332,6 +377,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/areacontest-whale.mp4",
@@ -356,6 +402,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": true,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/klipp-backcountry.mp4",
@@ -379,6 +426,7 @@ window.KIOSK_SLIDES = [
     "footnote": null,
     "cornerQr": false,
     "dim": false,
+    "card": "bottom",
     "media": {
       "type": "video",
       "src": "video/bir-3d.mp4",

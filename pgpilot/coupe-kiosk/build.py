@@ -80,6 +80,7 @@ class Slide:
     footnote: str | None = None
     corner_qr: bool = True
     dim: bool = False  # push a light still back behind the words
+    card: str = "bottom"  # where the title card sits on a wide slide
 
 
 SLIDES: list[Slide] = [
@@ -88,7 +89,7 @@ SLIDES: list[Slide] = [
         label="Home",
         key="Home",
         title="All you need in one flight app",
-        lines=["pgpilot.app, free, iOS and Android"],
+        lines=["iOS and Android"],
         dur=15,
         layout="title",
         media=str(VOSS_VIDEO / "bir-3d.mp4"),
@@ -143,6 +144,7 @@ SLIDES: list[Slide] = [
         ],
         dur=20,
         wide="sideview-glide.mp4",
+        card="top",
         fallback={"layout": "phone", "media": str(VOSS_VIDEO / "klipp-sideview.mp4")},
     ),
     Slide(
@@ -155,8 +157,12 @@ SLIDES: list[Slide] = [
             "Every flight, every thermal, every glide.",
         ],
         dur=22,
+        # The Instagram whale reel's 3D opening (the same shot without the
+        # text cards) in the phone, the landscape chase recording behind it.
+        layout="phone",
+        media="/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/replay-3d-phone.mp4",
         wide="replay-3d.mp4",
-        fallback={"layout": "wide", "media": str(VOSS_VIDEO / "bir-3d.mp4")},
+        fallback={},
     ),
     Slide(
         id="tracking",
@@ -164,8 +170,8 @@ SLIDES: list[Slide] = [
         key="L",
         title="Live tracking",
         lines=[
-            "See your friends in the air. One position per second.",
-            "OGN, FLARM and inReach on the same map.",
+            "See your friends in the air, one position per second.",
+            "Internet, FANET, OGN, FLARM, inReach and Meshtastic on one map.",
         ],
         dur=18,
         wide="live-tracking.mp4",
@@ -175,14 +181,27 @@ SLIDES: list[Slide] = [
         id="comms",
         label="Comms",
         key="C",
-        title="Group voice and chat",
+        title="Group voice",
         lines=[
-            "Push to talk to the whole group over the internet.",
-            "VHF bridged into the same channel.",
+            "Push to talk to everyone in your group. No range limit.",
+            "Hold the button on the brake line, hands stay on the brakes.",
         ],
-        dur=18,
-        layout="phone",
-        media=str(VOSS_IMG / "app-comms.png"),
+        dur=20,
+        wide="voice-groups.mp4",
+        fallback={"layout": "phone", "media": str(VOSS_IMG / "app-comms.png")},
+    ),
+    Slide(
+        id="vhf",
+        label="VHF",
+        key="R",
+        title="VHF bridge",
+        lines=[
+            "Radio pilots and app pilots in one conversation.",
+            "No coverage? The radio still talks.",
+        ],
+        dur=20,
+        wide="vhf-bridge.mp4",
+        fallback={"layout": "phone", "media": str(VOSS_IMG / "app-hardware.png")},
     ),
     Slide(
         id="hardware",
@@ -226,9 +245,9 @@ SLIDES: list[Slide] = [
             "Your people get a message when you take off and when you land.",
             "SMS, email or push.",
         ],
-        dur=18,
-        layout="phone",
-        media=str(VOSS_VIDEO / "klipp-start.mp4"),
+        dur=22,
+        wide="ground-contacts.mp4",
+        fallback={"layout": "phone", "media": str(VOSS_VIDEO / "klipp-start.mp4")},
     ),
     Slide(
         id="flights",
@@ -504,6 +523,7 @@ def main() -> int:
             "footnote": s.footnote,
             "cornerQr": s.corner_qr,
             "dim": s.dim,
+            "card": s.card,
         }
         if media_src:
             entry["media"] = stage(media_src)

@@ -532,3 +532,9 @@ body.no-corner-qr .corner-qr {
   bottom: 150px;
   z-index: 3;
 }
+
+/* Title card at the top for recordings whose bottom band is the point. */
+.wide-slide .title-card.card-top {
+  top: 72px;
+  bottom: auto;
+}
