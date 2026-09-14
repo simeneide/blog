@@ -62,7 +62,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/thermal-assist.mp4",
       "poster": "img/poster-thermal-assist.jpg",
-      "dur": 22.03,
+      "dur": 21.77,
       "w": 1920,
       "h": 1080
     }
@@ -96,7 +96,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/wind-estimation.mp4",
       "poster": "img/poster-wind-estimation.jpg",
-      "dur": 22.03,
+      "dur": 27.83,
       "w": 1920,
       "h": 1080
     }
@@ -130,7 +130,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/navigation.mp4",
       "poster": "img/poster-navigation.jpg",
-      "dur": 20.03,
+      "dur": 23.77,
       "w": 1920,
       "h": 1080
     }
@@ -164,7 +164,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/sideview-glide.mp4",
       "poster": "img/poster-sideview-glide.jpg",
-      "dur": 22.03,
+      "dur": 27.77,
       "w": 1920,
       "h": 1080
     }
