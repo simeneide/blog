@@ -41,6 +41,10 @@ VOSS_IMG = Path("/home/simen/blog/pgpilot/img")
 SOCIAL = Path("/home/simen/social-review")
 # Where the landscape 1920x1080 screen recordings land.
 RECORDED = Path("/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips")
+# Pre-cropped captures and the rendered hodograph clip for the "It learns
+# from your flying" run. crops.py and hodograph/make.py in there rebuild them
+# from the poster sources; see NOTES.md.
+ALGO = Path("/home/simen/.claude/jobs/eeb1fb3a/tmp/algo")
 
 MAX_EDGE = 1920
 CRF = "20"
@@ -66,7 +70,7 @@ class Slide:
     """
 
     id: str
-    label: str  # short name for the hotkey strip
+    label: str  # short name for the hotkey strip, "" to share the one before
     title: str  # feature name, big, Bevan
     lines: list[str]
     dur: int  # seconds on screen
@@ -81,6 +85,15 @@ class Slide:
     corner_qr: bool = True
     dim: bool = False  # push a light still back behind the words
     card: str = "bottom"  # where the title card sits on a wide slide
+    scrim: bool = True  # the dark wash under the card on a wide slide
+    card_max: int | None = None  # narrow the card to leave room in the frame
+    kb: str = "in"  # Ken Burns direction: in, out, pan
+    kb_origin: str | None = None  # what the push aims at, "38% 50%"
+    kb_seq: list[str] = field(default_factory=list)  # per image, seq layout
+    kb_origin_seq: list[str] = field(default_factory=list)
+    eyebrow: str | None = None  # section slides only
+    stats_label: str | None = None
+    stats: list[list[str]] = field(default_factory=list)  # [value, caption]
 
 
 SLIDES: list[Slide] = [
@@ -188,6 +201,8 @@ SLIDES: list[Slide] = [
         ],
         dur=20,
         wide="voice-groups.mp4",
+        card="none",  # the clip carries its own title card
+        scrim=False,
         fallback={"layout": "phone", "media": str(VOSS_IMG / "app-comms.png")},
     ),
     Slide(
@@ -201,6 +216,8 @@ SLIDES: list[Slide] = [
         ],
         dur=20,
         wide="vhf-bridge.mp4",
+        card="none",
+        scrim=False,
         fallback={"layout": "phone", "media": str(VOSS_IMG / "app-hardware.png")},
     ),
     Slide(
@@ -260,8 +277,115 @@ SLIDES: list[Slide] = [
         ],
         dur=18,
         layout="wide",
-        media=str(VOSS_IMG / "app-flightdetails.jpg"),
+        # The Voss still with the other pilot's name and the prose blurred out.
+        media="/home/simen/.claude/jobs/eeb1fb3a/tmp/flightdetails-noname.jpg",
         dim=True,
+    ),
+    # ---------------------------------------------------------------- the
+    # "It learns from your flying" run. Built from the A0 algorithms poster
+    # that was dropped before print (brand/coupe-icare-2026/poster-air in the
+    # pgpilot repo: HANDOFF.md, README.md's "Where every number comes from",
+    # and the verified copy in poster.html). Every capture is pre-cropped by
+    # ALGO/crops.py, which also blurs the two peer labels on the thermal
+    # overlay, and the hodograph is rendered by ALGO/hodograph/make.py.
+    # Only the first slide carries a strip label: the six share one entry,
+    # because the strip is one row of 1920 px and was already full.
+    Slide(
+        id="learns",
+        label="Learns",
+        key="I",
+        title="It learns from your flying",
+        lines=["Wind, thermals and forecasts, estimated from your flights."],
+        dur=20,
+        layout="section",
+        eyebrow="Under the hood",
+        media=str(ALGO / "algo-thermal-wide.png"),
+        kb="out",
+        stats_label="Measured against",
+        stats=[
+            ["9", "flights with pitot wind"],
+            ["613", "hand-labelled thermals"],
+            ["194", "hand-labelled recordings"],
+            ["894 280", "flights behind the regions"],
+        ],
+    ),
+    Slide(
+        id="hodograph",
+        label="",
+        title="Wind from your circles",
+        lines=[
+            "Each circle is fitted in velocity space. The centre is the wind,",
+            "the radius your airspeed. A Kalman filter fuses the fits.",
+        ],
+        dur=20,
+        layout="wide",
+        # 20 s, rendered frame by frame from the 120 GPS velocity vectors in
+        # the poster's hodograph.json. The card is narrowed so it cannot sit
+        # on the circle.
+        media=str(ALGO / "hodograph-wind.mp4"),
+        card_max=780,
+        scrim=False,
+    ),
+    Slide(
+        id="core",
+        label="",
+        title="Where the lift is",
+        lines=[
+            "A lift and recency weighted centre of the last two minutes,",
+            "drifted with the wind.",
+        ],
+        dur=18,
+        layout="wide",
+        media=str(ALGO / "algo-thermal-core.png"),
+        kb_origin="51% 54%",  # the core ring
+    ),
+    Slide(
+        id="pinned",
+        label="",
+        title="Every flight keeps its forecast",
+        lines=[
+            "The forecast it was flown on, kept as it stood that morning.",
+            "Hvittingfoss, 13 September, the ICON-EU 05:00 run.",
+        ],
+        dur=20,
+        layout="duo",
+        # Forecast first, flown trace second: the corner QR sits over the
+        # right cell's top corner, and the chart has nothing up there to lose.
+        images=[
+            str(ALGO / "algo-flight-pinned.png"),
+            str(ALGO / "algo-flight-flown.png"),
+        ],
+    ),
+    Slide(
+        id="segments",
+        label="",
+        title="Hike, ground, fly",
+        lines=[
+            "One recording, several activities: hike, ground, fly.",
+            "A Viterbi decode over random forest costs.",
+            "Learned from 194 hand-labelled recordings.",
+        ],
+        dur=18,
+        layout="phone",
+        media=str(ALGO / "algo-hike-phone.png"),
+    ),
+    Slide(
+        id="regions",
+        label="",
+        title="Where will it work today?",
+        lines=[
+            "1 226 forecast regions, coloured by climb above local terrain.",
+            "A research prototype: within 4% of mixed-layer theory,",
+            "not yet validated against observations.",
+        ],
+        dur=20,
+        layout="seq",
+        images=[
+            str(ALGO / "algo-regions-alps.png"),
+            str(ALGO / "algo-regions-one.png"),
+        ],
+        kb_seq=["in", "pan"],
+        kb_origin_seq=["39% 50%", "65% 50%"],
     ),
     Slide(
         id="areacontest",
@@ -524,6 +648,15 @@ def main() -> int:
             "cornerQr": s.corner_qr,
             "dim": s.dim,
             "card": s.card,
+            "scrim": s.scrim,
+            "cardMax": s.card_max,
+            "kb": s.kb,
+            "kbOrigin": s.kb_origin,
+            "kbSeq": s.kb_seq,
+            "kbOriginSeq": s.kb_origin_seq,
+            "eyebrow": s.eyebrow,
+            "statsLabel": s.stats_label,
+            "stats": s.stats,
         }
         if media_src:
             entry["media"] = stage(media_src)

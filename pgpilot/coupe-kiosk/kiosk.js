@@ -57,10 +57,16 @@
   }
 
   function mediaEl(media, cls) {
-    // A clip already moves. Ken Burns is for stills only, so the class is
-    // dropped here rather than at every call site.
+    // A clip already moves. Ken Burns is for stills only, so every kb* class
+    // is dropped here rather than at every call site.
     if (media.type === "video") {
-      return videoEl(media, (cls || "").replace(/\bkb\b/g, "").trim());
+      var keep = (cls || "")
+        .split(/\s+/)
+        .filter(function (c) {
+          return c && c.indexOf("kb") !== 0;
+        })
+        .join(" ");
+      return videoEl(media, keep);
     }
     var img = document.createElement("img");
     img.className = cls;
@@ -103,13 +109,36 @@
     el("div", "sub", c).textContent = s.lines.join(" ");
   }
 
-  function buildWide(sec, s) {
-    sec.classList.add("wide-slide");
-    sec.appendChild(mediaEl(s.media, "media-bleed kb" + (s.dim ? " media-dim" : "")));
-    el("div", "scrim", sec);
+  // A still gets its push direction from the slide: "in" (the default),
+  // "out", or "pan". kbOrigin aims the push at whatever the slide is about,
+  // the thermal core or one forecast region.
+  function bleed(sec, s) {
+    var node = mediaEl(
+      s.media,
+      "media-bleed kb kb-" + (s.kb || "in") + (s.dim ? " media-dim" : ""),
+    );
+    if (s.kbOrigin) node.style.transformOrigin = s.kbOrigin;
+    sec.appendChild(node);
+    return node;
+  }
+
+  function titleCard(sec, s) {
     var card = el("div", "title-card" + (s.card === "top" ? " card-top" : ""), sec);
+    if (s.card === "none") card.style.display = "none";
+    if (s.cardMax) card.style.maxWidth = s.cardMax + "px";
     el("h2", null, card).textContent = s.title;
     el("p", null, card).textContent = s.lines.join(" ");
+    return card;
+  }
+
+  function buildWide(sec, s) {
+    sec.classList.add("wide-slide");
+    bleed(sec, s);
+    // A rendered figure brings its own darkness and its own margins; the
+    // scrim only greys out its numbers. Photographs and screen recordings
+    // still need it.
+    if (s.scrim !== false) el("div", "scrim", sec);
+    titleCard(sec, s);
     if (s.qr) {
       qrBlock(
         sec,
@@ -145,7 +174,10 @@
     var sh = Math.min(PHONE_MAX_H, PHONE_MAX_W / ratio);
     screen.style.width = Math.round(sh * ratio) + "px";
     screen.style.height = Math.round(sh) + "px";
-    var inner = mediaEl(s.media, s.media.type === "image" ? "kb" : null);
+    var inner = mediaEl(
+      s.media,
+      s.media.type === "image" ? "kb kb-" + (s.kb || "in") : null,
+    );
     screen.appendChild(inner);
 
     var copy = el("div", "phone-copy", grid);
@@ -162,12 +194,54 @@
     }
   }
 
+  // Opens a run of slides: one big line over a full-bleed capture pulling
+  // slowly back, with the measured-against numbers counting themselves in.
+  function buildSection(sec, s) {
+    sec.classList.add("section-slide");
+    bleed(sec, s);
+    el("div", "scrim", sec);
+    var c = el("div", "center", sec);
+    if (s.eyebrow) el("div", "eyebrow", c).textContent = s.eyebrow;
+    el("h1", null, c).textContent = s.title;
+    if (s.lines && s.lines.length) {
+      el("div", "sub", c).textContent = s.lines.join(" ");
+    }
+    if (s.stats && s.stats.length) {
+      if (s.statsLabel) el("div", "stats-label", c).textContent = s.statsLabel;
+      var row = el("div", "stats", c);
+      s.stats.forEach(function (st, i) {
+        var cell = el("div", "stat anim", row);
+        cell.style.setProperty("--i", i);
+        el("b", null, cell).textContent = st[0];
+        el("span", null, cell).textContent = st[1];
+      });
+    }
+  }
+
+  // Two stills on one slide, one after the other: the first pushes in on
+  // what the second is a close-up of, then hands over. Used where a wide
+  // figure and its detail are the same thought.
+  function buildSeq(sec, s) {
+    sec.classList.add("wide-slide", "seq-slide");
+    s.images.forEach(function (im, i) {
+      var cell = el("div", "seq-cell anim " + (i ? "seq-b" : "seq-a"), sec);
+      var img = el("img", "kb kb-" + ((s.kbSeq && s.kbSeq[i]) || "in"), cell);
+      img.src = im.src;
+      img.alt = "";
+      if (s.kbOriginSeq && s.kbOriginSeq[i]) {
+        img.style.transformOrigin = s.kbOriginSeq[i];
+      }
+    });
+    el("div", "scrim", sec);
+    titleCard(sec, s);
+  }
+
   function buildDuo(sec, s) {
     sec.classList.add("duo-slide");
     var wrap = el("div", "duo-wrap", sec);
     s.images.forEach(function (im, i) {
       var cell = el("div", "duo-cell", wrap);
-      var img = el("img", "kb", cell);
+      var img = el("img", "kb kb-" + (i ? "out" : "in"), cell);
       img.src = im.src;
       img.alt = "";
       // Opposite drift, so the two halves do not read as one sliding block.
@@ -194,7 +268,9 @@
 
   var BUILDERS = {
     title: buildTitle,
+    section: buildSection,
     wide: buildWide,
+    seq: buildSeq,
     phone: buildPhone,
     duo: buildDuo,
     closing: buildClosing,
@@ -215,18 +291,28 @@
 
   var strip = document.querySelector(".hotkeys");
   var chips = [];
+  var chipFor = []; // slide index -> chip index
 
   SLIDES.forEach(function (s, i) {
+    // A slide with no label shares the previous slide's chip. That is how a
+    // run of slides on one theme stays one entry in the strip: the strip has
+    // 1920 px and no second row, so every entry has to earn its width.
+    if (!s.label) {
+      chipFor.push(chips.length - 1);
+      return;
+    }
     var a = el("div", "hk", strip);
     if (s.key) el("b", null, a).textContent = s.key;
     a.appendChild(document.createTextNode(s.label));
-    chips.push(a);
     a.dataset.index = String(i);
+    chipFor.push(chips.length);
+    chips.push(a);
   });
 
   function markStrip(i) {
+    var on = chipFor[i];
     chips.forEach(function (c, n) {
-      c.classList.toggle("on", n === i);
+      c.classList.toggle("on", n === on);
     });
   }
 
@@ -266,7 +352,7 @@
     // Ken Burns: strip the class, force a reflow, add it back. Without the
     // reflow the browser coalesces the two changes and the animation never
     // restarts, which is how a "moving" kiosk quietly goes static.
-    sec.querySelectorAll(".kb").forEach(function (n) {
+    sec.querySelectorAll(".kb, .anim").forEach(function (n) {
       n.classList.remove("kb-run");
       void n.offsetWidth;
       n.classList.add("kb-run");
@@ -291,7 +377,7 @@
     sec.querySelectorAll("video").forEach(function (v) {
       v.pause();
     });
-    sec.querySelectorAll(".kb").forEach(function (n) {
+    sec.querySelectorAll(".kb, .anim").forEach(function (n) {
       n.classList.remove("kb-run");
     });
   }

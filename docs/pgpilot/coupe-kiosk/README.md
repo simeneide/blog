@@ -1,8 +1,8 @@
 # pgpilot kiosk, Coupe Icare 2026
 
 An auto-playing feature cavalcade for the stand monitor at Saint-Hilaire,
-14 to 20 September 2026. 1920x1080 landscape, 15 slides, about four and a
-half minutes per lap, and it loops forever.
+14 to 20 September 2026. 1920x1080 landscape, 23 slides, seven and a half
+minutes per lap, and it loops forever.
 
 Everything it needs is in this folder. It runs with the network cable pulled
 out: Reveal.js, both fonts, both QR codes, every clip and every still are
@@ -59,10 +59,12 @@ screen never gets stuck on one slide because someone walked away.
 | `3` | 3D replay |
 | `L` | Live tracking |
 | `C` | Group voice and chat |
+| `R` | VHF bridge |
 | `H` | Button on the brake line |
 | `F` | Wind and forecast at the takeoff |
 | `G` | Ground contacts |
 | `X` | Your flights, synced |
+| `I` | It learns from your flying (six slides, one entry) |
 | `A` | AreaContest, the Coupe whale |
 | `O` | Works without coverage |
 | `End` | Try it now, the big QR |
@@ -104,9 +106,16 @@ currently falls back to.
 goes in the phone frame, landscape goes full bleed. The encoder caps the long
 edge at 1920, crf 20, H.264 yuv420p faststart, audio dropped.
 
+**Six slides do not come from `RECORDED` at all.** The "It learns from your
+flying" run (hotkey `I`) is built from pre-cropped poster captures and one
+rendered clip in the `ALGO` directory `build.py` points at. To rebuild them,
+run `crops.py` and `hodograph/make.py` in there, then `build.py`. `NOTES.md`
+has the detail, including which labels are blurred and why.
+
 **To change how long a slide stays up**, edit its `dur` in `build.py` and
-re-run. Keep the total between four and five minutes so a visitor standing
-still sees the whole thing.
+re-run. The original rule was to keep the total between four and five minutes,
+so a visitor standing still sees the whole thing; the deck is past that now, at
+seven and a half. `NOTES.md` lists what to cut first if that matters.
 
 The QR codes are checked in as SVG (`img/qr-pgpilot.svg` for
 `https://pgpilot.app`, `img/qr-coupe.svg` for `https://pgpilot.app/coupe`).

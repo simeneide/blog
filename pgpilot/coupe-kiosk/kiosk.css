@@ -106,6 +106,42 @@ body {
   animation: kenburns-bg var(--dur, 20s) linear forwards;
 }
 
+/* Two more directions, picked per slide. "out" opens on the detail and
+   pulls back to the whole picture, which is what a section opener wants;
+   "pan" crosses a wide figure that has nothing to zoom into. Both must come
+   after .kb.kb-run: same specificity, later wins. */
+
+@keyframes kenburns-out {
+  from {
+    transform: scale(1.18) translate3d(1.4%, 1%, 0);
+  }
+  to {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes kenburns-pan {
+  from {
+    transform: scale(1.14) translate3d(3%, 0.6%, 0);
+  }
+  to {
+    transform: scale(1.14) translate3d(-3%, -0.6%, 0);
+  }
+}
+
+.kb-out {
+  transform: scale(1.18);
+}
+.kb-out.kb-run {
+  animation: kenburns-out var(--dur, 20s) linear forwards;
+}
+.kb-pan {
+  transform: scale(1.14);
+}
+.kb-pan.kb-run {
+  animation: kenburns-pan var(--dur, 20s) linear forwards;
+}
+
 /* A light screenshot behind white text is unreadable both ways round. This
    pushes it back to being a backdrop: the picture is texture, the card carries
    the message. */
@@ -346,6 +382,148 @@ video.media-bleed {
   );
 }
 
+/* ------------------------------------------------------------ section --
+   The opener for a run of slides. Same furniture as the title slide, minus
+   the wordmark, plus the band of numbers the run is allowed to claim. The
+   capture behind it pulls back rather than pushing in, so the slide reads as
+   a step back before the detail slides step in. */
+
+.section-slide .center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 90px;
+}
+.section-slide .scrim {
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 7, 13, 0.72),
+    rgba(15, 23, 42, 0.82)
+  );
+}
+.section-slide .eyebrow {
+  font-size: 28px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sky);
+  margin-bottom: 26px;
+}
+.section-slide h1 {
+  font-size: 86px;
+  line-height: 1.05;
+  max-width: 1560px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
+}
+.section-slide .sub {
+  font-size: 36px;
+  line-height: 1.35;
+  color: var(--text);
+  margin-top: 28px;
+  max-width: 1320px;
+}
+.section-slide .stats-label {
+  margin-top: 54px;
+  font-size: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.section-slide .stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 22px;
+}
+.stat {
+  flex: 0 0 300px;
+  padding: 20px 18px 22px 18px;
+  border-radius: 16px;
+  border-top: 4px solid var(--sky);
+  background: rgba(8, 12, 20, 0.6);
+  opacity: 0;
+  transform: translateY(22px);
+}
+.stat b {
+  display: block;
+  font-family: "Bevan", Georgia, serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.1;
+  color: #fff;
+}
+.stat span {
+  display: block;
+  margin-top: 10px;
+  font-size: 23px;
+  line-height: 1.28;
+  color: var(--dim);
+}
+@keyframes stat-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.stat.kb-run {
+  animation: stat-in 0.8s ease-out forwards;
+  animation-delay: calc(0.6s + var(--i) * 0.45s);
+}
+
+/* -------------------------------------------------------------- seq slide --
+   Two stills in one slide, the second cross-fading in halfway through. The
+   fade lives on the cell, the Ken Burns on the image inside it, so the two
+   do not fight over transform. */
+
+.seq-cell {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.seq-cell img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.seq-b {
+  opacity: 0;
+}
+@keyframes seq-out {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  55%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes seq-in {
+  0%,
+  45% {
+    opacity: 0;
+  }
+  55%,
+  100% {
+    opacity: 1;
+  }
+}
+.seq-a.kb-run {
+  animation: seq-out var(--dur, 20s) linear forwards;
+}
+.seq-b.kb-run {
+  animation: seq-in var(--dur, 20s) linear forwards;
+}
+
 /* ---------------------------------------------------------- closing slide */
 
 .closing-slide .center {
@@ -428,6 +606,35 @@ video.media-bleed {
   height: 100%;
   object-fit: cover;
 }
+/* A gentler push inside a duo cell. These are documents, not landscapes: at
+   the full 1.13 the outer axis labels and the first word of every line walk
+   out of the frame, and a half-eaten word reads as a bug. */
+@keyframes kenburns-duo-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+@keyframes kenburns-duo-out {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.duo-cell .kb {
+  transform: scale(1);
+}
+.duo-cell .kb-in.kb-run {
+  animation: kenburns-duo-in var(--dur, 20s) linear forwards;
+}
+.duo-cell .kb-out.kb-run {
+  transform: scale(1.08);
+  animation: kenburns-duo-out var(--dur, 20s) linear forwards;
+}
 .duo-slide .title-card {
   bottom: 132px;
   background: rgba(8, 12, 20, 0.86);
@@ -483,11 +690,14 @@ body.no-corner-qr .corner-qr {
   border-top: 1px solid #1b2738;
   font-family: "Questrial", system-ui, sans-serif;
 }
+/* 18 entries is what fits in one row of 1920 px at this size. If the deck
+   grows again, either shorten a label or let the new slides share a chip
+   (a slide with an empty label rides on the one before it). */
 .hk {
   display: flex;
   align-items: center;
-  gap: 7px;
-  padding: 0 9px;
+  gap: 6px;
+  padding: 0 6px;
   color: #7b8da4;
   font-size: 18px;
   white-space: nowrap;
