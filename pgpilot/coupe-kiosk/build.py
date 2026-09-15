@@ -42,6 +42,7 @@ RECORDED = Path("/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips")
 # New captures are separate from the previous cut, so rejected takes cannot
 # silently become fallbacks.
 REVISED = RECORDED.parent / "kiosk-revision"
+REFINEMENTS = REVISED / "refinements"
 # Regional forecast figures.
 ALGO = Path("/home/simen/.claude/jobs/eeb1fb3a/tmp/algo")
 
@@ -98,8 +99,8 @@ SLIDES: list[Slide] = [
         key="W",
         title="Wind estimation",
         lines=[],
-        dur=18,
-        media=str(REVISED / "thermalwind/wind-visible.mp4"),
+        dur=20,
+        media=str(REFINEMENTS / "wind/wind-changing.mp4"),
         card="header",
     ),
     Slide(
@@ -108,8 +109,8 @@ SLIDES: list[Slide] = [
         key="N",
         title="Competition navigation",
         lines=[],
-        dur=15.8,
-        media=str(REVISED / "navigation/navigation-real.mp4"),
+        dur=25,
+        media=str(REFINEMENTS / "navigation/navigation-extended.mp4"),
         card="header",
     ),
     Slide(
@@ -118,8 +119,8 @@ SLIDES: list[Slide] = [
         key="S",
         title="Side view and glide range",
         lines=[],
-        dur=16.1,
-        media=str(REVISED / "navigation/sideview-fixed.mp4"),
+        dur=19,
+        media=str(REFINEMENTS / "navigation/sideview-companions.mp4"),
         card="header",
     ),
     Slide(
@@ -128,15 +129,19 @@ SLIDES: list[Slide] = [
         key="3",
         title="3D replay",
         lines=[],
-        dur=18,
-        media=str(REVISED / "editorial/glacier-replay.mp4"),
+        dur=12,
+        media=str(REFINEMENTS / "editorial/glacier-faster.mp4"),
     ),
     Slide(
         id="tracking",
         label="Track",
         key="L",
         title="Live tracking",
-        lines=["Every second online. Direct radio off-grid."],
+        lines=[
+            "Every second online. Direct radio off-grid.",
+            "Online: OGN, PureTrack, XContest, SafeSky.",
+            "Off-grid: FLARM, FANET, Meshtastic, inReach.",
+        ],
         dur=14,
         layout="phone",
         media=str(VOSS_VIDEO / "klipp-tracking.mp4"),
@@ -166,10 +171,19 @@ SLIDES: list[Slide] = [
         label="Button",
         key="H",
         title="Button on the brake line",
-        lines=["Customizable controls."],
+        lines=["Double and triple click for zoom in/out"],
         dur=14,
         layout="phone",
         media=str(VOSS_VIDEO / "klipp-knapp.mp4"),
+    ),
+    Slide(
+        id="wind-history",
+        label="History",
+        title="See historical wind and compare to actual observed wind",
+        lines=[],
+        dur=20,
+        media=str(REVISED / "analysisweather/weather-comparison.mp4"),
+        card="header",
     ),
     Slide(
         id="forecast",
@@ -178,7 +192,7 @@ SLIDES: list[Slide] = [
         title="Weather forecast",
         lines=[],
         dur=20,
-        media=str(REVISED / "analysisweather/weather-comparison.mp4"),
+        media=str(REFINEMENTS / "weather/airgram-forecast-clear.mp4"),
         card="header",
     ),
     Slide(
@@ -200,7 +214,7 @@ SLIDES: list[Slide] = [
         label="Contacts",
         key="G",
         title="Ground contacts",
-        lines=["Your ground contacts stay informed."],
+        lines=["Makes sure people at home knows where you are"],
         dur=17.2,
         media=str(REVISED / "editorial/contacts-simple.mp4"),
         corner_qr=False,
@@ -210,7 +224,12 @@ SLIDES: list[Slide] = [
         label="Analyse",
         key="X",
         title="Analyse your flight",
-        lines=["Glides and thermals, your turn direction, the air you flew in."],
+        lines=[
+            (
+                "See thermals, glides, turn rates, temperatures, "
+                "the day's weather forecast and more."
+            )
+        ],
         dur=24,
         media=str(REVISED / "analysisweather/analyse-large.mp4"),
         card="header",
@@ -241,7 +260,7 @@ SLIDES: list[Slide] = [
         label="Offline",
         key="O",
         title="Works without coverage",
-        lines=[],
+        lines=["VHF directly in app", "FANET + inReach tracking"],
         dur=14,
         layout="phone",
         media=str(VOSS_VIDEO / "klipp-backcountry.mp4"),

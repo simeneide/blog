@@ -1,8 +1,8 @@
 # pgpilot kiosk, Coupe Icare 2026
 
 A title-first, continuously looping feature demo for a 1920x1080 stand screen.
-16 slides, about four and a half minutes. No introduction or closing slide.
-Most slides contain only a title; five retain one short supporting line.
+17 slides, about five minutes. No introduction or closing slide.
+Eleven slides contain only a title; six include short supporting text or bullets.
 
 ## Run it
 
@@ -37,7 +37,8 @@ auto-play continues without further input.
 | `C` | Group voice |
 | `R` | VHF bridge |
 | `H` | Button on the brake line |
-| `F` | Weather forecast |
+| Strip button | Historical wind comparison |
+| `F` | Weather forecast airgram |
 | Strip button | Regional forecast |
 | `G` | Ground contacts |
 | `X` | Analyse your flight |

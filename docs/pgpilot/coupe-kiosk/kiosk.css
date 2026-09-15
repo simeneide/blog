@@ -614,6 +614,7 @@ body.no-corner-qr .corner-qr {
   left: 24px;
   bottom: auto;
   padding: 8px 24px;
+  max-width: 1600px;
 }
 .wide-slide .title-card.card-header h2 {
   font-size: 44px;
@@ -621,4 +622,5 @@ body.no-corner-qr .corner-qr {
 .wide-slide .title-card.card-header p {
   font-size: 26px;
   margin-top: 6px;
+  max-width: none;
 }
