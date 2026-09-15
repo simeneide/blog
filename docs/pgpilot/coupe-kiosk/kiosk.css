@@ -179,15 +179,8 @@ video.kb-zoom.kb-run {
   animation: kenburns-big var(--dur, 20s) linear forwards;
 }
 
-/* A light screenshot behind white text is unreadable both ways round. This
-   pushes it back to being a backdrop: the picture is texture, the card carries
-   the message. */
-.media-dim {
-  filter: brightness(0.42) saturate(0.8) contrast(1.05);
-}
 
-/* A video needs a hair of overscan too: reveal's scaled box leaves a 1px
-   seam on the right and bottom otherwise. */
+/* Preserve the full recording, especially instrument digits at its edges. */
 .media-bleed {
   position: absolute;
   inset: 0;
@@ -195,9 +188,6 @@ video.kb-zoom.kb-run {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-video.media-bleed {
-  transform: scale(1.02);
 }
 
 /* ------------------------------------------------------------- wide slide --
@@ -222,12 +212,11 @@ video.media-bleed {
   position: absolute;
   left: 72px;
   bottom: 122px;
-  max-width: 1300px;
-  padding: 26px 40px 30px 34px;
+  max-width: 1180px;
+  padding: 20px 30px;
   border-left: 7px solid var(--sky);
   border-radius: 6px 16px 16px 6px;
-  background: rgba(8, 12, 20, 0.74);
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6);
+  background: rgba(8, 12, 20, 0.9);
 }
 .title-card h2 {
   font-size: 64px;
@@ -336,17 +325,6 @@ video.media-bleed {
   background: var(--sky);
 }
 
-.footnote {
-  margin-top: 40px;
-  padding: 20px 26px;
-  border-radius: 14px;
-  background: rgba(14, 165, 233, 0.14);
-  border: 1px solid rgba(14, 165, 233, 0.45);
-  font-size: 28px;
-  line-height: 1.35;
-  color: #dff2fe;
-  max-width: 900px;
-}
 
 /* An extra QR that belongs to the slide itself, next to the copy. */
 .slide-qr {
@@ -381,137 +359,6 @@ video.media-bleed {
   font-weight: 400;
 }
 
-/* ------------------------------------------------------------ title slide */
-
-.title-slide .center {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 8px;
-}
-.title-slide .wordmark {
-  width: 660px;
-  height: auto;
-  margin-bottom: 54px;
-  filter: drop-shadow(0 6px 26px rgba(0, 0, 0, 0.9));
-}
-.title-slide h1 {
-  font-size: 92px;
-  line-height: 1.06;
-  max-width: 1500px;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
-}
-.title-slide .sub {
-  font-size: 40px;
-  color: var(--sky);
-  margin-top: 34px;
-  letter-spacing: 0.04em;
-}
-.title-slide .scrim {
-  background: linear-gradient(
-    to bottom,
-    rgba(5, 7, 13, 0.72),
-    rgba(15, 23, 42, 0.86)
-  );
-}
-
-/* ------------------------------------------------------------ section --
-   The opener for a run of slides. Same furniture as the title slide, minus
-   the wordmark, plus the band of numbers the run is allowed to claim. The
-   capture behind it pulls back rather than pushing in, so the slide reads as
-   a step back before the detail slides step in. */
-
-.section-slide .center {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 90px;
-}
-.section-slide .scrim {
-  background: linear-gradient(
-    to bottom,
-    rgba(5, 7, 13, 0.72),
-    rgba(15, 23, 42, 0.82)
-  );
-}
-.section-slide .eyebrow {
-  font-size: 28px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--sky);
-  margin-bottom: 26px;
-}
-.section-slide h1 {
-  font-size: 86px;
-  line-height: 1.05;
-  max-width: 1560px;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
-}
-.section-slide .sub {
-  font-size: 36px;
-  line-height: 1.35;
-  color: var(--text);
-  margin-top: 28px;
-  max-width: 1320px;
-}
-.section-slide .stats-label {
-  margin-top: 54px;
-  font-size: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--dim);
-}
-.section-slide .stats {
-  display: flex;
-  gap: 30px;
-  margin-top: 22px;
-}
-.stat {
-  flex: 0 0 300px;
-  padding: 20px 18px 22px 18px;
-  border-radius: 16px;
-  border-top: 4px solid var(--sky);
-  background: rgba(8, 12, 20, 0.6);
-  opacity: 0;
-  transform: translateY(22px);
-}
-.stat b {
-  display: block;
-  font-family: "Bevan", Georgia, serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 1.1;
-  color: #fff;
-}
-.stat span {
-  display: block;
-  margin-top: 10px;
-  font-size: 23px;
-  line-height: 1.28;
-  color: var(--dim);
-}
-@keyframes stat-in {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.stat.kb-run {
-  animation: stat-in 0.8s ease-out forwards;
-  animation-delay: calc(0.6s + var(--i) * 0.45s);
-}
 
 /* -------------------------------------------------------------- seq slide --
    Two stills in one slide, the second cross-fading in halfway through. The
@@ -565,121 +412,6 @@ video.media-bleed {
   animation: seq-in var(--dur, 20s) linear forwards;
 }
 
-/* ---------------------------------------------------------- closing slide */
-
-.closing-slide .center {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.closing-slide h2 {
-  font-size: 84px;
-  margin-bottom: 40px;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
-}
-.closing-slide .qr-card {
-  width: 440px;
-  height: 440px;
-  padding: 24px;
-  background: #fff;
-  border-radius: 24px;
-  box-sizing: border-box;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
-}
-.closing-slide .qr-card img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.closing-slide .url {
-  font-family: "Bevan", Georgia, serif;
-  font-size: 54px;
-  color: var(--sky);
-  margin-top: 34px;
-}
-.closing-slide .ask {
-  font-size: 36px;
-  color: var(--text);
-  margin-top: 16px;
-}
-.closing-slide .scrim {
-  background: linear-gradient(
-    to bottom,
-    rgba(5, 7, 13, 0.78),
-    rgba(15, 23, 42, 0.9)
-  );
-}
-
-/* ------------------------------------------------------- two stills, duo --
-   Used when a feature has no clip yet: two screenshots side by side, each
-   pushing slowly in its own frame. */
-
-.duo-slide {
-  background: linear-gradient(140deg, #0b1220 0%, #05070d 60%);
-}
-.duo-wrap {
-  position: absolute;
-  top: 88px;
-  left: 72px;
-  right: 72px;
-  height: 620px;
-  display: flex;
-  gap: 48px;
-  align-items: stretch;
-}
-.duo-cell {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  border: 1px solid #22334a;
-  background: #0b1220;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
-}
-.duo-cell img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* A gentler push inside a duo cell. These are documents, not landscapes: at
-   the full 1.13 the outer axis labels and the first word of every line walk
-   out of the frame, and a half-eaten word reads as a bug. */
-@keyframes kenburns-duo-in {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.08);
-  }
-}
-@keyframes kenburns-duo-out {
-  from {
-    transform: scale(1.08);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.duo-cell .kb {
-  transform: scale(1);
-}
-.duo-cell .kb-in.kb-run {
-  animation: kenburns-duo-in var(--dur, 20s) linear forwards;
-}
-.duo-cell .kb-out.kb-run {
-  transform: scale(1.08);
-  animation: kenburns-duo-out var(--dur, 20s) linear forwards;
-}
-.duo-slide .title-card {
-  bottom: 132px;
-  background: rgba(8, 12, 20, 0.86);
-}
 
 /* ------------------------------------------------------------ fixed chrome */
 
@@ -722,23 +454,17 @@ body.no-corner-qr .corner-qr {
   height: 64px;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: safe center;
   gap: 0;
   padding: 0 4px;
-  overflow: hidden;
+  overflow-x: auto;
   box-sizing: border-box;
   background: linear-gradient(to top, #05070d 55%, rgba(5, 7, 13, 0.82));
   border-top: 1px solid #1b2738;
   font-family: "Questrial", system-ui, sans-serif;
 }
-/* 19 entries is what fits in one row of 1920 px at this size. If the deck
-   grows again, either shorten a label or let the new slides share a chip
-   (a slide with an empty label rides on the one before it).
-
-   Every chip is a real button, 64 px tall and about 90 px wide, because this
-   screen is touched: a visitor should be able to put a finger on a feature
-   and land on it. The cursor is hidden over the slide and comes back over
-   anything pressable. */
+/* Keep every feature reachable on smaller review windows as well as the
+   1920px stand screen. Chips stay tall enough for touch. */
 .hk {
   appearance: none;
   background: transparent;
@@ -747,11 +473,11 @@ body.no-corner-qr .corner-qr {
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 0 9px;
+  gap: clamp(3px, 0.26vw, 5px);
+  padding: 0 clamp(5px, 0.47vw, 9px);
   color: #8ba0b8;
   font-family: inherit;
-  font-size: 17px;
+  font-size: clamp(12px, 0.89vw, 17px);
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
@@ -880,4 +606,19 @@ body.no-corner-qr .corner-qr {
 .wide-slide .title-card.card-top {
   top: 72px;
   bottom: auto;
+}
+
+/* Use the app header band rather than covering flight readouts or charts. */
+.wide-slide .title-card.card-header {
+  top: 6px;
+  left: 24px;
+  bottom: auto;
+  padding: 8px 24px;
+}
+.wide-slide .title-card.card-header h2 {
+  font-size: 44px;
+}
+.wide-slide .title-card.card-header p {
+  font-size: 26px;
+  margin-top: 6px;
 }

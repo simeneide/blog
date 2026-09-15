@@ -18,17 +18,9 @@
 
   var SLIDES = window.KIOSK_SLIDES || [];
 
-  // The phone frame. The screen is fitted inside this box, so a 9:16 reel and
-  // a taller 780x1688 screen recording both sit in a believable phone instead
-  // of being cropped to a common shape.
+  // Fit the whole recording, including wider activity edits, without cropping.
   var PHONE_MAX_H = 900;
-  var PHONE_MAX_W = 520;
-  // ...but only down to a point. klipp-knapp.mp4 is 1080x1714, and a frame cut
-  // to that shape is a stubby tablet sitting next to four proper phones. The
-  // clamp is 0.60 rather than a true 9:16 on purpose: at 9:16 the crop ate the
-  // leading digit of the altitude, and a cut-off number reads as a bug.
-  var PHONE_MIN_RATIO = 0.42;
-  var PHONE_MAX_RATIO = 0.6;
+  var PHONE_MAX_W = 760;
 
   // ---------------------------------------------------------------- helpers
 
@@ -97,50 +89,26 @@
 
   // ----------------------------------------------------------- slide builds
 
-  function buildTitle(sec, s) {
-    sec.classList.add("title-slide");
-    sec.appendChild(mediaEl(s.media, "media-bleed kb"));
-    el("div", "scrim", sec);
-    var c = el("div", "center", sec);
-    var mark = el("img", "wordmark", c);
-    mark.src = "img/pgpilot-wordmark.png";
-    mark.alt = "pgpilot";
-    el("h1", null, c).textContent = s.title;
-    el("div", "sub", c).textContent = s.lines.join(" ");
-  }
 
-  // A still gets its push direction from the slide: "in" (the default),
-  // "out", "pan", "zoom" or "big". kbOrigin aims the push at whatever the
-  // slide is about, the thermal core or one forecast region. kbVideo puts the
-  // same push on a clip, for a recording that is itself a slow read of a
-  // screen and gains from creeping closer.
+  // Only stills move artificially; app recordings keep their captured camera.
   function bleed(sec, s) {
-    var cls =
-      "media-bleed kb kb-" + (s.kb || "in") + (s.dim ? " media-dim" : "");
-    var node =
-      s.media.type === "video" && s.kbVideo
-        ? videoEl(s.media, cls)
-        : mediaEl(s.media, cls);
-    if (s.kbOrigin) node.style.transformOrigin = s.kbOrigin;
+    var node = mediaEl(s.media, "media-bleed kb kb-" + (s.kb || "in"));
     sec.appendChild(node);
     return node;
   }
 
   function titleCard(sec, s) {
-    var card = el("div", "title-card" + (s.card === "top" ? " card-top" : ""), sec);
+    var card = el("div", "title-card card-" + s.card, sec);
     if (s.card === "none") card.style.display = "none";
-    if (s.cardMax) card.style.maxWidth = s.cardMax + "px";
     el("h2", null, card).textContent = s.title;
-    el("p", null, card).textContent = s.lines.join(" ");
+    if (s.lines.length) el("p", null, card).textContent = s.lines.join(" ");
     return card;
   }
 
   function buildWide(sec, s) {
     sec.classList.add("wide-slide");
     bleed(sec, s);
-    // A rendered figure brings its own darkness and its own margins; the
-    // scrim only greys out its numbers. Photographs and screen recordings
-    // still need it.
+    // Default to an unobscured app, with contrast only behind the title.
     if (s.scrim !== false) el("div", "scrim", sec);
     titleCard(sec, s);
     if (s.qr) {
@@ -156,17 +124,9 @@
   function buildPhone(sec, s) {
     sec.classList.add("phone-slide");
 
-    // Backdrop: the landscape recording if we have one, otherwise a blurred,
-    // slowly zooming frame of the same clip. Either way the slide moves even
-    // where there is no content.
-    if (s.bg) {
-      sec.appendChild(mediaEl(s.bg, "bg-blur"));
-    } else {
-      var still = el("img", "bg-blur kb-bg kb", null);
-      still.src = s.media.poster || s.media.src;
-      still.alt = "";
-      sec.appendChild(still);
-    }
+    var still = el("img", "bg-blur kb-bg kb", sec);
+    still.src = s.media.poster || s.media.src;
+    still.alt = "";
     el("div", "bg-tint", sec);
 
     var grid = el("div", "phone-grid", sec);
@@ -174,10 +134,11 @@
     var screen = el("div", "phone-screen", frame);
 
     var ratio = (s.media.w || 1080) / (s.media.h || 1920);
-    ratio = Math.min(PHONE_MAX_RATIO, Math.max(PHONE_MIN_RATIO, ratio));
     var sh = Math.min(PHONE_MAX_H, PHONE_MAX_W / ratio);
     screen.style.width = Math.round(sh * ratio) + "px";
     screen.style.height = Math.round(sh) + "px";
+    grid.style.gridTemplateColumns =
+      Math.max(700, Math.round(sh * ratio) + 180) + "px 1fr";
     var inner = mediaEl(
       s.media,
       s.media.type === "image" ? "kb kb-" + (s.kb || "in") : null,
@@ -187,7 +148,6 @@
     var copy = el("div", "phone-copy", grid);
     el("h2", null, copy).textContent = s.title;
     lines(copy, s.lines);
-    if (s.footnote) el("div", "footnote", copy).textContent = s.footnote;
     if (s.qr) {
       qrBlock(
         copy,
@@ -198,29 +158,6 @@
     }
   }
 
-  // Opens a run of slides: one big line over a full-bleed capture pulling
-  // slowly back, with the measured-against numbers counting themselves in.
-  function buildSection(sec, s) {
-    sec.classList.add("section-slide");
-    bleed(sec, s);
-    el("div", "scrim", sec);
-    var c = el("div", "center", sec);
-    if (s.eyebrow) el("div", "eyebrow", c).textContent = s.eyebrow;
-    el("h1", null, c).textContent = s.title;
-    if (s.lines && s.lines.length) {
-      el("div", "sub", c).textContent = s.lines.join(" ");
-    }
-    if (s.stats && s.stats.length) {
-      if (s.statsLabel) el("div", "stats-label", c).textContent = s.statsLabel;
-      var row = el("div", "stats", c);
-      s.stats.forEach(function (st, i) {
-        var cell = el("div", "stat anim", row);
-        cell.style.setProperty("--i", i);
-        el("b", null, cell).textContent = st[0];
-        el("span", null, cell).textContent = st[1];
-      });
-    }
-  }
 
   // Two stills on one slide, one after the other: the first pushes in on
   // what the second is a close-up of, then hands over. Used where a wide
@@ -242,48 +179,15 @@
         img.style.transformOrigin = s.kbOriginSeq[i];
       }
     });
-    el("div", "scrim", sec);
+    if (s.scrim !== false) el("div", "scrim", sec);
     titleCard(sec, s);
   }
 
-  function buildDuo(sec, s) {
-    sec.classList.add("duo-slide");
-    var wrap = el("div", "duo-wrap", sec);
-    s.images.forEach(function (im, i) {
-      var cell = el("div", "duo-cell", wrap);
-      var img = el("img", "kb kb-" + (i ? "out" : "in"), cell);
-      img.src = im.src;
-      img.alt = "";
-      // Opposite drift, so the two halves do not read as one sliding block.
-      img.style.transformOrigin = i === 0 ? "30% 30%" : "70% 60%";
-    });
-    var card = el("div", "title-card", sec);
-    el("h2", null, card).textContent = s.title;
-    el("p", null, card).textContent = s.lines.join(" ");
-  }
-
-  function buildClosing(sec, s) {
-    sec.classList.add("closing-slide");
-    sec.appendChild(mediaEl(s.media, "media-bleed kb"));
-    el("div", "scrim", sec);
-    var c = el("div", "center", sec);
-    el("h2", null, c).textContent = s.title;
-    var card = el("div", "qr-card", c);
-    var img = el("img", null, card);
-    img.src = "img/qr-pgpilot.svg";
-    img.alt = "QR code for pgpilot.app";
-    el("div", "url", c).textContent = "pgpilot.app";
-    el("div", "ask", c).textContent = s.lines.join(" ");
-  }
 
   var BUILDERS = {
-    title: buildTitle,
-    section: buildSection,
     wide: buildWide,
     seq: buildSeq,
     phone: buildPhone,
-    duo: buildDuo,
-    closing: buildClosing,
   };
 
   var slidesRoot = document.querySelector(".slides");
@@ -390,7 +294,7 @@
     // Ken Burns: strip the class, force a reflow, add it back. Without the
     // reflow the browser coalesces the two changes and the animation never
     // restarts, which is how a "moving" kiosk quietly goes static.
-    sec.querySelectorAll(".kb, .anim").forEach(function (n) {
+    sec.querySelectorAll(".kb").forEach(function (n) {
       n.classList.remove("kb-run");
       void n.offsetWidth;
       n.classList.add("kb-run");
@@ -415,7 +319,7 @@
     sec.querySelectorAll("video").forEach(function (v) {
       v.pause();
     });
-    sec.querySelectorAll(".kb, .anim").forEach(function (n) {
+    sec.querySelectorAll(".kb").forEach(function (n) {
       n.classList.remove("kb-run");
     });
   }
