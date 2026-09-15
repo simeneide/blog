@@ -110,13 +110,17 @@
   }
 
   // A still gets its push direction from the slide: "in" (the default),
-  // "out", or "pan". kbOrigin aims the push at whatever the slide is about,
-  // the thermal core or one forecast region.
+  // "out", "pan", "zoom" or "big". kbOrigin aims the push at whatever the
+  // slide is about, the thermal core or one forecast region. kbVideo puts the
+  // same push on a clip, for a recording that is itself a slow read of a
+  // screen and gains from creeping closer.
   function bleed(sec, s) {
-    var node = mediaEl(
-      s.media,
-      "media-bleed kb kb-" + (s.kb || "in") + (s.dim ? " media-dim" : ""),
-    );
+    var cls =
+      "media-bleed kb kb-" + (s.kb || "in") + (s.dim ? " media-dim" : "");
+    var node =
+      s.media.type === "video" && s.kbVideo
+        ? videoEl(s.media, cls)
+        : mediaEl(s.media, cls);
     if (s.kbOrigin) node.style.transformOrigin = s.kbOrigin;
     sec.appendChild(node);
     return node;
@@ -228,6 +232,12 @@
       var img = el("img", "kb kb-" + ((s.kbSeq && s.kbSeq[i]) || "in"), cell);
       img.src = im.src;
       img.alt = "";
+      // The second one spends its first ten seconds at opacity 0, so Chromium
+      // is in no hurry to decode it and the cross-fade can land on a
+      // half-painted picture. Decode it up front and paint it in one go.
+      img.decoding = "sync";
+      img.loading = "eager";
+      if (img.decode) img.decode().catch(function () {});
       if (s.kbOriginSeq && s.kbOriginSeq[i]) {
         img.style.transformOrigin = s.kbOriginSeq[i];
       }
@@ -301,13 +311,41 @@
       chipFor.push(chips.length - 1);
       return;
     }
-    var a = el("div", "hk", strip);
+    // A real button: this monitor gets touched, and someone at the stand
+    // should be able to put a finger on a feature and land on it.
+    var a = el("button", "hk", strip);
+    a.type = "button";
     if (s.key) el("b", null, a).textContent = s.key;
     a.appendChild(document.createTextNode(s.label));
     a.dataset.index = String(i);
+    a.setAttribute("aria-label", s.title);
+    a.addEventListener("click", function () {
+      a.blur(); // or the next space bar would press it again
+      jump(i);
+    });
     chipFor.push(chips.length);
     chips.push(a);
   });
+
+  // -------------------------------------------------------------- edge taps
+  // The stand screen gets touched, and a hand goes to the edge of a picture
+  // before it goes to a 64 px strip. Two tall zones down the sides step the
+  // deck, with a chevron that stays nearly invisible until something is on it.
+  function edge(side) {
+    var z = el("button", "edge edge-" + side, document.body);
+    z.type = "button";
+    z.setAttribute(
+      "aria-label",
+      side === "left" ? "Previous slide" : "Next slide",
+    );
+    el("span", "chev", z);
+    z.addEventListener("click", function () {
+      z.blur();
+      step(side === "right");
+    });
+  }
+  edge("left");
+  edge("right");
 
   function markStrip(i) {
     var on = chipFor[i];
@@ -441,9 +479,28 @@
     }
   }
 
+  // Reveal cues the auto-advance timer when it decides to, not when we move
+  // the deck by hand: after a jump the new slide inherits whatever was left of
+  // the old slide's countdown, so a slide someone just pressed could be gone
+  // in two seconds. Pausing and resuming re-cues it from now, with the new
+  // slide's own data-autoslide. autoSlideStoppable stays false, so the deck
+  // still carries on by itself afterwards.
+  function recue() {
+    if (!Reveal.toggleAutoSlide) return;
+    Reveal.toggleAutoSlide(false);
+    Reveal.toggleAutoSlide(true);
+  }
+
   function jump(i) {
     if (i == null || i < 0 || i >= SLIDES.length) return;
     Reveal.slide(i, 0);
+    recue();
+  }
+
+  function step(forward) {
+    if (forward) Reveal.next();
+    else Reveal.prev();
+    recue();
   }
 
   document.addEventListener("keydown", function (e) {
@@ -502,12 +559,12 @@
       return;
     }
     if (k === "ArrowRight" || k === "PageDown" || k === " ") {
-      Reveal.next();
+      step(true);
       e.preventDefault();
       return;
     }
     if (k === "ArrowLeft" || k === "PageUp") {
-      Reveal.prev();
+      step(false);
       e.preventDefault();
       return;
     }

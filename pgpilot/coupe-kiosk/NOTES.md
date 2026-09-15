@@ -52,16 +52,16 @@ still.
 
 ## The "It learns from your flying" run
 
-Six slides between Flights and AreaContest, 116 seconds in all. They are the
+Five slides between Analyse and AreaContest, 96 seconds in all. They are the
 material of the A0 "Algorithms of pgpilot" poster, which was finished and then
 dropped before print; the sources are in the pgpilot repo under
 `brand/coupe-icare-2026/poster-air/` (`HANDOFF.md` first, then `README.md`'s
 "Where every number comes from", and `poster.html` for the verified copy).
 
-Only the first slide has a strip label and a key, `I`. The other five have an
+Only the first slide has a strip label and a key, `I`. The other four have an
 empty label, which `kiosk.js` reads as "share the chip before you": the strip
-is one row of 1920 px and was already full at 17 entries. Arrow keys still
-step through them one at a time.
+is one row of 1920 px and is full. Arrow keys, the edge zones and a finger on
+the chip all still step through them one at a time.
 
 | Slide | Layout | What is on it | Source |
 |---|---|---|---|
@@ -70,7 +70,13 @@ step through them one at a time.
 | Where the lift is | wide | The core ring, the lift bubbles and the wind arrow, pushing in on the core | same capture, cropped tight |
 | Every flight keeps its forecast | duo | The pinned ICON-EU card with its provenance prose, and the flown altitude trace | `shots/flight-vs-forecast.png`, top of `shots/flight-vs-forecast-tall.png` |
 | Hike, ground, fly | phone | The flight page's segment bar, altitude profile and the three ACTIVITY cards | `shots/hike-and-fly-2.png` |
-| Where will it work today? | seq | The Alpine arc by region, pushing in on the region that holds Saint-Hilaire, then cross-fading to that region selected | `regional/regions-alps.png`, `regional/regions-saint-hilaire.png` |
+
+The sixth slide of this run, "Where will it work today?", moved out of it on
+15 September and became **Regional** (`regional`), a slide of its own straight
+after Forecast, where it belongs with the other forecast material:
+Europe by region pushing in on the Alps, then the Alpine arc pushing in on the
+region that holds Saint-Hilaire. Same figures, same caption rules: "climb above
+local terrain", "a research prototype, not yet in the app".
 
 Every claim on them is a sentence from `poster.html` or from `README.md`'s
 number table. The three that are easy to get wrong, and are therefore worded
@@ -79,6 +85,23 @@ morning**, never "your flight against the forecast"; the regional map is
 **climb above local terrain**, never thermal top or strength, and is called a
 research prototype on the slide; and the thermal core is a **lift and recency
 weighted centre**, not a Kalman filter.
+
+### Pressing things
+
+The strip is 19 buttons, 64 px tall, with hover, active and current states,
+and the cursor comes back from `cursor: none` whenever it is over something
+pressable. Two invisible zones down the screen edges, 132 px wide with a
+chevron that brightens when touched, step back and forward. All of it is for
+the stand: Simen's note was that the strip was hard to hit.
+
+**Anything that moves the deck by hand re-cues the auto-advance**
+(`recue()` in `kiosk.js`, which is `Reveal.toggleAutoSlide(false)` then
+`(true)`). Reveal cues that timer when *it* changes slide, not when we do, so
+without this a slide someone just pressed inherited what was left of the
+previous slide's countdown and could vanish two seconds later. Measured after
+the fix: press Regional, it stays 20.2 s, and its `dur` is 20.
+`autoSlideStoppable` is still false, so the deck carries on by itself after a
+press either way.
 
 ### How the media was made
 
@@ -97,6 +120,14 @@ out of frame. It also does two things worth knowing:
   picture, the phone crop a flat fill of the app's own page colour, so the
   Ken Burns has margin to eat instead of axis labels and first words.
 
+**A half-written still survives forever, and `build.py` now checks.** This box
+runs out of disk regularly, and a save that dies half way leaves a file that is
+*newer* than its source, so every later build says "up to date" and the deck
+shows a map that stops in a hard line two thirds down. That is exactly what
+happened to `algo-regions-alps.png` on 15 September. `copy_still` now decodes
+the staged file before trusting it, and `mirror()` compares sizes as well as
+mtimes.
+
 The hodograph clip is `ALGO/hodograph/`: `render.html` exposes `render(t)` and
 draws the frame from `t` alone, `make.py` screenshots 500 frames with
 Playwright and encodes them at 25 fps. Re-run either script and then
@@ -106,18 +137,22 @@ wind 2.6 m/s from 212 deg, airspeed 9.0 m/s, pitot 2.0 m/s from 210 deg.
 ## Things worth a second look
 
 - **The lap is 7 min 31 s, and the README asks for four to five.** The
-  "It learns" run is 116 s of that and the deck had already grown past five
+  "It learns" run is 96 s of that and the deck had already grown past five
   minutes before it landed. A visitor standing still no longer sees
   everything. If that matters more than the depth, the cheapest cuts are
   "Where the lift is" (18 s, the closest thing to a repeat, since Thermal
   assist already has the same subject) and trimming the run's slides from 20 s
   to 18 s.
-- **"Your flights, synced" shows another pilot's name.** `app-flightdetails.jpg`
-  has a FLYING WITH row that reads "Jørgen Sørenssen (Ozone Lyght)", and at
-  42% brightness it is still legible on a 1920 screen. The poster material was
-  cropped and blurred specifically to keep peers' names off this monitor; this
-  slide predates that rule and has not had the same treatment. A tighter crop
-  of the same screenshot would fix it.
+- **The 3D replay clip labels other pilots.** `gaggle-3d.mp4` is the Sogndal
+  gaggle, and the 3D view puts a name and a wing on every pilot in it. That is
+  the feature and it is why the clip was chosen ("with the pilots who were
+  there"), but it is worth knowing that this one slide shows names where the
+  poster material was deliberately cropped and blurred to avoid them.
+- **The box is out of disk.** `/` sat at 100% for most of 15 September, with
+  under 100 MB free at times, and Chromium simply crashes at that point, so
+  the deck cannot be verified. `video/` plus its mirror is about 640 MB of it,
+  which is small next to the worktrees and the raw recordings, but raising
+  `CRF` is still the cheapest lever this folder has.
 - **The corner QR sits over the top-right corner of every wide and duo
   slide.** On "Every flight keeps its forecast" that decided the order of the
   two cells: the forecast prose is on the left, the chart on the right, where
@@ -160,9 +195,13 @@ Playwright, Chromium, 1920x1080, served over `python -m http.server`:
 - auto advance with no input at all: wind (18 s) rolled on to nav by itself
 - `Esc` opens the overview, `1` `3` `Enter` jumps to slide 13, and a lone `3`
   still reaches 3D replay
-- the strip fits: 18 entries between x=17 and x=1903 of 1920. It is full. The
-  next slide that wants its own entry needs a shorter label somewhere, or an
-  empty label so it shares the chip before it.
+- the strip fits: 19 buttons between x=30 and x=1890 of 1920, each 63 px tall
+  and at least 54 px wide. It is full. The next slide that wants its own entry
+  needs a shorter label somewhere, or an empty label so it shares the chip
+  before it.
+- pressing a chip jumps there, the highlight follows, and the slide then holds
+  for its own duration (20.2 s measured against a `dur` of 20)
+- the edge zones step: right from Home lands on Thermal, left comes back
 - the loop wraps: the closing slide ran out and came back to the title
 - the published mirror in `docs/` was served and driven too, with no 404s
 - no console errors on any slide

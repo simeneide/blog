@@ -142,6 +142,43 @@ body {
   animation: kenburns-pan var(--dur, 20s) linear forwards;
 }
 
+/* "zoom" is the one that goes on a clip (kbVideo): a straight creep in, no
+   drift, because a screen recording has readouts along its edges. "big" is
+   for a still that has to carry a slide on its own: far more travel than the
+   usual push, so it plainly moves from across the stand. */
+
+@keyframes kenburns-zoom {
+  from {
+    transform: scale(1.005);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes kenburns-big {
+  from {
+    transform: scale(1.02) translate3d(2.5%, 1.6%, 0);
+  }
+  to {
+    transform: scale(1.25) translate3d(-3.5%, -2.4%, 0);
+  }
+}
+
+.kb-zoom {
+  transform: scale(1.005);
+}
+.kb-zoom.kb-run,
+video.kb-zoom.kb-run {
+  animation: kenburns-zoom var(--dur, 20s) linear forwards;
+}
+.kb-big {
+  transform: scale(1.02);
+}
+.kb-big.kb-run {
+  animation: kenburns-big var(--dur, 20s) linear forwards;
+}
+
 /* A light screenshot behind white text is unreadable both ways round. This
    pushes it back to being a backdrop: the picture is texture, the card carries
    the message. */
@@ -485,6 +522,10 @@ video.media-bleed {
   position: absolute;
   inset: 0;
   overflow: hidden;
+  /* Promote the layer before the fade starts, so the cross-fade is not the
+     first thing that asks the compositor for this picture. */
+  will-change: opacity;
+  backface-visibility: hidden;
 }
 .seq-cell img {
   position: absolute;
@@ -678,7 +719,7 @@ body.no-corner-qr .corner-qr {
   right: 0;
   bottom: 0;
   z-index: 60;
-  height: 58px;
+  height: 64px;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -690,21 +731,45 @@ body.no-corner-qr .corner-qr {
   border-top: 1px solid #1b2738;
   font-family: "Questrial", system-ui, sans-serif;
 }
-/* 18 entries is what fits in one row of 1920 px at this size. If the deck
+/* 19 entries is what fits in one row of 1920 px at this size. If the deck
    grows again, either shorten a label or let the new slides share a chip
-   (a slide with an empty label rides on the one before it). */
+   (a slide with an empty label rides on the one before it).
+
+   Every chip is a real button, 64 px tall and about 90 px wide, because this
+   screen is touched: a visitor should be able to put a finger on a feature
+   and land on it. The cursor is hidden over the slide and comes back over
+   anything pressable. */
 .hk {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-top: 3px solid transparent;
+  margin: 0;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 0 6px;
-  color: #7b8da4;
-  font-size: 18px;
+  gap: 5px;
+  padding: 0 9px;
+  color: #8ba0b8;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 1;
   white-space: nowrap;
-  border-top: 3px solid transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition:
-    color 0.25s ease,
-    border-color 0.25s ease;
+    color 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+.hk:hover {
+  color: #fff;
+  background: rgba(14, 165, 233, 0.18);
+}
+.hk:hover b {
+  background: #23405f;
+}
+.hk:active {
+  background: rgba(14, 165, 233, 0.36);
 }
 .hk b {
   display: inline-flex;
@@ -723,10 +788,78 @@ body.no-corner-qr .corner-qr {
 .hk.on {
   color: #fff;
   border-top-color: var(--sky);
+  background: rgba(14, 165, 233, 0.12);
 }
 .hk.on b {
   background: var(--sky);
   color: #05070d;
+}
+
+/* Previous and next, for a finger. Tall zones down both edges, above the
+   slide and below the strip and the corner QR, with a chevron that only
+   shows itself when something is on it. */
+.edge {
+  position: fixed;
+  top: 0;
+  bottom: 64px;
+  width: 132px;
+  z-index: 55;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.2s ease;
+}
+.edge-left {
+  left: 0;
+}
+.edge-right {
+  right: 0;
+}
+.edge:hover {
+  background: linear-gradient(
+    to right,
+    rgba(14, 165, 233, 0.22),
+    rgba(14, 165, 233, 0)
+  );
+}
+.edge-right:hover {
+  background: linear-gradient(
+    to left,
+    rgba(14, 165, 233, 0.22),
+    rgba(14, 165, 233, 0)
+  );
+}
+.chev {
+  width: 36px;
+  height: 36px;
+  border-right: 7px solid #fff;
+  border-bottom: 7px solid #fff;
+  border-radius: 5px;
+  opacity: 0.2;
+  filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.9));
+  transition:
+    opacity 0.2s ease,
+    scale 0.2s ease;
+}
+.edge-left .chev {
+  transform: rotate(135deg);
+}
+.edge-right .chev {
+  transform: rotate(-45deg);
+}
+.edge:hover .chev {
+  opacity: 0.9;
+}
+.edge:active .chev {
+  opacity: 1;
+  scale: 1.18;
 }
 
 /* In overview (Esc) the chrome only gets in the way. */

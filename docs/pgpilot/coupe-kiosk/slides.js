@@ -18,6 +18,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -52,6 +53,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -62,7 +64,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/thermal-assist.mp4",
       "poster": "img/poster-thermal-assist.jpg",
-      "dur": 21.77,
+      "dur": 22.03,
       "w": 1920,
       "h": 1080
     }
@@ -86,6 +88,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -96,7 +99,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/wind-estimation.mp4",
       "poster": "img/poster-wind-estimation.jpg",
-      "dur": 27.83,
+      "dur": 22.03,
       "w": 1920,
       "h": 1080
     }
@@ -120,6 +123,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -130,14 +134,14 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/navigation.mp4",
       "poster": "img/poster-navigation.jpg",
-      "dur": 23.77,
+      "dur": 20.03,
       "w": 1920,
       "h": 1080
     }
   },
   {
     "id": "sideview",
-    "label": "Side view",
+    "label": "Side",
     "key": "S",
     "layout": "wide",
     "title": "Side view and glide range",
@@ -151,9 +155,10 @@ window.KIOSK_SLIDES = [
     "cornerQr": true,
     "dim": false,
     "card": "top",
-    "scrim": true,
+    "scrim": false,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -164,7 +169,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/sideview-glide.mp4",
       "poster": "img/poster-sideview-glide.jpg",
-      "dur": 27.77,
+      "dur": 22.03,
       "w": 1920,
       "h": 1080
     }
@@ -177,7 +182,7 @@ window.KIOSK_SLIDES = [
     "title": "3D replay",
     "lines": [
       "Fly it again in 3D.",
-      "Every flight, every thermal, every glide."
+      "Every flight, every thermal, every glide. With the pilots who were there."
     ],
     "dur": 22,
     "qr": null,
@@ -188,6 +193,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -196,9 +202,9 @@ window.KIOSK_SLIDES = [
     "stats": [],
     "media": {
       "type": "video",
-      "src": "video/replay-3d-phone.mp4",
-      "poster": "img/poster-replay-3d-phone.jpg",
-      "dur": 6.8,
+      "src": "video/gaggle-3d.mp4",
+      "poster": "img/poster-gaggle-3d.jpg",
+      "dur": 31.0,
       "w": 1080,
       "h": 1920
     },
@@ -213,7 +219,7 @@ window.KIOSK_SLIDES = [
   },
   {
     "id": "tracking",
-    "label": "Tracking",
+    "label": "Track",
     "key": "L",
     "layout": "phone",
     "title": "Live tracking",
@@ -230,6 +236,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -264,6 +271,7 @@ window.KIOSK_SLIDES = [
     "scrim": false,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -298,6 +306,7 @@ window.KIOSK_SLIDES = [
     "scrim": false,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -315,7 +324,7 @@ window.KIOSK_SLIDES = [
   },
   {
     "id": "hardware",
-    "label": "Hardware",
+    "label": "Button",
     "key": "H",
     "layout": "phone",
     "title": "Button on the brake line",
@@ -333,6 +342,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -366,7 +376,8 @@ window.KIOSK_SLIDES = [
     "card": "bottom",
     "scrim": true,
     "cardMax": null,
-    "kb": "in",
+    "kb": "zoom",
+    "kbVideo": true,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -381,6 +392,56 @@ window.KIOSK_SLIDES = [
       "w": 1920,
       "h": 1080
     }
+  },
+  {
+    "id": "regional",
+    "label": "Regional",
+    "key": null,
+    "layout": "seq",
+    "title": "Regional forecast is on its way!",
+    "lines": [
+      "Where will it work today? 1 226 regions across Europe,",
+      "climb above local terrain.",
+      "A research prototype, not yet in the app."
+    ],
+    "dur": 20,
+    "qr": null,
+    "footnote": null,
+    "cornerQr": true,
+    "dim": false,
+    "card": "bottom",
+    "scrim": true,
+    "cardMax": null,
+    "kb": "in",
+    "kbVideo": false,
+    "kbOrigin": null,
+    "kbSeq": [
+      "in",
+      "in"
+    ],
+    "kbOriginSeq": [
+      "46% 64%",
+      "39% 50%"
+    ],
+    "eyebrow": null,
+    "statsLabel": null,
+    "stats": [],
+    "images": [
+      {
+        "type": "image",
+        "src": "img/algo-regions-europe.png",
+        "poster": "img/algo-regions-europe.png",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "type": "image",
+        "src": "img/algo-regions-alps.png",
+        "poster": "img/algo-regions-alps.png",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
   },
   {
     "id": "contacts",
@@ -401,6 +462,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -418,13 +480,13 @@ window.KIOSK_SLIDES = [
   },
   {
     "id": "flights",
-    "label": "Flights",
+    "label": "Analyse",
     "key": "X",
     "layout": "wide",
-    "title": "Your flights, synced",
+    "title": "Analyse your flight!",
     "lines": [
-      "XContest and Flightlog sync, IGC export,",
-      "segments split automatically."
+      "Glides and thermals, your turn direction, the air you flew in.",
+      "Temperature, lapse rate and wind from the VectorVario, on your flight."
     ],
     "dur": 18,
     "qr": null,
@@ -434,7 +496,8 @@ window.KIOSK_SLIDES = [
     "card": "bottom",
     "scrim": true,
     "cardMax": null,
-    "kb": "in",
+    "kb": "big",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -467,6 +530,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "out",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -517,6 +581,7 @@ window.KIOSK_SLIDES = [
     "scrim": false,
     "cardMax": 780,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -551,6 +616,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": "51% 54%",
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -584,6 +650,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -627,6 +694,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -642,57 +710,8 @@ window.KIOSK_SLIDES = [
     }
   },
   {
-    "id": "regions",
-    "label": "",
-    "key": null,
-    "layout": "seq",
-    "title": "Where will it work today?",
-    "lines": [
-      "1 226 forecast regions, coloured by climb above local terrain.",
-      "A research prototype: within 4% of mixed-layer theory,",
-      "not yet validated against observations."
-    ],
-    "dur": 20,
-    "qr": null,
-    "footnote": null,
-    "cornerQr": true,
-    "dim": false,
-    "card": "bottom",
-    "scrim": true,
-    "cardMax": null,
-    "kb": "in",
-    "kbOrigin": null,
-    "kbSeq": [
-      "in",
-      "pan"
-    ],
-    "kbOriginSeq": [
-      "39% 50%",
-      "65% 50%"
-    ],
-    "eyebrow": null,
-    "statsLabel": null,
-    "stats": [],
-    "images": [
-      {
-        "type": "image",
-        "src": "img/algo-regions-alps.png",
-        "poster": "img/algo-regions-alps.png",
-        "w": 1920,
-        "h": 1080
-      },
-      {
-        "type": "image",
-        "src": "img/algo-regions-one.png",
-        "poster": "img/algo-regions-one.png",
-        "w": 1750,
-        "h": 984
-      }
-    ]
-  },
-  {
     "id": "areacontest",
-    "label": "AreaContest",
+    "label": "Area",
     "key": "A",
     "layout": "phone",
     "title": "AreaContest",
@@ -709,6 +728,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -750,6 +770,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -784,6 +805,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],
@@ -817,6 +839,7 @@ window.KIOSK_SLIDES = [
     "scrim": true,
     "cardMax": null,
     "kb": "in",
+    "kbVideo": false,
     "kbOrigin": null,
     "kbSeq": [],
     "kbOriginSeq": [],

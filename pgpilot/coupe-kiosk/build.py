@@ -79,6 +79,7 @@ class Slide:
     fallback: dict = field(default_factory=dict)
     layout: str | None = None  # forced layout, otherwise "wide"
     media: str | None = None  # forced media source path
+    media_fallback: str | None = None  # used if media is not on disk yet
     images: list[str] = field(default_factory=list)
     qr: str | None = None  # extra QR on the slide itself
     footnote: str | None = None
@@ -87,7 +88,8 @@ class Slide:
     card: str = "bottom"  # where the title card sits on a wide slide
     scrim: bool = True  # the dark wash under the card on a wide slide
     card_max: int | None = None  # narrow the card to leave room in the frame
-    kb: str = "in"  # Ken Burns direction: in, out, pan
+    kb: str = "in"  # Ken Burns direction: in, out, pan, zoom, big
+    kb_video: bool = False  # let the push run on a clip too, not just a still
     kb_origin: str | None = None  # what the push aims at, "38% 50%"
     kb_seq: list[str] = field(default_factory=list)  # per image, seq layout
     kb_origin_seq: list[str] = field(default_factory=list)
@@ -148,7 +150,7 @@ SLIDES: list[Slide] = [
     ),
     Slide(
         id="sideview",
-        label="Side view",
+        label="Side",
         key="S",
         title="Side view and glide range",
         lines=[
@@ -158,6 +160,9 @@ SLIDES: list[Slide] = [
         dur=20,
         wide="sideview-glide.mp4",
         card="top",
+        # The card is at the top and the side view panel runs along the
+        # bottom, which is exactly where the scrim would wash it out.
+        scrim=False,
         fallback={"layout": "phone", "media": str(VOSS_VIDEO / "klipp-sideview.mp4")},
     ),
     Slide(
@@ -167,19 +172,20 @@ SLIDES: list[Slide] = [
         title="3D replay",
         lines=[
             "Fly it again in 3D.",
-            "Every flight, every thermal, every glide.",
+            "Every flight, every thermal, every glide. With the pilots who were there.",
         ],
         dur=22,
-        # The Instagram whale reel's 3D opening (the same shot without the
-        # text cards) in the phone, the landscape chase recording behind it.
+        # The Sogndal gaggle in the phone, several pilots thermalling together,
+        # with the landscape chase recording behind it.
         layout="phone",
-        media="/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/replay-3d-phone.mp4",
+        media=str(RECORDED / "gaggle-3d.mp4"),
+        media_fallback=str(SOCIAL / "hook_S_gaggle_wind.mp4"),
         wide="replay-3d.mp4",
         fallback={},
     ),
     Slide(
         id="tracking",
-        label="Tracking",
+        label="Track",
         key="L",
         title="Live tracking",
         lines=[
@@ -222,7 +228,7 @@ SLIDES: list[Slide] = [
     ),
     Slide(
         id="hardware",
-        label="Hardware",
+        label="Button",
         key="H",
         title="Button on the brake line",
         lines=[
@@ -245,6 +251,8 @@ SLIDES: list[Slide] = [
         ],
         dur=20,
         wide="forecast-airgram.mp4",
+        kb="zoom",
+        kb_video=True,
         fallback={
             "layout": "duo",
             "images": [
@@ -252,6 +260,26 @@ SLIDES: list[Slide] = [
                 str(VOSS_IMG / "app-bavallen-airgram.jpg"),
             ],
         },
+    ),
+    Slide(
+        id="regional",
+        label="Regional",
+        title="Regional forecast is on its way!",
+        lines=[
+            "Where will it work today? 1 226 regions across Europe,",
+            "climb above local terrain.",
+            "A research prototype, not yet in the app.",
+        ],
+        dur=20,
+        layout="seq",
+        images=[
+            str(ALGO / "algo-regions-europe.png"),
+            str(ALGO / "algo-regions-alps.png"),
+        ],
+        kb_seq=["in", "in"],
+        # The Alpine arc in the Europe figure, then the region that holds
+        # Saint-Hilaire in the Alpine one.
+        kb_origin_seq=["46% 64%", "39% 50%"],
     ),
     Slide(
         id="contacts",
@@ -268,17 +296,23 @@ SLIDES: list[Slide] = [
     ),
     Slide(
         id="flights",
-        label="Flights",
+        label="Analyse",
         key="X",
-        title="Your flights, synced",
+        title="Analyse your flight!",
         lines=[
-            "XContest and Flightlog sync, IGC export,",
-            "segments split automatically.",
+            "Glides and thermals, your turn direction, the air you flew in.",
+            "Temperature, lapse rate and wind from the VectorVario, on your flight.",
         ],
         dur=18,
-        layout="wide",
-        # The Voss still with the other pilot's name and the prose blurred out.
-        media="/home/simen/.claude/jobs/eeb1fb3a/tmp/flightdetails-noname.jpg",
+        wide="analyse-flight.mp4",
+        # Until the recording lands: the four-panel still, pushed hard enough
+        # that it plainly moves. Same screenshot the slide always had, with
+        # the peer name and the prose blurred out.
+        fallback={
+            "layout": "wide",
+            "media": "/home/simen/.claude/jobs/eeb1fb3a/tmp/flightdetails-noname.jpg",
+        },
+        kb="big",
         dim=True,
     ),
     # ---------------------------------------------------------------- the
@@ -370,26 +404,8 @@ SLIDES: list[Slide] = [
         media=str(ALGO / "algo-hike-phone.png"),
     ),
     Slide(
-        id="regions",
-        label="",
-        title="Where will it work today?",
-        lines=[
-            "1 226 forecast regions, coloured by climb above local terrain.",
-            "A research prototype: within 4% of mixed-layer theory,",
-            "not yet validated against observations.",
-        ],
-        dur=20,
-        layout="seq",
-        images=[
-            str(ALGO / "algo-regions-alps.png"),
-            str(ALGO / "algo-regions-one.png"),
-        ],
-        kb_seq=["in", "pan"],
-        kb_origin_seq=["39% 50%", "65% 50%"],
-    ),
-    Slide(
         id="areacontest",
-        label="AreaContest",
+        label="Area",
         key="A",
         title="AreaContest",
         lines=[
@@ -537,10 +553,28 @@ def extract_poster(video: Path, dst: Path, dur: float) -> None:
     )
 
 
+def readable(p: Path) -> bool:
+    """Does this still actually decode all the way to the bottom?
+
+    This box runs out of disk regularly. A save that dies half way leaves a
+    file that is newer than its source, so every later build skips it, and the
+    deck shows a picture that stops in a hard line two thirds down. Cost is one
+    decode per still per build; worth it.
+    """
+    try:
+        with Image.open(p) as im:
+            im.load()
+    except Exception:  # noqa: BLE001 - any decode failure means re-stage it
+        return False
+    return True
+
+
 def copy_still(src: Path, dst: Path) -> None:
     if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
-        print(f"  still  {dst.name:<28} up to date")
-        return
+        if readable(dst):
+            print(f"  still  {dst.name:<28} up to date")
+            return
+        print(f"  still  {dst.name:<28} truncated, re-staging")
     with Image.open(src) as im:
         if max(im.size) > MAX_EDGE:
             scale = MAX_EDGE / max(im.size)
@@ -635,6 +669,14 @@ def main() -> int:
                 if s.fallback.get("images"):
                     images = [Path(p) for p in s.fallback["images"]]
 
+        # A slide can also name a clip that is still being made. Same idea as
+        # ``wide``, but for the piece the layout is built around rather than
+        # the backdrop.
+        if media_src and not media_src.exists() and s.media_fallback:
+            missing.append((s.id, media_src.name))
+            print(f"  !!     {media_src.name} not here yet, using {s.media_fallback}")
+            media_src = Path(s.media_fallback)
+
         entry: dict = {
             "id": s.id,
             "label": s.label,
@@ -651,6 +693,7 @@ def main() -> int:
             "scrim": s.scrim,
             "cardMax": s.card_max,
             "kb": s.kb,
+            "kbVideo": s.kb_video,
             "kbOrigin": s.kb_origin,
             "kbSeq": s.kb_seq,
             "kbOriginSeq": s.kb_origin_seq,
@@ -710,11 +753,14 @@ def mirror() -> None:
         dst = MIRROR / sub
         dst.mkdir(exist_ok=True)
         for f in src.iterdir():
-            if f.is_file() and (
-                not (dst / f.name).exists()
-                or (dst / f.name).stat().st_mtime < f.stat().st_mtime
-            ):
-                shutil.copy2(f, dst / f.name)
+            if not f.is_file():
+                continue
+            out = dst / f.name
+            stale = not out.exists() or out.stat().st_mtime < f.stat().st_mtime
+            # Same trap as copy_still: a copy that ran out of disk leaves a
+            # short file with a fresh mtime, which then looks up to date.
+            if stale or out.stat().st_size != f.stat().st_size:
+                shutil.copy2(f, out)
     print(f"mirrored into {MIRROR}")
 
 

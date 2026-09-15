@@ -63,11 +63,16 @@ screen never gets stuck on one slide because someone walked away.
 | `H` | Button on the brake line |
 | `F` | Wind and forecast at the takeoff |
 | `G` | Ground contacts |
-| `X` | Your flights, synced |
-| `I` | It learns from your flying (six slides, one entry) |
+| `X` | Analyse your flight |
+| `I` | It learns from your flying (five slides, one entry) |
 | `A` | AreaContest, the Coupe whale |
 | `O` | Works without coverage |
 | `End` | Try it now, the big QR |
+
+**Or press the strip.** Every entry is a button, and the two zones down the
+left and right edges of the screen step back and forward, so the whole deck is
+usable on a touch monitor with no keyboard. Whatever you press, that slide then
+gets its full time on screen before the deck moves on by itself.
 
 Also: `Esc` for the overview grid, a slide number followed by `Enter` for a
 direct jump, arrows or space to step by hand.
