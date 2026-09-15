@@ -112,7 +112,7 @@ window.KIOSK_SLIDES = [
     "title": "Navigation",
     "lines": [
       "Tasks, waypoints and a heading line.",
-      "Glide to goal on the map."
+      "Competition start countdown, then glide to goal."
     ],
     "dur": 18,
     "qr": null,
@@ -134,7 +134,7 @@ window.KIOSK_SLIDES = [
       "type": "video",
       "src": "video/navigation.mp4",
       "poster": "img/poster-navigation.jpg",
-      "dur": 20.03,
+      "dur": 19.0,
       "w": 1920,
       "h": 1080
     }
@@ -260,6 +260,7 @@ window.KIOSK_SLIDES = [
     "title": "Group voice",
     "lines": [
       "Push to talk to everyone in your group. No range limit.",
+      "Voice messages are auto-transcribed on display.",
       "Hold the button on the brake line, hands stay on the brakes."
     ],
     "dur": 20,
@@ -505,11 +506,12 @@ window.KIOSK_SLIDES = [
     "statsLabel": null,
     "stats": [],
     "media": {
-      "type": "image",
-      "src": "img/flightdetails-noname.jpg",
-      "poster": "img/flightdetails-noname.jpg",
-      "w": 1440,
-      "h": 810
+      "type": "video",
+      "src": "video/analyse-flight.mp4",
+      "poster": "img/poster-analyse-flight.jpg",
+      "dur": 26.0,
+      "w": 1920,
+      "h": 1080
     }
   },
   {

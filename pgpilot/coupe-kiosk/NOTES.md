@@ -2,53 +2,37 @@
 
 Built 14 September 2026. 23 slides, 7 minutes 31 seconds per lap.
 
-## TODO: eight recordings are not in yet
+## Recording status
 
-Eight landscape 1920x1080 screen recordings were being made while this deck was
-built. None of them existed at build time, so every slide that wants one is
-running on a fallback. The fallbacks are real clips, not placeholders, so the
-deck is show-ready as it stands, but these are the upgrades.
+Eleven of the twelve recorder-controlled clips are present. The only missing
+one is `live-tracking.mp4`: the public live map had no airborne pilot to follow
+when it was attempted, so the deck deliberately keeps the real phone fallback
+instead of presenting an empty map. Every other requested feature uses its
+named recording.
 
-Drop the file in `/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/` under
-exactly this name and re-run `uv run build.py`. The slide switches from the
-fallback to the recording by itself, no edits needed.
+`build.py` resolves these names from
+`/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/` and prints the fallback
+status on every run:
 
-| Expected file | Slide | Running on instead |
+| Recording | Slide | Resolved use |
 |---|---|---|
-| `thermal-assist.mp4` | Thermal assist | phone, `klipp-termikk.mp4` (14 s, bubble and vario while circling) |
-| `wind-estimation.mp4` | Wind estimation | phone, `hook_S_gaggle_wind.mp4` (12 s, 3D gaggle with wind) |
-| `navigation.mp4` | Navigation | wide, `hvor-er-bir.mp4` (15 s, map zoom) |
-| `sideview-glide.mp4` | Side view and glide range | phone, `klipp-sideview.mp4` (10 s, side view panel) |
-| `replay-3d.mp4` | 3D replay | wide, `bir-3d.mp4` (38 s, Himalaya flyover) |
-| `live-tracking.mp4` | Live tracking | phone, `klipp-tracking.mp4` (5 s, two pilots in one thermal) |
-| `forecast-airgram.mp4` | Wind and forecast at the takeoff | duo stills, `app-bavallen-vind.jpg` + `app-bavallen-airgram.jpg` |
-| `areacontest-whale.mp4` | AreaContest | blurred still behind the phone |
+| `thermal-assist.mp4` | Thermal assist | Real Saint-Hilaire replay |
+| `wind-estimation.mp4` | Wind estimation | Real Saint-Hilaire replay |
+| `navigation.mp4` | Navigation | Close task replay with a competition start countdown |
+| `sideview-glide.mp4` | Side view and glide range | Replay with route, pilots and airspace; kiosk scrim disabled |
+| `replay-3d.mp4` | 3D replay | Landscape background behind the Sogndal gaggle reel |
+| `live-tracking.mp4` | Live tracking | Missing by design; real phone tracking clip remains |
+| `forecast-airgram.mp4` | Wind and forecast | Moving Saint-Hilaire airgram |
+| `areacontest-whale.mp4` | AreaContest and live board | Moving board backdrop and the full-width board slide |
+| `voice-groups.mp4` | Group voice | Motion graphic with in-map transcript pills |
+| `vhf-bridge.mp4` | VHF bridge | Motion graphic |
+| `ground-contacts.mp4` | Ground contacts | Real launch and landing footage with notices |
+| `analyse-flight.mp4` | Analyse your flight | Real public flight detail and analysis panels |
 
-AreaContest is the one that behaves differently, on purpose. The Coupe whale
-reel (`coupe_whale_v8.mp4`) stays in the phone frame either way, because that
-reel *is* the AreaContest pitch for this stand. If `areacontest-whale.mp4`
-lands it becomes the moving backdrop behind the phone instead of the blurred
-still.
-
-## Which source each slide uses right now
-
-| # | Slide | Layout | Source |
-|---|---|---|---|
-| 1 | All you need in one flight app | title | `bir-3d.mp4` behind the wordmark |
-| 2 | Thermal assist | phone | `klipp-termikk.mp4` |
-| 3 | Wind estimation | phone | `hook_S_gaggle_wind.mp4` |
-| 4 | Navigation | wide | `hvor-er-bir.mp4` |
-| 5 | Side view and glide range | phone | `klipp-sideview.mp4` |
-| 6 | 3D replay | wide | `bir-3d.mp4` |
-| 7 | Live tracking | phone | `klipp-tracking.mp4` |
-| 8 | Group voice and chat | phone | `app-comms.png`, Ken Burns inside the frame |
-| 9 | Button on the brake line | phone | `klipp-knapp.mp4` |
-| 10 | Wind and forecast at the takeoff | duo | `app-bavallen-vind.jpg`, `app-bavallen-airgram.jpg` |
-| 11 | Ground contacts | phone | `klipp-start.mp4` |
-| 12 | Your flights, synced | wide | `app-flightdetails.jpg`, dimmed |
-| 13 | AreaContest | phone | `coupe_whale_v8.mp4` + QR for pgpilot.app/coupe |
-| 14 | Works without coverage | phone | `klipp-backcountry.mp4` |
-| 15 | Try it now | closing | `bir-3d.mp4` behind the big QR |
+The 3D slide keeps `gaggle-3d.mp4`, the portrait Sogndal gaggle reel, in the
+phone frame. `replay-3d.mp4` is only its landscape background. This pairing is
+intentional: the gaggle reel is the requested multiple-pilot thermal, while the
+wide recording lets the frame move rather than sit over a still.
 
 ## The "It learns from your flying" run
 
@@ -88,7 +72,7 @@ weighted centre**, not a Kalman filter.
 
 ### Pressing things
 
-The strip is 19 buttons, 64 px tall, with hover, active and current states,
+The strip is 20 buttons, 64 px tall, with hover, active and current states,
 and the cursor comes back from `cursor: none` whenever it is over something
 pressable. Two invisible zones down the screen edges, 132 px wide with a
 chevron that brightens when touched, step back and forward. All of it is for

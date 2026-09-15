@@ -142,7 +142,7 @@ SLIDES: list[Slide] = [
         title="Navigation",
         lines=[
             "Tasks, waypoints and a heading line.",
-            "Glide to goal on the map.",
+            "Competition start countdown, then glide to goal.",
         ],
         dur=18,
         wide="navigation.mp4",
@@ -203,6 +203,7 @@ SLIDES: list[Slide] = [
         title="Group voice",
         lines=[
             "Push to talk to everyone in your group. No range limit.",
+            "Voice messages are auto-transcribed on display.",
             "Hold the button on the brake line, hands stay on the brakes.",
         ],
         dur=20,

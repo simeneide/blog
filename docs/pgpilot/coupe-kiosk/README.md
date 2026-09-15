@@ -97,14 +97,14 @@ uv run build.py
 It is safe to re-run: anything already encoded and newer than its source is
 left alone, and it prints which recordings are still missing.
 
-**To swap in a new landscape recording**, drop the file into the directory
+**To swap in a recorder-controlled clip**, drop the file into the directory
 `RECORDED` points at (`/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/`)
-under the exact name the slide asks for, then re-run `build.py`. The slide
-switches from its fallback to the recording by itself. The eight names it
-looks for are `thermal-assist.mp4`, `wind-estimation.mp4`, `navigation.mp4`,
-`sideview-glide.mp4`, `areacontest-whale.mp4`, `forecast-airgram.mp4`,
-`replay-3d.mp4` and `live-tracking.mp4`. See `NOTES.md` for what each one
-currently falls back to.
+under the exact name the slide asks for, then re-run `build.py`. The twelve
+names are `thermal-assist.mp4`, `wind-estimation.mp4`, `navigation.mp4`,
+`sideview-glide.mp4`, `replay-3d.mp4`, `live-tracking.mp4`,
+`forecast-airgram.mp4`, `areacontest-whale.mp4`, `voice-groups.mp4`,
+`vhf-bridge.mp4`, `ground-contacts.mp4` and `analyse-flight.mp4`. See
+`NOTES.md` for the resolved source and fallback status.
 
 **To use a clip from somewhere else**, point that slide's `media` (or its
 `fallback["media"]`) at the file and re-run. Any resolution works: portrait
