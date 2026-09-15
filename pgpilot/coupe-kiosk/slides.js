@@ -31,7 +31,7 @@ window.KIOSK_SLIDES = [
     "layout": "wide",
     "title": "Wind estimation",
     "lines": [],
-    "dur": 18,
+    "dur": 20,
     "qr": null,
     "cornerQr": true,
     "card": "header",
@@ -41,9 +41,9 @@ window.KIOSK_SLIDES = [
     "kbOriginSeq": [],
     "media": {
       "type": "video",
-      "src": "video/wind-visible.mp4",
-      "poster": "img/poster-wind-visible.jpg",
-      "dur": 18.0,
+      "src": "video/wind-changing.mp4",
+      "poster": "img/poster-wind-changing.jpg",
+      "dur": 20.0,
       "w": 1920,
       "h": 1080
     }
@@ -55,7 +55,7 @@ window.KIOSK_SLIDES = [
     "layout": "wide",
     "title": "Competition navigation",
     "lines": [],
-    "dur": 15.8,
+    "dur": 25,
     "qr": null,
     "cornerQr": true,
     "card": "header",
@@ -65,9 +65,9 @@ window.KIOSK_SLIDES = [
     "kbOriginSeq": [],
     "media": {
       "type": "video",
-      "src": "video/navigation-real.mp4",
-      "poster": "img/poster-navigation-real.jpg",
-      "dur": 15.8,
+      "src": "video/navigation-extended.mp4",
+      "poster": "img/poster-navigation-extended.jpg",
+      "dur": 25.0,
       "w": 1600,
       "h": 900
     }
@@ -79,7 +79,7 @@ window.KIOSK_SLIDES = [
     "layout": "wide",
     "title": "Side view and glide range",
     "lines": [],
-    "dur": 16.1,
+    "dur": 19,
     "qr": null,
     "cornerQr": true,
     "card": "header",
@@ -89,9 +89,9 @@ window.KIOSK_SLIDES = [
     "kbOriginSeq": [],
     "media": {
       "type": "video",
-      "src": "video/sideview-fixed.mp4",
-      "poster": "img/poster-sideview-fixed.jpg",
-      "dur": 16.1,
+      "src": "video/sideview-companions.mp4",
+      "poster": "img/poster-sideview-companions.jpg",
+      "dur": 19.0,
       "w": 1600,
       "h": 900
     }
@@ -103,7 +103,7 @@ window.KIOSK_SLIDES = [
     "layout": "wide",
     "title": "3D replay",
     "lines": [],
-    "dur": 18,
+    "dur": 12,
     "qr": null,
     "cornerQr": true,
     "card": "bottom",
@@ -113,9 +113,9 @@ window.KIOSK_SLIDES = [
     "kbOriginSeq": [],
     "media": {
       "type": "video",
-      "src": "video/glacier-replay.mp4",
-      "poster": "img/poster-glacier-replay.jpg",
-      "dur": 18.0,
+      "src": "video/glacier-faster.mp4",
+      "poster": "img/poster-glacier-faster.jpg",
+      "dur": 12.0,
       "w": 1920,
       "h": 1080
     }
@@ -127,7 +127,9 @@ window.KIOSK_SLIDES = [
     "layout": "phone",
     "title": "Live tracking",
     "lines": [
-      "Every second online. Direct radio off-grid."
+      "Every second online. Direct radio off-grid.",
+      "Online: OGN, PureTrack, XContest, SafeSky.",
+      "Off-grid: FLARM, FANET, Meshtastic, inReach."
     ],
     "dur": 14,
     "qr": null,
@@ -201,7 +203,7 @@ window.KIOSK_SLIDES = [
     "layout": "phone",
     "title": "Button on the brake line",
     "lines": [
-      "Customizable controls."
+      "Double and triple click for zoom in/out"
     ],
     "dur": 14,
     "qr": null,
@@ -221,6 +223,30 @@ window.KIOSK_SLIDES = [
     }
   },
   {
+    "id": "wind-history",
+    "label": "History",
+    "key": null,
+    "layout": "wide",
+    "title": "See historical wind and compare to actual observed wind",
+    "lines": [],
+    "dur": 20,
+    "qr": null,
+    "cornerQr": true,
+    "card": "header",
+    "scrim": false,
+    "kb": "in",
+    "kbSeq": [],
+    "kbOriginSeq": [],
+    "media": {
+      "type": "video",
+      "src": "video/weather-comparison.mp4",
+      "poster": "img/poster-weather-comparison.jpg",
+      "dur": 20.0,
+      "w": 1920,
+      "h": 1080
+    }
+  },
+  {
     "id": "forecast",
     "label": "Weather",
     "key": "F",
@@ -237,8 +263,8 @@ window.KIOSK_SLIDES = [
     "kbOriginSeq": [],
     "media": {
       "type": "video",
-      "src": "video/weather-comparison.mp4",
-      "poster": "img/poster-weather-comparison.jpg",
+      "src": "video/airgram-forecast-clear.mp4",
+      "poster": "img/poster-airgram-forecast-clear.jpg",
       "dur": 20.0,
       "w": 1920,
       "h": 1080
@@ -291,7 +317,7 @@ window.KIOSK_SLIDES = [
     "layout": "wide",
     "title": "Ground contacts",
     "lines": [
-      "Your ground contacts stay informed."
+      "Makes sure people at home knows where you are"
     ],
     "dur": 17.2,
     "qr": null,
@@ -317,7 +343,7 @@ window.KIOSK_SLIDES = [
     "layout": "wide",
     "title": "Analyse your flight",
     "lines": [
-      "Glides and thermals, your turn direction, the air you flew in."
+      "See thermals, glides, turn rates, temperatures, the day's weather forecast and more."
     ],
     "dur": 24,
     "qr": null,
@@ -390,7 +416,10 @@ window.KIOSK_SLIDES = [
     "key": "O",
     "layout": "phone",
     "title": "Works without coverage",
-    "lines": [],
+    "lines": [
+      "VHF directly in app",
+      "FANET + inReach tracking"
+    ],
     "dur": 14,
     "qr": null,
     "cornerQr": true,
