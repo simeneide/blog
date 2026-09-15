@@ -1,153 +1,87 @@
 # pgpilot kiosk, Coupe Icare 2026
 
-An auto-playing feature cavalcade for the stand monitor at Saint-Hilaire,
-14 to 20 September 2026. 1920x1080 landscape, 23 slides, seven and a half
-minutes per lap, and it loops forever.
-
-Everything it needs is in this folder. It runs with the network cable pulled
-out: Reveal.js, both fonts, both QR codes, every clip and every still are
-local files.
+A title-first, continuously looping feature demo for a 1920x1080 stand screen.
+16 slides, about four and a half minutes. No introduction or closing slide.
+Most slides contain only a title; five retain one short supporting line.
 
 ## Run it
 
-Full screen, no browser chrome, clips allowed to start on their own:
-
-**Linux**
-
-```sh
-google-chrome \
-  --kiosk --autoplay-policy=no-user-gesture-required \
-  --disable-features=Translate --noerrdialogs --disable-infobars \
-  --start-fullscreen \
-  "file:///home/simen/blog/pgpilot/coupe-kiosk/index.html"
-```
-
-**macOS**
-
-```sh
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-  --kiosk --autoplay-policy=no-user-gesture-required \
-  --disable-features=Translate --noerrdialogs --disable-infobars \
-  "file:///Users/simen/blog/pgpilot/coupe-kiosk/index.html"
-```
-
-**From the published site** (needs wifi, so it is the backup, not the plan):
+The complete, self-contained deck is `docs/pgpilot/coupe-kiosk/` in the blog
+checkout. Its videos, stills, fonts, Reveal.js and QR codes are local files.
+Copy that entire folder to the stand computer for offline use.
 
 ```sh
 google-chrome --kiosk --autoplay-policy=no-user-gesture-required \
-  "https://eide.ai/pgpilot/coupe-kiosk/"
+  --disable-features=Translate --noerrdialogs --disable-infobars \
+  "file:///home/simen/blog/docs/pgpilot/coupe-kiosk/index.html"
 ```
 
-If the clips sit on a black frame and never start, the autoplay flag did not
-take. Chrome only honours it at launch, so quit Chrome completely first.
+Online review: <https://eide.ai/pgpilot/coupe-kiosk/>.
+Quit Chrome completely before relaunching if its autoplay flag is ignored.
+Exit kiosk mode with Alt+F4 on Linux or Cmd+Q on macOS.
 
-To exit kiosk mode: Alt+F4 on Linux, Cmd+Q on macOS.
+## Controls
 
-## Hotkeys
+Every entry in the bottom strip is a button. The screen edges and arrow keys
+step backward or forward. Any manual jump restarts that slide and its timer;
+auto-play continues without further input.
 
-The strip along the bottom lists every slide and its key. Press the key and
-the deck jumps there. It keeps auto-playing from wherever you land, so the
-screen never gets stuck on one slide because someone walked away.
-
-| Key | Slide |
+| Key | Feature |
 |---|---|
-| `Home` | Title |
-| `T` | Thermal assist |
+| `Home`, `T` | Thermal assist |
 | `W` | Wind estimation |
-| `N` | Navigation |
+| `N` | Competition navigation |
 | `S` | Side view and glide range |
 | `3` | 3D replay |
 | `L` | Live tracking |
-| `C` | Group voice and chat |
+| `C` | Group voice |
 | `R` | VHF bridge |
 | `H` | Button on the brake line |
-| `F` | Wind and forecast at the takeoff |
+| `F` | Weather forecast |
+| Strip button | Regional forecast |
 | `G` | Ground contacts |
 | `X` | Analyse your flight |
-| `I` | It learns from your flying (five slides, one entry) |
-| `A` | AreaContest, the Coupe whale |
-| `O` | Works without coverage |
-| `End` | Try it now, the big QR |
+| `I` | Automatic activity segments |
+| `A` | AreaContest |
+| `End`, `O` | Works without coverage |
 
-**Or press the strip.** Every entry is a button, and the two zones down the
-left and right edges of the screen step back and forward, so the whole deck is
-usable on a touch monitor with no keyboard. Whatever you press, that slide then
-gets its full time on screen before the deck moves on by itself.
+`Esc` opens the overview. Type a slide number followed by `Enter` to jump.
+A lone `3` waits 0.6 seconds before opening 3D replay, allowing `3` plus
+`Enter` to mean slide number 3 instead.
 
-Also: `Esc` for the overview grid, a slide number followed by `Enter` for a
-direct jump, arrows or space to step by hand.
+## Rebuild
 
-`3` is both the 3D replay hotkey and a digit. A lone `3` waits 0.6 s and then
-jumps to 3D replay; type a second digit or `Enter` inside that window and it
-is treated as a slide number instead.
-
-## Add or replace a clip
-
-Slides are defined in one place: the `SLIDES` list at the top of `build.py`.
-`build.py` copies and re-encodes the sources into `video/` and `img/`, pulls a
-poster frame out of every clip, writes `slides.js`, and mirrors the whole
-folder into `/home/simen/blog/docs/pgpilot/coupe-kiosk/`, which is what the
-blog publishes.
+Edit the `SLIDES` list in `build.py`, then run from the blog checkout:
 
 ```sh
-cd /home/simen/blog/pgpilot/coupe-kiosk
-uv run build.py
+uv run pgpilot/coupe-kiosk/build.py
 ```
 
-It is safe to re-run: anything already encoded and newer than its source is
-left alone, and it prints which recordings are still missing.
+The builder stages H264 clips and posters, writes `slides.js`, and mirrors the
+runtime into **this checkout's** `docs/pgpilot/coupe-kiosk/`. Source recordings
+are named explicitly. A missing source fails the build; rejected recordings
+are not fallbacks. `NOTES.md` records the selected footage and its provenance.
 
-**To swap in a recorder-controlled clip**, drop the file into the directory
-`RECORDED` points at (`/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/`)
-under the exact name the slide asks for, then re-run `build.py`. The twelve
-names are `thermal-assist.mp4`, `wind-estimation.mp4`, `navigation.mp4`,
-`sideview-glide.mp4`, `replay-3d.mp4`, `live-tracking.mp4`,
-`forecast-airgram.mp4`, `areacontest-whale.mp4`, `voice-groups.mp4`,
-`vhf-bridge.mp4`, `ground-contacts.mp4` and `analyse-flight.mp4`. See
-`NOTES.md` for the resolved source and fallback status.
+The source folder's `video/` is a local encoding cache, not tracked in git.
+The published `docs/` videos are tracked. Use the published folder, not the
+source folder, when running a fresh clone without rebuilding.
 
-**To use a clip from somewhere else**, point that slide's `media` (or its
-`fallback["media"]`) at the file and re-run. Any resolution works: portrait
-goes in the phone frame, landscape goes full bleed. The encoder caps the long
-edge at 1920, crf 20, H.264 yuv420p faststart, audio dropped.
+For an HTTP preview with working video seeking, serve the published folder
+with `uv run --no-project --with rangehttpserver python -m RangeHTTPServer`.
+A plain Python HTTP server does not provide the required byte-range support.
 
-**Six slides do not come from `RECORDED` at all.** The "It learns from your
-flying" run (hotkey `I`) is built from pre-cropped poster captures and one
-rendered clip in the `ALGO` directory `build.py` points at. To rebuild them,
-run `crops.py` and `hodograph/make.py` in there, then `build.py`. `NOTES.md`
-has the detail, including which labels are blurred and why.
+After changing deployed scripts, styles or the slide manifest, bump their
+`v` query in `index.html` so a previous kiosk cut cannot remain in cache.
+Verify the actual browser surface, including edge readouts and the full loop.
 
-**To change how long a slide stays up**, edit its `dur` in `build.py` and
-re-run. The original rule was to keep the total between four and five minutes,
-so a visitor standing still sees the whole thing; the deck is past that now, at
-seven and a half. `NOTES.md` lists what to cut first if that matters.
+## Presentation rules
 
-The QR codes are checked in as SVG (`img/qr-pgpilot.svg` for
-`https://pgpilot.app`, `img/qr-coupe.svg` for `https://pgpilot.app/coupe`).
-`build.py` does not regenerate them. If a URL changes:
+- Show the feature, not an explanation of its implementation.
+- Keep app captures bright and uncropped. Never add synthetic feature HUDs.
+- Put titles in the app header band when bottom overlays would cover readouts.
+- Keep the activity edit's complete aspect ratio and chart labels.
+- Regional forecast is marked **Coming soon**.
+- Tracking distinguishes internet updates from direct radio off-grid.
+- No static leaderboard masquerading as live standings.
 
-```sh
-uv run --with qrcode python -c "
-import qrcode, qrcode.image.svg
-q = qrcode.QRCode(image_factory=qrcode.image.svg.SvgPathImage, border=2)
-q.add_data('https://pgpilot.app')
-q.make(fit=True)
-q.make_image().save('img/qr-pgpilot.svg')"
-```
-
-## Files
-
-| Path | What |
-|---|---|
-| `index.html` | The shell. Reveal container plus the two fixed pieces of chrome. |
-| `kiosk.js` | Builds the slides from `slides.js`, starts Reveal, owns the keyboard, restarts clips and Ken Burns on every slide change. |
-| `kiosk.css` | The look. Bevan, Questrial, near-black, sky blue. |
-| `slides.js` | Generated. The resolved slide list. |
-| `build.py` | The slide spec and the media pipeline. |
-| `reveal/` | Reveal.js 5.1.0, vendored from the blog's `site_libs`. |
-| `fonts/` | Bevan and Questrial woff2, the Voss deck's copies. |
-| `img/` | Posters, stills, wordmark, QR codes. |
-| `video/` | Every clip, re-encoded. About 120 MB. |
-
-`video/` is why this folder is large, and the mirror in `docs/` doubles it in
-the blog repo. Worth a look before committing.
+The QR targets are `https://pgpilot.app` and `https://pgpilot.app/coupe`.

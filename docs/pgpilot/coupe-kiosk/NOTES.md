@@ -1,193 +1,80 @@
-# Notes, and what is still missing
+# Kiosk media notes
 
-Built 14 September 2026. 23 slides, 7 minutes 31 seconds per lap.
+## Editorial cut
 
-## Recording status
+16 feature slides. Removed the introduction, closing card, explanatory
+algorithm sequence and static whale standings. The flight-day forecast is
+part of flight analysis, not a separate slide. The regional figures remain,
+with only **Coming soon** beneath the title.
 
-Eleven of the twelve recorder-controlled clips are present. The only missing
-one is `live-tracking.mp4`: the public live map had no airborne pilot to follow
-when it was attempted, so the deck deliberately keeps the real phone fallback
-instead of presenting an empty map. Every other requested feature uses its
-named recording.
+The deck is a recorded demo, not a live data dashboard. Do not revive rejected
+takes as fallbacks if a newer source file is missing.
 
-`build.py` resolves these names from
-`/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-clips/` and prints the fallback
-status on every run:
+## Selected recordings
 
-| Recording | Slide | Resolved use |
+New recordings live beneath the `REVISED` directory in `build.py`:
+`/home/simen/.claude/jobs/eeb1fb3a/tmp/kiosk-revision/`.
+
+| Feature | Selected source | What it demonstrates |
 |---|---|---|
-| `thermal-assist.mp4` | Thermal assist | Real Saint-Hilaire replay |
-| `wind-estimation.mp4` | Wind estimation | Real Saint-Hilaire replay |
-| `navigation.mp4` | Navigation | Close task replay with a competition start countdown |
-| `sideview-glide.mp4` | Side view and glide range | Replay with route, pilots and airspace; kiosk scrim disabled |
-| `replay-3d.mp4` | 3D replay | Landscape background behind the Sogndal gaggle reel |
-| `live-tracking.mp4` | Live tracking | Missing by design; real phone tracking clip remains |
-| `forecast-airgram.mp4` | Wind and forecast | Moving Saint-Hilaire airgram |
-| `areacontest-whale.mp4` | AreaContest and live board | Moving board backdrop and the full-width board slide |
-| `voice-groups.mp4` | Group voice | Motion graphic with in-map transcript pills |
-| `vhf-bridge.mp4` | VHF bridge | Motion graphic |
-| `ground-contacts.mp4` | Ground contacts | Real launch and landing footage with notices |
-| `analyse-flight.mp4` | Analyse your flight | Real public flight detail and analysis panels |
+| Thermal assist | `thermalwind/thermal-deadband.mp4` | Native north-up deadband camera and current thermal lift-trail widget |
+| Wind estimation | `thermalwind/wind-visible.mp4` | Warmed native wind speed, direction and map arrow |
+| Competition navigation | `navigation/navigation-real.mp4` | Actual competition task, native countdown, gate opening and counted start-cylinder exit |
+| Side view | `navigation/sideview-fixed.mp4` | Native route profile aimed at a fixed RIDGE waypoint |
+| 3D replay | `editorial/glacier-replay.mp4` | Landscape orbit through the real Jostedalsbreen/Jostedalen flight |
+| Group voice | `editorial/voice-simple.mp4` | Illustrated two-pilot voice exchange and its transcript |
+| VHF bridge | `editorial/vhf-simple.mp4` | Illustrated radio/app exchange through one bridge |
+| Weather forecast | `analysisweather/weather-comparison.mp4` | Real St Hilaire du Touvet observed-versus-forecast station card |
+| Ground contacts | `editorial/contacts-simple.mp4` | Real takeoff and landing footage with simplified example notifications |
+| Analyse your flight | `analysisweather/analyse-large.mp4` | Full-width native analysis, turn direction, glides, thermals, measured air and flight-day forecast |
+| Automatic activity segments | `editorial/activity-segments.mp4` | The published Instagram hike/fly/drive segmentation edit |
 
-The 3D slide keeps `gaggle-3d.mp4`, the portrait Sogndal gaggle reel, in the
-phone frame. `replay-3d.mp4` is only its landscape background. This pairing is
-intentional: the gaggle reel is the requested multiple-pilot thermal, while the
-wide recording lets the frame move rather than sit over a still.
+Tracking, the brake-line button and offline flying retain `klipp-tracking.mp4`,
+`klipp-knapp.mp4` and `klipp-backcountry.mp4` from the Voss material. AreaContest
+retains `coupe_whale_v8.mp4`. The regional slide uses the Europe and Alps
+figures from the existing `ALGO` directory.
 
-## The "It learns from your flying" run
+## Fidelity and provenance
 
-Five slides between Analyse and AreaContest, 96 seconds in all. They are the
-material of the A0 "Algorithms of pgpilot" poster, which was finished and then
-dropped before print; the sources are in the pgpilot repo under
-`brand/coupe-icare-2026/poster-air/` (`HANDOFF.md` first, then `README.md`'s
-"Where every number comes from", and `poster.html` for the verified copy).
+- **Thermal:** replay flight `22cc952d-26f9-4bd9-abbb-cfac553f5b9a`.
+  Actual follow mode, north-up, 250px deadband. The camera stays exactly fixed
+  for the first 13.5 seconds, recenters once when the pilot reaches 256.62px,
+  then stays fixed again. Terrain pixels were compared between captured
+  frames. No per-frame camera driving; no legacy lift rose or duplicate ring.
+- **Wind:** the same replay, with lead-in to warm the estimator. All 216
+  captured frames have populated native readings and a visible map arrow.
+  The recorded estimate ranges from 1.9 to 2.9m/s.
+- **Navigation:** built-in Jostedal sample with a local demonstration competition
+  task and a rebased demonstration clock. Coordinates and native telemetry
+  are unchanged. The native gate opens at 10.05 seconds; the actual cylinder
+  crossing advances to TP1 at 15.05 seconds. No countdown overlay and no manual
+  navigation during the clip. The final 15.8s and 16.1s files were recovered
+  from intact encoded packets after a capture deadline interrupted container
+  finalization; both fully decode without errors.
+- **Side view:** the app's Route profile, not its Heading profile. The target
+  remains RIDGE while the pilot's heading changes; waypoint distance falls
+  from 807m to 673m.
+- **Glacier and analysis:** Simen's Togga-Sota saeter flight,
+  `c9f78e38-43f3-406f-a757-32767de7f022`, 18 August 2026. The glacier take uses
+  the real Jostedalsbreen segment, not the Sogndal gaggle and not a repeated
+  three-second portrait hook.
+- **Analysis layout:** only presentation sizing was changed for capture:
+  full-width detail, light theme, reserved header space and readable charts.
+  The forecast belongs to that flight day at Tvangen. Its API model is
+  `meps-archive`; the production UI labels it ICON-EU. The captured UI was left
+  unchanged, and that model label is not repeated in the deck's copy.
+- **Weather:** genuine populated `ffvl-61` station card at St Hilaire du Touvet.
+  Observations and DWD forecast are aligned in the same time columns. The
+  drawer was widened for the recording; values were not replaced.
+- **Activities:** recovered from the actual published reel at
+  <https://www.instagram.com/reel/Dci1G1DC0mM/>. The full 17.4s segmentation
+  sequence remains; duplicated upper headlines were cropped away. It uses
+  real track/app segment boundaries with the original edit's approximate
+  terrain fill. It is not a live app screen recording.
+- **Voice/VHF:** simplified illustrations, not captured conversations or real
+  transmissions. **Contacts:** two different flights with example notifications,
+  not one continuous flight or proof that a message was sent.
 
-Only the first slide has a strip label and a key, `I`. The other four have an
-empty label, which `kiosk.js` reads as "share the chip before you": the strip
-is one row of 1920 px and is full. Arrow keys, the edge zones and a finger on
-the chip all still step through them one at a time.
-
-| Slide | Layout | What is on it | Source |
-|---|---|---|---|
-| It learns from your flying | section | The whole instrument mid-thermal, pulling back, with the four measured-against numbers dealing themselves in | `shots/thermal-overlay-wide.png`, numbers from `poster.html`'s band |
-| Wind from your circles | wide | 20 s animation: 120 GPS velocity dots arriving one per second, the Kasa fit re-run on the growing set, the pitot wind dropped in at 15 s | `hodograph.json` + `hodograph.py`, rendered by `ALGO/hodograph/make.py` |
-| Where the lift is | wide | The core ring, the lift bubbles and the wind arrow, pushing in on the core | same capture, cropped tight |
-| Every flight keeps its forecast | duo | The pinned ICON-EU card with its provenance prose, and the flown altitude trace | `shots/flight-vs-forecast.png`, top of `shots/flight-vs-forecast-tall.png` |
-| Hike, ground, fly | phone | The flight page's segment bar, altitude profile and the three ACTIVITY cards | `shots/hike-and-fly-2.png` |
-
-The sixth slide of this run, "Where will it work today?", moved out of it on
-15 September and became **Regional** (`regional`), a slide of its own straight
-after Forecast, where it belongs with the other forecast material:
-Europe by region pushing in on the Alps, then the Alpine arc pushing in on the
-region that holds Saint-Hilaire. Same figures, same caption rules: "climb above
-local terrain", "a research prototype, not yet in the app".
-
-Every claim on them is a sentence from `poster.html` or from `README.md`'s
-number table. The three that are easy to get wrong, and are therefore worded
-exactly as the handoff demands: the forecast is **kept as it stood that
-morning**, never "your flight against the forecast"; the regional map is
-**climb above local terrain**, never thermal top or strength, and is called a
-research prototype on the slide; and the thermal core is a **lift and recency
-weighted centre**, not a Kalman filter.
-
-### Pressing things
-
-The strip is 20 buttons, 64 px tall, with hover, active and current states,
-and the cursor comes back from `cursor: none` whenever it is over something
-pressable. Two invisible zones down the screen edges, 132 px wide with a
-chevron that brightens when touched, step back and forward. All of it is for
-the stand: Simen's note was that the strip was hard to hit.
-
-**Anything that moves the deck by hand re-cues the auto-advance**
-(`recue()` in `kiosk.js`, which is `Reveal.toggleAutoSlide(false)` then
-`(true)`). Reveal cues that timer when *it* changes slide, not when we do, so
-without this a slide someone just pressed inherited what was left of the
-previous slide's countdown and could vanish two seconds later. Measured after
-the fix: press Regional, it stays 20.2 s, and its `dur` is 20.
-`autoSlideStoppable` is still false, so the deck carries on by itself after a
-press either way.
-
-### How the media was made
-
-Nothing in `img/` here is a raw poster asset: `ALGO/crops.py`
-(`/home/simen/.claude/jobs/eeb1fb3a/tmp/algo/`, the `ALGO` path in `build.py`)
-pre-crops every capture to the shape the slide shows it in, because the kiosk
-covers and then pushes by up to 13%, so anything at the edge of a crop walks
-out of frame. It also does two things worth knowing:
-
-- **It blurs two labels on the thermal overlay.** Both name another pilot
-  (one under the compass button, one inside the core ring, mostly behind the
-  own-ship arrow), and the handoff's rule is that no other pilot's name goes
-  on screen. The blur is a feathered oval, not a rectangle, because a
-  rectangle of blur is the first thing the eye finds.
-- **It pads two of the crops.** The duo cells get a blurred bleed of their own
-  picture, the phone crop a flat fill of the app's own page colour, so the
-  Ken Burns has margin to eat instead of axis labels and first words.
-
-**A half-written still survives forever, and `build.py` now checks.** This box
-runs out of disk regularly, and a save that dies half way leaves a file that is
-*newer* than its source, so every later build says "up to date" and the deck
-shows a map that stops in a hard line two thirds down. That is exactly what
-happened to `algo-regions-alps.png` on 15 September. `copy_still` now decodes
-the staged file before trusting it, and `mirror()` compares sizes as well as
-mtimes.
-
-The hodograph clip is `ALGO/hodograph/`: `render.html` exposes `render(t)` and
-draws the frame from `t` alone, `make.py` screenshots 500 frames with
-Playwright and encodes them at 25 fps. Re-run either script and then
-`uv run build.py`. The final numbers it lands on are the poster's:
-wind 2.6 m/s from 212 deg, airspeed 9.0 m/s, pitot 2.0 m/s from 210 deg.
-
-## Things worth a second look
-
-- **The lap is 7 min 31 s, and the README asks for four to five.** The
-  "It learns" run is 96 s of that and the deck had already grown past five
-  minutes before it landed. A visitor standing still no longer sees
-  everything. If that matters more than the depth, the cheapest cuts are
-  "Where the lift is" (18 s, the closest thing to a repeat, since Thermal
-  assist already has the same subject) and trimming the run's slides from 20 s
-  to 18 s.
-- **The 3D replay clip labels other pilots.** `gaggle-3d.mp4` is the Sogndal
-  gaggle, and the 3D view puts a name and a wing on every pilot in it. That is
-  the feature and it is why the clip was chosen ("with the pilots who were
-  there"), but it is worth knowing that this one slide shows names where the
-  poster material was deliberately cropped and blurred to avoid them.
-- **The box is out of disk.** `/` sat at 100% for most of 15 September, with
-  under 100 MB free at times, and Chromium simply crashes at that point, so
-  the deck cannot be verified. `video/` plus its mirror is about 640 MB of it,
-  which is small next to the worktrees and the raw recordings, but raising
-  `CRF` is still the cheapest lever this folder has.
-- **The corner QR sits over the top-right corner of every wide and duo
-  slide.** On "Every flight keeps its forecast" that decided the order of the
-  two cells: the forecast prose is on the left, the chart on the right, where
-  there is nothing in the corner to lose.
-- **Ground contacts (slide 11) is the weakest match.** `klipp-start.mp4` is a
-  replay of a flight starting, not a takeoff notice going out. Nothing in the
-  library shows the message a ground contact actually receives. A five second
-  recording of the contacts screen, or of the SMS arriving on a second phone,
-  would carry the slide far better than this does. There is no
-  `groundcontacts.mp4` in the expected list, so it will not fix itself.
-- **Your flights, synced (slide 12)** runs on a light four-panel screenshot.
-  Full bleed it competed with the white text and swallowed the corner QR, so it
-  is dimmed to 42 % and reads as texture: the title card carries the message,
-  the picture just moves. If a recording of the flight detail page ever
-  appears, that slide gains the most.
-- **`video/` is 303 MB** now that the recordings have landed, and `build.py`
-  mirrors the whole folder into
-  `/home/simen/blog/docs/pgpilot/coupe-kiosk/`, so the blog repo carries about
-  600 MB of it. `bir-3d.mp4` alone is 53 MB at crf 20, because a 3D render at
-  1920x1080 is expensive to encode cleanly. Worth deciding before committing:
-  raise `CRF` in `build.py`, or keep the videos out of git and copy them onto
-  the stand machine by hand.
-- **The phone frame clamps the clip aspect to at most 0.60 wide**
-  (`PHONE_MAX_RATIO` in `kiosk.js`). `klipp-knapp.mp4` is 1080x1714, which cut
-  as a real 9:16 frame lost the leading digit of the altitude readout, and a
-  cut-off number reads as a bug. At 0.60 the crop is 2.4 % a side and the frame
-  still matches the other eight phone slides. If a new portrait clip is wider
-  than that, check the slide before trusting it.
-- The kiosk hides the mouse cursor (`cursor: none`). On the stand that is
-  right. While editing it is briefly confusing.
-
-## Checks that were run
-
-Playwright, Chromium, 1920x1080, served over `python -m http.server`:
-
-- every hotkey jumps to the right slide, and the strip highlight follows
-- clips play with no click: `currentTime` advances on every video slide
-- Ken Burns is live on every still: `animationName` is `kenburns` or
-  `kenburns-bg`, with the slide's own duration
-- auto advance with no input at all: wind (18 s) rolled on to nav by itself
-- `Esc` opens the overview, `1` `3` `Enter` jumps to slide 13, and a lone `3`
-  still reaches 3D replay
-- the strip fits: 19 buttons between x=30 and x=1890 of 1920, each 63 px tall
-  and at least 54 px wide. It is full. The next slide that wants its own entry
-  needs a shorter label somewhere, or an empty label so it shares the chip
-  before it.
-- pressing a chip jumps there, the highlight follows, and the slide then holds
-  for its own duration (20.2 s measured against a `dur` of 20)
-- the edge zones step: right from Home lands on Thermal, left comes back
-- the loop wraps: the closing slide ran out and came back to the title
-- the published mirror in `docs/` was served and driven too, with no 404s
-- no console errors on any slide
-- both QR codes were rendered and decoded back: `https://pgpilot.app` and
-  `https://pgpilot.app/coupe`
+Capture evidence and contact sheets are retained beside the selected source
+files. The kiosk changes did not alter pgpilot application source or production
+flight/settings data.
