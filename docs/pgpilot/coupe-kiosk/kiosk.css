@@ -297,8 +297,8 @@ video.kb-zoom.kb-run {
 
 .phone-copy {
   padding: 0 96px 0 24px;
-  /* clears the fixed corner QR */
-  margin-top: 96px;
+  /* clears the fixed corner QR panel */
+  margin-top: 120px;
 }
 .phone-copy h2 {
   font-size: 72px;
@@ -424,25 +424,56 @@ video.kb-zoom.kb-run {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding: 12px 12px 10px 12px;
+  padding: 10px 12px 10px 12px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.6);
-  transition: opacity 0.4s ease;
-}
-.corner-qr img {
-  width: 128px;
-  height: 128px;
-  display: block;
-}
-.corner-qr span {
-  font-family: "Bevan", Georgia, serif;
-  font-size: 17px;
   color: #0b1220;
+  transition:
+    opacity 0.4s ease,
+    top 0.4s ease;
+}
+.corner-qr-head {
+  font-family: "Bevan", Georgia, serif;
+  font-size: 19px;
   letter-spacing: 0.01em;
+}
+.corner-qr-row {
+  display: flex;
+  gap: 14px;
+}
+.corner-qr-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+.corner-qr-store img {
+  width: 132px;
+  height: 132px;
+  display: block;
+  margin-bottom: 4px;
+}
+.corner-qr-store strong {
+  font-family: "Bevan", Georgia, serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
+.corner-qr-store span {
+  font-size: 15px;
+  line-height: 1;
+  color: #4b5a70;
 }
 body.no-corner-qr .corner-qr {
   opacity: 0;
+}
+/* A recording with its own card in the top-right corner (the ground-contact
+   notification) pushes the panel down under it rather than losing it. */
+body.corner-qr-low .corner-qr {
+  top: 350px;
 }
 
 .hotkeys {

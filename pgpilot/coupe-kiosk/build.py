@@ -74,7 +74,7 @@ class Slide:
     media: str | None = None
     images: list[str] = field(default_factory=list)
     qr: str | None = None  # extra QR on the slide itself
-    corner_qr: bool = True
+    corner_qr: str | bool = "top"  # "top", "low" (under a card in the clip), False
     card: str = "bottom"  # where the title card sits on a wide slide
     scrim: bool = False  # keep the app bright; the title has its own backing
     kb: str = "in"  # Ken Burns direction: in, out, pan, zoom, big
@@ -217,7 +217,7 @@ SLIDES: list[Slide] = [
         lines=["Makes sure people at home knows where you are"],
         dur=17.2,
         media=str(REVISED / "editorial/contacts-simple.mp4"),
-        corner_qr=False,
+        corner_qr="low",  # the notification card sits where the panel goes
     ),
     Slide(
         id="flights",

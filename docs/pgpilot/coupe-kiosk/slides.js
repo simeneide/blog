@@ -321,7 +321,7 @@ window.KIOSK_SLIDES = [
     ],
     "dur": 17.2,
     "qr": null,
-    "cornerQr": false,
+    "cornerQr": "low",
     "card": "bottom",
     "scrim": false,
     "kb": "in",

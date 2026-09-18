@@ -345,7 +345,9 @@
     restart(cur);
     markStrip(i);
     warm(i);
-    document.body.classList.toggle("no-corner-qr", SLIDES[i] && SLIDES[i].cornerQr === false);
+    var cq = SLIDES[i] ? SLIDES[i].cornerQr : "top";
+    document.body.classList.toggle("no-corner-qr", cq === false);
+    document.body.classList.toggle("corner-qr-low", cq === "low");
   }
 
   Reveal.on("ready", onSlide);

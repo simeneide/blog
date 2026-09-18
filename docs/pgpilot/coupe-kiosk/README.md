@@ -85,4 +85,10 @@ Verify the actual browser surface, including edge readouts and the full loop.
 - Tracking distinguishes internet updates from direct radio off-grid.
 - No static leaderboard masquerading as live standings.
 
-The QR targets are `https://pgpilot.app` and `https://pgpilot.app/coupe`.
+The top-right panel on every slide carries two labelled store QR codes,
+`img/qr-appstore.svg` (App Store, `https://apps.apple.com/app/id6759820116`,
+locale-free so Apple picks the visitor's storefront) and `img/qr-googleplay.svg`
+(Google Play, `https://play.google.com/store/apps/details?id=com.pgfly.app`).
+A slide whose recording has its own card in that corner sets
+`corner_qr="low"` to drop the panel under it. The in-slide QR targets are
+`https://pgpilot.app` and `https://pgpilot.app/coupe`.
