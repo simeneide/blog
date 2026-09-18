@@ -9,7 +9,7 @@
          pulled out, because the stand has no wifi worth trusting. -->
     <link rel="stylesheet" href="reveal/reset.css" />
     <link rel="stylesheet" href="reveal/reveal.css" />
-    <link rel="stylesheet" href="kiosk.css?v=3" />
+    <link rel="stylesheet" href="kiosk.css?v=4" />
   </head>
   <body>
     <div class="reveal">
@@ -17,16 +17,29 @@
       <div class="slides"></div>
     </div>
 
-    <!-- Fixed to the viewport, not to a slide, so it survives every layout. -->
-    <a class="corner-qr" href="https://pgpilot.app">
-      <img src="img/qr-pgpilot.svg" alt="QR code for pgpilot.app" />
-      <span>pgpilot.app</span>
-    </a>
+    <!-- Fixed to the viewport, not to a slide, so it survives every layout.
+         One store code per platform, labelled, so a passer-by sees that both
+         phones are covered and scans the right one without asking. -->
+    <div class="corner-qr" aria-label="Get pgpilot">
+      <span class="corner-qr-head">Get pgpilot</span>
+      <div class="corner-qr-row">
+        <a class="corner-qr-store" href="https://apps.apple.com/app/id6759820116">
+          <img src="img/qr-appstore.svg" alt="QR code for pgpilot on the App Store" />
+          <strong>iPhone</strong>
+          <span>App Store</span>
+        </a>
+        <a class="corner-qr-store" href="https://play.google.com/store/apps/details?id=com.pgfly.app">
+          <img src="img/qr-googleplay.svg" alt="QR code for pgpilot on Google Play" />
+          <strong>Android</strong>
+          <span>Google Play</span>
+        </a>
+      </div>
+    </div>
 
     <nav class="hotkeys" aria-label="Jump to a feature"></nav>
 
     <script src="reveal/reveal.js"></script>
-    <script src="slides.js?v=3"></script>
-    <script src="kiosk.js?v=3"></script>
+    <script src="slides.js?v=4"></script>
+    <script src="kiosk.js?v=4"></script>
   </body>
 </html>
