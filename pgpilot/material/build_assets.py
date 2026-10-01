@@ -26,7 +26,7 @@ DESTINATIONS = (
 )
 FONT_PATH = Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
 
-APPLE = "https://apps.apple.com/no/app/pgpilot-flight-companion/id6759820116"
+APPLE = "https://apps.apple.com/no/app/id6759820116"
 GOOGLE = "https://play.google.com/store/apps/details?id=com.pgfly.app"
 NAVY = "#0f172a"
 SKY = "#38bdf8"
@@ -108,40 +108,36 @@ def banner() -> str:
     pieces = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}mm" height="{size}mm" viewBox="0 0 {size} {size}">',
         f'<rect width="{size}" height="{size}" fill="{NAVY}"/>',
-        # The original all-white logo is already outlined, from the shirt artwork.
-        embedded_logo(
-            "pgpilot-horizontal-white.svg", x=220, y=125, width=2608, height=895
-        ),
+        # Use the same stacked lockup as the white transparent sticker.
+        embedded_logo("stacked-white.svg", x=590, y=90, width=1868, height=2161),
         font_text(
-            "All you need in", center_x=1524, baseline_y=1220, size=196, color="#ffffff"
-        ),
-        font_text(
-            "one flight app", center_x=1524, baseline_y=1480, size=196, color=SKY
+            "All you need in one flight app",
+            center_x=1524,
+            baseline_y=2360,
+            size=100,
+            color=SKY,
         ),
     ]
     for x, label, url in (
-        (612, "App Store", APPLE),
-        (1676, "Google Play", GOOGLE),
+        (340, "App Store", APPLE),
+        (2308, "Google Play", GOOGLE),
     ):
         pieces.extend(
             (
-                f'<rect x="{x}" y="1770" width="760" height="900" rx="30" fill="#ffffff"/>',
+                f'<rect x="{x}" y="2440" width="400" height="400" rx="18" fill="#ffffff"/>',
+                qr_path(url, x=x + 30, y=2470, size=340),
                 font_text(
-                    label, center_x=x + 380, baseline_y=1908, size=93, color=NAVY
-                ),
-                qr_path(url, x=x + 140, y=1970, size=480),
-                font_text(
-                    "Scan to download",
-                    center_x=x + 380,
-                    baseline_y=2590,
-                    size=51,
-                    color=NAVY,
+                    label,
+                    center_x=x + 200,
+                    baseline_y=2925,
+                    size=58,
+                    color="#ffffff",
                 ),
             )
         )
     pieces.append(
         font_text(
-            "pgpilot.app", center_x=1524, baseline_y=2945, size=91, color="#ffffff"
+            "pgpilot.app", center_x=1524, baseline_y=2700, size=160, color="#ffffff"
         )
     )
     pieces.append("</svg>")
