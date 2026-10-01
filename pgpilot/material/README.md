@@ -20,7 +20,7 @@ no bleed. The banner has generous content margins and a full-bleed navy
 background; add printer-specific bleed if a shop requires it.
 
 The banner QR codes link directly to the pgpilot listings on
-[App Store](https://apps.apple.com/no/app/pgpilot-flight-companion/id6759820116)
+[App Store](https://apps.apple.com/no/app/id6759820116)
 and [Google Play](https://play.google.com/store/apps/details?id=com.pgfly.app).
 The white sticker artwork has a transparent background; printing it on clear
 stock requires white ink.
