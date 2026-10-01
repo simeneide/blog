@@ -110,7 +110,7 @@ def banner() -> str:
         f'<rect width="{size}" height="{size}" fill="{NAVY}"/>',
         # The original all-white logo is already outlined, from the shirt artwork.
         embedded_logo(
-            "pgpilot-horizontal-white.svg", x=424, y=230, width=2200, height=755
+            "pgpilot-horizontal-white.svg", x=220, y=125, width=2608, height=895
         ),
         font_text(
             "All you need in", center_x=1524, baseline_y=1220, size=196, color="#ffffff"
@@ -120,21 +120,21 @@ def banner() -> str:
         ),
     ]
     for x, label, url in (
-        (558, "App Store", APPLE),
-        (1670, "Google Play", GOOGLE),
+        (612, "App Store", APPLE),
+        (1676, "Google Play", GOOGLE),
     ):
         pieces.extend(
             (
-                f'<rect x="{x}" y="1705" width="820" height="1020" rx="30" fill="#ffffff"/>',
+                f'<rect x="{x}" y="1770" width="760" height="900" rx="30" fill="#ffffff"/>',
                 font_text(
-                    label, center_x=x + 410, baseline_y=1852, size=99, color=NAVY
+                    label, center_x=x + 380, baseline_y=1908, size=93, color=NAVY
                 ),
-                qr_path(url, x=x + 90, y=1905, size=640),
+                qr_path(url, x=x + 140, y=1970, size=480),
                 font_text(
                     "Scan to download",
-                    center_x=x + 410,
-                    baseline_y=2650,
-                    size=56,
+                    center_x=x + 380,
+                    baseline_y=2590,
+                    size=51,
                     color=NAVY,
                 ),
             )
