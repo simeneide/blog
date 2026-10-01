@@ -103,13 +103,13 @@ def sticker(name: str, size_mm: int) -> str:
     )
 
 
-def banner() -> str:
+def banner(logo_name: str) -> str:
     size = 3048  # 10 feet, exact, in millimetres
     pieces = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}mm" height="{size}mm" viewBox="0 0 {size} {size}">',
         f'<rect width="{size}" height="{size}" fill="{NAVY}"/>',
-        # Use the same stacked lockup as the white transparent sticker.
-        embedded_logo("stacked-white.svg", x=590, y=90, width=1868, height=2161),
+        # Use the same stacked lockup as the matching transparent sticker.
+        embedded_logo(logo_name, x=590, y=90, width=1868, height=2161),
         font_text(
             "All you need in one flight app",
             center_x=1524,
@@ -145,31 +145,42 @@ def banner() -> str:
 
 
 def write_assets() -> None:
-    designs = {"pgpilot-banner-10ft-square": banner()}
+    banners = {
+        "pgpilot-banner-10ft-square": banner("stacked-white.svg"),
+        "pgpilot-banner-10ft-square-blue-white": banner("stacked-sky-white.svg"),
+    }
+    designs = dict(banners)
     for name, size_mm in (("50mm", 50), ("100mm", 100), ("1m", 1000)):
         designs[f"pgpilot-sticker-{name}-blue-navy"] = sticker(
             "stacked-sky-navy.svg", size_mm
         )
         designs[f"pgpilot-sticker-{name}-white"] = sticker("stacked-white.svg", size_mm)
+        designs[f"pgpilot-sticker-{name}-blue-white"] = sticker(
+            "stacked-sky-white.svg", size_mm
+        )
     source = DESTINATIONS[0]
     source.mkdir(parents=True, exist_ok=True)
     for stem, svg in designs.items():
         (source / f"{stem}.svg").write_text(svg)
         cairosvg.svg2pdf(bytestring=svg.encode(), write_to=str(source / f"{stem}.pdf"))
-    preview_name = "pgpilot-banner-10ft-square-preview.png"
-    cairosvg.svg2png(
-        bytestring=designs["pgpilot-banner-10ft-square"].encode(),
-        write_to=str(source / preview_name),
-        output_width=1600,
-        output_height=1600,
-    )
+    preview_names = []
+    for stem, svg in banners.items():
+        preview_name = f"{stem}-preview.png"
+        preview_names.append(preview_name)
+        cairosvg.svg2png(
+            bytestring=svg.encode(),
+            write_to=str(source / preview_name),
+            output_width=1600,
+            output_height=1600,
+        )
     for destination in DESTINATIONS[1:]:
         destination.mkdir(parents=True, exist_ok=True)
         for stem in designs:
             for extension in ("svg", "pdf"):
                 name = f"{stem}.{extension}"
                 shutil.copyfile(source / name, destination / name)
-        shutil.copyfile(source / preview_name, destination / preview_name)
+        for preview_name in preview_names:
+            shutil.copyfile(source / preview_name, destination / preview_name)
 
 
 if __name__ == "__main__":

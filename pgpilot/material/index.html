@@ -46,6 +46,7 @@
     .preview.white-art img { width: 76%; }
     .preview.white-art figcaption { color: #cbd5e1; }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .sticker-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     figure { margin: 0; }
     figcaption { padding: 8px 0 0; color: var(--muted); font-size: 0.9rem; }
     .variant { padding: 16px; border: 1px solid var(--line); border-radius: 9px; background: #fff; }
@@ -60,9 +61,10 @@
     .size-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 16px; padding: 0; list-style: none; }
     .size-list li { padding: 4px 9px; border: 1px solid var(--line); border-radius: 5px; background: #fff; font-size: 0.86rem; }
     footer { padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 900px) { .sticker-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 640px) {
       header { padding-top: 30px; padding-bottom: 35px; }
-      .grid { grid-template-columns: 1fr; }
+      .grid, .sticker-grid { grid-template-columns: 1fr; }
       .section-head { display: block; }
       .spec { margin-top: 2px; text-align: left; }
     }
@@ -91,10 +93,23 @@
       <section class="section" id="square-banner">
         <div class="section-head"><h2>Stort kvadratisk banner</h2><p class="spec">10 × 10 ft / 304,8 × 304,8 cm</p></div>
         <p>«All you need in one flight app», pgpilot-logo og egne QR-koder til App Store og Google Play.</p>
-        <div class="preview"><img src="/pgpilot/material/files/pgpilot-banner-10ft-square-preview.png?v=3" alt="Kvadratisk pgpilot-banner med logo, tekst og QR-koder til begge app-butikkene"></div>
-        <div class="downloads">
-          <a class="download" href="https://eide.ai/pgpilot/material/files/pgpilot-banner-10ft-square.pdf?v=3" download>PDF til trykk, 10 × 10 ft</a>
-          <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-banner-10ft-square-preview.png?v=3" download>PNG-forhåndsvisning</a>
+        <div class="grid">
+          <div class="variant">
+            <div class="preview"><img src="/pgpilot/material/files/pgpilot-banner-10ft-square-preview.png?v=3" alt="Kvadratisk pgpilot-banner med hvit logo, tekst og QR-koder til begge app-butikkene"></div>
+            <h3>Hvit logo</h3>
+            <div class="downloads">
+              <a class="download" href="https://eide.ai/pgpilot/material/files/pgpilot-banner-10ft-square.pdf?v=3" download>PDF til trykk</a>
+              <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-banner-10ft-square-preview.png?v=3" download>PNG</a>
+            </div>
+          </div>
+          <div class="variant">
+            <div class="preview"><img src="/pgpilot/material/files/pgpilot-banner-10ft-square-blue-white-preview.png" alt="Kvadratisk pgpilot-banner med blå vinge, blå og hvit tekst og QR-koder til begge app-butikkene"></div>
+            <h3>Blå og hvit logo</h3>
+            <div class="downloads">
+              <a class="download" href="https://eide.ai/pgpilot/material/files/pgpilot-banner-10ft-square-blue-white.pdf" download>PDF til trykk</a>
+              <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-banner-10ft-square-blue-white-preview.png" download>PNG</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -139,9 +154,9 @@
 
       <section class="section" id="stickers">
         <div class="section-head"><h2>Klistremerker</h2><p class="spec">Gjennomsiktig bakgrunn</p></div>
-        <p>To farger av samme motiv. Begge er klare for trykk på gjennomsiktig materiale.</p>
+        <p>Tre varianter av samme motiv. Alle har gjennomsiktig bakgrunn.</p>
         <ul class="size-list" aria-label="Størrelser"><li>50 × 50 mm</li><li>100 × 100 mm</li><li>1 × 1 m</li></ul>
-        <div class="grid">
+        <div class="grid sticker-grid">
           <div class="variant">
             <div class="preview square transparent"><img src="/pgpilot/material/files/pgpilot-sticker-1m-blue-navy.svg" alt="Blått og mørkt pgpilot-klistremerke med gjennomsiktig bakgrunn"></div>
             <h3>Blå og mørk</h3>
@@ -168,8 +183,21 @@
               <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-1m-white.svg" download>SVG</a>
             </div>
           </div>
+          <div class="variant">
+            <div class="preview square white-art"><img src="/pgpilot/material/files/pgpilot-sticker-1m-blue-white.svg" alt="Blå vinge og blå og hvit pgpilot-tekst på transparent bakgrunn, vist på mørk flate"></div>
+            <h3>Blå og hvit</h3>
+            <p>Blå vinge og «pg», hvit «pilot». Til mørke flater.</p>
+            <div class="downloads">
+              <a class="download" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-50mm-blue-white.pdf" download>50 mm PDF</a>
+              <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-50mm-blue-white.svg" download>SVG</a>
+              <a class="download" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-100mm-blue-white.pdf" download>100 mm PDF</a>
+              <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-100mm-blue-white.svg" download>SVG</a>
+              <a class="download" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-1m-blue-white.pdf" download>1 × 1 m PDF</a>
+              <a class="download secondary" href="https://eide.ai/pgpilot/material/files/pgpilot-sticker-1m-blue-white.svg" download>SVG</a>
+            </div>
+          </div>
         </div>
-        <p class="fine">Det mørke feltet er bare en forhåndsvisning. Trykkfilene er transparente; be trykkeriet bruke hvitt blekk på den hvite varianten.</p>
+        <p class="fine">Det mørke feltet er bare en forhåndsvisning. Trykkfilene er transparente; be trykkeriet bruke hvitt blekk på de to variantene med hvit tekst.</p>
       </section>
 
       <section class="section" id="caps">
