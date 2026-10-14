@@ -1775,14 +1775,14 @@
     "href": "pgpilot/tutorial-kort.html#the-bir-pack-three-radios",
     "title": "pgpilot",
     "section": "The Bir pack: three radios",
-    "text": "The Bir pack: three radios\n\n  \n    VHF\n    Voice, when nothing else works. A KV4P radio straight on the phone.\n  \n  \n    LoRa\n    Position and short text with no infrastructure. FANET and\n    Meshtastic.\n  \n  \n    Satellite\n    When there's no coverage at all. InReach.\n  \n\n\nThe part that matters here. Behind the first ridge the internet is gone, the landings have no road out, and nobody is on call. That’s why this valley runs its own radios, and why the app talks to all three.\nVHF: the KV4P radio pairs over Bluetooth and transmits on VHF and the pgpilot group at once. It can relay between the two. Get the 2.0 version."
+    "text": "The Bir pack: three radios\n\n  \n    VHF\n    Voice, when nothing else works. A KV4P radio straight on the phone.\n  \n  \n    LoRa\n    Position and short text with no infrastructure. FANET and\n    Meshtastic.\n  \n  \n    Satellite\n    When there's no coverage at all. InReach.\n  \n\n\nThe part that matters here. Behind the first ridge the internet is gone, the landings have no road out, and nobody is on call. That’s why this valley runs its own radios, and why the app talks to all three."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
     "href": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
     "title": "pgpilot",
     "section": "Meshtastic, Bircom and FANET",
-    "text": "Meshtastic, Bircom and FANET\n\n  \n  \n    \n      Bircom channels as their own rows in Comms\n      Bircom mesh nodes on the map\n      FANET pilots on the map, landed and distress status\n      Works with no cell signal\n    \n  \n\n\nMost of you already fly with a Meshtastic radio for Bircom. Pair it in pgpilot and the Bircom channels show up in Comms, chat works with no cell signal, and the nodes go on the map (“Show Bircom mesh nodes”).\nFANET trackers show up too, and a pilot who landed or pressed distress shows as exactly that.\nClose the Meshtastic app first: the radio takes one Bluetooth client at a time."
+    "text": "Meshtastic, Bircom and FANET\n\n  \n  \n    \n      Meshtastic and FANET radios straight into pgpilot over Bluetooth\n      Status and position over Bircom and FANET\n      Messages over Bircom, no cell signal needed\n      Works with pgpilot ground contacts: push and email to friends when you take off and when you've landed well\n    \n  \n\n\nMost of you already fly with a Meshtastic radio for Bircom. Pair it in pgpilot and your status, position and messages go over the mesh, no coverage needed. FANET trackers too. And it works with ground contacts: the friends you added get a push or an email when you take off and when you’ve landed well. Close the Meshtastic app first: the radio takes one Bluetooth client at a time.\nBuying a radio: a T-Echo or a SenseCAP T1000-E. Pick 868 MHz in India, the listings default to 915 or 433."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#inreach",
@@ -1797,5 +1797,47 @@
     "title": "pgpilot",
     "section": "Which LoRa board",
     "text": "Which LoRa board\n\n  \n    LILYGO T-Echo\n    E-paper screen, big battery, external antenna. The Bir standard.\n  \n  \n    SenseCAP T1000-E\n    Credit-card size, waterproof, GPS and battery built in. Disappears in a\n    harness pocket.\n  \n\n\nAnything with an nRF52840 and an SX1262 or LR1110. Avoid the older SX127x.\nPICK 868 MHZ in India. The listings default to 915 or 433."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#in-the-air-thermals-and-vario",
+    "href": "pgpilot/tutorial-kort.html#in-the-air-thermals-and-vario",
+    "title": "pgpilot",
+    "section": "In the air: thermals and vario",
+    "text": "In the air: thermals and vario\n\n\nThe vario beeps, the app draws the bubble, the wind arrow tightens as you circle. It learns the wind and the lift from your circles.\nThis is the app replaying a real flight, same code as live. And none of these numbers come from the internet: GPS and barometer in the phone."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#lord-hanumans-herb-hunt",
+    "href": "pgpilot/tutorial-kort.html#lord-hanumans-herb-hunt",
+    "title": "pgpilot",
+    "section": "Lord Hanuman’s herb hunt",
+    "text": "Lord Hanuman’s herb hunt\n\n  \n  \n\n\nOur game for the season here. Hanuman is lying along the Dhauladhar, from Dharamshala to Joginder Nagar, about 740 km2. He has lost the herb, and you help him look for it.\nEvery time you fly over a patch inside him, you search it once. Whoever has searched a patch most often holds it; if two are level, nobody does. Flying straight searches a band either side of your track, wider the further you get from takeoff. Close a loop and you take everything inside it.\n9 October to 15 November. Whoever holds the most ground at the end of 15 November wins a reward. Free, automatic: every flight in the app counts, and flights from XContest and Flightlog too. It rescores every hour.\nClick for the board. (Snapshot from this afternoon, open pgpilot.app/bir for the live one.) And as the poster says: fly within your limits, no herb is worth a risk."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#vhf-on-the-phone-kv4p-beta",
+    "href": "pgpilot/tutorial-kort.html#vhf-on-the-phone-kv4p-beta",
+    "title": "pgpilot",
+    "section": "VHF on the phone: KV4P Beta",
+    "text": "VHF on the phone: KV4P Beta\n\n  \n  \n    \n      VHF radio straight into pgpilot over Bluetooth\n      Sends both to the app and on VHF\n      Works as a repeater between app and radio\n    \n  \n\n\nStill beta. Pair it under Menu, Hardware. When you talk, it goes out in the pgpilot group and on VHF at once, so friends on either hear you. It can relay between the two."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#the-airgram-billing-today-and-tomorrow",
+    "href": "pgpilot/tutorial-kort.html#the-airgram-billing-today-and-tomorrow",
+    "title": "pgpilot",
+    "section": "The airgram: Billing today and tomorrow",
+    "text": "The airgram: Billing today and tomorrow\n\n  \n  \n\n\nTap the Billing takeoff on the map. Yellow columns are thermals, darker is stronger, the top is how high you get. Wind arrows up through the heights, cloud and rain on top. Here the model is GFS, the only one that covers India.\nToday: a classic blue day. Light upslope wind from the south-west, thermals from about half past nine to half past four, up to around 3,800 m.\nClick. Tomorrow: high cloud in the morning, cumulus from about half past one with bases around 3,500 m, more wind up high and a small chance of a shower in the afternoon."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#airgram-for-billing",
+    "href": "pgpilot/tutorial-kort.html#airgram-for-billing",
+    "title": "pgpilot",
+    "section": "Airgram for Billing",
+    "text": "Airgram for Billing\n\n  \n  \n\n\nTap the Billing takeoff on the map. Yellow columns are thermals, darker is stronger, the top is how high you get. Wind arrows up through the heights, cloud and rain on top. Here the model is GFS, the only one that covers India.\nToday: a classic blue day. Light upslope wind from the south-west, thermals from about half past nine to half past four, up to around 3,800 m.\nClick. Tomorrow: high cloud in the morning, cumulus from about half past one with bases around 3,500 m, more wind up high and a small chance of a shower in the afternoon."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#section",
+    "href": "pgpilot/tutorial-kort.html#section",
+    "title": "pgpilot",
+    "section": "",
+    "text": "Thank you\n  pgpilot.app"
   }
 ]
