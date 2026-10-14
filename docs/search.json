@@ -1510,5 +1510,208 @@
     "title": "pgpilot og Himalaya",
     "section": "Sees vi?",
     "text": "Sees vi?\n\n\nOktober og april\n\nAvslutt med en oppfordring, ikke en takk: appen er gratis, den ligger på telefonen deres nå, og du vil ha tilbakemelding. Bir i oktober og april."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#what-is-pgpilot",
+    "href": "pgpilot/tutorial.html#what-is-pgpilot",
+    "title": "pgpilot",
+    "section": "What is pgpilot?",
+    "text": "What is pgpilot?\n\nAll in one app\n\n  \n    Flight instrument\n    Live wind\n    Airspace\n  \n  \n    \n  \n  \n    Weather\n    Task\n    Offline\n  \n  \n    Group chat\n    VHF radio\n    Tracking\n  \n  \n    Flight log\n    Replay\n    Terrain\n  \n\n\nThe one-liner is “all in one app.” Point at the groups instead of reading the pills: instrument and wind in the air, weather and planning before takeoff, the group channel while you are out, then the log and replay afterwards.\nKeep the oral hook: “It’s the flight instrument and Zello in one app, with a weather report for takeoff on top.”\nDon’t go deeper into any pill here. That comes in parts 2 to 6."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#get-the-app",
+    "href": "pgpilot/tutorial.html#get-the-app",
+    "title": "pgpilot",
+    "section": "Get the app",
+    "text": "Get the app\n\n  \n    \n  \n  \n    \n      \n      Android\n      Google Play\n    \n    \n      \n      iPhone\n      App Store\n    \n    \n      \n      Or just\n      pgpilot.app\n    \n  \n\n\nLeave this up while people do it. It’s a task, not an illustration.\nThree ways in: - Google Play - App Store - pgpilot.app in the browser: a viewer name and nothing more. No email, no account, done in under half a minute.\nThe browser route is the rescue for anyone who won’t install anything, or has a full phone. Everything we show today works there, except the Bluetooth part."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#first-time-you-open-it",
+    "href": "pgpilot/tutorial.html#first-time-you-open-it",
+    "title": "pgpilot",
+    "section": "First time you open it",
+    "text": "First time you open it\n\n  \n  \n  \n\n\nKeep this up while they fumble. A harness that stalls on setup, you don’t get going again.\nStep 1, on the left: preflight. The app asks for four things and explains why: - Location for map, track and wind computation. - Microphone for PTT, and only while the button is held down. - Nearby devices to find the vario and the button over Bluetooth. - Notifications so the background service survives the screen turning off. Without it, tracking dies when the phone sleeps.\nAlso say that data isn’t sold. It’s on the screen, but they believe it more when you say it.\nStep 2, on the right: “See it in action”. Ask them to tap that, not Skip. The app plays back a real flight and walks through the instruments while it rolls. The tour needs neither GPS nor a view, so it works in any room.\nIf someone tapped Skip, it’s still there in the menu. Don’t spend time on it from the stage.\nStep 3, on the far right: ready to fly. This is what they see when they close the tour and stand on takeoff. The instruments along the top, the map with the other pilots, the side view of terrain and airspace at the bottom. Point at the pills in the top bar: green “Ready” is what they want to see before takeoff. In Active mode the flight starts on its own when they take off, no button needed."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#join-the-group",
+    "href": "pgpilot/tutorial.html#join-the-group",
+    "title": "pgpilot",
+    "section": "Join the group",
+    "text": "Join the group\n\n  \n  \n    pgpilot.app/join/webinar\n    Scan, type your name, done.\n  \n\n\nThe group is called webinar. Scan the code, type your name, done.\nTwo things to say clearly: - Keep the app open. Parts 4 and 6 build on them still being in the group later in the session. - Everyone listens, one talks. Don’t unleash thirty microphones at once.\nThe group is made when you rig, not before: the reaper archives groups that have been silent for four hours, and join filters out archived groups. Join tops up the activity, so once the first ones are in, it keeps itself alive."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#the-instrument",
+    "href": "pgpilot/tutorial.html#the-instrument",
+    "title": "pgpilot",
+    "section": "The instrument",
+    "text": "The instrument\n\n\nOne screenshot, six numbers. Walk through them up top, from the left: - ALTITUDE and AGL: height above sea level and above the ground. - FLIGHT TIME and SPEED. - GLIDE 10S: glide ratio over the last ten seconds. - XC SCORE and WIND.\nAt the bottom: the map with your track, the other pilots (Vegar, Svein, Tom S), and the contour lines. The profile at the very bottom is the terrain under you.\nSay the point: none of these numbers come from the internet. They come from the GPS and the barometer in the phone."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#thermals-and-vario",
+    "href": "pgpilot/tutorial.html#thermals-and-vario",
+    "title": "pgpilot",
+    "section": "Thermals and vario",
+    "text": "Thermals and vario\n\n\nThe single most convincing clip, and three things happen at once: the vario beeps, the app draws the thermal bubble, and the wind arrow tightens while you circle.\nSay it as one point: it doesn’t know where the lift is when you take off. It learns it from your circles, and it remembers where the lift was.\nThis is a recording of the app playing back a real flight. Same code in replay as live, so what you see is exactly what you get in the air."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#plan-a-task",
+    "href": "pgpilot/tutorial.html#plan-a-task",
+    "title": "pgpilot",
+    "section": "Plan a task",
+    "text": "Plan a task\n\n\nDo this live if you can. The slide is your backup.\nThe task on the image is real Voss terrain. Point at the names: - TAKEOFF Bavallen - START Storebrekkuna, 986 m, the cylinder is the dashed circle - GOAL Bjørnestigen - LANDING Rokne - TASK DIST 95.9 km, and L/D 8.0 on the route\nThe cylinders and the dashed legs are drawn straight onto the map. The side view at the bottom shows the terrain profile under the route, so you see what you have to get over.\nSend it to the group, and ask them to look at their phone. The notification is called “Load task”. Wait for the sound in the room before you move on."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#after-the-flight",
+    "href": "pgpilot/tutorial.html#after-the-flight",
+    "title": "pgpilot",
+    "section": "After the flight",
+    "text": "After the flight\n\n\nOne slide that does four jobs, so you don’t need one per thing: - Look at the flight: the map, the track, where you flew. - The text and photos you added yourself. - The segments: Ground and Flying separated automatically. - The numbers: distance, vertical meters, time.\nTalk over it about what happens next: IGC out, automatic upload to Flightlog and XContest, and dedup against what’s already there.\nThis is the reason people open the app again on Tuesday."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#activity-detection",
+    "href": "pgpilot/tutorial.html#activity-detection",
+    "title": "pgpilot",
+    "section": "Activity detection",
+    "text": "Activity detection\n\nDetects flying, hiking, ground\nMode under Menu, My status\n\nAutomatic: hike and fly\nAuto takeoff and landing: flights only\n\nWrong? Flight summary, Activity, Edit\n\n“It was all one flight”, or split at the playhead\nTap a row to relabel, Undo to step back\n\n\n\n\nAnswers “40 min flight saved as three short trips”\nSegments are the flight: airtime, distance, XC score come from them\nEvery edit recalculates the numbers, and trains the detector"
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#areacontest",
+    "href": "pgpilot/tutorial.html#areacontest",
+    "title": "pgpilot",
+    "section": "AreaContest",
+    "text": "AreaContest\n\n\nThe territories game. Fly a loop around a piece of terrain, and you own what’s inside. Fly straight, and you take a belt on each side of the track, and the belt gets wider the further you dare go from launch.\nEvery time you cover the same ground again, your claim gets one notch stronger. Whoever owns a valley is whoever keeps flying it.\nThe best retention mechanic in the app, and it costs you nothing to mention. You can open pgpilot.app/areacontest live if the internet holds."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#map-over-voss",
+    "href": "pgpilot/tutorial.html#map-over-voss",
+    "title": "pgpilot",
+    "section": "Map over Voss",
+    "text": "Map over Voss\n\n\nThe map over Voss, as the audience sees it on the phone. Takeoffs, the contours, and the other pilots live on the map.\nThis is the screen you start from. Tap a takeoff marker and the wind comes up."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#tap-live-wind",
+    "href": "pgpilot/tutorial.html#tap-live-wind",
+    "title": "pgpilot",
+    "section": "Tap Live wind",
+    "text": "Tap Live wind\n\n\nWhat comes up when you tap the takeoff marker: the wind meter standing right next to the takeoff, Hangur East here.\nEach row is a 15-minute average, with gusts in parentheses and the arrow showing the direction. The blue NOW bar separates the measurements from the forecast, and the met.no row below sits dimmed next to it, so you see at once whether the model nailed the day or missed it."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#the-airgram",
+    "href": "pgpilot/tutorial.html#the-airgram",
+    "title": "pgpilot",
+    "section": "The airgram",
+    "text": "The airgram\n\n\nThe airgram: the forecast for takeoff. The yellow columns are the thermals, darker is stronger, and the top of the column is as high as you’ll get. Wind arrows up through the heights, clouds and sun in the rows at the top, rain as blue streaks."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#talk-together",
+    "href": "pgpilot/tutorial.html#talk-together",
+    "title": "pgpilot",
+    "section": "Talk together",
+    "text": "Talk together\n\n  \n  \n\n\nPush-to-talk over the internet. You say something, and it comes out of every phone in the group at the same time, with no range limit.\nThis is the moment the room understands what the app is. Ask a volunteer to press and talk, and everyone hears it.\nThe channel is called Local in the group. Everyone listens, one talks."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#the-button-on-the-riser",
+    "href": "pgpilot/tutorial.html#the-button-on-the-riser",
+    "title": "pgpilot",
+    "section": "The button on the riser",
+    "text": "The button on the riser\n\n  \n  \n  \n    \n      Hold to talk\n      Double-click to zoom in\n      Triple-click to zoom out\n      Tap and hold for the agent\n    \n  \n\n\nThe little black button in the list, the PTT-Z01, sits on the riser, within thumb’s reach. Hands stay on the brakes, gloves stay on, and the phone stays where it is.\nFour presses, show them with your hand while you talk: - Hold: talk. - Double-click: zoom in. - Triple-click: zoom out. - Tap, then hold: the voice assistant. “Navigate to Jørgen”, “what’s the wind”.\nZoom is the one people underestimate. In the air you don’t switch numbers, you switch the view: in when you’re working a bubble, out when you’re deciding where to go next.\nTwo things that surprise: - The screen can be dimmed. Hold the button a little longer than half a second and the screen wakes AND the transmission starts. - The button works even when pgpilot isn’t in front.\nEverything can be remapped, and you can pair more than one button. This is Bluetooth, so it doesn’t exist in the browser version."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#the-kv4p-radio",
+    "href": "pgpilot/tutorial.html#the-kv4p-radio",
+    "title": "pgpilot",
+    "section": "The KV4P radio",
+    "text": "The KV4P radio\n\n  \n  \n    \n      Transmits on VHF and the pgpilot channel at the same time\n      Repeater: turn on \"Relay the group out over the radio\"\n      Dedup: tries to play each transmission once\n      Bluetooth, v2.0\n    \n  \n\n\nA radio that connects to the phone, instead of a 90s gadget with incomprehensible menus.\nThis is how it works in pgpilot: you connect the radio and transmit on both VHF and the pgpilot channel. You hear both your modern “internet” friends and your remoter or old-fashioned friends on VHF.\nThe device can even act as a repeater: it can relay a VHF message into the pgpilot group, and the group out over VHF. That direction is off by default - flip Relay the group out over the radio in the radio settings to turn it on.\nWe also have an early dedup: if you hear the same transmission over both radio and internet, the app tries to play it only once.\nThe benefits of having the radio on the phone: - No fumbling with bad radio menus. - We can use radio only when there’s no coverage. - Headphones pair like with any phone. - We can run far better noise cancelling on a phone than the old radios do.\nkv4p.com has the list of certified radios. Make sure you get the 2.0 version. (The 868 MHz advice in part 6 is for the LoRa boards, not this radio.)"
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#connect-your-vario",
+    "href": "pgpilot/tutorial.html#connect-your-vario",
+    "title": "pgpilot",
+    "section": "Connect your vario",
+    "text": "Connect your vario\n\n\nA screenshot from the phone. It doesn’t exist in the web version, because the Bluetooth code is locked behind isNative().\nThree things are connected at the same time here: the BLE vario, the PTT button and the KV4P radio. That’s the whole hardware story in one picture.\nThe point is auto-connect: we run a background scanner, and the devices show up within about 15 seconds of you switching them on. You don’t tap anything.\nIf you don’t want a vario, the barometer in the phone is enough."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#which-varios-work",
+    "href": "pgpilot/tutorial.html#which-varios-work",
+    "title": "pgpilot",
+    "section": "Which varios work",
+    "text": "Which varios work\n\n\n\nManufacturer\nModels confirmed\n\n\n\n\nXCTracer\nXC-Tracer Maxx, Maxx II, Maxx III, Mini\n\n\nStodeus\nUltraBip, BlueBip, MipBip+, MipTrack\n\n\nSkyBean / SkyDrop\nSkyDrop, SkyDrop2, SkyBean S0\n\n\nSyride\nSYS’Nav XL, SYS’Evo 2, SYS’Alti 4, SYS’Solar, SYS’GPS 4\n\n\nBlueFlyVario\nBlueFly (BLE and TTL-GPS)\n\n\nVector Vario\nVector Vario\n\n\nFlymaster\nGPS LS 2\n\n\nDIY\nMatiasVario V2 and V3, Microchip RN4678 / RN4871\n\n\n\n\nThere is no whitelist. The app connects to any BLE vario that speaks a standard serial profile, and reads the standard sentences. “Tons of choices, we support all that try” is literal.\nThe table is the narrower claim: models pilots have actually connected and streamed data from.\nTwo things worth pulling out: - XCTracer is the best supported, biggest user base, and sends GPS, vario, pressure and battery in one sentence. - Vector Vario is the only one that also gives us measured wind, heading, temperature and humidity instead of us estimating it.\nIf you have a different device and want it to work, send a message. The feedback button in the menu works fine."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#connect-the-services",
+    "href": "pgpilot/tutorial.html#connect-the-services",
+    "title": "pgpilot",
+    "section": "Connect the services",
+    "text": "Connect the services\n\n\nMenu, then Connected services. Everything that needs to talk to something outside the app sits on one page.\nAt the bottom, under Flight upload: - Flightlog.org. Connect once, and the flights go up by themselves. It goes via our server, so the phone doesn’t have to do anything. - XContest.org. Same, but this one has to go from the phone.\nAbove sits the live tracking: OGN and FLARM, PureTrack, LiveTrack24. One position out from the phone, on to all the networks, with no extra battery. InReach sits on the same page, but that one runs the other way, into the app. More on that in part 6.\nThe point: nobody uploads anything manually any more."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#the-kit",
+    "href": "pgpilot/tutorial.html#the-kit",
+    "title": "pgpilot",
+    "section": "The kit",
+    "text": "The kit\n\n  \n  \n    \n      Headphones. Shokz bone conduction: your ears stay\n      open for flying, but you hear the phone.\n      The button. Any GATT BLE button works. I fly with\n      two.\n      The radio. KV4P, from part 4.\n    \n  \n\n\nThe whole set on one board: the phone, the PTT button, the KV4P radio and headphones.\nThree things worth saying about the setup: - Headphones. Shokz bone conduction is the gold standard: your ears stay open for flying, but you hear the phone. A buff over the mic gives pretty clean speech. - The button. Any GATT BLE button works. I fly with two. - The radio. KV4P, from part 4.\nAll of this reconnects by itself when you switch it on. That’s the whole design goal: put the gear on, switch it on, fly."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#three-radios-three-jobs",
+    "href": "pgpilot/tutorial.html#three-radios-three-jobs",
+    "title": "pgpilot",
+    "section": "Three radios, three jobs",
+    "text": "Three radios, three jobs\n\n  \n    VHF\n    Voice, when nothing else works. The KV4P radio from part 4.\n  \n  \n    LoRa\n    Position and short text with no infrastructure. FANET and\n    Meshtastic.\n  \n  \n    Satellite\n    When there's no coverage at all. InReach.\n  \n\n\nThe frame for the whole part. Three technologies, three different jobs, and the app talks to all three.\nVHF is for voice. LoRa is for position and short messages. Satellite is the last resort.\nVHF you already saw in part 4, so the next slides take the other two."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#fanet-and-flarm",
+    "href": "pgpilot/tutorial.html#fanet-and-flarm",
+    "title": "pgpilot",
+    "section": "FANET and FLARM",
+    "text": "FANET and FLARM\n\n  \n  \n    \n      Position every second\n      Landed and distress status\n      Short text\n      Local weather stations\n    \n  \n\n\nFANET with FLARM is what varios like Skytraxx and SoftRF trackers broadcast. It’s what the OGN receivers on the ridges listen for.\nWith the radio paired under Settings, Connected devices, you get: - Every pilot the radio hears, on the map and in Nearby, with names where we know them. If the phone has internet, it relays them to the pgpilot backend, so friends without a radio see them too, and your own position reaches the FANET/OGN world. - A pilot who landed, needs a ride, or pressed the distress button shows up as exactly that, not as an aircraft with a heading.\nTurn the layer on in the map settings. It’s the “Show live OGN traffic on map” switch in the picture."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#meshtastic-and-bircom",
+    "href": "pgpilot/tutorial.html#meshtastic-and-bircom",
+    "title": "pgpilot",
+    "section": "Meshtastic and Bircom",
+    "text": "Meshtastic and Bircom\n\n  \n  \n    \n      Its own mesh, with no ground stations\n      Channels as their own rows in Comms\n      Works with no cell signal\n    \n  \n\n\nMeshtastic is the general-purpose mesh. Messages hop from radio to radio, so a valley full of pilots is its own network.\nIn Bir the local community runs Bircom on top of it, and most pilots there fly with a Meshtastic radio in the harness.\nWith the radio paired you get: - Meshtastic channels as their own rows in Comms. That chat works with no cell signal at all, it only needs the Bluetooth link to the radio. - FANET text the radio hears is relayed into the Local chat, so a pilot with FANET only reaches everyone in the valley, not just the phone that heard them. - Meshtastic nodes from Bir show up on the map. The switch is called “Show Bircom mesh nodes”.\nYou don’t need the Meshtastic app on the phone. If you’ve used it, close it first: the radio only takes one Bluetooth client at a time."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#inreach",
+    "href": "pgpilot/tutorial.html#inreach",
+    "title": "pgpilot",
+    "section": "InReach",
+    "text": "InReach\n\n  \n    Garmin InReach MapShare\n    Under Connected services you enter your MapShare name, the part after\n    share.garmin.com/, once.\n  \n  \n    Inbound, not outbound\n    The app polls the MapShare feed and pulls your satellite position into\n    pgpilot as its own source. It is not a channel we transmit to, and not\n    Bluetooth messages or SOS.\n  \n  \n    For the others\n    Your position lands on everyone else's map even where there's no cell\n    coverage at all, and someone at home can follow the dot.\n  \n\n\nInReach is the last resort, and it’s important to explain it right:\nThis is inbound. The app polls the Garmin MapShare KML feed and pulls your position from the satellite into pgpilot, as its own source. It is not a channel we transmit to, and it’s not Bluetooth messages or SOS.\nYou enter your MapShare name, the part after share.garmin.com/, once. After that the others see you on the map even where there’s no cell coverage at all, and someone at home can follow the dot.\nIn short: VHF for voice, LoRa for position and text, InReach when nothing else gets through."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#which-lora-board",
+    "href": "pgpilot/tutorial.html#which-lora-board",
+    "title": "pgpilot",
+    "section": "Which LoRa board",
+    "text": "Which LoRa board\n\n  \n    SenseCAP T1000-E\n    Credit-card size, waterproof, GPS and battery built in. The one I'd\n    pick, simply because it disappears in a harness pocket.\n  \n  \n    LILYGO T-Echo\n    Bigger, with an e-paper screen, a larger battery and an external\n    antenna. Which is why the Bir community made it their standard. Pick this\n    if range and battery matter more than size.\n  \n\n\nAnything with an nRF52840 and an SX1262 or LR1110 works. Avoid boards with the older SX127x radio, they have poor range.\n\nSenseCAP T1000-E. Credit-card size, waterproof, GPS and battery built in. Recommended for size.\nLILYGO T-Echo. Bigger, e-paper, bigger battery, external antenna. The Bir standard.\n\nBoth ship with Meshtastic. If you want FANET instead, you flash SoftRF onto the same board, and pgpilot sees it as a FANET/FLARM tracker.\nPick 868 MHz explicitly if you fly in Europe or India. The listings default to 915 or 433."
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#flying-with-others",
+    "href": "pgpilot/tutorial.html#flying-with-others",
+    "title": "pgpilot",
+    "section": "Flying with others",
+    "text": "Flying with others\n\nOthers don’t need to switch\n\nOGN/FLARM, XContest, PureTrack, LiveTrack24, InReach show up\n\nSafeSky: turn on OGN / FLARM in Connected services\nZello: no import, make the group in pgpilot\nStudents: instructor talks to all over PTT, sees everyone\n\n\n\nSafeSky rebroadcasts OGN, that’s why one switch does both\nShow Connected services on the phone"
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#seeing-it-in-the-air",
+    "href": "pgpilot/tutorial.html#seeing-it-in-the-air",
+    "title": "pgpilot",
+    "section": "Seeing it in the air",
+    "text": "Seeing it in the air\n\nToo dark: Settings, Layout, light mode\nOr a pale map style in Map settings\nScreen setup: pick your fields in Layout\nAirspace above you: “Distance to airspace” field\n\nNearest airspace, its floor, distance\n\n\n\n\nField is in the ready-to-fly screenshot: “SOGN TIA 4, floor, 1.6 km”\nCheck the switches on the phone before you start"
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#your-flight-log",
+    "href": "pgpilot/tutorial.html#your-flight-log",
+    "title": "pgpilot",
+    "section": "Your flight log",
+    "text": "Your flight log\n\nThree short trips: Edit, “It was all one flight”\nAvg speed vs Flightlog: measured over different spans\n3D replay of any flight\n\n\n\nSplit causes: mid-flight restart (fixed), half-uploaded track (being fixed)\nAsk for the flight afterwards, don’t debug on stage\nAvg speed: likely whole track vs air time, not verified\nShow a 3D replay if there’s time"
+  },
+  {
+    "objectID": "pgpilot/tutorial.html#whats-coming",
+    "href": "pgpilot/tutorial.html#whats-coming",
+    "title": "pgpilot",
+    "section": "What’s coming",
+    "text": "What’s coming\n\nRegional forecast\nThe airmass model: wind and thermals in one go\n\nWeather forecast\nKK7 thermal maps\nLive wind\nOther pilots\nYou\n\nDrive detection, in test\n\n\n\nRegional forecast: full MEPS grid per region, not just per takeoff\nAirmass model: one model learns both, from every source we already have\nDrive: asks “Are you driving?”, friends see a car\nNo dates\nThen open the floor"
   }
 ]
