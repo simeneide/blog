@@ -325,13 +325,19 @@ A button on the riser does the same with gloves on.
 
 ```{=html}
 <div class="two-up" style="justify-content:center">
-  <img src="img/airgram-billing.png" alt="Airgram for the Billing takeoff today">
+  <img src="img/takeoff-billing.png" alt="The Billing takeoff, tapped on the map">
+  <img class="fragment" src="img/airgram-billing.png" alt="Airgram for the Billing takeoff today">
   <img class="fragment" src="img/airgram-billing-2.png" alt="Airgram for the Billing takeoff tomorrow">
 </div>
 ```
 
 ::: {.notes}
-Tap the Billing takeoff on the map. Yellow columns are thermals, darker is
+Tap the Billing takeoff on the map and you get the takeoff card. Wind sectors from
+ParaglidingEarth: south-west and west are the good ones here. And XC potential
+for the week: it said about 103 km today, and five of us flew between 100 and
+131 km. Estimate for an EN-B wing, guidance only.
+
+Click. Open the airgram. Yellow columns are thermals, darker is
 stronger, the top is how high you get. Wind arrows up through the heights,
 cloud and rain on top. Here the model is GFS, the only one that covers India.
 
