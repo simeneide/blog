@@ -36,8 +36,9 @@ format:
   <img class="hero-l" src="img/2912d2b9.jpg" alt="">
   <img class="hero-r" src="img/16435d6d.jpg" alt="">
   <div class="hero-text">
-    <img src="img/pgpilot-wordmark.png" style="position:static; width:440px; height:auto; object-fit:contain; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.85))" alt="pgpilot">
-    <p class="hero-kicker">Bir Billing</p>
+    <div style="position:absolute; left:50%; top:50%; width:760px; height:620px; transform:translate(-50%,-50%); background:radial-gradient(ellipse at center, rgba(15,23,42,0.62) 0%, rgba(15,23,42,0.3) 45%, rgba(15,23,42,0) 70%); pointer-events:none"></div>
+    <img src="img/pgpilot-stacked-white.svg" style="position:relative; height:330px; width:auto; border:none; box-shadow:none; filter:drop-shadow(0 4px 18px rgba(0,0,0,0.7))" alt="pgpilot">
+    <p class="hero-kicker" style="position:relative; margin-top:26px">Bir Billing</p>
   </div>
 </div>
 ```
