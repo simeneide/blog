@@ -47,19 +47,13 @@ Ten seconds. The goal for the next quarter of an hour: everyone has the app on
 the phone and is in the group before they go to dinner. Do it with me as we go.
 :::
 
-## What is pgpilot? {.wip}
+## What is pgpilot? {.wide-slide background-image="img/app-inflight-wide.jpg" background-size="cover" background-color="#0f172a"}
 
 ```{=html}
 <style>
-  .feature-tagline {
-    display: block;
-    margin-top: 0.28em;
-    font-family: "Questrial", system-ui, sans-serif;
-    font-size: 0.38em;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #38bdf8;
-  }
+  .wide-title { position:absolute; left:24px; bottom:26px; padding:10px 26px 14px; border-radius:16px; background:rgba(15,23,42,0.86);
+                box-shadow:0 10px 30px rgba(0,0,0,0.45); font-family:"Bevan", Georgia, serif; font-size:46px; line-height:1.1; color:#fff; z-index:5; }
+  .reveal .wide-slide > h2 { display:none; }
   .feature-pill {
     display: flex;
     align-items: center;
@@ -85,53 +79,36 @@ the phone and is in the group before they go to dinner. Do it with me as we go.
     border-radius: 50%;
     background: #38bdf8;
   }
-  .wip-bg {
-    position: absolute; inset: -60px;
-    background: url("img/app-inflight-1.jpg") center 40% / cover;
-    filter: blur(22px) brightness(0.45) saturate(1.2);
-  }
-  .wip-phone {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%, -46%);
-    height: 640px; width: auto;
-    border-radius: 22px;
-    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6);
-  }
-  .wip-col {
-    position: absolute; top: 120px; bottom: 30px;
-    display: flex; flex-direction: column; justify-content: center; gap: 14px;
-  }
-  .wip-col--l { left: 40px; right: calc(50% + 200px); }
-  .wip-col--r { right: 40px; left: calc(50% + 200px); }
-  .wip-col .gap { height: 22px; }
-  .wip-bg { z-index: 0; }
-  .wip-phone, .wip-col { z-index: 2; }
-  .reveal .wip h2 { color: #ffffff; text-shadow: 0 3px 16px rgba(0, 0, 0, 0.6); position: relative; z-index: 3; }
-  .reveal .wip .feature-tagline { position: relative; z-index: 3; }
+  .wip-dim { position:absolute; inset:-60px; background:rgba(15,23,42,0.72); z-index:3; }
+  .wip-grid { position:absolute; left:0; right:0; top:60px; bottom:120px; display:grid; grid-template-columns:repeat(3, 1fr); align-content:center; gap:18px 0; z-index:4; }
+  .wip-grid > div { display:flex; flex-direction:column; gap:14px; }
+  .wip-tag { position:absolute; left:0; right:0; top:40px; text-align:center; font-family:"Questrial", system-ui, sans-serif; font-size:24px; letter-spacing:0.14em; text-transform:uppercase; color:#38bdf8; z-index:4; }
 </style>
-<div class="wip-bg"></div>
-<p class="feature-tagline">All in one app</p>
-<img class="wip-phone" src="img/app-inflight-1.jpg" alt="pgpilot in flight over Bir, with other pilots on the map">
 <div class="fragment fade-in">
-  <div class="wip-col wip-col--l">
-    <div class="feature-pill">Flight instrument</div>
-    <div class="feature-pill">Live wind</div>
-    <div class="feature-pill">Airspace</div>
-    <div class="gap"></div>
-    <div class="feature-pill">Group chat</div>
-    <div class="feature-pill">VHF radio</div>
-    <div class="feature-pill">Tracking</div>
-  </div>
-  <div class="wip-col wip-col--r">
-    <div class="feature-pill">Weather</div>
-    <div class="feature-pill">Task</div>
-    <div class="feature-pill">Offline</div>
-    <div class="gap"></div>
-    <div class="feature-pill">Flight log</div>
-    <div class="feature-pill">Replay</div>
-    <div class="feature-pill">Terrain</div>
+  <div class="wip-dim"></div>
+  <div class="wip-tag">All in one app</div>
+  <div class="wip-grid">
+    <div>
+      <div class="feature-pill">Flight instrument</div>
+      <div class="feature-pill">Live wind</div>
+      <div class="feature-pill">Airspace</div>
+      <div class="feature-pill">Terrain</div>
+    </div>
+    <div>
+      <div class="feature-pill">Group chat</div>
+      <div class="feature-pill">VHF radio</div>
+      <div class="feature-pill">Tracking</div>
+      <div class="feature-pill">Offline</div>
+    </div>
+    <div>
+      <div class="feature-pill">Weather</div>
+      <div class="feature-pill">Task</div>
+      <div class="feature-pill">Flight log</div>
+      <div class="feature-pill">Replay</div>
+    </div>
   </div>
 </div>
+<div class="wide-title">What is pgpilot?</div>
 ```
 
 ::: {.notes}
@@ -204,12 +181,15 @@ Click. Everything is in Menu, Tutorials, under Help. Do them in any order,
 come back any time. Do "Get ready to fly" now if you skipped it.
 :::
 
-## In the air
+## In the air {.wide-slide background-video="voss-video/bir-air.mp4" background-video-loop="true" background-video-muted="true" background-size="cover" background-color="#0f172a"}
 
 ```{=html}
-<video style="display:block; margin:0 auto; max-width:1200px; max-height:590px; width:auto; height:590px; border-radius:14px; box-shadow:0 10px 34px rgba(0,0,0,0.22)" src="voss-video/bir-thermal.mp4"
-       poster="voss-video/bir-thermal.jpg"
-       data-autoplay loop muted playsinline></video>
+<style>
+  .wide-title { position:absolute; left:24px; bottom:26px; padding:10px 26px 14px; border-radius:16px; background:rgba(15,23,42,0.86);
+                box-shadow:0 10px 30px rgba(0,0,0,0.45); font-family:"Bevan", Georgia, serif; font-size:46px; line-height:1.1; color:#fff; z-index:5; }
+  .reveal .wide-slide > h2 { display:none; }
+</style>
+<div class="wide-title">In the air</div>
 ```
 
 ::: {.notes}
@@ -244,13 +224,13 @@ silent for four hours, and then the QR code leads nowhere.
 Keep the app open, we use the group for the rest of the talk.
 :::
 
-## Talk together {.tt}
+## Talk together {.tt .wide-slide background-image="img/app-thermal-wide.jpg" background-size="cover" background-color="#0f172a"}
 
 ```{=html}
 <style>
-  .tt-bg { position:absolute; inset:-60px; background:url("img/app-inflight-2.jpg") center 45% / cover; filter: blur(22px) brightness(0.45) saturate(1.2); z-index:0; }
-  .tt-phone { position:absolute; left:50%; top:50%; transform:translate(-50%,-46%); height:640px; width:auto; border-radius:22px; box-shadow:0 18px 60px rgba(0,0,0,0.6); z-index:1; }
-  .reveal .tt h2 { color:#ffffff; text-shadow:0 3px 16px rgba(0,0,0,0.6); position:relative; z-index:3; }
+  .wide-title { position:absolute; left:24px; bottom:26px; padding:10px 26px 14px; border-radius:16px; background:rgba(15,23,42,0.86);
+                box-shadow:0 10px 30px rgba(0,0,0,0.45); font-family:"Bevan", Georgia, serif; font-size:46px; line-height:1.1; color:#fff; z-index:5; }
+  .reveal .wide-slide > h2 { display:none; }
   .tt-stack { position:absolute; left:50%; top:25%; transform:translateX(-50%); width:760px; display:flex; flex-direction:column; gap:14px; z-index:4; }
   .tt-toast { background:rgba(14,116,144,0.95); color:#fff; border-radius:18px; padding:18px 26px 16px; box-shadow:0 14px 40px rgba(0,0,0,0.45);
               opacity:0; transform:translateY(-14px); transition:opacity .35s ease, transform .35s ease; }
@@ -264,8 +244,7 @@ Keep the app open, we use the group for the rest of the talk.
   @keyframes ttw { 0%,100%{height:6px} 50%{height:22px} }
   .tt-toast.done .tt-wave { display:none; }
 </style>
-<div class="tt-bg"></div>
-<img class="tt-phone" src="img/app-inflight-2.jpg" alt="pgpilot in flight">
+<div class="wide-title">Talk together</div>
 <div class="tt-stack"></div>
 <script>
 (function () {
