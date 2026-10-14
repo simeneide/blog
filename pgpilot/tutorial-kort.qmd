@@ -264,7 +264,7 @@ phone. 100 km triangle today, 4 h 48 min.
 <script>
 (function () {
   var lines = [
-    ["Classic blue day and light wind, exactly like my forecast said!", "Louis · 11:42"],
+    ["I'm topping out at 3,800, exactly like my forecast said!", "Louis · 11:42"],
     ["Coming over, I'm at 2,600 just above takeoff.", "RHaider · 11:43"],
     ["Bombed out near Mandi, horrible landing.", "Simen · 14:47", "me"]
   ];
