@@ -29,7 +29,7 @@ format:
     navigation-mode: linear
 ---
 
-# Get started {.act-divider .hero-slide}
+## Get started {.act-divider .hero-slide}
 
 ```{=html}
 <div class="hero">
@@ -244,23 +244,82 @@ silent for four hours, and then the QR code leads nowhere.
 Keep the app open, we use the group for the rest of the talk.
 :::
 
-## Talk together
+## Talk together {.tt}
 
 ```{=html}
-<div class="two-up">
-  <img src="img/app-comms.png" alt="Communication: Local, 12 online">
-  <video class="clip-sm" src="voss-video/klipp-talking.mp4"
-         poster="img/poster-talking.jpg"
-         data-autoplay loop muted playsinline></video>
-</div>
+<style>
+  .tt-bg { position:absolute; inset:-60px; background:url("img/app-inflight-2.jpg") center 45% / cover; filter: blur(22px) brightness(0.45) saturate(1.2); z-index:0; }
+  .tt-phone { position:absolute; left:50%; top:50%; transform:translate(-50%,-46%); height:640px; width:auto; border-radius:22px; box-shadow:0 18px 60px rgba(0,0,0,0.6); z-index:1; }
+  .reveal .tt h2 { color:#ffffff; text-shadow:0 3px 16px rgba(0,0,0,0.6); position:relative; z-index:3; }
+  .tt-stack { position:absolute; left:50%; top:25%; transform:translateX(-50%); width:760px; display:flex; flex-direction:column; gap:14px; z-index:4; }
+  .tt-toast { background:rgba(14,116,144,0.95); color:#fff; border-radius:18px; padding:18px 26px 16px; box-shadow:0 14px 40px rgba(0,0,0,0.45);
+              opacity:0; transform:translateY(-14px); transition:opacity .35s ease, transform .35s ease; }
+  .tt-toast.on { opacity:1; transform:none; }
+  .tt-toast.old { background:rgba(21,94,117,0.97); color:#d5eef5; }
+  .tt-msg { font-size:34px; line-height:1.25; min-height:1.25em; font-weight:600; }
+  .tt-sub { margin-top:6px; font-size:20px; color:#cffafe; display:flex; align-items:center; gap:10px; }
+  .tt-wave { display:inline-flex; gap:4px; align-items:center; height:22px; }
+  .tt-wave i { width:4px; height:8px; background:#a5f3fc; border-radius:2px; animation:ttw 0.9s ease-in-out infinite; }
+  .tt-wave i:nth-child(2){animation-delay:.15s} .tt-wave i:nth-child(3){animation-delay:.3s} .tt-wave i:nth-child(4){animation-delay:.45s} .tt-wave i:nth-child(5){animation-delay:.6s}
+  @keyframes ttw { 0%,100%{height:6px} 50%{height:22px} }
+  .tt-toast.done .tt-wave { display:none; }
+</style>
+<div class="tt-bg"></div>
+<img class="tt-phone" src="img/app-inflight-2.jpg" alt="pgpilot in flight">
+<div class="tt-stack"></div>
+<script>
+(function () {
+  var lines = [
+    ["Thermal on the spine east of takeoff, 3 up, base around 3,800.", "Louis · 11:42"],
+    ["Coming over, I'm at 2,600 just above takeoff.", "RHaider · 11:43"],
+    ["Landed in Chaugan, all good.", "Jono · 12:51"]
+  ];
+  var timers = [];
+  function clear() { timers.forEach(clearTimeout); timers = []; }
+  function at(ms, fn) { timers.push(setTimeout(fn, ms)); }
+  function play(slide) {
+    clear();
+    var stack = slide.querySelector(".tt-stack");
+    stack.innerHTML = "";
+    var t = 600;
+    lines.forEach(function (l) {
+      var el = document.createElement("div");
+      el.className = "tt-toast";
+      el.innerHTML = '<div class="tt-msg"></div><div class="tt-sub"><span class="tt-wave"><i></i><i></i><i></i><i></i><i></i></span><span>' + l[1] + '</span></div>';
+      at(t, function () {
+        stack.querySelectorAll(".tt-toast").forEach(function (o) { o.classList.add("old"); });
+        stack.appendChild(el);
+        requestAnimationFrame(function () { el.classList.add("on"); });
+      });
+      t += 900;
+      var words = l[0].split(" ");
+      words.forEach(function (w, i) {
+        at(t + i * 230, function () { el.querySelector(".tt-msg").textContent = words.slice(0, i + 1).join(" "); });
+      });
+      t += words.length * 230 + 300;
+      at(t, function () { el.classList.add("done"); });
+      t += 1600;
+    });
+  }
+  function hook() {
+    if (!window.Reveal || !Reveal.isReady || !Reveal.isReady()) { return setTimeout(hook, 200); }
+    function check() { var s = Reveal.getCurrentSlide(); if (s && s.classList.contains("tt")) { play(s); } else { clear(); } }
+    Reveal.on("slidechanged", check);
+    check();
+  }
+  hook();
+})();
+</script>
 ```
 
 ::: {.notes}
-EVERYONE LISTENS, ONE TALKS. Ask a volunteer to press and talk, and it comes
-out of every phone around us at once, no range limit. This is the moment they
-get what the app is.
+EVERYONE LISTENS, ONE TALKS. Press the button, talk, and it comes out of every
+phone in the group at once, no range limit. And it's written out on screen, so
+you can read it without listening back.
 
-A button on the riser does the same with gloves on. Show it, don't explain it.
+Ask a volunteer to press and talk now. This is the moment they get it.
+
+A button on the riser does the same with gloves on.
 :::
 
 ## Airgram for Billing
@@ -449,19 +508,6 @@ listings default to 915 or 433.
 ::: {.notes}
 Say it right: inbound only. Enter the MapShare name once, and the others see
 you where nothing else gets through. Not SOS.
-:::
-
-# See you in the air {.act-divider}
-
-```{=html}
-<img class="fullbleed" src="img/b3f4fc34.jpg" style="object-position: 50% 40%" alt="">
-<img class="logo-mark" src="img/pgpilot-wordmark.png" alt="pgpilot.app">
-```
-
-::: {.notes}
-End on a call to action, not a thank you. The app is free, it's on your phone
-now, and the "bir" group stays up as long as people keep using it. Fly with it this
-week and tell me what breaks: the feedback button is in the menu.
 :::
 
 ## {background-image="img/volbiv-morning.jpg" background-size="cover" background-position="center 40%"}
