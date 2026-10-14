@@ -1412,5 +1412,103 @@
     "title": "pgpilot og Himalaya",
     "section": "Hva er pgpilot?",
     "text": "Hva er pgpilot?\n\n  \n    Instrumentet\n    Kart, vario, vind, luftrom og XC-poeng mens du flyr. Virker uten\n    dekning.\n  \n  \n    Sambandet\n    Snakk med hele gruppa over nettet, uten rekkevidde. VHF inn i samme\n    kanal.\n  \n  \n    Været\n    Vindmålere og varsel for startplassen, før du drar hjemmefra.\n  \n\n\nSliden vi manglet. Salen har faatt hore hvor Bir er og hvorfor Bir, men ingen har sagt hva appen ER for noe. Ikke last den ned uten aa svare paa det forst.\nDen korteste maaten aa si det paa, og den de skjonner umiddelbart:\n“Det er flyinstrumentet og Zello i én app, og saa har den vaermeldingen for startplassen paa kjopet.”\nHold det til under ett minutt. De tre kolonnene er ikke en liste du skal lese opp, de er tre knagger du henger én setning paa hver.\n\nInstrumentet. Det de allerede kjenner fra XCTrack og lignende. Poenget du legger til er at det virker offline, for det er neste akt.\nSambandet. Dette er det nye. Push-to-talk til hele gruppa over nettet, uten rekkeviddebegrensning, rett i oret. Og har noen bare VHF, kan appen bru mellom de to, saa alle er i samme samtale.\nVaeret. Grunnen til at appen aapnes hjemme paa kjokkenet, ikke bare paa startplassen. Det er den som gir daglig bruk.\n\nIkke naevn hardware, agent eller termikkassistent her. De kommer senere, og lista blir doed hvis den blir lang."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#get-started",
+    "href": "pgpilot/tutorial-kort.html#get-started",
+    "title": "pgpilot",
+    "section": "Get started",
+    "text": "Get started\n\n  \n  \n  \n    \n    Bir Billing\n  \n\n\nTen seconds. The goal for the next quarter of an hour: everyone has the app on the phone and on Local before they go to dinner. Do it with me as we go."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#what-is-pgpilot",
+    "href": "pgpilot/tutorial-kort.html#what-is-pgpilot",
+    "title": "pgpilot",
+    "section": "What is pgpilot?",
+    "text": "What is pgpilot?\n\n\n  \n  All in one app\n  \n    \n      Flight instrument\n      Live wind\n      Airspace\n      Terrain\n    \n    \n      Group chat\n      VHF radio\n      Tracking\n      Offline\n    \n    \n      Weather\n      Task\n      Flight log\n      Replay\n    \n  \n\nWhat is pgpilot?\n\nFirst the screen: this is me in the air over Bir today, with the others around me. Click for the pills.\nUnder a minute. “The flight instrument and Zello in one app, with the weather for takeoff on top.” Point at the groups, don’t read the pills."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#get-the-app",
+    "href": "pgpilot/tutorial-kort.html#get-the-app",
+    "title": "pgpilot",
+    "section": "Get the app",
+    "text": "Get the app\n\n  \n    \n  \n  \n    \n      \n      Android\n      Google Play\n    \n    \n      \n      iPhone\n      App Store\n    \n    \n      \n      Or just\n      pgpilot.app\n    \n  \n\n\nLeave this up while people do it. It’s a task, not an illustration.\nIf the mobile data is slow, the rescue is pgpilot.app in the browser: a viewer name and nothing more, done in half a minute. Everything tonight works there except Bluetooth."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#first-time-you-open-it",
+    "href": "pgpilot/tutorial-kort.html#first-time-you-open-it",
+    "title": "pgpilot",
+    "section": "First time you open it",
+    "text": "First time you open it\n\n  \n  \n  \n\n\nThe first time you open pgpilot, a tutorial takes you through it. Four quick questions: what you fly, what kind of flying, where your phone sits, and whether you have your own vario. The answers pick your instrument layout and whether pgpilot beeps as your vario.\nClick. Then only the permissions your phone needs to record a flight, one at a time, each with a reason: location, and on Android also always-on location, notifications and battery. The microphone is asked the first time you talk.\nThen a short tour of your screen: Plan and Active, the instruments, comms and push to talk, map settings.\nClick. Everything is in Menu, Tutorials, under Help. Do them in any order, come back any time. Do “Get ready to fly” now if you skipped it."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#in-the-air",
+    "href": "pgpilot/tutorial-kort.html#in-the-air",
+    "title": "pgpilot",
+    "section": "In the air",
+    "text": "In the air\n\nIn the air\n\n\nThis is my flight today from Billing, replayed in the app, same code as live. Gliding in, and you see the others around you with their altitude: Louis, RHaider, Markus.\nI hit the thermal and thermal assist switches on by itself: the bubble shows where the lift is, and the map zooms in. Then I circle, and RHaider is in the same climb with me.\nNone of these numbers come from the internet: GPS and the barometer in the phone. 100 km triangle today, 4 h 48 min."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#talk-together",
+    "href": "pgpilot/tutorial-kort.html#talk-together",
+    "title": "pgpilot",
+    "section": "Talk together",
+    "text": "Talk together\n\nTalk together\n\n\n  \n  Local\n\n\n\nEVERYONE LISTENS, ONE TALKS. Press the button, talk, and it comes out of every phone on Local around us at once, no range limit. And it’s written out on screen, so you can read it without listening back.\nAsk a volunteer to press and talk now. This is the moment they get it.\nA button on the riser does the same with gloves on."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#airgram-for-billing",
+    "href": "pgpilot/tutorial-kort.html#airgram-for-billing",
+    "title": "pgpilot",
+    "section": "Airgram for Billing",
+    "text": "Airgram for Billing\n\n  \n  \n  \n\n\nTap the Billing takeoff on the map and you get the takeoff card. Wind sectors from ParaglidingEarth: south-west and west are the good ones here. And XC potential for the week: it said about 103 km today, and five of us flew between 100 and 131 km. Estimate for an EN-B wing, guidance only.\nClick. Open the airgram. Yellow columns are thermals, darker is stronger, the top is how high you get. Wind arrows up through the heights, cloud and rain on top. Here the model is GFS, the only one that covers India.\nToday: a classic blue day. Light upslope wind from the south-west, thermals from about half past nine to half past four, up to around 3,800 m.\nAnd how did it do? The best anyone got today was 3,466 m, Andreas, and most of us topped out around 3,000 to 3,300. GFS is coarse in these mountains, so read the top as a ceiling, not a promise. The distance was spot on, though.\nClick. Tomorrow: high cloud in the morning, cumulus from about half past one with bases around 3,500 m, more wind up high and a small chance of a shower in the afternoon."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#after-the-flight",
+    "href": "pgpilot/tutorial-kort.html#after-the-flight",
+    "title": "pgpilot",
+    "section": "After the flight",
+    "text": "After the flight\n\n\nTrack, photos, segments, numbers. IGC out, and under Menu, Connected services, automatic upload to XContest and Flightlog. Nobody uploads by hand any more.\nThat’s the reason they open the app again tomorrow."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#section",
+    "href": "pgpilot/tutorial-kort.html#section",
+    "title": "pgpilot",
+    "section": "",
+    "text": "Lord Hanuman's herb hunt\n  9 October to 15 November · pgpilot.app/bir\n\n\n  \n    Leaderboard\n    ground held, today\n  \n    \n      1\n      \n      RHaider\n      152.4 km²\n    \n    \n      2\n      \n      Louis Tapper\n      41.1 km²\n    \n    \n      3\n      \n      Jono Williams\n      35.9 km²\n    \n\n\nOur game for the season here. Hanuman is lying along the Dhauladhar, from Dharamshala to Joginder Nagar, about 740 km2. He has lost the herb, and you help him look for it.\nEvery time you fly over a patch inside him, you search it once. Whoever has searched a patch most often holds it; if two are level, nobody does. Flying straight searches a band either side of your track, wider the further you get from takeoff. Close a loop and you take everything inside it.\n9 October to 15 November. Whoever holds the most ground at the end of 15 November wins a reward. Free, automatic: every flight in the app counts, and flights from XContest and Flightlog too. It rescores every hour.\nClick for the board. (Snapshot from this afternoon, open pgpilot.app/bir for the live one.) And as the poster says: fly within your limits, no herb is worth a risk."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#the-bir-pack-three-radios",
+    "href": "pgpilot/tutorial-kort.html#the-bir-pack-three-radios",
+    "title": "pgpilot",
+    "section": "The Bir pack: three radios",
+    "text": "The Bir pack: three radios\n\n  \n    VHF\n    Voice, when nothing else works. A KV4P radio straight on the phone.\n  \n  \n    LoRa\n    Position and short text with no infrastructure. FANET and\n    Meshtastic.\n  \n  \n    Satellite\n    When there's no coverage at all. InReach.\n  \n\n\nThe part that matters here. Behind the first ridge the internet is gone, the landings have no road out, and nobody is on call. That’s why this valley runs its own radios, and why the app talks to all three."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#vhf-on-the-phone-kv4p-beta",
+    "href": "pgpilot/tutorial-kort.html#vhf-on-the-phone-kv4p-beta",
+    "title": "pgpilot",
+    "section": "VHF on the phone: KV4P Beta",
+    "text": "VHF on the phone: KV4P Beta\n\n  \n  \n    \n      VHF radio straight into pgpilot over Bluetooth\n      Sends both to the app and on VHF\n      Works as a repeater between app and radio\n    \n  \n\n\nStill beta. Pair it under Menu, Hardware. When you talk, it goes out in the pgpilot group and on VHF at once, so friends on either hear you. It can relay between the two."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
+    "href": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
+    "title": "pgpilot",
+    "section": "Meshtastic, Bircom and FANET",
+    "text": "Meshtastic, Bircom and FANET\n\n  \n  \n    \n      Meshtastic and FANET radios straight into pgpilot\n      Status, position and messages over Bircom, no coverage needed\n      Ground contacts hear when you take off and when you've landed well\n    \n  \n\n\nMost of you already fly with a Meshtastic radio for Bircom. Pair it in pgpilot and your status, position and messages go over the mesh, no coverage needed. FANET trackers too. And it works with ground contacts: the friends you added get a push or an email when you take off and when you’ve landed well. Close the Meshtastic app first: the radio takes one Bluetooth client at a time.\nBuying a radio: a T-Echo or a SenseCAP T1000-E. Pick 868 MHz in India, the listings default to 915 or 433."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#inreach",
+    "href": "pgpilot/tutorial-kort.html#inreach",
+    "title": "pgpilot",
+    "section": "InReach",
+    "text": "InReach\n\n  \n    Your Garmin InReach position straight into pgpilot\n    On everyone's map, even with no coverage at all\n    Add your MapShare name in Menu → Connected services\n  \n\n\nInbound only: the app pulls your satellite position in, so the others see you where nothing else gets through. Not messages, not SOS."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#section-1",
+    "href": "pgpilot/tutorial-kort.html#section-1",
+    "title": "pgpilot",
+    "section": "",
+    "text": "Thank you\n  pgpilot.app"
   }
 ]
