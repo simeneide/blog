@@ -44,7 +44,7 @@ format:
 
 ::: {.notes}
 Ten seconds. The goal for the next quarter of an hour: everyone has the app on
-the phone and is in the group before they go to dinner. Do it with me as we go.
+the phone and on Local before they go to dinner. Do it with me as we go.
 :::
 
 ## What is pgpilot? {.wide-slide background-image="img/app-inflight-wide.jpg" background-size="contain" background-color="#0f172a"}
@@ -295,7 +295,7 @@ phone. 100 km triangle today, 4 h 48 min.
 
 ::: {.notes}
 EVERYONE LISTENS, ONE TALKS. Press the button, talk, and it comes out of every
-phone in the group at once, no range limit. And it's written out on screen, so
+phone on Local around us at once, no range limit. And it's written out on screen, so
 you can read it without listening back.
 
 Ask a volunteer to press and talk now. This is the moment they get it.
