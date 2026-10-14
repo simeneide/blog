@@ -264,7 +264,7 @@ phone. 100 km triangle today, 4 h 48 min.
 <script>
 (function () {
   var lines = [
-    ["I'm topping out at 3,800, exactly like my forecast said!", "Louis · 11:42"],
+    ["Topping out at 3,450 over the spine, highest yet today!", "Andreas · 11:42"],
     ["Coming over, I'm at 2,600 just above takeoff.", "RHaider · 11:43"],
     ["Bombed out near Mandi, horrible landing.", "Simen · 14:47", "me"]
   ];
@@ -343,6 +343,10 @@ cloud and rain on top. Here the model is GFS, the only one that covers India.
 
 Today: a classic blue day. Light upslope wind from the south-west, thermals
 from about half past nine to half past four, up to around 3,800 m.
+
+And how did it do? The best anyone got today was 3,466 m, Andreas, and most of
+us topped out around 3,000 to 3,300. GFS is coarse in these mountains, so read
+the top as a ceiling, not a promise. The distance was spot on, though.
 
 Click. Tomorrow: high cloud in the morning, cumulus from about half past one
 with bases around 3,500 m, more wind up high and a small chance of a shower in
