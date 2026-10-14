@@ -1747,7 +1747,7 @@
     "href": "pgpilot/tutorial-kort.html#talk-together",
     "title": "pgpilot",
     "section": "Talk together",
-    "text": "Talk together\n\nTalk together\n\n\n  \n  Local\n\n\n\nEVERYONE LISTENS, ONE TALKS. Press the button, talk, and it comes out of every phone in the group at once, no range limit. And it’s written out on screen, so you can read it without listening back.\nAsk a volunteer to press and talk now. This is the moment they get it.\nA button on the riser does the same with gloves on."
+    "text": "Talk together\n\nTalk together\n\n\n  \n  Local\n\n\n\nEVERYONE LISTENS, ONE TALKS. Press the button, talk, and it comes out of every phone on Local around us at once, no range limit. And it’s written out on screen, so you can read it without listening back.\nAsk a volunteer to press and talk now. This is the moment they get it.\nA button on the riser does the same with gloves on."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#the-airgram",
@@ -1782,14 +1782,14 @@
     "href": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
     "title": "pgpilot",
     "section": "Meshtastic, Bircom and FANET",
-    "text": "Meshtastic, Bircom and FANET\n\n  \n  \n    \n      Meshtastic and FANET radios straight into pgpilot over Bluetooth\n      Status and position over Bircom and FANET\n      Messages over Bircom, no cell signal needed\n      Works with pgpilot ground contacts: push and email to friends when you take off and when you've landed well\n    \n  \n\n\nMost of you already fly with a Meshtastic radio for Bircom. Pair it in pgpilot and your status, position and messages go over the mesh, no coverage needed. FANET trackers too. And it works with ground contacts: the friends you added get a push or an email when you take off and when you’ve landed well. Close the Meshtastic app first: the radio takes one Bluetooth client at a time.\nBuying a radio: a T-Echo or a SenseCAP T1000-E. Pick 868 MHz in India, the listings default to 915 or 433."
+    "text": "Meshtastic, Bircom and FANET\n\n  \n  \n    \n      Meshtastic and FANET radios straight into pgpilot\n      Status, position and messages over Bircom, no coverage needed\n      Ground contacts hear when you take off and when you've landed well\n    \n  \n\n\nMost of you already fly with a Meshtastic radio for Bircom. Pair it in pgpilot and your status, position and messages go over the mesh, no coverage needed. FANET trackers too. And it works with ground contacts: the friends you added get a push or an email when you take off and when you’ve landed well. Close the Meshtastic app first: the radio takes one Bluetooth client at a time.\nBuying a radio: a T-Echo or a SenseCAP T1000-E. Pick 868 MHz in India, the listings default to 915 or 433."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#inreach",
     "href": "pgpilot/tutorial-kort.html#inreach",
     "title": "pgpilot",
     "section": "InReach",
-    "text": "InReach\n\n  \n    Garmin InReach MapShare\n    Under Connected services you enter your MapShare name, the part after\n    share.garmin.com/, once.\n  \n  \n    Inbound, not outbound\n    The app pulls your satellite position into pgpilot. It is not a channel\n    we transmit to, and not messages or SOS.\n  \n  \n    For the others\n    Your position lands on everyone else's map even where there's no cell\n    coverage at all, and someone at home can follow the dot.\n  \n\n\nSay it right: inbound only. Enter the MapShare name once, and the others see you where nothing else gets through. Not SOS."
+    "text": "InReach\n\n  \n    Your Garmin InReach position straight into pgpilot\n    On everyone's map, even with no coverage at all\n    Add your MapShare name in Menu → Connected services\n  \n\n\nInbound only: the app pulls your satellite position in, so the others see you where nothing else gets through. Not messages, not SOS."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#which-lora-board",
@@ -1859,6 +1859,6 @@
     "href": "pgpilot/tutorial-kort.html#get-started",
     "title": "pgpilot",
     "section": "Get started",
-    "text": "Get started\n\n  \n  \n  \n    \n    Bir Billing\n  \n\n\nTen seconds. The goal for the next quarter of an hour: everyone has the app on the phone and is in the group before they go to dinner. Do it with me as we go."
+    "text": "Get started\n\n  \n  \n  \n    \n    Bir Billing\n  \n\n\nTen seconds. The goal for the next quarter of an hour: everyone has the app on the phone and on Local before they go to dinner. Do it with me as we go."
   }
 ]

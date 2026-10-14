@@ -440,14 +440,13 @@ between the two.
 ## Meshtastic, Bircom and FANET
 
 ```{=html}
-<div class="two-up" style="justify-content:center; gap:60px">
-  <img src="img/mesh-status.png" alt="Your status: tell your group and ground contacts">
-  <div class="two-up-note">
-    <ul>
-      <li>Meshtastic and FANET radios straight into pgpilot over Bluetooth</li>
-      <li>Status and position over Bircom and FANET</li>
-      <li>Messages over Bircom, no cell signal needed</li>
-      <li>Works with pgpilot ground contacts: push and email to friends when you take off and when you've landed well</li>
+<div class="two-up" style="justify-content:center; gap:70px">
+  <img src="img/mesh-status-card.png" style="height:540px" alt="Your status: tell your group and ground contacts">
+  <div class="two-up-note" style="max-width:600px">
+    <ul style="display:flex; flex-direction:column; gap:30px">
+      <li>Meshtastic and FANET radios straight into pgpilot</li>
+      <li>Status, position and messages over Bircom, no coverage needed</li>
+      <li>Ground contacts hear when you take off and when you've landed well</li>
     </ul>
   </div>
 </div>
@@ -471,7 +470,7 @@ listings default to 915 or 433.
   <ul>
     <li>Your Garmin InReach position straight into pgpilot</li>
     <li>On everyone's map, even with no coverage at all</li>
-    <li>Add your MapShare name once, under Connected services</li>
+    <li>Add your MapShare name in Menu → Connected services</li>
   </ul>
 </div>
 ```
