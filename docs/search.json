@@ -1733,7 +1733,7 @@
     "href": "pgpilot/tutorial-kort.html#first-time-you-open-it",
     "title": "pgpilot",
     "section": "First time you open it",
-    "text": "First time you open it\n\n  \n  \n  \n\n\nFour permissions: location, microphone (only while the button is held), nearby devices, notifications (or tracking dies when the screen sleeps). Data isn’t sold, say it.\nThen “See it in action”, not Skip: it replays a real flight, no GPS needed.\nLast picture: ready to fly. Green “Ready” in the top bar, and in Active mode the flight starts by itself at takeoff."
+    "text": "First time you open it\n\n  \n  \n  \n\n\nThe first time you open pgpilot, a tutorial takes you through it. Four quick questions: what you fly, what kind of flying, where your phone sits, and whether you have your own vario. The answers pick your instrument layout and whether pgpilot beeps as your vario.\nClick. Then only the permissions your phone needs to record a flight, one at a time, each with a reason: location, and on Android also always-on location, notifications and battery. The microphone is asked the first time you talk.\nThen a short tour of your screen: Plan and Active, the instruments, comms and push to talk, map settings.\nClick. Everything is in Menu, Tutorials, under Help. Do them in any order, come back any time. Do “Get ready to fly” now if you skipped it."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#join-the-group",
@@ -1803,7 +1803,7 @@
     "href": "pgpilot/tutorial-kort.html#in-the-air-thermals-and-vario",
     "title": "pgpilot",
     "section": "In the air: thermals and vario",
-    "text": "In the air: thermals and vario\n\n\nThe vario beeps, the app draws the bubble, the wind arrow tightens as you circle. It learns the wind and the lift from your circles.\nThis is the app replaying a real flight, same code as live. And none of these numbers come from the internet: GPS and barometer in the phone."
+    "text": "In the air: thermals and vario\n\n\nThis is my flight today from Billing, replayed in the app, same code as live. Gliding in, and you see the others around you with their altitude: Louis, RHaider, Markus.\nI hit the thermal and thermal assist switches on by itself: the bubble shows where the lift is, and the map zooms in. Then I circle, and RHaider is in the same climb with me.\nNone of these numbers come from the internet: GPS and the barometer in the phone. 100 km triangle today, 4 h 48 min."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#lord-hanumans-herb-hunt",
@@ -1838,6 +1838,20 @@
     "href": "pgpilot/tutorial-kort.html#section",
     "title": "pgpilot",
     "section": "",
+    "text": "Our game for the season here. Hanuman is lying along the Dhauladhar, from Dharamshala to Joginder Nagar, about 740 km2. He has lost the herb, and you help him look for it.\nEvery time you fly over a patch inside him, you search it once. Whoever has searched a patch most often holds it; if two are level, nobody does. Flying straight searches a band either side of your track, wider the further you get from takeoff. Close a loop and you take everything inside it.\n9 October to 15 November. Whoever holds the most ground at the end of 15 November wins a reward. Free, automatic: every flight in the app counts, and flights from XContest and Flightlog too. It rescores every hour.\nClick for the board. (Snapshot from this afternoon, open pgpilot.app/bir for the live one.) And as the poster says: fly within your limits, no herb is worth a risk."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#section-1",
+    "href": "pgpilot/tutorial-kort.html#section-1",
+    "title": "pgpilot",
+    "section": "",
     "text": "Thank you\n  pgpilot.app"
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#in-the-air",
+    "href": "pgpilot/tutorial-kort.html#in-the-air",
+    "title": "pgpilot",
+    "section": "In the air",
+    "text": "In the air\n\n\nThis is my flight today from Billing, replayed in the app, same code as live. Gliding in, and you see the others around you with their altitude: Louis, RHaider, Markus.\nI hit the thermal and thermal assist switches on by itself: the bubble shows where the lift is, and the map zooms in. Then I circle, and RHaider is in the same climb with me.\nNone of these numbers come from the internet: GPS and the barometer in the phone. 100 km triangle today, 4 h 48 min."
   }
 ]

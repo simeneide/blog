@@ -218,10 +218,10 @@ Click. Everything is in Menu, Tutorials, under Help. Do them in any order,
 come back any time. Do "Get ready to fly" now if you skipped it.
 :::
 
-## In the air: thermals and vario
+## In the air
 
 ```{=html}
-<video class="clip" style="height:555px" src="voss-video/bir-thermal.mp4"
+<video style="display:block; margin:0 auto; max-width:1200px; max-height:590px; width:auto; height:590px; border-radius:14px; box-shadow:0 10px 34px rgba(0,0,0,0.22)" src="voss-video/bir-thermal.mp4"
        poster="voss-video/bir-thermal.jpg"
        data-autoplay loop muted playsinline></video>
 ```
@@ -391,7 +391,7 @@ between the two.
 
 ```{=html}
 <div class="two-up" style="justify-content:center; gap:60px">
-  <img src="img/app-map-settings.png" alt="Status sent over Bircom and FANET">
+  <img src="img/mesh-status.png" alt="Your status: tell your group and ground contacts">
   <div class="two-up-note">
     <ul>
       <li>Meshtastic and FANET radios straight into pgpilot over Bluetooth</li>
