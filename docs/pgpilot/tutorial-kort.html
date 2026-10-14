@@ -181,7 +181,7 @@ Simen Eide
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-is-pgpilot" class="slide level2">
+<section id="what-is-pgpilot" class="slide level2 wip">
 <h2>What is pgpilot?</h2>
 <style>
   .feature-tagline {
@@ -192,43 +192,6 @@ Simen Eide
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #38bdf8;
-  }
-  .feature-cloud {
-    display: grid;
-    grid-template-columns: minmax(240px, 1fr) 250px minmax(240px, 1fr);
-    grid-template-rows: min-content min-content;
-    gap: 16px 28px;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .feature-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    min-height: 0;
-  }
-  .feature-stack--tl { grid-column: 1; grid-row: 1; }
-  .feature-stack--tr { grid-column: 3; grid-row: 1; }
-  .feature-stack--bl { grid-column: 1; grid-row: 2; }
-  .feature-stack--br { grid-column: 3; grid-row: 2; }
-  .feature-image {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    width: 289px;
-    height: 530px;
-    margin: 0;
-    border: none;
-    border-radius: 14px;
-    box-shadow: none;
-    overflow: hidden;
-    background: transparent;
-  }
-  .feature-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
   }
   .feature-pill {
     display: flex;
@@ -255,34 +218,55 @@ Simen Eide
     border-radius: 50%;
     background: #38bdf8;
   }
+  .wip-bg {
+    position: absolute; inset: -60px;
+    background: url("img/app-inflight-1.jpg") center 40% / cover;
+    filter: blur(22px) brightness(0.45) saturate(1.2);
+  }
+  .wip-phone {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -46%);
+    height: 640px; width: auto;
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6);
+  }
+  .wip-col {
+    position: absolute; top: 120px; bottom: 30px;
+    display: flex; flex-direction: column; justify-content: center; gap: 14px;
+  }
+  .wip-col--l { left: 40px; right: calc(50% + 200px); }
+  .wip-col--r { right: 40px; left: calc(50% + 200px); }
+  .wip-col .gap { height: 22px; }
+  .wip-bg { z-index: 0; }
+  .wip-phone, .wip-col { z-index: 2; }
+  .reveal .wip h2 { color: #ffffff; text-shadow: 0 3px 16px rgba(0, 0, 0, 0.6); position: relative; z-index: 3; }
+  .reveal .wip .feature-tagline { position: relative; z-index: 3; }
 </style>
+<div class="wip-bg"></div>
 <p class="feature-tagline">All in one app</p>
-<div class="feature-cloud">
-  <div class="feature-stack feature-stack--tl">
+<img class="wip-phone" src="img/app-inflight-1.jpg" alt="pgpilot in flight over Bir, with other pilots on the map">
+<div class="fragment fade-in">
+  <div class="wip-col wip-col--l">
     <div class="feature-pill">Flight instrument</div>
     <div class="feature-pill">Live wind</div>
     <div class="feature-pill">Airspace</div>
-  </div>
-  <div class="feature-image">
-    <img src="img/app-inflight-1.jpg" alt="pgpilot in flight over Bir, with other pilots on the map">
-  </div>
-  <div class="feature-stack feature-stack--tr">
-    <div class="feature-pill">Weather</div>
-    <div class="feature-pill">Task</div>
-    <div class="feature-pill">Offline</div>
-  </div>
-  <div class="feature-stack feature-stack--bl">
+    <div class="gap"></div>
     <div class="feature-pill">Group chat</div>
     <div class="feature-pill">VHF radio</div>
     <div class="feature-pill">Tracking</div>
   </div>
-  <div class="feature-stack feature-stack--br">
+  <div class="wip-col wip-col--r">
+    <div class="feature-pill">Weather</div>
+    <div class="feature-pill">Task</div>
+    <div class="feature-pill">Offline</div>
+    <div class="gap"></div>
     <div class="feature-pill">Flight log</div>
     <div class="feature-pill">Replay</div>
     <div class="feature-pill">Terrain</div>
   </div>
 </div>
 <aside class="notes">
+<p>First the screen: this is me in the air over Bir today, with the others around me. Click for the pills.</p>
 <p>Under a minute. “The flight instrument and Zello in one app, with the weather for takeoff on top.” Point at the groups, don’t read the pills.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
