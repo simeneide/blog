@@ -343,30 +343,6 @@ Simen Eide
           display:block!important;
       }</style></aside>
 </section>
-<section id="join-the-group" class="slide level2">
-<h2>Join the group</h2>
-<div class="joinbox">
-  <img src="img/qr-join-bir.png" alt="">
-  <div>
-    <p class="join-url" style="font-size:1.15em">pgpilot.app/join/<strong>bir</strong></p>
-    <p class="join-sub">Scan, type your name, done.</p>
-  </div>
-</div>
-<aside class="notes">
-<p>CREATE THE GROUP “bir” WHEN YOU RIG, NOT BEFORE. The reaper archives groups silent for four hours, and then the QR code leads nowhere.</p>
-<p>Keep the app open, we use the group for the rest of the talk.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="talk-together" class="slide level2 tt wide-slide" data-background-image="img/app-thermal-wide.jpg" data-background-size="contain" data-background-color="#0f172a">
 <h2>Talk together</h2>
 <style>
@@ -374,6 +350,18 @@ Simen Eide
                 box-shadow:0 10px 30px rgba(0,0,0,0.45); font-family:"Bevan", Georgia, serif; font-size:46px; line-height:1.1; color:#fff; z-index:5; }
   .reveal .wide-slide > h2 { display:none; }
   .tt-stack { position:absolute; left:50%; top:25%; transform:translateX(-50%); width:760px; display:flex; flex-direction:column; gap:14px; z-index:4; }
+  .tt-ptt { position:absolute; right:250px; bottom:24px; width:150px; height:150px; border-radius:26px; border:3px solid rgba(255,255,255,0.35);
+            background:rgba(30,41,59,0.72); backdrop-filter:blur(6px); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+            color:#fff; box-shadow:0 10px 30px rgba(0,0,0,0.45); transition:background .25s, border-color .25s; z-index:5; }
+  .tt-ptt svg { width:58px; height:58px; }
+  .tt-ptt .tt-ptt-label { font-size:20px; font-weight:600; max-width:136px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .tt-ptt .ring { position:absolute; inset:-3px; border-radius:26px; pointer-events:none; opacity:0; }
+  .tt-ptt.talking { background:#dc2626; border-color:#fca5a5; }
+  .tt-ptt.talking .ring { opacity:1; border:4px solid #fca5a5; animation:ttping 1.1s cubic-bezier(0,0,.2,1) infinite; }
+  .tt-ptt.incoming { background:rgba(22,163,74,0.78); border-color:rgba(74,222,128,0.8); }
+  .tt-ptt.incoming .ring { opacity:1; border:3px solid #4ade80; animation:ttpulse 1.2s ease-in-out infinite; }
+  @keyframes ttping { 0%{transform:scale(1); opacity:.9} 100%{transform:scale(1.35); opacity:0} }
+  @keyframes ttpulse { 0%,100%{opacity:.25} 50%{opacity:.9} }
   .tt-toast { background:rgba(14,116,144,0.95); color:#fff; border-radius:18px; padding:18px 26px 16px; box-shadow:0 14px 40px rgba(0,0,0,0.45);
               opacity:0; transform:translateY(-14px); transition:opacity .35s ease, transform .35s ease; }
   .tt-toast.on { opacity:1; transform:none; }
@@ -388,12 +376,16 @@ Simen Eide
 </style>
 <div class="wide-title">Talk together</div>
 <div class="tt-stack"></div>
+<div class="tt-ptt"><span class="ring"></span>
+  <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M5 10a7 7 0 0014 0"></path><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+  <span class="tt-ptt-label">Local</span>
+</div>
 <script>
 (function () {
   var lines = [
-    ["Thermal on the spine east of takeoff, 3 up, base around 3,800.", "Louis · 11:42"],
+    ["I'm topping out at 3,800, exactly like my forecast said!", "Louis · 11:42"],
     ["Coming over, I'm at 2,600 just above takeoff.", "RHaider · 11:43"],
-    ["Landed in Chaugan, all good.", "Jono · 12:51"]
+    ["Bombed out near Mandi, horrible landing.", "Simen · 14:47", "me"]
   ];
   var timers = [];
   function clear() { timers.forEach(clearTimeout); timers = []; }
@@ -401,12 +393,17 @@ Simen Eide
   function play(slide) {
     clear();
     var stack = slide.querySelector(".tt-stack");
+    var ptt = slide.querySelector(".tt-ptt"), label = ptt.querySelector(".tt-ptt-label");
+    function setPtt(state, text) { ptt.classList.remove("talking", "incoming"); if (state) { ptt.classList.add(state); } label.textContent = text; }
+    setPtt(null, "Local");
     stack.innerHTML = "";
     var t = 600;
     lines.forEach(function (l) {
       var el = document.createElement("div");
       el.className = "tt-toast";
       el.innerHTML = '<div class="tt-msg"></div><div class="tt-sub"><span class="tt-wave"><i></i><i></i><i></i><i></i><i></i></span><span>' + l[1] + '</span></div>';
+      var mine = l[2] === "me";
+      at(t - 500, function () { setPtt(mine ? "talking" : "incoming", mine ? "Talking" : l[1].split(" · ")[0]); });
       at(t, function () {
         stack.querySelectorAll(".tt-toast").forEach(function (o) { o.classList.add("old"); });
         stack.appendChild(el);
@@ -418,7 +415,7 @@ Simen Eide
         at(t + i * 230, function () { el.querySelector(".tt-msg").textContent = words.slice(0, i + 1).join(" "); });
       });
       t += words.length * 230 + 300;
-      at(t, function () { el.classList.add("done"); });
+      at(t, function () { el.classList.add("done"); setPtt(null, "Local"); });
       t += 1600;
     });
   }
