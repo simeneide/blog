@@ -80,9 +80,9 @@ the phone and on Local before they go to dinner. Do it with me as we go.
     background: #38bdf8;
   }
   .wip-dim { position:absolute; inset:-60px; background:rgba(15,23,42,0.72); z-index:3; }
-  .wip-grid { position:absolute; left:0; right:0; top:60px; bottom:120px; display:grid; grid-template-columns:repeat(3, 1fr); align-content:center; gap:18px 0; z-index:4; }
+  .wip-grid { position:absolute; left:0; right:0; top:100px; bottom:120px; display:grid; grid-template-columns:repeat(3, 1fr); align-content:center; gap:18px 0; z-index:4; }
   .wip-grid > div { display:flex; flex-direction:column; gap:14px; }
-  .wip-tag { position:absolute; left:0; right:0; top:40px; text-align:center; font-family:"Questrial", system-ui, sans-serif; font-size:24px; letter-spacing:0.14em; text-transform:uppercase; color:#38bdf8; z-index:4; }
+  .wip-tag { position:absolute; left:0; right:0; top:22px; text-align:center; font-family:"Bevan", Georgia, serif; font-size:54px; line-height:1.1; color:#38bdf8; text-shadow:0 3px 16px rgba(0,0,0,0.6); z-index:4; }
 </style>
 <div class="fragment fade-in">
   <div class="wip-dim"></div>
@@ -190,6 +190,24 @@ come back any time. Do "Get ready to fly" now if you skipped it.
   .reveal .wide-slide > h2 { display:none; }
 </style>
 <div class="wide-title">In the air</div>
+<script>
+(function () {
+  // reveal.js races its own background-video start on slide change, so start
+  // it here too, retrying until the element is present and playing.
+  function playBg(tries) {
+    var v = document.querySelector(".slide-background.present video");
+    if (v) { v.muted = true; if (v.paused) { v.currentTime = 0; v.play().catch(function () {}); } }
+    if (tries > 0 && (!v || v.paused)) { setTimeout(function () { playBg(tries - 1); }, 150); }
+  }
+  function hook() {
+    if (!window.Reveal || !Reveal.isReady || !Reveal.isReady()) { return setTimeout(hook, 200); }
+    function check() { var s = Reveal.getCurrentSlide(); if (s && s.id === "in-the-air") { setTimeout(function () { playBg(20); }, 50); } }
+    Reveal.on("slidechanged", check);
+    check();
+  }
+  hook();
+})();
+</script>
 ```
 
 ::: {.notes}
