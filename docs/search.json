@@ -1713,5 +1713,89 @@
     "title": "pgpilot",
     "section": "What’s coming",
     "text": "What’s coming\n\nRegional forecast\nThe airmass model: wind and thermals in one go\n\nWeather forecast\nKK7 thermal maps\nLive wind\nOther pilots\nYou\n\nDrive detection, in test\n\n\n\nRegional forecast: full MEPS grid per region, not just per takeoff\nAirmass model: one model learns both, from every source we already have\nDrive: asks “Are you driving?”, friends see a car\nNo dates\nThen open the floor"
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#what-is-pgpilot",
+    "href": "pgpilot/tutorial-kort.html#what-is-pgpilot",
+    "title": "pgpilot",
+    "section": "What is pgpilot?",
+    "text": "What is pgpilot?\n\nAll in one app\n\n  \n    Flight instrument\n    Live wind\n    Airspace\n  \n  \n    \n  \n  \n    Weather\n    Task\n    Offline\n  \n  \n    Group chat\n    VHF radio\n    Tracking\n  \n  \n    Flight log\n    Replay\n    Terrain\n  \n\n\nUnder a minute. “The flight instrument and Zello in one app, with the weather for takeoff on top.” Point at the groups, don’t read the pills."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#get-the-app",
+    "href": "pgpilot/tutorial-kort.html#get-the-app",
+    "title": "pgpilot",
+    "section": "Get the app",
+    "text": "Get the app\n\n  \n    \n  \n  \n    \n      \n      Android\n      Google Play\n    \n    \n      \n      iPhone\n      App Store\n    \n    \n      \n      Or just\n      pgpilot.app\n    \n  \n\n\nLeave this up while people do it. It’s a task, not an illustration.\nIf the mobile data is slow, the rescue is pgpilot.app in the browser: a viewer name and nothing more, done in half a minute. Everything tonight works there except Bluetooth."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#first-time-you-open-it",
+    "href": "pgpilot/tutorial-kort.html#first-time-you-open-it",
+    "title": "pgpilot",
+    "section": "First time you open it",
+    "text": "First time you open it\n\n  \n  \n  \n\n\nFour permissions: location, microphone (only while the button is held), nearby devices, notifications (or tracking dies when the screen sleeps). Data isn’t sold, say it.\nThen “See it in action”, not Skip: it replays a real flight, no GPS needed.\nLast picture: ready to fly. Green “Ready” in the top bar, and in Active mode the flight starts by itself at takeoff."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#join-the-group",
+    "href": "pgpilot/tutorial-kort.html#join-the-group",
+    "title": "pgpilot",
+    "section": "Join the group",
+    "text": "Join the group\n\n  \n  \n    pgpilot.app/join/bir\n    Scan, type your name, done.\n  \n\n\nCREATE THE GROUP “bir” WHEN YOU RIG, NOT BEFORE. The reaper archives groups silent for four hours, and then the QR code leads nowhere.\nKeep the app open, we use the group for the rest of the talk."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#talk-together",
+    "href": "pgpilot/tutorial-kort.html#talk-together",
+    "title": "pgpilot",
+    "section": "Talk together",
+    "text": "Talk together\n\n  \n  \n\n\nEVERYONE LISTENS, ONE TALKS. Ask a volunteer to press and talk, and it comes out of every phone around us at once, no range limit. This is the moment they get what the app is.\nA button on the riser does the same with gloves on. Show it, don’t explain it."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#the-airgram",
+    "href": "pgpilot/tutorial-kort.html#the-airgram",
+    "title": "pgpilot",
+    "section": "The airgram",
+    "text": "The airgram\n\n\nBefore takeoff: tap the takeoff marker. Yellow columns are thermals, darker is stronger, the top is how high you get. Wind up through the heights, cloud and rain on top.\nThe screenshot is from Norway. Tap Billing on your own phone and it’s the same."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#thermals-and-vario",
+    "href": "pgpilot/tutorial-kort.html#thermals-and-vario",
+    "title": "pgpilot",
+    "section": "Thermals and vario",
+    "text": "Thermals and vario\n\n\nThe vario beeps, the app draws the bubble, the wind arrow tightens as you circle. It learns the wind and the lift from your circles.\nThis is the app replaying a real flight, same code as live. And none of these numbers come from the internet: GPS and barometer in the phone."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#after-the-flight",
+    "href": "pgpilot/tutorial-kort.html#after-the-flight",
+    "title": "pgpilot",
+    "section": "After the flight",
+    "text": "After the flight\n\n\nTrack, photos, segments, numbers. IGC out, and under Menu, Connected services, automatic upload to XContest and Flightlog. Nobody uploads by hand any more.\nThat’s the reason they open the app again tomorrow."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#the-bir-pack-three-radios",
+    "href": "pgpilot/tutorial-kort.html#the-bir-pack-three-radios",
+    "title": "pgpilot",
+    "section": "The Bir pack: three radios",
+    "text": "The Bir pack: three radios\n\n  \n    VHF\n    Voice, when nothing else works. A KV4P radio straight on the phone.\n  \n  \n    LoRa\n    Position and short text with no infrastructure. FANET and\n    Meshtastic.\n  \n  \n    Satellite\n    When there's no coverage at all. InReach.\n  \n\n\nThe part that matters here. Behind the first ridge the internet is gone, the landings have no road out, and nobody is on call. That’s why this valley runs its own radios, and why the app talks to all three.\nVHF: the KV4P radio pairs over Bluetooth and transmits on VHF and the pgpilot group at once. It can relay between the two. Get the 2.0 version."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
+    "href": "pgpilot/tutorial-kort.html#meshtastic-bircom-and-fanet",
+    "title": "pgpilot",
+    "section": "Meshtastic, Bircom and FANET",
+    "text": "Meshtastic, Bircom and FANET\n\n  \n  \n    \n      Bircom channels as their own rows in Comms\n      Bircom mesh nodes on the map\n      FANET pilots on the map, landed and distress status\n      Works with no cell signal\n    \n  \n\n\nMost of you already fly with a Meshtastic radio for Bircom. Pair it in pgpilot and the Bircom channels show up in Comms, chat works with no cell signal, and the nodes go on the map (“Show Bircom mesh nodes”).\nFANET trackers show up too, and a pilot who landed or pressed distress shows as exactly that.\nClose the Meshtastic app first: the radio takes one Bluetooth client at a time."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#inreach",
+    "href": "pgpilot/tutorial-kort.html#inreach",
+    "title": "pgpilot",
+    "section": "InReach",
+    "text": "InReach\n\n  \n    Garmin InReach MapShare\n    Under Connected services you enter your MapShare name, the part after\n    share.garmin.com/, once.\n  \n  \n    Inbound, not outbound\n    The app pulls your satellite position into pgpilot. It is not a channel\n    we transmit to, and not messages or SOS.\n  \n  \n    For the others\n    Your position lands on everyone else's map even where there's no cell\n    coverage at all, and someone at home can follow the dot.\n  \n\n\nSay it right: inbound only. Enter the MapShare name once, and the others see you where nothing else gets through. Not SOS."
+  },
+  {
+    "objectID": "pgpilot/tutorial-kort.html#which-lora-board",
+    "href": "pgpilot/tutorial-kort.html#which-lora-board",
+    "title": "pgpilot",
+    "section": "Which LoRa board",
+    "text": "Which LoRa board\n\n  \n    LILYGO T-Echo\n    E-paper screen, big battery, external antenna. The Bir standard.\n  \n  \n    SenseCAP T1000-E\n    Credit-card size, waterproof, GPS and battery built in. Disappears in a\n    harness pocket.\n  \n\n\nAnything with an nRF52840 and an SX1262 or LR1110. Avoid the older SX127x.\nPICK 868 MHZ in India. The listings default to 915 or 433."
   }
 ]
