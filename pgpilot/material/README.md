@@ -25,3 +25,11 @@ The banner QR codes link directly to the pgpilot listings on
 and [Google Play](https://play.google.com/store/apps/details?id=com.pgfly.app).
 The white sticker artwork has a transparent background; printing it on clear
 stock requires white ink.
+
+Run `build_signs.py` the same way (only `cairosvg` needed) to regenerate the
+three A4 direction signs. On macOS, cairo comes from Homebrew and must be on the
+loader path:
+
+```sh
+uv run --no-project --with cairosvg sh -c 'DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python pgpilot/material/build_signs.py'
+```
