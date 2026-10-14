@@ -195,21 +195,27 @@ except Bluetooth.
 
 ```{=html}
 <div class="two-up" style="justify-content:center">
-  <img src="img/app-preflight.jpg" alt="Preflight check with the permissions granted">
-  <img class="fragment" src="img/app-allset.png" alt="You're all set, offering a tour of a real flight">
-  <img class="fragment" src="img/app-ready.jpg" alt="The flight view on the ground, ready to fly">
+  <img src="img/onb-1.png" alt="Get ready to fly: What do you fly?">
+  <img class="fragment" src="img/onb-2.png" alt="Location permission, asked with one line of why">
+  <img class="fragment" src="img/onb-tutorials.png" alt="Tutorials in the menu, do them in any order">
 </div>
 ```
 
 ::: {.notes}
-Four permissions: location, microphone (only while the button is held),
-nearby devices, notifications (or tracking dies when the screen sleeps). Data
-isn't sold, say it.
+The first time you open pgpilot, a tutorial takes you through it. Four quick
+questions: what you fly, what kind of flying, where your phone sits, and
+whether you have your own vario. The answers pick your instrument layout and
+whether pgpilot beeps as your vario.
 
-Then "See it in action", not Skip: it replays a real flight, no GPS needed.
+Click. Then only the permissions your phone needs to record a flight, one at a
+time, each with a reason: location, and on Android also always-on location,
+notifications and battery. The microphone is asked the first time you talk.
 
-Last picture: ready to fly. Green "Ready" in the top bar, and in Active mode
-the flight starts by itself at takeoff.
+Then a short tour of your screen: Plan and Active, the instruments, comms and
+push to talk, map settings.
+
+Click. Everything is in Menu, Tutorials, under Help. Do them in any order,
+come back any time. Do "Get ready to fly" now if you skipped it.
 :::
 
 ## In the air: thermals and vario
