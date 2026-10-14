@@ -81,11 +81,11 @@ the phone and is in the group before they go to dinner. Do it with me as we go.
   .feature-image {
     grid-column: 2;
     grid-row: 1 / span 2;
-    width: 250px;
+    width: 289px;
     height: 530px;
     margin: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 14px;
     box-shadow: none;
     overflow: hidden;
     background: transparent;
@@ -131,7 +131,7 @@ the phone and is in the group before they go to dinner. Do it with me as we go.
     <div class="feature-pill">Airspace</div>
   </div>
   <div class="feature-image">
-    <img src="img/app-comms.png" alt="The pgpilot communication view running on a phone">
+    <img src="img/app-inflight-1.jpg" alt="pgpilot in flight over Bir, with other pilots on the map">
   </div>
   <div class="feature-stack feature-stack--tr">
     <div class="feature-pill">Weather</div>
@@ -161,7 +161,7 @@ for takeoff on top." Point at the groups, don't read the pills.
 ```{=html}
 <div class="install">
   <div class="install-shot">
-    <img src="img/app-instrument.jpg" alt="pgpilot in flight">
+    <img src="img/app-inflight-2.jpg" alt="Circling in a thermal with thermal assist on">
   </div>
   <div class="install-links">
     <div class="store">
@@ -221,17 +221,22 @@ come back any time. Do "Get ready to fly" now if you skipped it.
 ## In the air: thermals and vario
 
 ```{=html}
-<video class="clip" style="height:555px" src="voss-video/klipp-termikk.mp4"
-       poster="img/poster-termikk.jpg"
+<video class="clip" style="height:555px" src="voss-video/bir-thermal.mp4"
+       poster="voss-video/bir-thermal.jpg"
        data-autoplay loop muted playsinline></video>
 ```
 
 ::: {.notes}
-The vario beeps, the app draws the bubble, the wind arrow tightens as you
-circle. It learns the wind and the lift from your circles.
+This is my flight today from Billing, replayed in the app, same code as live.
+Gliding in, and you see the others around you with their altitude: Louis,
+RHaider, Markus.
 
-This is the app replaying a real flight, same code as live. And none of these
-numbers come from the internet: GPS and barometer in the phone.
+I hit the thermal and thermal assist switches on by itself: the bubble shows
+where the lift is, and the map zooms in. Then I circle, and RHaider is in the
+same climb with me.
+
+None of these numbers come from the internet: GPS and the barometer in the
+phone. 100 km triangle today, 4 h 48 min.
 :::
 
 ## Join the group
@@ -307,13 +312,13 @@ automatic upload to XContest and Flightlog. Nobody uploads by hand any more.
 That's the reason they open the app again tomorrow.
 :::
 
-## Lord Hanuman's herb hunt
+## {background-color="#0f172a"}
 
 ```{=html}
-<div class="two-up">
-  <img src="img/herb-concept.jpg" alt="The herb hunt over Bir Billing">
-  <img class="fragment" src="img/herb-leaderboard.png" alt="The current herb hunt leaderboard">
+<div style="position:absolute; inset:-40px; display:flex; align-items:center; justify-content:center">
+  <img src="img/herb-poster-live.jpg" style="height:760px; width:auto; display:block; box-shadow:0 10px 40px rgba(0,0,0,0.5)" alt="Help Lord Hanuman find the herb">
 </div>
+<img class="fragment fade-up" src="img/herb-leaderboard.png" style="position:absolute; right:60px; top:20px; height:690px; width:auto; border-radius:22px; border:2px solid #e2e2e2; box-shadow:0 14px 50px rgba(0,0,0,0.6)" alt="The herb hunt leaderboard right now">
 ```
 
 ::: {.notes}
