@@ -47,7 +47,7 @@ Ten seconds. The goal for the next quarter of an hour: everyone has the app on
 the phone and is in the group before they go to dinner. Do it with me as we go.
 :::
 
-## What is pgpilot? {.wide-slide background-image="img/app-inflight-wide.jpg" background-size="cover" background-color="#0f172a"}
+## What is pgpilot? {.wide-slide background-image="img/app-inflight-wide.jpg" background-size="contain" background-color="#0f172a"}
 
 ```{=html}
 <style>
@@ -181,7 +181,7 @@ Click. Everything is in Menu, Tutorials, under Help. Do them in any order,
 come back any time. Do "Get ready to fly" now if you skipped it.
 :::
 
-## In the air {.wide-slide background-video="voss-video/bir-air.mp4" background-video-loop="true" background-video-muted="true" background-size="cover" background-color="#0f172a"}
+## In the air {.wide-slide background-video="voss-video/bir-air.mp4" background-video-loop="true" background-video-muted="true" background-size="contain" background-color="#0f172a"}
 
 ```{=html}
 <style>
@@ -224,7 +224,7 @@ silent for four hours, and then the QR code leads nowhere.
 Keep the app open, we use the group for the rest of the talk.
 :::
 
-## Talk together {.tt .wide-slide background-image="img/app-thermal-wide.jpg" background-size="cover" background-color="#0f172a"}
+## Talk together {.tt .wide-slide background-image="img/app-thermal-wide.jpg" background-size="contain" background-color="#0f172a"}
 
 ```{=html}
 <style>
