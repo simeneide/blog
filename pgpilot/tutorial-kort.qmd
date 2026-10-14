@@ -467,28 +467,18 @@ listings default to 915 or 433.
 ## InReach
 
 ```{=html}
-<div class="two-up" style="align-items:flex-start; gap:44px; margin-top:70px">
-  <div class="two-up-note">
-    <p><strong>Garmin InReach MapShare</strong></p>
-    <p>Under Connected services you enter your MapShare name, the part after
-    share.garmin.com/, once.</p>
-  </div>
-  <div class="two-up-note">
-    <p><strong>Inbound, not outbound</strong></p>
-    <p>The app pulls your satellite position into pgpilot. It is not a channel
-    we transmit to, and not messages or SOS.</p>
-  </div>
-  <div class="two-up-note">
-    <p><strong>For the others</strong></p>
-    <p>Your position lands on everyone else's map even where there's no cell
-    coverage at all, and someone at home can follow the dot.</p>
-  </div>
+<div class="two-up-note" style="margin:120px auto 0; max-width:900px; font-size:1.15em">
+  <ul>
+    <li>Your Garmin InReach position straight into pgpilot</li>
+    <li>On everyone's map, even with no coverage at all</li>
+    <li>Add your MapShare name once, under Connected services</li>
+  </ul>
 </div>
 ```
 
 ::: {.notes}
-Say it right: inbound only. Enter the MapShare name once, and the others see
-you where nothing else gets through. Not SOS.
+Inbound only: the app pulls your satellite position in, so the others see you
+where nothing else gets through. Not messages, not SOS.
 :::
 
 ## {background-image="img/volbiv-morning.jpg" background-size="cover" background-position="center 40%"}
