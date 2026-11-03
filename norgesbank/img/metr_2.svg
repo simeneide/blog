@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="403.2pt" viewBox="0 0 864 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T15:53:52.986700</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403.2 
+L 864 403.2 
+L 864 0 
+L 0 0 
+z
+" style="fill: #f3ead7"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 72.3125 354.02375 
+L 842.4 354.02375 
+L 842.4 21.6 
+L 72.3125 21.6 
+z
+" style="fill: #f3ead7"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mc538669db5" d="M 0 0 
+L 0 3.5 
+" style="stroke: #2b2118; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mc538669db5" x="72.3125" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="72.3125" y="376.120625" transform="rotate(-0 72.3125 376.120625)">2019</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mc538669db5" x="168.540483" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="168.540483" y="376.120625" transform="rotate(-0 168.540483 376.120625)">2020</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mc538669db5" x="265.032104" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="265.032104" y="376.120625" transform="rotate(-0 265.032104 376.120625)">2021</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mc538669db5" x="361.260086" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="361.260086" y="376.120625" transform="rotate(-0 361.260086 376.120625)">2022</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mc538669db5" x="457.488069" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="457.488069" y="376.120625" transform="rotate(-0 457.488069 376.120625)">2023</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mc538669db5" x="553.716052" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="553.716052" y="376.120625" transform="rotate(-0 553.716052 376.120625)">2024</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mc538669db5" x="650.207673" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="650.207673" y="376.120625" transform="rotate(-0 650.207673 376.120625)">2025</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mc538669db5" x="746.435656" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="746.435656" y="376.120625" transform="rotate(-0 746.435656 376.120625)">2026</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9">
+      <path d="M 72.3125 354.02375 
+L 842.4 354.02375 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke: #2b2118; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <defs>
+       <path id="m12647ff936" d="M 0 0 
+L -3.5 0 
+" style="stroke: #2b2118; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m12647ff936" x="72.3125" y="354.02375" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="65.3125" y="361.572187" transform="rotate(-0 65.3125 361.572187)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_11">
+      <path d="M 72.3125 282.148345 
+L 842.4 282.148345 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke: #2b2118; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m12647ff936" x="72.3125" y="282.148345" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="65.3125" y="289.696782" transform="rotate(-0 65.3125 289.696782)">4</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13">
+      <path d="M 72.3125 210.272939 
+L 842.4 210.272939 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke: #2b2118; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m12647ff936" x="72.3125" y="210.272939" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="65.3125" y="217.821377" transform="rotate(-0 65.3125 217.821377)">8</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_15">
+      <path d="M 72.3125 138.397534 
+L 842.4 138.397534 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke: #2b2118; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m12647ff936" x="72.3125" y="138.397534" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="65.3125" y="145.945971" transform="rotate(-0 65.3125 145.945971)">12</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_17">
+      <path d="M 72.3125 66.522128 
+L 842.4 66.522128 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke: #2b2118; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m12647ff936" x="72.3125" y="66.522128" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="65.3125" y="74.070566" transform="rotate(-0 65.3125 74.070566)">16</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="34.532188" y="187.811875" transform="rotate(-90 34.532188 187.811875)">Timer (for et menneske)</text>
+    </g>
+   </g>
+   <g id="line2d_19">
+    <path d="M 449.051643 354.02375 
+L 449.051643 21.6 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke-dasharray: 12,8; stroke-dashoffset: 0; stroke: #b8860b; stroke-width: 2"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 83.912586 354.007645 
+L 207.558952 353.980608 
+L 380.505683 353.844287 
+L 476.470027 352.829592 
+L 538.952307 352.812362 
+L 588.779947 351.930021 
+L 598.798203 350.611053 
+L 620.943821 347.936327 
+L 631.489353 347.877543 
+L 643.089439 342.394433 
+L 664.444142 335.938419 
+L 677.889695 318.166118 
+L 707.680824 293.22537 
+" clip-path="url(#p0a3c113330)" style="fill: none; stroke: #2b2118; stroke-opacity: 0.35; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 72.3125 354.02375 
+L 72.3125 21.6 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 72.3125 354.02375 
+L 842.4 354.02375 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; fill: #b8860b" transform="translate(457.051643 89.093742)">ChatGPT</text>
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; fill: #b8860b" transform="translate(457.051643 109.934929)">30. nov. 2022</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mc47e21a5cf" d="M 0 4.743416 
+C 1.257969 4.743416 2.464584 4.24362 3.354102 3.354102 
+C 4.24362 2.464584 4.743416 1.257969 4.743416 0 
+C 4.743416 -1.257969 4.24362 -2.464584 3.354102 -3.354102 
+C 2.464584 -4.24362 1.257969 -4.743416 0 -4.743416 
+C -1.257969 -4.743416 -2.464584 -4.24362 -3.354102 -3.354102 
+C -4.24362 -2.464584 -4.743416 -1.257969 -4.743416 0 
+C -4.743416 1.257969 -4.24362 2.464584 -3.354102 3.354102 
+C -2.464584 4.24362 -1.257969 4.743416 0 4.743416 
+z
+" style="stroke: #8b1e1e; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="83.912586" y="354.007645" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 17px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="73.912586" y="346.007645" transform="rotate(-0 73.912586 346.007645)">GPT-2</text>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="207.558952" y="353.980608" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 17px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="197.558952" y="345.980608" transform="rotate(-0 197.558952 345.980608)">GPT-3</text>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="380.505683" y="353.844287" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 17px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="370.505683" y="345.844287" transform="rotate(-0 370.505683 345.844287)">GPT-3.5</text>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="476.470027" y="352.829592" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 17px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="466.470027" y="344.829592" transform="rotate(-0 466.470027 344.829592)">GPT-4</text>
+   </g>
+   <g id="PathCollection_5">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="538.952307" y="352.812362" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_6">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="588.779947" y="351.930021" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_7">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="598.798203" y="350.611053" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_8">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="620.943821" y="347.936327" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_9">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="631.489353" y="347.877543" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_10">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="643.089439" y="342.394433" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_11">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="664.444142" y="335.938419" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="PathCollection_12">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="677.889695" y="318.166118" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 17px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="667.889695" y="310.166118" transform="rotate(-0 667.889695 310.166118)">o3</text>
+   </g>
+   <g id="PathCollection_13">
+    <g clip-path="url(#p0a3c113330)">
+     <use xlink:href="#mc47e21a5cf" x="707.680824" y="293.22537" style="fill: #8b1e1e; stroke: #8b1e1e; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 17px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="697.680824" y="285.22537" transform="rotate(-0 697.680824 285.22537)">GPT-5</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0a3c113330">
+   <rect x="72.3125" y="21.6" width="770.0875" height="332.42375"/>
+  </clipPath>
+ </defs>
+</svg>

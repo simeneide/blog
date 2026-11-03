@@ -1831,7 +1831,7 @@
     "href": "pgpilot/tutorial-kort.html#airgram-for-billing",
     "title": "pgpilot",
     "section": "Airgram for Billing",
-    "text": "Airgram for Billing\n\n  \n  \n  \n\n\nTap the Billing takeoff on the map and you get the takeoff card. Wind sectors from ParaglidingEarth: south-west and west are the good ones here. And XC potential for the week: it said about 103 km today, and five of us flew between 100 and 131 km. Estimate for an EN-B wing, guidance only.\nClick. Open the airgram. Yellow columns are thermals, darker is stronger, the top is how high you get. Wind arrows up through the heights, cloud and rain on top. Here the model is GFS, the only one that covers India.\nToday: a classic blue day. Light upslope wind from the south-west, thermals from about half past nine to half past four, up to around 3,800 m.\nClick. Tomorrow: high cloud in the morning, cumulus from about half past one with bases around 3,500 m, more wind up high and a small chance of a shower in the afternoon."
+    "text": "Airgram for Billing\n\n  \n  \n  \n\n\nTap the Billing takeoff on the map and you get the takeoff card. Wind sectors from ParaglidingEarth: south-west and west are the good ones here. And XC potential for the week: it said about 103 km today, and five of us flew between 100 and 131 km. Estimate for an EN-B wing, guidance only.\nClick. Open the airgram. Yellow columns are thermals, darker is stronger, the top is how high you get. Wind arrows up through the heights, cloud and rain on top. Here the model is GFS, the only one that covers India.\nToday: a classic blue day. Light upslope wind from the south-west, thermals from about half past nine to half past four, up to around 3,800 m.\nAnd how did it do? The best anyone got today was 3,466 m, Andreas, and most of us topped out around 3,000 to 3,300. GFS is coarse in these mountains, so read the top as a ceiling, not a promise. The distance was spot on, though.\nClick. Tomorrow: high cloud in the morning, cumulus from about half past one with bases around 3,500 m, more wind up high and a small chance of a shower in the afternoon."
   },
   {
     "objectID": "pgpilot/tutorial-kort.html#section",
@@ -1859,6 +1859,384 @@
     "href": "pgpilot/tutorial-kort.html#get-started",
     "title": "pgpilot",
     "section": "Get started",
-    "text": "Get started\n\n  \n  \n  \n    \n    Bir Billing\n  \n\n\nTen seconds. The goal for the next quarter of an hour: everyone has the app on the phone and on Local before they go to dinner. Do it with me as we go."
+    "text": "Get started\n\n  \n  \n  \n    \n    \n    Bir Billing\n  \n\n\nTen seconds. The goal for the next quarter of an hour: everyone has the app on the phone and on Local before they go to dinner. Do it with me as we go."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#pascal",
+    "href": "norgesbank/presentasjon.html#pascal",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Chevalier de Méré\n\n\n\n\n\n\n\n\nBlaise Pascal\n\n\n\n\n\n\nMonsieur Pascal,jeg har et problem med et spill.\n\n\n\n\n\n64 gullmynter\n\n\n\n\n\n\n \n\n\n\n\n\n\n Kron: de Méré får poeng ·  Mynt: Pascal får poeng · Først til 3 vinner potten\n\n\n\n\n\n\n\n\n\nde Méré\n\n\n\n\n\n\n\n\nPascal\n\n\n\n\nA\n\nDel liktSpillet ble aldri ferdig.\n\n\n\n\n\n\nB\n\nDe Méré tar altHan leder.\n\n\n\n\n\n\nC\n\nDel etter poengHan har vunnet 2 av 3 runder.\n\n\n\n\n\n\nD\n\nDel ¾ og ¼\n\n\n\n\n\n\n\n\n\n\nSTOPP\n\n\nBilder: A. Bosse, The Met, Musée Carnavalet."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#tree",
+    "href": "norgesbank/presentasjon.html#tree",
+    "title": "eide.ai",
+    "section": "",
+    "text": "2 – 1\n\n\n\n\n\n\n ½\n\n\n ½\n\n\n ½\n\n\n ½\n\n\n\n3 – 1\n\nde Méré vinner½\n\n\n\n2 – 2\n\nlikt\n\n\n\n3 – 2\n\nde Méré vinner¼\n\n\n\n2 – 3\n\nPascal vinner¼\n\n\n\n½ + ¼ = ¾¾ × 64 = 48\n\n\n\n\n\n¼¼ × 64 = 16\n\n\n\n\n\n\nIkke hva som har skjedd, men hva som kan skje.\n\nP(vinne | stillingen nå) × potten\n\n\n\n=\n\n\nForventningsverdi"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#spread",
+    "href": "norgesbank/presentasjon.html#spread",
+    "title": "eide.ai",
+    "section": "",
+    "text": "På et par tiår gikk verden fra å ikke forstå sannsynligheter til at det var overalt\n\n\n\n\n1654 Spill\nPascal og Fermat: hvordan dele potten\n\n\n\n1657 Vitenskap\nHuygens: første lærebok. Hva er et spill verdt?\n\n\n\n1662 Folkehelse\nGraunt telte Londons dødsfall: av 100 fødte lever 16 ved 36 år\n\n\n\n1662 Hverdagen\nPort-Royal: frykten for lyn bør stå i forhold til sjansen\n\n\n\n1665 Jus\nLeibniz (19 år): rettigheter som tall, 0, ½ og 1\n\n\n\n1670 Religion\nPascals veddemål: tro, fordi gevinsten er uendelig\n\n\n\n1671 Statsobligasjoner\nde Witt: hva er en livrente verdt?\n\n\n\nBilder: C. Netscher, Wellcome/Wikimedia, Port-Royal (1662), C. B. Francke, Bibliothèque municipale de Lyon (Pensées), J. de Baen.\n\n\n\nFolk hadde spilt med terninger i tusenvis av år uten å regne på sjansene. Ingen tenkte i sannsynligheter. På et par tiår gikk verden fra det til at sannsynlighet var overalt. Det er en konseptuell revolusjon, ikke bare en ny formel (Ian Hacking, The Emergence of Probability, 1975):\n\n1654 Pascal og Fermat løser problemet med potten (det vi nettopp så).\n1657 Huygens skriver den første læreboka: verdien av et spill, forventningsverdien.\n1662 John Graunt teller ukentlige dødslister i London og lager den første dødelighetstabellen. Av 100 fødte lever 64 ved 6 år, 16 ved 36, 1 ved 76.\n1662 Port-Royal-logikken: folk er livredde for lyn, men frykten bør stå i forhold til hvor sannsynlig det er, ikke bare hvor ille det er.\n1665 Leibniz, 19 år, doktoravhandling i jus: en betinget rettighet er et tall mellom 0 og 1.\n1670 Pascals veddemål: tro på Gud, fordi forventet gevinst er uendelig. Beslutningsteori.\n1671 de Witt priser livrenter for staten.\n\nSpill, vitenskap, folkehelse, hverdag, jus, religion og statsfinans. Etter dette tenker folk i sannsynligheter."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#dewitt",
+    "href": "norgesbank/presentasjon.html#dewitt",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Johan de Witt\n\n\nstatsminister og matematiker\n\n\n\n\nUtstedte obligasjon: få én gullmynt i året så lenge du lever.\n\n\nPris: 14 gullmynter\n\n\nFair?\n\n\n\n\n 3204060800 %50 %100 % alder P(i live | kjøpt som 3-åring)  \n\n\nde Witt 1671: antakelser\n\n\nHalley 1693: data fra Breslau\n\n\n\n\nModell: 16 gullmynter\n\n\nHalley (1693): Estimert på ekte data"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#samme",
+    "href": "norgesbank/presentasjon.html#samme",
+    "title": "eide.ai",
+    "section": "",
+    "text": "1654 P(vinne | stillingen)\n\n\n 2017 P(klikk | tidligere adferd)\n\n\nNorges Bank holder renten … 2023 P(neste ord | ordene så langt)\n\n\nSannsynlighet, tilpasset data."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#anvendelse",
+    "href": "norgesbank/presentasjon.html#anvendelse",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Bare for å vise at det skjer mye, ikke gå i detalj.\nJuli 2026: OpenAIs egne cyber-agenter rømte fra testmiljøet og hacket Hugging Face. OpenAI kalte det «a warning shot» (VG 27. aug., CNBC 22. juli). Hugging Face etterforsket med en åpen modell (GLM-5.2) på egne maskiner, fordi de kommersielle modellene nektet å hjelpe.\nApril 2026: Anthropics Claude Mythos fant en 27 år gammel feil i OpenBSD og tusenvis av sårbarheter på noen uker (SC Media 9. april). Per august: rundt 2 300 sårbarheter i 392 prosjekter.\nFebruar 2026: 16 Claude-agenter skrev en C-kompilator på 100 000 linjer som bygger Linux (Ars Technica 7. feb.).\nMai 2026: OpenAI løste et Erdős-problem fra 1946, kontrollert av eksterne matematikere (ABC Nyheter 6. juni, TechCrunch 20. mai).\nSeptember 2026: OpenAI hevder å ha vist at Navier-Stokes-likningene kan «blåse opp» (Quanta 8. sep.). Si «hevder»: beviset er ikke uavhengig verifisert, og Clay-instituttet lister problemet fortsatt som åpent."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#plan",
+    "href": "norgesbank/presentasjon.html#plan",
+    "title": "eide.ai",
+    "section": "Plan",
+    "text": "Plan\n\nOppgaven forsvinner, formålet blir (Hinton og radiologene)\nJevons: billigere analyse gir mer analyse\nTilbake til de Witt: ti år eller hundre?"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#plan-1",
+    "href": "norgesbank/presentasjon.html#plan-1",
+    "title": "eide.ai",
+    "section": "Plan",
+    "text": "Plan\n\nDe samme fire stegene på en språkmodell\nAgent = modell + verktøy\nEgne eksempler, dødelig treenighet"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#plan-2",
+    "href": "norgesbank/presentasjon.html#plan-2",
+    "title": "eide.ai",
+    "section": "Plan",
+    "text": "Plan\n\nHvordan komme i gang, ansvarlig bruk\nTilbake til de Witt: ti år eller hundre?"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#aapne",
+    "href": "norgesbank/presentasjon.html#aapne",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Terminal-Bench 4.0: kode-agenter på ekte oppgaver\n\n\n\nClaude Opus 5.5lukket\n\n\n\n\n\n\n66,4 %\n\n\n\n\n\nKimi K3.1 Proåpen\n\n\n\n\n\n\n65,7 %\n\n\n\n\n\nGPT-6 Astralukket\n\n\n\n\n\n\n58,2 %\n\n\n\n\n\n\nVektene kan lastes ned (innen 4. nov.)\n\n\nKan kjøres på egne maskiner: dataene blir i huset\n\n\nHugging Face etterforsket hacken med en åpen modell (GLM-5.2). De lukkede API-ene nektet.\n\n\n\nKilde: Moonshot AI, «Kimi K3.1 Pro» (kimi.ai), egne målinger. Hugging Face, «Security incident disclosure, July 2026»."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#hvem-er-jeg",
+    "href": "norgesbank/presentasjon.html#hvem-er-jeg",
+    "title": "eide.ai",
+    "section": "Hvem er jeg?",
+    "text": "Hvem er jeg?\n\nFinans: risikomodeller og marginkrav\nFINN: anbefalinger og personalisering\nSchibsted: AI Lab, egne språkmodeller\nNå: eide.ai"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#maskinlæringsæraen-1990-2020",
+    "href": "norgesbank/presentasjon.html#maskinlæringsæraen-1990-2020",
+    "title": "Den første KI-revolusjonen",
+    "section": "Maskinlæringsæraen 1990-2020",
+    "text": "Maskinlæringsæraen 1990-2020\n\nFinansiell risiko: P(mislighold | kunde). RiskMetrics 1994, Basel II interne modeller 2004\nSøk: PageRank 1998\nPersonalisering: Amazon 2003, Netflix-prisen 2006-09, FINN\nÉn modell per problem, laget av spesialister, på strukturerte data"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#dere-er-også-her-smart",
+    "href": "norgesbank/presentasjon.html#dere-er-også-her-smart",
+    "title": "eide.ai",
+    "section": "Dere er også her: SMART",
+    "text": "Dere er også her: SMART\n\n~500 modeller for KPI-JAE\nWorkshop i ettermiddag: How to train your AI"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#how-to-train-your-ai",
+    "href": "norgesbank/presentasjon.html#how-to-train-your-ai",
+    "title": "Den første KI-revolusjonen",
+    "section": "How to train your AI",
+    "text": "How to train your AI\n\nData: KPI-JAE, hva visste vi på dagen?\nModell: AR = vektet sum av siste måneder = et nevralt nettverk med ett lag\nTrening: enkel modell treffer, stor modell overtilpasser, prior = regularisering\nHandling: prognose med usikkerhet, så rentebeslutningen (de Witt igjen: modellen sa 16)\nFeil: Lucas-kritikken\nKlokka 13:15 i Kongsberg: vi bygger dette selv"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#agenter",
+    "href": "norgesbank/presentasjon.html#agenter",
+    "title": "eide.ai",
+    "section": "Agenter",
+    "text": "Agenter\n\nAgent = modell + verktøy\nEgne eksempler, dødelig treenighet"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#plan-for-de-neste-to-timene",
+    "href": "norgesbank/workshop.html#plan-for-de-neste-to-timene",
+    "title": "How to train your AI",
+    "section": "Plan for de neste to timene",
+    "text": "Plan for de neste to timene\n\n13:15 Introduksjon: fra statistiske modeller til AI (20-25 min)\nOppgave 1: AR-modell i PyTorch\nOppgave 2: VAR-likning og BVAR (weight decay)\n14:30 Pause\nOppgave 3: faktormodell og nevrale nettverk\nOppgave 4: slå SMART, felles ledertavle\nAvslutning: alle leverer en prognose for oktober-KPI (SSB publiserer 10. november)"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#the-algorithm",
+    "href": "norgesbank/workshop.html#the-algorithm",
+    "title": "How to train your AI",
+    "section": "The Algorithm",
+    "text": "The Algorithm\n\nData: hva vi lærer av\nModell: hvilken struktur har verden?\nTrening = data + modell\nHandling: hva gjør vi med det vi har lært?"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#smart-500-modeller-for-kpi-jae",
+    "href": "norgesbank/workshop.html#smart-500-modeller-for-kpi-jae",
+    "title": "How to train your AI",
+    "section": "SMART: ~500 modeller for KPI-JAE",
+    "text": "SMART: ~500 modeller for KPI-JAE\n\nAR, små VAR, faktormodeller, BVAR, Phillipskurve\nTrimmes og vektes etter treffsikkerhet utenfor utvalget"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#ar-modellen-er-et-nevralt-nettverk",
+    "href": "norgesbank/workshop.html#ar-modellen-er-et-nevralt-nettverk",
+    "title": "How to train your AI",
+    "section": "AR-modellen er et nevralt nettverk",
+    "text": "AR-modellen er et nevralt nettverk\n\\[\\pi_{t+1} = \\beta_0 + \\beta_1 \\pi_t + \\dots + \\beta_{12} \\pi_{t-11}\\]\n\nInndata: de 12 siste månedene. Vekter: \\(\\beta\\). Utdata: neste måned\nI PyTorch: nn.Linear(12, 1)"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#byggeklosser",
+    "href": "norgesbank/workshop.html#byggeklosser",
+    "title": "How to train your AI",
+    "section": "Byggeklosser",
+    "text": "Byggeklosser\n\n\n\nSMART\nPyTorch\n\n\n\n\nAR(p)\nnn.Linear(p, 1)\n\n\nVAR\nnn.Linear(k*p, k)\n\n\nBVAR-prior\nweight_decay\n\n\nFaktormodell\nLinear(n, r) -&gt; Linear(r, 1)\n\n\nIkke-linearitet\nnn.ReLU()"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#treningsløkka",
+    "href": "norgesbank/workshop.html#treningsløkka",
+    "title": "How to train your AI",
+    "section": "Treningsløkka",
+    "text": "Treningsløkka\nfor epoch in range(2000):\n    optimizer.zero_grad()\n    loss = ((model(x) - y) ** 2).mean()\n    loss.backward()\n    optimizer.step()\n\nFem linjer. Regn ut hvor feil vi tar, finn hvilken vei vektene skal flyttes, flytt dem litt. Gjenta. For AR-modellen gir dette samme svar som OLS. Den samme løkka trener en språkmodell, bare med 10^11 parametere i stedet for 12."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#overtilpasning",
+    "href": "norgesbank/workshop.html#overtilpasning",
+    "title": "How to train your AI",
+    "section": "Overtilpasning",
+    "text": "Overtilpasning\n\nTrening: til 2016\nValidering: 2017-2020\nTest: 2021-\n\n\nVi tester på måneder modellen aldri har sett, og testperioden inneholder inflasjonssjokket. En stor modell uten prior treffer historien og bommer på framtiden. En prior, weight decay eller en flaskehals hjelper. En BVAR-prior er det samme som regularisering. TODO: figur med trenings- og testfeil."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#kom-i-gang",
+    "href": "norgesbank/workshop.html#kom-i-gang",
+    "title": "How to train your AI",
+    "section": "Kom i gang",
+    "text": "Kom i gang\n\nÅpne Colab-lenken (kommer), File → Save a copy in Drive\nKjør første celle: laster data fra SSB og Norges Bank\nLedertavle: RMSE på testperioden"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#utfordringen",
+    "href": "norgesbank/workshop.html#utfordringen",
+    "title": "How to train your AI",
+    "section": "Utfordringen",
+    "text": "Utfordringen\n\nSlå AR-modellen\nLever prognose for oktober-KPI"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#plan",
+    "href": "norgesbank/workshop.html#plan",
+    "title": "How to train your AI",
+    "section": "Plan",
+    "text": "Plan\n\nIntro\nOppgave 1-2\nPause\nOppgave 3-4\nPrognose for oktober\n\n\n13:15 intro i 20-25 minutter. Oppgave 1 AR, oppgave 2 VAR og prior. Pause 14:30. Oppgave 3 faktormodell og nevrale nett, oppgave 4 fri konkurranse. Vi avslutter med at alle leverer en prognose for oktober-KPI, som SSB publiserer 10. november."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#section",
+    "href": "norgesbank/workshop.html#section",
+    "title": "How to train your AI",
+    "section": "",
+    "text": "Data → Modell → Trening → Handling\n\nDe fire stegene fra foredraget i morges. De Witt og Halley gjorde det samme i 1671 og 1693. I dag gjør vi det på KPI-JAE."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#kpi-jae",
+    "href": "norgesbank/workshop.html#kpi-jae",
+    "title": "How to train your AI",
+    "section": "KPI-JAE",
+    "text": "KPI-JAE\n\n\nData: KPI justert for avgiftsendringer og uten energivarer, 12-månedersendring. Ett datapunkt er en måned. KPI revideres ikke, så det vi ser i dag er det man visste den gangen. Derfor er priser et godt case. Oppgaven: gitt alt vi vet i dag, hva blir neste måned?"
+  },
+  {
+    "objectID": "norgesbank/workshop.html#section-1",
+    "href": "norgesbank/workshop.html#section-1",
+    "title": "How to train your AI",
+    "section": "",
+    "text": "SMART: ~500 modeller\n\nNorges Bank prognoserer allerede KPI-JAE med rundt 500 statistiske modeller i SMART: AR, små VAR-modeller, faktormodeller, BVAR og Phillipskurve. De vektes etter hvor godt de har truffet, med mer vekt på nylige treff. Vi skal bygge noen av dem på nytt, og så gjøre dem om til nevrale nettverk."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#fra-ar-til-nevralt-nettverk",
+    "href": "norgesbank/workshop.html#fra-ar-til-nevralt-nettverk",
+    "title": "How to train your AI",
+    "section": "Fra AR til nevralt nettverk",
+    "text": "Fra AR til nevralt nettverk\n\n\n\n\n\n\nAR-modellen: neste måned er en vektet sum av de 12 siste. Tegnet som et nettverk er det 12 noder inn, én ut, og vektene er strekene. Det er et nevralt nettverk med ett lag: nn.Linear(12, 1).\nKlikk: faktormodellen. Mange serier komprimeres til noen få faktorer. Et skjult lag med få noder, en flaskehals.\nKlikk: legg til ReLU i det skjulte laget, og vi har et ekte nevralt nettverk. Fra statistiske modeller til AI er et lite steg, ikke et sprang."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#oppgavene",
+    "href": "norgesbank/workshop.html#oppgavene",
+    "title": "How to train your AI",
+    "section": "Oppgavene",
+    "text": "Oppgavene\n\nAR\nVAR + prior\nFaktor + nevralt nett\nSlå AR\n\n\nColab-lenke kommer her, med QR-kode. File, Save a copy in Drive. Første celle laster data fra SSB og Norges Bank. Ledertavle: RMSE på testperioden."
+  },
+  {
+    "objectID": "norgesbank/workshop.html#section-2",
+    "href": "norgesbank/workshop.html#section-2",
+    "title": "How to train your AI",
+    "section": "",
+    "text": "Din prognose for oktober?\n\nSSB publiserer oktober-KPI 10. november. Alle leverer et tall, og vi ser hvem som traff."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#navn",
+    "href": "norgesbank/presentasjon.html#navn",
+    "title": "eide.ai",
+    "section": "",
+    "text": "KIAI-revolusjonen\n\n\nI tre deler\n\n\nSimen Eide\nTech Day, Norges Bank, 6. november 2026\n\n\nStatistics Machine learning Statistical learning Big data Data science Deep learning Data mining Predictive analytics Pattern recognition Neural networks Expert systems Cybernetics Econometrics Business intelligence Soft computing\n\n\n\n«We will be officially BANNING the term, ‹AI/Artificial Intelligence› (…)\nWe should call it SI (Super Intelligence) instead»\n\n\nStatistical Intelligence\n\n\nFoto: Gage Skidmore, CC BY-SA 2.0. Sitat: Donald J. Trump, Truth Social, okt. 2026.\n\n\n    \n\nTittelen er KI-revolusjonen. Men la oss bare kalle det AI.\nFeltet har hatt mange navn: statistikk, maskinlæring, statistisk læring, big data, data science, deep learning, økonometri. Navnet skifter hvert tiår, innholdet er mye det samme. Det spiller egentlig ingen rolle hva vi kaller det.\nTrump har nettopp skrevet på Truth Social at AI er et «very bad and inaccurate name», at det skal hete SI, Super Intelligence, og at begrepet AI skal forbys. Det kom etter presidentordren 29. september.\nJeg foreslår at vi tar ham på ordet: SI. Men Statistical Intelligence. Det er det dette foredraget handler om."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#maskinlæringsæraen",
+    "href": "norgesbank/presentasjon.html#maskinlæringsæraen",
+    "title": "eide.ai",
+    "section": "Maskinlæringsæraen",
+    "text": "Maskinlæringsæraen\n\nSøk\nPersonalisering\nKredittrisiko\nÉn modell per problem, laget av spesialister\n\n\nSøk: PageRank 1998. Personalisering: Amazon 2003, Netflix-prisen 2006-09, FINN. Kredittrisiko: kredittscore, Basel II interne modeller 2004. Felles: P(klikk | bruker), P(mislighold | kunde). Dyrt å lage, én modell per oppgave, krever spesialister og strukturerte data. Datoer må sjekkes mot kilder."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#chatgpt-30.-november-2022",
+    "href": "norgesbank/presentasjon.html#chatgpt-30.-november-2022",
+    "title": "eide.ai",
+    "section": "ChatGPT, 30. november 2022",
+    "text": "ChatGPT, 30. november 2022\n\nÉn modell, tusenvis av oppgaver\nSpråk som grensesnitt\nAlle kan bruke det"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#naa",
+    "href": "norgesbank/presentasjon.html#naa",
+    "title": "eide.ai",
+    "section": "",
+    "text": "2023 · Sven (sjefen) på allmøte\n«Det er nå det skjer! Er det ikke, Simen?»\n\n\n2023 · Simen, fagekspert\n«Slapp av. Det er bare transformere fra 2017 med mer data. Imponerende forskning, men …»\n\n\nMars 2026 · Simen, fra talerstolen i en kirke i Kristiansand\n«DET ER NÅ DET SKJER!!!»\n\n\n  \n\nI 2023 sto sjefen min på allmøte og sa at det er nå det skjer. Jeg var fageksperten som sa slapp av, det er bare transformere med mer data. I mars 2026 sto jeg selv i en kirke i Kristiansand og ropte det samme. Hva skjedde?"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#hva-har-skjedd",
+    "href": "norgesbank/presentasjon.html#hva-har-skjedd",
+    "title": "eide.ai",
+    "section": "Hva har skjedd?",
+    "text": "Hva har skjedd?\n\nFør 2026: effektiv auto-complete\nI 2026: utviklere skriver ikke kode selv\n\n\n\n\n\n\n\nSoftware-aksjer faller når AI-selskapene lanserer produkter. Før 2026 føltes det som effektiv auto-complete. I 2026 skriver ikke de beste utviklerne kode selv lenger, agentene gjør det. De er faktisk nyttige.\nGrafen (METR) bygges i tre klikk: hvor lange programmeringsoppgaver, målt i menneske-timer, AI-agenter løser halvparten av gangene. Klikk 1: frem til ChatGPT, GPT-2 og GPT-3 klarer nesten ingenting. Klikk 2: frem til GPT-5 (august 2025), rundt to timer. Klikk 3: resten, på under et år. GPT-4 i 2023: noen minutter. Claude Opus 4.6 i februar 2026: rundt 12 timer. Det siste punktet (Claude Mythos, april 2026, 17 timer) er over det METR kan måle pålitelig. Dobling omtrent hver fjerde måned siden 2023.\n\n\nData: METR, Time Horizon 1.1 (sist oppdatert april 2026). Åpen sirkel: over 16 timer, utenfor det METR kan måle pålitelig."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#en-agent-er-en-språkmodell-med-verktøy",
+    "href": "norgesbank/presentasjon.html#en-agent-er-en-språkmodell-med-verktøy",
+    "title": "eide.ai",
+    "section": "En agent er en språkmodell med verktøy",
+    "text": "En agent er en språkmodell med verktøy\n\n\n\nE-post, kalender, websøk, kode, BankID\nAppen utfører verktøykallet\nSvaret går tilbake til modellen\n\n\n\n\n\nModellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#eksempel-en-app-på-en-uke",
+    "href": "norgesbank/presentasjon.html#eksempel-en-app-på-en-uke",
+    "title": "eide.ai",
+    "section": "Eksempel: en app på en uke",
+    "text": "Eksempel: en app på en uke\n\n\n\n\n\nParagliderapp du bruker mens du flyr\nFørste versjon: en uke med kodeagent\nTestet i lufta over Colombia\n\n\n\n\nKart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#og-personvernet-for-samme-app",
+    "href": "norgesbank/presentasjon.html#og-personvernet-for-samme-app",
+    "title": "eide.ai",
+    "section": "… og personvernet for samme app",
+    "text": "… og personvernet for samme app\n\n\n\nApple og Google krevde personvernerklæring\nStor kodebase, mange lover\nAgenten gikk gjennom koden\nTrolig bedre enn uten\n\n\n\n\n\nFor å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#flere-eksempler",
+    "href": "norgesbank/presentasjon.html#flere-eksempler",
+    "title": "eide.ai",
+    "section": "Flere eksempler",
+    "text": "Flere eksempler\n\n\n\nSolrute-app\nBarnevogn på solsiden av gata\n\n\n\nVergeportalen\nInnlogging for offentlige\n\n\n\nRobotikk\n«Neste robotbevegelse»\n\n\n\nSolrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: youtube.com/watch?v=bemrcQcHmMk)."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#toget-har-gått",
+    "href": "norgesbank/presentasjon.html#toget-har-gått",
+    "title": "eide.ai",
+    "section": "«Toget har gått»",
+    "text": "«Toget har gått»\n\n\n\n\n\nFarfar Kjartan, 86\nSluttet å kode i 1974\nPlukket opp et uferdig prosjekt\nKoder COBOL, med Claude som hjelper\n\n\n\nFarfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#en-dødelig-treenighet",
+    "href": "norgesbank/presentasjon.html#en-dødelig-treenighet",
+    "title": "eide.ai",
+    "section": "En dødelig treenighet",
+    "text": "En dødelig treenighet\n\n\n\n\nModellen skiller ikke instruksjoner fra innhold.\n\nPrivat data\nUpålitelig innhold (web, e-post)\nKan kommunisere utad\n\n→ ondsinnet tekst kan kapre agenten\n\n\nSimon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Eksempelet med gulrotkaken fra KI Sør passer her."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#om-meg",
+    "href": "norgesbank/presentasjon.html#om-meg",
+    "title": "eide.ai",
+    "section": "Om meg",
+    "text": "Om meg\n\n\n\nMatematiker (PhD, bayesianske nevrale nett)\nPorteføljerisiko\nAnbefalingssystemer (FINN.no)\nAI enablement (Schibsted)\nNå: freelance, lage AI med AI og litt formidling\n\n\n\nMatematiker, PhD på bayesianske nevrale nett. Startet med porteføljerisiko i finans, så anbefalingssystemer på FINN.no, så AI enablement i Schibsted. Nå eide.ai."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#recsys",
+    "href": "norgesbank/presentasjon.html#recsys",
+    "title": "eide.ai",
+    "section": "Søk og anbefalinger",
+    "text": "Søk og anbefalinger\n\n\n\n\n\n\nP(klikk | søkeord, tidligere adferd)\n\nSøk: Google PageRank, 1998. Anbefalinger: Amazon item-to-item 2003, Netflix-prisen 2006-09 (1 million dollar for 10 % bedre anbefalinger). Jeg jobbet med dette på FINN.no. Google slik den så ut i 1998: PageRank rangerer sider etter hvem som lenker til dem. FINN «Anbefalinger til deg»: modellen vet hva du og folk som ligner deg har klikket på, og fyller inn resten. Alt koker ned til én sannsynlighet: P(klikk | søkeord, tidligere adferd). Én modell per problem, laget av spesialister."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#finans",
+    "href": "norgesbank/presentasjon.html#finans",
+    "title": "eide.ai",
+    "section": "Finans",
+    "text": "Finans\n\n\nOpsjonsprising\n\n\nRisikomodellering\n\n\n\nDel 2 er spesialistene: samme fire steg som de Witt, men nå med enorme datamengder og datamaskiner. Finans kom først. To spor, begge med de Witts spørsmål: hva er et usikkert løfte verdt?\nOpsjonsprising: en kjøpsopsjon betaler ut hvis aksjen ender over innløsningskursen (svart knekk). Hva er den verdt i dag? Black og Scholes (1973) ga svaret (gull kurve). Formelen gjorde opsjonsmarkedet mulig. Scholes og Merton fikk Nobelprisen i 1997, året etter kollapset hedgefondet LTCM med begge i ledelsen.\nRisikomodellering: hvor mye kan porteføljen tape i morgen? Modellen gir en fordeling for gevinst og tap. Value at Risk: tapet som bare 1 av 100 dager skal være verre enn. Bankene må holde kapital etter dette (Basel). Jeg jobbet med porteføljerisiko: modellene er gode på det vanlige, dårlige på halene. På S&P 500 de siste ti årene var 2,8 % av dagene verre enn en slik 1 %-grense."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#imagenet",
+    "href": "norgesbank/presentasjon.html#imagenet",
+    "title": "eide.ai",
+    "section": "Bilder: nevrale nett tar over",
+    "text": "Bilder: nevrale nett tar over\n\n\nImageNet: 1,2 millioner bilder i 1000 kategorier, en årlig konkurranse. 2010 og 2011: håndlagde bildefunksjoner, rundt 26-28 % feil. 2012: AlexNet (Krizhevsky, Sutskever og Hinton) bruker et nevralt nett trent på to skjermkort og kutter feilraten til 15 %. Etter det vinner bare nevrale nett, og i 2015 er de bedre enn mennesket på denne oppgaven. Ingenting nytt i selve ideen, nevrale nett fantes fra 1950-tallet. Det nye var data og regnekraft."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#rontgen",
+    "href": "norgesbank/presentasjon.html#rontgen",
+    "title": "eide.ai",
+    "section": "Røntgen",
+    "text": "Røntgen\n\n\n\n\n2017: Nevralt nett finner lungebetennelse på røntgen\n«Vi bør slutte å utdanne radiologer nå»\nGeoffrey Hinton, 2016\n\nRøntgen: Stillwaterising, CC0.\n\nBildeklassifisering ble raskt brukt på medisinske bilder. CheXNet fra Stanford (2017) fant lungebetennelse på røntgenbilder omtrent like godt som radiologer. Året før sa Geoffrey Hinton, en av fedrene til nevrale nett: «People should stop training radiologists now. It’s just completely obvious that within five years deep learning is going to do better than radiologists.» Hold på den. Vi kommer tilbake til ham på slutten."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#attention",
+    "href": "norgesbank/presentasjon.html#attention",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Juni 2017. Grunnlaget for ChatGPT.\n\nBroen til del 3. Åtte forskere fra Google publiserer «Attention Is All You Need». De foreslår transformeren: en arkitektur der hvert ord ser på alle de andre ordene samtidig. Det gjør at man kan trene på mye mer tekst, parallelt, på skjermkort. Google oppfant den, OpenAI skalerte den: GPT-1 i 2018, GPT-3 i 2020, ChatGPT i november 2022. T-en i GPT står for transformer."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#alexnet",
+    "href": "norgesbank/presentasjon.html#alexnet",
+    "title": "eide.ai",
+    "section": "",
+    "text": "«Vi bør slutte å utdanne radiologer nå»\n\nGeoffrey Hinton, 2016\n\n\n\nBilder: Krizhevsky, Sutskever og Hinton (2012), figur 4. Feilrate: Russakovsky mfl. (2015), He mfl. (2016). Røntgen: Stillwaterising, CC0.\n\n \n\nImageNet: 1,2 millioner bilder i 1000 kategorier, en årlig konkurranse. Bildene er fra AlexNet-artikkelen: modellens fem beste gjetninger under hvert bilde. Containerskip og leopard: riktig. Kirsebær: modellen sier dalmatiner, og det er ikke så dumt.\n2012: AlexNet (Krizhevsky, Sutskever og Hinton) bruker et nevralt nett trent på to skjermkort. Feilraten faller fra 26 % til 15 %, mens de tradisjonelle metodene sto nesten stille. Etter det vinner bare nevrale nett, og i 2015 er de bedre enn mennesket på denne oppgaven (ca. 5 %, målt av Andrej Karpathy). Ideen var ikke ny, det nye var data og regnekraft.\nRøntgen: CheXNet fra Stanford (2017) fant lungebetennelse på røntgenbilder omtrent like godt som radiologer. Året før sa Hinton: «People should stop training radiologists now. It’s just completely obvious that within five years deep learning is going to do better than radiologists.» Hold på den. Vi kommer tilbake til ham på slutten."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#smart",
+    "href": "norgesbank/presentasjon.html#smart",
+    "title": "eide.ai",
+    "section": "SMART",
+    "text": "SMART\n\nNorges Banks egne spesialister: ~500 modeller for inflasjonen\nAR, VAR, BVAR, faktormodeller, kombinert etter treffsikkerhet\nWorkshop i ettermiddag: How to train your AI\n\n\nPlassholder. SMART (System for Model Analysis in Real Time): rundt 500 modeller i 15 grupper (UNIVAR, små VAR, faktormodeller, BVAR, SEM), kombinert med vekter etter hvor godt de har truffet. Klassiske spesialistmodeller, laget og vedlikeholdt av fagfolk. I workshopen i ettermiddag skriver vi noen av dem om i PyTorch og utvider dem med nevrale nett."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#mange-agenter-samtidig",
+    "href": "norgesbank/presentasjon.html#mange-agenter-samtidig",
+    "title": "eide.ai",
+    "section": "Mange agenter samtidig",
+    "text": "Mange agenter samtidig\n\n\nPlassholder. Skjermbilde av hangar: mine kodeagenter som jobber parallelt, mange på pgpilot. Fikses senere."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#kpi-jae-fram-til-2030",
+    "href": "norgesbank/presentasjon.html#kpi-jae-fram-til-2030",
+    "title": "eide.ai",
+    "section": "KPI-JAE fram til 2030",
+    "text": "KPI-JAE fram til 2030\n\n\nPlassholder. Illustrasjon, ikke en prognose: bayesiansk AR(3) på tolvmånedersveksten i KPI-JAE, estimert fra 2001. Viften er 60 intervaller fra 4000 simulerte baner, der både parameterne og støyen er usikre. Usikkerheten vokser jo lenger fram vi ser, og medianen trekkes mot snittet."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#neste-ord",
+    "href": "norgesbank/presentasjon.html#neste-ord",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Slik virker en språkmodell: den gir en sannsynlighet for hvert mulig neste ord, gitt ordene så langt. Vi velger et ord, legger det til, og spør igjen. Buene er transformeren fra 2017: for hvert nytt ord ser modellen på alle ordene før, og bestemmer selv hvor mye hvert av dem skal telle (attention). Tykk bue: viktig ord. Når den skal velge «uendret», ser den mest på «holdes». Tallene her er laget for illustrasjon. Legg merke til at modellen er usikker på det første ordet: holdes, settes ned eller økes. Det er det samme spørsmålet Norges Bank stiller seg, og det samme som viften i del 2."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#fire-steg",
+    "href": "norgesbank/presentasjon.html#fire-steg",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Modell\n\n\n\nén sannsynlighet per aldersgruppe\n\n\n\n\nData\n\n\n\n\nalder\n\n\ni live\n\n\n\n\n1\n\n\n1000\n\n\n\n\n10\n\n\n661\n\n\n\n\n20\n\n\n598\n\n\n\n\n40\n\n\n445\n\n\n\n\n60\n\n\n242\n\n\n\n\n80\n\n\n41\n\n\n\n\nBreslau 1687-91\n\n\n\n\nTrening\n\n\n\ntilpass parameterne til dataene\n\n\n\n\nBeslutning\n\n\nPris: 16Kjøpe?\n\n\n\n   \n\nOppsummering av del 1, med livrentene som eksempel. På bare rundt 50 år, fra 1654 til 1693, kom alle prinsippene vi bruker i AI-modeller i dag.\nModell: sannsynligheten for å dø er lik innenfor hver aldersgruppe (bins). Før trening vet vi ikke nivåene, bare grovt: stor usikkerhet på hver stolpe. De Witt satte dem for hånd i 1671.\nData: Halleys tabell fra Breslau (1693): hvor mange av 1000 ettåringer som fortsatt lever ved hver alder.\nTrening: tilpass parameterne til dataene. Her er det så enkelt som et gjennomsnitt av dødsraten i hver gruppe (prikkene er hvert enkelt år, stolpene er snittet).\nBeslutning: modellen gir en pris på livrenten, og kjøperen bestemmer om den er verdt det. De Witt kom til 16 ganger den årlige utbetalingen.\nDet er de samme fire stegene i SMART, i FINNs anbefalinger og i ChatGPT. Det som har endret seg, er mengden data og regnekraft."
   }
 ]
