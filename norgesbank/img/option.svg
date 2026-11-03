@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="456.3675pt" height="374.291187pt" viewBox="0 0 456.3675 374.291187" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T15:53:53.739040</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.291187 
+L 456.3675 374.291187 
+L 456.3675 0 
+L 0 0 
+L 0 374.291187 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 58.5675 317.664 
+L 449.1675 317.664 
+L 449.1675 7.2 
+L 58.5675 7.2 
+L 58.5675 317.664 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m49d5125e9c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #2b2118; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m49d5125e9c" x="76.322045" y="317.664" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="76.322045" y="339.760875" transform="rotate(-0 76.322045 339.760875)">50</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m49d5125e9c" x="253.8675" y="317.664" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="253.8675" y="339.760875" transform="rotate(-0 253.8675 339.760875)">100</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m49d5125e9c" x="431.412955" y="317.664" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="431.412955" y="339.760875" transform="rotate(-0 431.412955 339.760875)">150</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="253.8675" y="362.388687" transform="rotate(-0 253.8675 362.388687)">Aksjekurs</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <defs>
+       <path id="m25e6c81a59" d="M 0 0 
+L -3.5 0 
+" style="stroke: #2b2118; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m25e6c81a59" x="58.5675" y="303.552" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="51.5675" y="311.100437" transform="rotate(-0 51.5675 311.100437)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m25e6c81a59" x="58.5675" y="171.541473" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="51.5675" y="179.089911" transform="rotate(-0 51.5675 179.089911)">25</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m25e6c81a59" x="58.5675" y="39.530946" style="fill: #2b2118; stroke: #2b2118; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="51.5675" y="47.079384" transform="rotate(-0 51.5675 47.079384)">50</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: middle; fill: #2b2118" x="20.787188" y="162.432" transform="rotate(-90 20.787188 162.432)">Kroner</text>
+    </g>
+   </g>
+   <g id="line2d_7">
+    <path d="M 76.322045 303.552 
+L 253.422524 303.552 
+L 254.312476 302.890293 
+L 431.412955 39.530946 
+L 431.412955 39.530946 
+" clip-path="url(#pc3693533e1)" style="fill: none; stroke: #2b2118; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 76.322045 303.439025 
+L 93.231136 303.190101 
+L 105.690467 302.800526 
+L 116.369892 302.243252 
+L 125.269414 301.563161 
+L 133.278983 300.740152 
+L 140.3986 299.809373 
+L 147.518218 298.6634 
+L 154.637835 297.276143 
+L 160.8675 295.844725 
+L 167.097165 294.193846 
+L 173.32683 292.309194 
+L 179.556495 290.177998 
+L 185.78616 287.789197 
+L 192.015825 285.13358 
+L 198.24549 282.203864 
+L 204.475156 278.994728 
+L 210.704821 275.502801 
+L 216.934486 271.726618 
+L 223.164151 267.666533 
+L 229.393816 263.324608 
+L 235.623481 258.704482 
+L 241.853146 253.811221 
+L 248.082811 248.65116 
+L 254.312476 243.231734 
+L 261.432093 236.731292 
+L 268.551711 229.91676 
+L 275.671328 222.802863 
+L 283.680897 214.461141 
+L 291.690467 205.78275 
+L 299.700036 196.790655 
+L 308.599557 186.459356 
+L 317.499079 175.799882 
+L 327.288553 163.731016 
+L 337.967978 150.19771 
+L 349.537356 135.155915 
+L 361.996687 118.574066 
+L 375.345969 100.433602 
+L 390.475156 79.486312 
+L 407.384246 55.681463 
+L 426.963194 27.716294 
+L 431.412955 21.312 
+L 431.412955 21.312 
+" clip-path="url(#pc3693533e1)" style="fill: none; stroke: #b8860b; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 58.5675 317.664 
+L 58.5675 7.2 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 58.5675 317.664 
+L 449.1675 317.664 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mc40b54c6ad" d="M 0 4.743416 
+C 1.257969 4.743416 2.464584 4.24362 3.354102 3.354102 
+C 4.24362 2.464584 4.743416 1.257969 4.743416 0 
+C 4.743416 -1.257969 4.24362 -2.464584 3.354102 -3.354102 
+C 2.464584 -4.24362 1.257969 -4.743416 0 -4.743416 
+C -1.257969 -4.743416 -2.464584 -4.24362 -3.354102 -3.354102 
+C -4.24362 -2.464584 -4.743416 -1.257969 -4.743416 0 
+C -4.743416 1.257969 -4.24362 2.464584 -3.354102 3.354102 
+C -2.464584 4.24362 -1.257969 4.743416 0 4.743416 
+z
+" style="stroke: #8b1e1e"/>
+    </defs>
+    <g clip-path="url(#pc3693533e1)">
+     <use xlink:href="#mc40b54c6ad" x="253.8675" y="244.021509" style="fill: #8b1e1e; stroke: #8b1e1e"/>
+    </g>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 19px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #8b1e1e" x="237.8675" y="226.021509" transform="rotate(-0 237.8675 226.021509)">Pris i dag</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; fill: #2b2118" transform="translate(339.089318 261.589128)">Utbetaling</text>
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; fill: #2b2118" transform="translate(339.089318 282.430316)">ved forfall</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #b8860b" x="118.932955" y="256.02821" transform="rotate(-0 118.932955 256.02821)">Verdi i dag</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc3693533e1">
+   <rect x="58.5675" y="7.2" width="390.6" height="310.464"/>
+  </clipPath>
+ </defs>
+</svg>

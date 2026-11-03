@@ -13,3 +13,7 @@ himalaya/_source/thumbs/
 himalaya/_source/video-raw/
 # Kjørelogg fra opplastingsscriptet
 himalaya/_source/*.log
+norgesbank/_plan.md
+norgesbank/workshop/_plan.md
+norgesbank/img/_src/
+.ruff_cache/
