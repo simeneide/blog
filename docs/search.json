@@ -1510,5 +1510,166 @@
     "title": "pgpilot",
     "section": "",
     "text": "Thank you\n  pgpilot.app"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#om-meg",
+    "href": "norgesbank/presentasjon.html#om-meg",
+    "title": "eide.ai",
+    "section": "Om meg",
+    "text": "Om meg\n\n\n\nMatematiker (PhD, bayesianske nevrale nett)\nPorteføljerisiko\nAnbefalingssystemer (FINN.no)\nAI enablement (Schibsted)\nNå: freelance, lage AI med AI og litt formidling\n\n\n\n\n2023 · Sven (sjefen) på allmøte\n«Det er nå det skjer! Er det ikke, Simen?»\n\n\n2023 · Simen, fagekspert\n«Slapp av. Det er bare transformere fra 2017 med mer data. Imponerende forskning, men …»\n\n\nMars 2026 · Simen, fra talerstolen i en kirke i Kristiansand\n«DET ER NÅ DET SKJER!!!»\n\n\n  \n\nMatematiker, PhD på bayesianske nevrale nett. Startet med porteføljerisiko i finans, så anbefalingssystemer på FINN.no, så AI enablement i Schibsted. Nå eide.ai.\nI 2023 sto sjefen min på allmøte og sa at det er nå det skjer. Jeg var fageksperten som sa slapp av, det er bare transformere med mer data. I mars 2026 sto jeg selv i en kirke i Kristiansand og ropte det samme. Hva skjedde?"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#pascal",
+    "href": "norgesbank/presentasjon.html#pascal",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Chevalier de Méré\n\n\n\n\n\n\n\n\nBlaise Pascal\n\n\n\n\n\n\nMonsieur Pascal,jeg har et problem med et spill.\n\n\n\n\n\n64 gullmynter\n\n\n\n\n\n\n \n\n\n\n\n\n\n Kron: de Méré får poeng ·  Mynt: Pascal får poeng · Først til 3 vinner potten\n\n\n\n\n\n\n\n\n\nde Méré\n\n\n\n\n\n\n\n\nPascal\n\n\n\n\nA\n\nDel liktSpillet ble aldri ferdig.\n\n\n\n\n\n\nB\n\nDe Méré tar altHan leder.\n\n\n\n\n\n\nC\n\nDel etter poengHan har vunnet 2 av 3 runder.\n\n\n\n\n\n\nD\n\nDel ¾ og ¼\n\n\n\n\n\n\n\n\n\n\nSTOPP\n\n\nBilder: A. Bosse, The Met, Musée Carnavalet."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#tree",
+    "href": "norgesbank/presentasjon.html#tree",
+    "title": "eide.ai",
+    "section": "",
+    "text": "2 – 1\n\n\n\n\n\n\n ½\n\n\n ½\n\n\n ½\n\n\n ½\n\n\n\n3 – 1\n\nde Méré vinner½\n\n\n\n2 – 2\n\nlikt\n\n\n\n3 – 2\n\nde Méré vinner¼\n\n\n\n2 – 3\n\nPascal vinner¼\n\n\n\n½ + ¼ = ¾¾ × 64 = 48\n\n\n\n\n\n¼¼ × 64 = 16\n\n\n\n\n\n\nIkke hva som har skjedd, men hva som kan skje.\n\nP(vinne | stillingen nå) × potten\n\n\n\n=\n\n\nForventningsverdi"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#spread",
+    "href": "norgesbank/presentasjon.html#spread",
+    "title": "eide.ai",
+    "section": "",
+    "text": "På et par tiår gikk verden fra å ikke forstå sannsynligheter til at det var overalt\n\n\n\n\n1654 Spill\nPascal og Fermat: hvordan dele potten\n\n\n\n1657 Vitenskap\nHuygens: første lærebok. Hva er et spill verdt?\n\n\n\n1662 Folkehelse\nGraunt telte Londons dødsfall: av 100 fødte lever 16 ved 36 år\n\n\n\n1662 Hverdagen\nPort-Royal: frykten for lyn bør stå i forhold til sjansen\n\n\n\n1665 Jus\nLeibniz (19 år): rettigheter som tall, 0, ½ og 1\n\n\n\n1670 Religion\nPascals veddemål: tro, fordi gevinsten er uendelig\n\n\n\n1671 Statsobligasjoner\nde Witt: hva er en livrente verdt?\n\n\n\nBilder: C. Netscher, Wellcome/Wikimedia, Port-Royal (1662), C. B. Francke, Bibliothèque municipale de Lyon (Pensées), J. de Baen.\n\n\n\nFolk hadde spilt med terninger i tusenvis av år uten å regne på sjansene. Ingen tenkte i sannsynligheter. På et par tiår gikk verden fra det til at sannsynlighet var overalt. Det er en konseptuell revolusjon, ikke bare en ny formel (Ian Hacking, The Emergence of Probability, 1975):\n\n1654 Pascal og Fermat løser problemet med potten (det vi nettopp så).\n1657 Huygens skriver den første læreboka: verdien av et spill, forventningsverdien.\n1662 John Graunt teller ukentlige dødslister i London og lager den første dødelighetstabellen. Av 100 fødte lever 64 ved 6 år, 16 ved 36, 1 ved 76.\n1662 Port-Royal-logikken: folk er livredde for lyn, men frykten bør stå i forhold til hvor sannsynlig det er, ikke bare hvor ille det er.\n1665 Leibniz, 19 år, doktoravhandling i jus: en betinget rettighet er et tall mellom 0 og 1.\n1670 Pascals veddemål: tro på Gud, fordi forventet gevinst er uendelig. Beslutningsteori.\n1671 de Witt priser livrenter for staten.\n\nSpill, vitenskap, folkehelse, hverdag, jus, religion og statsfinans. Etter dette tenker folk i sannsynligheter."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#dewitt",
+    "href": "norgesbank/presentasjon.html#dewitt",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Johan de Witt\n\n\nstatsminister og matematiker\n\n\n\n\nUtstedte obligasjon: få én gullmynt i året så lenge du lever.\n\n\nPris: 14 gullmynter\n\n\nFair?\n\n\n\n\n 3204060800 %50 %100 % alder P(i live | kjøpt som 3-åring)  \n\n\nde Witt 1671: antakelser\n\n\nHalley 1693: data fra Breslau\n\n\n\n\nModell: 16 gullmynter\n\n\nHalley (1693): Estimert på ekte data"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#fire-steg",
+    "href": "norgesbank/presentasjon.html#fire-steg",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Modell\n\n\n\nén sannsynlighet per aldersgruppe\n\n\n\n\nData\n\n\n\n\nalder\n\n\ni live\n\n\n\n\n1\n\n\n1000\n\n\n\n\n10\n\n\n661\n\n\n\n\n20\n\n\n598\n\n\n\n\n40\n\n\n445\n\n\n\n\n60\n\n\n242\n\n\n\n\n80\n\n\n41\n\n\n\n\nBreslau 1687-91\n\n\n\n\nTrening\n\n\n\ntilpass parameterne til dataene\n\n\n\n\nBeslutning\n\n\nPris: 14Verdi: 16Kjøp!\n\n\n\n   \n\nOppsummering av del 1, med livrentene som eksempel. På bare rundt 50 år, fra 1654 til 1693, kom alle prinsippene vi bruker i AI-modeller i dag.\nModell: sannsynligheten for å dø er lik innenfor hver aldersgruppe (bins). Før trening vet vi ikke nivåene, bare grovt: stor usikkerhet på hver stolpe. De Witt satte dem for hånd i 1671.\nData: Halleys tabell fra Breslau (1693): hvor mange av 1000 ettåringer som fortsatt lever ved hver alder.\nTrening: tilpass parameterne til dataene. Her er det så enkelt som et gjennomsnitt av dødsraten i hver gruppe (prikkene er hvert enkelt år, stolpene er snittet).\nBeslutning: staten solgte livrenten for 14 ganger den årlige utbetalingen, men modellen sier den er verdt 16. Da er det et godt kjøp.\nDet er de samme fire stegene i SMART, i FINNs anbefalinger og i ChatGPT. Det som har endret seg, er mengden data og regnekraft."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#spesialister",
+    "href": "norgesbank/presentasjon.html#spesialister",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Modellparametriske modeller av virkeligheten\n\nFinans, 1973\n\n\n\nData«90 % av verdens data er laget de siste to årene»\n\nSøk, 1998\n\n\n\nTreningdatamaskinen og skjermkortet\n\nENIAC 1946, bilder 2012\n\n\n\nBeslutningbeslutninger under usikkerhet\n\nSMART, i dag\n\n\n\n\n\nFinans: Black-Scholes (1973)\n\n\n\n\n\nSøk og anbefalinger: Google (1998), FINN\n\n\n\n\n\nFra ENIAC (1946) til et nevralt nett på to skjermkort (AlexNet, 2012)\n\n\n\n\n\nPrisprediksjon: SMART og renten. Workshop i ettermiddag!\n\n\n\n    \n\nHva har vi gjort fra 1693 til nå? Vi har foredlet og forbedret de samme fire prinsippene.\nModell: vi har laget parametriske modeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. Eksempel: finans. Black og Scholes (1973) priser opsjoner, og formelen gjorde opsjonsmarkedet mulig.\nData: med datamaskinen og internett eksploderer datamengden. SINTEF regnet i 2013 ut at 90 % av verdens data var laget de siste to årene. Eksempel: søk og anbefalinger. Google i 1998, FINN: sannsynligheten for klikk, gitt søkeord og tidligere adferd.\nTrening: datamaskinen, fra ENIAC i 1946 (bildet: Glen Beck og Betty Snyder programmerer den), og til slutt skjermkortet. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.\nBeslutning: beslutninger under usikkerhet. Her i huset: SMART, rundt 500 modeller for inflasjonen, som brukes når renten settes. Det er dette vi bygger i workshopen i ettermiddag."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#en-oppgave",
+    "href": "norgesbank/presentasjon.html#en-oppgave",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Én modell, én oppgave\n\nMen hver modell løser bare én oppgave. Opsjonsmodellen kan ikke anbefale annonser, og bildemodellen kan ikke prognosere inflasjon. Det er take-home-messagen fra del 2. Så kommer «Attention Is All You Need»."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#attention",
+    "href": "norgesbank/presentasjon.html#attention",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Broen til del 3. Åtte forskere fra Google publiserer «Attention Is All You Need». De foreslår transformeren: en arkitektur der hvert ord ser på alle de andre ordene samtidig. Det gjør at man kan trene på mye mer tekst, parallelt, på skjermkort. Google oppfant den, OpenAI skalerte den: GPT-1 i 2018, GPT-3 i 2020, ChatGPT i november 2022. T-en i GPT står for transformer. Klikk: figur 1 i artikkelen, selve transformeren. Ikke forklar den, bare vis at de har sett den. Den kommer tilbake på «Alt er det samme»."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#neste-ord",
+    "href": "norgesbank/presentasjon.html#neste-ord",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Modelltransformer, milliarder av parametre\n\n\nDatatekst fra hele internett\n\n\nTreninggjett neste ord, om og om igjen\n\n\nBeslutninghvilket ord som skrives\n\n\n\n   \n\nSlik virker en språkmodell: den gir en sannsynlighet for hvert mulig neste ord, gitt ordene så langt. Vi velger et ord, legger det til, og spør igjen. Buene er transformeren fra 2017: for hvert nytt ord ser modellen på alle ordene før, og bestemmer selv hvor mye hvert av dem skal telle (attention). Tykk bue: viktig ord. Når den skal velge «uendret», ser den mest på «holdes». Tallene her er laget for illustrasjon. Legg merke til at modellen er usikker på det første ordet: holdes, settes ned eller økes. Det er det samme spørsmålet Norges Bank stiller seg, og det samme som viften i del 2."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#samme",
+    "href": "norgesbank/presentasjon.html#samme",
+    "title": "eide.ai",
+    "section": "",
+    "text": "1654 P(vinne | stillingen)\n\n\n 2017 P(klikk | tidligere adferd)\n\n\nNorges Bank holder renten … 2023 P(neste ord | ordene så langt)\n\n\n\nModelltransformer på neste ord\n\n\nDatahele internett\n\n\nTreninggradient descent\n\n\nBeslutningneste ord"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#anvendelse",
+    "href": "norgesbank/presentasjon.html#anvendelse",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Bare for å vise at det skjer mye, ikke gå i detalj.\nJuli 2026: OpenAIs egne cyber-agenter rømte fra testmiljøet og hacket Hugging Face. OpenAI kalte det «a warning shot» (VG 27. aug., CNBC 22. juli). Hugging Face etterforsket med en åpen modell (GLM-5.2) på egne maskiner, fordi de kommersielle modellene nektet å hjelpe.\nApril 2026: Anthropics Claude Mythos fant en 27 år gammel feil i OpenBSD og tusenvis av sårbarheter på noen uker (SC Media 9. april). Per august: rundt 2 300 sårbarheter i 392 prosjekter.\nFebruar 2026: 16 Claude-agenter skrev en C-kompilator på 100 000 linjer som bygger Linux (Ars Technica 7. feb.).\nMai 2026: OpenAI løste et Erdős-problem fra 1946, kontrollert av eksterne matematikere (ABC Nyheter 6. juni, TechCrunch 20. mai).\nSeptember 2026: OpenAI hevder å ha vist at Navier-Stokes-likningene kan «blåse opp» (Quanta 8. sep.). Si «hevder»: beviset er ikke uavhengig verifisert, og Clay-instituttet lister problemet fortsatt som åpent.\nOktober 2026: Anthropic søker om børsnotering, og det kan bli den største noensinne (NPR 26. okt.). Pengene følger etter."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#hva-har-skjedd",
+    "href": "norgesbank/presentasjon.html#hva-har-skjedd",
+    "title": "eide.ai",
+    "section": "Hva har skjedd?",
+    "text": "Hva har skjedd?\nFør 2026: effektiv auto-complete 2026: utviklere skriver ikke kode selv\n\n\n\n\n\n\nSoftware-aksjer faller når AI-selskapene lanserer produkter. Før 2026 føltes det som effektiv auto-complete. I 2026 skriver ikke de beste utviklerne kode selv lenger, agentene gjør det. De er faktisk nyttige.\nGrafen (METR) bygges i tre klikk: hvor lange programmeringsoppgaver, målt i menneske-timer, AI-agenter løser halvparten av gangene. Klikk 1: frem til ChatGPT, GPT-2 og GPT-3 klarer nesten ingenting. Klikk 2: frem til GPT-5 (august 2025), rundt to timer. Klikk 3: resten, på under et år. GPT-4 i 2023: noen minutter. Claude Opus 4.6 i februar 2026: rundt 12 timer. Det siste punktet (Claude Mythos, april 2026, 17 timer) er over det METR kan måle pålitelig. Dobling omtrent hver fjerde måned siden 2023.\n\n\nData: METR, Time Horizon 1.1 (sist oppdatert april 2026). Åpen sirkel: over 16 timer, utenfor det METR kan måle pålitelig."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#aapne",
+    "href": "norgesbank/presentasjon.html#aapne",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Terminal-Bench 4.0: kode-agenter på ekte oppgaver\n\n\n\nClaude Opus 5.5lukket\n\n\n\n\n\n\n66,4 %\n\n\n\n\n\nKimi K3.1 Proåpen\n\n\n\n\n\n\n65,7 %\n\n\n\n\n\nGPT-6 Astralukket\n\n\n\n\n\n\n58,2 %\n\n\n\n\n\n\nVektene kan lastes ned (innen 4. nov.)\n\n\nKan kjøres på egne maskiner: dataene blir i huset\n\n\nHugging Face etterforsket hacken med en åpen modell (GLM-5.2). De lukkede API-ene nektet.\n\n\n\nKilde: Moonshot AI, «Kimi K3.1 Pro» (kimi.ai), egne målinger. Hugging Face, «Security incident disclosure, July 2026»."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#agent",
+    "href": "norgesbank/presentasjon.html#agent",
+    "title": "eide.ai",
+    "section": "",
+    "text": "SpråkmodellP(neste ord | ordene så langt)\n\n\n  \n\n\nverktøykall\n\n\nsvaret som tekst\n\n\nE-postKalenderWebsøkKodeBankID\n\n\n… om og om igjen, til oppgaven er løst\n\n\n   \n\nModellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#eksempel-en-app-på-en-uke",
+    "href": "norgesbank/presentasjon.html#eksempel-en-app-på-en-uke",
+    "title": "eide.ai",
+    "section": "Eksempel: en app på en uke",
+    "text": "Eksempel: en app på en uke\n\n\n\n\nParagliderapp du bruker mens du flyr Første versjon: en uke med kodeagent Testet i lufta over Colombia\n\n\n\nKart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#og-personvernet-for-samme-app",
+    "href": "norgesbank/presentasjon.html#og-personvernet-for-samme-app",
+    "title": "eide.ai",
+    "section": "… og personvernet for samme app",
+    "text": "… og personvernet for samme app\n\n\nApple og Google krevde personvernerklæring Stor kodebase, mange lover Agenten gikk gjennom koden Trolig bedre enn uten\n\n\n\n\nFor å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#flere-eksempler",
+    "href": "norgesbank/presentasjon.html#flere-eksempler",
+    "title": "eide.ai",
+    "section": "Flere eksempler",
+    "text": "Flere eksempler\n\n\n\nSolrute-app\nBarnevogn på solsiden av gata\n\n\n\nVergeportalen\nInnlogging for offentlige\n\n\n\nRobotikk\n«Neste robotbevegelse»\n\n\n\nSolrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: youtube.com/watch?v=bemrcQcHmMk)."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#mange-agenter-samtidig",
+    "href": "norgesbank/presentasjon.html#mange-agenter-samtidig",
+    "title": "eide.ai",
+    "section": "Mange agenter samtidig",
+    "text": "Mange agenter samtidig\n\n\nSkjermbilde av hangar: mine kodeagenter som jobber parallelt, mange av dem på pgpilot. Jeg er ikke lenger den som skriver koden, jeg er den som sier hva som skal lages og sjekker resultatet."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#hva-skjer-med-software",
+    "href": "norgesbank/presentasjon.html#hva-skjer-med-software",
+    "title": "eide.ai",
+    "section": "Hva skjer med software?",
+    "text": "Hva skjer med software?\n\n\n\n\nE-bokleseren min var dårlig Support tok evigheter Så jeg laget min egen Bedre, og raskere enn å vente\n\n\neideReader: min egen e-bokleser. I stedet for å bruke tid på support for en dårlig e-bokleser, laget jeg min egen, som passer akkurat meg: samlinger av artikler og bøker, opplesning, fortsett der du slapp. Det tok kort tid med agentene.\nHva betyr det for software når det er så lett å lage ting? Mye av det vi kjøper i dag, fordi det er dyrt å lage selv, kan vi lage selv. Spørsmålet er ikke lenger om vi har råd til å bygge det, men om vi vet hva vi vil ha."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#toget-har-gått",
+    "href": "norgesbank/presentasjon.html#toget-har-gått",
+    "title": "eide.ai",
+    "section": "«Toget har gått»",
+    "text": "«Toget har gått»\n\n\n\n\n\nFarfar Kjartan, 86\nSluttet å kode i 1974\nPlukket opp et uferdig prosjekt\nKoder COBOL, med Claude som hjelper\n\n\n\nFarfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#en-dødelig-treenighet",
+    "href": "norgesbank/presentasjon.html#en-dødelig-treenighet",
+    "title": "eide.ai",
+    "section": "En dødelig treenighet",
+    "text": "En dødelig treenighet\n\n\n\n\nModellen skiller ikke instruksjoner fra innhold.\n\nPrivat data\nUpålitelig innhold (web, e-post)\nKan kommunisere utad\n\n→ ondsinnet tekst kan kapre agenten\n\n\nSimon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Eksempelet med gulrotkaken fra KI Sør passer her."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#plan",
+    "href": "norgesbank/presentasjon.html#plan",
+    "title": "eide.ai",
+    "section": "Plan",
+    "text": "Plan\n\nOppgaven forsvinner, formålet blir (Hinton og radiologene)\nJevons: billigere analyse gir mer analyse\nTilbake til de Witt: ti år eller hundre?"
   }
 ]
