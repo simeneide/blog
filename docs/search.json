@@ -1558,7 +1558,7 @@
     "href": "norgesbank/presentasjon.html#spesialister",
     "title": "eide.ai",
     "section": "",
-    "text": "Modellparametriske modeller av virkeligheten\n\nFinans, 1973\n\n\n\nData«90 % av verdens data er laget de siste to årene»\n\nSøk, 1998\n\n\n\nTreningdatamaskinen og skjermkortet\n\nENIAC 1946, bilder 2012\n\n\n\nBeslutningbeslutninger under usikkerhet\n\nSMART, i dag\n\n\n\n\n\nFinans: Black-Scholes (1973)\n\n\n\n\n\nSøk og anbefalinger: Google (1998), FINN\n\n\n\n\n\nFra ENIAC (1946) til et nevralt nett på to skjermkort (AlexNet, 2012)\n\n\n\n\n\nPrisprediksjon: SMART og renten. Workshop i ettermiddag!\n\n\n\n    \n\nHva har vi gjort fra 1693 til nå? Vi har foredlet og forbedret de samme fire prinsippene.\nModell: vi har laget parametriske modeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. Eksempel: finans. Black og Scholes (1973) priser opsjoner, og formelen gjorde opsjonsmarkedet mulig.\nData: med datamaskinen og internett eksploderer datamengden. SINTEF regnet i 2013 ut at 90 % av verdens data var laget de siste to årene. Eksempel: søk og anbefalinger. Google i 1998, FINN: sannsynligheten for klikk, gitt søkeord og tidligere adferd.\nTrening: datamaskinen, fra ENIAC i 1946 (bildet: Glen Beck og Betty Snyder programmerer den), og til slutt skjermkortet. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.\nBeslutning: beslutninger under usikkerhet. Her i huset: SMART, rundt 500 modeller for inflasjonen, som brukes når renten settes. Det er dette vi bygger i workshopen i ettermiddag."
+    "text": "Modellmer avanserte beskrivelser av virkeligheten\n\n\n\n\n\nData«90 % av verdens data er laget de siste to årene»\n\n\n\n\n\nTreningeffektivt tilpasse modell til data\n\n\n\n\n\nBeslutningbeslutninger under usikkerhet\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrisprediksjon: Workshop i ettermiddag!\n\n\n\n     \n\nHva har vi gjort fra 1693 til nå? Vi har foredlet og forbedret de samme fire prinsippene.\nModell: vi har laget parametriske modeller, økonometri og tidsseriemodeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. To eksempler. Til venstre en gaussisk prosess: modellen gir ikke bare en kurve, men usikkerheten rundt den. Den er minst der vi har data og størst mellom datapunktene. Til høyre røntgen: modeller som leser bilder, som CheXNet (2017), fant lungebetennelse omtrent like godt som radiologer.\nData: med datamaskinen og internett eksploderer datamengden. SINTEF regnet i 2013 ut at 90 % av verdens data var laget de siste to årene. Eksempel: søk og anbefalinger. Google i 1998, FINN: sannsynligheten for klikk, gitt søkeord og tidligere adferd.\nTrening: fra maximum likelihood til gradient descent på skjermkort. Grafen: gradient descent. Feilen som funksjon av en parameter er litt humpete. Vi går i retningen der feilen faller, men med store steg hopper vi over bunnen og lander på den andre siden, fram og tilbake, og kommer stadig nærmere bunnen. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.\nKlammen: det som gjør data og trening mulig, er datamaskinen. ENIAC i 1946, her programmert av Glen Beck og Betty Snyder.\nBeslutning: beslutninger under usikkerhet. Her i huset: SMART, rundt 500 modeller for inflasjonen, som brukes når renten settes. Det er dette vi bygger i workshopen i ettermiddag."
   },
   {
     "objectID": "norgesbank/presentasjon.html#en-oppgave",
@@ -1579,14 +1579,14 @@
     "href": "norgesbank/presentasjon.html#neste-ord",
     "title": "eide.ai",
     "section": "",
-    "text": "Modelltransformer, milliarder av parametre\n\n\nDatatekst fra hele internett\n\n\nTreninggjett neste ord, om og om igjen\n\n\nBeslutninghvilket ord som skrives\n\n\n\n   \n\nSlik virker en språkmodell: den gir en sannsynlighet for hvert mulig neste ord, gitt ordene så langt. Vi velger et ord, legger det til, og spør igjen. Buene er transformeren fra 2017: for hvert nytt ord ser modellen på alle ordene før, og bestemmer selv hvor mye hvert av dem skal telle (attention). Tykk bue: viktig ord. Når den skal velge «uendret», ser den mest på «holdes». Tallene her er laget for illustrasjon. Legg merke til at modellen er usikker på det første ordet: holdes, settes ned eller økes. Det er det samme spørsmålet Norges Bank stiller seg, og det samme som viften i del 2."
+    "text": "Slik virker en språkmodell: den gir en sannsynlighet for hvert mulig neste ord, gitt ordene så langt. Vi velger et ord, legger det til, og spør igjen. Buene er transformeren fra 2017: for hvert nytt ord ser modellen på alle ordene før, og bestemmer selv hvor mye hvert av dem skal telle (attention). Tykk bue: viktig ord. Når den skal velge «uendret», ser den mest på «holdes». Tallene her er laget for illustrasjon. Legg merke til at modellen er usikker på det første ordet: holdes, settes ned eller økes. Det er det samme spørsmålet Norges Bank stiller seg, og det samme som viften i del 2."
   },
   {
     "objectID": "norgesbank/presentasjon.html#samme",
     "href": "norgesbank/presentasjon.html#samme",
     "title": "eide.ai",
     "section": "",
-    "text": "1654 P(vinne | stillingen)\n\n\n 2017 P(klikk | tidligere adferd)\n\n\nNorges Bank holder renten … 2023 P(neste ord | ordene så langt)\n\n\n\nModelltransformer på neste ord\n\n\nDatahele internett\n\n\nTreninggradient descent\n\n\nBeslutningneste ord"
+    "text": "1654 P(vinne | stillingen)\n\n\n 2017 P(klikk | tidligere adferd)\n\n\nNorges Bank holder renten … 2026 P(neste ord | ordene så langt)\n\n\n\nModelltransformer på neste ord\n\n\nDatahele internett\n\n\nTreninggradient descent\n\n\nBeslutningneste ord"
   },
   {
     "objectID": "norgesbank/presentasjon.html#anvendelse",
@@ -1614,7 +1614,7 @@
     "href": "norgesbank/presentasjon.html#agent",
     "title": "eide.ai",
     "section": "",
-    "text": "SpråkmodellP(neste ord | ordene så langt)\n\n\n  \n\n\nverktøykall\n\n\nsvaret som tekst\n\n\nE-postKalenderWebsøkKodeBankID\n\n\n… om og om igjen, til oppgaven er løst\n\n\n   \n\nModellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger."
+    "text": "SpråkmodellP(neste ord | ordene så langt)\n\n\n  \n\n\nverktøykall\n\n\nsvaret som tekst\n\n\nE-postKalenderWebsøkKodeBankID\n\n\n… om og om igjen, til oppgaven er løst\n\n\n\nBruker: Hva er gjennomsnittlig styringsrente de siste ti årene?\n\n\nAgent: \n\n\n\n         \n\nModellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger.\nKlikk 5-10: slik ser det faktisk ut, bare tekst. Klikk 5: brukerens spørsmål. Klikk 6: modellen skriver, og skriver en verktøy-kommando (rødt): hent data fra Norges Banks data-API. Et lite program ser kommandoen, stopper modellen og kjører den. Klikk 7: programmet limer inn dataene (gull), 2 516 virkedager. Klikk 8: modellen skriver en ny kommando, Python som regner ut snittet. Klikk 9: svaret limes inn, 1,987. Klikk 10: modellen svarer brukeren. Om og om igjen, til oppgaven er løst. Tallet er ekte: styringsrenten per virkedag fra november 2016 til oktober 2026."
   },
   {
     "objectID": "norgesbank/presentasjon.html#eksempel-en-app-på-en-uke",
@@ -1656,7 +1656,7 @@
     "href": "norgesbank/presentasjon.html#toget-har-gått",
     "title": "eide.ai",
     "section": "«Toget har gått»",
-    "text": "«Toget har gått»\n\n\n\n\n\nFarfar Kjartan, 86\nSluttet å kode i 1974\nPlukket opp et uferdig prosjekt\nKoder COBOL, med Claude som hjelper\n\n\n\nFarfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger."
+    "text": "«Toget har gått»\n\n\n\n\nFarfar Kjartan, 86 Sluttet å kode i 1974 Plukket opp et uferdig prosjekt Koder COBOL, med Claude som hjelper\n\n\nFarfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger."
   },
   {
     "objectID": "norgesbank/presentasjon.html#en-dødelig-treenighet",
@@ -1671,5 +1671,82 @@
     "title": "eide.ai",
     "section": "Plan",
     "text": "Plan\n\nOppgaven forsvinner, formålet blir (Hinton og radiologene)\nJevons: billigere analyse gir mer analyse\nTilbake til de Witt: ti år eller hundre?"
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#generalist",
+    "href": "norgesbank/presentasjon.html#generalist",
+    "title": "eide.ai",
+    "section": "Generalisten",
+    "text": "Generalisten\n\n\nTrenes på all tekst i verden Til å løse alle problemer i verden Stadig flere domener: tekst, bilder, robotikk …\n\n\n\n\nMotsatsen til spesialistene i del 2: der hadde vi én modell per oppgave, med egne data og egen trening. Nå trener vi én modell på all tekst vi kan få tak i, og den samme modellen kan brukes på effektivt alle problemer vi har, så lenge de kan beskrives med tekst. Og transformeren tar stadig flere domener: tekst, bilder, lyd, video, robotikk. Samme arkitektur, nye data."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#skjedd",
+    "href": "norgesbank/presentasjon.html#skjedd",
+    "title": "eide.ai",
+    "section": "Hva har skjedd?",
+    "text": "Hva har skjedd?\nFør 2026: effektiv auto-complete 2026: utviklere skriver ikke kode selv\n\n\n\n\n\n\nSoftware-aksjer faller når AI-selskapene lanserer produkter. Før 2026 føltes det som effektiv auto-complete. I 2026 skriver ikke de beste utviklerne kode selv lenger, agentene gjør det. De er faktisk nyttige.\nGrafen (METR) bygges i tre klikk: hvor lange programmeringsoppgaver, målt i menneske-timer, AI-agenter løser halvparten av gangene. Klikk 1: frem til ChatGPT, GPT-2 og GPT-3 klarer nesten ingenting. Klikk 2: frem til GPT-5 (august 2025), rundt to timer. Klikk 3: resten, på under et år. GPT-4 i 2023: noen minutter. Claude Opus 4.6 i februar 2026: rundt 12 timer. Det siste punktet (Claude Mythos, april 2026, 17 timer) er over det METR kan måle pålitelig. Dobling omtrent hver fjerde måned siden 2023.\n\n\nData: METR, Time Horizon 1.1 (sist oppdatert april 2026). Åpen sirkel: over 16 timer, utenfor det METR kan måle pålitelig."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#to-muligheter",
+    "href": "norgesbank/presentasjon.html#to-muligheter",
+    "title": "eide.ai",
+    "section": "",
+    "text": "AGjøre ekstremt mye mer\n\n\nBTid til å tenke på det vanskelige\n\n\n\n\n\n \n\nAgentene gir oss to muligheter.\nA: vi kan gjøre ekstremt mye mer. Her er mine kodeagenter som jobber samtidig, mange av dem på pgpilot. Vi kan produsere mye mer enn før.\nB: vi kan gi oss selv tid til å tenke på de vanskelige tingene. Eksempel fra forskning: Camille og jeg lager en modell som skal predikere snøskred. Da trenger vi værdata og varslingsdata fra Varsom, og må sammenstille dem i romlige dataformater. Det har tidligere vært uker med arbeid. Vi diskuterte med Claude i 20 minutter, og så fikset den det for hele historikken. Da kunne vi bruke tiden på selve modellen: hva betyr det egentlig å modellere skredfare?\nBildene: snøskred (Everest, public domain) og Varsom-kartet over skredfare per region 1. mars 2026 (NVE)."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#vet-hva",
+    "href": "norgesbank/presentasjon.html#vet-hva",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Hvis du vet hva som skal gjøres,er AI sykt god til å få det gjort\n\nDet er hovedpoenget med agentene. Når oppgaven er klar, kjører de på og kjører på, og gjør jobben raskere og ofte bedre enn vi ville gjort selv. Det vanskelige er å vite hva som skal gjøres."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#app-uke",
+    "href": "norgesbank/presentasjon.html#app-uke",
+    "title": "eide.ai",
+    "section": "Eksempel: en app på en uke",
+    "text": "Eksempel: en app på en uke\n\n\n\n\n\nParagliderapp du bruker mens du flyr Kart, høyde, vind og venners posisjon Første versjon: en uke med kodeagent\n\n\n\n\n\n\nKart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#personvern",
+    "href": "norgesbank/presentasjon.html#personvern",
+    "title": "eide.ai",
+    "section": "… og personvernet for samme app",
+    "text": "… og personvernet for samme app\n\nHere's the full gap analysis between your privacy policy (last updated Feb 26, 2026) and the current codebase:\n---\nPrivacy Policy Gaps – 9 Issues Found\nHigh Severity (policy contradicts code)\n1. \"Location data is not stored on our servers\" – false\n- flight-cloud.ts:130-156 uploads flight metadata (launch lat/lng/alt, track_simplified) to Supabase\n- flight-cloud.ts:719-756 auto-uploads live track chunks (1Hz GPS) every ~30s during flights\n- IGC files are stored in Supabase Storage\n- The policy says tracks \"never leave your device unless you explicitly export\" …\n\n\nFor å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#flere",
+    "href": "norgesbank/presentasjon.html#flere",
+    "title": "eide.ai",
+    "section": "Flere eksempler",
+    "text": "Flere eksempler\n\n\n\nSolrute-app\nBarnevogn på solsiden av gata\n\n\n\nVergeportalen\nInnlogging for offentlige\n\n\n\n\nRobotikk\n«Neste robotbevegelse»\n\n\n\nSolrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: Physical Intelligence, π0, youtube.com/watch?v=bemrcQcHmMk, 40 sekunder uten lyd)."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#bobla",
+    "href": "norgesbank/presentasjon.html#bobla",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Vet ikke.\n\n\n~2 %av USAs BNP til AI-investeringer i 2026\n\n\n“Once we have a really powerful superintelligence, addressing climate change will not be particularly difficult.”Sam Altman, Tel Aviv, 2023\n\n\n\n\n\n«Bare en stokastisk papegøye som hallucinerer»\n\n\n\n\n“People should stop training radiologists now.”Geoffrey Hinton, Toronto, 20162025: Rekordetterspørsel etter radiologer\n\n\n\n~2 %: prognoser fra Goldman Sachs (1,8 %) og TS Lombard (2 %), via Forbes 5.6.2026. Radiologi: NRMP 2025.\n\n\n      \n\nJeg skal ikke stå foran et rom fullt av økonomer og si om vi er i en boble. Vet ikke. Men her er noe dokumentasjon.\n2 %: AI-investeringer er anslått til rundt 2 % av USAs BNP i 2026, nær forsvarsbudsjettet (Goldman Sachs 1,8 %, TS Lombard 2 %). Målt i første kvartal var det 0,8 % for datasentre, maskinvare og nettverk (Epoch AI). Anslagene for andelen av BNP-veksten spenner fra en fjerdedel til tre fjerdedeler.\nStrøm: forbruket i Norge har vokst jevnt siden 1990. Statnett venter at datasentrene alene står for rundt 10 % av forbruket i 2035. Den røde vifta er Statnetts scenarier for totalforbruket (160 til 220 TWh i 2060), den grå er det samme uten datasentre (146 til 185 TWh). Avstanden mellom midtlinjene er datasentrene. Resten av forbruket er faktisk mer usikkert enn datasentrene (14 til 35 TWh).\nAltman (Tel Aviv University, 5. juni 2023): «I don’t want to say this because climate change is so serious and so hard of a problem, but I think once we have a really powerful superintelligence, addressing climate change will not be particularly difficult for a system like that.»\nPascal (bare muntlig): hvis ett av utfallene er uendelig stort, er forventningsverdien uendelig uansett hvor liten sannsynligheten er. Det er Pascals veddemål, fra samme Pascal som vi startet med. Han brukte det om Gud: tror du og Gud finnes, vinner du evig liv, så det lønner seg å tro uansett hvor liten sannsynligheten er.\nPapegøye: kritikken er irrelevant for prisingen. Hvis det blir generell intelligens, er oppsiden ubegrenset, og da kan den knapt prises for høyt.\nHinton, 2016: «People should stop training radiologists now.» I 2025 var det rekordmange utdanningsstillinger i radiologi i USA (1 208, +4 %), og lønna har økt med rundt 48 % siden 2015. Bedre verktøy ga mer etterspørsel. Ikke hør på AI-ekspertene om arbeidsmarkedet."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#treenighet",
+    "href": "norgesbank/presentasjon.html#treenighet",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Bruker: Har du en god oppskrift på gulrotkake?\n\n\nAgent: \n\n\n\n    \n\nSimon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Modellen skiller ikke instruksjoner fra innhold: alt er bare tekst.\nKlikk 1: brukeren spør om en gulrotkake. Klikk 2: agenten søker på nettet. Klikk 3: svaret limes inn, men nettsiden slutter med tekst som ser ut som slutten på svaret og en ny melding fra brukeren. Klikk 4: den er markert. Klikk 5: «Da sender jeg kontoutskriften.» Neste steg er å hente kontoutskriften (privat data) og sende den på e-post (kommunikasjon utad), og så svare høflig med oppskriften. Brukeren merker ingenting."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#takk",
+    "href": "norgesbank/presentasjon.html#takk",
+    "title": "eide.ai",
+    "section": "",
+    "text": "Takk!\nSimen Eide · simen@eide.ai · eide.ai\n\n\nModelltransformer på neste ord\n\n\nDatahele internett\n\n\nTreninggradient descent\n\n\nBeslutningneste ord\n\n\n\nTa med hjem (muntlig): AI-revolusjonen startet ikke i 2023, men mye før. Eksperimentfasen er over: alle bør bruke dette. Organisasjoner må gi tillit og frihet til å prøve. Ansatte må eksperimentere, men også ta ansvar for hva agentene deres gjør.\nHva betyr det for dere? Oppgavene forsvinner, formålet blir. Billigere analyse gir mer analyse, ikke mindre (Jevons). Og tilbake til de Witt: han priste livrenter med en modell som holdt i hundre år. Spørsmålet er hvilke av dagens modeller som gjør det samme."
+  },
+  {
+    "objectID": "norgesbank/presentasjon.html#software",
+    "href": "norgesbank/presentasjon.html#software",
+    "title": "eide.ai",
+    "section": "Hva skjer med software?",
+    "text": "Hva skjer med software?\n\n\n\n\nE-bokleseren min var dårlig Support tok evigheter Så jeg laget min egen Bedre, og raskere enn å vente\n\n\neideReader: min egen e-bokleser. I stedet for å bruke tid på support for en dårlig e-bokleser, laget jeg min egen, som passer akkurat meg: samlinger av artikler og bøker, opplesning, fortsett der du slapp. Det tok kort tid med agentene.\nHva betyr det for software når det er så lett å lage ting? Mye av det vi kjøper i dag, fordi det er dyrt å lage selv, kan vi lage selv. Spørsmålet er ikke lenger om vi har råd til å bygge det, men om vi vet hva vi vil ha."
   }
 ]

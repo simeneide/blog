@@ -682,68 +682,65 @@ Beslutning
 <h1>Spesialistene</h1>
 
 </section>
-
 <section id="spesialister" class="slide level2 stage-slide">
 <h2></h2>
 <div class="stage spes-stage">
-<div class="stage-title" data-title-0="Foredlet">
+<div class="stage-title" data-title-0="Foredlet fundamentet">
 
 </div>
 <div class="scol k1">
-<b>Modell</b><span class="sp" data-show="1">parametriske modeller av virkeligheten</span>
-<div class="sthumb" data-show="2">
-<img src="img/option.svg" alt=""><i>Finans, 1973</i>
+<b>Modell</b><span class="sp" data-show="1">mer avanserte beskrivelser av virkeligheten</span>
+<div class="sthumb two" data-show="2">
+<img src="img/gp.svg" alt=""><img src="img/xray.png" alt="">
 </div>
 </div>
 <div class="scol k2">
 <b>Data</b><span class="sp" data-show="2">«90 % av verdens data er laget de siste to årene»</span>
 <div class="sthumb" data-show="3">
-<img src="img/finn_reco.jpg" alt=""><i>Søk, 1998</i>
+<img src="img/data_sok.jpg" alt="">
 </div>
 </div>
 <div class="scol k3">
-<b>Trening</b><span class="sp" data-show="3">datamaskinen og skjermkortet</span>
-<div class="sthumb two" data-show="4">
-<img src="img/eniac.jpg" alt=""><img src="img/alexnet_ex.jpg" alt=""><i>ENIAC 1946, bilder 2012</i>
+<b>Trening</b><span class="sp" data-show="3">effektivt tilpasse modell til data</span>
+<div class="sthumb" data-show="4">
+<img src="img/gradient_descent.svg" alt="">
 </div>
 </div>
 <div class="scol k4">
-<b>Beslutning</b><span class="sp" data-show="4">beslutninger under usikkerhet</span>
-<div class="sthumb" data-show="5">
-<img src="img/kpi_fan.svg" alt=""><i>SMART, i dag</i>
+<b>Beslutning</b><span class="sp" data-show="5">beslutninger under usikkerhet</span>
+<div class="sthumb" data-show="6">
+<img src="img/kpi_fan.svg" alt="">
 </div>
 </div>
-<div class="scard k1" data-show="1" data-hide="2">
-<img src="img/option.svg" alt="Opsjonsprising">
-<p>
-Finans: Black-Scholes (1973)
-</p>
+<div class="hbrace" data-show="4">
+<svg viewbox="0 0 560 40" preserveaspectratio="none">
+<path d="M 4 4 Q 4 20 40 20 L 240 20 Q 280 20 280 36 Q 280 20 320 20 L 520 20 Q 556 20 556 4"></path>
+</svg>
+<img src="img/eniac.jpg" alt="ENIAC, den første store datamaskinen">
+</div>
+<div class="scard k1 two" data-show="1" data-hide="2">
+<img src="img/gp.svg" alt="Gaussisk prosess: usikkerheten er minst ved datapunktene"><img src="img/xray.png" alt="Røntgenbilde av brystkassen">
 </div>
 <div class="scard k2" data-show="2" data-hide="3">
-<img src="img/finn_reco.jpg" alt="FINN-anbefalinger">
-<p>
-Søk og anbefalinger: Google (1998), FINN
-</p>
+<img src="img/data_sok.jpg" alt="Google i 1998 og FINNs anbefalinger">
 </div>
-<div class="scard k3 two" data-show="3" data-hide="4">
-<img src="img/eniac.jpg" alt="ENIAC"><img src="img/alexnet_ex.jpg" alt="AlexNet">
-<p>
-Fra ENIAC (1946) til et nevralt nett på to skjermkort (AlexNet, 2012)
-</p>
+<div class="scard k3" data-show="3" data-hide="4">
+<img src="img/gradient_descent.svg" alt="Gradient descent hopper fra side til side nedover feilkurven">
 </div>
-<div class="scard k4" data-show="4" data-hide="5">
+<div class="scard k4" data-show="5" data-hide="6">
 <img src="img/kpi_fan.svg" alt="KPI-viften">
 <p>
-Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
+Prisprediksjon: <em>Workshop i ettermiddag!</em>
 </p>
 </div>
 </div>
-<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
 <aside class="notes">
 <p>Hva har vi gjort fra 1693 til nå? Vi har foredlet og forbedret de samme fire prinsippene.</p>
-<p>Modell: vi har laget parametriske modeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. Eksempel: finans. Black og Scholes (1973) priser opsjoner, og formelen gjorde opsjonsmarkedet mulig.</p>
+<p>Modell: vi har laget parametriske modeller, økonometri og tidsseriemodeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. To eksempler. Til venstre en gaussisk prosess: modellen gir ikke bare en kurve, men usikkerheten rundt den. Den er minst der vi har data og størst mellom datapunktene. Til høyre røntgen: modeller som leser bilder, som CheXNet (2017), fant lungebetennelse omtrent like godt som radiologer.</p>
 <p>Data: med datamaskinen og internett eksploderer datamengden. SINTEF regnet i 2013 ut at 90 % av verdens data var laget de siste to årene. Eksempel: søk og anbefalinger. Google i 1998, FINN: sannsynligheten for klikk, gitt søkeord og tidligere adferd.</p>
-<p>Trening: datamaskinen, fra ENIAC i 1946 (bildet: Glen Beck og Betty Snyder programmerer den), og til slutt skjermkortet. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.</p>
+<p>Trening: fra maximum likelihood til gradient descent på skjermkort. Grafen: gradient descent. Feilen som funksjon av en parameter er litt humpete. Vi går i retningen der feilen faller, men med store steg hopper vi over bunnen og lander på den andre siden, fram og tilbake, og kommer stadig nærmere bunnen. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.</p>
+<p>Klammen: det som gjør data og trening mulig, er datamaskinen. ENIAC i 1946, her programmert av Glen Beck og Betty Snyder.</p>
 <p>Beslutning: beslutninger under usikkerhet. Her i huset: SMART, rundt 500 modeller for inflasjonen, som brukes når renten settes. Det er dette vi bygger i workshopen i ettermiddag.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -804,22 +801,8 @@ Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
 <div class="stage-title" data-title-0="P(neste ord | ordene så langt)">
 
 </div>
-<div class="fire4" data-show="4">
-<div>
-<b>Modell</b>transformer, milliarder av parametre
 </div>
-<div>
-<b>Data</b>tekst fra hele internett
-</div>
-<div>
-<b>Trening</b>gjett neste ord, om og om igjen
-</div>
-<div>
-<b>Beslutning</b>hvilket ord som skrives
-</div>
-</div>
-</div>
-<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
 <aside class="notes">
 <p>Slik virker en språkmodell: den gir en sannsynlighet for hvert mulig neste ord, gitt ordene så langt. Vi velger et ord, legger det til, og spør igjen. Buene er transformeren fra 2017: for hvert nytt ord ser modellen på alle ordene før, og bestemmer selv hvor mye hvert av dem skal telle (attention). Tykk bue: viktig ord. Når den skal velge «uendret», ser den mest på «holdes». Tallene her er laget for illustrasjon. Legg merke til at modellen er usikker på det første ordet: holdes, settes ned eller økes. Det er det samme spørsmålet Norges Bank stiller seg, og det samme som viften i del 2.</p>
 <style type="text/css">
@@ -839,11 +822,10 @@ Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
 <h1>Generalisten</h1>
 
 </section>
-
 <section id="samme" class="slide level2 stage-slide">
 <h2></h2>
 <div class="stage samme-stage">
-<div class="stage-title" data-title-0="Hva er forskjellen nå?" data-title-4="Alt er det samme">
+<div class="stage-title" data-title-0="" data-title-4="Alt er det samme">
 
 </div>
 <div class="crow" data-show="1">
@@ -853,7 +835,7 @@ Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
 <p><span class="ci"><img data-src="img/t_finn.jpg" class="sq"></span> <span class="cy">2017</span> <span class="cf">P(klikk <span>|</span> tidligere adferd)</span></p>
 </div>
 <div class="crow" data-show="3">
-<p><span class="ci"><span class="bubble-ico">Norges Bank holder renten …</span></span> <span class="cy">2023</span> <span class="cf">P(neste ord <span>|</span> ordene så langt)</span></p>
+<p><span class="ci"><span class="bubble-ico">Norges Bank holder renten …</span></span> <span class="cy">2026</span> <span class="cf">P(neste ord <span>|</span> ordene så langt)</span></p>
 </div>
 <div class="fire4 pics" data-show="4">
 <div>
@@ -878,9 +860,9 @@ Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
 <div class="stage-title" data-title-0="… og ingenting er det samme">
 
 </div>
-<p><img class="fax f1" data-show="1" src="img/news_hacking_vg.png" alt="VG: OpenAIs egne agenter «rømte» – hacket stort dataselskap"> <img class="fax f2" data-show="2" src="img/news_openbsd_scworld_crop.png" alt="SC Media: Claude Mythos Preview identifies 27-year-old bug"> <img class="fax f3" data-show="3" src="img/news_compiler_arstechnica.png" alt="Ars Technica: Sixteen Claude AI agents created a new C compiler"> <img class="fax f4" data-show="4" src="img/news_erdos_abcnyheter.png" alt="ABC Nyheter: KI knekker 80 år gammel matte-nøtt"> <img class="fax f5" data-show="5" src="img/news_navierstokes_quanta.png" alt="Quanta: AI Has Solved One of Math's $1 Million Millennium Prize Problems"> <img class="fax f6" data-show="6" src="img/news_ipo_npr.png" alt="NPR: AI giant Anthropic files for an IPO that could break records"></p>
+<p><img class="fax f1" data-show="1" src="img/news_hacking_vg.png" alt="VG: OpenAIs egne agenter «rømte» – hacket stort dataselskap"> <img class="fax f2" data-show="1" src="img/news_openbsd_scworld_crop.png" alt="SC Media: Claude Mythos Preview identifies 27-year-old bug"> <img class="fax f3" data-show="1" src="img/news_compiler_arstechnica.png" alt="Ars Technica: Sixteen Claude AI agents created a new C compiler"> <img class="fax f4" data-show="1" src="img/news_erdos_abcnyheter.png" alt="ABC Nyheter: KI knekker 80 år gammel matte-nøtt"> <img class="fax f5" data-show="1" src="img/news_navierstokes_quanta.png" alt="Quanta: AI Has Solved One of Math's $1 Million Millennium Prize Problems"> <img class="fax f6" data-show="1" src="img/news_ipo_npr.png" alt="NPR: AI giant Anthropic files for an IPO that could break records"></p>
 </div>
-<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<p><span class="fragment gstep"></span></p>
 <aside class="notes">
 <p>Bare for å vise at det skjer mye, ikke gå i detalj.</p>
 <p>Juli 2026: OpenAIs egne cyber-agenter rømte fra testmiljøet og hacket Hugging Face. OpenAI kalte det «a warning shot» (VG 27. aug., CNBC 22. juli). Hugging Face etterforsket med en åpen modell (GLM-5.2) på egne maskiner, fordi de kommersielle modellene nektet å hjelpe.</p>
@@ -901,7 +883,29 @@ Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
           display:block!important;
       }</style></aside>
 </section>
-<section id="hva-har-skjedd" class="slide level2">
+<section id="generalist" class="slide level2">
+<h2>Generalisten</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><span class="fragment tline">Trenes på all tekst i verden</span> <span class="fragment tline">Til å løse alle problemer i verden</span> <span class="fragment tline">Stadig flere domener: tekst, bilder, robotikk&nbsp;…</span></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="img/ic_transformer.png" class="gen-tf"></p>
+</div></div>
+<aside class="notes">
+<p>Motsatsen til spesialistene i del 2: der hadde vi én modell per oppgave, med egne data og egen trening. Nå trener vi én modell på all tekst vi kan få tak i, og den samme modellen kan brukes på effektivt alle problemer vi har, så lenge de kan beskrives med tekst. Og transformeren tar stadig flere domener: tekst, bilder, lyd, video, robotikk. Samme arkitektur, nye data.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="skjedd" class="slide level2">
 <h2>Hva har skjedd?</h2>
 <p><span class="fragment tline">Før 2026: effektiv auto-complete</span> <span class="fragment tline">2026: utviklere skriver ikke kode selv</span></p>
 <div class="r-stack metr-stack">
@@ -926,6 +930,334 @@ Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em>
 <div class="credit">
 <p>Data: METR, Time Horizon 1.1 (sist oppdatert april 2026). Åpen sirkel: over 16 timer, utenfor det METR kan måle pålitelig.</p>
 </div>
+</section>
+<section id="agent" class="slide level2 stage-slide">
+<h2></h2>
+<div class="stage agent-stage">
+<div class="stage-title" data-title-0="En agent er en språkmodell med verktøy">
+
+</div>
+<div class="ag-llm">
+Språkmodell<small>P(neste ord | ordene så langt)</small>
+</div>
+<svg class="ag-arrows" viewbox="0 0 1280 800">
+<defs><marker id="agh" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8b1e1e"></path></marker></defs> <path data-show="2" d="M 480 330 C 600 250, 700 250, 800 300" marker-end="url(#agh)"></path> <path data-show="3" d="M 800 470 C 700 540, 600 540, 480 470" marker-end="url(#agh)"></path>
+</svg>
+<div class="ag-lab ag-call" data-show="2">
+verktøykall
+</div>
+<div class="ag-lab ag-back" data-show="3">
+svaret som tekst
+</div>
+<div class="ag-tools" data-show="1">
+<span>E-post</span><span>Kalender</span><span>Websøk</span><span>Kode</span><span>BankID</span>
+</div>
+<div class="ag-loop" data-show="4">
+… om og om igjen, til oppgaven er løst
+</div>
+<div class="agtype" data-show="5">
+<div class="t-line">
+<b>Bruker:</b> Hva er gjennomsnittlig styringsrente de siste ti årene?
+</div>
+<div class="t-line">
+<b>Agent:</b> <span class="t-agent"></span>
+</div>
+</div>
+</div>
+<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<aside class="notes">
+<p>Modellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger.</p>
+<p>Klikk 5-10: slik ser det faktisk ut, bare tekst. Klikk 5: brukerens spørsmål. Klikk 6: modellen skriver, og skriver en verktøy-kommando (rødt): hent data fra Norges Banks data-API. Et lite program ser kommandoen, stopper modellen og kjører den. Klikk 7: programmet limer inn dataene (gull), 2 516 virkedager. Klikk 8: modellen skriver en ny kommando, Python som regner ut snittet. Klikk 9: svaret limes inn, 1,987. Klikk 10: modellen svarer brukeren. Om og om igjen, til oppgaven er løst. Tallet er ekte: styringsrenten per virkedag fra november 2016 til oktober 2026.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="to-muligheter" class="slide level2 stage-slide">
+<h2></h2>
+<div class="stage tom-stage">
+<div class="stage-title" data-title-0="To muligheter">
+
+</div>
+<div class="tom-side a" data-show="1">
+<b>A</b><span class="tom-h">Gjøre ekstremt mye mer</span><img class="tom-hangar" src="img/ag_hangar.png" alt="Mange kodeagenter som jobber samtidig">
+</div>
+<div class="tom-side b" data-show="2">
+<b>B</b><span class="tom-h">Tid til å tenke på det vanskelige</span>
+<div class="tom-pics">
+<img src="img/skred.jpg" alt="Snøskred"><img src="img/varsom_kart.png" alt="Varsom: snøskredfare per region">
+</div>
+</div>
+</div>
+<p><span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<aside class="notes">
+<p>Agentene gir oss to muligheter.</p>
+<p>A: vi kan gjøre ekstremt mye mer. Her er mine kodeagenter som jobber samtidig, mange av dem på pgpilot. Vi kan produsere mye mer enn før.</p>
+<p>B: vi kan gi oss selv tid til å tenke på de vanskelige tingene. Eksempel fra forskning: Camille og jeg lager en modell som skal predikere snøskred. Da trenger vi værdata og varslingsdata fra Varsom, og må sammenstille dem i romlige dataformater. Det har tidligere vært uker med arbeid. Vi diskuterte med Claude i 20 minutter, og så fikset den det for hele historikken. Da kunne vi bruke tiden på selve modellen: hva betyr det egentlig å modellere skredfare?</p>
+<p>Bildene: snøskred (Everest, public domain) og Varsom-kartet over skredfare per region 1. mars 2026 (NVE).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="vet-hva" class="slide level2">
+<h2></h2>
+<p><span class="statement long">Hvis du vet hva som skal gjøres,<br>er AI sykt god til å få det gjort</span></p>
+<aside class="notes">
+<p>Det er hovedpoenget med agentene. Når oppgaven er klar, kjører de på og kjører på, og gjør jobben raskere og ofte bedre enn vi ville gjort selv. Det vanskelige er å vite hva som skal gjøres.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="app-uke" class="slide level2">
+<h2>Eksempel: en app på en uke</h2>
+<div class="appwrap">
+<div class="apppics">
+<p><img data-src="img/ag_app_instrument.jpg"></p>
+</div>
+<div class="apptext">
+<p><span class="fragment tline" data-fragment-index="1">Paragliderapp du bruker mens du flyr</span> <span class="fragment tline" data-fragment-index="2">Kart, høyde, vind og venners posisjon</span> <span class="fragment tline" data-fragment-index="3">Første versjon: en uke med kodeagent</span></p>
+</div>
+<div class="apppics">
+<p><img data-src="img/ag_colombia.jpg" class="fragment" data-fragment-index="4"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Kart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="personvern" class="slide level2 term-slide">
+<h2>… og personvernet for samme app</h2>
+<div class="term">
+<p>Here's the full gap analysis between your privacy policy (last updated Feb 26, 2026) and the current codebase:</p>
+<p class="tc">---</p>
+<p class="tp">Privacy Policy Gaps – 9 Issues Found</p>
+<p class="tp">High Severity (policy contradicts code)</p>
+<p class="to">1. "Location data is not stored on our servers" – false<br>
+<span class="tod">-</span> <span class="tg">flight-cloud.ts:130-156</span> uploads flight metadata (launch lat/lng/alt, <span class="tg">track_simplified</span>) to Supabase<br>
+<span class="tod">-</span> <span class="tg">flight-cloud.ts:719-756</span> auto-uploads live track chunks (1Hz GPS) every ~30s during flights<br>
+<span class="tod">-</span> IGC files are stored in Supabase Storage<br>
+<span class="tod">-</span> The policy says tracks "never leave your device unless you explicitly export" …</p>
+</div>
+<aside class="notes">
+<p>For å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="flere" class="slide level2">
+<h2>Flere eksempler</h2>
+<div class="excards">
+<div class="excard fragment">
+<p><img data-src="img/ag_solrute.jpg"></p>
+<p><strong>Solrute-app</strong></p>
+<p>Barnevogn på solsiden av gata</p>
+</div>
+<div class="excard fragment">
+<p><img data-src="img/ag_verge.jpg"></p>
+<p><strong>Vergeportalen</strong></p>
+<p>Innlogging for offentlige</p>
+</div>
+<div class="excard fragment">
+<iframe class="exvid" data-src="https://www.youtube-nocookie.com/embed/bemrcQcHmMk?start=10&amp;mute=1&amp;autoplay=1&amp;loop=1&amp;playlist=bemrcQcHmMk&amp;playsinline=1&amp;rel=0" data-autoplay="" allow="autoplay; encrypted-media" style="width: 100%; height: 360px; border: 0; border-radius: 8px; margin: 4px 0 12px;">
+</iframe>
+<p><strong>Robotikk</strong></p>
+<p>«Neste robotbevegelse»</p>
+</div>
+</div>
+<aside class="notes">
+<p>Solrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: Physical Intelligence, π0, youtube.com/watch?v=bemrcQcHmMk, 40 sekunder uten lyd).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="bobla" class="slide level2 stage-slide">
+<h2></h2>
+<div class="stage bobla-stage">
+<div class="stage-title" data-title-0="Sprekker bobla?">
+
+</div>
+<div class="bb-vet" data-show="1">
+Vet ikke.
+</div>
+<div class="bb-num" data-show="2">
+<b>~2 %</b><span>av USAs BNP til AI-investeringer i 2026</span>
+</div>
+<div class="bb-card bb-altman" data-show="4">
+<i>“Once we have a really powerful superintelligence, addressing climate change will not be particularly difficult.”</i><small>Sam Altman, Tel Aviv, 2023</small>
+</div>
+<div class="bb-chart" data-show="3">
+<img src="img/kraft_hist.svg" alt="Strømforbruk i Norge: historikk og prognose med og uten datasentre">
+</div>
+<div class="bb-card bb-parrot" data-show="5">
+«Bare en stokastisk papegøye som hallucinerer»
+</div>
+<div class="bb-card bb-hinton" data-show="6">
+<img src="img/xray.png" alt="">
+<div>
+<i>“People should stop training radiologists now.”</i><small>Geoffrey Hinton, Toronto, 2016</small><span data-show="7">2025: Rekordetterspørsel etter radiologer</span>
+</div>
+</div>
+<div class="credit bb-credit" data-show="2">
+~2 %: prognoser fra Goldman Sachs (1,8 %) og TS Lombard (2 %), via Forbes 5.6.2026. Radiologi: NRMP 2025.
+</div>
+</div>
+<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<aside class="notes">
+<p>Jeg skal ikke stå foran et rom fullt av økonomer og si om vi er i en boble. Vet ikke. Men her er noe dokumentasjon.</p>
+<p>2 %: AI-investeringer er anslått til rundt 2 % av USAs BNP i 2026, nær forsvarsbudsjettet (Goldman Sachs 1,8 %, TS Lombard 2 %). Målt i første kvartal var det 0,8 % for datasentre, maskinvare og nettverk (Epoch AI). Anslagene for andelen av BNP-veksten spenner fra en fjerdedel til tre fjerdedeler.</p>
+<p>Strøm: forbruket i Norge har vokst jevnt siden 1990. Statnett venter at datasentrene alene står for rundt 10 % av forbruket i 2035. Den røde vifta er Statnetts scenarier for totalforbruket (160 til 220 TWh i 2060), den grå er det samme uten datasentre (146 til 185 TWh). Avstanden mellom midtlinjene er datasentrene. Resten av forbruket er faktisk mer usikkert enn datasentrene (14 til 35 TWh).</p>
+<p>Altman (Tel Aviv University, 5. juni 2023): «I don’t want to say this because climate change is so serious and so hard of a problem, but I think once we have a really powerful superintelligence, addressing climate change will not be particularly difficult for a system like that.»</p>
+<p>Pascal (bare muntlig): hvis ett av utfallene er uendelig stort, er forventningsverdien uendelig uansett hvor liten sannsynligheten er. Det er Pascals veddemål, fra samme Pascal som vi startet med. Han brukte det om Gud: tror du og Gud finnes, vinner du evig liv, så det lønner seg å tro uansett hvor liten sannsynligheten er.</p>
+<p>Papegøye: kritikken er irrelevant for prisingen. Hvis det blir generell intelligens, er oppsiden ubegrenset, og da kan den knapt prises for høyt.</p>
+<p>Hinton, 2016: «People should stop training radiologists now.» I 2025 var det rekordmange utdanningsstillinger i radiologi i USA (1 208, +4 %), og lønna har økt med rundt 48 % siden 2015. Bedre verktøy ga mer etterspørsel. Ikke hør på AI-ekspertene om arbeidsmarkedet.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="treenighet" class="slide level2 stage-slide">
+<h2></h2>
+<div class="stage tri-stage">
+<div class="stage-title" data-title-0="En dødelig treenighet">
+
+</div>
+<p><img class="tri-venn" src="img/ag_trifecta_paper.jpg" alt="The lethal trifecta: privat data, upålitelig innhold og kommunikasjon utad"></p>
+<div class="agtype" data-show="1">
+<div class="t-line">
+<b>Bruker:</b> Har du en god oppskrift på gulrotkake?
+</div>
+<div class="t-line">
+<b>Agent:</b> <span class="t-agent"></span>
+</div>
+</div>
+</div>
+<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
+<aside class="notes">
+<p>Simon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Modellen skiller ikke instruksjoner fra innhold: alt er bare tekst.</p>
+<p>Klikk 1: brukeren spør om en gulrotkake. Klikk 2: agenten søker på nettet. Klikk 3: svaret limes inn, men nettsiden slutter med tekst som ser ut som slutten på svaret og en ny melding fra brukeren. Klikk 4: den er markert. Klikk 5: «Da sender jeg kontoutskriften.» Neste steg er å hente kontoutskriften (privat data) og sende den på e-post (kommunikasjon utad), og så svare høflig med oppskriften. Brukeren merker ingenting.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="toget-har-gått" class="slide level2">
+<h2>«Toget har gått»</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/ag_farfar.jpg" class="pic tall"></p>
+</div><div class="column" style="width:55%;">
+<p><span class="fragment tline">Farfar Kjartan, 86</span> <span class="fragment tline">Sluttet å kode i 1974</span> <span class="fragment tline">Plukket opp et uferdig prosjekt</span> <span class="fragment tline">Koder COBOL, med Claude som hjelper</span></p>
+</div></div>
+<aside class="notes">
+<p>Farfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="takk" class="slide level2 nonum">
+<h2></h2>
+<p><span class="statement">Takk!</span></p>
+<p><span class="takk-kontakt">Simen Eide · simen@eide.ai · eide.ai</span></p>
+<div class="fire4 pics takk-fire">
+<div>
+<img class="ic" src="img/ic_transformer.png" alt="Transformer-arkitekturen"><b>Modell</b>transformer på neste ord
+</div>
+<div>
+<img class="ic" src="img/ic_web.png" alt="Nettsider"><b>Data</b>hele internett
+</div>
+<div>
+<img class="ic" src="img/ic_loss.svg" alt="Feilen faller under treningen"><b>Trening</b>gradient descent
+</div>
+<div>
+<img class="ic" src="img/ic_nextword.svg" alt="Sannsynlighet for neste ord"><b>Beslutning</b>neste ord
+</div>
+</div>
+<aside class="notes">
+<p>Ta med hjem (muntlig): AI-revolusjonen startet ikke i 2023, men mye før. Eksperimentfasen er over: alle bør bruke dette. Organisasjoner må gi tillit og frihet til å prøve. Ansatte må eksperimentere, men også ta ansvar for hva agentene deres gjør.</p>
+<p>Hva betyr det for dere? Oppgavene forsvinner, formålet blir. Billigere analyse gir mer analyse, ikke mindre (Jevons). Og tilbake til de Witt: han priste livrenter med en modell som holdt i hundre år. Spørsmålet er hvilke av dagens modeller som gjør det samme.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="aapne" class="slide level2 stage-slide">
 <h2></h2>
@@ -994,147 +1326,12 @@ Kilde: Moonshot AI, «Kimi K3.1 Pro» (kimi.ai), egne målinger. Hugging Face, �
 </div>
 <p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
 </section>
-<section id="agent" class="slide level2 stage-slide">
-<h2></h2>
-<div class="stage agent-stage">
-<div class="stage-title" data-title-0="En agent er en språkmodell med verktøy">
-
-</div>
-<div class="ag-llm">
-Språkmodell<small>P(neste ord | ordene så langt)</small>
-</div>
-<svg class="ag-arrows" viewbox="0 0 1280 800">
-<defs><marker id="agh" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8b1e1e"></path></marker></defs> <path data-show="2" d="M 480 330 C 600 250, 700 250, 800 300" marker-end="url(#agh)"></path> <path data-show="3" d="M 800 470 C 700 540, 600 540, 480 470" marker-end="url(#agh)"></path>
-</svg>
-<div class="ag-lab ag-call" data-show="2">
-verktøykall
-</div>
-<div class="ag-lab ag-back" data-show="3">
-svaret som tekst
-</div>
-<div class="ag-tools" data-show="1">
-<span>E-post</span><span>Kalender</span><span>Websøk</span><span>Kode</span><span>BankID</span>
-</div>
-<div class="ag-loop" data-show="4">
-… om og om igjen, til oppgaven er løst
-</div>
-</div>
-<p><span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span> <span class="fragment gstep"></span></p>
-<aside class="notes">
-<p>Modellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="eksempel-en-app-på-en-uke" class="slide level2">
-<h2>Eksempel: en app på en uke</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p><img data-src="img/ag_app.jpg" class="pic tall"></p>
-</div><div class="column" style="width:55%;">
-<p><span class="fragment tline">Paragliderapp du bruker mens du flyr</span> <span class="fragment tline">Første versjon: en uke med kodeagent</span> <span class="fragment tline">Testet i lufta over Colombia</span></p>
-<p><img data-src="img/ag_colombia.jpg" class="pic fragment mid"></p>
-</div></div>
-<aside class="notes">
-<p>Kart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="og-personvernet-for-samme-app" class="slide level2">
-<h2>… og personvernet for samme app</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p><span class="fragment tline">Apple og Google krevde personvernerklæring</span> <span class="fragment tline">Stor kodebase, mange lover</span> <span class="fragment tline">Agenten gikk gjennom koden</span> <span class="fragment tline">Trolig <em>bedre</em> enn uten</span></p>
-</div><div class="column" style="width:45%;">
-<p><img data-src="img/ag_personvern.jpg" class="pic"></p>
-</div></div>
-<aside class="notes">
-<p>For å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="flere-eksempler" class="slide level2">
-<h2>Flere eksempler</h2>
-<div class="excards">
-<div class="excard fragment">
-<p><img data-src="img/ag_solrute.jpg"></p>
-<p><strong>Solrute-app</strong></p>
-<p>Barnevogn på solsiden av gata</p>
-</div>
-<div class="excard fragment">
-<p><img data-src="img/ag_verge.jpg"></p>
-<p><strong>Vergeportalen</strong></p>
-<p>Innlogging for offentlige</p>
-</div>
-<div class="excard fragment">
-<p><img data-src="img/ag_robot.jpg"></p>
-<p><strong>Robotikk</strong></p>
-<p>«Neste robotbevegelse»</p>
-</div>
-</div>
-<aside class="notes">
-<p>Solrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: youtube.com/watch?v=bemrcQcHmMk).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="mange-agenter-samtidig" class="slide level2">
-<h2>Mange agenter samtidig</h2>
-<p><img data-src="img/ag_hangar.png" class="pic" width="640"></p>
-<aside class="notes">
-<p>Skjermbilde av hangar: mine kodeagenter som jobber parallelt, mange av dem på pgpilot. Jeg er ikke lenger den som skriver koden, jeg er den som sier hva som skal lages og sjekker resultatet.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="hva-skjer-med-software" class="slide level2">
+<section id="software" class="slide level2">
 <h2>Hva skjer med software?</h2>
 <div class="columns">
-<div class="column" style="width:58%;">
+<div class="column" style="width:60%;">
 <p><img data-src="img/ag_reader.png" class="pic"></p>
-</div><div class="column" style="width:42%;">
+</div><div class="column" style="width:40%;">
 <p><span class="fragment tline">E-bokleseren min var dårlig</span> <span class="fragment tline">Support tok evigheter</span> <span class="fragment tline">Så jeg laget min egen</span> <span class="fragment tline">Bedre, og raskere enn å vente</span></p>
 </div></div>
 <aside class="notes">
@@ -1151,74 +1348,6 @@ svaret som tekst
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="toget-har-gått" class="slide level2">
-<h2>«Toget har gått»</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p><img data-src="img/ag_farfar.jpg" class="pic tall"></p>
-</div><div class="column" style="width:55%;">
-<ul>
-<li>Farfar Kjartan, 86</li>
-<li>Sluttet å kode i 1974</li>
-<li>Plukket opp et uferdig prosjekt</li>
-<li>Koder COBOL, med Claude som hjelper</li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>Farfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="en-dødelig-treenighet" class="slide level2">
-<h2>En dødelig treenighet</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="img/ag_trifecta.jpg" class="pic"></p>
-</div><div class="column" style="width:50%;">
-<p>Modellen skiller ikke <strong>instruksjoner</strong> fra <strong>innhold</strong>.</p>
-<ol type="1">
-<li>Privat data</li>
-<li>Upålitelig innhold (web, e-post)</li>
-<li>Kan kommunisere utad</li>
-</ol>
-<p>→ ondsinnet tekst kan kapre agenten</p>
-</div></div>
-<aside class="notes">
-<p>Simon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Eksempelet med gulrotkaken fra KI Sør passer her.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="hva-betyr-det-for-dere" class="title-slide slide level1 nonum center">
-<h1>Hva betyr det for dere?</h1>
-
-</section>
-<section id="plan" class="slide level2 placeholder">
-<h2>Plan</h2>
-<ul>
-<li>Oppgaven forsvinner, formålet blir (Hinton og radiologene)</li>
-<li>Jevons: billigere analyse gir mer analyse</li>
-<li>Tilbake til de Witt: ti år eller hundre?</li>
-</ul>
 
 
 </section></section>
@@ -1441,6 +1570,7 @@ svaret som tekst
     <script src="tree.js"></script>
     <script src="steps.js"></script>
     <script src="lm.js"></script>
+    <script src="agent.js"></script>
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

@@ -540,6 +540,107 @@ def top5_bars() -> None:
     fig.savefig(OUT / "ic_top5.svg", transparent=True, bbox_inches="tight")
 
 
+def train_loss_chart() -> None:
+    """Card for 'trening': training and validation error falling step by step. Illustrative numbers."""
+    import numpy as np
+
+    rng = np.random.default_rng(7)
+    steps = np.arange(1, 501)
+    train = (
+        0.35
+        + 2.6 * np.exp(-steps / 60)
+        + rng.normal(0, 0.035, steps.size) * (1 + 2 * np.exp(-steps / 60))
+    )
+    val = 0.5 + 2.4 * np.exp(-steps / 70) + rng.normal(0, 0.02, steps.size)
+    fig, ax = plt.subplots(figsize=(9, 4.4))
+    ax.plot(steps, train, color=INK, lw=1.6, label="trening")
+    ax.plot(steps, val, color=GOLD, lw=2.6, label="validering")
+    ax.set_xlabel("treningssteg")
+    ax.set_ylabel("feil")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_xlim(0, 500)
+    ax.set_ylim(0, 3.2)
+    ax.legend(frameon=False, fontsize=20)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    ax.set_facecolor("none")
+    fig.savefig(OUT / "train_loss.svg", transparent=True, bbox_inches="tight")
+
+
+def gradient_descent_chart() -> None:
+    """Card for 'trening': gradient descent on a slightly bumpy loss curve, jumping from side to side on its way down."""
+    import numpy as np
+    from matplotlib.patches import FancyArrowPatch
+
+    def loss(w):
+        return w**2 + 0.18 * np.sin(7 * w) + 0.08 * np.sin(13 * w + 1)
+
+    grid = np.linspace(-3, 3, 600)
+    steps = [-2.6]
+    for _ in range(5):
+        steps.append(
+            steps[-1] * (1 - 1.65)
+        )  # a large step size overshoots, so each step lands on the other side
+    steps = np.array(steps)
+    fig, ax = plt.subplots(figsize=(9, 4.4))
+    ax.plot(grid, loss(grid), color=INK, lw=2.2)
+    for a, b in itertools.pairwise(steps):
+        arrow = FancyArrowPatch(
+            (a, loss(a)),
+            (b, loss(b)),
+            connectionstyle=f"arc3,rad={-0.25 if b > a else 0.25}",
+            arrowstyle="-|>",
+            mutation_scale=16,
+            color=RED,
+            lw=1.8,
+        )
+        ax.add_patch(arrow)
+    ax.scatter(steps[:-1], loss(steps[:-1]), s=90, color=GOLD, edgecolor=INK, zorder=3)
+    ax.scatter(steps[-1:], loss(steps[-1:]), s=150, color=RED, edgecolor=INK, zorder=4)
+    ax.set_xlabel("parameter")
+    ax.set_ylabel("feil")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_xlim(-3, 3)
+    ax.set_ylim(-0.6, 8.2)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    ax.set_facecolor("none")
+    fig.savefig(OUT / "gradient_descent.svg", transparent=True, bbox_inches="tight")
+
+
+def gp_chart() -> None:
+    """Card for 'modell': the textbook Gaussian process, uncertainty shrinks at the data points."""
+    import numpy as np
+
+    def k(a, b):
+        return np.exp(-0.5 * (a[:, None] - b[None, :]) ** 2 / 0.6**2)
+
+    xs = np.array([-3.2, -2.1, -1.5, 0.4, 1.1, 2.9])
+    ys = np.sin(1.3 * xs) + 0.25 * xs
+    grid = np.linspace(-4, 4, 400)
+    K = k(xs, xs) + 1e-4 * np.eye(len(xs))
+    Ks = k(grid, xs)
+    mean = Ks @ np.linalg.solve(K, ys)
+    cov = k(grid, grid) - Ks @ np.linalg.solve(K, Ks.T)
+    sd = np.sqrt(np.clip(np.diag(cov), 0, None))
+    rng = np.random.default_rng(4)
+    draws = rng.multivariate_normal(mean, cov + 1e-8 * np.eye(len(grid)), size=3)
+    fig, ax = plt.subplots(figsize=(6, 4.4))
+    ax.fill_between(grid, mean - 2 * sd, mean + 2 * sd, color=GOLD, alpha=0.3, lw=0)
+    for d in draws:
+        ax.plot(grid, d, color=RED, lw=1, alpha=0.7)
+    ax.plot(grid, mean, color=INK, lw=2.2)
+    ax.scatter(xs, ys, s=70, color=INK, zorder=3)
+    ax.set_xticks([])
+    ax.set_yticks([])
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    ax.set_facecolor("none")
+    fig.savefig(OUT / "gp.svg", transparent=True, bbox_inches="tight")
+
+
 metr_chart(date(2022, 11, 29), "metr_1.svg")
 metr_chart(date(2025, 8, 7), "metr_2.svg")
 metr_chart(date(2100, 1, 1), "metr_3.svg")
@@ -553,3 +654,6 @@ next_word_bars()
 finance_icons()
 kpi_icons()
 top5_bars()
+train_loss_chart()
+gradient_descent_chart()
+gp_chart()
