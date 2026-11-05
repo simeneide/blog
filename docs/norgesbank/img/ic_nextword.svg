@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="310.29375pt" height="158.544pt" viewBox="0 0 310.29375 158.544" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-04T13:59:47.238292</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.544 
+L 310.29375 158.544 
+L 310.29375 0 
+L 0 0 
+L 0 158.544 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 79.89375 151.344 
+L 303.09375 151.344 
+L 303.09375 7.2 
+L 79.89375 7.2 
+L 79.89375 151.344 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 79.89375 144.792 
+L 83.951932 144.792 
+L 83.951932 121.45611 
+L 79.89375 121.45611 
+z
+" clip-path="url(#p796d16b58a)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 79.89375 108.89063 
+L 88.010114 108.89063 
+L 88.010114 85.55474 
+L 79.89375 85.55474 
+z
+" clip-path="url(#p796d16b58a)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 79.89375 72.98926 
+L 98.155568 72.98926 
+L 98.155568 49.65337 
+L 79.89375 49.65337 
+z
+" clip-path="url(#p796d16b58a)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 79.89375 37.08789 
+L 248.308295 37.08789 
+L 248.308295 13.752 
+L 79.89375 13.752 
+z
+" clip-path="url(#p796d16b58a)" style="fill: #8b1e1e"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="76.39375" y="140.672492" transform="rotate(-0 76.39375 140.672492)">fast</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="76.39375" y="104.771122" transform="rotate(-0 76.39375 104.771122)">i ro</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="76.39375" y="69.069753" transform="rotate(-0 76.39375 69.069753)">på</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="76.39375" y="32.968383" transform="rotate(-0 76.39375 32.968383)">uendret</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 79.89375 151.344 
+L 79.89375 7.2 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="88.010114" y="137.649367" transform="rotate(-0 88.010114 137.649367)">2 %</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="92.068295" y="101.747997" transform="rotate(-0 92.068295 101.747997)">4 %</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="102.21375" y="65.846628" transform="rotate(-0 102.21375 65.846628)">9 %</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 18px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="252.366477" y="29.945258" transform="rotate(-0 252.366477 29.945258)">83 %</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p796d16b58a">
+   <rect x="79.89375" y="7.2" width="223.2" height="144.144"/>
+  </clipPath>
+ </defs>
+</svg>

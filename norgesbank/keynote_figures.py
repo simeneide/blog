@@ -369,6 +369,177 @@ def halley_bins() -> None:
     print("theta per bin:", [round(t, 3) for t in theta])
 
 
+def loss_curve() -> None:
+    """Icon for 'trening': the training loss falling as gradient descent steps along."""
+    import numpy as np
+
+    rng = np.random.default_rng(3)
+    steps = np.arange(400)
+    loss = (
+        0.6
+        + 3.2 * np.exp(-steps / 70)
+        + rng.normal(0, 0.06, steps.size) * (1 + np.exp(-steps / 70))
+    )
+    fig, ax = plt.subplots(figsize=(4, 2.6))
+    ax.plot(steps, loss, color=RED, lw=2)
+    ax.set_xlabel("steg")
+    ax.set_ylabel("feil")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    ax.set_facecolor("none")
+    fig.savefig(OUT / "ic_loss.svg", transparent=True, bbox_inches="tight")
+
+
+def next_word_bars() -> None:
+    """Icon for 'beslutning': the next-word distribution, the top word is the one written."""
+    words, pct = ["uendret", "på", "i ro", "fast"], [83, 9, 4, 2]
+    fig, ax = plt.subplots(figsize=(4, 2.6))
+    ax.barh(words[::-1], pct[::-1], color=[GOLD, GOLD, GOLD, RED], height=0.65)
+    for i, v in enumerate(pct[::-1]):
+        ax.text(v + 2, i, f"{v} %", va="center", fontsize=18)
+    ax.set_xlim(0, 110)
+    ax.set_xticks([])
+    ax.tick_params(axis="y", length=0)
+    for side in ("top", "right", "bottom"):
+        ax.spines[side].set_visible(False)
+    ax.set_facecolor("none")
+    fig.savefig(OUT / "ic_nextword.svg", transparent=True, bbox_inches="tight")
+
+
+def _icon_axes(figsize=(4, 2.6)):
+    fig, ax = plt.subplots(figsize=figsize)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    ax.set_facecolor("none")
+    return fig, ax
+
+
+def finance_icons() -> None:
+    """Icons for the Finans strip: an Oslo Børs price series and the correlation matrix of returns."""
+    import numpy as np
+    import yfinance as yf
+
+    tickers = {
+        "EQNR.OL": "Equinor",
+        "DNB.OL": "DNB",
+        "NHY.OL": "Hydro",
+        "TEL.OL": "Telenor",
+        "ORK.OL": "Orkla",
+        "MOWI.OL": "Mowi",
+    }
+    px = yf.download(
+        list(tickers),
+        start="2023-11-01",
+        end="2026-11-01",
+        progress=False,
+        auto_adjust=True,
+    )["Close"].rename(columns=tickers)
+
+    fig, ax = _icon_axes()
+    ax.plot(px.index, px["Equinor"], color=INK, lw=1.6)
+    ax.set_title("Equinor", fontsize=18, loc="left")
+    ax.set_xticks([])
+    ax.set_ylabel("kr")
+    fig.savefig(OUT / "ic_price.svg", transparent=True, bbox_inches="tight")
+
+    corr = np.log(px).diff().dropna().corr()
+    fig, ax = plt.subplots(figsize=(3.4, 3.4))
+    from matplotlib.colors import LinearSegmentedColormap
+
+    ax.imshow(
+        corr,
+        cmap=LinearSegmentedColormap.from_list("paper", ["#f3ead7", GOLD, RED]),
+        vmin=0,
+        vmax=1,
+    )
+    ax.set_xticks(range(len(corr)), corr.columns, rotation=90, fontsize=14)
+    ax.set_yticks(range(len(corr)), corr.columns, fontsize=14)
+    ax.tick_params(length=0)
+    for side in ax.spines.values():
+        side.set_visible(False)
+    fig.savefig(OUT / "ic_corr.svg", transparent=True, bbox_inches="tight")
+
+
+def kpi_icons(p: int = 3) -> None:
+    """Icons for the Prisprediksjon strip: posterior of the AR coefficients and a Gibbs-sampler trace."""
+    import numpy as np
+    import pandas as pd
+
+    raw = pd.read_excel(
+        Path.home() / "work/how-to-train-your-ai/data/forTecDay.xlsx"
+    ).set_index("Time")
+    level = raw["MSA_PCPIJAE"]
+    level.index = pd.PeriodIndex([t.replace("M", "-") for t in level.index], freq="M")
+    yoy = (100 * (level / level.shift(12) - 1)).loc["2001-01":].dropna()
+    X = np.column_stack(
+        [np.ones(len(yoy) - p)] + [yoy.values[p - k - 1 : -k - 1] for k in range(p)]
+    )
+    yv = yoy.values[p:]
+    prec = np.diag([1e-4] + [1 / 0.5**2] * p)
+
+    # Gibbs sampler, same prior as kpi_fan: alternate beta | sigma2 and sigma2 | beta, from a poor start
+    rng = np.random.default_rng(1)
+    V = np.linalg.inv(X.T @ X + prec)
+    m = V @ X.T @ yv
+    beta, chain = np.zeros(p + 1), []
+    sig2 = 25.0
+    for _ in range(150):
+        beta = rng.multivariate_normal(m, sig2 * V)
+        r = yv - X @ beta
+        sig2 = (0.1 + 0.5 * (r @ r + beta @ prec @ beta)) / rng.gamma(
+            2 + (len(yv) + p + 1) / 2
+        )
+        chain.append(beta.copy())
+    chain = np.array(chain)
+
+    fig, ax = _icon_axes()
+    ax.plot(chain[:, 1], color=RED, lw=1.2)
+    ax.set_xlabel("iterasjon")
+    ax.set_ylabel("koeffisient")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    fig.savefig(OUT / "ic_trace.svg", transparent=True, bbox_inches="tight")
+
+    fig, ax = _icon_axes()
+    grid = np.linspace(-0.6, 1.6, 400)
+    for k, color in zip(range(1, p + 1), [RED, GOLD, INK]):
+        draws = chain[20:, k]
+        sd = draws.std()
+        ax.fill_between(
+            grid,
+            np.exp(-0.5 * ((grid - draws.mean()) / sd) ** 2),
+            color=color,
+            alpha=0.35,
+            lw=0,
+        )
+        ax.plot(
+            grid, np.exp(-0.5 * ((grid - draws.mean()) / sd) ** 2), color=color, lw=1.5
+        )
+    ax.set_yticks([])
+    ax.set_xticks([0, 1])
+    ax.set_xlabel("AR-koeffisienter")
+    fig.savefig(OUT / "ic_posterior.svg", transparent=True, bbox_inches="tight")
+
+
+def top5_bars() -> None:
+    """Icon for the AlexNet strip: top-5 guesses for one image. Illustrative numbers."""
+    words, pct = (
+        ["leopard", "jaguar", "gepard", "snøleopard", "katt"],
+        [72, 14, 8, 4, 1],
+    )
+    fig, ax = _icon_axes()
+    ax.barh(words[::-1], pct[::-1], color=[GOLD] * 4 + [RED], height=0.65)
+    for i, v in enumerate(pct[::-1]):
+        ax.text(v + 2, i, f"{v} %", va="center", fontsize=16)
+    ax.set_xlim(0, 100)
+    ax.set_xticks([])
+    ax.tick_params(axis="y", length=0)
+    ax.spines["bottom"].set_visible(False)
+    fig.savefig(OUT / "ic_top5.svg", transparent=True, bbox_inches="tight")
+
+
 metr_chart(date(2022, 11, 29), "metr_1.svg")
 metr_chart(date(2025, 8, 7), "metr_2.svg")
 metr_chart(date(2100, 1, 1), "metr_3.svg")
@@ -377,3 +548,8 @@ option_chart()
 pnl_chart()
 kpi_fan()
 halley_bins()
+loss_curve()
+next_word_bars()
+finance_icons()
+kpi_icons()
+top5_bars()
