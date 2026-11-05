@@ -1748,5 +1748,26 @@
     "title": "eide.ai",
     "section": "Hva skjer med software?",
     "text": "Hva skjer med software?\n\n\n\n\nE-bokleseren min var dårlig Support tok evigheter Så jeg laget min egen Bedre, og raskere enn å vente\n\n\neideReader: min egen e-bokleser. I stedet for å bruke tid på support for en dårlig e-bokleser, laget jeg min egen, som passer akkurat meg: samlinger av artikler og bøker, opplesning, fortsett der du slapp. Det tok kort tid med agentene.\nHva betyr det for software når det er så lett å lage ting? Mye av det vi kjøper i dag, fordi det er dyrt å lage selv, kan vi lage selv. Spørsmålet er ikke lenger om vi har råd til å bygge det, men om vi vet hva vi vil ha."
+  },
+  {
+    "objectID": "norgesbank/index.html",
+    "href": "norgesbank/index.html",
+    "title": "Fra statistiske modeller til nevrale nettverk",
+    "section": "",
+    "text": "Vi bygger modeller for KPI-JAE neste måned i PyTorch, fra en AR-modell til et nevralt nett, og ser at de klassiske modellene er nevrale nett med ett lag.\nÅpne workshopen i Google Colab"
+  },
+  {
+    "objectID": "norgesbank/index.html#slik-kommer-du-i-gang",
+    "href": "norgesbank/index.html#slik-kommer-du-i-gang",
+    "title": "Fra statistiske modeller til nevrale nettverk",
+    "section": "Slik kommer du i gang",
+    "text": "Slik kommer du i gang\n\nTrykk på knappen over. Notebooken åpnes i Google Colab.\nLogg inn med en Google-konto hvis Colab ber om det.\nKjør cellene ovenfra og ned med ▶, eller velg Runtime → Run all. Svar Run anyway på advarselen om at notebooken ikke er laget av Google.\n\nDu trenger ikke installere noe. Notebooken henter dataene selv."
+  },
+  {
+    "objectID": "norgesbank/index.html#kjøre-lokalt",
+    "href": "norgesbank/index.html#kjøre-lokalt",
+    "title": "Fra statistiske modeller til nevrale nettverk",
+    "section": "Kjøre lokalt",
+    "text": "Kjøre lokalt\nKoden og dataene ligger på GitHub: github.com/simeneide/norgesbank-workshop. Med uv:\ngit clone https://github.com/simeneide/norgesbank-workshop\ncd norgesbank-workshop\nuv sync\nuv run --with jupyter jupyter lab workshop.ipynb"
   }
 ]

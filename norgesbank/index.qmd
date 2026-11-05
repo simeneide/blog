@@ -1,0 +1,29 @@
+---
+title: "Fra statistiske modeller til nevrale nettverk"
+subtitle: "Workshop, Tech Day, Norges Bank, 6. november 2026"
+author: "Simen Eide"
+lang: nb
+---
+
+Vi bygger modeller for KPI-JAE neste måned i PyTorch, fra en AR-modell til et nevralt nett, og ser at de klassiske modellene er nevrale nett med ett lag.
+
+[Åpne workshopen i Google Colab](https://colab.research.google.com/github/simeneide/norgesbank-workshop/blob/main/workshop.ipynb){.btn .btn-primary .btn-lg}
+
+## Slik kommer du i gang
+
+1. Trykk på knappen over. Notebooken åpnes i Google Colab.
+2. Logg inn med en Google-konto hvis Colab ber om det.
+3. Kjør cellene ovenfra og ned med ▶, eller velg *Runtime → Run all*. Svar *Run anyway* på advarselen om at notebooken ikke er laget av Google.
+
+Du trenger ikke installere noe. Notebooken henter dataene selv.
+
+## Kjøre lokalt
+
+Koden og dataene ligger på GitHub: [github.com/simeneide/norgesbank-workshop](https://github.com/simeneide/norgesbank-workshop). Med [uv](https://docs.astral.sh/uv/):
+
+```sh
+git clone https://github.com/simeneide/norgesbank-workshop
+cd norgesbank-workshop
+uv sync
+uv run --with jupyter jupyter lab workshop.ipynb
+```
