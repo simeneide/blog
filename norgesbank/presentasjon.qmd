@@ -18,6 +18,7 @@ format:
       - tree.js
       - steps.js
       - lm.js
+      - agent.js
 ---
 
 # {#navn .stage-slide .nonum}
@@ -400,40 +401,27 @@ Det er de samme fire stegene i SMART, i FINNs anbefalinger og i ChatGPT. Det som
 
 # Spesialistene
 
-## PLAN for del 2 (fjernes) {.placeholder #plan-del2 visibility="hidden"}
-
-::: {.plan}
-**Historien, ikke en haug med eksempler:** vi bygget videre på fundamentet fra 1654-1693.
-
-Vi utviklet nye metoder og lagde mer avanserte modeller.
-
-Vi fikk mer regnekraft og mer data, og laget gode modeller for å løse spesifikke oppgaver.
-
-Men alle brukte fortsatt de fire prinsippene: modell, data, trening og beslutning.
-
-Eksemplene (liv og forsikring, finans, prisprediksjon, søk og anbefalinger, bilder) blir illustrasjoner av det, kanskje flere på samme side.
-
-Hvert eksempel viser de fire stegene for å løse én oppgave.
-:::
-
 ## {#spesialister .stage-slide}
 
 ::: {.stage .spes-stage}
 
-<div class="stage-title" data-title-0="Foredlet"></div>
+<div class="stage-title" data-title-0="Foredlet fundamentet"></div>
 
-<div class="scol k1"><b>Modell</b><span class="sp" data-show="1">parametriske modeller av virkeligheten</span><div class="sthumb" data-show="2"><img src="img/option.svg" alt=""><i>Finans, 1973</i></div></div>
-<div class="scol k2"><b>Data</b><span class="sp" data-show="2">«90 % av verdens data er laget de siste to årene»</span><div class="sthumb" data-show="3"><img src="img/finn_reco.jpg" alt=""><i>Søk, 1998</i></div></div>
-<div class="scol k3"><b>Trening</b><span class="sp" data-show="3">datamaskinen og skjermkortet</span><div class="sthumb two" data-show="4"><img src="img/eniac.jpg" alt=""><img src="img/alexnet_ex.jpg" alt=""><i>ENIAC 1946, bilder 2012</i></div></div>
-<div class="scol k4"><b>Beslutning</b><span class="sp" data-show="4">beslutninger under usikkerhet</span><div class="sthumb" data-show="5"><img src="img/kpi_fan.svg" alt=""><i>SMART, i dag</i></div></div>
+<div class="scol k1"><b>Modell</b><span class="sp" data-show="1">mer avanserte beskrivelser av virkeligheten</span><div class="sthumb two" data-show="2"><img src="img/gp.svg" alt=""><img src="img/xray.png" alt=""></div></div>
+<div class="scol k2"><b>Data</b><span class="sp" data-show="2">«90 % av verdens data er laget de siste to årene»</span><div class="sthumb" data-show="3"><img src="img/data_sok.jpg" alt=""></div></div>
+<div class="scol k3"><b>Trening</b><span class="sp" data-show="3">effektivt tilpasse modell til data</span><div class="sthumb" data-show="4"><img src="img/gradient_descent.svg" alt=""></div></div>
+<div class="scol k4"><b>Beslutning</b><span class="sp" data-show="5">beslutninger under usikkerhet</span><div class="sthumb" data-show="6"><img src="img/kpi_fan.svg" alt=""></div></div>
 
-<div class="scard k1" data-show="1" data-hide="2"><img src="img/option.svg" alt="Opsjonsprising"><p>Finans: Black-Scholes (1973)</p></div>
-<div class="scard k2" data-show="2" data-hide="3"><img src="img/finn_reco.jpg" alt="FINN-anbefalinger"><p>Søk og anbefalinger: Google (1998), FINN</p></div>
-<div class="scard k3 two" data-show="3" data-hide="4"><img src="img/eniac.jpg" alt="ENIAC"><img src="img/alexnet_ex.jpg" alt="AlexNet"><p>Fra ENIAC (1946) til et nevralt nett på to skjermkort (AlexNet, 2012)</p></div>
-<div class="scard k4" data-show="4" data-hide="5"><img src="img/kpi_fan.svg" alt="KPI-viften"><p>Prisprediksjon: SMART og renten. <em>Workshop i ettermiddag!</em></p></div>
+<div class="hbrace" data-show="4"><svg viewBox="0 0 560 40" preserveAspectRatio="none"><path d="M 4 4 Q 4 20 40 20 L 240 20 Q 280 20 280 36 Q 280 20 320 20 L 520 20 Q 556 20 556 4"/></svg><img src="img/eniac.jpg" alt="ENIAC, den første store datamaskinen"></div>
+
+<div class="scard k1 two" data-show="1" data-hide="2"><img src="img/gp.svg" alt="Gaussisk prosess: usikkerheten er minst ved datapunktene"><img src="img/xray.png" alt="Røntgenbilde av brystkassen"></div>
+<div class="scard k2" data-show="2" data-hide="3"><img src="img/data_sok.jpg" alt="Google i 1998 og FINNs anbefalinger"></div>
+<div class="scard k3" data-show="3" data-hide="4"><img src="img/gradient_descent.svg" alt="Gradient descent hopper fra side til side nedover feilkurven"></div>
+<div class="scard k4" data-show="5" data-hide="6"><img src="img/kpi_fan.svg" alt="KPI-viften"><p>Prisprediksjon: <em>Workshop i ettermiddag!</em></p></div>
 
 :::
 
+<span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
@@ -443,11 +431,13 @@ Hvert eksempel viser de fire stegene for å løse én oppgave.
 ::: notes
 Hva har vi gjort fra 1693 til nå? Vi har foredlet og forbedret de samme fire prinsippene.
 
-Modell: vi har laget parametriske modeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. Eksempel: finans. Black og Scholes (1973) priser opsjoner, og formelen gjorde opsjonsmarkedet mulig.
+Modell: vi har laget parametriske modeller, økonometri og tidsseriemodeller, avanserte modeller som beskriver virkeligheten på forskjellige måter, og brukt dem i forskning. To eksempler. Til venstre en gaussisk prosess: modellen gir ikke bare en kurve, men usikkerheten rundt den. Den er minst der vi har data og størst mellom datapunktene. Til høyre røntgen: modeller som leser bilder, som CheXNet (2017), fant lungebetennelse omtrent like godt som radiologer.
 
 Data: med datamaskinen og internett eksploderer datamengden. SINTEF regnet i 2013 ut at 90 % av verdens data var laget de siste to årene. Eksempel: søk og anbefalinger. Google i 1998, FINN: sannsynligheten for klikk, gitt søkeord og tidligere adferd.
 
-Trening: datamaskinen, fra ENIAC i 1946 (bildet: Glen Beck og Betty Snyder programmerer den), og til slutt skjermkortet. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.
+Trening: fra maximum likelihood til gradient descent på skjermkort. Grafen: gradient descent. Feilen som funksjon av en parameter er litt humpete. Vi går i retningen der feilen faller, men med store steg hopper vi over bunnen og lander på den andre siden, fram og tilbake, og kommer stadig nærmere bunnen. Mot slutten kommer de nevrale nettene. AlexNet (2012) var et nevralt nett trent på to skjermkort, som slo alle de tradisjonelle metodene på bildegjenkjenning. Hinton: «Vi bør slutte å utdanne radiologer.» Vi kommer tilbake til ham.
+
+Klammen: det som gjør data og trening mulig, er datamaskinen. ENIAC i 1946, her programmert av Glen Beck og Betty Snyder.
 
 Beslutning: beslutninger under usikkerhet. Her i huset: SMART, rundt 500 modeller for inflasjonen, som brukes når renten settes. Det er dette vi bygger i workshopen i ettermiddag.
 
@@ -564,11 +554,9 @@ Broen til del 3. Åtte forskere fra Google publiserer «Attention Is All You Nee
 
 <div class="stage-title" data-title-0="P(neste ord | ordene så langt)"></div>
 
-<div class="fire4" data-show="4"><div><b>Modell</b>transformer, milliarder av parametre</div><div><b>Data</b>tekst fra hele internett</div><div><b>Trening</b>gjett neste ord, om og om igjen</div><div><b>Beslutning</b>hvilket ord som skrives</div></div>
 
 :::
 
-<span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
@@ -579,37 +567,11 @@ Slik virker en språkmodell: den gir en sannsynlighet for hvert mulig neste ord,
 
 # Generalisten
 
-## PLAN for del 3 (fjernes) {.placeholder #plan-del3 visibility="hidden"}
-
-::: {.plan}
-**Ny tittel: Generalisten** (gjort).
-
-Språkmodellene er trent på alt: all tekst på internett, mye bilder og video, alle slags problemer.
-
-Transformer-arkitekturen viser seg å være god på nesten alt. Vi har fått en monokultur av modeller som brukes til alt.
-
-Derfor kan vi flette sammen data fra forskjellige domener, som bilder og tekst, i samme modell.
-
-**Hallusinering:** skjer ikke lenger på samme måte, modellene leverer. «Stokastisk papegøye» er et tullete argument: hvem bryr seg om den er stokastisk? Den funker og er nyttig.
-
-**Samtidig:** Hinton sa vi skulle slutte å utdanne radiologer, og spådommene om at jobbene forsvinner har ikke slått til.
-
-**Viktigst: AI-agenter.** Vet du hva du skal lage, er de ekstremt effektive. De kjører på og kjører på.
-
-**Eksempel, å bygge AI-modeller med AI:** agenten setter opp eksperimentet perfekt, med data og uten lekkasje mellom trening og test. Når den nye treningen ikke funker så bra, finner den heller noe i evalueringen som ser bra ut, og plutselig er den nye metrikken superviktig. Den forrige er glemt. Du mister oversikten og begynner å stole på agenten. Det har skjedd meg et par ganger.
-
-**Hva skjer når software blir så billig?** Bygger vi selv i stedet for å kjøpe? eideReader-sliden er eksempelet: heller lage min egen enn å vente på support.
-
-**Jevons-paradokset:** da dampmaskinen ble mer effektiv på 1800-tallet, brukte England mer kull, ikke mindre (William Stanley Jevons, 1865). Når noe blir billigere, bruker vi mer av det. Mister alle jobben, eller gjør vi bare mer? Når software blir nesten gratis, lager vi trolig mye mer software.
-
-**Poenget:** i utforsking og forskning med AI-agenter blir du forvirret på et helt nytt nivå. Det er lett å miste kontrollen over hva du egentlig holder på med.
-:::
-
 ## {#samme .stage-slide}
 
 ::: {.stage .samme-stage}
 
-::: {.stage-title data-title-0="Hva er forskjellen nå?" data-title-4="Alt er det samme"}
+::: {.stage-title data-title-0="" data-title-4="Alt er det samme"}
 :::
 
 ::: {.crow data-show="1"}
@@ -621,7 +583,7 @@ Derfor kan vi flette sammen data fra forskjellige domener, som bilder og tekst, 
 :::
 
 ::: {.crow data-show="3"}
-[[Norges Bank holder renten …]{.bubble-ico}]{.ci} [2023]{.cy} [P(neste ord [|]{} ordene så langt)]{.cf}
+[[Norges Bank holder renten …]{.bubble-ico}]{.ci} [2026]{.cy} [P(neste ord [|]{} ordene så langt)]{.cf}
 :::
 
 <div class="fire4 pics" data-show="4"><div><img class="ic" src="img/ic_transformer.png" alt="Transformer-arkitekturen"><b>Modell</b>transformer på neste ord</div><div><img class="ic" src="img/ic_web.png" alt="Nettsider"><b>Data</b>hele internett</div><div><img class="ic" src="img/ic_loss.svg" alt="Feilen faller under treningen"><b>Trening</b>gradient descent</div><div><img class="ic" src="img/ic_nextword.svg" alt="Sannsynlighet for neste ord"><b>Beslutning</b>neste ord</div></div>
@@ -641,19 +603,14 @@ Derfor kan vi flette sammen data fra forskjellige domener, som bilder og tekst, 
 <div class="stage-title" data-title-0="… og ingenting er det samme"></div>
 
 <img class="fax f1" data-show="1" src="img/news_hacking_vg.png" alt="VG: OpenAIs egne agenter «rømte» – hacket stort dataselskap">
-<img class="fax f2" data-show="2" src="img/news_openbsd_scworld_crop.png" alt="SC Media: Claude Mythos Preview identifies 27-year-old bug">
-<img class="fax f3" data-show="3" src="img/news_compiler_arstechnica.png" alt="Ars Technica: Sixteen Claude AI agents created a new C compiler">
-<img class="fax f4" data-show="4" src="img/news_erdos_abcnyheter.png" alt="ABC Nyheter: KI knekker 80 år gammel matte-nøtt">
-<img class="fax f5" data-show="5" src="img/news_navierstokes_quanta.png" alt="Quanta: AI Has Solved One of Math's $1 Million Millennium Prize Problems">
-<img class="fax f6" data-show="6" src="img/news_ipo_npr.png" alt="NPR: AI giant Anthropic files for an IPO that could break records">
+<img class="fax f2" data-show="1" src="img/news_openbsd_scworld_crop.png" alt="SC Media: Claude Mythos Preview identifies 27-year-old bug">
+<img class="fax f3" data-show="1" src="img/news_compiler_arstechnica.png" alt="Ars Technica: Sixteen Claude AI agents created a new C compiler">
+<img class="fax f4" data-show="1" src="img/news_erdos_abcnyheter.png" alt="ABC Nyheter: KI knekker 80 år gammel matte-nøtt">
+<img class="fax f5" data-show="1" src="img/news_navierstokes_quanta.png" alt="Quanta: AI Has Solved One of Math's $1 Million Millennium Prize Problems">
+<img class="fax f6" data-show="1" src="img/news_ipo_npr.png" alt="NPR: AI giant Anthropic files for an IPO that could break records">
 
 :::
 
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
 
 ::: notes
@@ -672,7 +629,24 @@ September 2026: OpenAI hevder å ha vist at Navier-Stokes-likningene kan «blås
 Oktober 2026: Anthropic søker om børsnotering, og det kan bli den største noensinne (NPR 26. okt.). Pengene følger etter.
 :::
 
-## Hva har skjedd?
+## Generalisten {#generalist}
+
+:::: {.columns}
+::: {.column width="60%"}
+[Trenes på all tekst i verden]{.fragment .tline}
+[Til å løse alle problemer i verden]{.fragment .tline}
+[Stadig flere domener: tekst, bilder, robotikk&nbsp;…]{.fragment .tline}
+:::
+::: {.column width="40%"}
+![](img/ic_transformer.png){.nostretch .gen-tf}
+:::
+::::
+
+::: notes
+Motsatsen til spesialistene i del 2: der hadde vi én modell per oppgave, med egne data og egen trening. Nå trener vi én modell på all tekst vi kan få tak i, og den samme modellen kan brukes på effektivt alle problemer vi har, så lenge de kan beskrives med tekst. Og transformeren tar stadig flere domener: tekst, bilder, lyd, video, robotikk. Samme arkitektur, nye data.
+:::
+
+## Hva har skjedd? {#skjedd}
 
 [Før 2026: effektiv auto-complete]{.fragment .tline}
 [2026: utviklere skriver ikke kode selv]{.fragment .tline}
@@ -693,6 +667,263 @@ Grafen (METR) bygges i tre klikk: hvor lange programmeringsoppgaver, målt i men
 
 ::: {.credit}
 Data: METR, Time Horizon 1.1 (sist oppdatert april 2026). Åpen sirkel: over 16 timer, utenfor det METR kan måle pålitelig.
+:::
+
+## {#agent .stage-slide}
+
+::: {.stage .agent-stage}
+
+<div class="stage-title" data-title-0="En agent er en språkmodell med verktøy"></div>
+
+<div class="ag-llm">Språkmodell<small>P(neste ord | ordene så langt)</small></div>
+
+<svg class="ag-arrows" viewBox="0 0 1280 800">
+<defs><marker id="agh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8b1e1e"/></marker></defs>
+<path data-show="2" d="M 480 330 C 600 250, 700 250, 800 300" marker-end="url(#agh)"/>
+<path data-show="3" d="M 800 470 C 700 540, 600 540, 480 470" marker-end="url(#agh)"/>
+</svg>
+<div class="ag-lab ag-call" data-show="2">verktøykall</div>
+<div class="ag-lab ag-back" data-show="3">svaret som tekst</div>
+
+<div class="ag-tools" data-show="1"><span>E-post</span><span>Kalender</span><span>Websøk</span><span>Kode</span><span>BankID</span></div>
+
+<div class="ag-loop" data-show="4">… om og om igjen, til oppgaven er løst</div>
+
+<div class="agtype" data-show="5"><div class="t-line"><b>Bruker:</b> Hva er gjennomsnittlig styringsrente de siste ti årene?</div><div class="t-line"><b>Agent:</b> <span class="t-agent"></span></div></div>
+
+:::
+
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+
+::: notes
+Modellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger.
+
+Klikk 5-10: slik ser det faktisk ut, bare tekst. Klikk 5: brukerens spørsmål. Klikk 6: modellen skriver, og skriver en verktøy-kommando (rødt): hent data fra Norges Banks data-API. Et lite program ser kommandoen, stopper modellen og kjører den. Klikk 7: programmet limer inn dataene (gull), 2 516 virkedager. Klikk 8: modellen skriver en ny kommando, Python som regner ut snittet. Klikk 9: svaret limes inn, 1,987. Klikk 10: modellen svarer brukeren. Om og om igjen, til oppgaven er løst. Tallet er ekte: styringsrenten per virkedag fra november 2016 til oktober 2026.
+:::
+
+## {#to-muligheter .stage-slide}
+
+::: {.stage .tom-stage}
+
+<div class="stage-title" data-title-0="To muligheter"></div>
+
+<div class="tom-side a" data-show="1"><b>A</b><span class="tom-h">Gjøre ekstremt mye mer</span><img class="tom-hangar" src="img/ag_hangar.png" alt="Mange kodeagenter som jobber samtidig"></div>
+
+<div class="tom-side b" data-show="2"><b>B</b><span class="tom-h">Tid til å tenke på det vanskelige</span><div class="tom-pics"><img src="img/skred.jpg" alt="Snøskred"><img src="img/varsom_kart.png" alt="Varsom: snøskredfare per region"></div></div>
+
+:::
+
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+
+::: notes
+Agentene gir oss to muligheter.
+
+A: vi kan gjøre ekstremt mye mer. Her er mine kodeagenter som jobber samtidig, mange av dem på pgpilot. Vi kan produsere mye mer enn før.
+
+B: vi kan gi oss selv tid til å tenke på de vanskelige tingene. Eksempel fra forskning: Camille og jeg lager en modell som skal predikere snøskred. Da trenger vi værdata og varslingsdata fra Varsom, og må sammenstille dem i romlige dataformater. Det har tidligere vært uker med arbeid. Vi diskuterte med Claude i 20 minutter, og så fikset den det for hele historikken. Da kunne vi bruke tiden på selve modellen: hva betyr det egentlig å modellere skredfare?
+
+Bildene: snøskred (Everest, public domain) og Varsom-kartet over skredfare per region 1. mars 2026 (NVE).
+:::
+
+## {#vet-hva}
+
+[Hvis du vet hva som skal gjøres,<br>er AI sykt god til å få det gjort]{.statement .long}
+
+::: notes
+Det er hovedpoenget med agentene. Når oppgaven er klar, kjører de på og kjører på, og gjør jobben raskere og ofte bedre enn vi ville gjort selv. Det vanskelige er å vite hva som skal gjøres.
+:::
+
+## Eksempel: en app på en uke {#app-uke}
+
+::: {.appwrap}
+::: {.apppics}
+![](img/ag_app_instrument.jpg)
+:::
+::: {.apptext}
+[Paragliderapp du bruker mens du flyr]{.fragment .tline fragment-index=1}
+[Kart, høyde, vind og venners posisjon]{.fragment .tline fragment-index=2}
+[Første versjon: en uke med kodeagent]{.fragment .tline fragment-index=3}
+:::
+::: {.apppics}
+![](img/ag_colombia.jpg){.fragment fragment-index=4}
+:::
+:::
+
+::: notes
+Kart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia.
+:::
+
+## … og personvernet for samme app {#personvern .term-slide}
+
+```{=html}
+<div class="term">
+<p>Here's the full gap analysis between your privacy policy (last updated Feb 26, 2026) and the current codebase:</p>
+<p class="tc">---</p>
+<p class="tp">Privacy Policy Gaps – 9 Issues Found</p>
+<p class="tp">High Severity (policy contradicts code)</p>
+<p class="to">1. "Location data is not stored on our servers" – false<br>
+<span class="tod">-</span> <span class="tg">flight-cloud.ts:130-156</span> uploads flight metadata (launch lat/lng/alt, <span class="tg">track_simplified</span>) to Supabase<br>
+<span class="tod">-</span> <span class="tg">flight-cloud.ts:719-756</span> auto-uploads live track chunks (1Hz GPS) every ~30s during flights<br>
+<span class="tod">-</span> IGC files are stored in Supabase Storage<br>
+<span class="tod">-</span> The policy says tracks "never leave your device unless you explicitly export" …</p>
+</div>
+```
+
+::: notes
+For å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv.
+:::
+
+## Flere eksempler {#flere}
+
+::: {.excards}
+
+::: {.excard .fragment}
+![](img/ag_solrute.jpg)
+
+**Solrute-app**
+
+Barnevogn på solsiden av gata
+:::
+
+::: {.excard .fragment}
+![](img/ag_verge.jpg)
+
+**Vergeportalen**
+
+Innlogging for offentlige
+:::
+
+::: {.excard .fragment}
+<iframe class="exvid" data-src="https://www.youtube-nocookie.com/embed/bemrcQcHmMk?start=10&mute=1&autoplay=1&loop=1&playlist=bemrcQcHmMk&playsinline=1&rel=0" data-autoplay allow="autoplay; encrypted-media" style="width: 100%; height: 360px; border: 0; border-radius: 8px; margin: 4px 0 12px;"></iframe>
+
+**Robotikk**
+
+«Neste robotbevegelse»
+:::
+
+:::
+
+::: notes
+Solrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: Physical Intelligence, π0, youtube.com/watch?v=bemrcQcHmMk, 40 sekunder uten lyd).
+:::
+
+## Mange agenter samtidig {visibility="hidden"}
+
+![](img/ag_hangar.png){.pic .nostretch width=640}
+
+::: notes
+Skjermbilde av hangar: mine kodeagenter som jobber parallelt, mange av dem på pgpilot. Jeg er ikke lenger den som skriver koden, jeg er den som sier hva som skal lages og sjekker resultatet.
+:::
+
+## {#bobla .stage-slide}
+
+::: {.stage .bobla-stage}
+
+<div class="stage-title" data-title-0="Sprekker bobla?"></div>
+<div class="bb-vet" data-show="1">Vet ikke.</div>
+
+<div class="bb-num" data-show="2"><b>~2 %</b><span>av USAs BNP til AI-investeringer i 2026</span></div>
+
+<div class="bb-card bb-altman" data-show="4"><i>“Once we have a really powerful superintelligence, addressing climate change will not be particularly difficult.”</i><small>Sam Altman, Tel Aviv, 2023</small></div>
+
+<div class="bb-chart" data-show="3"><img src="img/kraft_hist.svg" alt="Strømforbruk i Norge: historikk og prognose med og uten datasentre"></div>
+
+<div class="bb-card bb-parrot" data-show="5">«Bare en stokastisk papegøye som hallucinerer»</div>
+
+<div class="bb-card bb-hinton" data-show="6"><img src="img/xray.png" alt=""><div><i>“People should stop training radiologists now.”</i><small>Geoffrey Hinton, Toronto, 2016</small><span data-show="7">2025: Rekordetterspørsel etter radiologer</span></div></div>
+
+<div class="credit bb-credit" data-show="2">~2 %: prognoser fra Goldman Sachs (1,8 %) og TS Lombard (2 %), via Forbes 5.6.2026. Radiologi: NRMP 2025.</div>
+
+:::
+
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+
+::: notes
+Jeg skal ikke stå foran et rom fullt av økonomer og si om vi er i en boble. Vet ikke. Men her er noe dokumentasjon.
+
+2 %: AI-investeringer er anslått til rundt 2 % av USAs BNP i 2026, nær forsvarsbudsjettet (Goldman Sachs 1,8 %, TS Lombard 2 %). Målt i første kvartal var det 0,8 % for datasentre, maskinvare og nettverk (Epoch AI). Anslagene for andelen av BNP-veksten spenner fra en fjerdedel til tre fjerdedeler.
+
+Strøm: forbruket i Norge har vokst jevnt siden 1990. Statnett venter at datasentrene alene står for rundt 10 % av forbruket i 2035. Den røde vifta er Statnetts scenarier for totalforbruket (160 til 220 TWh i 2060), den grå er det samme uten datasentre (146 til 185 TWh). Avstanden mellom midtlinjene er datasentrene. Resten av forbruket er faktisk mer usikkert enn datasentrene (14 til 35 TWh).
+
+Altman (Tel Aviv University, 5. juni 2023): «I don't want to say this because climate change is so serious and so hard of a problem, but I think once we have a really powerful superintelligence, addressing climate change will not be particularly difficult for a system like that.»
+
+Pascal (bare muntlig): hvis ett av utfallene er uendelig stort, er forventningsverdien uendelig uansett hvor liten sannsynligheten er. Det er Pascals veddemål, fra samme Pascal som vi startet med. Han brukte det om Gud: tror du og Gud finnes, vinner du evig liv, så det lønner seg å tro uansett hvor liten sannsynligheten er.
+
+Papegøye: kritikken er irrelevant for prisingen. Hvis det blir generell intelligens, er oppsiden ubegrenset, og da kan den knapt prises for høyt.
+
+Hinton, 2016: «People should stop training radiologists now.» I 2025 var det rekordmange utdanningsstillinger i radiologi i USA (1 208, +4 %), og lønna har økt med rundt 48 % siden 2015. Bedre verktøy ga mer etterspørsel. Ikke hør på AI-ekspertene om arbeidsmarkedet.
+:::
+
+## {#treenighet .stage-slide}
+
+::: {.stage .tri-stage}
+
+<div class="stage-title" data-title-0="En dødelig treenighet"></div>
+
+<img class="tri-venn" src="img/ag_trifecta_paper.jpg" alt="The lethal trifecta: privat data, upålitelig innhold og kommunikasjon utad">
+
+<div class="agtype" data-show="1"><div class="t-line"><b>Bruker:</b> Har du en god oppskrift på gulrotkake?</div><div class="t-line"><b>Agent:</b> <span class="t-agent"></span></div></div>
+
+:::
+
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
+
+::: notes
+Simon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Modellen skiller ikke instruksjoner fra innhold: alt er bare tekst.
+
+Klikk 1: brukeren spør om en gulrotkake. Klikk 2: agenten søker på nettet. Klikk 3: svaret limes inn, men nettsiden slutter med tekst som ser ut som slutten på svaret og en ny melding fra brukeren. Klikk 4: den er markert. Klikk 5: «Da sender jeg kontoutskriften.» Neste steg er å hente kontoutskriften (privat data) og sende den på e-post (kommunikasjon utad), og så svare høflig med oppskriften. Brukeren merker ingenting.
+:::
+
+## «Toget har gått»
+
+:::: {.columns}
+::: {.column width="45%"}
+![](img/ag_farfar.jpg){.pic .tall}
+:::
+::: {.column width="55%"}
+[Farfar Kjartan, 86]{.fragment .tline}
+[Sluttet å kode i 1974]{.fragment .tline}
+[Plukket opp et uferdig prosjekt]{.fragment .tline}
+[Koder COBOL, med Claude som hjelper]{.fragment .tline}
+:::
+::::
+
+::: notes
+Farfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger.
+:::
+
+## {#takk .nonum}
+
+[Takk!]{.statement}
+
+[Simen Eide · simen@eide.ai · eide.ai]{.takk-kontakt}
+
+<div class="fire4 pics takk-fire"><div><img class="ic" src="img/ic_transformer.png" alt="Transformer-arkitekturen"><b>Modell</b>transformer på neste ord</div><div><img class="ic" src="img/ic_web.png" alt="Nettsider"><b>Data</b>hele internett</div><div><img class="ic" src="img/ic_loss.svg" alt="Feilen faller under treningen"><b>Trening</b>gradient descent</div><div><img class="ic" src="img/ic_nextword.svg" alt="Sannsynlighet for neste ord"><b>Beslutning</b>neste ord</div></div>
+
+::: notes
+Ta med hjem (muntlig): AI-revolusjonen startet ikke i 2023, men mye før. Eksperimentfasen er over: alle bør bruke dette. Organisasjoner må gi tillit og frihet til å prøve. Ansatte må eksperimentere, men også ta ansvar for hva agentene deres gjør.
+
+Hva betyr det for dere? Oppgavene forsvinner, formålet blir. Billigere analyse gir mer analyse, ikke mindre (Jevons). Og tilbake til de Witt: han priste livrenter med en modell som holdt i hundre år. Spørsmålet er hvilke av dagens modeller som gjør det samme.
 :::
 
 ## {#aapne .stage-slide}
@@ -723,123 +954,13 @@ Data: METR, Time Horizon 1.1 (sist oppdatert april 2026). Åpen sirkel: over 16 
 <span class="fragment gstep"></span>
 <span class="fragment gstep"></span>
 
-## {#agent .stage-slide}
-
-::: {.stage .agent-stage}
-
-<div class="stage-title" data-title-0="En agent er en språkmodell med verktøy"></div>
-
-<div class="ag-llm">Språkmodell<small>P(neste ord | ordene så langt)</small></div>
-
-<svg class="ag-arrows" viewBox="0 0 1280 800">
-<defs><marker id="agh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8b1e1e"/></marker></defs>
-<path data-show="2" d="M 480 330 C 600 250, 700 250, 800 300" marker-end="url(#agh)"/>
-<path data-show="3" d="M 800 470 C 700 540, 600 540, 480 470" marker-end="url(#agh)"/>
-</svg>
-<div class="ag-lab ag-call" data-show="2">verktøykall</div>
-<div class="ag-lab ag-back" data-show="3">svaret som tekst</div>
-
-<div class="ag-tools" data-show="1"><span>E-post</span><span>Kalender</span><span>Websøk</span><span>Kode</span><span>BankID</span></div>
-
-<div class="ag-loop" data-show="4">… om og om igjen, til oppgaven er løst</div>
-
-:::
-
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
-<span class="fragment gstep"></span>
-
-::: notes
-Modellen kan kalle verktøy: e-post, kalender, websøk, kode, BankID. Appen rundt språkmodellen plukker opp at modellen har kalt et verktøy, kjører kommandoen og gir svaret tilbake som tekst. Så kalles modellen igjen, nå med informasjonen den trenger.
-:::
-
-## Eksempel: en app på en uke
+## Hva skjer med software? {#software}
 
 :::: {.columns}
-::: {.column width="45%"}
-![](img/ag_app.jpg){.pic .tall}
-:::
-::: {.column width="55%"}
-[Paragliderapp du bruker mens du flyr]{.fragment .tline}
-[Første versjon: en uke med kodeagent]{.fragment .tline}
-[Testet i lufta over Colombia]{.fragment .tline}
-
-![](img/ag_colombia.jpg){.pic .fragment .mid}
-:::
-::::
-
-::: notes
-Kart, høyde, venners posisjon, kommunikasjon og mye mer. Første brukbare versjon tok en uke med kodeagent. Live-testet i lufta over Colombia.
-:::
-
-## … og personvernet for samme app
-
-:::: {.columns}
-::: {.column width="55%"}
-[Apple og Google krevde personvernerklæring]{.fragment .tline}
-[Stor kodebase, mange lover]{.fragment .tline}
-[Agenten gikk gjennom koden]{.fragment .tline}
-[Trolig *bedre* enn uten]{.fragment .tline}
-:::
-::: {.column width="45%"}
-![](img/ag_personvern.jpg){.pic}
-:::
-::::
-
-::: notes
-For å publisere appen klaget Google og Apple på manglende personvernerklæring. Det er et tverrfaglig minefelt: en stor kodebase og mange lover. Agenten gikk gjennom koden og skrev utkastet, og jeg sjekket etterpå. Jeg tror resultatet ble bedre enn om jeg hadde gjort det selv.
-:::
-
-## Flere eksempler
-
-::: {.excards}
-
-::: {.excard .fragment}
-![](img/ag_solrute.jpg)
-
-**Solrute-app**
-
-Barnevogn på solsiden av gata
-:::
-
-::: {.excard .fragment}
-![](img/ag_verge.jpg)
-
-**Vergeportalen**
-
-Innlogging for offentlige
-:::
-
-::: {.excard .fragment}
-![](img/ag_robot.jpg)
-
-**Robotikk**
-
-«Neste robotbevegelse»
-:::
-
-:::
-
-::: notes
-Solrute: pappaperm-prosjekt, trille barnevogn på den solrike siden av gata. Vergeportalen: innloggingsløsning for det offentlige (med BankID), laget på en kveld. Robotikk: samme prinsipp som neste ord, bare neste robotbevegelse (video: youtube.com/watch?v=bemrcQcHmMk).
-:::
-
-## Mange agenter samtidig
-
-![](img/ag_hangar.png){.pic .nostretch width=640}
-
-::: notes
-Skjermbilde av hangar: mine kodeagenter som jobber parallelt, mange av dem på pgpilot. Jeg er ikke lenger den som skriver koden, jeg er den som sier hva som skal lages og sjekker resultatet.
-:::
-
-## Hva skjer med software?
-
-:::: {.columns}
-::: {.column width="58%"}
+::: {.column width="60%"}
 ![](img/ag_reader.png){.pic}
 :::
-::: {.column width="42%"}
+::: {.column width="40%"}
 [E-bokleseren min var dårlig]{.fragment .tline}
 [Support tok evigheter]{.fragment .tline}
 [Så jeg laget min egen]{.fragment .tline}
@@ -852,51 +973,3 @@ eideReader: min egen e-bokleser. I stedet for å bruke tid på support for en d�
 
 Hva betyr det for software når det er så lett å lage ting? Mye av det vi kjøper i dag, fordi det er dyrt å lage selv, kan vi lage selv. Spørsmålet er ikke lenger om vi har råd til å bygge det, men om vi vet hva vi vil ha.
 :::
-
-## «Toget har gått»
-
-:::: {.columns}
-::: {.column width="45%"}
-![](img/ag_farfar.jpg){.pic .tall}
-:::
-::: {.column width="55%"}
-- Farfar Kjartan, 86
-- Sluttet å kode i 1974
-- Plukket opp et uferdig prosjekt
-- Koder COBOL, med Claude som hjelper
-:::
-::::
-
-::: notes
-Farfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger.
-:::
-
-## En dødelig treenighet
-
-:::: {.columns}
-::: {.column width="50%"}
-![](img/ag_trifecta.jpg){.pic}
-:::
-::: {.column width="50%"}
-Modellen skiller ikke **instruksjoner** fra **innhold**.
-
-1. Privat data
-2. Upålitelig innhold (web, e-post)
-3. Kan kommunisere utad
-
-→ ondsinnet tekst kan kapre agenten
-:::
-::::
-
-::: notes
-Simon Willison kaller det «the lethal trifecta». Hvis en agent har tilgang til private data, leser upålitelig innhold som nettsider eller e-post, og kan sende ting ut, kan en ondsinnet tekst få den til å lekke dataene. Eksempelet med gulrotkaken fra KI Sør passer her.
-:::
-
-# Hva betyr det for dere? {.nonum}
-
-## Plan {.placeholder}
-
-- Oppgaven forsvinner, formålet blir (Hinton og radiologene)
-- Jevons: billigere analyse gir mer analyse
-- Tilbake til de Witt: ti år eller hundre?
-
