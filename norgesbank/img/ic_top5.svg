@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="339.128125pt" height="158.544pt" viewBox="0 0 339.128125 158.544" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-04T14:17:51.401733</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.544 
+L 339.128125 158.544 
+L 339.128125 0 
+L 0 0 
+L 0 158.544 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 108.728125 151.344 
+L 331.928125 151.344 
+L 331.928125 7.2 
+L 108.728125 7.2 
+L 108.728125 151.344 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 108.728125 144.792 
+L 110.960125 144.792 
+L 110.960125 126.474581 
+L 108.728125 126.474581 
+z
+" clip-path="url(#pd72863a290)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 108.728125 116.611355 
+L 117.656125 116.611355 
+L 117.656125 98.293935 
+L 108.728125 98.293935 
+z
+" clip-path="url(#pd72863a290)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 108.728125 88.43071 
+L 126.584125 88.43071 
+L 126.584125 70.11329 
+L 108.728125 70.11329 
+z
+" clip-path="url(#pd72863a290)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 108.728125 60.250065 
+L 139.976125 60.250065 
+L 139.976125 41.932645 
+L 108.728125 41.932645 
+z
+" clip-path="url(#pd72863a290)" style="fill: #b8860b"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 108.728125 32.069419 
+L 269.432125 32.069419 
+L 269.432125 13.752 
+L 108.728125 13.752 
+z
+" clip-path="url(#pd72863a290)" style="fill: #8b1e1e"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="105.228125" y="143.181728" transform="rotate(-0 105.228125 143.181728)">katt</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="105.228125" y="115.021395" transform="rotate(-0 105.228125 115.021395)">snøleopard</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="105.228125" y="86.84075" transform="rotate(-0 105.228125 86.84075)">gepard</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="105.228125" y="58.547605" transform="rotate(-0 105.228125 58.547605)">jaguar</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 20px; font-family: 'Iowan Old Style'; text-anchor: end; fill: #2b2118" x="105.228125" y="30.47946" transform="rotate(-0 105.228125 30.47946)">leopard</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 108.728125 151.344 
+L 108.728125 7.2 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 16px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="115.424125" y="139.65579" transform="rotate(-0 115.424125 139.65579)">1 %</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 16px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="122.120125" y="111.475145" transform="rotate(-0 122.120125 111.475145)">4 %</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 16px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="131.048125" y="83.2945" transform="rotate(-0 131.048125 83.2945)">8 %</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 16px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="144.440125" y="55.113855" transform="rotate(-0 144.440125 55.113855)">14 %</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 16px; font-family: 'Iowan Old Style'; text-anchor: start; fill: #2b2118" x="273.896125" y="26.93321" transform="rotate(-0 273.896125 26.93321)">72 %</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd72863a290">
+   <rect x="108.728125" y="7.2" width="223.2" height="144.144"/>
+  </clipPath>
+ </defs>
+</svg>
