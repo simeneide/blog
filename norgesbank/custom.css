@@ -822,8 +822,8 @@
 .reveal .term .tg { color: #6cc68f; }
 .reveal .apptext .tline { margin-bottom: 18px; line-height: 1.3; }
 .excard video.exvid { height: 360px; width: 100%; object-fit: contain; border-radius: 8px; display: block; }
-.excard:has(video) p:nth-of-type(1) { font-size: 34px; }
-.excard:has(video) p:nth-of-type(2) { font-size: 26px; }
+.excard:has(.exvid) p:nth-of-type(1) { font-size: 34px; }
+.excard:has(.exvid) p:nth-of-type(2) { font-size: 26px; }
 .reveal img.gen-tf { max-height: 600px; width: auto; display: block; margin: 0 auto; }
 .reveal #generalist .tline { margin-bottom: 22px; line-height: 1.3; }
 .reveal .gen-old { transition: color 0.4s; text-decoration-color: var(--red); }
