@@ -83,7 +83,7 @@ Jeg foreslår at vi tar ham på ordet: SI. Men Statistical Intelligence. Det er 
 - Matematiker (PhD, bayesianske nevrale nett)
 - Porteføljerisiko
 - Anbefalingssystemer (FINN.no)
-- AI enablement (Schibsted)
+- AI enablement & labs (Schibsted)
 - Nå: freelance, lage AI med AI og litt formidling
 :::
 
@@ -114,7 +114,7 @@ Jeg foreslår at vi tar ham på ordet: SI. Men Statistical Intelligence. Det er 
 []{.fragment .gstep}
 
 ::: notes
-Matematiker, PhD på bayesianske nevrale nett. Startet med porteføljerisiko i finans, så anbefalingssystemer på FINN.no, så AI enablement i Schibsted. Nå eide.ai.
+Matematiker, PhD på bayesianske nevrale nett. Startet med porteføljerisiko i finans, så anbefalingssystemer på FINN.no, så AI enablement & labs i Schibsted. Nå eide.ai.
 
 I 2023 sto sjefen min på allmøte og sa at det er nå det skjer. Jeg var fageksperten som sa slapp av, det er bare transformere med mer data. I mars 2026 sto jeg selv i en kirke i Kristiansand og ropte det samme. Hva skjedde?
 :::
