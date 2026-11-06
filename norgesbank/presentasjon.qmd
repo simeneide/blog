@@ -912,13 +912,22 @@ Klikk 1: brukeren spør om en gulrotkake. Klikk 2: agenten søker på nettet. Kl
 Farfar Kjartan er 86 og sluttet å kode i 1974. Han hadde et uferdig prosjekt fra Raufoss Våpenfabrikk, og har plukket det opp igjen med Claude som hjelper. Han koder COBOL, et språk knapt noen kan lenger.
 :::
 
-## {#takk .nonum}
+## {#takk .stage-slide .nonum}
 
-[Takk!]{.statement}
+::: {.stage .takk-stage}
 
-[Simen Eide · simen@eide.ai · eide.ai]{.takk-kontakt}
+<div class="stage-title" data-title-0="Det er ikke magi"></div>
 
 <div class="fire4 pics takk-fire"><div><img class="ic" src="img/ic_transformer.png" alt="Transformer-arkitekturen"><b>Modell</b>transformer på neste ord</div><div><img class="ic" src="img/ic_web.png" alt="Nettsider"><b>Data</b>hele internett</div><div><img class="ic" src="img/ic_loss.svg" alt="Feilen faller under treningen"><b>Trening</b>gradient descent</div><div><img class="ic" src="img/ic_nextword.svg" alt="Sannsynlighet for neste ord"><b>Beslutning</b>neste ord</div></div>
+
+<div class="quote tk-naa" data-show="1">«DET ER NÅ DET SKJER!»</div>
+
+<div class="tk-takk" data-show="2">Tusen takk!<small>Simen Eide · simen@eide.ai · eide.ai</small></div>
+
+:::
+
+<span class="fragment gstep"></span>
+<span class="fragment gstep"></span>
 
 ::: notes
 Ta med hjem (muntlig): AI-revolusjonen startet ikke i 2023, men mye før. Eksperimentfasen er over: alle bør bruke dette. Organisasjoner må gi tillit og frihet til å prøve. Ansatte må eksperimentere, men også ta ansvar for hva agentene deres gjør.
