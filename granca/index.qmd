@@ -1,0 +1,290 @@
+---
+title: "Gran Canaria"
+subtitle: "Ellen, Kjetil, Kamilla og Simen · 12.–22. november 2026"
+lang: no
+comments: false
+toc: true
+toc-title: "Innhold"
+toc-location: right
+format:
+  html:
+    css: granca.css
+    include-in-header:
+      text: |
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+---
+
+Alt vi har funnet ut og alle forslagene til turer på ett sted. Ingenting her er bestemt, det er bare en meny å velge fra.
+
+```{=html}
+<div id="map" class="trip-map"></div>
+<p class="map-legend">
+  <span><span class="dot home"></span>Huset</span>
+  <span><span class="dot garden"></span>Hager og lunsj</span>
+  <span><span class="dot run"></span>Løpeturen</span>
+  <span><span class="dot water"></span>Vann</span>
+</p>
+```
+
+## Kort om turen
+
+| | |
+|---|---|
+| **Ut** | Torsdag 12. november, ankomst på kvelden |
+| **Hjem** | Søndag 22. november, tidlig morgen (bilen leveres kl. 06) |
+| **Bil** | Dacia Jogger, 5 seter, fra Autoreisen på flyplassen. Kjetil er hovedsjåfør, Simen er ekstra sjåfør |
+| **Bor** | Villa på strandpromenaden i San Agustín, hele oppholdet |
+| **Fast avtale** | Kamilla har digitale samlinger torsdag 19. og fredag 20. november, så løpeturen må være før det |
+
+## Der vi bor
+
+![](https://a0.muscache.com/im/pictures/miso/Hosting-47987723/original/a0aa450c-db92-4aee-9957-8e1274b5cbbf.jpeg){.hero-img}
+
+**Luksusvilla ved sjøen med privat basseng**, San Agustín. Kjetil booket den 18. oktober ([Airbnb](https://www.airbnb.no/rooms/47987723), [samme hus hos Sun Houses Canarias](https://book.sunhousescanarias.com/listings/514427)).
+
+- Rett på strandpromenaden i San Agustín, på sørkysten. Omtrent 10 minutter å gå til Playa de las Burras, og promenaden går videre mot Playa del Inglés. Fin for morgenjogg.
+- 3 soverom med to enkeltsenger hver, 2,5 bad.
+- Privat oppvarmet basseng med boblebad, aircondition, fullt kjøkken, wifi.
+- 2 private parkeringsplasser, så bilen har en fast plass.
+- Depositum på €500 trekkes ved ankomst og betales tilbake innen 48 timer etter at vi har reist.
+
+::: {.photo-row}
+![](https://a0.muscache.com/im/pictures/miso/Hosting-47987723/original/2c3822a8-f20a-451f-886a-450c3a652a1e.jpeg)
+![](https://a0.muscache.com/im/pictures/miso/Hosting-47987723/original/b8797200-0659-4d7c-9cf7-19a2df24f348.jpeg)
+![](https://a0.muscache.com/im/pictures/miso/Hosting-47987723/original/eef8d82c-870b-425d-a031-c50725b076e0.jpeg)
+:::
+
+**Kjøretid fra huset** (omtrent): flyplassen 25 min, Maspalomas 15 min, Las Palmas 40 min, Arucas 50 min, Tejeda 1 t, Agaete 1 t 15 min.
+
+## Hager med blomster, og lunsj
+
+Ellen vil se vakre hager med mye blomster. De fineste ligger på den grønnere nordsiden av øya, 45–75 minutter fra huset. Alle tre kan gjøres på to dager, og hver dag har en god lunsj.
+
+### Jardín Botánico Canario Viera y Clavijo, Tafira
+
+**Den beste.** Spanias største botaniske hage: rundt 27 mål i en bratt dal like utenfor Las Palmas, med over 10 000 plantearter. Det er en kaktushage, en «øyhage» med planter fra hver kanariøy, en pyntehage og et drivhus. Gratis inngang.
+
+- **Lunsj:** Restaurante Jardín Canario ligger ved den øvre inngangen og har utsikt over hele dalen. Litt dyrere enn vanlig, men det er stedet. Én anmeldelse fra 2025 sier kafeen inne i hagen var stengt, så sjekk før dere drar. Enoteca El Zarcillo og Flor Canaria ligger rett i nærheten.
+- **Tips:** hagen ligger i en skråning. Parker ved den øvre inngangen, spis lunsj der og gå ned. Det er også mye å se fra den nedre inngangen hvis noen ikke vil gå i bakker.
+- [Wikipedia](https://en.wikipedia.org/wiki/Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo) · [Restauranten](https://restaurantguru.com/Restaurante-Jardin-Canario-Las-Palmas-de-Gran-Canaria)
+
+### Jardín de la Marquesa, Arucas
+
+**Den mest romantiske.** En hage fra 1880 rundt markisens sommerpalass, med påfugler som går fritt, et dragetre som er over 200 år gammelt, en enorm ficus og rundt 500 arter. Mer «vakker hage» enn vitenskapelig samling.
+
+- Inngang omtrent €6. Åpningstidene spriker mellom kildene, og besøkende har funnet porten stengt med kjetting i oppgitt åpningstid. **Ring +34 928 60 44 86 før dere drar.**
+- Kafeen er ofte stengt. Spis i Arucas sentrum, som har en flott katedral i svart stein og en romfabrikk (Arehucas) med omvisning.
+- Ikke gå langs veien fra Arucas, den har ikke fortau. Kjør.
+- 15–20 minutter fra Jardín Canario, så de to passer fint på samme dag.
+- [Hola Islas Canarias](https://www.hellocanaryislands.com/museums-and-places-of-interest/gran-canaria/jardin-de-la-marquesa-de-arucas/) · [TripAdvisor](https://www.tripadvisor.com/Attraction_Review-g1064394-d5953515-Reviews-Jardines_de_la_Marquesa-Arucas_Gran_Canaria_Canary_Islands.html)
+
+### Huerto de las Flores, Agaete
+
+**Den roligste.** En liten tropisk hage i Agaete by, med mango, macadamia, kamfertre og over hundre arter fra hele verden. Holder med 30–60 minutter, og inngangen koster nesten ingenting.
+
+- **Kom før lunsj.** En besøkende fant den stengt rundt kl. 14. Telefon 928 554 382.
+- **Lunsj:** Puerto de las Nieves, havna i Agaete, ligger fem minutter unna og er full av fiskerestauranter, for eksempel La Taberna del Puerto. Fersk fisk ved vannet.
+- Den vakreste kjøreturen av de tre, langs vestkysten.
+- [Visit Agaete](https://visitagaete.com/guide/huerto-de-las-flores/) · [Canarias Lovers](https://canarias-lovers.com/en/visit-garden-huerto-flores-agaete/) · [La Taberna del Puerto](https://www.tripadvisor.com/Restaurant_Review-g13165616-d27431829-Reviews-La_Taberna_Del_Puerto_De_Agaete-Puerto_de_las_Nieves_Gran_Canaria_Canary_Islan.html)
+
+### Turer fra Kjetils lenke
+
+Kjetil delte [Fotefar mot nord sin fottur på Gran Canaria](https://www.fotefartemareiser.no/fottur-pa-gran-canaria#dagsprogram), og Kamilla likte særlig dag 6 og 7. De passer godt sammen med hagene:
+
+- **Dag 6: Osorio og laurbærskogen til Teror.** Omtrent 8 km, 180 m opp og 260 m ned, rundt 4 timer. Frodig dal med 18 slags løvtrær, og turen ender i den gamle byen Teror. Teror ligger 15 minutter fra Arucas.
+- **Dag 7: Agaete-dalen.** Lett variant: rundt 3 timer langs kysten, 160 m opp. Krevende variant: rundt 10 km, 500 m opp og 700 m ned, med utsikt mot klippene ved Roque Faneque. Passer rett før eller etter Huerto de las Flores og fisk i havna.
+
+### Forslag til to dager
+
+::: {.day-plans}
+::: {.day-card}
+**Nord-dag: hager og Arucas**
+
+1. Kjør til Jardín Canario (45 min), gå ned gjennom hagen
+2. Lunsj på Restaurante Jardín Canario
+3. Jardín de la Marquesa i Arucas (ring først)
+4. Hvis det er tid og lyst: Teror, eller laurbærskogen i Osorio en annen dag
+:::
+
+::: {.day-card}
+**Vest-dag: Agaete**
+
+1. Kjør langs kysten til Agaete (1 t 15 min)
+2. Huerto de las Flores om formiddagen
+3. Tur i Agaete-dalen, den lette eller den krevende
+4. Sen lunsj med fisk i Puerto de las Nieves
+:::
+:::
+
+**Nær huset:** Palmitos Park, 20 minutter inn i landet fra Maspalomas, har et orkidéhus og frodige hager med restauranter. Det er mer en dyrepark enn en blomsterhage, men greit for en halv dag.
+
+## Løpeturen: fra nord til sør
+
+Simen og Kamilla vil krysse øya til fots og løpende, fra havet ved Agaete til fyret i Maspalomas. Vi overnatter enkelt underveis og bærer en lett sekk. Målet ligger 15 minutter fra huset.
+
+```{=html}
+<div class="run-table">
+<table>
+<thead><tr><th>Dag</th><th>Rute</th><th>Lengde</th><th>Opp</th><th>Ned</th><th>Sover</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Puerto de las Nieves → Tamadaba → Artenara → Cruz de Tejeda → Tejeda</td><td>31 km</td><td>2350 m</td><td>1320 m</td><td>Tejeda</td></tr>
+<tr class="optional"><td>2</td><td>Valgfri runde: Tejeda → Cruz de Tejeda → Roque Nublo → Tejeda</td><td>21 km</td><td>1090 m</td><td>1090 m</td><td>Tejeda</td></tr>
+<tr><td>3</td><td>Tejeda → Cruz de Tejeda → Paso de la Plata → Tunte</td><td>19 km</td><td>810 m</td><td>980 m</td><td>Tunte</td></tr>
+<tr><td>4</td><td>Tunte → Fataga → Arteara → Faro de Maspalomas</td><td>28 km</td><td>240 m</td><td>1120 m</td><td>Hjemme</td></tr>
+</tbody>
+</table>
+<p class="small">Tre dager (uten runden): 78 km, 3400 m opp. Fire dager: 99 km, 4500 m opp.</p>
+</div>
+```
+
+### Dagene
+
+**Dag 1: fra Atlanterhavet inn i furuskogen.** Den største dagen. Fra havna gjennom Agaete, opp via Berbique til furuskogen på Tamadaba, videre til Artenara og Cruz de Tejeda, og ned til Tejeda. Fjellstier, steinete klatring og skogsveier. Mat og drikke i Artenara og på Cruz de Tejeda. Ikke regn med fontenen på Tamadaba, den er merket som ikke drikkevann. Ta med hodelykt. [GPS-spor (Wikiloc 158890122)](https://es.wikiloc.com/rutas-senderismo/w-12-01-24-gr-131-puerto-de-las-nieves-agaete-tamada-artenara-montana-moriscos-cruz-de-tejeda-tejed-158890122)
+
+**Dag 2 (valgfri): Roque Nublo uten sekk.** En runde fra Tejeda opp mot Cruz de Tejeda, rundt foten av Roque Nublo og tilbake. Natt nummer to i samme seng. Roque Nublo har nå et bookingsystem for adgang, så sjekk [den offisielle siden](https://reservasroquenublo.com/) før dere velger tidspunkt. [GPS-spor (Wikiloc 34853147)](https://www.wikiloc.com/hiking-trails/cruz-de-tejeda-roque-nublo-tejeda-cruz-de-tejeda-34853147). Sporet starter ved Cruz de Tejeda, så start det fra Tejeda-delen.
+
+**Dag 3: over høylandet til Tunte.** Opp til passet igjen og så sørover på den gamle fjellveien. Høydepunktet er Paso de la Plata, en gammel oppmurt sti gjennom bratt vulkansk terreng. Mer forsiktig fotarbeid ned enn kilometerne tilsier. [GPS-spor (Wikiloc 153503596)](https://es.wikiloc.com/rutas-senderismo/tunte-cruz-de-tejeda-tejeda-gran-canaria-153503596), som må kjøres **baklengs**.
+
+**Dag 4: ned juvet til havet.** Fra Tunte gjennom Fataga og Arteara til fyret i Maspalomas. Rundt 23 km grusvei og sti, 5 km asfalt mot slutten. Lite påfyll underveis etter landsbyene, så ta med nok vann. Spor: «Stage 1: Faro de Maspalomas to Tunte» i [Stingy Nomads-guiden](https://stingynomads.com/camino-de-santiago-gran-canaria/#GPX_files_of_the_route), baklengs.
+
+### Praktisk
+
+- **Når:** før torsdag 19. november. For eksempel lørdag 14. til tirsdag 17. med fire dager, eller søndag 15. til tirsdag 17. med tre.
+- **Til start:** Ellen og Kjetil kan kjøre oss til Puerto de las Nieves og ta en fiskelunsj og Huerto de las Flores mens de er der. Det blir vest-dagen deres.
+- **Sove:** bo i Tejeda landsby, ikke på Cruz de Tejeda. [Fonda de la Tea](https://hotelfondadelatea.com/en/) er ett alternativ. I Tunte: [Rural Suite Santiago de Tunte](https://crsantiagodetunte.com/). Ikke sjekket ledighet ennå.
+- **Bagasje:** bare det vi trenger for natta i sekken. Resten blir igjen i huset.
+- **November:** vind- og regnjakke og et varmt lag for høylandet (Cruz de Tejeda ligger på 1500 m), solkrem for de lave etappene, hodelykt for dag 1.
+- **GPS:** last ned GPX fra Wikiloc i en innlogget nettleser (Download → File → GPX → Original trail) og lagre kart offline. Sjekk retning, start og slutt for hvert spor før vi drar.
+
+## Wingfoil
+
+Simen er nybegynner og må leie alt. November er en av de svakeste vindmånedene. Rundt 13 knop i snitt ved Pozo, og vinden blir mer østlig om vinteren. Regn med noen dager uten vind, og velg dag etter varselet, ikke etter en fast plan.
+
+::: {.spot-card}
+**Fanatic Boarders Centre, Bahía Feliz / Tarajalillo**. Nærmest, 5–10 min fra huset. **Førstevalget.**
+
+- Privattimer: 2 t €129, 6 t €350, 10 t €520. Utstyr, våtdrakt og forsikring av utstyret er inkludert.
+- Leie etterpå (vinge, brett og foil): 2 t €60, 1 dag €90, 7 dager €350. Våtdrakt er ikke inkludert i leien.
+- Starter på land, så stort brett, så mindre. Store brett (125–142 L) og vinger fra 4 til 7 m². De kjører til Pozo, Vargas eller Arinaga når vinden er bedre der.
+- Kontakt: +34 633 042 448. [Kurs](https://fbcgrancanaria.com/foil-intro-eng) · [Priser](https://fbcgrancanaria.com/precios-y-reservas-foiling)
+:::
+
+::: {.spot-card}
+**Pozowinds, Bahía de Formas** ved Salinas de Arinaga, cirka 25 min. **Billigst.**
+
+- 5 × 2 timer for €198. Våtdrakt, sko, trapes, flytevest og hjelm er inkludert. Maks 3 elever per instruktør, simulator først.
+- Flatt vann og nesten ingen strøm, men vinden går skrått fra land. For en nybegynner betyr det fare for å drive ut, så spør om redningsbåt.
+- Kursene går mellom kl. 12 og 17.30. Telefon +34 928 155 009. [Kurs](https://www.pozowinds.com/wingfoil-course-gran-canaria) · [Spotguide](https://www.pozowinds.com/wingfoilspot-guide-gran-canaria)
+:::
+
+::: {.spot-card}
+**Andre alternativer**
+
+- [Gran Canaria Wingfoil Academy](https://grancanariawingfoil.com/), Arinaga: velger spot hver dag og har vannscooter og radiohjelm. Privat 1 t €145, gruppe 2 t €100. WhatsApp +34 633 153 257. De ber deg ta med egen våtdrakt.
+- [LPWS](https://lpwindsurf.com/escuela-surf/escuela-wing-foil/), Bahía de Formas: 1 dag €50, 5 dager €198.
+- [MPK Sport Center](https://www.mpksportcenter.com/wing-foil), Meloneras: privattimer fra omtrent €90 i timen, med transport til spot.
+:::
+
+### Våtdrakt: ta med eller ikke?
+
+Vannet er rundt **22 °C** i november. **Ta med din egen 3/2 heldrakt hvis du har en.** Den er grei i bagasjen, den passer bedre, og den trengs på leiedagene og til snorkling. Ta med neoprensokker eller vannsko også, siden mange strender er steinete. En tykkere drakt er ikke nødvendig, 4/3 blir for varmt. Skolene inkluderer drakt i kursene, så det går fint uten også.
+
+**Tips:** book en pakke med flere økter så dagene kan flyttes etter vinden. Regn med flere økter før du faktisk foiler. Det finnes ikke efoil eller motorassistert foil i sør.
+
+Kilder: [Surf Magazin om spotene](https://www.surf-magazin.de/en/spots-and-areas/international/spain/pozo-vargas-and-co-the-best-windsurfing-spots-on-gran-canaria/) · [vind i november](https://wanderlog.com/weather/49844/11/pozo-izquierdo-weather-in-november) · [Lets-Kite Maspalomas](https://lets-kite.com/en/spots/1229/kitesurf/gran-canaria-maspalomas) · [vanntemperatur](https://seatemperature.info/november/gran-canaria-water-temperature.html) · [Oceanside om drakttykkelse](https://www.oceansidegrancanaria.com/blog/wetsuit-guide-what-thickness-do-you-need-to-surf)
+
+
+## Snorkling og fridykking
+
+Det beste ligger ved **Arinaga, 25 minutter fra huset**. Rett utenfor hotellstrendene i Maspalomas og Playa del Inglés er det ikke mye å se. Gå om morgenen, før vinden kommer, og aldri alene.
+
+::: {.spot-card}
+**Risco Verde, Arinaga**. Lettest, og et godt sted å starte.
+
+- Gå ut fra en småsteinstrand via en trapp fra promenaden. Det er parkering der.
+- Svak strøm. Steinplatå som trapper ned til sand på 12–14 m, maks rundt 16–19 m.
+- Leppefisk, havbrasme, sepia, og på sanden kanskje stingrokker, barracuda og engelhai.
+- Lunsj på promenaden i Arinaga, for eksempel Restaurante Nelson (sjømat) eller La Terrazita.
+- [Hola Islas Canarias](https://www.hellocanaryislands.com/dive-points/gran-canaria/scuba-diving-in-risco-verde/) · [Davy Jones Diving](https://www.davyjonesdiving.com/diving/P3-1-Arinaga-diving-and-dive-sites.shtml)
+:::
+
+::: {.spot-card}
+**El Cabrón, Arinaga**. Mest liv, og **best for fridykking**.
+
+- Over 400 fiskearter er registrert, blant annet papegøyefisk, barracuda, havabbor, murene og blekksprut, pluss rundt ti slags rokker.
+- Engelhai er vanligst om vinteren, men de ligger på 10–20 m og er ofte nedgravd.
+- Rundt 7–8 m ved stranda. Etter cirka 12 m faller kanten til **rundt 23 m**, med huler og mest liv nederst.
+- Steinete og glatt inngang, så bruk vannsko. Kildene er uenige om strømmen, og noen sier den ikke passer for første gang. Best kl. 9–12. Sikten kan være over 15 m på rolige morgener.
+- Grusvei forbi fyret til en stor gratis parkering, med tretrapp ned. Ingen toaletter eller mat. Spydfiske er forbudt.
+- [Local Guide](https://localguidegrancanaria.com/en/playa-de-el-cabron-arinaga/) · [Delphinus](https://www.delphinus.eu/en/divesite/el-cabron-first-class-underwater-experience)
+:::
+
+::: {.spot-card}
+**Andre steder**
+
+- **Tufia, Telde** (35–40 min): rolig vulkansk bukt med huler. 2–7 m for snorkling, 20 m+ lenger ut. God på dager med mye vind. [Live It Up](https://liveitup-laspalmas.com/things-to-do/outdoor-adventure/diving-snorkelling/freediving-gran-canaria/)
+- **Las Canteras / La Barra, Las Palmas** (45 min): et naturlig rev skjermer en rolig lagune, maks rundt 8 m. Bystrand med mye mat. Gå ved lavvann, og hold deg innenfor revet. Passer med en hagedag i nord. [Wikipedia](https://en.wikipedia.org/wiki/Playa_de_Las_Canteras)
+- **Sardina del Norte, Gáldar** (1 t 15 min): engelhai nesten hele året, sjøhester og hageål. Dusj og kafeer. Bare når det er lite dønning fra nord. [Delphinus](https://www.delphinus.eu/en/divesite/sardina-del-norte)
+- **Las Salinas, Agaete**: naturlige basseng, passer med vest-dagen og Huerto de las Flores. [Canarias Lovers](https://canarias-lovers.com/en/natural-pools-las-salinas-agaete/)
+- **Amadores og Puerto de Mogán** (35–40 min): skjermet bak moloer, enkelt og grunt. Snorkle langs steinene.
+- **Skildpadder** ser man mest fra båt. Båtturer for snorkling går fra Puerto Rico og Anfi, for eksempel [Canco fra €59](https://www.cancograncanaria.com/en/product/snorkeling-trips-gran-canaria/).
+:::
+
+### Fridykking
+
+- Dybde fra land: El Cabrón (~23 m), Risco Verde (~16–19 m), Tufia (~20 m) og Sardina (opp mot 25 m).
+- Alle fridykkerskolene ligger i Las Palmas eller i nord. Jeg fant ingen som har drop-in-økter med bøye i sør.
+  - [Subzone Freediving](https://subzonefreedivingrancanaria.com/): Apnea Experience €80 for én dag med utstyr, og økter i åpent vann i helgene. Telefon +34 610 921 542. Spør om de underviser på engelsk.
+  - [Emocion Apnea](https://www.facebook.com/emocionapnea/), Las Canteras: kurs og treningsøkter på engelsk. Telefon +34 674 33 89 22.
+- Masker, korte finner og drakter kan leies hos dykkesentre i sør, for eksempel Calypso (Sonnenland) og Go Diving (Maspalomas). **Lange fridykkerfinner må du ta med selv.**
+- Drakt: 3 mm for lang snorkling, 3–5 mm for gjentatte dykk. Ta med neoprensokker mot kråkeboller og lavastein.
+- Nordkysten får ofte dønning på 1,5–3,5 m om vinteren, så sjekk varselet hver dag og velg kyst etter det. Sør og øst er vanligvis roligst i november.
+
+
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const map = L.map("map", { scrollWheelZoom: false }).setView([27.95, -15.6], 10);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap",
+    maxZoom: 17,
+  }).addTo(map);
+  const places = [
+    ["home", 27.7745, -15.5455, "Huset i San Agustín"],
+    ["garden", 28.0636, -15.4600, "Jardín Botánico Canario"],
+    ["garden", 28.1265, -15.5420, "Jardín de la Marquesa, Arucas"],
+    ["garden", 28.0997, -15.6990, "Huerto de las Flores, Agaete"],
+    ["garden", 28.0605, -15.5478, "Teror"],
+    ["run", 28.0985, -15.7120, "Løpestart: Puerto de las Nieves"],
+    ["run", 27.9952, -15.6146, "Natt: Tejeda"],
+    ["run", 28.0068, -15.5995, "Cruz de Tejeda"],
+    ["run", 27.9705, -15.6125, "Roque Nublo"],
+    ["run", 27.9256, -15.5733, "Natt: Tunte"],
+    ["run", 27.7357, -15.5990, "Mål: Faro de Maspalomas"],
+    ["water", 27.7905, -15.5150, "Wingfoil: Fanatic Boarders Centre, Bahía Feliz"],
+    ["water", 27.8470, -15.3930, "Wingfoil: Bahía de Formas (Pozowinds, LPWS)"],
+    ["water", 27.8600, -15.3880, "Snorkling: Risco Verde, Arinaga"],
+    ["water", 27.8705, -15.3830, "Snorkling og fridykking: El Cabrón"],
+    ["water", 27.9585, -15.3785, "Snorkling: Tufia"],
+    ["water", 28.1400, -15.4350, "Snorkling: Las Canteras"],
+    ["water", 28.1515, -15.7010, "Snorkling: Sardina del Norte"],
+  ];
+  const colors = { home: "#c2410c", garden: "#be185d", run: "#4d7c0f", water: "#0e7490" };
+  for (const [kind, lat, lon, name] of places) {
+    L.circleMarker([lat, lon], {
+      radius: kind === "home" ? 10 : 7,
+      color: "#fff",
+      weight: 2,
+      fillColor: colors[kind],
+      fillOpacity: 1,
+    }).addTo(map).bindPopup(name);
+  }
+  L.polyline(
+    [[28.0985, -15.7120], [28.0880, -15.6600], [28.0200, -15.6400], [28.0068, -15.5995], [27.9952, -15.6146], [28.0068, -15.5995], [27.9256, -15.5733], [27.8500, -15.5800], [27.7357, -15.5990]],
+    { color: "#4d7c0f", weight: 3, dashArray: "6 6" }
+  ).addTo(map);
+});
+</script>
+```

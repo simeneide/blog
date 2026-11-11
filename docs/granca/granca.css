@@ -1,0 +1,151 @@
+/* Gran Canaria 2026: warm volcanic palette, bougainvillea accent. */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;600&display=swap");
+
+:root {
+  --sand: #faf6f0;
+  --ink: #2b211c;
+  --lava: #c2410c;
+  --bloom: #be185d;
+  --pine: #4d7c0f;
+  --sea: #0e7490;
+  --line: #e7ded2;
+}
+
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .title {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--lava);
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  color: #7a6a5e;
+}
+
+h2 {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 3px solid var(--line);
+  border-bottom: none;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #4a3a30;
+}
+
+#hager-med-blomster-og-lunsj h2 { color: var(--bloom); }
+#løpeturen-fra-nord-til-sør h2 { color: var(--pine); }
+#wingfoil h2, #snorkling-og-fridykking h2 { color: var(--sea); }
+#der-vi-bor h2 { color: var(--lava); }
+
+a { color: var(--sea); }
+
+.trip-map {
+  height: 420px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  margin: 1.5rem 0 0.5rem;
+  z-index: 0;
+}
+
+.map-legend {
+  font-size: 0.85rem;
+  color: #7a6a5e;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+}
+.dot.home { background: var(--lava); }
+.dot.garden { background: var(--bloom); }
+.dot.run { background: var(--pine); }
+.dot.water { background: var(--sea); }
+
+.hero-img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.photo-row p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.photo-row img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.day-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.day-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--bloom);
+  border-radius: 10px;
+  padding: 1rem 1.2rem 0.4rem;
+}
+
+.day-card ol { padding-left: 1.2rem; }
+
+.run-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.run-table th, .run-table td {
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+.run-table th { background: var(--pine); color: #fff; }
+.run-table td:nth-child(n+3):nth-child(-n+5) { white-space: nowrap; }
+.run-table tr.optional td { color: #7a6a5e; font-style: italic; }
+.run-table .small { font-size: 0.85rem; color: #7a6a5e; margin-top: 0.4rem; }
+
+.run-map {
+  display: block;
+  max-width: 420px;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+}
+
+.spot-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sea);
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem 0.2rem;
+  margin: 1rem 0;
+}
